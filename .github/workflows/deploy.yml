@@ -10,7 +10,8 @@ on:
   #   branches:
   #   - "deploy"
   workflow_dispatch: {}
-
+permissions:
+  	contents: write  
 jobs:
   "deploy":
     name: "Build and deploy"
