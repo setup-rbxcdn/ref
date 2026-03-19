@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://robloxapi.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://robloxapi.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.712.0.7120913</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-8b02f75e5b5343a1</link><description>95 revisions to the API.</description><guid>version-8b02f75e5b5343a1</guid><pubDate>Tue, 10 Mar 2026 08:02:40 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.713.0.7130910</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-913142fd943640d2</link><description>61 revisions to the API.</description><guid>version-913142fd943640d2</guid><pubDate>Tue, 17 Mar 2026 09:15:12 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-0">Add Function AnalyticsService.GetPlayerSegmentsAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-1">Add Property AnimationClip.Length</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-2">Add Function AssetService.CreateDataModelContentAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-3">Remove Class AuroraHandle</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-4">Change Function AuroraScriptService.CreateCollection</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-5">Remove Event AuroraService.Rollback</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-6">Add Function CaptureService.GetScreenshotCaptureObject</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-7">Add Function GuiObject.TweenPositionInternal</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-8">Add Function GuiObject.TweenSizeAndPositionInternal</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-9">Add Function GuiObject.TweenSizeInternal</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-10">Change Class MakeupDescription</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-11">Add Class OutputLink</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-13">Change Function Player.LoadCharacterWithHumanoidDescription</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-14">Change Function Player.LoadCharacterWithHumanoidDescriptionAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-15">Add Property PluginAction.Visible</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-16">Add Property PluginMenu.Visible</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-17">Add Property RootImportData.ScaleFactor</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-18">Add Event RunService.Rollback</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-19">Change Class StyleQuery</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-20">Change Function StyleRule.SetPropertyTransition</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-21">Add Property TextChatMessage.IsHiddenMessage</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-22">Add Function UGCValidationService.GetMinAndMaxMeshSizeAcrossAllFacs</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-23">Add Property UICorner.BottomLeftRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-24">Add Property UICorner.BottomRightRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-25">Add Property UICorner.TopLeftRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-26">Add Property UICorner.TopRightRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-27">Change Class UIShadow</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-28">Add Property VideoFrame.RollOffMaxDistance</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-29">Add Property VideoFrame.RollOffMinDistance</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-30">Add Property VideoFrame.RollOffMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-31">Change Class WrapTextureTransfer</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-32">Add Enum ActivePayerStatus</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-39">Add Enum AnimationNodePhaseSync</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-42">Remove EnumItem AnimationNodeType.BlendNode</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-43">Add EnumItem AnimationNodeType.OverNode</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-44">Add Enum CreateContentResult</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-50">Add Enum PlayerPlatformSpenderStatus</a></li>
+					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-54">Add Enum WhenUserFirstPlayed</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-913142fd943640d2">All changes</a>
+			]]></content:encoded></item><item><title>v0.712.0.7120913</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-8b02f75e5b5343a1</link><description>95 revisions to the API.</description><guid>version-8b02f75e5b5343a1</guid><pubDate>Tue, 10 Mar 2026 08:02:40 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-8b02f75e5b5343a1-0">Change Function AdService.GetAdAvailabilityNowAsync</a></li>
 					<li><a href="/ref/updates/2026.html#version-8b02f75e5b5343a1-1">Change Function AdService.GetAdAvailabilityNowForUniverseAsync</a></li>
@@ -86,7 +128,7 @@
 					<li><a href="/ref/updates/2026.html#version-8b02f75e5b5343a1-94">Add EnumItem RigLabel.Spine</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-8b02f75e5b5343a1">All changes</a>
-			]]></content:encoded></item><item><title>v0.711.0.7110873</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-174b11c0ce254ddf</link><description>254 revisions to the API.</description><guid>version-174b11c0ce254ddf</guid><pubDate>Mon, 02 Mar 2026 17:19:02 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.711.0.7110873</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-174b11c0ce254ddf</link><description>254 revisions to the API.</description><guid>version-174b11c0ce254ddf</guid><pubDate>Mon, 02 Mar 2026 17:19:02 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-174b11c0ce254ddf-0">Add Class AuroraHandle</a></li>
 					<li><a href="/ref/updates/2026.html#version-174b11c0ce254ddf-3">Add Function AuroraScriptService.CreateCollection</a></li>
@@ -249,7 +291,7 @@
 					<li><a href="/ref/updates/2026.html#version-174b11c0ce254ddf-253">Add EnumItem UploadCaptureResult.UploadPending</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-174b11c0ce254ddf">All changes</a>
-			]]></content:encoded></item><item><title>v0.710.0.7100702</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-e095049f34844c41</link><description>195 revisions to the API.</description><guid>version-e095049f34844c41</guid><pubDate>Tue, 24 Feb 2026 08:58:06 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.710.0.7100702</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-e095049f34844c41</link><description>195 revisions to the API.</description><guid>version-e095049f34844c41</guid><pubDate>Tue, 24 Feb 2026 08:58:06 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-e095049f34844c41-0">Add Property Animator.AnimationId0</a></li>
 					<li><a href="/ref/updates/2026.html#version-e095049f34844c41-1">Add Property Animator.AnimationId1</a></li>
@@ -405,7 +447,7 @@
 					<li><a href="/ref/updates/2026.html#version-e095049f34844c41-191">Add Enum VoiceRccReconnectReason</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-e095049f34844c41">All changes</a>
-			]]></content:encoded></item><item><title>v0.709.0.7090870</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-bb326014c89c4d27</link><description>59 revisions to the API.</description><guid>version-bb326014c89c4d27</guid><pubDate>Tue, 17 Feb 2026 12:48:56 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.709.0.7090870</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-bb326014c89c4d27</link><description>59 revisions to the API.</description><guid>version-bb326014c89c4d27</guid><pubDate>Tue, 17 Feb 2026 12:48:56 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-bb326014c89c4d27-0">Add Function AnalyticsService.GetDurationLoggerTimestamp</a></li>
 					<li><a href="/ref/updates/2026.html#version-bb326014c89c4d27-1">Change Property AudioPlayer.AudioContent</a></li>
@@ -464,7 +506,7 @@
 					<li><a href="/ref/updates/2026.html#version-bb326014c89c4d27-56">Add Enum CameraNavigationModel</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-bb326014c89c4d27">All changes</a>
-			]]></content:encoded></item><item><title>v0.708.0.7080876</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-db3d83f43d3f48c8</link><description>146 revisions to the API.</description><guid>version-db3d83f43d3f48c8</guid><pubDate>Mon, 09 Feb 2026 16:14:32 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.708.0.7080876</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-db3d83f43d3f48c8</link><description>146 revisions to the API.</description><guid>version-db3d83f43d3f48c8</guid><pubDate>Mon, 09 Feb 2026 16:14:32 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-db3d83f43d3f48c8-0">Add Function AssetService.ComposeDecal</a></li>
 					<li><a href="/ref/updates/2026.html#version-db3d83f43d3f48c8-1">Add Function AvatarCreationService.HandleSelfieQRResult</a></li>
@@ -598,7 +640,7 @@
 					<li><a href="/ref/updates/2026.html#version-db3d83f43d3f48c8-145">Change EnumItem KeyCode.World95</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-db3d83f43d3f48c8">All changes</a>
-			]]></content:encoded></item><item><title>v0.707.0.7070728</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-b215b632ea4841a0</link><description>160 revisions to the API.</description><guid>version-b215b632ea4841a0</guid><pubDate>Mon, 02 Feb 2026 15:15:43 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.707.0.7070728</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-b215b632ea4841a0</link><description>160 revisions to the API.</description><guid>version-b215b632ea4841a0</guid><pubDate>Mon, 02 Feb 2026 15:15:43 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-b215b632ea4841a0-0">Remove Function AssetService.CreateEditableMeshStripSkinningAsync</a></li>
 					<li><a href="/ref/updates/2026.html#version-b215b632ea4841a0-1">Change Property AudioDeviceInput.MutedByLocalUser</a></li>
@@ -759,12 +801,12 @@
 					<li><a href="/ref/updates/2026.html#version-b215b632ea4841a0-159">Add EnumItem ReservedHighlightId.NegatedPart</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-b215b632ea4841a0">All changes</a>
-			]]></content:encoded></item><item><title>v0.706.0.7060750</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-dabb43efc3a944c6</link><description>1 revisions to the API.</description><guid>version-dabb43efc3a944c6</guid><pubDate>Wed, 28 Jan 2026 09:06:14 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.706.0.7060750</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-dabb43efc3a944c6</link><description>1 revisions to the API.</description><guid>version-dabb43efc3a944c6</guid><pubDate>Wed, 28 Jan 2026 09:06:14 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-dabb43efc3a944c6-0">Change Class AnimationConstraint</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-dabb43efc3a944c6">All changes</a>
-			]]></content:encoded></item><item><title>v0.706.0.7060746</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-584e174a14ff41ef</link><description>120 revisions to the API.</description><guid>version-584e174a14ff41ef</guid><pubDate>Tue, 27 Jan 2026 10:08:42 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.706.0.7060746</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-584e174a14ff41ef</link><description>120 revisions to the API.</description><guid>version-584e174a14ff41ef</guid><pubDate>Tue, 27 Jan 2026 10:08:42 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-584e174a14ff41ef-0">Remove Function AnimationNodeDefinition.GetConnectedWires</a></li>
 					<li><a href="/ref/updates/2026.html#version-584e174a14ff41ef-1">Remove Function AnimationNodeDefinition.GetInputPinNames</a></li>
@@ -842,7 +884,7 @@
 					<li><a href="/ref/updates/2026.html#version-584e174a14ff41ef-119">Add EnumItem SecurityCapability.Teleport</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-584e174a14ff41ef">All changes</a>
-			]]></content:encoded></item><item><title>v0.705.0.7050924</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-3c94859b7ab74ea4</link><description>109 revisions to the API.</description><guid>version-3c94859b7ab74ea4</guid><pubDate>Mon, 26 Jan 2026 12:02:14 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.705.0.7050924</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-3c94859b7ab74ea4</link><description>109 revisions to the API.</description><guid>version-3c94859b7ab74ea4</guid><pubDate>Mon, 26 Jan 2026 12:02:14 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-3c94859b7ab74ea4-0">Change Property Accoutrement.AttachmentPoint</a></li>
 					<li><a href="/ref/updates/2026.html#version-3c94859b7ab74ea4-1">Change Property AlignOrientation.CFrame</a></li>
@@ -955,7 +997,7 @@
 					<li><a href="/ref/updates/2026.html#version-3c94859b7ab74ea4-108">Change Property WrapLayer.ReferenceOriginWorld</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-3c94859b7ab74ea4">All changes</a>
-			]]></content:encoded></item><item><title>v0.705.0.7050923</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-53373454f7df4478</link><description>151 revisions to the API.</description><guid>version-53373454f7df4478</guid><pubDate>Tue, 20 Jan 2026 12:20:56 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.705.0.7050923</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-53373454f7df4478</link><description>151 revisions to the API.</description><guid>version-53373454f7df4478</guid><pubDate>Tue, 20 Jan 2026 12:20:56 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-53373454f7df4478-0">Change Property Accoutrement.AttachmentPoint</a></li>
 					<li><a href="/ref/updates/2026.html#version-53373454f7df4478-1">Change Property AlignOrientation.CFrame</a></li>
@@ -1102,7 +1144,7 @@
 					<li><a href="/ref/updates/2026.html#version-53373454f7df4478-150">Add EnumItem TextInputType.NewPasswordShown</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-53373454f7df4478">All changes</a>
-			]]></content:encoded></item><item><title>v0.704.0.7041059</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-2d89914793a549da</link><description>25 revisions to the API.</description><guid>version-2d89914793a549da</guid><pubDate>Tue, 13 Jan 2026 10:33:06 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.704.0.7041059</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-2d89914793a549da</link><description>25 revisions to the API.</description><guid>version-2d89914793a549da</guid><pubDate>Tue, 13 Jan 2026 10:33:06 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-2d89914793a549da-0">Remove Event Animator.OnCombinedUpdate2</a></li>
 					<li><a href="/ref/updates/2026.html#version-2d89914793a549da-1">Change Function AvatarCreationService.AutoSetupAvatarAsync</a></li>
@@ -1123,7 +1165,7 @@
 					<li><a href="/ref/updates/2026.html#version-2d89914793a549da-20">Add Enum ScreenshotCaptureResult</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-2d89914793a549da">All changes</a>
-			]]></content:encoded></item><item><title>v0.703.0.7031352</title><link>https://robloxapi.github.io/ref/updates/2026.html#version-95b9adff85194a04</link><description>29 revisions to the API.</description><guid>version-95b9adff85194a04</guid><pubDate>Tue, 06 Jan 2026 10:07:23 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.703.0.7031352</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-95b9adff85194a04</link><description>29 revisions to the API.</description><guid>version-95b9adff85194a04</guid><pubDate>Tue, 06 Jan 2026 10:07:23 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-95b9adff85194a04-0">Add Event AnimationNodeDefinition.InputPinsChanged</a></li>
 					<li><a href="/ref/updates/2026.html#version-95b9adff85194a04-1">Add Event AssetImportService.StartSingleMeshImport</a></li>
@@ -1146,7 +1188,7 @@
 					<li><a href="/ref/updates/2026.html#version-95b9adff85194a04-24">Add Enum InstanceFileSyncStatus</a></li>
 				</ul>
 				<a href="/ref/updates/2026.html#version-95b9adff85194a04">All changes</a>
-			]]></content:encoded></item><item><title>v0.702.0.7020622</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-a4644da17cde470d</link><description>109 revisions to the API.</description><guid>version-a4644da17cde470d</guid><pubDate>Thu, 11 Dec 2025 09:37:03 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.702.0.7020622</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-a4644da17cde470d</link><description>109 revisions to the API.</description><guid>version-a4644da17cde470d</guid><pubDate>Thu, 11 Dec 2025 09:37:03 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-a4644da17cde470d-0">Change Property Accoutrement.AttachmentPoint</a></li>
 					<li><a href="/ref/updates/2025.html#version-a4644da17cde470d-1">Change Property AlignOrientation.CFrame</a></li>
@@ -1259,7 +1301,7 @@
 					<li><a href="/ref/updates/2025.html#version-a4644da17cde470d-108">Change Property WrapLayer.ReferenceOriginWorld</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-a4644da17cde470d">All changes</a>
-			]]></content:encoded></item><item><title>v0.702.0.7020614</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-4d26fb450bb44305</link><description>291 revisions to the API.</description><guid>version-4d26fb450bb44305</guid><pubDate>Fri, 05 Dec 2025 11:08:15 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.702.0.7020614</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-4d26fb450bb44305</link><description>291 revisions to the API.</description><guid>version-4d26fb450bb44305</guid><pubDate>Fri, 05 Dec 2025 11:08:15 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-4d26fb450bb44305-0">Change Function AnimationClipProvider.GetAnimations</a></li>
 					<li><a href="/ref/updates/2025.html#version-4d26fb450bb44305-2">Add Function AnimationClipProvider.GetAnimationsAsync</a></li>
@@ -1470,7 +1512,7 @@
 					<li><a href="/ref/updates/2025.html#version-4d26fb450bb44305-288">Add Enum RestPoseModel</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-4d26fb450bb44305">All changes</a>
-			]]></content:encoded></item><item><title>v0.701.1.7010968</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-cda6028de0a7412d</link><description>253 revisions to the API.</description><guid>version-cda6028de0a7412d</guid><pubDate>Fri, 05 Dec 2025 09:45:12 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.701.1.7010968</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-cda6028de0a7412d</link><description>253 revisions to the API.</description><guid>version-cda6028de0a7412d</guid><pubDate>Fri, 05 Dec 2025 09:45:12 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-cda6028de0a7412d-0">Change Function AnimationClipProvider.GetAnimations</a></li>
 					<li><a href="/ref/updates/2025.html#version-cda6028de0a7412d-2">Remove Function AnimationClipProvider.GetAnimationsAsync</a></li>
@@ -1681,7 +1723,7 @@
 					<li><a href="/ref/updates/2025.html#version-cda6028de0a7412d-252">Remove Enum RestPoseModel</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-cda6028de0a7412d">All changes</a>
-			]]></content:encoded></item><item><title>v0.702.0.7020614</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-2dbeac8293cd4f75</link><description>291 revisions to the API.</description><guid>version-2dbeac8293cd4f75</guid><pubDate>Fri, 05 Dec 2025 09:39:05 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.702.0.7020614</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-2dbeac8293cd4f75</link><description>291 revisions to the API.</description><guid>version-2dbeac8293cd4f75</guid><pubDate>Fri, 05 Dec 2025 09:39:05 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-2dbeac8293cd4f75-0">Change Function AnimationClipProvider.GetAnimations</a></li>
 					<li><a href="/ref/updates/2025.html#version-2dbeac8293cd4f75-2">Add Function AnimationClipProvider.GetAnimationsAsync</a></li>
@@ -1892,7 +1934,7 @@
 					<li><a href="/ref/updates/2025.html#version-2dbeac8293cd4f75-288">Add Enum RestPoseModel</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-2dbeac8293cd4f75">All changes</a>
-			]]></content:encoded></item><item><title>v0.701.0.7010966</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-523a50bddf034d9a</link><description>92 revisions to the API.</description><guid>version-523a50bddf034d9a</guid><pubDate>Tue, 02 Dec 2025 10:21:37 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.701.0.7010966</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-523a50bddf034d9a</link><description>92 revisions to the API.</description><guid>version-523a50bddf034d9a</guid><pubDate>Tue, 02 Dec 2025 10:21:37 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-523a50bddf034d9a-0">Add Class AssetQualityService</a></li>
 					<li><a href="/ref/updates/2025.html#version-523a50bddf034d9a-4">Remove Function AssetService.RegisterUGCValidationFunction</a></li>
@@ -1934,7 +1976,7 @@
 					<li><a href="/ref/updates/2025.html#version-523a50bddf034d9a-68">Add Enum RigLabel</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-523a50bddf034d9a">All changes</a>
-			]]></content:encoded></item><item><title>v0.700.0.7000935</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-d638b440a9224bb2</link><description>70 revisions to the API.</description><guid>version-d638b440a9224bb2</guid><pubDate>Tue, 18 Nov 2025 11:24:11 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.700.0.7000935</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-d638b440a9224bb2</link><description>70 revisions to the API.</description><guid>version-d638b440a9224bb2</guid><pubDate>Tue, 18 Nov 2025 11:24:11 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-d638b440a9224bb2-0">Add Function AnimationNodeDefinition.GetInputPinNames</a></li>
 					<li><a href="/ref/updates/2025.html#version-d638b440a9224bb2-1">Add Function AnimationNodeDefinition.SetInputPinNames</a></li>
@@ -1985,7 +2027,7 @@
 					<li><a href="/ref/updates/2025.html#version-d638b440a9224bb2-69">Add EnumItem SalesTypeFilter.TimedOptions</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-d638b440a9224bb2">All changes</a>
-			]]></content:encoded></item><item><title>v0.699.0.6990877</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-874602c66c70451a</link><description>43 revisions to the API.</description><guid>version-874602c66c70451a</guid><pubDate>Tue, 11 Nov 2025 10:27:56 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.699.0.6990877</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-874602c66c70451a</link><description>43 revisions to the API.</description><guid>version-874602c66c70451a</guid><pubDate>Tue, 11 Nov 2025 10:27:56 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-0">Add Property AudioPlayer.AutoPlay</a></li>
 					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-1">Add Property ExperienceStateCaptureService.SelectionMode</a></li>
@@ -2020,12 +2062,12 @@
 					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-36">Add Enum StepFrequency</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-874602c66c70451a">All changes</a>
-			]]></content:encoded></item><item><title>v0.698.0.6980940</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-4161ccb851314f72</link><description>1 revisions to the API.</description><guid>version-4161ccb851314f72</guid><pubDate>Wed, 05 Nov 2025 13:12:08 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.698.0.6980940</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-4161ccb851314f72</link><description>1 revisions to the API.</description><guid>version-4161ccb851314f72</guid><pubDate>Wed, 05 Nov 2025 13:12:08 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-4161ccb851314f72-0">Change Class AudioSpeechToText</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-4161ccb851314f72">All changes</a>
-			]]></content:encoded></item><item><title>v0.698.0.6980936</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-63bff05435e54bdb</link><description>71 revisions to the API.</description><guid>version-63bff05435e54bdb</guid><pubDate>Tue, 04 Nov 2025 10:11:45 -0800</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.698.0.6980936</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-63bff05435e54bdb</link><description>71 revisions to the API.</description><guid>version-63bff05435e54bdb</guid><pubDate>Tue, 04 Nov 2025 10:11:45 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-63bff05435e54bdb-0">Change Property AnimationNodeDefinition.InputPinData</a></li>
 					<li><a href="/ref/updates/2025.html#version-63bff05435e54bdb-1">Add Function AnimationTrack.GetDebugData</a></li>
@@ -2089,7 +2131,7 @@
 					<li><a href="/ref/updates/2025.html#version-63bff05435e54bdb-66">Add Enum VideoSampleSize</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-63bff05435e54bdb">All changes</a>
-			]]></content:encoded></item><item><title>v0.697.0.6970925</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-1e4ca3bb98a04c5f</link><description>92 revisions to the API.</description><guid>version-1e4ca3bb98a04c5f</guid><pubDate>Tue, 28 Oct 2025 12:39:26 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.697.0.6970925</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-1e4ca3bb98a04c5f</link><description>92 revisions to the API.</description><guid>version-1e4ca3bb98a04c5f</guid><pubDate>Tue, 28 Oct 2025 12:39:26 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-1e4ca3bb98a04c5f-0">Add Function AnimationClipProvider.GetAnimationNodeDefinition</a></li>
 					<li><a href="/ref/updates/2025.html#version-1e4ca3bb98a04c5f-1">Add Function AnimationClipProvider.GetAnimationNodeTypes</a></li>
@@ -2141,7 +2183,7 @@
 					<li><a href="/ref/updates/2025.html#version-1e4ca3bb98a04c5f-91">Add EnumItem UploadCaptureResult.UploadQuotaReached</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-1e4ca3bb98a04c5f">All changes</a>
-			]]></content:encoded></item><item><title>v0.696.0.6960797</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-30215da31a3b42e2</link><description>151 revisions to the API.</description><guid>version-30215da31a3b42e2</guid><pubDate>Tue, 21 Oct 2025 11:08:49 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.696.0.6960797</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-30215da31a3b42e2</link><description>151 revisions to the API.</description><guid>version-30215da31a3b42e2</guid><pubDate>Tue, 21 Oct 2025 11:08:49 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-30215da31a3b42e2-0">Add Function AssetImportSession.GetKeyframeSequences</a></li>
 					<li><a href="/ref/updates/2025.html#version-30215da31a3b42e2-1">Add Function AvatarCreationService.AutoSetupAvatarNewAsync</a></li>
@@ -2281,7 +2323,7 @@
 					<li><a href="/ref/updates/2025.html#version-30215da31a3b42e2-150">Add EnumItem WebStreamClientType.WebSocket</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-30215da31a3b42e2">All changes</a>
-			]]></content:encoded></item><item><title>v0.695.0.6950956</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-c417654d3e2b4293</link><description>78 revisions to the API.</description><guid>version-c417654d3e2b4293</guid><pubDate>Tue, 14 Oct 2025 11:10:56 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.695.0.6950956</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-c417654d3e2b4293</link><description>78 revisions to the API.</description><guid>version-c417654d3e2b4293</guid><pubDate>Tue, 14 Oct 2025 11:10:56 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-c417654d3e2b4293-0">Add Function AssetService.CachePartOperationsAsync</a></li>
 					<li><a href="/ref/updates/2025.html#version-c417654d3e2b4293-1">Add Function CaptureService.InternalCheckPlayabilityAsync</a></li>
@@ -2315,7 +2357,7 @@
 					<li><a href="/ref/updates/2025.html#version-c417654d3e2b4293-66">Add Enum TelemetryStandardizedField</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-c417654d3e2b4293">All changes</a>
-			]]></content:encoded></item><item><title>v0.694.0.6940982</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-89ce51d2707749ab</link><description>112 revisions to the API.</description><guid>version-89ce51d2707749ab</guid><pubDate>Tue, 07 Oct 2025 10:49:25 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.694.0.6940982</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-89ce51d2707749ab</link><description>112 revisions to the API.</description><guid>version-89ce51d2707749ab</guid><pubDate>Tue, 07 Oct 2025 10:49:25 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-89ce51d2707749ab-0">Change Class AudioTremolo</a></li>
 					<li><a href="/ref/updates/2025.html#version-89ce51d2707749ab-1">Add Event ChangeHistoryStreamingService.SendCreateInstanceFromStudio</a></li>
@@ -2420,7 +2462,7 @@
 					<li><a href="/ref/updates/2025.html#version-89ce51d2707749ab-107">Add Enum PredictionState</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-89ce51d2707749ab">All changes</a>
-			]]></content:encoded></item><item><title>v0.693.0.6930960</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-2c10da33724f4ef9</link><description>149 revisions to the API.</description><guid>version-2c10da33724f4ef9</guid><pubDate>Tue, 30 Sep 2025 10:09:59 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.693.0.6930960</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-2c10da33724f4ef9</link><description>149 revisions to the API.</description><guid>version-2c10da33724f4ef9</guid><pubDate>Tue, 30 Sep 2025 10:09:59 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-2c10da33724f4ef9-0">Change Class Actor</a></li>
 					<li><a href="/ref/updates/2025.html#version-2c10da33724f4ef9-1">Change Class AlignOrientation</a></li>
@@ -2536,7 +2578,7 @@
 					<li><a href="/ref/updates/2025.html#version-2c10da33724f4ef9-148">Add EnumItem TeamCreateErrorState.PlaceUploadFailing</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-2c10da33724f4ef9">All changes</a>
-			]]></content:encoded></item><item><title>v0.692.0.6920844</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-82e3166df8694a7e</link><description>58 revisions to the API.</description><guid>version-82e3166df8694a7e</guid><pubDate>Tue, 23 Sep 2025 15:02:53 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.692.0.6920844</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-82e3166df8694a7e</link><description>58 revisions to the API.</description><guid>version-82e3166df8694a7e</guid><pubDate>Tue, 23 Sep 2025 15:02:53 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-0">Add Function AdService.ShowRewardedVideoAdAtClientAsync</a></li>
 					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-1">Add Function AdService.SubmitAdNotification</a></li>
@@ -2589,7 +2631,7 @@
 					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-48">Add Enum VoiceClientLeaveReasons</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-82e3166df8694a7e">All changes</a>
-			]]></content:encoded></item><item><title>v0.691.0.6910866</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-f6fcbad2d06d4556</link><description>52 revisions to the API.</description><guid>version-f6fcbad2d06d4556</guid><pubDate>Tue, 16 Sep 2025 10:14:28 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.691.0.6910866</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-f6fcbad2d06d4556</link><description>52 revisions to the API.</description><guid>version-f6fcbad2d06d4556</guid><pubDate>Tue, 16 Sep 2025 10:14:28 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-f6fcbad2d06d4556-0">Add Function AdService.GetAdAvailabilityNowForUniverseAsync</a></li>
 					<li><a href="/ref/updates/2025.html#version-f6fcbad2d06d4556-1">Remove Function AssetImportSession.AddKnownAssetsToCache</a></li>
@@ -2641,7 +2683,7 @@
 					<li><a href="/ref/updates/2025.html#version-f6fcbad2d06d4556-49">Add Enum PeoplePageLayout</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-f6fcbad2d06d4556">All changes</a>
-			]]></content:encoded></item><item><title>v0.690.0.6900721</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-ffd2994ae3bd41ab</link><description>42 revisions to the API.</description><guid>version-ffd2994ae3bd41ab</guid><pubDate>Tue, 09 Sep 2025 16:19:45 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.690.0.6900721</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-ffd2994ae3bd41ab</link><description>42 revisions to the API.</description><guid>version-ffd2994ae3bd41ab</guid><pubDate>Tue, 09 Sep 2025 16:19:45 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-ffd2994ae3bd41ab-0">Add Function AnimationRigData.GetLabels</a></li>
 					<li><a href="/ref/updates/2025.html#version-ffd2994ae3bd41ab-1">Add Function AnimationRigData.GetNames</a></li>
@@ -2686,7 +2728,7 @@
 					<li><a href="/ref/updates/2025.html#version-ffd2994ae3bd41ab-41">Add EnumItem PredictionMode.On</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-ffd2994ae3bd41ab">All changes</a>
-			]]></content:encoded></item><item><title>v0.689.0.6890882</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-0d6b98c40050432c</link><description>37 revisions to the API.</description><guid>version-0d6b98c40050432c</guid><pubDate>Tue, 02 Sep 2025 10:36:08 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.689.0.6890882</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-0d6b98c40050432c</link><description>37 revisions to the API.</description><guid>version-0d6b98c40050432c</guid><pubDate>Tue, 02 Sep 2025 10:36:08 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-0">Add Class AudioTremolo</a></li>
 					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-12">Change Function AuroraScript.AddTo</a></li>
@@ -2711,7 +2753,7 @@
 					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-31">Add Enum UpdateState</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-0d6b98c40050432c">All changes</a>
-			]]></content:encoded></item><item><title>v0.688.0.6880858</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-b1e30292905740f4</link><description>62 revisions to the API.</description><guid>version-b1e30292905740f4</guid><pubDate>Tue, 26 Aug 2025 10:49:30 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.688.0.6880858</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-b1e30292905740f4</link><description>62 revisions to the API.</description><guid>version-b1e30292905740f4</guid><pubDate>Tue, 26 Aug 2025 10:49:30 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-b1e30292905740f4-0">Remove Function AdPortal.TeleportConfirmed</a></li>
 					<li><a href="/ref/updates/2025.html#version-b1e30292905740f4-1">Remove Function AdPortal.TeleportRejected</a></li>
@@ -2752,7 +2794,7 @@
 					<li><a href="/ref/updates/2025.html#version-b1e30292905740f4-59">Add Enum FeatureRestrictionAbuseVector</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-b1e30292905740f4">All changes</a>
-			]]></content:encoded></item><item><title>v0.687.0.6870815</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-c36ab0444a854072</link><description>40 revisions to the API.</description><guid>version-c36ab0444a854072</guid><pubDate>Tue, 19 Aug 2025 13:05:59 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.687.0.6870815</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-c36ab0444a854072</link><description>40 revisions to the API.</description><guid>version-c36ab0444a854072</guid><pubDate>Tue, 19 Aug 2025 13:05:59 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-c36ab0444a854072-0">Add Event AppRatingPromptService.OnGameLeft</a></li>
 					<li><a href="/ref/updates/2025.html#version-c36ab0444a854072-1">Add Property AssetService.AllowInsertFreeAssets</a></li>
@@ -2794,7 +2836,7 @@
 					<li><a href="/ref/updates/2025.html#version-c36ab0444a854072-39">Add Event VoiceChatService.ACSCleanup</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-c36ab0444a854072">All changes</a>
-			]]></content:encoded></item><item><title>v0.686.0.6860866</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-fa681ec445d7437c</link><description>154 revisions to the API.</description><guid>version-fa681ec445d7437c</guid><pubDate>Tue, 12 Aug 2025 10:11:07 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.686.0.6860866</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-fa681ec445d7437c</link><description>154 revisions to the API.</description><guid>version-fa681ec445d7437c</guid><pubDate>Tue, 12 Aug 2025 10:11:07 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-fa681ec445d7437c-0">Add Class AppRatingPromptService</a></li>
 					<li><a href="/ref/updates/2025.html#version-fa681ec445d7437c-3">Add Function AssetImportSession.AddKnownAssetsToCache</a></li>
@@ -2932,7 +2974,7 @@
 					<li><a href="/ref/updates/2025.html#version-fa681ec445d7437c-151">Add Enum WebStreamClientType</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-fa681ec445d7437c">All changes</a>
-			]]></content:encoded></item><item><title>v0.685.0.6850796</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-2f9bc178c0854e4e</link><description>51 revisions to the API.</description><guid>version-2f9bc178c0854e4e</guid><pubDate>Tue, 05 Aug 2025 09:11:23 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.685.0.6850796</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-2f9bc178c0854e4e</link><description>51 revisions to the API.</description><guid>version-2f9bc178c0854e4e</guid><pubDate>Tue, 05 Aug 2025 09:11:23 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-2f9bc178c0854e4e-0">Add Function AuroraScript.SignalFired</a></li>
 					<li><a href="/ref/updates/2025.html#version-2f9bc178c0854e4e-1">Add Function CaptureService.DeleteVideoCaptureAsync</a></li>
@@ -2979,7 +3021,7 @@
 					<li><a href="/ref/updates/2025.html#version-2f9bc178c0854e4e-48">Add Enum StrokeSizingMode</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-2f9bc178c0854e4e">All changes</a>
-			]]></content:encoded></item><item><title>v0.684.0.6840685</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-2e33997db2de47bb</link><description>66 revisions to the API.</description><guid>version-2e33997db2de47bb</guid><pubDate>Tue, 29 Jul 2025 10:24:14 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.684.0.6840685</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-2e33997db2de47bb</link><description>66 revisions to the API.</description><guid>version-2e33997db2de47bb</guid><pubDate>Tue, 29 Jul 2025 10:24:14 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-2e33997db2de47bb-0">Remove Function AssetService.CreateSurfaceAppearance</a></li>
 					<li><a href="/ref/updates/2025.html#version-2e33997db2de47bb-1">Add Function AssetService.CreateSurfaceAppearanceAsync</a></li>
@@ -3033,7 +3075,7 @@
 					<li><a href="/ref/updates/2025.html#version-2e33997db2de47bb-60">Add Enum UploadCaptureResult</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-2e33997db2de47bb">All changes</a>
-			]]></content:encoded></item><item><title>v0.683.0.6830775</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-8efc18df640a42c3</link><description>74 revisions to the API.</description><guid>version-8efc18df640a42c3</guid><pubDate>Tue, 22 Jul 2025 10:44:10 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.683.0.6830775</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-8efc18df640a42c3</link><description>74 revisions to the API.</description><guid>version-8efc18df640a42c3</guid><pubDate>Tue, 22 Jul 2025 10:44:10 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-8efc18df640a42c3-0">Add Function AccountService.MagicLogin</a></li>
 					<li><a href="/ref/updates/2025.html#version-8efc18df640a42c3-1">Add Event AccountService.MagicLoginEvent</a></li>
@@ -3104,7 +3146,7 @@
 					<li><a href="/ref/updates/2025.html#version-8efc18df640a42c3-70">Add Enum PredictionMode</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-8efc18df640a42c3">All changes</a>
-			]]></content:encoded></item><item><title>v0.681.0.6810806</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-3caf612bae4e4864</link><description>13 revisions to the API.</description><guid>version-3caf612bae4e4864</guid><pubDate>Wed, 16 Jul 2025 15:19:37 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.681.0.6810806</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-3caf612bae4e4864</link><description>13 revisions to the API.</description><guid>version-3caf612bae4e4864</guid><pubDate>Wed, 16 Jul 2025 15:19:37 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-3caf612bae4e4864-0">Change Class AudioGate</a></li>
 					<li><a href="/ref/updates/2025.html#version-3caf612bae4e4864-1">Remove Property AuroraService.LockStepIdOffset</a></li>
@@ -3119,7 +3161,7 @@
 					<li><a href="/ref/updates/2025.html#version-3caf612bae4e4864-12">Remove Enum PredictionMode</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-3caf612bae4e4864">All changes</a>
-			]]></content:encoded></item><item><title>v0.682.0.6820537</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-cc8f13de4c4e43de</link><description>16 revisions to the API.</description><guid>version-cc8f13de4c4e43de</guid><pubDate>Tue, 15 Jul 2025 11:21:06 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.682.0.6820537</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-cc8f13de4c4e43de</link><description>16 revisions to the API.</description><guid>version-cc8f13de4c4e43de</guid><pubDate>Tue, 15 Jul 2025 11:21:06 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-cc8f13de4c4e43de-0">Change Class AudioGate</a></li>
 					<li><a href="/ref/updates/2025.html#version-cc8f13de4c4e43de-1">Add Property AuroraService.LockStepIdOffset</a></li>
@@ -3134,7 +3176,7 @@
 					<li><a href="/ref/updates/2025.html#version-cc8f13de4c4e43de-12">Add Enum PredictionMode</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-cc8f13de4c4e43de">All changes</a>
-			]]></content:encoded></item><item><title>v0.681.0.6810803</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-cdc4b050a70a4a70</link><description>35 revisions to the API.</description><guid>version-cdc4b050a70a4a70</guid><pubDate>Tue, 08 Jul 2025 11:22:17 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.681.0.6810803</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-cdc4b050a70a4a70</link><description>35 revisions to the API.</description><guid>version-cdc4b050a70a4a70</guid><pubDate>Tue, 08 Jul 2025 11:22:17 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-0">Add Function AdService.RegisterAdOpportunityAsync</a></li>
 					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-1">Add Function AdService.UnregisterAdOpportunity</a></li>
@@ -3170,7 +3212,7 @@
 					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-34">Change Property Workspace.UseNewLuauTypeSolver</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-cdc4b050a70a4a70">All changes</a>
-			]]></content:encoded></item><item><title>v0.680.0.6800701</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-cc27b8b032184fd9</link><description>43 revisions to the API.</description><guid>version-cc27b8b032184fd9</guid><pubDate>Tue, 01 Jul 2025 10:53:13 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.680.0.6800701</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-cc27b8b032184fd9</link><description>43 revisions to the API.</description><guid>version-cc27b8b032184fd9</guid><pubDate>Tue, 01 Jul 2025 10:53:13 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-cc27b8b032184fd9-0">Change Property Animator.EvaluationThrottled</a></li>
 					<li><a href="/ref/updates/2025.html#version-cc27b8b032184fd9-1">Remove Function AnnotationsService.DEPRECATED_EditAnnotation</a></li>
@@ -3193,7 +3235,7 @@
 					<li><a href="/ref/updates/2025.html#version-cc27b8b032184fd9-39">Add Enum PromptLinkSharingResult</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-cc27b8b032184fd9">All changes</a>
-			]]></content:encoded></item><item><title>v0.679.0.6790761</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-c98e1b5b4dd94b96</link><description>32 revisions to the API.</description><guid>version-c98e1b5b4dd94b96</guid><pubDate>Tue, 24 Jun 2025 10:03:59 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.679.0.6790761</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-c98e1b5b4dd94b96</link><description>32 revisions to the API.</description><guid>version-c98e1b5b4dd94b96</guid><pubDate>Tue, 24 Jun 2025 10:03:59 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-c98e1b5b4dd94b96-0">Add Property AudioPlayer.IsMutedForCapture</a></li>
 					<li><a href="/ref/updates/2025.html#version-c98e1b5b4dd94b96-1">Add Function AvatarAccessoryRules.willRemoveAccessory</a></li>
@@ -3222,7 +3264,7 @@
 					<li><a href="/ref/updates/2025.html#version-c98e1b5b4dd94b96-31">Add EnumItem HttpError.CreatorEnvironmentsNotSupportedByService</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-c98e1b5b4dd94b96">All changes</a>
-			]]></content:encoded></item><item><title>v0.678.0.6780751</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-6b3313c2b086401c</link><description>63 revisions to the API.</description><guid>version-6b3313c2b086401c</guid><pubDate>Tue, 17 Jun 2025 11:15:39 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.678.0.6780751</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-6b3313c2b086401c</link><description>63 revisions to the API.</description><guid>version-6b3313c2b086401c</guid><pubDate>Tue, 17 Jun 2025 11:15:39 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-6b3313c2b086401c-0">Add Function AssetService.CreateSurfaceAppearance</a></li>
 					<li><a href="/ref/updates/2025.html#version-6b3313c2b086401c-1">Change Property AvatarBodyRules.CustomBodyTypeScale</a></li>
@@ -3267,7 +3309,7 @@
 					<li><a href="/ref/updates/2025.html#version-6b3313c2b086401c-60">Add Enum RecommendationItemVisibility</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-6b3313c2b086401c">All changes</a>
-			]]></content:encoded></item><item><title>v0.677.0.6770761</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-fd4ca9e0acc9446d</link><description>41 revisions to the API.</description><guid>version-fd4ca9e0acc9446d</guid><pubDate>Tue, 10 Jun 2025 10:20:08 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.677.0.6770761</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-fd4ca9e0acc9446d</link><description>41 revisions to the API.</description><guid>version-fd4ca9e0acc9446d</guid><pubDate>Tue, 10 Jun 2025 10:20:08 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-fd4ca9e0acc9446d-0">Add Class AudioSpeechToText</a></li>
 					<li><a href="/ref/updates/2025.html#version-fd4ca9e0acc9446d-6">Add Property AuroraScript.AuroraScriptBindingsSerialize</a></li>
@@ -3301,7 +3343,7 @@
 					<li><a href="/ref/updates/2025.html#version-fd4ca9e0acc9446d-37">Add Enum RsvpStatus</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-fd4ca9e0acc9446d">All changes</a>
-			]]></content:encoded></item><item><title>v0.676.0.6760531</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-1fd40173390f491a</link><description>27 revisions to the API.</description><guid>version-1fd40173390f491a</guid><pubDate>Tue, 03 Jun 2025 10:18:31 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.676.0.6760531</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-1fd40173390f491a</link><description>27 revisions to the API.</description><guid>version-1fd40173390f491a</guid><pubDate>Tue, 03 Jun 2025 10:18:31 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-1fd40173390f491a-0">Add Event AdService.rewardedVideoAdPlayServerToClientWithPlacement</a></li>
 					<li><a href="/ref/updates/2025.html#version-1fd40173390f491a-1">Add Property AuroraScriptObject.MaxFrequency</a></li>
@@ -3325,18 +3367,18 @@
 					<li><a href="/ref/updates/2025.html#version-1fd40173390f491a-21">Add Enum VideoCaptureStartedResult</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-1fd40173390f491a">All changes</a>
-			]]></content:encoded></item><item><title>v0.675.1.6750723</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-9a1e7554d93c459d</link><description>2 revisions to the API.</description><guid>version-9a1e7554d93c459d</guid><pubDate>Fri, 30 May 2025 08:18:49 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.675.1.6750723</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-9a1e7554d93c459d</link><description>2 revisions to the API.</description><guid>version-9a1e7554d93c459d</guid><pubDate>Fri, 30 May 2025 08:18:49 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-9a1e7554d93c459d-0">Change Function AssetService.SavePlaceAsync</a></li>
 					<li><a href="/ref/updates/2025.html#version-9a1e7554d93c459d-1">Change Property Terrain.ShorelinesUpgraded</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-9a1e7554d93c459d">All changes</a>
-			]]></content:encoded></item><item><title>v0.675.0.6750712</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-e34d226b8b3d49c7</link><description>1 revisions to the API.</description><guid>version-e34d226b8b3d49c7</guid><pubDate>Wed, 28 May 2025 10:51:29 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.675.0.6750712</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-e34d226b8b3d49c7</link><description>1 revisions to the API.</description><guid>version-e34d226b8b3d49c7</guid><pubDate>Wed, 28 May 2025 10:51:29 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-e34d226b8b3d49c7-0">Change Event AdService.rewardedVideoAdPlayServerToClient</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-e34d226b8b3d49c7">All changes</a>
-			]]></content:encoded></item><item><title>v0.675.0.6750711</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-67afd9ddf74d4d73</link><description>43 revisions to the API.</description><guid>version-67afd9ddf74d4d73</guid><pubDate>Tue, 27 May 2025 10:55:27 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.675.0.6750711</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-67afd9ddf74d4d73</link><description>43 revisions to the API.</description><guid>version-67afd9ddf74d4d73</guid><pubDate>Tue, 27 May 2025 10:55:27 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-67afd9ddf74d4d73-0">Change Function AdService.ShowRewardedVideoAdAsync</a></li>
 					<li><a href="/ref/updates/2025.html#version-67afd9ddf74d4d73-1">Change Event AdService.rewardedVideoAdPlayServerToClient</a></li>
@@ -3372,7 +3414,7 @@
 					<li><a href="/ref/updates/2025.html#version-67afd9ddf74d4d73-39">Add Enum PreferredInput</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-67afd9ddf74d4d73">All changes</a>
-			]]></content:encoded></item><item><title>v0.674.0.6740785</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-6dbf1fd58a49447c</link><description>148 revisions to the API.</description><guid>version-6dbf1fd58a49447c</guid><pubDate>Tue, 20 May 2025 10:50:03 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.674.0.6740785</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-6dbf1fd58a49447c</link><description>148 revisions to the API.</description><guid>version-6dbf1fd58a49447c</guid><pubDate>Tue, 20 May 2025 10:50:03 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-6dbf1fd58a49447c-0">Add Event AdService.RewardedVideoAdEnded</a></li>
 					<li><a href="/ref/updates/2025.html#version-6dbf1fd58a49447c-1">Add Event AdService.RewardedVideoAdStarted</a></li>
@@ -3519,7 +3561,7 @@
 					<li><a href="/ref/updates/2025.html#version-6dbf1fd58a49447c-147">Change EnumItem KeyCode.World95</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-6dbf1fd58a49447c">All changes</a>
-			]]></content:encoded></item><item><title>v0.673.0.6730711</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-012239e64a274975</link><description>87 revisions to the API.</description><guid>version-012239e64a274975</guid><pubDate>Tue, 13 May 2025 13:05:58 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.673.0.6730711</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-012239e64a274975</link><description>87 revisions to the API.</description><guid>version-012239e64a274975</guid><pubDate>Tue, 13 May 2025 13:05:58 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-012239e64a274975-0">Add Property AuroraService.HashRoundingPoint</a></li>
 					<li><a href="/ref/updates/2025.html#version-012239e64a274975-1">Add Property AuroraService.IgnoreRotation</a></li>
@@ -3562,7 +3604,7 @@
 					<li><a href="/ref/updates/2025.html#version-012239e64a274975-86">Add EnumItem WrapTargetDebugMode.PreWrapDeformerCage</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-012239e64a274975">All changes</a>
-			]]></content:encoded></item><item><title>v0.672.0.6720706</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-5b7be25be0304ad6</link><description>190 revisions to the API.</description><guid>version-5b7be25be0304ad6</guid><pubDate>Tue, 06 May 2025 08:37:37 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.672.0.6720706</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-5b7be25be0304ad6</link><description>190 revisions to the API.</description><guid>version-5b7be25be0304ad6</guid><pubDate>Tue, 06 May 2025 08:37:37 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-5b7be25be0304ad6-0">Add Property AuroraScriptObject.FrameId</a></li>
 					<li><a href="/ref/updates/2025.html#version-5b7be25be0304ad6-1">Add Class AvatarAccessoryRules</a></li>
@@ -3616,12 +3658,12 @@
 					<li><a href="/ref/updates/2025.html#version-5b7be25be0304ad6-184">Add Enum VideoCaptureResult</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-5b7be25be0304ad6">All changes</a>
-			]]></content:encoded></item><item><title>v0.671.0.6710817</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-00bd8a8ce32d44f4</link><description>1 revisions to the API.</description><guid>version-00bd8a8ce32d44f4</guid><pubDate>Wed, 30 Apr 2025 10:28:45 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.671.0.6710817</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-00bd8a8ce32d44f4</link><description>1 revisions to the API.</description><guid>version-00bd8a8ce32d44f4</guid><pubDate>Wed, 30 Apr 2025 10:28:45 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-00bd8a8ce32d44f4-0">Add EnumItem StateObjectFieldType.INVALID</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-00bd8a8ce32d44f4">All changes</a>
-			]]></content:encoded></item><item><title>v0.671.0.6710816</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-cad4bb673ee04521</link><description>47 revisions to the API.</description><guid>version-cad4bb673ee04521</guid><pubDate>Tue, 29 Apr 2025 15:35:19 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.671.0.6710816</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-cad4bb673ee04521</link><description>47 revisions to the API.</description><guid>version-cad4bb673ee04521</guid><pubDate>Tue, 29 Apr 2025 15:35:19 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-cad4bb673ee04521-0">Change Property AnnotationsService.AnnotationsLoadingStatus</a></li>
 					<li><a href="/ref/updates/2025.html#version-cad4bb673ee04521-1">Change Property AnnotationsService.ResolvedLoadingStatus</a></li>
@@ -3657,7 +3699,7 @@
 					<li><a href="/ref/updates/2025.html#version-cad4bb673ee04521-46">Remove EnumItem StateObjectFieldType.INVALID</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-cad4bb673ee04521">All changes</a>
-			]]></content:encoded></item><item><title>v0.670.0.6700713</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-43bb2135852549ef</link><description>146 revisions to the API.</description><guid>version-43bb2135852549ef</guid><pubDate>Tue, 22 Apr 2025 11:38:45 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.670.0.6700713</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-43bb2135852549ef</link><description>146 revisions to the API.</description><guid>version-43bb2135852549ef</guid><pubDate>Tue, 22 Apr 2025 11:38:45 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-43bb2135852549ef-0">Add Property AnnotationsService.AnnotationsLoadingStatus</a></li>
 					<li><a href="/ref/updates/2025.html#version-43bb2135852549ef-1">Add Property AnnotationsService.ResolvedLoadingStatus</a></li>
@@ -3734,7 +3776,7 @@
 					<li><a href="/ref/updates/2025.html#version-43bb2135852549ef-144">Change EnumItem StateObjectFieldType.Vector3</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-43bb2135852549ef">All changes</a>
-			]]></content:encoded></item><item><title>v0.669.0.6690660</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-337aa961b0d54f6c</link><description>43 revisions to the API.</description><guid>version-337aa961b0d54f6c</guid><pubDate>Tue, 15 Apr 2025 10:06:10 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.669.0.6690660</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-337aa961b0d54f6c</link><description>43 revisions to the API.</description><guid>version-337aa961b0d54f6c</guid><pubDate>Tue, 15 Apr 2025 10:06:10 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-0">Change Event Annotation.RequestCompleted</a></li>
 					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-1">Add Property AnnotationsService.annotationsLoadingStatus</a></li>
@@ -3762,7 +3804,7 @@
 					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-37">Add Enum SystemThemeValue</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-337aa961b0d54f6c">All changes</a>
-			]]></content:encoded></item><item><title>v0.668.0.6680659</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-04a222f011414c81</link><description>54 revisions to the API.</description><guid>version-04a222f011414c81</guid><pubDate>Mon, 07 Apr 2025 13:40:52 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.668.0.6680659</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-04a222f011414c81</link><description>54 revisions to the API.</description><guid>version-04a222f011414c81</guid><pubDate>Mon, 07 Apr 2025 13:40:52 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-0">Change Class AssetImportSession</a></li>
 					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-1">Remove Function AssetImportSession.Cancel</a></li>
@@ -3808,7 +3850,7 @@
 					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-53">Remove EnumItem UICaptureMode.PlayerGui</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-04a222f011414c81">All changes</a>
-			]]></content:encoded></item><item><title>v0.667.0.6670665</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-163b500c1e564deb</link><description>91 revisions to the API.</description><guid>version-163b500c1e564deb</guid><pubDate>Tue, 01 Apr 2025 10:21:35 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.667.0.6670665</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-163b500c1e564deb</link><description>91 revisions to the API.</description><guid>version-163b500c1e564deb</guid><pubDate>Tue, 01 Apr 2025 10:21:35 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-163b500c1e564deb-0">Change Function AssetService.CreateAssetAsync</a></li>
 					<li><a href="/ref/updates/2025.html#version-163b500c1e564deb-1">Change Function AssetService.CreateAssetVersionAsync</a></li>
@@ -3901,7 +3943,7 @@
 					<li><a href="/ref/updates/2025.html#version-163b500c1e564deb-88">Add Enum VoiceChatDistanceAttenuationType</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-163b500c1e564deb">All changes</a>
-			]]></content:encoded></item><item><title>v0.666.1.6660608</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-361fa88592b64089</link><description>297 revisions to the API.</description><guid>version-361fa88592b64089</guid><pubDate>Tue, 25 Mar 2025 09:47:05 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.666.1.6660608</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-361fa88592b64089</link><description>297 revisions to the API.</description><guid>version-361fa88592b64089</guid><pubDate>Tue, 25 Mar 2025 09:47:05 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-361fa88592b64089-0">Remove Function AuroraService.GetDesyncedInstances</a></li>
 					<li><a href="/ref/updates/2025.html#version-361fa88592b64089-1">Add Function AuroraService.GetPredictedInstances</a></li>
@@ -4096,7 +4138,7 @@
 					<li><a href="/ref/updates/2025.html#version-361fa88592b64089-295">Change EnumItem KeyCode.World95</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-361fa88592b64089">All changes</a>
-			]]></content:encoded></item><item><title>v0.665.0.6650683</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-6d081ed7789c483f</link><description>59 revisions to the API.</description><guid>version-6d081ed7789c483f</guid><pubDate>Mon, 17 Mar 2025 12:11:21 -0700</pubDate><content:encoded><![CDATA[
+			]]></content:encoded></item><item><title>v0.665.0.6650683</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-6d081ed7789c483f</link><description>59 revisions to the API.</description><guid>version-6d081ed7789c483f</guid><pubDate>Mon, 17 Mar 2025 12:11:21 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-0">Add Function AnimationTrack.GetTargetInstance</a></li>
 					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-1">Add Function AnimationTrack.GetTargetNames</a></li>
@@ -4136,54 +4178,4 @@
 					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-54">Add Enum WebSocketState</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-6d081ed7789c483f">All changes</a>
-			]]></content:encoded></item><item><title>v0.664.0.6640711</title><link>https://robloxapi.github.io/ref/updates/2025.html#version-0bd9247ef08a496d</link><description>69 revisions to the API.</description><guid>version-0bd9247ef08a496d</guid><pubDate>Tue, 11 Mar 2025 10:16:36 -0700</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-0">Add Function AssetService.CanEditAssetAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-1">Add Class AudioTextToSpeech</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-22">Change Property BaseWrap.CageMeshContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-23">Add Function ConversationalAIAcceptanceService.SendMeshGenActivatedTelemetry</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-24">Add Function ConversationalAIAcceptanceService.SendMeshGenCompletedTelemetry</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-25">Change Function ConversationalAIAcceptanceService.SendMeshGenMeshInsertedTelemetry</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-26">Change Function ConversationalAIAcceptanceService.SendMeshGenPublishedAssetsTelemetry</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-27">Remove Function ConversationalAIAcceptanceService.SendMeshGenResultTelemetry</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-28">Change Property Decal.TextureContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-29">Change Property ImageButton.ImageContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-30">Change Property ImageLabel.ImageContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-31">Change Function Instance.IsPropertyModified</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-32">Change Function Instance.ResetPropertyToDefault</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-33">Add Class MatchmakingService</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-37">Change Property MeshPart.MeshContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-38">Change Property MeshPart.TextureContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-39">Change Function OrderedDataStore.GetSortedAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-40">Add Property Player.PartyId</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-41">Add Function Player.GetData</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-42">Remove Function PlayerData.GetRecord</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-43">Add Function PlayerData.GetRecordAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-44">Remove Function PlayerDataRecord.WaitForLoadAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-45">Add Property StarterGui.StudioDefaultStyleSheet</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-46">Add Function Stats.GetHarmonyQualityLevel</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-47">Change Function StudioAssetService.AutoSetupAvatarAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-48">Change Function StyleBase.InsertStyleRule</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-49">Change Function StyleRule.SetProperties</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-50">Add Function ThirdPartyUserService.GetVoiceChatRestrictionStatus</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-51">Add Function UGCValidationService.CalculateEditableMeshModifiedCageBoundingBox</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-52">Add Function UGCValidationService.CalculateEditableMeshNumModifiedCageUVsInSet</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-53">Remove Property VoiceChatService.UseRME</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-54">Add Function VoiceChatService.getInternalChannelId</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-55">Add Function VoiceChatService.getInternalGroupId</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-56">Add Function VoiceChatService.getInternalPublishPause</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-57">Add Function VoiceChatService.getInternalSessionId</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-58">Add Function VoiceChatService.getInternalSubscribePause</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-59">Add Function VoiceChatService.getInternalSubscribePauseAll</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-60">Add Function VoiceChatService.getInternalVoiceChatApiVersion</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-61">Add Function VoiceChatService.isInternalPublishPaused</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-62">Remove Event VoiceChatService.SubscriptionInitialClientDescriptor</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-63">Remove Event VoiceChatService.SubscriptionInitialClientDescriptorRequested</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-64">Remove Event VoiceChatService.TurnServerInfoAcked</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-65">Remove Event VoiceChatService.TurnServerInfoRequested</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-66">Change Property WrapLayer.ReferenceMeshContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-67">Add EnumItem AnnotationRequestResult.ErrorModerated</a></li>
-					<li><a href="/ref/updates/2025.html#version-0bd9247ef08a496d-68">Add EnumItem SecurityCapability.Players</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-0bd9247ef08a496d">All changes</a>
 			]]></content:encoded></item></channel></rss>
