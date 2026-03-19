@@ -59,13 +59,13 @@ jobs:
         cat meta/commit-roar >> "$GITHUB_OUTPUT"
         cat meta/commit-roar
 
-    - name: "Cache commit hash of roar"
-      id: "check-cache-roar"
-      uses: "actions/cache@v4"
-      with:
-        key: "commit-roar-${{ steps.check-fetch-roar.outputs.hash }}"
-        path: |
-          meta/commit-roar
+    # - name: "Cache commit hash of roar"
+    #   id: "check-cache-roar"
+    #   uses: "actions/cache@v4"
+    #   with:
+    #     key: "commit-roar-${{ steps.check-fetch-roar.outputs.hash }}"
+    #     path: |
+    #       meta/commit-roar
 
     # If either previous cache did not have a hit, then at least one of them is
     # fresh, so the following steps must run.
