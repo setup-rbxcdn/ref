@@ -3502,6 +3502,32 @@
 				},
 				{
 					"Class": "AnalyticsService",
+					"Member": "GetPlayerSegmentsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "GetPlayerSegmentsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
 					"Member": "LogCustomEvent",
 					"MemberType": "Function",
 					"Removed": false,
@@ -4985,6 +5011,19 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "AnimationClip",
+					"Member": "Length",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
 					}
 				},
 				{
@@ -14233,6 +14272,46 @@
 				},
 				{
 					"Class": "AssetService",
+					"Member": "CreateDataModelContentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateDataModelContentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateDataModelContentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AssetService",
 					"Member": "CreateEditableImage",
 					"MemberType": "Function",
 					"Removed": false,
@@ -21654,7 +21733,7 @@
 		},
 		"AuroraHandle": {
 			"Name": "AuroraHandle",
-			"Removed": false,
+			"Removed": true,
 			"HasRemoved": false,
 			"Subclasses": [],
 			"Superclasses": [
@@ -21666,7 +21745,7 @@
 					"Class": "AuroraHandle",
 					"Member": "Destroy",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -21679,7 +21758,7 @@
 					"Class": "AuroraHandle",
 					"Member": "ForEach",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -21692,26 +21771,13 @@
 					"Class": "AuroraHandle",
 					"Member": "ForEach",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
-					}
-				},
-				{
-					"Class": "AuroraScriptService",
-					"Member": "CreateCollection",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Class",
-						"Name": "AuroraHandle"
 					}
 				}
 			]
@@ -22388,8 +22454,8 @@
 					"Kind": "Type",
 					"Index": 0,
 					"Type": {
-						"Category": "Class",
-						"Name": "AuroraHandle"
+						"Category": "DataType",
+						"Name": "CollectionHandle"
 					}
 				},
 				{
@@ -23239,19 +23305,6 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "Rollback",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "AuroraService",
 					"Member": "RollbackEnabled",
 					"MemberType": "Property",
 					"Removed": true,
@@ -23443,6 +23496,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "Rollback",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -38718,6 +38784,19 @@
 				},
 				{
 					"Class": "CaptureService",
+					"Member": "GetScreenshotCaptureObject",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Capture"
+					}
+				},
+				{
+					"Class": "CaptureService",
 					"Member": "OnCaptureObjectShared",
 					"MemberType": "Function",
 					"Removed": false,
@@ -39130,6 +39209,32 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "GetScreenshotCaptureObject",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "GetScreenshotCaptureObject",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Capture"
 					}
 				},
 				{
@@ -67560,6 +67665,19 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetMinAndMaxMeshSizeAcrossAllFacs",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "GetSkinnedJointNamesFromEditableMesh",
 					"MemberType": "Function",
 					"Removed": false,
@@ -79967,6 +80085,97 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingDirection"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingStyle"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "TweenSize",
 					"MemberType": "Function",
 					"Removed": false,
@@ -80150,6 +80359,201 @@
 				{
 					"Class": "GuiObject",
 					"Member": "TweenSizeAndPosition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingDirection"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingStyle"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingDirection"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingStyle"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -129769,6 +130173,7 @@
 				"ExecutedRemoteCommand",
 				"Instance",
 				"MLSession",
+				"OutputLink",
 				"TerrainIterateOperation",
 				"TerrainModifyOperation",
 				"TerrainReadOperation",
@@ -130543,6 +130948,70 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "OutfitPages"
+					}
+				}
+			]
+		},
+		"OutputLink": {
+			"Name": "OutputLink",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "OutputLink",
+					"Member": "Print",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MessageType"
+					}
+				},
+				{
+					"Class": "OutputLink",
+					"Member": "Print",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "OutputLink",
+					"Member": "Print",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "OutputLink",
+					"Member": "Print",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				}
 			]
@@ -136517,6 +136986,19 @@
 				},
 				{
 					"Class": "AnalyticsService",
+					"Member": "GetPlayerSegmentsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
 					"Member": "LogCustomEvent",
 					"MemberType": "Function",
 					"Removed": false,
@@ -138886,6 +139368,19 @@
 					"Member": "LoadCharacterWithHumanoidDescription",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetTypeVerification"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithHumanoidDescription",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -138905,6 +139400,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "HumanoidDescription"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithHumanoidDescriptionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetTypeVerification"
 					}
 				},
 				{
@@ -147750,6 +148258,19 @@
 						"Category": "Primitive",
 						"Name": "string"
 					}
+				},
+				{
+					"Class": "PluginAction",
+					"Member": "Visible",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
 				}
 			]
 		},
@@ -148492,6 +149013,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "PluginMenu",
+					"Member": "Visible",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -156820,6 +157354,19 @@
 				},
 				{
 					"Class": "RootImportData",
+					"Member": "ScaleFactor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "RootImportData",
 					"Member": "ScaleUnit",
 					"MemberType": "Property",
 					"Removed": false,
@@ -157998,6 +158545,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "Rollback",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
 					}
 				},
 				{
@@ -193207,6 +193767,19 @@
 				},
 				{
 					"Class": "TextChatMessage",
+					"Member": "IsHiddenMessage",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
 					"Member": "MessageId",
 					"MemberType": "Property",
 					"Removed": false,
@@ -201003,6 +201576,32 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetMinAndMaxMeshSizeAcrossAllFacs",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetMinAndMaxMeshSizeAcrossAllFacs",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "GetPropertyValue",
 					"MemberType": "Function",
 					"Removed": false,
@@ -204574,7 +205173,59 @@
 			"Related": [
 				{
 					"Class": "UICorner",
+					"Member": "BottomLeftRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
+					"Member": "BottomRightRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
 					"Member": "CornerRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
+					"Member": "TopLeftRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
+					"Member": "TopRightRadius",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -212809,6 +213460,45 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "VideoFrame",
+					"Member": "RollOffMaxDistance",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "VideoFrame",
+					"Member": "RollOffMinDistance",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "VideoFrame",
+					"Member": "RollOffMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RollOffMode"
 					}
 				},
 				{
@@ -226642,6 +227332,27 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetPlayerSegmentsAsync": {
+				"Class": "AnalyticsService",
+				"Name": "GetPlayerSegmentsAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AnalyticsService",
+						"Member": "GetPlayerSegmentsAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
 			"GetSessionId": {
 				"Class": "AnalyticsService",
 				"Name": "GetSessionId",
@@ -226968,6 +227679,12 @@
 			"GuidBinaryString": {
 				"Class": "AnimationClip",
 				"Name": "GuidBinaryString",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Length": {
+				"Class": "AnimationClip",
+				"Name": "Length",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -231153,6 +231870,12 @@
 					}
 				]
 			},
+			"CreateDataModelContentAsync": {
+				"Class": "AssetService",
+				"Name": "CreateDataModelContentAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"CreateDynamicImageAsync": {
 				"Class": "AssetService",
 				"Name": "CreateDynamicImageAsync",
@@ -234683,13 +235406,13 @@
 				"Class": "AuroraHandle",
 				"Name": "Destroy",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"ForEach": {
 				"Class": "AuroraHandle",
 				"Name": "ForEach",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"AuroraScript": {
@@ -235002,19 +235725,6 @@
 						"Type": {
 							"Category": "Class",
 							"Name": "Instance"
-						}
-					},
-					{
-						"Class": "AuroraScriptService",
-						"Member": "CreateCollection",
-						"MemberType": "Function",
-						"Removed": false,
-						"Field": "ReturnType",
-						"Kind": "Type",
-						"Index": 0,
-						"Type": {
-							"Category": "Class",
-							"Name": "AuroraHandle"
 						}
 					}
 				]
@@ -235465,7 +236175,7 @@
 				"Class": "AuroraService",
 				"Name": "Rollback",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": true
 			},
 			"RollbackEnabled": {
 				"Class": "AuroraService",
@@ -243220,6 +243930,27 @@
 				"Name": "GetDeviceInfo",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"GetScreenshotCaptureObject": {
+				"Class": "CaptureService",
+				"Name": "GetScreenshotCaptureObject",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "CaptureService",
+						"Member": "GetScreenshotCaptureObject",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Capture"
+						}
+					}
+				]
 			},
 			"InternalCheckPlayabilityAsync": {
 				"Class": "CaptureService",
@@ -259900,6 +260631,40 @@
 					}
 				]
 			},
+			"TweenPositionInternal": {
+				"Class": "GuiObject",
+				"Name": "TweenPositionInternal",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "GuiObject",
+						"Member": "TweenPositionInternal",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "EasingDirection"
+						}
+					},
+					{
+						"Class": "GuiObject",
+						"Member": "TweenPositionInternal",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 2,
+						"Type": {
+							"Category": "Enum",
+							"Name": "EasingStyle"
+						}
+					}
+				]
+			},
 			"TweenSize": {
 				"Class": "GuiObject",
 				"Name": "TweenSize",
@@ -259961,6 +260726,74 @@
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 3,
+						"Type": {
+							"Category": "Enum",
+							"Name": "EasingStyle"
+						}
+					}
+				]
+			},
+			"TweenSizeAndPositionInternal": {
+				"Class": "GuiObject",
+				"Name": "TweenSizeAndPositionInternal",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "GuiObject",
+						"Member": "TweenSizeAndPositionInternal",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 2,
+						"Type": {
+							"Category": "Enum",
+							"Name": "EasingDirection"
+						}
+					},
+					{
+						"Class": "GuiObject",
+						"Member": "TweenSizeAndPositionInternal",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 3,
+						"Type": {
+							"Category": "Enum",
+							"Name": "EasingStyle"
+						}
+					}
+				]
+			},
+			"TweenSizeInternal": {
+				"Class": "GuiObject",
+				"Name": "TweenSizeInternal",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "GuiObject",
+						"Member": "TweenSizeInternal",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "EasingDirection"
+						}
+					},
+					{
+						"Class": "GuiObject",
+						"Member": "TweenSizeInternal",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 2,
 						"Type": {
 							"Category": "Enum",
 							"Name": "EasingStyle"
@@ -279432,6 +280265,29 @@
 				]
 			}
 		},
+		"OutputLink": {
+			"Print": {
+				"Class": "OutputLink",
+				"Name": "Print",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "OutputLink",
+						"Member": "Print",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "MessageType"
+						}
+					}
+				]
+			}
+		},
 		"PVAdornment": {
 			"Adornee": {
 				"Class": "PVAdornment",
@@ -283010,6 +283866,19 @@
 							"Category": "Class",
 							"Name": "HumanoidDescription"
 						}
+					},
+					{
+						"Class": "Player",
+						"Member": "LoadCharacterWithHumanoidDescription",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AssetTypeVerification"
+						}
 					}
 				]
 			},
@@ -283030,6 +283899,19 @@
 						"Type": {
 							"Category": "Class",
 							"Name": "HumanoidDescription"
+						}
+					},
+					{
+						"Class": "Player",
+						"Member": "LoadCharacterWithHumanoidDescriptionAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AssetTypeVerification"
 						}
 					}
 				]
@@ -287057,6 +287939,12 @@
 				"Name": "Triggered",
 				"MemberType": "Event",
 				"Removed": false
+			},
+			"Visible": {
+				"Class": "PluginAction",
+				"Name": "Visible",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"PluginCapabilities": {
@@ -287480,6 +288368,12 @@
 			"Title": {
 				"Class": "PluginMenu",
 				"Name": "Title",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Visible": {
+				"Class": "PluginMenu",
+				"Name": "Visible",
 				"MemberType": "Property",
 				"Removed": false
 			}
@@ -291166,6 +292060,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"ScaleFactor": {
+				"Class": "RootImportData",
+				"Name": "ScaleFactor",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ScaleUnit": {
 				"Class": "RootImportData",
 				"Name": "ScaleUnit",
@@ -291610,6 +292510,12 @@
 				"Name": "RobloxOnlyIsEdit",
 				"MemberType": "Function",
 				"Removed": true
+			},
+			"Rollback": {
+				"Class": "RunService",
+				"Name": "Rollback",
+				"MemberType": "Event",
+				"Removed": false
 			},
 			"Run": {
 				"Class": "RunService",
@@ -307598,6 +308504,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"IsHiddenMessage": {
+				"Class": "TextChatMessage",
+				"Name": "IsHiddenMessage",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"MessageId": {
 				"Class": "TextChatMessage",
 				"Name": "MessageId",
@@ -311283,6 +312195,27 @@
 				"MemberType": "Function",
 				"Removed": true
 			},
+			"GetMinAndMaxMeshSizeAcrossAllFacs": {
+				"Class": "UGCValidationService",
+				"Name": "GetMinAndMaxMeshSizeAcrossAllFacs",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetMinAndMaxMeshSizeAcrossAllFacs",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableMesh"
+						}
+					}
+				]
+			},
 			"GetPropertyValue": {
 				"Class": "UGCValidationService",
 				"Name": "GetPropertyValue",
@@ -312401,9 +313334,33 @@
 			}
 		},
 		"UICorner": {
+			"BottomLeftRadius": {
+				"Class": "UICorner",
+				"Name": "BottomLeftRadius",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"BottomRightRadius": {
+				"Class": "UICorner",
+				"Name": "BottomRightRadius",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"CornerRadius": {
 				"Class": "UICorner",
 				"Name": "CornerRadius",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"TopLeftRadius": {
+				"Class": "UICorner",
+				"Name": "TopLeftRadius",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"TopRightRadius": {
+				"Class": "UICorner",
+				"Name": "TopRightRadius",
 				"MemberType": "Property",
 				"Removed": false
 			}
@@ -317290,6 +318247,39 @@
 				"Name": "Resolution",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"RollOffMaxDistance": {
+				"Class": "VideoFrame",
+				"Name": "RollOffMaxDistance",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RollOffMinDistance": {
+				"Class": "VideoFrame",
+				"Name": "RollOffMinDistance",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RollOffMode": {
+				"Class": "VideoFrame",
+				"Name": "RollOffMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "VideoFrame",
+						"Member": "RollOffMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RollOffMode"
+						}
+					}
+				]
 			},
 			"SetStudioPreview": {
 				"Class": "VideoFrame",
@@ -322353,6 +323343,26 @@
 				"Win"
 			]
 		},
+		"ActivePayerStatus": {
+			"Name": "ActivePayerStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"Unknown",
+				"Never",
+				"Lapsed",
+				"Casual50Percent",
+				"Intermediate35Percent",
+				"Top15Percent"
+			],
+			"ItemsByIndex": [
+				"Unknown",
+				"Never",
+				"Lapsed",
+				"Casual50Percent",
+				"Intermediate35Percent",
+				"Top15Percent"
+			]
+		},
 		"ActuatorRelativeTo": {
 			"Name": "ActuatorRelativeTo",
 			"Removed": false,
@@ -323307,6 +324317,18 @@
 				"Trigger"
 			]
 		},
+		"AnimationNodePhaseSync": {
+			"Name": "AnimationNodePhaseSync",
+			"Removed": false,
+			"ItemsByValue": [
+				"Synced",
+				"Unsynced"
+			],
+			"ItemsByIndex": [
+				"Synced",
+				"Unsynced"
+			]
+		},
 		"AnimationNodePlayMode": {
 			"Name": "AnimationNodePlayMode",
 			"Removed": false,
@@ -323344,6 +324366,7 @@
 				"InvalidNode",
 				"AddNode",
 				"BlendNode",
+				"OverNode",
 				"Blend1DNode",
 				"Blend2DNode",
 				"ClipNode",
@@ -323360,6 +324383,7 @@
 				"InvalidNode",
 				"AddNode",
 				"BlendNode",
+				"OverNode",
 				"Blend1DNode",
 				"Blend2DNode",
 				"ClipNode",
@@ -324594,6 +325618,32 @@
 				{
 					"Class": "Humanoid",
 					"Member": "ApplyDescriptionResetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetTypeVerification"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithHumanoidDescription",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetTypeVerification"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithHumanoidDescriptionAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -328936,6 +329986,24 @@
 				"Unknown"
 			]
 		},
+		"CreateContentResult": {
+			"Name": "CreateContentResult",
+			"Removed": false,
+			"ItemsByValue": [
+				"Success",
+				"PermissionDenied",
+				"UploadFailed",
+				"Unknown",
+				"StorageLimitExceeded"
+			],
+			"ItemsByIndex": [
+				"Success",
+				"PermissionDenied",
+				"UploadFailed",
+				"Unknown",
+				"StorageLimitExceeded"
+			]
+		},
 		"CreateOutfitFailure": {
 			"Name": "CreateOutfitFailure",
 			"Removed": false,
@@ -330557,6 +331625,19 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingDirection"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "TweenSize",
 					"MemberType": "Function",
 					"Removed": false,
@@ -330576,6 +331657,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingDirection"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingDirection"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Enum",
 						"Name": "EasingDirection"
@@ -330654,6 +331761,19 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingStyle"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "TweenSize",
 					"MemberType": "Function",
 					"Removed": false,
@@ -330673,6 +331793,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingStyle"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Enum",
+						"Name": "EasingStyle"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Enum",
 						"Name": "EasingStyle"
@@ -337843,6 +338989,19 @@
 					}
 				},
 				{
+					"Class": "OutputLink",
+					"Member": "Print",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MessageType"
+					}
+				},
+				{
 					"Class": "Players",
 					"Member": "TeamCreateServerMessage",
 					"MemberType": "Event",
@@ -340146,6 +341305,20 @@
 				}
 			]
 		},
+		"PlayerPlatformSpenderStatus": {
+			"Name": "PlayerPlatformSpenderStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"Unknown",
+				"Active",
+				"OtherPayer"
+			],
+			"ItemsByIndex": [
+				"Unknown",
+				"Active",
+				"OtherPayer"
+			]
+		},
 		"PortalType": {
 			"Name": "PortalType",
 			"Removed": true,
@@ -342361,6 +343534,19 @@
 			"Related": [
 				{
 					"Class": "Sound",
+					"Member": "RollOffMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RollOffMode"
+					}
+				},
+				{
+					"Class": "VideoFrame",
 					"Member": "RollOffMode",
 					"MemberType": "Property",
 					"Removed": false,
@@ -349935,6 +351121,26 @@
 				}
 			]
 		},
+		"WhenUserFirstPlayed": {
+			"Name": "WhenUserFirstPlayed",
+			"Removed": false,
+			"ItemsByValue": [
+				"Unknown",
+				"Days0To30",
+				"Days31To90",
+				"Days91To180",
+				"Days181To365",
+				"Days366Plus"
+			],
+			"ItemsByIndex": [
+				"Unknown",
+				"Days0To30",
+				"Days31To90",
+				"Days91To180",
+				"Days181To365",
+				"Days366Plus"
+			]
+		},
 		"WhisperChatPrivacyMode": {
 			"Name": "WhisperChatPrivacyMode",
 			"Removed": false,
@@ -350355,6 +351561,38 @@
 			"Win": {
 				"Enum": "ActionType",
 				"Name": "Win",
+				"Removed": false
+			}
+		},
+		"ActivePayerStatus": {
+			"Casual50Percent": {
+				"Enum": "ActivePayerStatus",
+				"Name": "Casual50Percent",
+				"Removed": false
+			},
+			"Intermediate35Percent": {
+				"Enum": "ActivePayerStatus",
+				"Name": "Intermediate35Percent",
+				"Removed": false
+			},
+			"Lapsed": {
+				"Enum": "ActivePayerStatus",
+				"Name": "Lapsed",
+				"Removed": false
+			},
+			"Never": {
+				"Enum": "ActivePayerStatus",
+				"Name": "Never",
+				"Removed": false
+			},
+			"Top15Percent": {
+				"Enum": "ActivePayerStatus",
+				"Name": "Top15Percent",
+				"Removed": false
+			},
+			"Unknown": {
+				"Enum": "ActivePayerStatus",
+				"Name": "Unknown",
 				"Removed": false
 			}
 		},
@@ -350987,6 +352225,18 @@
 				"Removed": false
 			}
 		},
+		"AnimationNodePhaseSync": {
+			"Synced": {
+				"Enum": "AnimationNodePhaseSync",
+				"Name": "Synced",
+				"Removed": false
+			},
+			"Unsynced": {
+				"Enum": "AnimationNodePhaseSync",
+				"Name": "Unsynced",
+				"Removed": false
+			}
+		},
 		"AnimationNodePlayMode": {
 			"Loop": {
 				"Enum": "AnimationNodePlayMode",
@@ -351045,7 +352295,7 @@
 			"BlendNode": {
 				"Enum": "AnimationNodeType",
 				"Name": "BlendNode",
-				"Removed": false
+				"Removed": true
 			},
 			"ClipNode": {
 				"Enum": "AnimationNodeType",
@@ -351065,6 +352315,11 @@
 			"MaskNode": {
 				"Enum": "AnimationNodeType",
 				"Name": "MaskNode",
+				"Removed": false
+			},
+			"OverNode": {
+				"Enum": "AnimationNodeType",
+				"Name": "OverNode",
 				"Removed": false
 			},
 			"PrioritySelectNode": {
@@ -354927,6 +356182,33 @@
 			},
 			"UploadFailed": {
 				"Enum": "CreateAssetResult",
+				"Name": "UploadFailed",
+				"Removed": false
+			}
+		},
+		"CreateContentResult": {
+			"PermissionDenied": {
+				"Enum": "CreateContentResult",
+				"Name": "PermissionDenied",
+				"Removed": false
+			},
+			"StorageLimitExceeded": {
+				"Enum": "CreateContentResult",
+				"Name": "StorageLimitExceeded",
+				"Removed": false
+			},
+			"Success": {
+				"Enum": "CreateContentResult",
+				"Name": "Success",
+				"Removed": false
+			},
+			"Unknown": {
+				"Enum": "CreateContentResult",
+				"Name": "Unknown",
+				"Removed": false
+			},
+			"UploadFailed": {
+				"Enum": "CreateContentResult",
 				"Name": "UploadFailed",
 				"Removed": false
 			}
@@ -363070,6 +364352,23 @@
 				"Removed": false
 			}
 		},
+		"PlayerPlatformSpenderStatus": {
+			"Active": {
+				"Enum": "PlayerPlatformSpenderStatus",
+				"Name": "Active",
+				"Removed": false
+			},
+			"OtherPayer": {
+				"Enum": "PlayerPlatformSpenderStatus",
+				"Name": "OtherPayer",
+				"Removed": false
+			},
+			"Unknown": {
+				"Enum": "PlayerPlatformSpenderStatus",
+				"Name": "Unknown",
+				"Removed": false
+			}
+		},
 		"PortalType": {
 			"Forward": {
 				"Enum": "PortalType",
@@ -370023,6 +371322,38 @@
 				"Removed": false
 			}
 		},
+		"WhenUserFirstPlayed": {
+			"Days0To30": {
+				"Enum": "WhenUserFirstPlayed",
+				"Name": "Days0To30",
+				"Removed": false
+			},
+			"Days181To365": {
+				"Enum": "WhenUserFirstPlayed",
+				"Name": "Days181To365",
+				"Removed": false
+			},
+			"Days31To90": {
+				"Enum": "WhenUserFirstPlayed",
+				"Name": "Days31To90",
+				"Removed": false
+			},
+			"Days366Plus": {
+				"Enum": "WhenUserFirstPlayed",
+				"Name": "Days366Plus",
+				"Removed": false
+			},
+			"Days91To180": {
+				"Enum": "WhenUserFirstPlayed",
+				"Name": "Days91To180",
+				"Removed": false
+			},
+			"Unknown": {
+				"Enum": "WhenUserFirstPlayed",
+				"Name": "Unknown",
+				"Removed": false
+			}
+		},
 		"WhisperChatPrivacyMode": {
 			"AllUsers": {
 				"Enum": "WhisperChatPrivacyMode",
@@ -374684,6 +376015,19 @@
 				{
 					"Class": "UGCValidationService",
 					"Member": "GetMeshVerts",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetMinAndMaxMeshSizeAcrossAllFacs",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -380583,6 +381927,26 @@
 				}
 			]
 		},
+		"CollectionHandle": {
+			"Category": "DataType",
+			"Name": "CollectionHandle",
+			"Removed": false,
+			"Related": [
+				{
+					"Class": "AuroraScriptService",
+					"Member": "CreateCollection",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CollectionHandle"
+					}
+				}
+			]
+		},
 		"Color3": {
 			"Category": "DataType",
 			"Name": "Color3",
@@ -382823,6 +384187,19 @@
 				{
 					"Class": "AssetService",
 					"Member": "CanEditAssetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateDataModelContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -385803,6 +387180,19 @@
 				},
 				{
 					"Class": "AnalyticsService",
+					"Member": "GetPlayerSegmentsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
 					"Member": "LogCustomEvent",
 					"MemberType": "Function",
 					"Removed": false,
@@ -386150,6 +387540,20 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateDataModelContentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
 					}
 				},
 				{
@@ -391634,19 +393038,6 @@
 					}
 				},
 				{
-					"Class": "AuroraHandle",
-					"Member": "ForEach",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Function"
-					}
-				},
-				{
 					"Class": "AvatarCreationService",
 					"Member": "AutoSetupAvatarAsync",
 					"MemberType": "Function",
@@ -392223,6 +393614,19 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "TweenSize",
 					"MemberType": "Function",
 					"Removed": false,
@@ -392242,6 +393646,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 6,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Function"
@@ -392798,6 +394228,19 @@
 				{
 					"Class": "AssetService",
 					"Member": "RegisterUGCValidationFunction",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "AuroraHandle",
+					"Member": "ForEach",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "Parameters",
@@ -399467,6 +400910,19 @@
 				},
 				{
 					"Class": "AssetService",
+					"Member": "CreateDataModelContentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AssetService",
 					"Member": "PromptCreateAssetAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -402081,7 +403537,59 @@
 			"Related": [
 				{
 					"Class": "UICorner",
+					"Member": "BottomLeftRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
+					"Member": "BottomRightRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
 					"Member": "CornerRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
+					"Member": "TopLeftRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim"
+					}
+				},
+				{
+					"Class": "UICorner",
+					"Member": "TopRightRadius",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -402296,6 +403804,19 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "TweenSize",
 					"MemberType": "Function",
 					"Removed": false,
@@ -402328,6 +403849,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "UDim2"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "DataType",
 						"Name": "UDim2"
@@ -419375,6 +420935,32 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "TweenSize",
 					"MemberType": "Function",
 					"Removed": false,
@@ -419415,6 +421001,58 @@
 				{
 					"Class": "GuiObject",
 					"Member": "TweenSizeAndPosition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -424691,6 +426329,19 @@
 					}
 				},
 				{
+					"Class": "PluginAction",
+					"Member": "Visible",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "PluginGui",
 					"Member": "InputBegan",
 					"MemberType": "Event",
@@ -424750,6 +426401,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PluginMenu",
+					"Member": "Visible",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -429347,6 +431011,19 @@
 				{
 					"Class": "TextChatMessage",
 					"Member": "ForModeration",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
+					"Member": "IsHiddenMessage",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -439390,6 +441067,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "Rollback",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "Stepped",
 					"MemberType": "Event",
 					"Removed": false,
@@ -440477,6 +442167,19 @@
 				{
 					"Class": "AngularVelocity",
 					"Member": "MaxTorque",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationClip",
+					"Member": "Length",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -445990,6 +447693,19 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "TweenPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "TweenSize",
 					"MemberType": "Function",
 					"Removed": false,
@@ -446009,6 +447725,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeAndPositionInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "TweenSizeInternal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -448825,6 +450567,19 @@
 				{
 					"Class": "RootImportData",
 					"Member": "PolygonCount",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "RootImportData",
+					"Member": "ScaleFactor",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -452245,6 +454000,32 @@
 				},
 				{
 					"Class": "VideoFrame",
+					"Member": "RollOffMaxDistance",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "VideoFrame",
+					"Member": "RollOffMinDistance",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "VideoFrame",
 					"Member": "Volume",
 					"MemberType": "Property",
 					"Removed": false,
@@ -455087,19 +456868,6 @@
 				{
 					"Class": "AuroraService",
 					"Member": "Misprediction",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "AuroraService",
-					"Member": "Rollback",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -463452,6 +465220,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "Rollback",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -477233,32 +479014,6 @@
 					}
 				},
 				{
-					"Class": "AuroraHandle",
-					"Member": "Destroy",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "AuroraHandle",
-					"Member": "ForEach",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
 					"Class": "AuroraScript",
 					"Member": "AddTo",
 					"MemberType": "Function",
@@ -484385,6 +486140,19 @@
 				{
 					"Class": "OpenCloudService",
 					"Member": "RegistrationComplete",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "OutputLink",
+					"Member": "Print",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -491585,6 +493353,32 @@
 					}
 				},
 				{
+					"Class": "AuroraHandle",
+					"Member": "Destroy",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AuroraHandle",
+					"Member": "ForEach",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "AuroraScriptService",
 					"Member": "SetProperty",
 					"MemberType": "Function",
@@ -496846,6 +498640,19 @@
 				{
 					"Class": "CaptureService",
 					"Member": "GetCaptureUploadDataAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "GetScreenshotCaptureObject",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -506626,6 +508433,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "OutputLink",
+					"Member": "Print",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "OutputLink",
+					"Member": "Print",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
