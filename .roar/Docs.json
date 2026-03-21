@@ -4227,8 +4227,8 @@
 				"Description": "<p>Returns a sampling of the waveform data for the loaded\n<a href=\"/ref/class/AudioPlayer.html#member-Asset\">Asset</a>. This can be used to check the volume of\nan asset over the course of its duration without playing it.</p>\n"
 			},
 			"IsPlaying": {
-				"Summary": "<p>Denotes whether this <a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a> is currently playing.</p>\n",
-				"Description": "<p>Denotes whether this <a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a> is currently playing. This\nproperty is read-only, but replicates. To play and stop an\n<a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a> at runtime, use the <a href=\"/ref/class/AudioPlayer.html#member-Play\">Play()</a>\nand <a href=\"/ref/class/AudioPlayer.html#member-Stop\">Stop()</a> methods.</p>\n"
+				"Summary": "<p>Denotes whether this <a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a> is currently playing or planning\nto play.</p>\n",
+				"Description": "<p>Denotes whether this <a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a> is currently playing or planning\nto play. This property is read-only, but replicates. To play and stop an\n<a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a> at runtime, use the <a href=\"/ref/class/AudioPlayer.html#member-Play\">Play()</a>\nand <a href=\"/ref/class/AudioPlayer.html#member-Stop\">Stop()</a> methods.</p>\n"
 			},
 			"IsReady": {
 				"Summary": "<p>Denotes whether this <a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a> is loaded, buffered, and ready to\nplay.</p>\n",
