@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.713.0.7130910</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-913142fd943640d2</link><description>61 revisions to the API.</description><guid>version-913142fd943640d2</guid><pubDate>Tue, 17 Mar 2026 09:15:12 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.714.0.7141083</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-814d0e01992943e0</link><description>104 revisions to the API.</description><guid>version-814d0e01992943e0</guid><pubDate>Mon, 23 Mar 2026 18:34:22 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-0">Add Property AnimationRigData.Generic</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-1">Add Function AnimationTrack.UpdateGraphNodeProperty</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-2">Add Function AudioPlayer.Cancel</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-3">Change Function AudioPlayer.Play</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-5">Change Function AudioPlayer.Stop</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-7">Add Function AuroraScriptService.GetAllCollections</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-8">Add Property AuroraService.EnableInputLatencyMaxResimFrames</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-9">Add Property AuroraService.InputLatencyMaxResimFrames</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-10">Remove Function AuroraService.SetIncomingReplicationLag</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-11">Add Function AuroraService.SetReplicationLag</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-12">Remove Event AuroraService.Misprediction</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-13">Add Property AvatarAbilityRules.CharacterControllerMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-14">Remove Property AvatarAbilityRules.EnableCrouching</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-15">Add Property AvatarAbilityRules.EnableFallingDown</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-16">Add Property AvatarAbilityRules.EnableGettingUp</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-17">Remove Property AvatarAbilityRules.EnableSprinting</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-18">Remove Property AvatarAbilityRules.EnableStrafing</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-19">Remove Property AvatarAbilityRules.EnableStumbling</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-20">Add Function AvatarCreationService.CreateCageMeshPartsWithScaleForExportAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-21">Add Property ContextActionService.NetcodeInputLatency</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-22">Add Function ContextActionService.GetInputSchemaKeyCodeTree</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-23">Add Property ControllerPartSensor.SensedMaterial</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-24">Remove Class ConversationalAIAcceptanceService</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-25">Add Class DeferredAssetManagerService</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-28">Add Function ExperienceService.GetPlaceJoinState</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-29">Add Event ExperienceService.PlaceJoinStateChanged</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-30">Add Class ImageScreenCaptureService</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-31">Add Class InternalMessagingService</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-32">Add Function MarketplaceService.ClearProductInfoCaches</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-33">Add Function MarketplaceService.PromptRobloxSubscriptionPurchase</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-34">Add Function MarketplaceService.SignalMockPurchaseRobloxSubscription</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-35">Add Event MarketplaceService.ConfirmPlayerHasRobloxSubscription</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-36">Add Event MarketplaceService.MockPurchaseRobloxSubscription</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-37">Add Event MarketplaceService.PromptRobloxSubscriptionPurchaseFinished</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-38">Add Event MarketplaceService.PromptRobloxSubscriptionPurchaseRequested</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-39">Change Property NetworkSettings.InboundNetworkLossPercent</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-41">Change Property NetworkSettings.InboundNetworkMaxDelayMs</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-43">Change Property NetworkSettings.InboundNetworkMinDelayMs</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-45">Change Property NetworkSettings.NetworkEmulationEnabled</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-47">Change Property NetworkSettings.OutboundNetworkLossPercent</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-49">Change Property NetworkSettings.OutboundNetworkMaxDelayMs</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-51">Change Property NetworkSettings.OutboundNetworkMinDelayMs</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-53">Add Property Player.InputLatency</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-54">Change Function RunService.BindToSimulation</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-55">Change Event RunService.Misprediction</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-56">Add Property SlimAnimationDataEntity.SlimInstanceHashes</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-57">Add Function SoundService.GetMixerTime</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-58">Change Function StudioAssetService.PromptSaveInstanceToRobloxAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-59">Change Event StudioAssetService.OnPromptSaveInstanceToRobloxAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-60">Add Class StudioCaptureService</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-64">Add Class StudioScreenshotCapture</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-74">Change Property Terrain.VoxelGridAssetContentMap</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-76">Change Property Workspace.SandboxedInstanceMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-77">Change EnumItem AnimationNodeInterruptible.Finished</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-78">Change EnumItem AnimationNodeInterruptible.Trigger</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-79">Change EnumItem AnimationNodeType.OverNode</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-80">Change EnumItem AnimationNodeWaitFor.Finished</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-81">Change EnumItem AnimationNodeWaitFor.Trigger</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-82">Add Enum AvatarSettingsCharacterControllerMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-85">Change EnumItem CreateContentResult.StorageLimitExceeded</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-87">Change EnumItem CreateContentResult.Unknown</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-89">Add EnumItem DeviceType.TV</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-90">Add Enum PrefetchDownloadStatus</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-95">Add EnumItem SolidPrimitiveType.RoundedBox</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-96">Add Enum StudioCaptureBufferStatus</a></li>
+					<li><a href="/ref/updates/2026.html#version-814d0e01992943e0-101">Add Enum StudioCaptureScreenshotFormat</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-814d0e01992943e0">All changes</a>
+			]]></content:encoded></item><item><title>v0.713.0.7130910</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-913142fd943640d2</link><description>61 revisions to the API.</description><guid>version-913142fd943640d2</guid><pubDate>Tue, 17 Mar 2026 09:15:12 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-0">Add Function AnalyticsService.GetPlayerSegmentsAsync</a></li>
 					<li><a href="/ref/updates/2026.html#version-913142fd943640d2-1">Add Property AnimationClip.Length</a></li>
@@ -4138,44 +4208,4 @@
 					<li><a href="/ref/updates/2025.html#version-361fa88592b64089-295">Change EnumItem KeyCode.World95</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-361fa88592b64089">All changes</a>
-			]]></content:encoded></item><item><title>v0.665.0.6650683</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-6d081ed7789c483f</link><description>59 revisions to the API.</description><guid>version-6d081ed7789c483f</guid><pubDate>Mon, 17 Mar 2025 12:11:21 -0700</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-0">Add Function AnimationTrack.GetTargetInstance</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-1">Add Function AnimationTrack.GetTargetNames</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-2">Add Function AnimationTrack.SetTargetInstance</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-3">Add Function AnnotationsService.DEPRECATED_LoadAnnotationReplies</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-4">Change Function AnnotationsService.LoadAnnotationReplies</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-5">Add Event AnnotationsService.DEPRECATED_ServerLoadAnnotationReplies</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-6">Change Event AnnotationsService.ServerLoadAnnotationReplies</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-7">Change Class AudioTextToSpeech</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-8">Remove Property AuroraScriptService.LocalFrameId</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-9">Remove Property AuroraScriptService.RemoteFrameId</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-10">Add Function AuroraScriptService.GetLocalFrameId</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-11">Remove Property AuroraService.RollbackEnabled</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-12">Remove Function AuroraService.NetDesync</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-13">Remove Function AuroraService.NetSync</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-14">Add Event FeatureRestrictionManager.UpdateExperienceChatTimeout</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-15">Add Property GuiButton.HoverHapticEffect</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-16">Add Property GuiButton.PressHapticEffect</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-17">Change Class HapticEffect</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-18">Add Property InputBinding.PressedThreshold</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-19">Add Property InputBinding.ReleasedThreshold</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-20">Add Property InputBinding.Scale</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-21">Remove Function PlayerDataRecord.Release</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-22">Add Function PlayerDataRecord.ReleaseAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-23">Add Property ScrollingFrame.ScrollRate</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-24">Add Property ScrollingFrame.SmoothScroll</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-25">Add Function SocialService.GetPlayersByPartyId</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-26">Add Event SocialService.PlayerPartyDataChanged</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-27">Add Class WebSocketClient</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-34">Add Class WebSocketService</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-36">Add EnumItem AlphaMode.TintMask</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-37">Remove Enum CaptureUIHideMode</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-38">Change EnumItem PlayerDataErrorState.None</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-40">Add EnumItem PlayerDataErrorState.ReleaseFailed</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-41">Add Enum StateObjectFieldType</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-50">Add Enum UICaptureMode</a></li>
-					<li><a href="/ref/updates/2025.html#version-6d081ed7789c483f-54">Add Enum WebSocketState</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-6d081ed7789c483f">All changes</a>
 			]]></content:encoded></item></channel></rss>

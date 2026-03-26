@@ -6077,6 +6077,19 @@
 			"Related": [
 				{
 					"Class": "AnimationRigData",
+					"Member": "Generic",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "AnimationRigData",
 					"Member": "label",
 					"MemberType": "Property",
 					"Removed": false,
@@ -7204,6 +7217,71 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -20210,6 +20288,33 @@
 				},
 				{
 					"Class": "AudioPlayer",
+					"Member": "Cancel",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "Cancel",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioPlayer",
 					"Member": "GetConnectedWires",
 					"MemberType": "Function",
 					"Removed": false,
@@ -20304,12 +20409,41 @@
 					"Member": "Play",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "Play",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
-						"Name": "null"
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "Stop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double",
+						"Optional": true
 					}
 				},
 				{
@@ -20322,7 +20456,8 @@
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
-						"Name": "null"
+						"Name": "int64",
+						"Optional": true
 					}
 				},
 				{
@@ -22525,6 +22660,19 @@
 				},
 				{
 					"Class": "AuroraScriptService",
+					"Member": "GetAllCollections",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AuroraScriptService",
 					"Member": "GetLocalFrameId",
 					"MemberType": "Function",
 					"Removed": false,
@@ -22850,6 +22998,19 @@
 				},
 				{
 					"Class": "AuroraService",
+					"Member": "EnableInputLatencyMaxResimFrames",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AuroraService",
 					"Member": "HashRoundingPoint",
 					"MemberType": "Property",
 					"Removed": false,
@@ -22885,6 +23046,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "InputLatencyMaxResimFrames",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -23058,7 +23232,7 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "SetIncomingReplicationLag",
+					"Member": "SetReplicationLag",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -23071,7 +23245,7 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "SetIncomingReplicationLag",
+					"Member": "SetReplicationLag",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -23279,32 +23453,6 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "Misprediction",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "AuroraService",
-					"Member": "Misprediction",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Group",
-						"Name": "Array"
-					}
-				},
-				{
-					"Class": "AuroraService",
 					"Member": "RollbackEnabled",
 					"MemberType": "Property",
 					"Removed": true,
@@ -23435,6 +23583,32 @@
 				},
 				{
 					"Class": "AuroraService",
+					"Member": "SetIncomingReplicationLag",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "SetIncomingReplicationLag",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AuroraService",
 					"Member": "SetPropertyIsInput",
 					"MemberType": "Function",
 					"Removed": true,
@@ -23496,6 +23670,32 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "Misprediction",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "Misprediction",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
 					}
 				},
 				{
@@ -23736,6 +23936,19 @@
 			"Related": [
 				{
 					"Class": "AvatarAbilityRules",
+					"Member": "CharacterControllerMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AvatarSettingsCharacterControllerMode"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
 					"Member": "EnableClimbing",
 					"MemberType": "Property",
 					"Removed": false,
@@ -23749,7 +23962,20 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
-					"Member": "EnableCrouching",
+					"Member": "EnableFallingDown",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableGettingUp",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -23801,9 +24027,35 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
-					"Member": "EnableSprinting",
+					"Member": "EnableSwimming",
 					"MemberType": "Property",
 					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableCrouching",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableSprinting",
+					"MemberType": "Property",
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -23816,7 +24068,7 @@
 					"Class": "AvatarAbilityRules",
 					"Member": "EnableStrafing",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -23829,20 +24081,7 @@
 					"Class": "AvatarAbilityRules",
 					"Member": "EnableStumbling",
 					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableSwimming",
-					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -25683,6 +25922,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateCageMeshPartsWithScaleForExportAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Model"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateCageMeshPartsWithScaleForExportAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Folder"
 					}
 				},
 				{
@@ -46982,6 +47247,19 @@
 			"Related": [
 				{
 					"Class": "ContextActionService",
+					"Member": "NetcodeInputLatency",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ContextActionService",
 					"Member": "BindAction",
 					"MemberType": "Function",
 					"Removed": false,
@@ -47628,6 +47906,19 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "ContextActionService",
+					"Member": "GetInputSchemaKeyCodeTree",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -48618,6 +48909,19 @@
 				},
 				{
 					"Class": "ControllerPartSensor",
+					"Member": "SensedMaterial",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "Material"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
 					"Member": "SensedPart",
 					"MemberType": "Property",
 					"Removed": false,
@@ -48699,7 +49003,7 @@
 		},
 		"ConversationalAIAcceptanceService": {
 			"Name": "ConversationalAIAcceptanceService",
-			"Removed": false,
+			"Removed": true,
 			"HasRemoved": false,
 			"Subclasses": [],
 			"Superclasses": [
@@ -48708,255 +49012,6 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenActivatedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 4,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 4,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64",
-						"Optional": true
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 5,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64",
-						"Optional": true
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
 				{
 					"Class": "ConversationalAIAcceptanceService",
 					"Member": "AlternativeAssetSelected",
@@ -49454,6 +49509,255 @@
 				{
 					"Class": "ConversationalAIAcceptanceService",
 					"Member": "SendCommandErrorTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenActivatedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -58799,6 +59103,45 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Decal"
+					}
+				}
+			]
+		},
+		"DeferredAssetManagerService": {
+			"Name": "DeferredAssetManagerService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "DeferredAssetManagerService",
+					"Member": "GetPrefetchDownloadStatus",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PrefetchDownloadStatus"
+					}
+				},
+				{
+					"Class": "DeferredAssetManagerService",
+					"Member": "PrefetchDownloadStatusChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PrefetchDownloadStatus"
 					}
 				}
 			]
@@ -69952,6 +70295,19 @@
 				},
 				{
 					"Class": "ExperienceService",
+					"Member": "GetPlaceJoinState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ExperienceService",
 					"Member": "LaunchExperience",
 					"MemberType": "Function",
 					"Removed": false,
@@ -70260,6 +70616,19 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "PlaceJoinStateChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				}
 			]
@@ -74528,6 +74897,19 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateCageMeshPartsWithScaleForExportAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Folder"
+					}
+				},
 				{
 					"Class": "Folder",
 					"Member": "ReplicatedGuiInsertionOrder",
@@ -94452,6 +94834,17 @@
 				}
 			]
 		},
+		"ImageScreenCaptureService": {
+			"Name": "ImageScreenCaptureService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			]
+		},
 		"ImportSession": {
 			"Name": "ImportSession",
 			"Removed": false,
@@ -97544,6 +97937,7 @@
 				"DebuggerUIService",
 				"DebuggerVariable",
 				"DebuggerWatch",
+				"DeferredAssetManagerService",
 				"DeviceIdService",
 				"Dialog",
 				"DialogChoice",
@@ -97637,6 +98031,7 @@
 				"ILegacyStudioBridge",
 				"IXPService",
 				"ImageDataExperimental",
+				"ImageScreenCaptureService",
 				"ImportSession",
 				"ImporterBaseSettings",
 				"IncrementalPatchBuilder",
@@ -97649,6 +98044,7 @@
 				"InstanceFileSyncService",
 				"InstancePacketCache",
 				"InternalContainer",
+				"InternalMessagingService",
 				"InternalSyncItem",
 				"InternalSyncService",
 				"JointInstance",
@@ -97895,11 +98291,13 @@
 				"StudioAttachment",
 				"StudioCallout",
 				"StudioCameraService",
+				"StudioCaptureService",
 				"StudioData",
 				"StudioDeviceEmulatorService",
 				"StudioHighDpiService",
 				"StudioObjectBase",
 				"StudioPublishService",
+				"StudioScreenshotCapture",
 				"StudioScriptDebugEventListener",
 				"StudioSdkService",
 				"StudioService",
@@ -108825,6 +109223,17 @@
 				"<<<ROOT>>>"
 			]
 		},
+		"InternalMessagingService": {
+			"Name": "InternalMessagingService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			]
+		},
 		"InternalSyncItem": {
 			"Name": "InternalSyncItem",
 			"Removed": false,
@@ -115031,6 +115440,19 @@
 			"Related": [
 				{
 					"Class": "MarketplaceService",
+					"Member": "ClearProductInfoCaches",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "GetAvailableSubscriptionProductsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -116669,6 +117091,32 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchase",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchase",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -116943,6 +117391,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "SignalMockPurchasePremium",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "SignalMockPurchaseRobloxSubscription",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -118490,6 +118951,32 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "PromptRobloxPurchaseRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchaseFinished",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchaseFinished",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -125682,6 +126169,19 @@
 				{
 					"Class": "AssetQualityService",
 					"Member": "GenerateAssetQualityGltfFromInstanceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Model"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateCageMeshPartsWithScaleForExportAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -137740,8 +138240,34 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchase",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchase",
 					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchaseFinished",
+					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
@@ -138269,6 +138795,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "InputLatency",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -158453,7 +158992,7 @@
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
-						"Name": "int"
+						"Name": "double"
 					}
 				},
 				{
@@ -158467,6 +159006,19 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "Misprediction",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -166270,6 +166822,19 @@
 				},
 				{
 					"Class": "SlimAnimationDataEntity",
+					"Member": "SlimInstanceHashes",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "SlimAnimationDataEntity",
 					"Member": "SlimReplicationTimestampSec",
 					"MemberType": "Property",
 					"Removed": false,
@@ -169395,6 +169960,19 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "SoundService",
+					"Member": "GetMixerTime",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
 					}
 				},
 				{
@@ -177630,6 +178208,20 @@
 					"Member": "PromptSaveInstanceToRobloxAsync",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "StudioAssetService",
+					"Member": "PromptSaveInstanceToRobloxAsync",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -178029,6 +178621,20 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioAssetService",
+					"Member": "OnPromptSaveInstanceToRobloxAsync",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
 					}
 				},
 				{
@@ -178471,6 +179077,71 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "double"
+					}
+				}
+			]
+		},
+		"StudioCaptureService": {
+			"Name": "StudioCaptureService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "StudioCaptureService",
+					"Member": "CanCaptureScreenshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "StudioCaptureService",
+					"Member": "CaptureScreenshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioCaptureService",
+					"Member": "CaptureScreenshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "StudioScreenshotCapture"
+					}
+				},
+				{
+					"Class": "StudioCaptureService",
+					"Member": "RequestScreenshotPermissionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				}
 			]
@@ -179693,6 +180364,188 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				}
+			]
+		},
+		"StudioScreenshotCapture": {
+			"Name": "StudioScreenshotCapture",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "StudioCaptureService",
+					"Member": "CaptureScreenshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "StudioScreenshotCapture"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "BufferFormat",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StudioCaptureScreenshotFormat"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "BufferStatus",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StudioCaptureBufferStatus"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "OriginalSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "Position",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "Resolution",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "UICaptureMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "UICaptureMode"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "GetBuffer",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "GetErrors",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "ScaleAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ResamplerMode"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "ScaleAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "ScaleAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "StudioScreenshotCapture"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "ScaleAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "StudioScreenshotCapture"
 					}
 				}
 			]
@@ -228189,6 +229042,12 @@
 			}
 		},
 		"AnimationRigData": {
+			"Generic": {
+				"Class": "AnimationRigData",
+				"Name": "Generic",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"GetLabels": {
 				"Class": "AnimationRigData",
 				"Name": "GetLabels",
@@ -228680,6 +229539,12 @@
 				"Class": "AnimationTrack",
 				"Name": "TimePosition",
 				"MemberType": "Property",
+				"Removed": false
+			},
+			"UpdateGraphNodeProperty": {
+				"Class": "AnimationTrack",
+				"Name": "UpdateGraphNodeProperty",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"WeightCurrent": {
@@ -234611,6 +235476,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"Cancel": {
+				"Class": "AudioPlayer",
+				"Name": "Cancel",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"Ended": {
 				"Class": "AudioPlayer",
 				"Name": "Ended",
@@ -235784,6 +236655,12 @@
 					}
 				]
 			},
+			"GetAllCollections": {
+				"Class": "AuroraScriptService",
+				"Name": "GetAllCollections",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetLocalFrameId": {
 				"Class": "AuroraScriptService",
 				"Name": "GetLocalFrameId",
@@ -235954,6 +236831,12 @@
 					}
 				]
 			},
+			"EnableInputLatencyMaxResimFrames": {
+				"Class": "AuroraService",
+				"Name": "EnableInputLatencyMaxResimFrames",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"FixedRateTick": {
 				"Class": "AuroraService",
 				"Name": "FixedRateTick",
@@ -236036,6 +236919,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"InputLatencyMaxResimFrames": {
+				"Class": "AuroraService",
+				"Name": "InputLatencyMaxResimFrames",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"IsDesynced": {
 				"Class": "AuroraService",
 				"Name": "IsDesynced",
@@ -236109,7 +236998,7 @@
 				"Class": "AuroraService",
 				"Name": "Misprediction",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": true
 			},
 			"NetDesync": {
 				"Class": "AuroraService",
@@ -236193,7 +237082,7 @@
 				"Class": "AuroraService",
 				"Name": "SetIncomingReplicationLag",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"SetPropertyIsInput": {
 				"Class": "AuroraService",
@@ -236215,6 +237104,12 @@
 						}
 					}
 				]
+			},
+			"SetReplicationLag": {
+				"Class": "AuroraService",
+				"Name": "SetReplicationLag",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"ShowDebugVisualizer": {
 				"Class": "AuroraService",
@@ -236413,6 +237308,27 @@
 			}
 		},
 		"AvatarAbilityRules": {
+			"CharacterControllerMode": {
+				"Class": "AvatarAbilityRules",
+				"Name": "CharacterControllerMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AvatarAbilityRules",
+						"Member": "CharacterControllerMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AvatarSettingsCharacterControllerMode"
+						}
+					}
+				]
+			},
 			"EnableClimbing": {
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableClimbing",
@@ -236422,6 +237338,18 @@
 			"EnableCrouching": {
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableCrouching",
+				"MemberType": "Property",
+				"Removed": true
+			},
+			"EnableFallingDown": {
+				"Class": "AvatarAbilityRules",
+				"Name": "EnableFallingDown",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EnableGettingUp": {
+				"Class": "AvatarAbilityRules",
+				"Name": "EnableGettingUp",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -236447,19 +237375,19 @@
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableSprinting",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"EnableStrafing": {
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableStrafing",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"EnableStumbling": {
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableStumbling",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"EnableSwimming": {
 				"Class": "AvatarAbilityRules",
@@ -237622,6 +238550,40 @@
 						"Type": {
 							"Category": "Class",
 							"Name": "AvatarGenerationSession"
+						}
+					}
+				]
+			},
+			"CreateCageMeshPartsWithScaleForExportAsync": {
+				"Class": "AvatarCreationService",
+				"Name": "CreateCageMeshPartsWithScaleForExportAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AvatarCreationService",
+						"Member": "CreateCageMeshPartsWithScaleForExportAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Model"
+						}
+					},
+					{
+						"Class": "AvatarCreationService",
+						"Member": "CreateCageMeshPartsWithScaleForExportAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Folder"
 						}
 					}
 				]
@@ -247512,6 +248474,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetInputSchemaKeyCodeTree": {
+				"Class": "ContextActionService",
+				"Name": "GetInputSchemaKeyCodeTree",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"InputContextsChanged": {
 				"Class": "ContextActionService",
 				"Name": "InputContextsChanged",
@@ -247559,6 +248527,12 @@
 						}
 					}
 				]
+			},
+			"NetcodeInputLatency": {
+				"Class": "ContextActionService",
+				"Name": "NetcodeInputLatency",
+				"MemberType": "Property",
+				"Removed": false
 			},
 			"SetDescription": {
 				"Class": "ContextActionService",
@@ -247972,6 +248946,27 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"SensedMaterial": {
+				"Class": "ControllerPartSensor",
+				"Name": "SensedMaterial",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ControllerPartSensor",
+						"Member": "SensedMaterial",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "Material"
+						}
+					}
+				]
+			},
 			"SensedPart": {
 				"Class": "ControllerPartSensor",
 				"Name": "SensedPart",
@@ -248086,25 +249081,25 @@
 				"Class": "ConversationalAIAcceptanceService",
 				"Name": "SendMeshGenActivatedTelemetry",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"SendMeshGenCompletedTelemetry": {
 				"Class": "ConversationalAIAcceptanceService",
 				"Name": "SendMeshGenCompletedTelemetry",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"SendMeshGenMeshInsertedTelemetry": {
 				"Class": "ConversationalAIAcceptanceService",
 				"Name": "SendMeshGenMeshInsertedTelemetry",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"SendMeshGenPublishedAssetsTelemetry": {
 				"Class": "ConversationalAIAcceptanceService",
 				"Name": "SendMeshGenPublishedAssetsTelemetry",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"SendMeshGenResultTelemetry": {
 				"Class": "ConversationalAIAcceptanceService",
@@ -252099,6 +253094,50 @@
 				"Removed": false
 			}
 		},
+		"DeferredAssetManagerService": {
+			"GetPrefetchDownloadStatus": {
+				"Class": "DeferredAssetManagerService",
+				"Name": "GetPrefetchDownloadStatus",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "DeferredAssetManagerService",
+						"Member": "GetPrefetchDownloadStatus",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PrefetchDownloadStatus"
+						}
+					}
+				]
+			},
+			"PrefetchDownloadStatusChanged": {
+				"Class": "DeferredAssetManagerService",
+				"Name": "PrefetchDownloadStatusChanged",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "DeferredAssetManagerService",
+						"Member": "PrefetchDownloadStatusChanged",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PrefetchDownloadStatus"
+						}
+					}
+				]
+			}
+		},
 		"DepthOfFieldEffect": {
 			"FarIntensity": {
 				"Class": "DepthOfFieldEffect",
@@ -256009,6 +257048,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetPlaceJoinState": {
+				"Class": "ExperienceService",
+				"Name": "GetPlaceJoinState",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"LaunchExperience": {
 				"Class": "ExperienceService",
 				"Name": "LaunchExperience",
@@ -256042,6 +257087,12 @@
 			"OnNewJoinAttempt": {
 				"Class": "ExperienceService",
 				"Name": "OnNewJoinAttempt",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"PlaceJoinStateChanged": {
+				"Class": "ExperienceService",
+				"Name": "PlaceJoinStateChanged",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -273430,6 +274481,12 @@
 					}
 				]
 			},
+			"ClearProductInfoCaches": {
+				"Class": "MarketplaceService",
+				"Name": "ClearProductInfoCaches",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"ClientLuaDialogRequested": {
 				"Class": "MarketplaceService",
 				"Name": "ClientLuaDialogRequested",
@@ -273439,6 +274496,12 @@
 			"ClientPurchaseSuccess": {
 				"Class": "MarketplaceService",
 				"Name": "ClientPurchaseSuccess",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"ConfirmPlayerHasRobloxSubscription": {
+				"Class": "MarketplaceService",
+				"Name": "ConfirmPlayerHasRobloxSubscription",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -273730,6 +274793,12 @@
 			"MockPurchasePremium": {
 				"Class": "MarketplaceService",
 				"Name": "MockPurchasePremium",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"MockPurchaseRobloxSubscription": {
+				"Class": "MarketplaceService",
+				"Name": "MockPurchaseRobloxSubscription",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -274630,6 +275699,54 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"PromptRobloxSubscriptionPurchase": {
+				"Class": "MarketplaceService",
+				"Name": "PromptRobloxSubscriptionPurchase",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "PromptRobloxSubscriptionPurchase",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
+			"PromptRobloxSubscriptionPurchaseFinished": {
+				"Class": "MarketplaceService",
+				"Name": "PromptRobloxSubscriptionPurchaseFinished",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "PromptRobloxSubscriptionPurchaseFinished",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
+			"PromptRobloxSubscriptionPurchaseRequested": {
+				"Class": "MarketplaceService",
+				"Name": "PromptRobloxSubscriptionPurchaseRequested",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"PromptSubscriptionCancellation": {
 				"Class": "MarketplaceService",
 				"Name": "PromptSubscriptionCancellation",
@@ -274874,6 +275991,12 @@
 			"SignalMockPurchasePremium": {
 				"Class": "MarketplaceService",
 				"Name": "SignalMockPurchasePremium",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SignalMockPurchaseRobloxSubscription": {
+				"Class": "MarketplaceService",
+				"Name": "SignalMockPurchaseRobloxSubscription",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -283702,6 +284825,12 @@
 				"Class": "Player",
 				"Name": "Idled",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"InputLatency": {
+				"Class": "Player",
+				"Name": "InputLatency",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"InstancePinned": {
@@ -296214,6 +297343,12 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"SlimInstanceHashes": {
+				"Class": "SlimAnimationDataEntity",
+				"Name": "SlimInstanceHashes",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"SlimReplicationTimestampSec": {
 				"Class": "SlimAnimationDataEntity",
 				"Name": "SlimReplicationTimestampSec",
@@ -297658,6 +298793,12 @@
 			"GetListener": {
 				"Class": "SoundService",
 				"Name": "GetListener",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetMixerTime": {
+				"Class": "SoundService",
+				"Name": "GetMixerTime",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -301939,6 +303080,41 @@
 				"Removed": false
 			}
 		},
+		"StudioCaptureService": {
+			"CanCaptureScreenshot": {
+				"Class": "StudioCaptureService",
+				"Name": "CanCaptureScreenshot",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"CaptureScreenshot": {
+				"Class": "StudioCaptureService",
+				"Name": "CaptureScreenshot",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioCaptureService",
+						"Member": "CaptureScreenshot",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "StudioScreenshotCapture"
+						}
+					}
+				]
+			},
+			"RequestScreenshotPermissionAsync": {
+				"Class": "StudioCaptureService",
+				"Name": "RequestScreenshotPermissionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			}
+		},
 		"StudioData": {
 			"EnableScriptCollabByDefaultOnLoad": {
 				"Class": "StudioData",
@@ -302386,6 +303562,135 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "StudioCloseMode"
+						}
+					}
+				]
+			}
+		},
+		"StudioScreenshotCapture": {
+			"BufferFormat": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "BufferFormat",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioScreenshotCapture",
+						"Member": "BufferFormat",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "StudioCaptureScreenshotFormat"
+						}
+					}
+				]
+			},
+			"BufferStatus": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "BufferStatus",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioScreenshotCapture",
+						"Member": "BufferStatus",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "StudioCaptureBufferStatus"
+						}
+					}
+				]
+			},
+			"GetBuffer": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "GetBuffer",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetErrors": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "GetErrors",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"OriginalSize": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "OriginalSize",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Position": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "Position",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Resolution": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "Resolution",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ScaleAsync": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "ScaleAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioScreenshotCapture",
+						"Member": "ScaleAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ResamplerMode"
+						}
+					},
+					{
+						"Class": "StudioScreenshotCapture",
+						"Member": "ScaleAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "StudioScreenshotCapture"
+						}
+					}
+				]
+			},
+			"UICaptureMode": {
+				"Class": "StudioScreenshotCapture",
+				"Name": "UICaptureMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioScreenshotCapture",
+						"Member": "UICaptureMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "UICaptureMode"
 						}
 					}
 				]
@@ -326819,6 +328124,33 @@
 				}
 			]
 		},
+		"AvatarSettingsCharacterControllerMode": {
+			"Name": "AvatarSettingsCharacterControllerMode",
+			"Removed": false,
+			"ItemsByValue": [
+				"LegacyHumanoid",
+				"LuaCharacterController"
+			],
+			"ItemsByIndex": [
+				"LegacyHumanoid",
+				"LuaCharacterController"
+			],
+			"Related": [
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "CharacterControllerMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AvatarSettingsCharacterControllerMode"
+					}
+				}
+			]
+		},
 		"AvatarSettingsClothingMode": {
 			"Name": "AvatarSettingsClothingMode",
 			"Removed": false,
@@ -329993,15 +331325,15 @@
 				"Success",
 				"PermissionDenied",
 				"UploadFailed",
-				"Unknown",
-				"StorageLimitExceeded"
+				"StorageLimitExceeded",
+				"Unknown"
 			],
 			"ItemsByIndex": [
 				"Success",
 				"PermissionDenied",
 				"UploadFailed",
-				"Unknown",
-				"StorageLimitExceeded"
+				"StorageLimitExceeded",
+				"Unknown"
 			]
 		},
 		"CreateOutfitFailure": {
@@ -331095,13 +332427,15 @@
 				"Unknown",
 				"Desktop",
 				"Tablet",
-				"Phone"
+				"Phone",
+				"TV"
 			],
 			"ItemsByIndex": [
 				"Unknown",
 				"Desktop",
 				"Tablet",
-				"Phone"
+				"Phone",
+				"TV"
 			],
 			"Related": [
 				{
@@ -338042,6 +339376,19 @@
 					}
 				},
 				{
+					"Class": "ControllerPartSensor",
+					"Member": "SensedMaterial",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "Material"
+					}
+				},
+				{
 					"Class": "HeightmapImporterService",
 					"Member": "ImportHeightmap",
 					"MemberType": "Function",
@@ -341681,6 +343028,50 @@
 				}
 			]
 		},
+		"PrefetchDownloadStatus": {
+			"Name": "PrefetchDownloadStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"NotStarted",
+				"InProgress",
+				"Completed",
+				"Failed"
+			],
+			"ItemsByIndex": [
+				"NotStarted",
+				"InProgress",
+				"Completed",
+				"Failed"
+			],
+			"Related": [
+				{
+					"Class": "DeferredAssetManagerService",
+					"Member": "GetPrefetchDownloadStatus",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PrefetchDownloadStatus"
+					}
+				},
+				{
+					"Class": "DeferredAssetManagerService",
+					"Member": "PrefetchDownloadStatusChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PrefetchDownloadStatus"
+					}
+				}
+			]
+		},
 		"PrimalPhysicsSolver": {
 			"Name": "PrimalPhysicsSolver",
 			"Removed": false,
@@ -342800,6 +344191,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ResamplerMode"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "ScaleAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Enum",
 						"Name": "ResamplerMode"
@@ -345313,11 +346717,13 @@
 			"Removed": false,
 			"ItemsByValue": [
 				"Capsule",
-				"Cone"
+				"Cone",
+				"RoundedBox"
 			],
 			"ItemsByIndex": [
 				"Capsule",
-				"Cone"
+				"Cone",
+				"RoundedBox"
 			],
 			"Related": [
 				{
@@ -345870,6 +347276,64 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "StrokeSizingMode"
+					}
+				}
+			]
+		},
+		"StudioCaptureBufferStatus": {
+			"Name": "StudioCaptureBufferStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"NotStarted",
+				"Pending",
+				"Ready",
+				"Error"
+			],
+			"ItemsByIndex": [
+				"NotStarted",
+				"Pending",
+				"Ready",
+				"Error"
+			],
+			"Related": [
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "BufferStatus",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StudioCaptureBufferStatus"
+					}
+				}
+			]
+		},
+		"StudioCaptureScreenshotFormat": {
+			"Name": "StudioCaptureScreenshotFormat",
+			"Removed": false,
+			"ItemsByValue": [
+				"RGBA8",
+				"PNG"
+			],
+			"ItemsByIndex": [
+				"RGBA8",
+				"PNG"
+			],
+			"Related": [
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "BufferFormat",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StudioCaptureScreenshotFormat"
 					}
 				}
 			]
@@ -348757,6 +350221,21 @@
 				"All",
 				"None",
 				"PlayerGui"
+			],
+			"Related": [
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "UICaptureMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "UICaptureMode"
+					}
+				}
 			]
 		},
 		"UIDragDetectorBoundingBehavior": {
@@ -353868,6 +355347,18 @@
 				"Removed": false
 			}
 		},
+		"AvatarSettingsCharacterControllerMode": {
+			"LegacyHumanoid": {
+				"Enum": "AvatarSettingsCharacterControllerMode",
+				"Name": "LegacyHumanoid",
+				"Removed": false
+			},
+			"LuaCharacterController": {
+				"Enum": "AvatarSettingsCharacterControllerMode",
+				"Name": "LuaCharacterController",
+				"Removed": false
+			}
+		},
 		"AvatarSettingsClothingMode": {
 			"CustomLimit": {
 				"Enum": "AvatarSettingsClothingMode",
@@ -357218,6 +358709,11 @@
 			"Phone": {
 				"Enum": "DeviceType",
 				"Name": "Phone",
+				"Removed": false
+			},
+			"TV": {
+				"Enum": "DeviceType",
+				"Name": "TV",
 				"Removed": false
 			},
 			"Tablet": {
@@ -364552,6 +366048,28 @@
 				"Removed": false
 			}
 		},
+		"PrefetchDownloadStatus": {
+			"Completed": {
+				"Enum": "PrefetchDownloadStatus",
+				"Name": "Completed",
+				"Removed": false
+			},
+			"Failed": {
+				"Enum": "PrefetchDownloadStatus",
+				"Name": "Failed",
+				"Removed": false
+			},
+			"InProgress": {
+				"Enum": "PrefetchDownloadStatus",
+				"Name": "InProgress",
+				"Removed": false
+			},
+			"NotStarted": {
+				"Enum": "PrefetchDownloadStatus",
+				"Name": "NotStarted",
+				"Removed": false
+			}
+		},
 		"PrimalPhysicsSolver": {
 			"Default": {
 				"Enum": "PrimalPhysicsSolver",
@@ -367122,6 +368640,11 @@
 				"Enum": "SolidPrimitiveType",
 				"Name": "Cone",
 				"Removed": false
+			},
+			"RoundedBox": {
+				"Enum": "SolidPrimitiveType",
+				"Name": "RoundedBox",
+				"Removed": false
 			}
 		},
 		"SolverConvergenceMetricType": {
@@ -367469,6 +368992,40 @@
 			"ScaledSize": {
 				"Enum": "StrokeSizingMode",
 				"Name": "ScaledSize",
+				"Removed": false
+			}
+		},
+		"StudioCaptureBufferStatus": {
+			"Error": {
+				"Enum": "StudioCaptureBufferStatus",
+				"Name": "Error",
+				"Removed": false
+			},
+			"NotStarted": {
+				"Enum": "StudioCaptureBufferStatus",
+				"Name": "NotStarted",
+				"Removed": false
+			},
+			"Pending": {
+				"Enum": "StudioCaptureBufferStatus",
+				"Name": "Pending",
+				"Removed": false
+			},
+			"Ready": {
+				"Enum": "StudioCaptureBufferStatus",
+				"Name": "Ready",
+				"Removed": false
+			}
+		},
+		"StudioCaptureScreenshotFormat": {
+			"PNG": {
+				"Enum": "StudioCaptureScreenshotFormat",
+				"Name": "PNG",
+				"Removed": false
+			},
+			"RGBA8": {
+				"Enum": "StudioCaptureScreenshotFormat",
+				"Name": "RGBA8",
 				"Removed": false
 			}
 		},
@@ -372620,8 +374177,8 @@
 					}
 				},
 				{
-					"Class": "AuroraService",
-					"Member": "GetPredictedInstances",
+					"Class": "AuroraScriptService",
+					"Member": "GetAllCollections",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -372634,12 +374191,12 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "Misprediction",
-					"MemberType": "Event",
+					"Member": "GetPredictedInstances",
+					"MemberType": "Function",
 					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
@@ -375558,6 +377115,19 @@
 					}
 				},
 				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "GetErrors",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "StudioService",
 					"Member": "PromptImportFile",
 					"MemberType": "Function",
@@ -376650,6 +378220,19 @@
 					}
 				},
 				{
+					"Class": "AuroraService",
+					"Member": "Misprediction",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "AvatarEditorService",
 					"Member": "GetRecommendedAssetsV2",
 					"MemberType": "Function",
@@ -377413,6 +378996,19 @@
 				},
 				{
 					"Class": "AnimationRigData",
+					"Member": "Generic",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "AnimationRigData",
 					"Member": "label",
 					"MemberType": "Property",
 					"Removed": false,
@@ -377934,6 +379530,19 @@
 				{
 					"Class": "ServiceVisibilityService",
 					"Member": "VisibleServices",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "SlimAnimationDataEntity",
+					"Member": "SlimInstanceHashes",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -388294,6 +389903,19 @@
 				},
 				{
 					"Class": "ContextActionService",
+					"Member": "GetInputSchemaKeyCodeTree",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ContextActionService",
 					"Member": "BoundActionAdded",
 					"MemberType": "Event",
 					"Removed": false,
@@ -390572,6 +392194,19 @@
 					}
 				},
 				{
+					"Class": "RunService",
+					"Member": "Misprediction",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "SafetyService",
 					"Member": "DecodeAvatarMovementProto",
 					"MemberType": "Function",
@@ -390838,6 +392473,19 @@
 					"Class": "StudioAssetService",
 					"Member": "OnPublishPackageResult",
 					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioCaptureService",
+					"Member": "CaptureScreenshot",
+					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
@@ -404487,6 +406135,19 @@
 					}
 				},
 				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
 					"Class": "Animator",
 					"Member": "ApplyJointVelocities",
 					"MemberType": "Function",
@@ -407467,6 +409128,58 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "OriginalSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "Position",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "Resolution",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "ScaleAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector2"
@@ -414928,6 +416641,19 @@
 					}
 				},
 				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "Animator",
 					"Member": "EvaluationThrottled",
 					"MemberType": "Property",
@@ -416216,6 +417942,19 @@
 				},
 				{
 					"Class": "AudioPlayer",
+					"Member": "Cancel",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioPlayer",
 					"Member": "WiringChanged",
 					"MemberType": "Event",
 					"Removed": false,
@@ -416450,6 +418189,19 @@
 				},
 				{
 					"Class": "AuroraService",
+					"Member": "EnableInputLatencyMaxResimFrames",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AuroraService",
 					"Member": "IgnoreRotation",
 					"MemberType": "Property",
 					"Removed": false,
@@ -416515,7 +418267,20 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
-					"Member": "EnableCrouching",
+					"Member": "EnableFallingDown",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableGettingUp",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -416555,45 +418320,6 @@
 				{
 					"Class": "AvatarAbilityRules",
 					"Member": "EnableSitting",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableSprinting",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableStrafing",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableStumbling",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -419030,45 +420756,6 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -423458,6 +425145,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "PromptRobloxPurchaseRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchaseFinished",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -429761,6 +431461,32 @@
 					}
 				},
 				{
+					"Class": "StudioCaptureService",
+					"Member": "CanCaptureScreenshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "StudioCaptureService",
+					"Member": "RequestScreenshotPermissionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "StudioData",
 					"Member": "EnableScriptCollabByDefaultOnLoad",
 					"MemberType": "Property",
@@ -435162,6 +436888,58 @@
 					}
 				},
 				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableCrouching",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableSprinting",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableStrafing",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableStumbling",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "AvatarEditorService",
 					"Member": "GetRecommendedAssetsV2",
 					"MemberType": "Function",
@@ -435429,6 +437207,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -440175,6 +441992,19 @@
 					}
 				},
 				{
+					"Class": "StudioScreenshotCapture",
+					"Member": "GetBuffer",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
 					"Class": "VoxelBuffer",
 					"Member": "FromHeightmapAsync",
 					"MemberType": "Function",
@@ -440270,6 +442100,34 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "double"
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "Play",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "Stop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double",
+						"Optional": true
 					}
 				},
 				{
@@ -441002,6 +442860,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "Misprediction",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "PostSimulation",
 					"MemberType": "Event",
 					"Removed": false,
@@ -441229,6 +443100,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "SoundService",
+					"Member": "GetMixerTime",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "double"
@@ -443973,7 +445857,7 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "SetIncomingReplicationLag",
+					"Member": "SetReplicationLag",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -454987,6 +456871,19 @@
 					}
 				},
 				{
+					"Class": "AuroraService",
+					"Member": "SetIncomingReplicationLag",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
 					"Class": "AvatarGenerationJob",
 					"Member": "Progress",
 					"MemberType": "Property",
@@ -456776,6 +458673,19 @@
 				},
 				{
 					"Class": "AuroraService",
+					"Member": "InputLatencyMaxResimFrames",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AuroraService",
 					"Member": "OutOfOrderInputCount",
 					"MemberType": "Property",
 					"Removed": false,
@@ -456860,19 +458770,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "AuroraService",
-					"Member": "Misprediction",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -457375,6 +459272,19 @@
 				{
 					"Class": "ContentProvider",
 					"Member": "RequestQueueSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ContextActionService",
+					"Member": "NetcodeInputLatency",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -460743,6 +462653,19 @@
 				},
 				{
 					"Class": "Player",
+					"Member": "InputLatency",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Player",
 					"Member": "StepIdOffset",
 					"MemberType": "Property",
 					"Removed": false,
@@ -461672,19 +463595,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "RunService",
-					"Member": "Misprediction",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -465220,6 +467130,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "Misprediction",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -469215,6 +471138,48 @@
 					}
 				},
 				{
+					"Class": "AudioPlayer",
+					"Member": "Cancel",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "Play",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "Stop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
 					"Class": "AvatarAccessoryRules",
 					"Member": "CustomBackAccessoryId",
 					"MemberType": "Property",
@@ -470824,34 +472789,6 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 4,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64",
-						"Optional": true
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 5,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64",
-						"Optional": true
 					}
 				},
 				{
@@ -475406,6 +477343,20 @@
 				},
 				{
 					"Class": "StudioAssetService",
+					"Member": "PromptSaveInstanceToRobloxAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "StudioAssetService",
 					"Member": "ResolveSaveInstanceToRoblox",
 					"MemberType": "Function",
 					"Removed": false,
@@ -475429,6 +477380,20 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
+					}
+				},
+				{
+					"Class": "StudioAssetService",
+					"Member": "OnPromptSaveInstanceToRobloxAsync",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
 					}
 				},
 				{
@@ -476794,6 +478759,34 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
 					}
 				},
 				{
@@ -478897,32 +480890,6 @@
 					}
 				},
 				{
-					"Class": "AudioPlayer",
-					"Member": "Play",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "AudioPlayer",
-					"Member": "Stop",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
 					"Class": "AudioRecorder",
 					"Member": "Clear",
 					"MemberType": "Function",
@@ -479080,7 +481047,7 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "SetIncomingReplicationLag",
+					"Member": "SetReplicationLag",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -481018,58 +482985,6 @@
 				{
 					"Class": "Controller",
 					"Member": "bindButton",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenActivatedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -485060,6 +486975,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "ClearProductInfoCaches",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PerformCancelSubscription",
 					"MemberType": "Function",
 					"Removed": false,
@@ -485268,6 +487196,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobloxSubscriptionPurchase",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -485347,6 +487288,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "SignalMockPurchasePremium",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "SignalMockPurchaseRobloxSubscription",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -493419,6 +495373,19 @@
 				},
 				{
 					"Class": "AuroraService",
+					"Member": "SetIncomingReplicationLag",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AuroraService",
 					"Member": "SetPropertyIsInput",
 					"MemberType": "Function",
 					"Removed": true,
@@ -493758,6 +495725,58 @@
 				{
 					"Class": "ConversationalAIAcceptanceService",
 					"Member": "SendCommandErrorTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenActivatedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -496123,6 +498142,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationTrack",
+					"Member": "UpdateGraphNodeProperty",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -500100,136 +502158,6 @@
 					}
 				},
 				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenCompletedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 4,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenMeshInsertedTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "ConversationalAIAcceptanceService",
-					"Member": "SendMeshGenPublishedAssetsTelemetry",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
 					"Class": "CreatorStoreService",
 					"Member": "GetCreatorStoreProductInfoAsync",
 					"MemberType": "Function",
@@ -501882,6 +503810,19 @@
 				},
 				{
 					"Class": "ExperienceService",
+					"Member": "GetPlaceJoinState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ExperienceService",
 					"Member": "LaunchExperience",
 					"MemberType": "Function",
 					"Removed": false,
@@ -501974,6 +503915,19 @@
 				{
 					"Class": "ExperienceService",
 					"Member": "OnCrossExperienceStopped",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "PlaceJoinStateChanged",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -521199,6 +523153,136 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenCompletedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenMeshInsertedTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ConversationalAIAcceptanceService",
+					"Member": "SendMeshGenPublishedAssetsTelemetry",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
