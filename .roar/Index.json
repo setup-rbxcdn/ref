@@ -52066,19 +52066,6 @@
 					"Member": "GetObjectsAllOrNone",
 					"MemberType": "Function",
 					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "DataModel",
-					"Member": "GetObjectsAllOrNone",
-					"MemberType": "Function",
-					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -73704,7 +73691,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateExperienceChatTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -73717,7 +73704,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateExperienceChatTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -73730,7 +73717,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateFeatureTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -73743,7 +73730,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateFeatureTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -73756,7 +73743,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateFeatureTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
@@ -73769,7 +73756,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateFeatureTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
@@ -73782,7 +73769,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateFeatureTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 4,
@@ -73795,7 +73782,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateFeatureTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 5,
@@ -76312,6 +76299,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GamepadService",
+					"Member": "AutoSelectGui",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				},
 				{
@@ -114162,6 +114162,19 @@
 				},
 				{
 					"Class": "LodDataEntity",
+					"Member": "EntityVisible",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "LodDataEntity",
 					"Member": "IsSlimEnabled",
 					"MemberType": "Property",
 					"Removed": false,
@@ -114433,6 +114446,45 @@
 				},
 				{
 					"Class": "LogService",
+					"Member": "Error",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Error",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Error",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
 					"Member": "ExecuteScript",
 					"MemberType": "Function",
 					"Removed": false,
@@ -114485,6 +114537,136 @@
 				},
 				{
 					"Class": "LogService",
+					"Member": "Info",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Info",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Info",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MessageType"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Output",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Output",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Output",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
 					"Member": "RequestHttpResultApproved",
 					"MemberType": "Function",
 					"Removed": false,
@@ -114512,6 +114694,45 @@
 				{
 					"Class": "LogService",
 					"Member": "RequestServerOutput",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Warn",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Warn",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Warn",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -114559,6 +114780,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "MessageType"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "MessageOut",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -118585,6 +118819,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 5,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -130626,6 +130873,32 @@
 				{
 					"Class": "NotificationService",
 					"Member": "ScheduleNotification",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "NotificationService",
+					"Member": "SubscribeToRccEventNamespace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "NotificationService",
+					"Member": "SubscribeToRccEventNamespace",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -185586,6 +185859,19 @@
 				},
 				{
 					"Class": "SurfaceAppearance",
+					"Member": "ResampleMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ResamplerMode"
+					}
+				},
+				{
+					"Class": "SurfaceAppearance",
 					"Member": "RoughnessMap",
 					"MemberType": "Property",
 					"Removed": false,
@@ -195980,6 +196266,32 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "SendingUniverseChatMessage",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientChatActionReplicateSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "UniverseChatMessageReceived",
 					"MemberType": "Event",
 					"Removed": false,
@@ -196217,32 +196529,6 @@
 				},
 				{
 					"Class": "TextChatService",
-					"Member": "AllocateUniverseChatChannelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "TextChatService",
-					"Member": "AllocateUniverseChatChannelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "TextChatService",
 					"Member": "CanUserChatAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -196447,6 +196733,32 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "HasAllocatedUniverseChatContext",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "HasAllocatedUniverseChatContext",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -196984,6 +197296,32 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "SendingUniverseChatMessage",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientChatActionReplicateSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ServerToClientMessageReplicateSignal",
 					"MemberType": "Event",
 					"Removed": false,
@@ -197101,6 +197439,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ServerToClientUniverseChatChannelAllocatedSignalV1",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ServerToClientUniverseChatMessageSignalV1",
 					"MemberType": "Event",
 					"Removed": false,
@@ -197110,6 +197461,19 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UniverseChatChannelAllocated",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -197367,6 +197731,32 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "AllocateUniverseChatChannelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "AllocateUniverseChatChannelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -260213,19 +260603,19 @@
 				"Class": "FeatureRestrictionManager",
 				"Name": "UpdateExperienceChatTimeout",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": true
 			},
 			"UpdateFeatureTimeout": {
 				"Class": "FeatureRestrictionManager",
 				"Name": "UpdateFeatureTimeout",
 				"MemberType": "Event",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "FeatureRestrictionManager",
 						"Member": "UpdateFeatureTimeout",
 						"MemberType": "Event",
-						"Removed": false,
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 5,
@@ -261211,6 +261601,12 @@
 			}
 		},
 		"GamepadService": {
+			"AutoSelectGui": {
+				"Class": "GamepadService",
+				"Name": "AutoSelectGui",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"DisableGamepadCursor": {
 				"Class": "GamepadService",
 				"Name": "DisableGamepadCursor",
@@ -267988,6 +268384,12 @@
 						}
 					}
 				]
+			},
+			"ServerResetCharacter": {
+				"Class": "Humanoid",
+				"Name": "ServerResetCharacter",
+				"MemberType": "Event",
+				"Removed": false
 			},
 			"SetClickToWalkEnabled": {
 				"Class": "Humanoid",
@@ -275504,6 +275906,12 @@
 					}
 				]
 			},
+			"EntityVisible": {
+				"Class": "LodDataEntity",
+				"Name": "EntityVisible",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"IsSlimEnabled": {
 				"Class": "LodDataEntity",
 				"Name": "IsSlimEnabled",
@@ -275559,6 +275967,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"Error": {
+				"Class": "LogService",
+				"Name": "Error",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"ExecuteScript": {
 				"Class": "LogService",
 				"Name": "ExecuteScript",
@@ -275582,6 +275996,33 @@
 				"Name": "HttpResultOut",
 				"MemberType": "Event",
 				"Removed": false
+			},
+			"Info": {
+				"Class": "LogService",
+				"Name": "Info",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"Log": {
+				"Class": "LogService",
+				"Name": "Log",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "LogService",
+						"Member": "Log",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "MessageType"
+						}
+					}
+				]
 			},
 			"MessageOut": {
 				"Class": "LogService",
@@ -275608,6 +276049,12 @@
 				"Class": "LogService",
 				"Name": "OnHttpResultApproved",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"Output": {
+				"Class": "LogService",
+				"Name": "Output",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"RequestHttpResultApproved": {
@@ -275764,6 +276211,12 @@
 				"Class": "LogService",
 				"Name": "ServerVariantMessageOut",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"Warn": {
+				"Class": "LogService",
+				"Name": "Warn",
+				"MemberType": "Function",
 				"Removed": false
 			}
 		},
@@ -282791,6 +283244,12 @@
 				"Class": "NotificationService",
 				"Name": "SelectedTheme",
 				"MemberType": "Property",
+				"Removed": false
+			},
+			"SubscribeToRccEventNamespace": {
+				"Class": "NotificationService",
+				"Name": "SubscribeToRccEventNamespace",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"SwitchedToAppShellFeature": {
@@ -307347,6 +307806,27 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"ResampleMode": {
+				"Class": "SurfaceAppearance",
+				"Name": "ResampleMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "SurfaceAppearance",
+						"Member": "ResampleMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ResamplerMode"
+						}
+					}
+				]
+			},
 			"RoughnessMap": {
 				"Class": "SurfaceAppearance",
 				"Name": "RoughnessMap",
@@ -312000,7 +312480,7 @@
 				"Class": "TextChatService",
 				"Name": "AllocateUniverseChatChannelAsync",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"BubbleDisplayed": {
 				"Class": "TextChatService",
@@ -312259,6 +312739,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"HasAllocatedUniverseChatContext": {
+				"Class": "TextChatService",
+				"Name": "HasAllocatedUniverseChatContext",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"HasSeenDeprecationDialog": {
 				"Class": "TextChatService",
 				"Name": "HasSeenDeprecationDialog",
@@ -312482,6 +312968,48 @@
 					}
 				]
 			},
+			"SendingUniverseChatMessage": {
+				"Class": "TextChatService",
+				"Name": "SendingUniverseChatMessage",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "TextChatService",
+						"Member": "SendingUniverseChatMessage",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "TextChatMessage"
+						}
+					}
+				]
+			},
+			"ServerToClientChatActionReplicateSignal": {
+				"Class": "TextChatService",
+				"Name": "ServerToClientChatActionReplicateSignal",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "TextChatService",
+						"Member": "ServerToClientChatActionReplicateSignal",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "TextChatMessage"
+						}
+					}
+				]
+			},
 			"ServerToClientMessageReplicateSignal": {
 				"Class": "TextChatService",
 				"Name": "ServerToClientMessageReplicateSignal",
@@ -312535,9 +313063,21 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"ServerToClientUniverseChatChannelAllocatedSignalV1": {
+				"Class": "TextChatService",
+				"Name": "ServerToClientUniverseChatChannelAllocatedSignalV1",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"ServerToClientUniverseChatMessageSignalV1": {
 				"Class": "TextChatService",
 				"Name": "ServerToClientUniverseChatMessageSignalV1",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"UniverseChatChannelAllocated": {
+				"Class": "TextChatService",
+				"Name": "UniverseChatChannelAllocated",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -336176,7 +336716,7 @@
 					"Class": "FeatureRestrictionManager",
 					"Member": "UpdateFeatureTimeout",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 5,
@@ -342545,6 +343085,19 @@
 			"Related": [
 				{
 					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MessageType"
+					}
+				},
+				{
+					"Class": "LogService",
 					"Member": "MessageOut",
 					"MemberType": "Event",
 					"Removed": false,
@@ -346530,6 +347083,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ResamplerMode"
+					}
+				},
+				{
+					"Class": "SurfaceAppearance",
+					"Member": "ResampleMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Enum",
 						"Name": "ResamplerMode"
@@ -393464,12 +394030,90 @@
 				},
 				{
 					"Class": "LogService",
+					"Member": "Error",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Info",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Output",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Warn",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
 					"Member": "HttpResultOut",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "MessageOut",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -393782,6 +394426,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 5,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -423567,19 +424224,6 @@
 				},
 				{
 					"Class": "DataModel",
-					"Member": "GetObjectsAllOrNone",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "DataModel",
 					"Member": "GetRemoteBuildMode",
 					"MemberType": "Function",
 					"Removed": false,
@@ -424756,32 +425400,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "FeatureRestrictionManager",
-					"Member": "UpdateFeatureTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "FeatureRestrictionManager",
-					"Member": "UpdateFeatureTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -427299,6 +427917,19 @@
 				{
 					"Class": "LodDataEntity",
 					"Member": "EntityLodEnabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "LodDataEntity",
+					"Member": "EntityVisible",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -435709,19 +436340,6 @@
 				},
 				{
 					"Class": "TextChatService",
-					"Member": "AllocateUniverseChatChannelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "TextChatService",
 					"Member": "CanUserChatAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -435749,6 +436367,19 @@
 				{
 					"Class": "TextChatService",
 					"Member": "CanUsersWhisperAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "HasAllocatedUniverseChatContext",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -440355,6 +440986,32 @@
 					}
 				},
 				{
+					"Class": "FeatureRestrictionManager",
+					"Member": "UpdateFeatureTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "FeatureRestrictionManager",
+					"Member": "UpdateFeatureTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "FileSyncItem",
 					"Member": "Enabled",
 					"MemberType": "Property",
@@ -443561,6 +444218,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "AllocateUniverseChatChannelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -477351,71 +478021,6 @@
 					}
 				},
 				{
-					"Class": "FeatureRestrictionManager",
-					"Member": "UpdateExperienceChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "FeatureRestrictionManager",
-					"Member": "UpdateExperienceChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "FeatureRestrictionManager",
-					"Member": "UpdateFeatureTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "FeatureRestrictionManager",
-					"Member": "UpdateFeatureTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "FeatureRestrictionManager",
-					"Member": "UpdateFeatureTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 4,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
 					"Class": "File",
 					"Member": "Size",
 					"MemberType": "Property",
@@ -482043,6 +482648,71 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "FeatureRestrictionManager",
+					"Member": "UpdateExperienceChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "FeatureRestrictionManager",
+					"Member": "UpdateExperienceChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "FeatureRestrictionManager",
+					"Member": "UpdateFeatureTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "FeatureRestrictionManager",
+					"Member": "UpdateFeatureTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "FeatureRestrictionManager",
+					"Member": "UpdateFeatureTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -487933,6 +488603,19 @@
 				},
 				{
 					"Class": "GamepadService",
+					"Member": "AutoSelectGui",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "GamepadService",
 					"Member": "DisableGamepadCursor",
 					"MemberType": "Function",
 					"Removed": false,
@@ -490000,7 +490683,59 @@
 				},
 				{
 					"Class": "LogService",
+					"Member": "Error",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
 					"Member": "ExecuteScript",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Info",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Output",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -490040,6 +490775,19 @@
 				{
 					"Class": "LogService",
 					"Member": "RequestServerOutput",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Warn",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -491145,6 +491893,19 @@
 				{
 					"Class": "NotificationService",
 					"Member": "ScheduleNotification",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "NotificationService",
+					"Member": "SubscribeToRccEventNamespace",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -510754,7 +511515,72 @@
 				},
 				{
 					"Class": "LogService",
+					"Member": "Error",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
 					"Member": "ExecuteScript",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Info",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Log",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Output",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "Warn",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -513373,6 +514199,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "NotificationService",
+					"Member": "SubscribeToRccEventNamespace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -521213,12 +522052,12 @@
 				},
 				{
 					"Class": "TextChatService",
-					"Member": "AllocateUniverseChatChannelAsync",
+					"Member": "DisplayBubble",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
-					"Index": 0,
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -521226,12 +522065,12 @@
 				},
 				{
 					"Class": "TextChatService",
-					"Member": "DisplayBubble",
+					"Member": "HasAllocatedUniverseChatContext",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
-					"Index": 1,
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -521440,6 +522279,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientUniverseChatChannelAllocatedSignalV1",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UniverseChatChannelAllocated",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -530261,6 +531126,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "AllocateUniverseChatChannelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"

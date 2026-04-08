@@ -2264,7 +2264,7 @@
 								"Category": "Primitive",
 								"Name": "string"
 							},
-							"Name": "immersiveBrandedAdId",
+							"Name": "adIntegrationPlacementId",
 							"Optional": false,
 							"Default": ""
 						}
@@ -61970,15 +61970,6 @@
 							"Name": "url",
 							"Optional": false,
 							"Default": ""
-						},
-						{
-							"Type": {
-								"Category": "Primitive",
-								"Name": "bool"
-							},
-							"Name": "binaryFormatOnly",
-							"Optional": true,
-							"Default": "false"
 						}
 					],
 					"PreferredDescriptor": {
@@ -89413,6 +89404,24 @@
 			"Superclass": "Instance",
 			"MemoryCategory": "Instances",
 			"Members": {
+				"AutoSelectGui": {
+					"MemberType": "Function",
+					"Name": "AutoSelectGui",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
 				"DisableGamepadCursor": {
 					"MemberType": "Function",
 					"Name": "DisableGamepadCursor",
@@ -105330,6 +105339,20 @@
 							"Default": ""
 						}
 					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxSecurity",
+					"Tags": [
+						"Hidden"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"ServerResetCharacter": {
+					"MemberType": "Event",
+					"Name": "ServerResetCharacter",
+					"Parameters": [],
 					"PreferredDescriptor": {
 						"Name": "",
 						"ThreadSafety": ""
@@ -124194,6 +124217,29 @@
 					},
 					"WriteSecurity": "None"
 				},
+				"EntityVisible": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "true",
+					"MemberType": "Property",
+					"Name": "EntityVisible",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
 				"IsSlimEnabled": {
 					"CanLoad": false,
 					"CanSave": false,
@@ -124463,6 +124509,45 @@
 					"Tags": [],
 					"ThreadSafety": "Unsafe"
 				},
+				"Error": {
+					"MemberType": "Function",
+					"Name": "Error",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "message",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "context",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
+					],
+					"ThreadSafety": "Unsafe"
+				},
 				"ExecuteScript": {
 					"MemberType": "Function",
 					"Name": "ExecuteScript",
@@ -124549,6 +124634,93 @@
 					"Tags": [],
 					"ThreadSafety": "Unsafe"
 				},
+				"Info": {
+					"MemberType": "Function",
+					"Name": "Info",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "message",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "context",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"Log": {
+					"MemberType": "Function",
+					"Name": "Log",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "MessageType"
+							},
+							"Name": "messageType",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "message",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "context",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
+					],
+					"ThreadSafety": "Unsafe"
+				},
 				"MessageOut": {
 					"MemberType": "Event",
 					"Name": "MessageOut",
@@ -124568,6 +124740,15 @@
 								"Name": "MessageType"
 							},
 							"Name": "messageType",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "context",
 							"Optional": false,
 							"Default": ""
 						}
@@ -124600,6 +124781,45 @@
 					},
 					"Security": "RobloxScriptSecurity",
 					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
+				"Output": {
+					"MemberType": "Function",
+					"Name": "Output",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "message",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "context",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
+					],
 					"ThreadSafety": "Unsafe"
 				},
 				"RequestHttpResultApproved": {
@@ -124877,6 +125097,45 @@
 					"Security": "RobloxSecurity",
 					"Tags": [
 						"Hidden"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"Warn": {
+					"MemberType": "Function",
+					"Name": "Warn",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "message",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "context",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
 					],
 					"ThreadSafety": "Unsafe"
 				}
@@ -127884,6 +128143,15 @@
 								"Name": "Dictionary"
 							},
 							"Name": "options",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "discountInformation",
 							"Optional": false,
 							"Default": ""
 						}
@@ -143204,6 +143472,34 @@
 						"Name": "string"
 					},
 					"WriteSecurity": "RobloxScriptSecurity"
+				},
+				"SubscribeToRccEventNamespace": {
+					"MemberType": "Function",
+					"Name": "SubscribeToRccEventNamespace",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "eventNamespace",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
 				},
 				"SwitchedToAppShellFeature": {
 					"MemberType": "Function",
@@ -210274,6 +210570,26 @@
 					},
 					"WriteSecurity": "PluginSecurity"
 				},
+				"ResampleMode": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Appearance",
+					"Default": "Default",
+					"MemberType": "Property",
+					"Name": "ResampleMode",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "ResamplerMode"
+					},
+					"WriteSecurity": "None"
+				},
 				"RoughnessMap": {
 					"CanLoad": true,
 					"CanSave": true,
@@ -223016,6 +223332,34 @@
 					],
 					"ThreadSafety": "Unsafe"
 				},
+				"HasAllocatedUniverseChatContext": {
+					"MemberType": "Function",
+					"Name": "HasAllocatedUniverseChatContext",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "context",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
 				"HasSeenDeprecationDialog": {
 					"CanLoad": true,
 					"CanSave": true,
@@ -223433,6 +223777,52 @@
 					"Tags": [],
 					"ThreadSafety": "Unsafe"
 				},
+				"SendingUniverseChatMessage": {
+					"MemberType": "Event",
+					"Name": "SendingUniverseChatMessage",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "TextChatMessage"
+							},
+							"Name": "textChatMessage",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
+				"ServerToClientChatActionReplicateSignal": {
+					"MemberType": "Event",
+					"Name": "ServerToClientChatActionReplicateSignal",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "TextChatMessage"
+							},
+							"Name": "chatActionMessage",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxSecurity",
+					"Tags": [
+						"Hidden"
+					],
+					"ThreadSafety": "Unsafe"
+				},
 				"ServerToClientMessageReplicateSignal": {
 					"MemberType": "Event",
 					"Name": "ServerToClientMessageReplicateSignal",
@@ -223544,6 +223934,30 @@
 					],
 					"ThreadSafety": "Unsafe"
 				},
+				"ServerToClientUniverseChatChannelAllocatedSignalV1": {
+					"MemberType": "Event",
+					"Name": "ServerToClientUniverseChatChannelAllocatedSignalV1",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "context",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxSecurity",
+					"Tags": [
+						"Hidden"
+					],
+					"ThreadSafety": "Unsafe"
+				},
 				"ServerToClientUniverseChatMessageSignalV1": {
 					"MemberType": "Event",
 					"Name": "ServerToClientUniverseChatMessageSignalV1",
@@ -223566,6 +223980,28 @@
 					"Tags": [
 						"Hidden"
 					],
+					"ThreadSafety": "Unsafe"
+				},
+				"UniverseChatChannelAllocated": {
+					"MemberType": "Event",
+					"Name": "UniverseChatChannelAllocated",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "context",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
 					"ThreadSafety": "Unsafe"
 				},
 				"UniverseChatMessageReceived": {
@@ -295046,9 +295482,7 @@
 					"Name": "LeftToeBase",
 					"Value": 28,
 					"Index": 21,
-					"LegacyNames": [
-						"LeftToes"
-					],
+					"LegacyNames": null,
 					"PreferredDescriptor": {
 						"Name": "",
 						"ThreadSafety": ""
@@ -295235,9 +295669,7 @@
 					"Name": "RightToeBase",
 					"Value": 29,
 					"Index": 22,
-					"LegacyNames": [
-						"RightToes"
-					],
+					"LegacyNames": null,
 					"PreferredDescriptor": {
 						"Name": "",
 						"ThreadSafety": ""
@@ -295314,9 +295746,7 @@
 					"Name": "Spine",
 					"Value": 23,
 					"Index": 16,
-					"LegacyNames": [
-						"Pelvis"
-					],
+					"LegacyNames": null,
 					"PreferredDescriptor": {
 						"Name": "",
 						"ThreadSafety": ""
