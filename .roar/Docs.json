@@ -900,6 +900,7 @@
 			"Summary": "<p>The GamepadService is internally responsible for handling inputs from various\ncontrollers, such as Xbox One or PlayStation DualShock controllers.</p>\n",
 			"Description": "<p>The GamepadService is internally responsible for handling inputs from various\ncontrollers, such as Xbox One or PlayStation DualShock controllers. It also\nhandles APIs used with the gamepad virtual cursor. You can enable the gamepad\ncursor for your experience by setting <a href=\"/ref/enum/VirtualCursorMode.html\">VirtualCursorMode</a> under\n<a href=\"/ref/class/StarterGui.html\">StarterGui</a> to <code>Enabled</code>.</p>\n"
 		},
+		"GeneratedFolder": {},
 		"GenerationService": {
 			"Summary": "<p>Service that allows developers to generate 3D objects from text prompts.</p>\n",
 			"Description": "<p><code>GenerationService</code> enables you to generate 3D objects from text prompts using\nRoblox&#39;s Cube 3D foundation model. This enables the generation of objects like\nenvironmental props in-experience, as well as fully functional models like\nvehicles that drive, planes that fly, and weapons that shoot.</p>\n"
@@ -1013,7 +1014,7 @@
 		"HiddenSurfaceRemovalAsset": {},
 		"Highlight": {
 			"Summary": "<p>A visual effect which you can use to call attention to a specific object\nwithin an experience.</p>\n",
-			"Description": "<p>The <a href=\"/ref/class/Highlight.html\">Highlight</a> instance is a visual effect which you can use to call\nattention to a specific object within an experience. Every highlight effect\nhas a silhouette <strong>outline</strong> that surrounds the object and a solid overlay\n<strong>interior</strong> that displays over the object. You can customize both of these\ncomponents independently to modify the highlight&#39;s visual appearance.</p>\n<table size=\"small\">\n  <tbody>\n    <tr>\n      <td width=\"30%\">\n        <figure>\n        <img src=\"https://prod.docsiteassets.roblox.com/assets/ui/highlighting-objects/OutlineTransparency-1.jpg\"/>\n        <figcaption>Base object</figcaption>\n        </figure>\n      </td>\n      <td width=\"30%\">\n        <figure>\n        <img src=\"https://prod.docsiteassets.roblox.com/assets/ui/highlighting-objects/Adding-Highlight.jpg\"/>\n        <figcaption>White outline, 50% red interior</figcaption>\n        </figure>\n      </td>\n      <td width=\"30%\">\n        <figure>\n        <img src=\"https://prod.docsiteassets.roblox.com/assets/ui/highlighting-objects/Overview-Yellow-Outline.jpg\"/>\n        <figcaption>Yellow outline, black interior</figcaption>\n        </figure>\n      </td>\n    </tr>\n  </tbody>\n</table>\n<p>Useful applications of the highlight effect include:</p>\n<ul>\n<li>Providing visual feedback that an object is important and/or interactable.</li>\n<li>Making distant objects visible through objects that are closer to the user.</li>\n<li>Indicating the current position and status of other characters.</li>\n</ul>\n<h3>Limitations</h3>\n<p>As a performance limit, the engine only displays 255 <a href=\"/ref/class/Highlight.html\">Highlight</a>\ninstances simultaneously on the client at a time. If you exceed this limit,\nthe additional instances are silently ignored. Note that while a\n<a href=\"/ref/class/Highlight.html\">Highlight</a> with <a href=\"/ref/class/Highlight.html#member-Enabled\">Enabled</a> set to <code>false</code>\ndoesn&#39;t display, it still takes one of the 255 available slots, so if you plan\nto permanently disable a <a href=\"/ref/class/Highlight.html\">Highlight</a> instance, it&#39;s best to delete it\nrather than disable it.</p>\n"
+			"Description": "<p>The <a href=\"/ref/class/Highlight.html\">Highlight</a> instance is a visual effect which you can use to call\nattention to a specific object within an experience. Every highlight effect\nhas a silhouette <strong>outline</strong> that surrounds the object and a solid overlay\n<strong>interior</strong> that displays over the object. You can customize both of these\ncomponents independently to modify the highlight&#39;s visual appearance.</p>\n<table size=\"small\">\n  <tbody>\n    <tr>\n      <td width=\"30%\">\n        <figure>\n        <img src=\"https://prod.docsiteassets.roblox.com/assets/ui/highlighting-objects/OutlineTransparency-1.jpg\"/>\n        <figcaption>Base object</figcaption>\n        </figure>\n      </td>\n      <td width=\"30%\">\n        <figure>\n        <img src=\"https://prod.docsiteassets.roblox.com/assets/ui/highlighting-objects/Adding-Highlight.jpg\"/>\n        <figcaption>White outline, 50% red interior</figcaption>\n        </figure>\n      </td>\n      <td width=\"30%\">\n        <figure>\n        <img src=\"https://prod.docsiteassets.roblox.com/assets/ui/highlighting-objects/Overview-Yellow-Outline.jpg\"/>\n        <figcaption>Yellow outline, black interior</figcaption>\n        </figure>\n      </td>\n    </tr>\n  </tbody>\n</table>\n<p>Useful applications of the highlight effect include:</p>\n<ul>\n<li>Providing visual feedback that an object is important and/or interactable.</li>\n<li>Making distant objects visible through objects that are closer to the user.</li>\n<li>Indicating the current position and status of other characters.</li>\n</ul>\n<h3>Limitations</h3>\n<p>As a performance limit, Studio only displays 255 simultaneous\n<a href=\"/ref/class/Highlight.html\">Highlight</a> instances on the client at a time. If you exceed this limit,\nthe additional instances are silently ignored. Note that while a\n<a href=\"/ref/class/Highlight.html\">Highlight</a> with <a href=\"/ref/class/Highlight.html#member-Enabled\">Enabled</a> set to <code>false</code>\ndoesn&#39;t display, it still takes one of the 255 available slots, so if you plan\nto permanently disable a <a href=\"/ref/class/Highlight.html\">Highlight</a> instance, it&#39;s best to delete it\nrather than disable it.</p>\n"
 		},
 		"HingeConstraint": {
 			"Summary": "<p>Constrains its attachments to rotate about a single axis.</p>\n",
@@ -1216,7 +1217,7 @@
 		},
 		"LogService": {
 			"Summary": "<p>A service that allows you to read outputted text.</p>\n",
-			"Description": "<p><strong>Important notes about this service:</strong> This service might have unexpected or\nunreliable behavior depending on how games and the game engine log things.\nContent might also be truncated. Don&#39;t rely on contents of events and messages\nemitted by this service for any important game logic.</p>\n<p>A service that allows you to read outputted text.</p>\n"
+			"Description": "<p><code>LogService</code> allows you to log structured log entries and read outputted text.</p>\n<h3>Warning</h3>\n<p>This service might have unexpected or unreliable behavior and content might be\ntruncated. Don&#39;t rely on contents of events and messages emitted by this\nservice for any important game logic.</p>\n"
 		},
 		"LoginService": {
 			"Summary": "<p>An internal service whose functionality is not available to developers.</p>\n",
@@ -1629,6 +1630,7 @@
 			"Summary": "<p>Constraint which creates a rigid joint between two\n<a href=\"/ref/class/Attachment.html\">Attachments</a>, allowing them to slide along one axis but not\nrotate.</p>\n",
 			"Description": "<p>A <strong>PrismaticConstraint</strong> creates a rigid joint between two\n<a href=\"/ref/class/Attachment.html\">Attachments</a>, allowing them to slide along one axis but not\nrotate. This constrains the attachments so that their <strong>X</strong> axes are collinear\nbut pointing in opposite directions. It also constrains the attachments so\nthat their <strong>Y</strong> axes are parallel.</p>\n<p>This constraint inherits many properties from <a href=\"/ref/class/SlidingBallConstraint.html\">SlidingBallConstraint</a>\nincluding <a href=\"/ref/class/SlidingBallConstraint.html#member-ActuatorType\">ActuatorType</a>,\n<a href=\"/ref/class/SlidingBallConstraint.html#member-LimitsEnabled\">LimitsEnabled</a>,\n<a href=\"/ref/class/SlidingBallConstraint.html#member-Velocity\">Velocity</a>, and more. Please refer to\n<a href=\"/ref/class/SlidingBallConstraint.html\">SlidingBallConstraint</a> for details on configuring a\n<a href=\"/ref/class/PrismaticConstraint.html\">PrismaticConstraint</a>.</p>\n<p>When configuring this constraint, it may be helpful to study\n<a href=\"https://create.roblox.com/docs/physics/units\">Roblox Units</a> to understand how Roblox units\ncompare to metric units.</p>\n"
 		},
+		"ProceduralModel": {},
 		"ProcessInstancePhysicsService": {},
 		"ProximityPrompt": {
 			"Summary": "<p>An object that lets you prompt players to interact with an object in the 3D\nworld.</p>\n",
@@ -9365,6 +9367,9 @@
 				]
 			}
 		},
+		"GeneratedFolder": {
+			"SetPrimaryPart": {}
+		},
 		"GenerationService": {
 			"GenerateMeshAsync": {
 				"Summary": "<p>Starts the generation of a new 3D mesh from a text prompt and returns\nunique IDs used to track and retrieve the result.</p>\n",
@@ -10442,7 +10447,7 @@
 			},
 			"JSONEncode": {
 				"Summary": "<p>Generate a JSON string from a Luau table.</p>\n",
-				"Description": "<p>This method transforms a Luau <a href=\"https://create.roblox.com/docs/luau/tables\">table</a> into a JSON\nobject or array based on the following guidelines:</p>\n<ul>\n<li>Keys of the table must be either strings or numbers. If a table contains\nboth, an array takes priority (string keys are ignored).</li>\n<li>An empty Luau table (<code>{}</code>) generates an empty JSON array (e.g. <code>[]</code>).</li>\n<li>The value <code>nil</code> is never generated.</li>\n<li>Cyclic table references cause an error.</li>\n</ul>\n<p>This method allows values such as <code>inf</code> and <code>nan</code> which are not valid\nJSON. This may cause problems if you want to use the outputted JSON\nelsewhere.</p>\n<p>This method also accepts <a href=\"https://create.roblox.com/docs/reference/engine/libraries/buffer#\">buffers</a> up to 50 MiB, which it\nencodes to base64 (and often compresses) before converting to a JSON\nobject.</p>\n<p>To reverse the encoding process and decode a JSON object, use the\n<a href=\"/ref/class/HttpService.html#member-JSONDecode\">HttpService:JSONDecode()</a> method.</p>\n<p>This method can be used regardless of whether HTTP requests are enabled.</p>\n",
+				"Description": "<p>This method transforms a Luau <a href=\"https://create.roblox.com/docs/luau/tables\">table</a> into a JSON\nobject or array based on the following guidelines:</p>\n<ul>\n<li>Keys of the table must be either strings or numbers. If a table contains\nboth, an array takes priority (string keys are ignored).</li>\n<li>An empty Luau table (<code>{}</code>) generates an empty JSON array (e.g. <code>[]</code>).</li>\n<li>Whether passing a dictionary table or a numerically indexed table, avoid\n<code>nil</code> values for any index.</li>\n<li>Cyclic table references cause an error.</li>\n</ul>\n<p>This method allows values such as <code>inf</code> and <code>nan</code> which are not valid\nJSON. This may cause problems if you want to use the outputted JSON\nelsewhere.</p>\n<p>This method also accepts <a href=\"https://create.roblox.com/docs/reference/engine/libraries/buffer#\">buffers</a> up to 50 MiB, which it\nencodes to base64 (and often compresses) before converting to a JSON\nobject.</p>\n<p>To reverse the encoding process and decode a JSON object, use the\n<a href=\"/ref/class/HttpService.html#member-JSONDecode\">HttpService:JSONDecode()</a> method.</p>\n<p>This method can be used regardless of whether HTTP requests are enabled.</p>\n",
 				"CodeSamples": [
 					"HttpService-JSONEncode"
 				]
@@ -12657,12 +12662,24 @@
 		},
 		"LogService": {
 			"ClearOutput": {
-				"Summary": "<p>Clears the Roblox Studio output window.</p>\n",
-				"Description": "<p>Clears the Roblox Studio output window.</p>\n<p>The log history is also cleared, such that\n<a href=\"/ref/class/LogService.html#member-GetLogHistory\">LogService.GetLogHistory</a> will not return any entries from before\nthe <a href=\"/ref/class/LogService.html#member-ClearOutput\">LogService.ClearOutput</a> call.</p>\n"
+				"Summary": "<p>Clears Roblox Studio&#39;s <strong>Output</strong> window.</p>\n",
+				"Description": "<p>Clears Roblox Studio&#39;s <strong>Output</strong> window. The log history is also cleared,\nsuch that <a href=\"/ref/class/LogService.html#member-GetLogHistory\">LogService:GetLogHistory()</a> will not return any entries\nfrom before the <code>ClearOutput()</code> call.</p>\n"
+			},
+			"Error": {
+				"Summary": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageError</a> level and throws a\nstructured error with optional context.</p>\n",
+				"Description": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageError</a> level and throws a\nstructured error with optional context. As this method always throws, use\n<a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#pcall\">pcall()</a> to catch the error. The thrown error is a\ntable with <code>message</code>, <code>template</code>, <code>context</code>, and <code>stack</code> fields, and a\n<code>__tostring</code> metamethod that returns the rendered message.</p>\n<p>When a <code>context</code> table is provided, template placeholders like <code>{key}</code> in\nthe message are replaced with the corresponding context values.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span><span class=\"_lnt\">4\n</span><span class=\"_lnt\">5\n</span><span class=\"_lnt\">6\n</span><span class=\"_lnt\">7\n</span><span class=\"_lnt\">8\n</span><span class=\"_lnt\">9\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">LogService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;LogService&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">ok</span><span class=\"_p\">,</span> <span class=\"_n\">err</span> <span class=\"_o\">=</span> <span class=\"_n\">pcall</span><span class=\"_p\">(</span><span class=\"_kr\">function</span><span class=\"_p\">()</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_n\">LogService</span><span class=\"_p\">:</span><span class=\"_n\">Error</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Failed: {reason}&#34;</span><span class=\"_p\">,</span> <span class=\"_p\">{</span><span class=\"_n\">reason</span> <span class=\"_o\">=</span> <span class=\"_s2\">&#34;timeout&#34;</span><span class=\"_p\">})</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kr\">end</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_c1\">-- ok is false</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_c1\">-- err.message == &#34;Failed: timeout&#34;</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_c1\">-- err.context == {reason = &#34;timeout&#34;}</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_c1\">-- tostring(err) == &#34;Failed: timeout&#34;</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
 			},
 			"GetLogHistory": {
-				"Summary": "<p>Returns a table of tables, each with the message string, message type, and\ntimestamp of a message that the client displays in the output window.</p>\n",
-				"Description": "<p><strong>Unreliable Behavior</strong> This may have changing, unexpected or unreliable\nbehavior depending on how the game engine logs things. It should not be\nrelied upon for any important game logic.</p>\n<p>Returns a table of tables, each with the message string, message type, and\ntimestamp of a message that the client displays in the output window.</p>\n<p>See also:</p>\n<ul>\n<li><a href=\"/ref/class/LogService.html#member-MessageOut\">LogService.MessageOut</a> - An event that fires when text is added\nto the output from the client</li>\n</ul>\n"
+				"Summary": "<p>Returns a table of tables, each with the message string, message type, and\ntimestamp of a message that the client displays in the <strong>Output</strong> window.</p>\n",
+				"Description": "<p>Returns a table of tables, each with the message string, message type, and\ntimestamp of a message that the client displays in the <strong>Output</strong> window.</p>\n"
+			},
+			"Info": {
+				"Summary": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageInfo</a> level with optional\nstructured context.</p>\n",
+				"Description": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageInfo</a> level. When a\n<code>context</code> table is provided, template placeholders like <code>{key}</code> in the\nmessage are replaced with the corresponding context values. The context is\npreserved as structured data for display in the Developer Console and\nStudio&#39;s <strong>Output</strong> window.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span><span class=\"_lnt\">4\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">LogService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;LogService&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">LogService</span><span class=\"_p\">:</span><span class=\"_n\">Info</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;User {name} has {count} items&#34;</span><span class=\"_p\">,</span> <span class=\"_p\">{</span><span class=\"_n\">name</span> <span class=\"_o\">=</span> <span class=\"_s2\">&#34;Alice&#34;</span><span class=\"_p\">,</span> <span class=\"_n\">count</span> <span class=\"_o\">=</span> <span class=\"_mi\">42</span><span class=\"_p\">})</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_c1\">-- Output: &#34;User Alice has 42 items&#34;</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
+			},
+			"Log": {
+				"Summary": "<p>Logs a message at the specified level with optional structured context.</p>\n",
+				"Description": "<p>Logs a message at the specified <a href=\"/ref/enum/MessageType.html\">MessageType</a> level. This is a\ngeneral-purpose method that combines the functionality of\n<a href=\"/ref/class/LogService.html#member-Output\">Output()</a>, <a href=\"/ref/class/LogService.html#member-Info\">Info()</a>,\n<a href=\"/ref/class/LogService.html#member-Warn\">Warn()</a>, and <a href=\"/ref/class/LogService.html#member-Error\">Error()</a>\ninto a single call with an explicit message type parameter.</p>\n<p>When <code>messageType</code> is <a href=\"/ref/enum/MessageType.html\">MessageType.MessageError</a>, this method throws\na structured error object (same behavior as\n<a href=\"/ref/class/LogService.html#member-Error\">Error()</a>).</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">LogService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;LogService&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">LogService</span><span class=\"_p\">:</span><span class=\"_n\">Log</span><span class=\"_p\">(</span><span class=\"_n\">Enum.MessageType</span><span class=\"_p\">.</span><span class=\"_n\">MessageInfo</span><span class=\"_p\">,</span> <span class=\"_s2\">&#34;Event {action}&#34;</span><span class=\"_p\">,</span> <span class=\"_p\">{</span><span class=\"_n\">action</span> <span class=\"_o\">=</span> <span class=\"_s2\">&#34;click&#34;</span><span class=\"_p\">})</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
 			},
 			"MessageOut": {
 				"Summary": "<p>Fires when the client outputs text.</p>\n",
@@ -12670,6 +12687,14 @@
 				"CodeSamples": [
 					"LogService-MessageOut1"
 				]
+			},
+			"Output": {
+				"Summary": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageOutput</a> level with optional\nstructured context.</p>\n",
+				"Description": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageOutput</a> level. When a\n<code>context</code> table is provided, template placeholders like <code>{key}</code> in the\nmessage are replaced with the corresponding context values. The context is\npreserved as structured data for display in the Developer Console and\nStudio&#39;s <strong>Output</strong> window.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span><span class=\"_lnt\">4\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">LogService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;LogService&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">LogService</span><span class=\"_p\">:</span><span class=\"_n\">Output</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Player {name} joined&#34;</span><span class=\"_p\">,</span> <span class=\"_p\">{</span><span class=\"_n\">name</span> <span class=\"_o\">=</span> <span class=\"_s2\">&#34;Alice&#34;</span><span class=\"_p\">})</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_c1\">-- Output: &#34;Player Alice joined&#34;</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
+			},
+			"Warn": {
+				"Summary": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageWarning</a> level with\noptional structured context.</p>\n",
+				"Description": "<p>Logs a message at the <a href=\"/ref/enum/MessageType.html\">MessageType.MessageWarning</a> level with\noptional structured context. When a <code>context</code> table is provided, template\nplaceholders like <code>{key}</code> in the message are replaced with the\ncorresponding context values. The context is preserved as structured data\nfor display in the Developer Console and Studio&#39;s <strong>Output</strong> window.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span><span class=\"_lnt\">4\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">LogService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;LogService&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">LogService</span><span class=\"_p\">:</span><span class=\"_n\">Warn</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Memory usage at {pct}%&#34;</span><span class=\"_p\">,</span> <span class=\"_p\">{</span><span class=\"_n\">pct</span> <span class=\"_o\">=</span> <span class=\"_mi\">95</span><span class=\"_p\">})</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_c1\">-- Output: &#34;Memory usage at 95%&#34;</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
 			}
 		},
 		"LoginService": {},
@@ -15771,6 +15796,13 @@
 			}
 		},
 		"PrismaticConstraint": {},
+		"ProceduralModel": {
+			"ForceGeneration": {},
+			"GenerationError": {},
+			"Generator": {},
+			"Size": {},
+			"WaitForGenerationAsync": {}
+		},
 		"ProcessInstancePhysicsService": {},
 		"ProximityPrompt": {
 			"ActionText": {
@@ -27796,7 +27828,7 @@
 			"Tilde": {
 				"Summary": "<p>The <code>~</code> key.</p>\n"
 			},
-			"Touch": {
+			"TouchPosition": {
 				"Summary": "<p>The position of a touch in the viewport. Primarily used in the\n<a href=\"https://create.roblox.com/docs/input/input-action-system\">Input Action System</a>.</p>\n"
 			},
 			"TrackpadPan": {},
@@ -33763,13 +33795,13 @@
 			"Properties": [
 				{
 					"Name": "ExcludeInstances",
-					"Type": "Array",
+					"Type": "{Instance}?",
 					"Summary": "<p>An optional array of instances whose descendants will be excluded from the\nquery.</p>\n",
 					"Description": "<p>This property can be used simultaneously with <code>IncludeInstances</code> to allow\nfor mixed filtering (e.g., including a large folder but excluding specific\nchild instances). If an instance matches both an exclude and include\nfilter, exclusions take priority over inclusions.</p>\n"
 				},
 				{
 					"Name": "IncludeInstances",
-					"Type": "Array",
+					"Type": "{Instance}?",
 					"Summary": "<p>An optional array of instances whose descendants will be included in the\nquery.</p>\n",
 					"Description": "<p>This property can be used simultaneously with <code>ExcludeInstances</code> to allow\nfor mixed filtering. If an instance matches both an exclude and include\nfilter, exclusions take priority over inclusions. Setting\n<code>IncludeInstances</code> to nil versus an empty array (<code>{}</code>) have opposite\neffects. <code>IncludeInstances = nil</code> is the most permissive filter (includes\neverything), whereas <code>IncludeInstances = {}</code> is the most restrictive\nfilter (includes nothing).</p>\n"
 				},
@@ -34409,14 +34441,14 @@
 			"Properties": [
 				{
 					"Name": "ExcludeInstances",
-					"Type": "Array",
+					"Type": "{Instance}?",
 					"Summary": "<p>An optional array of instances whose descendants will be excluded from the\nquery.</p>\n",
 					"Description": "<p>This property can be used simultaneously with <code>IncludeInstances</code> to allow\nfor mixed filtering (e.g., including a large folder but excluding specific\nchild instances). If an instance matches both an exclude and include\nfilter, exclusions take priority over inclusions.</p>\n"
 				},
 				{
 					"Name": "IncludeInstances",
-					"Type": "Array",
-					"Summary": "<p>An optional array of Instances whose descendants will be included in the\nquery.</p>\n",
+					"Type": "{Instance}?",
+					"Summary": "<p>An optional array of instances whose descendants will be included in the\nquery.</p>\n",
 					"Description": "<p>This property can be used simultaneously with <code>ExcludeInstances</code> to allow\nfor mixed filtering. If an instance matches both an exclude and include\nfilter, exclusions take priority over inclusions. Setting\n<code>IncludeInstances</code> to nil versus an empty array (<code>{}</code>) have opposite\neffects. <code>IncludeInstances = nil</code> is the most permissive filter (includes\neverything), whereas <code>IncludeInstances = {}</code> is the most restrictive\nfilter (includes nothing).</p>\n"
 				},
 				{
@@ -35536,30 +35568,6 @@
 				}
 			],
 			"Properties": [
-				{
-					"Name": "zero",
-					"Type": "Vector2",
-					"Summary": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a magnitude of zero.</p>\n",
-					"Description": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a magnitude of zero.</p>\n<p>This API member is a <strong>constant</strong>, and must be accessed through the\n<a href=\"/ref/type/Vector2.html\">Vector2</a> global as opposed to an individual <a href=\"/ref/type/Vector2.html\">Vector2</a>\nobject.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">print</span><span class=\"_p\">(</span><span class=\"_n\">Vector2.zero</span><span class=\"_p\">)</span>  <span class=\"_c1\">--&gt; 0, 0</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
-				},
-				{
-					"Name": "one",
-					"Type": "Vector2",
-					"Summary": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a value of 1 on every axis.</p>\n",
-					"Description": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a value of 1 on every axis.</p>\n<p>This API member is a <strong>constant</strong>, and must be accessed through the\n<a href=\"/ref/type/Vector2.html\">Vector2</a> global as opposed to an individual <a href=\"/ref/type/Vector2.html\">Vector2</a>\nobject.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">print</span><span class=\"_p\">(</span><span class=\"_n\">Vector2.one</span><span class=\"_p\">)</span>  <span class=\"_c1\">--&gt; 1, 1</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
-				},
-				{
-					"Name": "xAxis",
-					"Type": "Vector2",
-					"Summary": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a value of 1 on the X axis.</p>\n",
-					"Description": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a value of 1 on the X axis.</p>\n<p>This API member is a <strong>constant</strong>, and must be accessed through the\n<a href=\"/ref/type/Vector2.html\">Vector2</a> global as opposed to an individual <a href=\"/ref/type/Vector2.html\">Vector2</a>\nobject.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">print</span><span class=\"_p\">(</span><span class=\"_n\">Vector2.xAxis</span><span class=\"_p\">)</span>  <span class=\"_c1\">--&gt; 1, 0</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
-				},
-				{
-					"Name": "yAxis",
-					"Type": "Vector2",
-					"Summary": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a value of 1 on the y axis.</p>\n",
-					"Description": "<p>A <a href=\"/ref/type/Vector2.html\">Vector2</a> with a value of 1 on the Y axis.</p>\n<p>This API member is a <strong>constant</strong>, and must be accessed through the\n<a href=\"/ref/type/Vector2.html\">Vector2</a> global as opposed to an individual <a href=\"/ref/type/Vector2.html\">Vector2</a>\nobject.</p>\n<div class=\"_chroma\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma\"><span class=\"_lnt\">1\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">print</span><span class=\"_p\">(</span><span class=\"_n\">Vector2.yAxis</span><span class=\"_p\">)</span>  <span class=\"_c1\">--&gt; 0, 1</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
-				},
 				{
 					"Name": "X",
 					"Type": "number",
