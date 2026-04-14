@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.716.0.7160873</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-468628c5c08447ae</link><description>25 revisions to the API.</description><guid>version-468628c5c08447ae</guid><pubDate>Tue, 07 Apr 2026 09:40:56 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.717.0.7170978</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-961e524856ba47c6</link><description>74 revisions to the API.</description><guid>version-961e524856ba47c6</guid><pubDate>Tue, 14 Apr 2026 10:05:34 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-0">Change Property AnimationRigData.Generic</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-1">Remove Property AudioPlayer.IsMutedForCapture</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-2">Remove Property AuroraService.EnableInputLatencyMaxResimFrames</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-3">Remove Property AuroraService.InputLatencyMaxResimFrames</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-4">Remove Property ContextActionService.NetcodeInputLatency</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-5">Add Property ControllerPartSensor.LadderSearchHeight</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-6">Add Property ControllerPartSensor.LadderSearchOffset</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-7">Add Function ExperienceService.GetQueuePosition</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-8">Add Event ExperienceService.QueuePositionChanged</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-9">Add Class InternalMessagingServiceVerifier</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-10">Add Property LayerCollector.TabKeyboardNavigation</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-11">Add Function MarketplaceService.BindReceiptHandler</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-12">Add Function MarketplaceService.PromptRobuxTransferAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-13">Add Function MarketplaceService.SignalRobuxTransferCompleted</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-14">Change Event MarketplaceService.PromptBulkPurchaseRequested</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-15">Add Event MarketplaceService.PromptBulkPurchaseRequestedV2</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-16">Add Event MarketplaceService.PromptRobuxTransferRequested</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-17">Add Event MarketplaceService.RobuxTransferCompleted</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-18">Change Function PluginConnection.SendMessage</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-19">Add Class Preloaded</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-20">Add Function SafetyService.ReportCapturesUIClose</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-21">Add Function SafetyService.ReportCapturesUIOpen</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-22">Add Function SafetyService.ReportChatLineReportingClose</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-23">Add Function SafetyService.ReportChatLineReportingOpen</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-24">Add Function SafetyService.ReportChatSuspensionDialogClose</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-25">Add Function SafetyService.ReportChatSuspensionDialogOpen</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-26">Add Function SafetyService.ReportPartyChatWindowClose</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-27">Add Function SafetyService.ReportPartyChatWindowOpen</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-28">Add Function SessionService.GetBreadcrumbs</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-29">Add Function SessionService.GetHistory</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-30">Add Event SessionService.SessionChanged</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-31">Add Property SlimAnimationDataEntity.RootIndex</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-32">Remove Property Sound.IsMutedForCapture</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-33">Add Class StudioDeviceSimulatorService</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-51">Add Function TestService.RequestValidationAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-52">Change Property TextBox.PlaceholderColor3</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-53">Add Property TextChatMessage.ChatActionType</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-54">Add Event TextChatService.ChatActionReceived</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-55">Change Event TextChatService.ServerToClientChatActionReplicateSignal</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-56">Add Property TextSource.DisplayName</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-57">Add Property TextSource.Username</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-58">Add Function UGCValidationService.GetExpectedTposeRotation</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-59">Add Function UGCValidationService.GetLayeredClothingPostDeformationSize</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-60">Add Property Workspace.MeshStreamingAndImprovedLods</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-61">Add Enum DeviceSimulatorScalingMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-65">Add Enum ReceiptDecision</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-68">Add Enum ReceiptType</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-72">Add EnumItem SensorMode.ClassicLadder</a></li>
+					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-73">Add EnumItem VoiceRccReconnectReason.FAEUpdate</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-961e524856ba47c6">All changes</a>
+			]]></content:encoded></item><item><title>v0.716.0.7160873</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-468628c5c08447ae</link><description>25 revisions to the API.</description><guid>version-468628c5c08447ae</guid><pubDate>Tue, 07 Apr 2026 09:40:56 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-468628c5c08447ae-0">Change Function AdService.RegisterDisclosureButton</a></li>
 					<li><a href="/ref/updates/2026.html#version-468628c5c08447ae-1">Change Function DataModel.GetObjectsAllOrNone</a></li>
@@ -4066,50 +4119,4 @@
 					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-37">Add Enum SystemThemeValue</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-337aa961b0d54f6c">All changes</a>
-			]]></content:encoded></item><item><title>v0.668.0.6680659</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-04a222f011414c81</link><description>54 revisions to the API.</description><guid>version-04a222f011414c81</guid><pubDate>Mon, 07 Apr 2025 13:40:52 -0700</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-0">Change Class AssetImportSession</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-1">Remove Function AssetImportSession.Cancel</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-2">Remove Function AssetImportSession.GetFilename</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-3">Remove Function AssetImportSession.GetStatuses</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-4">Remove Function AssetImportSession.Upload</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-5">Remove Event AssetImportSession.UploadComplete</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-6">Remove Event AssetImportSession.UploadProgress</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-7">Add Class ImportSession</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-14">Remove Property PartOperation.SolidMeshData</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-15">Add Property PartOperation.SolidMeshHolder</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-16">Add Function ReflectionService.GetStyledPropertyNames</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-17">Add Class SerializationService</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-20">Remove Class ShorelineUpgraderService</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-21">Add Property Studio.ActionOnAutoResumeSync</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-22">Add Property SurfaceAppearance.ColorMapContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-23">Add Property SurfaceAppearance.MetalnessMapContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-24">Add Property SurfaceAppearance.NormalMapContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-25">Add Property SurfaceAppearance.RoughnessMapContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-26">Remove Function Terrain.CanShorelinesBeUpgraded</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-27">Add Function UGCValidationService.ValidateEditableMeshFacialBounds</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-28">Add Function UGCValidationService.ValidateEditableMeshFacialExpressiveness</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-29">Add Function VideoDisplay.GetInputPins</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-30">Add Function VideoDisplay.GetOutputPins</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-31">Remove Property VideoPlayer.AutoLoad</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-32">Add Property VideoPlayer.AutoLoadInStudio</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-33">Add Property VideoPlayer.AutoPlayInStudio</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-34">Add Property VideoPlayer.IsLoaded</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-35">Change Property VideoPlayer.IsPlaying</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-37">Remove Property VideoPlayer.IsReady</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-38">Remove Property VideoPlayer.Thumbnail</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-39">Add Function VideoPlayer.GetInputPins</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-40">Add Function VideoPlayer.GetOutputPins</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-41">Add Function VideoPlayer.LoadAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-42">Add Function VideoPlayer.Pause</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-43">Remove Function VideoPlayer.Stop</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-44">Add Function VideoPlayer.Unload</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-45">Add Event VideoPlayer.PlayFailed</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-46">Add Event VideoPlayer.WiringChanged</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-47">Add Event VoiceChatService.VoiceUdmuxVip</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-48">Add Enum ActionOnAutoResumeSync</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-52">Change EnumItem AlphaMode.TintMask</a></li>
-					<li><a href="/ref/updates/2025.html#version-04a222f011414c81-53">Remove EnumItem UICaptureMode.PlayerGui</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-04a222f011414c81">All changes</a>
 			]]></content:encoded></item></channel></rss>

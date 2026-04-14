@@ -281,6 +281,19 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Accessory"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "IsDeformedLayeredClothingOutOfRenderBounds",
 					"MemberType": "Function",
 					"Removed": false,
@@ -20262,19 +20275,6 @@
 				},
 				{
 					"Class": "AudioPlayer",
-					"Member": "IsMutedForCapture",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AudioPlayer",
 					"Member": "IsPlaying",
 					"MemberType": "Property",
 					"Removed": false,
@@ -20627,6 +20627,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "AudioPlayer"
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "IsMutedForCapture",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				}
 			]
@@ -23102,19 +23115,6 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "EnableInputLatencyMaxResimFrames",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AuroraService",
 					"Member": "HashRoundingPoint",
 					"MemberType": "Property",
 					"Removed": false,
@@ -23150,19 +23150,6 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
-					}
-				},
-				{
-					"Class": "AuroraService",
-					"Member": "InputLatencyMaxResimFrames",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
 					}
 				},
 				{
@@ -23550,6 +23537,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "EnableInputLatencyMaxResimFrames",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "InputLatencyMaxResimFrames",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -47468,19 +47481,6 @@
 			"Related": [
 				{
 					"Class": "ContextActionService",
-					"Member": "NetcodeInputLatency",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "ContextActionService",
 					"Member": "BindAction",
 					"MemberType": "Function",
 					"Removed": false,
@@ -48625,6 +48625,19 @@
 				},
 				{
 					"Class": "ContextActionService",
+					"Member": "NetcodeInputLatency",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ContextActionService",
 					"Member": "ActivateLocalTool",
 					"MemberType": "Function",
 					"Removed": true,
@@ -49113,6 +49126,32 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
+					"Member": "LadderSearchHeight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
+					"Member": "LadderSearchOffset",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
 					}
 				},
 				{
@@ -68216,6 +68255,19 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "GetMaximalJointDistancesWithinFacs",
 					"MemberType": "Function",
 					"Removed": false,
@@ -70529,6 +70581,19 @@
 				},
 				{
 					"Class": "ExperienceService",
+					"Member": "GetQueuePosition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ExperienceService",
 					"Member": "LaunchExperience",
 					"MemberType": "Function",
 					"Removed": false,
@@ -70850,6 +70915,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "QueuePositionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				}
 			]
@@ -98347,6 +98425,7 @@
 				"InstancePacketCache",
 				"InternalContainer",
 				"InternalMessagingService",
+				"InternalMessagingServiceVerifier",
 				"InternalSyncItem",
 				"InternalSyncService",
 				"JointInstance",
@@ -98485,6 +98564,7 @@
 				"PolicyService",
 				"PoseBase",
 				"PostEffect",
+				"Preloaded",
 				"PresenceService",
 				"ProceduralBehaviorSchedulerService",
 				"ProcessInstancePhysicsService",
@@ -98599,6 +98679,7 @@
 				"StudioCaptureService",
 				"StudioData",
 				"StudioDeviceEmulatorService",
+				"StudioDeviceSimulatorService",
 				"StudioHighDpiService",
 				"StudioObjectBase",
 				"StudioPublishService",
@@ -104221,6 +104302,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptBundlePurchaseFinished",
 					"MemberType": "Event",
 					"Removed": false,
@@ -104365,6 +104459,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "PromptPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferRequested",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -106684,6 +106791,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetExpectedTposeRotation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
@@ -109565,6 +109685,17 @@
 				"<<<ROOT>>>"
 			]
 		},
+		"InternalMessagingServiceVerifier": {
+			"Name": "InternalMessagingServiceVerifier",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			]
+		},
 		"InternalSyncItem": {
 			"Name": "InternalSyncItem",
 			"Removed": false,
@@ -110596,6 +110727,19 @@
 				{
 					"Class": "LayerCollector",
 					"Member": "ResetOnSpawn",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "LayerCollector",
+					"Member": "TabKeyboardNavigation",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -116005,6 +116149,59 @@
 			"Related": [
 				{
 					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ReceiptType"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptConnection"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "ClearProductInfoCaches",
 					"MemberType": "Function",
 					"Removed": false,
@@ -117682,6 +117879,58 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -118332,6 +118581,32 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "SignalRobuxTransferCompleted",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "SignalRobuxTransferCompleted",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "SignalServerLuaDialogClosed",
 					"MemberType": "Function",
 					"Removed": false,
@@ -118826,7 +119101,85 @@
 				},
 				{
 					"Class": "MarketplaceService",
-					"Member": "PromptBulkPurchaseRequested",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -119567,6 +119920,32 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchaseFinished",
 					"MemberType": "Event",
 					"Removed": false,
@@ -119641,6 +120020,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RobuxTransferCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				},
 				{
@@ -138886,6 +139278,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -149582,8 +149987,8 @@
 					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
-						"Category": "DataType",
-						"Name": "buffer"
+						"Category": "Group",
+						"Name": "Variant"
 					}
 				},
 				{
@@ -151538,6 +151943,17 @@
 						"Name": "bool"
 					}
 				}
+			]
+		},
+		"Preloaded": {
+			"Name": "Preloaded",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
 			]
 		},
 		"PresenceService": {
@@ -160651,6 +161067,84 @@
 				},
 				{
 					"Class": "SafetyService",
+					"Member": "ReportCapturesUIClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportCapturesUIOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatLineReportingClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatLineReportingOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatSuspensionDialogClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatSuspensionDialogOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
 					"Member": "ReportMenuTabClose",
 					"MemberType": "Function",
 					"Removed": false,
@@ -160665,6 +161159,32 @@
 				{
 					"Class": "SafetyService",
 					"Member": "ReportMenuTabOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportPartyChatWindowClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportPartyChatWindowOpen",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -166465,6 +166985,19 @@
 				},
 				{
 					"Class": "SessionService",
+					"Member": "GetBreadcrumbs",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "SessionService",
 					"Member": "GetCreatedTimestampUtcMs",
 					"MemberType": "Function",
 					"Removed": false,
@@ -166487,6 +167020,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "GetHistory",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
 					}
 				},
 				{
@@ -166955,6 +167501,71 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				}
 			]
@@ -168079,6 +168690,19 @@
 				{
 					"Class": "SlimAnimationDataEntity",
 					"Member": "NumBones",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "SlimAnimationDataEntity",
+					"Member": "RootIndex",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -170193,19 +170817,6 @@
 				},
 				{
 					"Class": "Sound",
-					"Member": "IsMutedForCapture",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "Sound",
 					"Member": "IsPaused",
 					"MemberType": "Property",
 					"Removed": false,
@@ -170878,6 +171489,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
+					}
+				},
+				{
+					"Class": "Sound",
+					"Member": "IsMutedForCapture",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				}
 			]
@@ -181048,6 +181672,370 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				}
+			]
+		},
+		"StudioDeviceSimulatorService": {
+			"Name": "StudioDeviceSimulatorService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "CreateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "CreateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceInfoAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceInfoAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceListAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetOrientationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ScreenOrientation"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetPixelDensityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetResolutionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetScalingModeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "DeviceSimulatorScalingMode"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RemoveDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RemoveDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetOrientationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ScreenOrientation"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetOrientationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetPixelDensityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetPixelDensityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetResolutionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetResolutionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetResolutionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetScalingModeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "DeviceSimulatorScalingMode"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetScalingModeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "StopSimulationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UpdateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UpdateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UpdateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				}
 			]
@@ -193658,6 +194646,45 @@
 				},
 				{
 					"Class": "TestService",
+					"Member": "RequestValidationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "RequestValidationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "RequestValidationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "TestService",
 					"Member": "Require",
 					"MemberType": "Function",
 					"Removed": false,
@@ -195967,6 +196994,19 @@
 				},
 				{
 					"Class": "TextChatMessage",
+					"Member": "ChatActionType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
 					"Member": "ChatWindowMessageProperties",
 					"MemberType": "Property",
 					"Removed": false,
@@ -196227,6 +197267,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ChatActionReceived",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "MessageReceived",
 					"MemberType": "Event",
 					"Removed": false,
@@ -196267,19 +197320,6 @@
 				{
 					"Class": "TextChatService",
 					"Member": "SendingUniverseChatMessage",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Class",
-						"Name": "TextChatMessage"
-					}
-				},
-				{
-					"Class": "TextChatService",
-					"Member": "ServerToClientChatActionReplicateSignal",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -197036,6 +198076,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ChatActionReceived",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ClientToServerMessageReplicateSignalV2",
 					"MemberType": "Event",
 					"Removed": false,
@@ -197316,8 +198369,8 @@
 					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
-						"Category": "Class",
-						"Name": "TextChatMessage"
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -199042,6 +200095,19 @@
 				},
 				{
 					"Class": "TextSource",
+					"Member": "DisplayName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextSource",
 					"Member": "UserId",
 					"MemberType": "Property",
 					"Removed": false,
@@ -199064,6 +200130,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextSource",
+					"Member": "Username",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -203620,6 +204699,45 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetExpectedTposeRotation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RigLabel"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetExpectedTposeRotation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetExpectedTposeRotation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "GetFacsDrivenJointNamesFromEditableMesh",
 					"MemberType": "Function",
 					"Removed": false,
@@ -203642,6 +204760,58 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Accessory"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
 					}
 				},
 				{
@@ -224633,6 +225803,19 @@
 				},
 				{
 					"Class": "Workspace",
+					"Member": "MeshStreamingAndImprovedLods",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "Workspace",
 					"Member": "ModelStreamingBehavior",
 					"MemberType": "Property",
 					"Removed": false,
@@ -237547,7 +238730,7 @@
 				"Class": "AudioPlayer",
 				"Name": "IsMutedForCapture",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"IsPlaying": {
 				"Class": "AudioPlayer",
@@ -238866,7 +240049,7 @@
 				"Class": "AuroraService",
 				"Name": "EnableInputLatencyMaxResimFrames",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"FixedRateTick": {
 				"Class": "AuroraService",
@@ -238954,7 +240137,7 @@
 				"Class": "AuroraService",
 				"Name": "InputLatencyMaxResimFrames",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"IsDesynced": {
 				"Class": "AuroraService",
@@ -250590,7 +251773,7 @@
 				"Class": "ContextActionService",
 				"Name": "NetcodeInputLatency",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"SetDescription": {
 				"Class": "ContextActionService",
@@ -250995,6 +252178,18 @@
 			"HitNormal": {
 				"Class": "ControllerPartSensor",
 				"Name": "HitNormal",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LadderSearchHeight": {
+				"Class": "ControllerPartSensor",
+				"Name": "LadderSearchHeight",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LadderSearchOffset": {
+				"Class": "ControllerPartSensor",
+				"Name": "LadderSearchOffset",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -259112,6 +260307,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetQueuePosition": {
+				"Class": "ExperienceService",
+				"Name": "GetQueuePosition",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"LaunchExperience": {
 				"Class": "ExperienceService",
 				"Name": "LaunchExperience",
@@ -259151,6 +260352,12 @@
 			"PlaceJoinStateChanged": {
 				"Class": "ExperienceService",
 				"Name": "PlaceJoinStateChanged",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"QueuePositionChanged": {
+				"Class": "ExperienceService",
+				"Name": "QueuePositionChanged",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -274400,6 +275607,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"TabKeyboardNavigation": {
+				"Class": "LayerCollector",
+				"Name": "TabKeyboardNavigation",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ZIndexBehavior": {
 				"Class": "LayerCollector",
 				"Name": "ZIndexBehavior",
@@ -276631,6 +277844,27 @@
 					}
 				]
 			},
+			"BindReceiptHandler": {
+				"Class": "MarketplaceService",
+				"Name": "BindReceiptHandler",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "BindReceiptHandler",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ReceiptType"
+						}
+					}
+				]
+			},
 			"ClearProductInfoCaches": {
 				"Class": "MarketplaceService",
 				"Name": "ClearProductInfoCaches",
@@ -277322,6 +278556,27 @@
 					}
 				]
 			},
+			"PromptBulkPurchaseRequestedV2": {
+				"Class": "MarketplaceService",
+				"Name": "PromptBulkPurchaseRequestedV2",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "PromptBulkPurchaseRequestedV2",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"PromptBundlePurchase": {
 				"Class": "MarketplaceService",
 				"Name": "PromptBundlePurchase",
@@ -277897,6 +279152,48 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"PromptRobuxTransferAsync": {
+				"Class": "MarketplaceService",
+				"Name": "PromptRobuxTransferAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "PromptRobuxTransferAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
+			"PromptRobuxTransferRequested": {
+				"Class": "MarketplaceService",
+				"Name": "PromptRobuxTransferRequested",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "PromptRobuxTransferRequested",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"PromptSubscriptionCancellation": {
 				"Class": "MarketplaceService",
 				"Name": "PromptSubscriptionCancellation",
@@ -278072,6 +279369,12 @@
 				"Class": "MarketplaceService",
 				"Name": "ReportRobuxUpsellStarted",
 				"MemberType": "Function",
+				"Removed": false
+			},
+			"RobuxTransferCompleted": {
+				"Class": "MarketplaceService",
+				"Name": "RobuxTransferCompleted",
+				"MemberType": "Event",
 				"Removed": false
 			},
 			"ServerPurchaseVerification": {
@@ -278276,6 +279579,12 @@
 			"SignalPromptSubscriptionPurchaseFinished": {
 				"Class": "MarketplaceService",
 				"Name": "SignalPromptSubscriptionPurchaseFinished",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SignalRobuxTransferCompleted": {
+				"Class": "MarketplaceService",
+				"Name": "SignalRobuxTransferCompleted",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -296245,6 +297554,42 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"ReportCapturesUIClose": {
+				"Class": "SafetyService",
+				"Name": "ReportCapturesUIClose",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReportCapturesUIOpen": {
+				"Class": "SafetyService",
+				"Name": "ReportCapturesUIOpen",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReportChatLineReportingClose": {
+				"Class": "SafetyService",
+				"Name": "ReportChatLineReportingClose",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReportChatLineReportingOpen": {
+				"Class": "SafetyService",
+				"Name": "ReportChatLineReportingOpen",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReportChatSuspensionDialogClose": {
+				"Class": "SafetyService",
+				"Name": "ReportChatSuspensionDialogClose",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReportChatSuspensionDialogOpen": {
+				"Class": "SafetyService",
+				"Name": "ReportChatSuspensionDialogOpen",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"ReportMenuTabClose": {
 				"Class": "SafetyService",
 				"Name": "ReportMenuTabClose",
@@ -296254,6 +297599,18 @@
 			"ReportMenuTabOpen": {
 				"Class": "SafetyService",
 				"Name": "ReportMenuTabOpen",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReportPartyChatWindowClose": {
+				"Class": "SafetyService",
+				"Name": "ReportPartyChatWindowClose",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReportPartyChatWindowOpen": {
+				"Class": "SafetyService",
+				"Name": "ReportPartyChatWindowOpen",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -298906,9 +300263,21 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetBreadcrumbs": {
+				"Class": "SessionService",
+				"Name": "GetBreadcrumbs",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetCreatedTimestampUtcMs": {
 				"Class": "SessionService",
 				"Name": "GetCreatedTimestampUtcMs",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetHistory": {
+				"Class": "SessionService",
+				"Name": "GetHistory",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -298970,6 +300339,12 @@
 				"Class": "SessionService",
 				"Name": "ReplaceSession",
 				"MemberType": "Function",
+				"Removed": false
+			},
+			"SessionChanged": {
+				"Class": "SessionService",
+				"Name": "SessionChanged",
+				"MemberType": "Event",
 				"Removed": false
 			},
 			"SessionExists": {
@@ -299613,6 +300988,12 @@
 			"NumBones": {
 				"Class": "SlimAnimationDataEntity",
 				"Name": "NumBones",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RootIndex": {
+				"Class": "SlimAnimationDataEntity",
+				"Name": "RootIndex",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -300716,7 +302097,7 @@
 				"Class": "Sound",
 				"Name": "IsMutedForCapture",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"IsPaused": {
 				"Class": "Sound",
@@ -305846,6 +307227,170 @@
 						}
 					}
 				]
+			}
+		},
+		"StudioDeviceSimulatorService": {
+			"ConfigurationChanged": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "ConfigurationChanged",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"CreateDeviceAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "CreateDeviceAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetDeviceAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetDeviceAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetDeviceInfoAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetDeviceInfoAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetDeviceListAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetDeviceListAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetOrientationAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetOrientationAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioDeviceSimulatorService",
+						"Member": "GetOrientationAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ScreenOrientation"
+						}
+					}
+				]
+			},
+			"GetPixelDensityAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetPixelDensityAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetResolutionAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetResolutionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetScalingModeAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetScalingModeAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioDeviceSimulatorService",
+						"Member": "GetScalingModeAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "DeviceSimulatorScalingMode"
+						}
+					}
+				]
+			},
+			"RemoveDeviceAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "RemoveDeviceAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SetDeviceAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "SetDeviceAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SetOrientationAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "SetOrientationAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioDeviceSimulatorService",
+						"Member": "SetOrientationAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ScreenOrientation"
+						}
+					}
+				]
+			},
+			"SetPixelDensityAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "SetPixelDensityAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SetResolutionAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "SetResolutionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SetScalingModeAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "SetScalingModeAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StudioDeviceSimulatorService",
+						"Member": "SetScalingModeAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "DeviceSimulatorScalingMode"
+						}
+					}
+				]
+			},
+			"StopSimulationAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "StopSimulationAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"UpdateDeviceAsync": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "UpdateDeviceAsync",
+				"MemberType": "Function",
+				"Removed": false
 			}
 		},
 		"StudioHighDpiService": {
@@ -311126,6 +312671,12 @@
 					}
 				]
 			},
+			"RequestValidationAsync": {
+				"Class": "TestService",
+				"Name": "RequestValidationAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"Require": {
 				"Class": "TestService",
 				"Name": "Require",
@@ -312292,6 +313843,12 @@
 					}
 				]
 			},
+			"ChatActionType": {
+				"Class": "TextChatMessage",
+				"Name": "ChatActionType",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ChatWindowMessageProperties": {
 				"Class": "TextChatMessage",
 				"Name": "ChatWindowMessageProperties",
@@ -312539,6 +314096,27 @@
 				"Name": "CanUsersWhisperAsync",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"ChatActionReceived": {
+				"Class": "TextChatService",
+				"Name": "ChatActionReceived",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "TextChatService",
+						"Member": "ChatActionReceived",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "TextChatMessage"
+						}
+					}
+				]
 			},
 			"ChatTranslationEnabled": {
 				"Class": "TextChatService",
@@ -312993,22 +314571,7 @@
 				"Class": "TextChatService",
 				"Name": "ServerToClientChatActionReplicateSignal",
 				"MemberType": "Event",
-				"Removed": false,
-				"Related": [
-					{
-						"Class": "TextChatService",
-						"Member": "ServerToClientChatActionReplicateSignal",
-						"MemberType": "Event",
-						"Removed": false,
-						"Field": "Parameters",
-						"Kind": "Parameter",
-						"Index": 0,
-						"Type": {
-							"Category": "Class",
-							"Name": "TextChatMessage"
-						}
-					}
-				]
+				"Removed": false
 			},
 			"ServerToClientMessageReplicateSignal": {
 				"Class": "TextChatService",
@@ -313711,6 +315274,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"DisplayName": {
+				"Class": "TextSource",
+				"Name": "DisplayName",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"UserId": {
 				"Class": "TextSource",
 				"Name": "UserId",
@@ -313720,6 +315289,12 @@
 			"UserIdReplicated": {
 				"Class": "TextSource",
 				"Name": "UserIdReplicated",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Username": {
+				"Class": "TextSource",
+				"Name": "Username",
 				"MemberType": "Property",
 				"Removed": false
 			}
@@ -316028,6 +317603,40 @@
 					}
 				]
 			},
+			"GetExpectedTposeRotation": {
+				"Class": "UGCValidationService",
+				"Name": "GetExpectedTposeRotation",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetExpectedTposeRotation",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RigLabel"
+						}
+					},
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetExpectedTposeRotation",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"GetFacsDrivenJointNamesFromEditableMesh": {
 				"Class": "UGCValidationService",
 				"Name": "GetFacsDrivenJointNamesFromEditableMesh",
@@ -316066,6 +317675,40 @@
 				"Name": "GetImageTransparencyWithTextureID",
 				"MemberType": "Function",
 				"Removed": true
+			},
+			"GetLayeredClothingPostDeformationSize": {
+				"Class": "UGCValidationService",
+				"Name": "GetLayeredClothingPostDeformationSize",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetLayeredClothingPostDeformationSize",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Accessory"
+						}
+					},
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetLayeredClothingPostDeformationSize",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableMesh"
+						}
+					}
+				]
 			},
 			"GetMaxNearbyVerticesCollisions": {
 				"Class": "UGCValidationService",
@@ -325454,6 +327097,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "MeshPartHeadsAndAccessories"
+						}
+					}
+				]
+			},
+			"MeshStreamingAndImprovedLods": {
+				"Class": "Workspace",
+				"Name": "MeshStreamingAndImprovedLods",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Workspace",
+						"Member": "MeshStreamingAndImprovedLods",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RolloutState"
 						}
 					}
 				]
@@ -335177,6 +336841,48 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "DeviceLevel"
+					}
+				}
+			]
+		},
+		"DeviceSimulatorScalingMode": {
+			"Name": "DeviceSimulatorScalingMode",
+			"Removed": false,
+			"ItemsByValue": [
+				"ScaleToPhysicalSize",
+				"ActualResolution",
+				"FitToWindow"
+			],
+			"ItemsByIndex": [
+				"ScaleToPhysicalSize",
+				"ActualResolution",
+				"FitToWindow"
+			],
+			"Related": [
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetScalingModeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "DeviceSimulatorScalingMode"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetScalingModeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "DeviceSimulatorScalingMode"
 					}
 				}
 			]
@@ -346668,6 +348374,47 @@
 				"NeedPermission"
 			]
 		},
+		"ReceiptDecision": {
+			"Name": "ReceiptDecision",
+			"Removed": false,
+			"ItemsByValue": [
+				"NotProcessedYet",
+				"Processed"
+			],
+			"ItemsByIndex": [
+				"NotProcessedYet",
+				"Processed"
+			]
+		},
+		"ReceiptType": {
+			"Name": "ReceiptType",
+			"Removed": false,
+			"ItemsByValue": [
+				"DeveloperProduct",
+				"RobuxTransferSender",
+				"RobuxTransferReceiver"
+			],
+			"ItemsByIndex": [
+				"DeveloperProduct",
+				"RobuxTransferSender",
+				"RobuxTransferReceiver"
+			],
+			"Related": [
+				{
+					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ReceiptType"
+					}
+				}
+			]
+		},
 		"RecommendationActionType": {
 			"Name": "RecommendationActionType",
 			"Removed": false,
@@ -347715,6 +349462,19 @@
 						"Category": "Enum",
 						"Name": "RigLabel"
 					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetExpectedTposeRotation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RigLabel"
+					}
 				}
 			]
 		},
@@ -347964,6 +349724,19 @@
 				{
 					"Class": "Workspace",
 					"Member": "LayeredClothingCacheOptimizations",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "Workspace",
+					"Member": "MeshStreamingAndImprovedLods",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -348836,6 +350609,32 @@
 					}
 				},
 				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetOrientationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ScreenOrientation"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetOrientationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ScreenOrientation"
+					}
+				},
+				{
 					"Class": "StarterPlayer",
 					"Member": "ScreenOrientation",
 					"MemberType": "Property",
@@ -349210,11 +351009,13 @@
 			"Removed": false,
 			"ItemsByValue": [
 				"Floor",
-				"Ladder"
+				"Ladder",
+				"ClassicLadder"
 			],
 			"ItemsByIndex": [
 				"Floor",
-				"Ladder"
+				"Ladder",
+				"ClassicLadder"
 			],
 			"Related": [
 				{
@@ -355265,12 +357066,14 @@
 			"ItemsByValue": [
 				"Unknown",
 				"Migration",
-				"CloseRoom"
+				"CloseRoom",
+				"FAEUpdate"
 			],
 			"ItemsByIndex": [
 				"Unknown",
 				"Migration",
-				"CloseRoom"
+				"CloseRoom",
+				"FAEUpdate"
 			],
 			"Related": [
 				{
@@ -361615,6 +363418,23 @@
 			"Medium": {
 				"Enum": "DeviceLevel",
 				"Name": "Medium",
+				"Removed": false
+			}
+		},
+		"DeviceSimulatorScalingMode": {
+			"ActualResolution": {
+				"Enum": "DeviceSimulatorScalingMode",
+				"Name": "ActualResolution",
+				"Removed": false
+			},
+			"FitToWindow": {
+				"Enum": "DeviceSimulatorScalingMode",
+				"Name": "FitToWindow",
+				"Removed": false
+			},
+			"ScaleToPhysicalSize": {
+				"Enum": "DeviceSimulatorScalingMode",
+				"Name": "ScaleToPhysicalSize",
 				"Removed": false
 			}
 		},
@@ -369645,6 +371465,35 @@
 				"Removed": false
 			}
 		},
+		"ReceiptDecision": {
+			"NotProcessedYet": {
+				"Enum": "ReceiptDecision",
+				"Name": "NotProcessedYet",
+				"Removed": false
+			},
+			"Processed": {
+				"Enum": "ReceiptDecision",
+				"Name": "Processed",
+				"Removed": false
+			}
+		},
+		"ReceiptType": {
+			"DeveloperProduct": {
+				"Enum": "ReceiptType",
+				"Name": "DeveloperProduct",
+				"Removed": false
+			},
+			"RobuxTransferReceiver": {
+				"Enum": "ReceiptType",
+				"Name": "RobuxTransferReceiver",
+				"Removed": false
+			},
+			"RobuxTransferSender": {
+				"Enum": "ReceiptType",
+				"Name": "RobuxTransferSender",
+				"Removed": false
+			}
+		},
 		"RecommendationActionType": {
 			"AddReaction": {
 				"Enum": "RecommendationActionType",
@@ -371346,6 +373195,11 @@
 			}
 		},
 		"SensorMode": {
+			"ClassicLadder": {
+				"Enum": "SensorMode",
+				"Name": "ClassicLadder",
+				"Removed": false
+			},
 			"Floor": {
 				"Enum": "SensorMode",
 				"Name": "Floor",
@@ -375668,6 +377522,11 @@
 				"Name": "CloseRoom",
 				"Removed": false
 			},
+			"FAEUpdate": {
+				"Enum": "VoiceRccReconnectReason",
+				"Name": "FAEUpdate",
+				"Removed": false
+			},
 			"Migration": {
 				"Enum": "VoiceRccReconnectReason",
 				"Name": "Migration",
@@ -379212,6 +381071,20 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "GetAvailableSubscriptionProductsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -379330,6 +381203,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "PromptBulkPurchaseRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -379913,6 +381799,32 @@
 					}
 				},
 				{
+					"Class": "SessionService",
+					"Member": "GetBreadcrumbs",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "GetHistory",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "SlimReplicationService",
 					"Member": "ServerUpdateEntities",
 					"MemberType": "Event",
@@ -380110,6 +382022,19 @@
 				{
 					"Class": "Studio",
 					"Member": "GetAvailableThemes",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceListAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -385175,6 +387100,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetExpectedTposeRotation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "DataType",
 						"Name": "CFrame"
@@ -394433,7 +396371,33 @@
 				},
 				{
 					"Class": "MarketplaceService",
-					"Member": "PromptBulkPurchaseRequested",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -395645,6 +397609,45 @@
 					}
 				},
 				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "CreateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceInfoAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UpdateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "StudioService",
 					"Member": "GetClassIcon",
 					"MemberType": "Function",
@@ -396082,6 +398085,19 @@
 					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientChatActionReplicateSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
 						"Category": "Group",
@@ -398547,6 +400563,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Function"
@@ -403795,6 +405824,19 @@
 					}
 				},
 				{
+					"Class": "MarketplaceService",
+					"Member": "BindReceiptHandler",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptConnection"
+					}
+				},
+				{
 					"Class": "MessagingService",
 					"Member": "SubscribeAsync",
 					"MemberType": "Function",
@@ -407487,6 +409529,19 @@
 					}
 				},
 				{
+					"Class": "TestService",
+					"Member": "RequestValidationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
 					"Class": "TextChannel",
 					"Member": "AddUserAsync",
 					"MemberType": "Function",
@@ -410259,6 +412314,19 @@
 					}
 				},
 				{
+					"Class": "PluginConnection",
+					"Member": "SendMessage",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
 					"Class": "ScriptDebugger",
 					"Member": "GetWatchValue",
 					"MemberType": "Function",
@@ -412363,6 +414431,19 @@
 				{
 					"Class": "StudioDeviceEmulatorService",
 					"Member": "GetTouchPosition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetResolutionAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -417787,6 +419868,32 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetLayeredClothingPostDeformationSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "IsEditableMeshNumCoplanarIntersectionsOverLimit",
 					"MemberType": "Function",
 					"Removed": false,
@@ -421195,19 +423302,6 @@
 				},
 				{
 					"Class": "AudioPlayer",
-					"Member": "IsMutedForCapture",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AudioPlayer",
 					"Member": "IsPlaying",
 					"MemberType": "Property",
 					"Removed": false,
@@ -421487,19 +423581,6 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AuroraService",
-					"Member": "EnableInputLatencyMaxResimFrames",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -427629,6 +429710,19 @@
 					}
 				},
 				{
+					"Class": "LayerCollector",
+					"Member": "TabKeyboardNavigation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "Light",
 					"Member": "Enabled",
 					"MemberType": "Property",
@@ -432974,19 +435068,6 @@
 				{
 					"Class": "Sound",
 					"Member": "IsLoaded",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "Sound",
-					"Member": "IsMutedForCapture",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -440076,6 +442157,19 @@
 					}
 				},
 				{
+					"Class": "AudioPlayer",
+					"Member": "IsMutedForCapture",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "AuroraScript",
 					"Member": "DumpMispredictions",
 					"MemberType": "Property",
@@ -440091,6 +442185,19 @@
 				{
 					"Class": "AuroraScript",
 					"Member": "RunInParallel",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AuroraService",
+					"Member": "EnableInputLatencyMaxResimFrames",
 					"MemberType": "Property",
 					"Removed": true,
 					"Field": "ValueType",
@@ -443105,6 +445212,19 @@
 					}
 				},
 				{
+					"Class": "Sound",
+					"Member": "IsMutedForCapture",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "StarterGui",
 					"Member": "BackpackGuiEnabled",
 					"MemberType": "Property",
@@ -445525,19 +447645,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "buffer"
-					}
-				},
-				{
-					"Class": "PluginConnection",
-					"Member": "SendMessage",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
 					"Type": {
 						"Category": "DataType",
 						"Name": "buffer"
@@ -450996,6 +453103,32 @@
 				{
 					"Class": "ControllerManager",
 					"Member": "BaseTurnSpeed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
+					"Member": "LadderSearchHeight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
+					"Member": "LadderSearchOffset",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -457522,6 +459655,32 @@
 					}
 				},
 				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetPixelDensityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetPixelDensityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
 					"Class": "StudioService",
 					"Member": "GridSize",
 					"MemberType": "Property",
@@ -462368,19 +464527,6 @@
 				},
 				{
 					"Class": "AuroraService",
-					"Member": "InputLatencyMaxResimFrames",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "AuroraService",
 					"Member": "OutOfOrderInputCount",
 					"MemberType": "Property",
 					"Removed": false,
@@ -462980,19 +465126,6 @@
 				{
 					"Class": "ContentProvider",
 					"Member": "RequestQueueSize",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "ContextActionService",
-					"Member": "NetcodeInputLatency",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -463926,6 +466059,32 @@
 						"Category": "Primitive",
 						"Name": "int",
 						"Optional": true
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "GetQueuePosition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "QueuePositionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -467905,6 +470064,19 @@
 					}
 				},
 				{
+					"Class": "SlimAnimationDataEntity",
+					"Member": "RootIndex",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "Smoke",
 					"Member": "FastForward",
 					"MemberType": "Function",
@@ -468458,6 +470630,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetResolutionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetResolutionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -470819,6 +473017,19 @@
 				},
 				{
 					"Class": "AuroraService",
+					"Member": "InputLatencyMaxResimFrames",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AuroraService",
 					"Member": "Misprediction",
 					"MemberType": "Event",
 					"Removed": true,
@@ -471138,6 +473349,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ContextActionService",
+					"Member": "NetcodeInputLatency",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -479153,6 +481377,32 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "SignalClientPurchaseSuccess",
 					"MemberType": "Function",
 					"Removed": false,
@@ -479237,6 +481487,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "SignalRobuxTransferCompleted",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -479336,6 +481599,32 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "PromptBulkPurchaseRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptBulkPurchaseRequestedV2",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -479518,6 +481807,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "PromptRobloxPurchaseRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RobuxTransferCompleted",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -491268,6 +493570,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "SignalRobuxTransferCompleted",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "SignalServerLuaDialogClosed",
 					"MemberType": "Function",
 					"Removed": false,
@@ -494414,6 +496729,84 @@
 				},
 				{
 					"Class": "SafetyService",
+					"Member": "ReportCapturesUIClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportCapturesUIOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatLineReportingClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatLineReportingOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatSuspensionDialogClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportChatSuspensionDialogOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
 					"Member": "ReportMenuTabClose",
 					"MemberType": "Function",
 					"Removed": false,
@@ -494428,6 +496821,32 @@
 				{
 					"Class": "SafetyService",
 					"Member": "ReportMenuTabOpen",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportPartyChatWindowClose",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SafetyService",
+					"Member": "ReportPartyChatWindowOpen",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -495767,6 +498186,110 @@
 				{
 					"Class": "StudioDeviceEmulatorService",
 					"Member": "SetCurrentOrientation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RemoveDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetOrientationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetPixelDensityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetResolutionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetScalingModeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "StopSimulationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UpdateDeviceAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -512113,6 +514636,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -512496,6 +515032,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PromptRobuxTransferRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -519538,6 +522087,71 @@
 					}
 				},
 				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SessionService",
+					"Member": "SessionChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "SharedTableRegistry",
 					"Member": "GetSharedTable",
 					"MemberType": "Function",
@@ -520528,6 +523142,84 @@
 					}
 				},
 				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "CreateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetDeviceInfoAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RemoveDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "SetDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UpdateDeviceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "StudioPublishService",
 					"Member": "SetTeamCreateOnPublishInfo",
 					"MemberType": "Function",
@@ -521467,6 +524159,32 @@
 				},
 				{
 					"Class": "TestService",
+					"Member": "RequestValidationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "RequestValidationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
 					"Member": "Require",
 					"MemberType": "Function",
 					"Removed": false,
@@ -521902,6 +524620,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
+					"Member": "ChatActionType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -522578,6 +525309,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextSource",
+					"Member": "DisplayName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextSource",
+					"Member": "Username",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
