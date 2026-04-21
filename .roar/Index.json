@@ -7312,6 +7312,19 @@
 				},
 				{
 					"Class": "Animator",
+					"Member": "GetTrackByAnimationId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AnimationTrack"
+					}
+				},
+				{
+					"Class": "Animator",
 					"Member": "LoadAnimation",
 					"MemberType": "Function",
 					"Removed": false,
@@ -8207,6 +8220,110 @@
 				},
 				{
 					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition0",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition1",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition2",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition3",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition4",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition5",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition6",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition7",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
 					"Member": "RootMotion",
 					"MemberType": "Property",
 					"Removed": false,
@@ -8593,6 +8710,32 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "GetTrackByAnimationId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ContentId"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "GetTrackByAnimationId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AnimationTrack"
 					}
 				},
 				{
@@ -64403,6 +64546,19 @@
 					"Member": "DrawCircle",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AntiAliasing"
+					}
+				},
+				{
+					"Class": "EditableImage",
+					"Member": "DrawCircle",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -64683,6 +64839,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "ImageCombineType"
+					}
+				},
+				{
+					"Class": "EditableImage",
+					"Member": "DrawLine",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AntiAliasing"
 					}
 				},
 				{
@@ -69141,7 +69310,7 @@
 		},
 		"EmotesPages": {
 			"Name": "EmotesPages",
-			"Removed": false,
+			"Removed": true,
 			"HasRemoved": false,
 			"Subclasses": [],
 			"Superclasses": [
@@ -70551,6 +70720,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "GetFollowUserId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				},
 				{
@@ -98612,6 +98794,7 @@
 				"RuntimeContentService",
 				"RuntimeScriptService",
 				"SafetyService",
+				"SceneAnalysisService",
 				"ScreenshotHud",
 				"ScriptBuilder",
 				"ScriptChangeService",
@@ -109790,7 +109973,7 @@
 		"InventoryPages": {
 			"Name": "InventoryPages",
 			"Removed": false,
-			"HasRemoved": false,
+			"HasRemoved": true,
 			"Subclasses": [
 				"EmotesPages"
 			],
@@ -116592,6 +116775,32 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "OpenShop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "OpenShop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PerformBulkPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -118902,6 +119111,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "OpenShopRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
 					}
 				},
 				{
@@ -139213,6 +139435,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "OpenShop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "PlayerOwnsBundle",
 					"MemberType": "Function",
 					"Removed": false,
@@ -139293,6 +139528,19 @@
 					"Class": "MarketplaceService",
 					"Member": "PromptSubscriptionPurchase",
 					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "OpenShopRequested",
+					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
@@ -140449,6 +140697,19 @@
 				{
 					"Class": "Player",
 					"Member": "GetFriendsOnlineAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "GetFriendsWhoPlayedAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -161421,6 +161682,97 @@
 				}
 			]
 		},
+		"SceneAnalysisService": {
+			"Name": "SceneAnalysisService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetAnimationMemoryAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetAudioMemoryAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetInstanceCompositionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetScriptMemoryAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetTriangleCompositionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetUnparentedInstancesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				}
+			]
+		},
 		"ScreenGui": {
 			"Name": "ScreenGui",
 			"Removed": false,
@@ -179171,6 +179523,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "VAxisColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "Warning Color",
 					"MemberType": "Property",
 					"Removed": false,
@@ -179185,6 +179550,45 @@
 				{
 					"Class": "Studio",
 					"Member": "Whitespace Color",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "XAxisColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "YAxisColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "ZAxisColor",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -185891,6 +186295,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "PreferredInput"
+					}
+				},
+				{
+					"Class": "StyleQuery",
+					"Member": "PreferredTextSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PreferredTextSize"
 					}
 				},
 				{
@@ -197884,6 +198301,19 @@
 					"Member": "SendExpChatMessageClientRendered",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatMessageClientRendered",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -198306,6 +198736,45 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ExpChatFeatureValueChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ExpChatFeatureValueChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ExpChatFeatureValueChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -232916,6 +233385,27 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetTrackByAnimationId": {
+				"Class": "Animator",
+				"Name": "GetTrackByAnimationId",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Animator",
+						"Member": "GetTrackByAnimationId",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "AnimationTrack"
+						}
+					}
+				]
+			},
 			"IsPlaying0": {
 				"Class": "Animator",
 				"Name": "IsPlaying0",
@@ -233561,6 +234051,54 @@
 						}
 					}
 				]
+			},
+			"RefStepIdForTimePosition0": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition0",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForTimePosition1": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition1",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForTimePosition2": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition2",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForTimePosition3": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition3",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForTimePosition4": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition4",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForTimePosition5": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition5",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForTimePosition6": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition6",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForTimePosition7": {
+				"Class": "Animator",
+				"Name": "RefStepIdForTimePosition7",
+				"MemberType": "Property",
+				"Removed": false
 			},
 			"RegisterEvaluationParallelCallback": {
 				"Class": "Animator",
@@ -258905,6 +259443,19 @@
 							"Category": "Enum",
 							"Name": "ImageCombineType"
 						}
+					},
+					{
+						"Class": "EditableImage",
+						"Member": "DrawCircle",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 5,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AntiAliasing"
+						}
 					}
 				]
 			},
@@ -259001,6 +259552,19 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "ImageCombineType"
+						}
+					},
+					{
+						"Class": "EditableImage",
+						"Member": "DrawLine",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 5,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AntiAliasing"
 						}
 					}
 				]
@@ -260292,6 +260856,12 @@
 			"ExecuteCrossExperienceCall": {
 				"Class": "ExperienceService",
 				"Name": "ExecuteCrossExperienceCall",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetFollowUserId": {
+				"Class": "ExperienceService",
+				"Name": "GetFollowUserId",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -278234,6 +278804,48 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"OpenShop": {
+				"Class": "MarketplaceService",
+				"Name": "OpenShop",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "OpenShop",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
+			"OpenShopRequested": {
+				"Class": "MarketplaceService",
+				"Name": "OpenShopRequested",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "OpenShopRequested",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
 			"PerformBulkPurchase": {
 				"Class": "MarketplaceService",
 				"Name": "PerformBulkPurchase",
@@ -288148,6 +288760,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetFriendsWhoPlayedAsync": {
+				"Class": "Player",
+				"Name": "GetFriendsWhoPlayedAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetGameSessionID": {
 				"Class": "Player",
 				"Name": "GetGameSessionID",
@@ -297647,6 +298265,44 @@
 				"Removed": true
 			}
 		},
+		"SceneAnalysisService": {
+			"GetAnimationMemoryAsync": {
+				"Class": "SceneAnalysisService",
+				"Name": "GetAnimationMemoryAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetAudioMemoryAsync": {
+				"Class": "SceneAnalysisService",
+				"Name": "GetAudioMemoryAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetInstanceCompositionAsync": {
+				"Class": "SceneAnalysisService",
+				"Name": "GetInstanceCompositionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetScriptMemoryAsync": {
+				"Class": "SceneAnalysisService",
+				"Name": "GetScriptMemoryAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetTriangleCompositionAsync": {
+				"Class": "SceneAnalysisService",
+				"Name": "GetTriangleCompositionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetUnparentedInstancesAsync": {
+				"Class": "SceneAnalysisService",
+				"Name": "GetUnparentedInstancesAsync",
+				"MemberType": "Function",
+				"Removed": false
+			}
+		},
 		"ScreenGui": {
 			"ClipToDeviceSafeArea": {
 				"Class": "ScreenGui",
@@ -306548,6 +307204,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"VAxisColor": {
+				"Class": "Studio",
+				"Name": "VAxisColor",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"Warning Color": {
 				"Class": "Studio",
 				"Name": "Warning Color",
@@ -306557,6 +307219,24 @@
 			"Whitespace Color": {
 				"Class": "Studio",
 				"Name": "Whitespace Color",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"XAxisColor": {
+				"Class": "Studio",
+				"Name": "XAxisColor",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"YAxisColor": {
+				"Class": "Studio",
+				"Name": "YAxisColor",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ZAxisColor": {
+				"Class": "Studio",
+				"Name": "ZAxisColor",
 				"MemberType": "Property",
 				"Removed": false
 			}
@@ -309007,6 +309687,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "PreferredInput"
+						}
+					}
+				]
+			},
+			"PreferredTextSize": {
+				"Class": "StyleQuery",
+				"Name": "PreferredTextSize",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StyleQuery",
+						"Member": "PreferredTextSize",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PreferredTextSize"
 						}
 					}
 				]
@@ -314310,6 +315011,12 @@
 						}
 					}
 				]
+			},
+			"ExpChatFeatureValueChanged": {
+				"Class": "TextChatService",
+				"Name": "ExpChatFeatureValueChanged",
+				"MemberType": "Event",
+				"Removed": false
 			},
 			"GetChatGroupsAsync": {
 				"Class": "TextChatService",
@@ -330694,6 +331401,46 @@
 				}
 			]
 		},
+		"AntiAliasing": {
+			"Name": "AntiAliasing",
+			"Removed": false,
+			"ItemsByValue": [
+				"Disabled",
+				"Enabled"
+			],
+			"ItemsByIndex": [
+				"Disabled",
+				"Enabled"
+			],
+			"Related": [
+				{
+					"Class": "EditableImage",
+					"Member": "DrawCircle",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AntiAliasing"
+					}
+				},
+				{
+					"Class": "EditableImage",
+					"Member": "DrawLine",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AntiAliasing"
+					}
+				}
+			]
+		},
 		"Antialiasing": {
 			"Name": "Antialiasing",
 			"Removed": true,
@@ -330768,7 +331515,8 @@
 				"TapHomePageTab",
 				"GamePageLoaded",
 				"HomePageLoaded",
-				"AvatarEditorPageLoaded"
+				"AvatarEditorPageLoaded",
+				"HomePageInteractive"
 			],
 			"ItemsByIndex": [
 				"None",
@@ -330781,7 +331529,8 @@
 				"TapHomePageTab",
 				"GamePageLoaded",
 				"HomePageLoaded",
-				"AvatarEditorPageLoaded"
+				"AvatarEditorPageLoaded",
+				"HomePageInteractive"
 			],
 			"Related": [
 				{
@@ -338065,11 +338814,13 @@
 			"Removed": false,
 			"ItemsByValue": [
 				"SystemDefault",
-				"CustomEditor"
+				"CustomEditor",
+				"UserSelectedEditor"
 			],
 			"ItemsByIndex": [
 				"SystemDefault",
-				"CustomEditor"
+				"CustomEditor",
+				"UserSelectedEditor"
 			],
 			"Related": [
 				{
@@ -342239,6 +342990,7 @@
 				"MouseY",
 				"MousePosition",
 				"Touch",
+				"TouchPosition",
 				"MouseWheel",
 				"TrackpadPan",
 				"TrackpadPinch",
@@ -342416,6 +343168,7 @@
 				"MouseMiddleButton",
 				"MousePosition",
 				"Touch",
+				"TouchPosition",
 				"MouseWheel",
 				"TrackpadPan",
 				"TrackpadPinch",
@@ -347575,6 +348328,19 @@
 			"Related": [
 				{
 					"Class": "GuiService",
+					"Member": "PreferredTextSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PreferredTextSize"
+					}
+				},
+				{
+					"Class": "StyleQuery",
 					"Member": "PreferredTextSize",
 					"MemberType": "Property",
 					"Removed": false,
@@ -358761,6 +359527,18 @@
 				"Removed": false
 			}
 		},
+		"AntiAliasing": {
+			"Disabled": {
+				"Enum": "AntiAliasing",
+				"Name": "Disabled",
+				"Removed": false
+			},
+			"Enabled": {
+				"Enum": "AntiAliasing",
+				"Name": "Enabled",
+				"Removed": false
+			}
+		},
 		"Antialiasing": {
 			"Automatic": {
 				"Enum": "Antialiasing",
@@ -358809,6 +359587,11 @@
 			"GamePageLoaded": {
 				"Enum": "AppShellActionType",
 				"Name": "GamePageLoaded",
+				"Removed": false
+			},
+			"HomePageInteractive": {
+				"Enum": "AppShellActionType",
+				"Name": "HomePageInteractive",
 				"Removed": false
 			},
 			"HomePageLoaded": {
@@ -364066,11 +364849,16 @@
 			"CustomEditor": {
 				"Enum": "ExternalEditorMode",
 				"Name": "CustomEditor",
-				"Removed": false
+				"Removed": true
 			},
 			"SystemDefault": {
 				"Enum": "ExternalEditorMode",
 				"Name": "SystemDefault",
+				"Removed": false
+			},
+			"UserSelectedEditor": {
+				"Enum": "ExternalEditorMode",
+				"Name": "UserSelectedEditor",
 				"Removed": false
 			}
 		},
@@ -367494,6 +368282,11 @@
 			"Touch": {
 				"Enum": "KeyCode",
 				"Name": "Touch",
+				"Removed": true
+			},
+			"TouchPosition": {
+				"Enum": "KeyCode",
+				"Name": "TouchPosition",
 				"Removed": false
 			},
 			"TrackpadPan": {
@@ -381449,6 +382242,19 @@
 				},
 				{
 					"Class": "Player",
+					"Member": "GetFriendsWhoPlayedAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "Player",
 					"Member": "CloudEditSelectionChanged",
 					"MemberType": "Event",
 					"Removed": false,
@@ -390159,6 +390965,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "VAxisColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "Warning Color",
 					"MemberType": "Property",
 					"Removed": false,
@@ -390173,6 +390992,45 @@
 				{
 					"Class": "Studio",
 					"Member": "Whitespace Color",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "XAxisColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "YAxisColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "ZAxisColor",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -391999,6 +392857,19 @@
 					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ContentId"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "GetTrackByAnimationId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
 						"Category": "DataType",
@@ -397339,6 +398210,84 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetAnimationMemoryAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetAudioMemoryAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetInstanceCompositionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetScriptMemoryAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetTriangleCompositionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SceneAnalysisService",
+					"Member": "GetUnparentedInstancesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Group",
@@ -447736,6 +448685,110 @@
 					}
 				},
 				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition0",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition1",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition2",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition3",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition4",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition5",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition6",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForTimePosition7",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
 					"Class": "AppRatingPromptService",
 					"Member": "OnGameLeft",
 					"MemberType": "Event",
@@ -480089,6 +481142,19 @@
 					}
 				},
 				{
+					"Class": "ExperienceService",
+					"Member": "GetFollowUserId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "ExperienceStateRecordingService",
 					"Member": "GetPlaybackCurrentFrame",
 					"MemberType": "Function",
@@ -483902,6 +484968,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "SendExpChatMessageClientRendered",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "setModerationModeEnabled",
 					"MemberType": "Function",
 					"Removed": false,
@@ -483921,6 +485000,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ExpChatFeatureValueChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -493129,6 +494221,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "ClearProductInfoCaches",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "OpenShop",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -524953,6 +526058,32 @@
 				{
 					"Class": "TextChatService",
 					"Member": "ClientToServerUniverseChatMessageSignalV1",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ExpChatFeatureValueChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ExpChatFeatureValueChanged",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",

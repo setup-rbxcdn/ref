@@ -5543,7 +5543,7 @@
 						"Name": "",
 						"ThreadSafety": ""
 					},
-					"ReadSecurity": "RobloxScriptSecurity",
+					"ReadSecurity": "None",
 					"Tags": [
 						"ReadOnly",
 						"NotReplicated"
@@ -5553,7 +5553,7 @@
 						"Category": "Primitive",
 						"Name": "float"
 					},
-					"WriteSecurity": "RobloxScriptSecurity"
+					"WriteSecurity": "None"
 				},
 				"Loop": {
 					"CanLoad": true,
@@ -8909,6 +8909,34 @@
 					"Tags": [],
 					"ThreadSafety": "Unsafe"
 				},
+				"GetTrackByAnimationId": {
+					"MemberType": "Function",
+					"Name": "GetTrackByAnimationId",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "ContentId"
+							},
+							"Name": "animationId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Class",
+							"Name": "AnimationTrack"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
 				"IsPlaying0": {
 					"CanLoad": false,
 					"CanSave": false,
@@ -10316,6 +10344,190 @@
 					"ValueType": {
 						"Category": "Enum",
 						"Name": "AnimationPriority"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition0": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition0",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition1": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition1",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition2": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition2",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition3": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition3",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition4": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition4",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition5": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition5",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition6": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition6",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				},
+				"RefStepIdForTimePosition7": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"MemberType": "Property",
+					"Name": "RefStepIdForTimePosition7",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "double"
 					},
 					"WriteSecurity": "RobloxSecurity"
 				},
@@ -76675,6 +76887,15 @@
 							"Name": "combineType",
 							"Optional": false,
 							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "AntiAliasing"
+							},
+							"Name": "antiAliasing",
+							"Optional": true,
+							"Default": "Enabled"
 						}
 					],
 					"PreferredDescriptor": {
@@ -76896,6 +77117,15 @@
 							"Name": "combineType",
 							"Optional": false,
 							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "AntiAliasing"
+							},
+							"Name": "antiAliasing",
+							"Optional": true,
+							"Default": "Enabled"
 						}
 					],
 					"PreferredDescriptor": {
@@ -82134,6 +82364,24 @@
 						{
 							"Category": "Primitive",
 							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
+				"GetFollowUserId": {
+					"MemberType": "Function",
+					"Name": "GetFollowUserId",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int64"
 						}
 					],
 					"Security": "RobloxScriptSecurity",
@@ -127390,6 +127638,56 @@
 					"Tags": [],
 					"ThreadSafety": "Unsafe"
 				},
+				"OpenShop": {
+					"MemberType": "Function",
+					"Name": "OpenShop",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Player"
+							},
+							"Name": "player",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
+				"OpenShopRequested": {
+					"MemberType": "Event",
+					"Name": "OpenShopRequested",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Player"
+							},
+							"Name": "player",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
 				"PerformBulkPurchase": {
 					"MemberType": "Function",
 					"Name": "PerformBulkPurchase",
@@ -129057,8 +129355,8 @@
 						}
 					],
 					"PreferredDescriptor": {
-						"Name": "",
-						"ThreadSafety": ""
+						"Name": "PromptRobloxSubscriptionPurchase",
+						"ThreadSafety": "Unknown"
 					},
 					"ReturnType": [
 						{
@@ -129067,7 +129365,9 @@
 						}
 					],
 					"Security": "None",
-					"Tags": [],
+					"Tags": [
+						"Deprecated"
+					],
 					"ThreadSafety": "Unsafe"
 				},
 				"PromptPremiumPurchaseFinished": {
@@ -153855,6 +154155,26 @@
 							"Default": "200"
 						}
 					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"GetFriendsWhoPlayedAsync": {
+					"MemberType": "Function",
+					"Name": "GetFriendsWhoPlayedAsync",
+					"Parameters": [],
 					"PreferredDescriptor": {
 						"Name": "",
 						"ThreadSafety": ""
@@ -178984,6 +179304,142 @@
 				"NotCreatable"
 			]
 		},
+		"SceneAnalysisService": {
+			"Name": "SceneAnalysisService",
+			"Superclass": "Instance",
+			"MemoryCategory": "Instances",
+			"Members": {
+				"GetAnimationMemoryAsync": {
+					"MemberType": "Function",
+					"Name": "GetAnimationMemoryAsync",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"GetAudioMemoryAsync": {
+					"MemberType": "Function",
+					"Name": "GetAudioMemoryAsync",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"GetInstanceCompositionAsync": {
+					"MemberType": "Function",
+					"Name": "GetInstanceCompositionAsync",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"GetScriptMemoryAsync": {
+					"MemberType": "Function",
+					"Name": "GetScriptMemoryAsync",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"GetTriangleCompositionAsync": {
+					"MemberType": "Function",
+					"Name": "GetTriangleCompositionAsync",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				},
+				"GetUnparentedInstancesAsync": {
+					"MemberType": "Function",
+					"Name": "GetUnparentedInstancesAsync",
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			},
+			"PreferredDescriptor": {
+				"Name": "",
+				"ThreadSafety": ""
+			},
+			"Tags": [
+				"NotCreatable",
+				"Service",
+				"NotReplicated"
+			]
+		},
 		"ScreenGui": {
 			"Name": "ScreenGui",
 			"Superclass": "LayerCollector",
@@ -203204,9 +203660,7 @@
 					},
 					"ReadSecurity": "None",
 					"Tags": [
-						"Hidden",
-						"NotReplicated",
-						"NotScriptable"
+						"NotReplicated"
 					],
 					"ThreadSafety": "ReadSafe",
 					"ValueType": {
@@ -203300,6 +203754,26 @@
 					},
 					"WriteSecurity": "RobloxScriptSecurity"
 				},
+				"VAxisColor": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_skipped_class__",
+					"MemberType": "Property",
+					"Name": "VAxisColor",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Color3"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				},
 				"Warning Color": {
 					"CanLoad": false,
 					"CanSave": false,
@@ -203343,6 +203817,66 @@
 						"Name": "Color3"
 					},
 					"WriteSecurity": "None"
+				},
+				"XAxisColor": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_skipped_class__",
+					"MemberType": "Property",
+					"Name": "XAxisColor",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Color3"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				},
+				"YAxisColor": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_skipped_class__",
+					"MemberType": "Property",
+					"Name": "YAxisColor",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Color3"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				},
+				"ZAxisColor": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_skipped_class__",
+					"MemberType": "Property",
+					"Name": "ZAxisColor",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Color3"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
 				}
 			},
 			"PreferredDescriptor": {
@@ -210645,6 +211179,29 @@
 					"ValueType": {
 						"Category": "Enum",
 						"Name": "PreferredInput"
+					},
+					"WriteSecurity": "None"
+				},
+				"PreferredTextSize": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Conditions",
+					"Default": "Medium",
+					"MemberType": "Property",
+					"Name": "PreferredTextSize",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"NotReplicated",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "PreferredTextSize"
 					},
 					"WriteSecurity": "None"
 				},
@@ -224474,6 +225031,46 @@
 					"Tags": [],
 					"ThreadSafety": "Unsafe"
 				},
+				"ExpChatFeatureValueChanged": {
+					"MemberType": "Event",
+					"Name": "ExpChatFeatureValueChanged",
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "userId",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "featureName",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "featureValue",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				},
 				"GetChatGroupsAsync": {
 					"MemberType": "Function",
 					"Name": "GetChatGroupsAsync",
@@ -224799,6 +225396,15 @@
 							"Name": "messageRenderedSurface",
 							"Optional": true,
 							"Default": "unknown"
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "selectedChannelTab",
+							"Optional": true,
+							"Default": "-1"
 						}
 					],
 					"PreferredDescriptor": {
@@ -264717,6 +265323,38 @@
 			},
 			"Tags": []
 		},
+		"AntiAliasing": {
+			"Name": "AntiAliasing",
+			"Items": {
+				"Disabled": {
+					"Name": "Disabled",
+					"Value": 0,
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				},
+				"Enabled": {
+					"Name": "Enabled",
+					"Value": 1,
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			},
+			"PreferredDescriptor": {
+				"Name": "",
+				"ThreadSafety": ""
+			},
+			"Tags": []
+		},
 		"Antialiasing": {
 			"Name": "Antialiasing",
 			"Items": {
@@ -264832,6 +265470,17 @@
 					"Name": "GamePageLoaded",
 					"Value": 8,
 					"Index": 8,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				},
+				"HomePageInteractive": {
+					"Name": "HomePageInteractive",
+					"Value": 11,
+					"Index": 11,
 					"LegacyNames": null,
 					"PreferredDescriptor": {
 						"Name": "",
@@ -277440,6 +278089,19 @@
 						"ThreadSafety": ""
 					},
 					"Tags": []
+				},
+				"UserSelectedEditor": {
+					"Name": "UserSelectedEditor",
+					"Value": 1,
+					"Index": 1,
+					"LegacyNames": [
+						"CustomEditor"
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
 				}
 			},
 			"PreferredDescriptor": {
@@ -285515,6 +286177,19 @@
 					"Value": 1034,
 					"Index": 170,
 					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				},
+				"TouchPosition": {
+					"Name": "TouchPosition",
+					"Value": 1034,
+					"Index": 170,
+					"LegacyNames": [
+						"Touch"
+					],
 					"PreferredDescriptor": {
 						"Name": "",
 						"ThreadSafety": ""

@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.717.0.7170978</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-961e524856ba47c6</link><description>74 revisions to the API.</description><guid>version-961e524856ba47c6</guid><pubDate>Tue, 14 Apr 2026 10:05:34 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.718.0.7181104</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-0c771458892e42b7</link><description>43 revisions to the API.</description><guid>version-0c771458892e42b7</guid><pubDate>Tue, 21 Apr 2026 13:46:52 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-0">Change Property AnimationClip.Length</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-2">Add Property Animator.RefStepIdForTimePosition0</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-3">Add Property Animator.RefStepIdForTimePosition1</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-4">Add Property Animator.RefStepIdForTimePosition2</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-5">Add Property Animator.RefStepIdForTimePosition3</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-6">Add Property Animator.RefStepIdForTimePosition4</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-7">Add Property Animator.RefStepIdForTimePosition5</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-8">Add Property Animator.RefStepIdForTimePosition6</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-9">Add Property Animator.RefStepIdForTimePosition7</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-10">Add Function Animator.GetTrackByAnimationId</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-11">Change Function EditableImage.DrawCircle</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-12">Change Function EditableImage.DrawLine</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-13">Remove Class EmotesPages</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-14">Add Function ExperienceService.GetFollowUserId</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-15">Add Function MarketplaceService.OpenShop</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-16">Change Function MarketplaceService.PromptPremiumPurchase</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-18">Add Event MarketplaceService.OpenShopRequested</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-19">Add Function Player.GetFriendsWhoPlayedAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-20">Add Class SceneAnalysisService</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-27">Change Property Studio.TypeColor</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-28">Add Property Studio.VAxisColor</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-29">Add Property Studio.XAxisColor</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-30">Add Property Studio.YAxisColor</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-31">Add Property Studio.ZAxisColor</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-32">Add Property StyleQuery.PreferredTextSize</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-33">Change Function TextChatService.SendExpChatMessageClientRendered</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-34">Add Event TextChatService.ExpChatFeatureValueChanged</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-35">Add Enum AntiAliasing</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-38">Add EnumItem AppShellActionType.HomePageInteractive</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-39">Remove EnumItem ExternalEditorMode.CustomEditor</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-40">Add EnumItem ExternalEditorMode.UserSelectedEditor</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-41">Remove EnumItem KeyCode.Touch</a></li>
+					<li><a href="/ref/updates/2026.html#version-0c771458892e42b7-42">Add EnumItem KeyCode.TouchPosition</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-0c771458892e42b7">All changes</a>
+			]]></content:encoded></item><item><title>v0.717.0.7170978</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-961e524856ba47c6</link><description>74 revisions to the API.</description><guid>version-961e524856ba47c6</guid><pubDate>Tue, 14 Apr 2026 10:05:34 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-0">Change Property AnimationRigData.Generic</a></li>
 					<li><a href="/ref/updates/2026.html#version-961e524856ba47c6-1">Remove Property AudioPlayer.IsMutedForCapture</a></li>
@@ -4091,32 +4128,4 @@
 					<li><a href="/ref/updates/2025.html#version-43bb2135852549ef-144">Change EnumItem StateObjectFieldType.Vector3</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-43bb2135852549ef">All changes</a>
-			]]></content:encoded></item><item><title>v0.669.0.6690660</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-337aa961b0d54f6c</link><description>43 revisions to the API.</description><guid>version-337aa961b0d54f6c</guid><pubDate>Tue, 15 Apr 2025 10:06:10 -0700</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-0">Change Event Annotation.RequestCompleted</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-1">Add Property AnnotationsService.annotationsLoadingStatus</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-2">Add Property AnnotationsService.resolvedLoadingStatus</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-3">Add Function AssetService.CreateSurfaceAppearance</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-4">Remove Property AuroraScript.DumpMispredictions</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-5">Add Property AuroraScript.EnableCulling</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-6">Add Property AuroraScript.LODCriticality</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-7">Remove Property AuroraScript.LODDistanceFactor</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-8">Remove Property AuroraScript.LODFrequencyFactor</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-9">Add Property DataModel.Environment</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-10">Add Class FacialAgeEstimationService</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-13">Add Event LocalizationService.DynamicTranslationServerToClientResponse</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-14">Add Property PartOperation.ComponentIndex</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-15">Change Property Player.PartyId</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-16">Remove Property RootImportData.UseSceneOriginAsCFrame</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-17">Add Function SocialService.GetPartyAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-18">Change Function SocialService.UpdatePlayerPartyData</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-19">Change Event SocialService.PlayerPartyDataChanged</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-20">Add Property Studio.EnableSelectionTooltips</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-21">Add Class SystemThemeService</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-26">Remove Enum AnnotationRequestResult</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-27">Add Enum AnnotationRequestStatus</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-33">Add Enum FacialAgeEstimationResultType</a></li>
-					<li><a href="/ref/updates/2025.html#version-337aa961b0d54f6c-37">Add Enum SystemThemeValue</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-337aa961b0d54f6c">All changes</a>
 			]]></content:encoded></item></channel></rss>
