@@ -7112,7 +7112,7 @@
 					"CanLoad": true,
 					"CanSave": true,
 					"Category": "animation",
-					"Default": "\u0001",
+					"Default": "\u0002",
 					"MemberType": "Property",
 					"Name": "label",
 					"PreferredDescriptor": {
@@ -7181,7 +7181,7 @@
 					"CanLoad": true,
 					"CanSave": true,
 					"Category": "animation",
-					"Default": "\u0001",
+					"Default": "\u0002",
 					"MemberType": "Property",
 					"Name": "postTransform",
 					"PreferredDescriptor": {
@@ -7204,7 +7204,7 @@
 					"CanLoad": true,
 					"CanSave": true,
 					"Category": "animation",
-					"Default": "\u0001",
+					"Default": "\u0002",
 					"MemberType": "Property",
 					"Name": "preTransform",
 					"PreferredDescriptor": {
@@ -7250,7 +7250,7 @@
 					"CanLoad": true,
 					"CanSave": true,
 					"Category": "animation",
-					"Default": "\u0001",
+					"Default": "\u0002",
 					"MemberType": "Property",
 					"Name": "transform",
 					"PreferredDescriptor": {
