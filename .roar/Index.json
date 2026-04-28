@@ -1536,6 +1536,19 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "GetUniversalAppAdsEligibility",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "HandleWhyThisAdClicked",
 					"MemberType": "Function",
 					"Removed": false,
@@ -8324,6 +8337,110 @@
 				},
 				{
 					"Class": "Animator",
+					"Member": "RefStepIdForWeight0",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight1",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight2",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight3",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight4",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight5",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight6",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight7",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
 					"Member": "RootMotion",
 					"MemberType": "Property",
 					"Removed": false,
@@ -8338,110 +8455,6 @@
 				{
 					"Class": "Animator",
 					"Member": "RootMotionWeight",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition0",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition1",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition2",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition3",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition4",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition5",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition6",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition7",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -9282,6 +9295,110 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Player"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition0",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition1",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition2",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition3",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition4",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition5",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition6",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition7",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
 					}
 				},
 				{
@@ -44574,6 +44691,17 @@
 				"<<<ROOT>>>"
 			]
 		},
+		"CloudExecutionService": {
+			"Name": "CloudExecutionService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			]
+		},
 		"CloudLocalizationTable": {
 			"Name": "CloudLocalizationTable",
 			"Removed": false,
@@ -68762,6 +68890,32 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "ValidatePartBBoxAfterFullFacs",
 					"MemberType": "Function",
 					"Removed": false,
@@ -75076,19 +75230,6 @@
 					}
 				},
 				{
-					"Class": "HapticEffect",
-					"Member": "Waveform",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Class",
-						"Name": "FloatCurve"
-					}
-				},
-				{
 					"Class": "Vector3Curve",
 					"Member": "X",
 					"MemberType": "Function",
@@ -75122,6 +75263,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "FloatCurve"
+					}
+				},
+				{
+					"Class": "HapticEffect",
+					"Member": "Waveform",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Class",
 						"Name": "FloatCurve"
@@ -85634,19 +85788,6 @@
 				},
 				{
 					"Class": "HapticEffect",
-					"Member": "Waveform",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Class",
-						"Name": "FloatCurve"
-					}
-				},
-				{
-					"Class": "HapticEffect",
 					"Member": "WaveformData",
 					"MemberType": "Property",
 					"Removed": false,
@@ -85708,6 +85849,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "HapticEffect",
+					"Member": "Waveform",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "FloatCurve"
 					}
 				},
 				{
@@ -88049,6 +88203,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "FinishedState",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "FloorMaterial",
 					"MemberType": "Property",
 					"Removed": false,
@@ -88335,6 +88502,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "NoFloorTimerState",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "OverrideDefaultCollisions",
 					"MemberType": "Property",
 					"Removed": false,
@@ -88474,6 +88654,19 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "TimerState",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
 					}
 				},
 				{
@@ -98441,6 +98634,7 @@
 				"ChatbotUIService",
 				"ClickDetector",
 				"CloudCRUDService",
+				"CloudExecutionService",
 				"Clouds",
 				"ClusterPacketCache",
 				"Collaborator",
@@ -118361,6 +118555,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "SignalCheckPlayerHasRobloxSubscription",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "SignalClientPurchaseSuccess",
 					"MemberType": "Function",
 					"Removed": false,
@@ -128505,6 +128712,19 @@
 					}
 				},
 				{
+					"Class": "ModuleScript",
+					"Member": "UnrestrictedRequireAllowed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "PlatformLibraries",
 					"Member": "RemoteRequireResponse",
 					"MemberType": "Event",
@@ -130251,6 +130471,19 @@
 				},
 				{
 					"Class": "NetworkSettings",
+					"Member": "InboundNetworkJitterMs",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
 					"Member": "InboundNetworkLossPercent",
 					"MemberType": "Property",
 					"Removed": false,
@@ -130264,19 +130497,6 @@
 				},
 				{
 					"Class": "NetworkSettings",
-					"Member": "InboundNetworkMaxDelayMs",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "NetworkSettings",
 					"Member": "InboundNetworkMinDelayMs",
 					"MemberType": "Property",
 					"Removed": false,
@@ -130285,7 +130505,7 @@
 					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
-						"Name": "int"
+						"Name": "float"
 					}
 				},
 				{
@@ -130303,19 +130523,6 @@
 				},
 				{
 					"Class": "NetworkSettings",
-					"Member": "NetworkEmulationEnabled",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "NetworkSettings",
 					"Member": "OpenCertManagerDialog",
 					"MemberType": "Property",
 					"Removed": false,
@@ -130325,6 +130532,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
+					"Member": "OutboundNetworkJitterMs",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
 					}
 				},
 				{
@@ -130342,19 +130562,6 @@
 				},
 				{
 					"Class": "NetworkSettings",
-					"Member": "OutboundNetworkMaxDelayMs",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "NetworkSettings",
 					"Member": "OutboundNetworkMinDelayMs",
 					"MemberType": "Property",
 					"Removed": false,
@@ -130363,7 +130570,7 @@
 					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
-						"Name": "int"
+						"Name": "float"
 					}
 				},
 				{
@@ -130589,6 +130796,19 @@
 				},
 				{
 					"Class": "NetworkSettings",
+					"Member": "InboundNetworkMaxDelayMs",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
 					"Member": "IncommingReplicationLag",
 					"MemberType": "Property",
 					"Removed": true,
@@ -130667,6 +130887,19 @@
 				},
 				{
 					"Class": "NetworkSettings",
+					"Member": "NetworkEmulationEnabled",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
 					"Member": "NetworkOwnerRate",
 					"MemberType": "Property",
 					"Removed": true,
@@ -130676,6 +130909,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
+					"Member": "OutboundNetworkMaxDelayMs",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -159865,6 +160111,19 @@
 				},
 				{
 					"Class": "RootImportData",
+					"Member": "VersionedAssetId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "RootImportData",
 					"Member": "WorldForward",
 					"MemberType": "Property",
 					"Removed": false,
@@ -160471,6 +160730,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "StepFrequency"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "BindToSimulation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -172437,8 +172709,8 @@
 					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
+						"Category": "Group",
+						"Name": "Variant"
 					}
 				},
 				{
@@ -186547,6 +186819,19 @@
 				},
 				{
 					"Class": "StyleRule",
+					"Member": "GetDefaultPropertyTransition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "StyleRule",
 					"Member": "GetProperties",
 					"MemberType": "Function",
 					"Removed": false,
@@ -186634,6 +186919,32 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StyleRule",
+					"Member": "SetDefaultPropertyTransition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "StyleRule",
+					"Member": "SetDefaultPropertyTransition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				},
 				{
@@ -190608,6 +190919,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "Materials",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "SharedString"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "MaxExtents",
 					"MemberType": "Property",
 					"Removed": false,
@@ -191401,6 +191725,33 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "GetBaseMaterialSlotIndex",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "Material"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GetBaseMaterialSlotIndex",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "GetCell",
 					"MemberType": "Function",
 					"Removed": false,
@@ -191453,6 +191804,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "GetFirstCustomMaterialSlotIndex",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "GetMaterialColor",
 					"MemberType": "Function",
 					"Removed": false,
@@ -191475,6 +191839,32 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
 					}
 				},
 				{
@@ -192116,6 +192506,32 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "ResetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "ResetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "SetCell",
 					"MemberType": "Function",
 					"Removed": false,
@@ -192416,6 +192832,71 @@
 				{
 					"Class": "Terrain",
 					"Member": "SetMaterialInTransformSubregion",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "Material"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -206456,6 +206937,84 @@
 				{
 					"Class": "UGCValidationService",
 					"Member": "ValidateHSRMeshIds",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -225069,6 +225628,46 @@
 				},
 				{
 					"Class": "WebViewService",
+					"Member": "OpenWindowV2",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "WebViewService",
+					"Member": "OpenWindowV2",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "WebViewParams",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "WebViewService",
+					"Member": "OpenWindowV2",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "WebViewService",
 					"Member": "OnJavaScriptCall",
 					"MemberType": "Event",
 					"Removed": false,
@@ -226298,19 +226897,6 @@
 				},
 				{
 					"Class": "Workspace",
-					"Member": "MoverConstraintRootBehavior",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Enum",
-						"Name": "MoverConstraintRootBehaviorMode"
-					}
-				},
-				{
-					"Class": "Workspace",
 					"Member": "NextGenerationReplication",
 					"MemberType": "Property",
 					"Removed": false,
@@ -227295,6 +227881,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "MeshPartHeads"
+					}
+				},
+				{
+					"Class": "Workspace",
+					"Member": "MoverConstraintRootBehavior",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MoverConstraintRootBehaviorMode"
 					}
 				},
 				{
@@ -230998,6 +231597,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetUniversalAppAdsEligibility": {
+				"Class": "AdService",
+				"Name": "GetUniversalAppAdsEligibility",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"HandleWhyThisAdClicked": {
 				"Class": "AdService",
 				"Name": "HandleWhyThisAdClicked",
@@ -234100,6 +234705,54 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"RefStepIdForWeight0": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight0",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForWeight1": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight1",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForWeight2": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight2",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForWeight3": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight3",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForWeight4": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight4",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForWeight5": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight5",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForWeight6": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight6",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RefStepIdForWeight7": {
+				"Class": "Animator",
+				"Name": "RefStepIdForWeight7",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"RegisterEvaluationParallelCallback": {
 				"Class": "Animator",
 				"Name": "RegisterEvaluationParallelCallback",
@@ -234176,49 +234829,49 @@
 				"Class": "Animator",
 				"Name": "TimePosition0",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"TimePosition1": {
 				"Class": "Animator",
 				"Name": "TimePosition1",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"TimePosition2": {
 				"Class": "Animator",
 				"Name": "TimePosition2",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"TimePosition3": {
 				"Class": "Animator",
 				"Name": "TimePosition3",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"TimePosition4": {
 				"Class": "Animator",
 				"Name": "TimePosition4",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"TimePosition5": {
 				"Class": "Animator",
 				"Name": "TimePosition5",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"TimePosition6": {
 				"Class": "Animator",
 				"Name": "TimePosition6",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"TimePosition7": {
 				"Class": "Animator",
 				"Name": "TimePosition7",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent0": {
 				"Class": "Animator",
@@ -267753,13 +268406,13 @@
 				"Class": "HapticEffect",
 				"Name": "Waveform",
 				"MemberType": "Property",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "HapticEffect",
 						"Member": "Waveform",
 						"MemberType": "Property",
-						"Removed": false,
+						"Removed": true,
 						"Field": "ValueType",
 						"Kind": "Type",
 						"Index": -1,
@@ -269350,6 +270003,12 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"FinishedState": {
+				"Class": "Humanoid",
+				"Name": "FinishedState",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"FloorMaterial": {
 				"Class": "Humanoid",
 				"Name": "FloorMaterial",
@@ -269870,6 +270529,12 @@
 					}
 				]
 			},
+			"NoFloorTimerState": {
+				"Class": "Humanoid",
+				"Name": "NoFloorTimerState",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"OverrideDefaultCollisions": {
 				"Class": "Humanoid",
 				"Name": "OverrideDefaultCollisions",
@@ -270325,6 +270990,12 @@
 			"TargetPoint": {
 				"Class": "Humanoid",
 				"Name": "TargetPoint",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"TimerState": {
+				"Class": "Humanoid",
+				"Name": "TimerState",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -280047,6 +280718,12 @@
 					}
 				]
 			},
+			"SignalCheckPlayerHasRobloxSubscription": {
+				"Class": "MarketplaceService",
+				"Name": "SignalCheckPlayerHasRobloxSubscription",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"SignalClientPurchaseSuccess": {
 				"Class": "MarketplaceService",
 				"Name": "SignalClientPurchaseSuccess",
@@ -283582,6 +284259,12 @@
 				"Name": "Source",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"UnrestrictedRequireAllowed": {
+				"Class": "ModuleScript",
+				"Name": "UnrestrictedRequireAllowed",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"Motor": {
@@ -284540,6 +285223,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"InboundNetworkJitterMs": {
+				"Class": "NetworkSettings",
+				"Name": "InboundNetworkJitterMs",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"InboundNetworkLossPercent": {
 				"Class": "NetworkSettings",
 				"Name": "InboundNetworkLossPercent",
@@ -284550,7 +285239,7 @@
 				"Class": "NetworkSettings",
 				"Name": "InboundNetworkMaxDelayMs",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"InboundNetworkMinDelayMs": {
 				"Class": "NetworkSettings",
@@ -284604,7 +285293,7 @@
 				"Class": "NetworkSettings",
 				"Name": "NetworkEmulationEnabled",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"NetworkOwnerRate": {
 				"Class": "NetworkSettings",
@@ -284618,6 +285307,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"OutboundNetworkJitterMs": {
+				"Class": "NetworkSettings",
+				"Name": "OutboundNetworkJitterMs",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"OutboundNetworkLossPercent": {
 				"Class": "NetworkSettings",
 				"Name": "OutboundNetworkLossPercent",
@@ -284628,7 +285323,7 @@
 				"Class": "NetworkSettings",
 				"Name": "OutboundNetworkMaxDelayMs",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"OutboundNetworkMinDelayMs": {
 				"Class": "NetworkSettings",
@@ -297605,6 +298300,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"VersionedAssetId": {
+				"Class": "RootImportData",
+				"Name": "VersionedAssetId",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"WorldForward": {
 				"Class": "RootImportData",
 				"Name": "WorldForward",
@@ -309753,6 +310454,12 @@
 			}
 		},
 		"StyleRule": {
+			"GetDefaultPropertyTransition": {
+				"Class": "StyleRule",
+				"Name": "GetDefaultPropertyTransition",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetProperties": {
 				"Class": "StyleRule",
 				"Name": "GetProperties",
@@ -309817,6 +310524,12 @@
 				"Class": "StyleRule",
 				"Name": "SelectorError",
 				"MemberType": "Property",
+				"Removed": false
+			},
+			"SetDefaultPropertyTransition": {
+				"Class": "StyleRule",
+				"Name": "SetDefaultPropertyTransition",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"SetProperties": {
@@ -311934,9 +312647,36 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"GetBaseMaterialSlotIndex": {
+				"Class": "Terrain",
+				"Name": "GetBaseMaterialSlotIndex",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Terrain",
+						"Member": "GetBaseMaterialSlotIndex",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "Material"
+						}
+					}
+				]
+			},
 			"GetCell": {
 				"Class": "Terrain",
 				"Name": "GetCell",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetFirstCustomMaterialSlotIndex": {
+				"Class": "Terrain",
+				"Name": "GetFirstCustomMaterialSlotIndex",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -311960,6 +312700,12 @@
 						}
 					}
 				]
+			},
+			"GetMaterialSlot": {
+				"Class": "Terrain",
+				"Name": "GetMaterialSlot",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"GetTerrainWireframe": {
 				"Class": "Terrain",
@@ -312096,6 +312842,12 @@
 			"MaterialColors": {
 				"Class": "Terrain",
 				"Name": "MaterialColors",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Materials": {
+				"Class": "Terrain",
+				"Name": "Materials",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -312327,6 +313079,12 @@
 					}
 				]
 			},
+			"ResetMaterialSlot": {
+				"Class": "Terrain",
+				"Name": "ResetMaterialSlot",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"Resize": {
 				"Class": "Terrain",
 				"Name": "Resize",
@@ -312510,6 +313268,27 @@
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 2,
+						"Type": {
+							"Category": "Enum",
+							"Name": "Material"
+						}
+					}
+				]
+			},
+			"SetMaterialSlot": {
+				"Class": "Terrain",
+				"Name": "SetMaterialSlot",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Terrain",
+						"Member": "SetMaterialSlot",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
 						"Type": {
 							"Category": "Enum",
 							"Name": "Material"
@@ -319347,6 +320126,40 @@
 				"Name": "ValidateImageTransparencyThresholdTextureID_V2",
 				"MemberType": "Function",
 				"Removed": true
+			},
+			"ValidateLeaderSkinnedVertsNearCageIslands": {
+				"Class": "UGCValidationService",
+				"Name": "ValidateLeaderSkinnedVertsNearCageIslands",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "UGCValidationService",
+						"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableMesh"
+						}
+					},
+					{
+						"Class": "UGCValidationService",
+						"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableMesh"
+						}
+					}
+				]
 			},
 			"ValidateMeshBounds": {
 				"Class": "UGCValidationService",
@@ -326905,6 +327718,12 @@
 				"Name": "OpenWindow",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"OpenWindowV2": {
+				"Class": "WebViewService",
+				"Name": "OpenWindowV2",
+				"MemberType": "Function",
+				"Removed": false
 			}
 		},
 		"WeldConstraint": {
@@ -327854,13 +328673,13 @@
 				"Class": "Workspace",
 				"Name": "MoverConstraintRootBehavior",
 				"MemberType": "Property",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "Workspace",
 						"Member": "MoverConstraintRootBehavior",
 						"MemberType": "Property",
-						"Removed": false,
+						"Removed": true,
 						"Field": "ValueType",
 						"Kind": "Type",
 						"Index": -1,
@@ -342994,7 +343813,9 @@
 				"MouseWheel",
 				"TrackpadPan",
 				"TrackpadPinch",
-				"MouseDelta"
+				"MouseDelta",
+				"TouchDelta",
+				"TouchPinch"
 			],
 			"ItemsByIndex": [
 				"Unknown",
@@ -343173,6 +343994,8 @@
 				"TrackpadPan",
 				"TrackpadPinch",
 				"MouseDelta",
+				"TouchDelta",
+				"TouchPinch",
 				"World0",
 				"World1",
 				"World2",
@@ -344818,6 +345641,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "GetBaseMaterialSlotIndex",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "Material"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "GetMaterialColor",
 					"MemberType": "Function",
 					"Removed": false,
@@ -344941,6 +345777,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "Material"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Enum",
 						"Name": "Material"
@@ -345321,7 +346170,12 @@
 				"Level01",
 				"Level02",
 				"Level03",
-				"Level04"
+				"Level04",
+				"Level05",
+				"Level06",
+				"Level07",
+				"Level08",
+				"Level09"
 			],
 			"ItemsByIndex": [
 				"DistanceBased",
@@ -345329,7 +346183,12 @@
 				"Level01",
 				"Level02",
 				"Level03",
-				"Level04"
+				"Level04",
+				"Level05",
+				"Level06",
+				"Level07",
+				"Level08",
+				"Level09"
 			],
 			"Related": [
 				{
@@ -345939,7 +346798,7 @@
 		},
 		"MoverConstraintRootBehaviorMode": {
 			"Name": "MoverConstraintRootBehaviorMode",
-			"Removed": false,
+			"Removed": true,
 			"ItemsByValue": [
 				"Default",
 				"Disabled",
@@ -345955,7 +346814,7 @@
 					"Class": "Workspace",
 					"Member": "MoverConstraintRootBehavior",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -368284,6 +369143,16 @@
 				"Name": "Touch",
 				"Removed": true
 			},
+			"TouchDelta": {
+				"Enum": "KeyCode",
+				"Name": "TouchDelta",
+				"Removed": false
+			},
+			"TouchPinch": {
+				"Enum": "KeyCode",
+				"Name": "TouchPinch",
+				"Removed": false
+			},
 			"TouchPosition": {
 				"Enum": "KeyCode",
 				"Name": "TouchPosition",
@@ -369885,6 +370754,31 @@
 				"Enum": "MeshPartDetailLevel",
 				"Name": "Level04",
 				"Removed": false
+			},
+			"Level05": {
+				"Enum": "MeshPartDetailLevel",
+				"Name": "Level05",
+				"Removed": false
+			},
+			"Level06": {
+				"Enum": "MeshPartDetailLevel",
+				"Name": "Level06",
+				"Removed": false
+			},
+			"Level07": {
+				"Enum": "MeshPartDetailLevel",
+				"Name": "Level07",
+				"Removed": false
+			},
+			"Level08": {
+				"Enum": "MeshPartDetailLevel",
+				"Name": "Level08",
+				"Removed": false
+			},
+			"Level09": {
+				"Enum": "MeshPartDetailLevel",
+				"Name": "Level09",
+				"Removed": false
 			}
 		},
 		"MeshPartHeads": {
@@ -370274,17 +371168,17 @@
 			"Default": {
 				"Enum": "MoverConstraintRootBehaviorMode",
 				"Name": "Default",
-				"Removed": false
+				"Removed": true
 			},
 			"Disabled": {
 				"Enum": "MoverConstraintRootBehaviorMode",
 				"Name": "Disabled",
-				"Removed": false
+				"Removed": true
 			},
 			"Enabled": {
 				"Enum": "MoverConstraintRootBehaviorMode",
 				"Name": "Enabled",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"MuteState": {
@@ -383320,6 +384214,19 @@
 					}
 				},
 				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "UserInputService",
 					"Member": "GetConnectedGamepads",
 					"MemberType": "Function",
@@ -387925,6 +388832,19 @@
 					}
 				},
 				{
+					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
 					"Class": "UserInputService",
 					"Member": "UserHeadCFrame",
 					"MemberType": "Property",
@@ -391114,6 +392034,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Color3"
@@ -394553,6 +395486,19 @@
 				{
 					"Class": "AdService",
 					"Member": "GetCampaignEligibilityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "GetUniversalAppAdsEligibility",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -408449,6 +409395,19 @@
 					}
 				},
 				{
+					"Class": "Terrain",
+					"Member": "Materials",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "SharedString"
+					}
+				},
+				{
 					"Class": "TriangleMeshPart",
 					"Member": "AeroMeshData",
 					"MemberType": "Property",
@@ -410428,6 +411387,19 @@
 				{
 					"Class": "Terrain",
 					"Member": "GetCell",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GetMaterialSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -413367,6 +414339,19 @@
 					}
 				},
 				{
+					"Class": "SoundService",
+					"Member": "SetInputDevice",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
 					"Class": "StarterGui",
 					"Member": "GetCore",
 					"MemberType": "Function",
@@ -413602,6 +414587,19 @@
 				},
 				{
 					"Class": "StyleRule",
+					"Member": "GetDefaultPropertyTransition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "StyleRule",
 					"Member": "GetProperty",
 					"MemberType": "Function",
 					"Removed": false,
@@ -413620,6 +414618,19 @@
 					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "StyleRule",
+					"Member": "SetDefaultPropertyTransition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
 						"Category": "Group",
@@ -422554,6 +423565,27 @@
 				}
 			]
 		},
+		"WebViewParams": {
+			"Category": "DataType",
+			"Name": "WebViewParams",
+			"Removed": false,
+			"Related": [
+				{
+					"Class": "WebViewService",
+					"Member": "OpenWindowV2",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "WebViewParams",
+						"Optional": true
+					}
+				}
+			]
+		},
 		"bool": {
 			"Category": "Primitive",
 			"Name": "bool",
@@ -429659,6 +430691,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "FinishedState",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "Jump",
 					"MemberType": "Property",
 					"Removed": false,
@@ -432167,8 +433212,8 @@
 					}
 				},
 				{
-					"Class": "NetworkSettings",
-					"Member": "HttpProxyEnabled",
+					"Class": "ModuleScript",
+					"Member": "UnrestrictedRequireAllowed",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -432181,7 +433226,7 @@
 				},
 				{
 					"Class": "NetworkSettings",
-					"Member": "NetworkEmulationEnabled",
+					"Member": "HttpProxyEnabled",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -440163,6 +441208,19 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "ValidatePartBBoxAfterFullFacs",
 					"MemberType": "Function",
 					"Removed": false,
@@ -445265,6 +446323,19 @@
 				},
 				{
 					"Class": "NetworkSettings",
+					"Member": "NetworkEmulationEnabled",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
 					"Member": "PrintBits",
 					"MemberType": "Property",
 					"Removed": true,
@@ -448789,6 +449860,110 @@
 					}
 				},
 				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight0",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight1",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight2",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight3",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight4",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight5",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight6",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "RefStepIdForWeight7",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
 					"Class": "AppRatingPromptService",
 					"Member": "OnGameLeft",
 					"MemberType": "Event",
@@ -451309,110 +452484,6 @@
 				{
 					"Class": "Animator",
 					"Member": "RootMotionWeight",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition0",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition1",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition2",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition3",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition4",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition5",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition6",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "TimePosition7",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -456991,6 +458062,32 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "NoFloorTimerState",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "TimerState",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "WalkAngleError",
 					"MemberType": "Property",
 					"Removed": false,
@@ -458096,6 +459193,19 @@
 				},
 				{
 					"Class": "NetworkSettings",
+					"Member": "InboundNetworkJitterMs",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
 					"Member": "InboundNetworkLossPercent",
 					"MemberType": "Property",
 					"Removed": false,
@@ -458109,7 +459219,46 @@
 				},
 				{
 					"Class": "NetworkSettings",
+					"Member": "InboundNetworkMinDelayMs",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
+					"Member": "OutboundNetworkJitterMs",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
 					"Member": "OutboundNetworkLossPercent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
+					"Member": "OutboundNetworkMinDelayMs",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -461933,6 +463082,19 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "ValidateLeaderSkinnedVertsNearCageIslands",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "ValidatePartBBoxAfterFullFacs",
 					"MemberType": "Function",
 					"Removed": false,
@@ -463421,6 +464583,110 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition0",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition1",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition2",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition3",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition4",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition5",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition6",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "TimePosition7",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -469001,59 +470267,7 @@
 				},
 				{
 					"Class": "NetworkSettings",
-					"Member": "InboundNetworkMaxDelayMs",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "NetworkSettings",
-					"Member": "InboundNetworkMinDelayMs",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "NetworkSettings",
 					"Member": "OpenCertManagerDialog",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "NetworkSettings",
-					"Member": "OutboundNetworkMaxDelayMs",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "NetworkSettings",
-					"Member": "OutboundNetworkMinDelayMs",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -470502,6 +471716,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "BindToSimulation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -472029,6 +473256,20 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "GetBaseMaterialSlotIndex",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "GetCell",
 					"MemberType": "Function",
 					"Removed": false,
@@ -472061,6 +473302,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GetFirstCustomMaterialSlotIndex",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -472159,6 +473426,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "ResetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "SetCell",
 					"MemberType": "Function",
 					"Removed": false,
@@ -472191,6 +473471,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -475891,7 +477184,33 @@
 				},
 				{
 					"Class": "NetworkSettings",
+					"Member": "InboundNetworkMaxDelayMs",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
 					"Member": "MaxDataModelSendBuffer",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "NetworkSettings",
+					"Member": "OutboundNetworkMaxDelayMs",
 					"MemberType": "Property",
 					"Removed": true,
 					"Field": "ValueType",
@@ -484043,6 +485362,19 @@
 				{
 					"Class": "RootImportData",
 					"Member": "PreferredUploadId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "RootImportData",
+					"Member": "VersionedAssetId",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -494532,6 +495864,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "SignalCheckPlayerHasRobloxSubscription",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "SignalClientPurchaseSuccess",
 					"MemberType": "Function",
 					"Removed": false,
@@ -499836,6 +501181,19 @@
 				},
 				{
 					"Class": "StyleRule",
+					"Member": "SetDefaultPropertyTransition",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StyleRule",
 					"Member": "SetProperties",
 					"MemberType": "Function",
 					"Removed": false,
@@ -500304,6 +501662,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "ResetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "SetCell",
 					"MemberType": "Function",
 					"Removed": false,
@@ -500357,6 +501728,19 @@
 				{
 					"Class": "Terrain",
 					"Member": "SetMaterialInTransformSubregion",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -502346,6 +503730,19 @@
 				{
 					"Class": "WebViewService",
 					"Member": "OpenWindow",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "WebViewService",
+					"Member": "OpenWindowV2",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -523627,19 +525024,6 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "SoundService",
-					"Member": "SetInputDevice",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
 					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
@@ -525023,6 +526407,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SetMaterialSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -528945,6 +530342,19 @@
 						"Category": "Primitive",
 						"Name": "string",
 						"Optional": true
+					}
+				},
+				{
+					"Class": "WebViewService",
+					"Member": "OpenWindowV2",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
