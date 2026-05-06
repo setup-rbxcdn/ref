@@ -11510,6 +11510,19 @@
 						"Category": "Primitive",
 						"Name": "null"
 					}
+				},
+				{
+					"Class": "AppLifecycleObserverService",
+					"Member": "TriggerOnLuaAppReadyToRender",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
 				}
 			]
 		},
@@ -32056,19 +32069,6 @@
 				},
 				{
 					"Class": "BasePart",
-					"Member": "LocalSimulationValidation",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "BasePart",
 					"Member": "LocalTransparencyModifier",
 					"MemberType": "Property",
 					"Removed": false,
@@ -34093,6 +34093,19 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "BasePart",
+					"Member": "LocalSimulationValidation",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -53111,6 +53124,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModel",
+					"Member": "ServerLifecycleChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -98887,6 +98913,7 @@
 				"PackageLink",
 				"PackageService",
 				"PackageUIService",
+				"Packages",
 				"Pages",
 				"PartOperationAsset",
 				"ParticleEmitter",
@@ -114938,6 +114965,45 @@
 						"Category": "Primitive",
 						"Name": "bool"
 					}
+				},
+				{
+					"Class": "LogReporterService",
+					"Member": "SubmitStratusBugReport",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogReporterService",
+					"Member": "SubmitStratusBugReport",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogReporterService",
+					"Member": "SubmitStratusBugReport",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
 				}
 			]
 		},
@@ -116184,6 +116250,71 @@
 						"Category": "Class",
 						"Name": "MLSession"
 					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "IsPostProcessReady",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "LoadPostProcessModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "LoadPostProcessModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "SetPostProcessEnabled",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "SetPostProcessEnabled",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
 				}
 			]
 		},
@@ -116965,6 +117096,19 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "IsPurchaseSimulated",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -133819,6 +133963,58 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Instances"
+					}
+				}
+			]
+		},
+		"Packages": {
+			"Name": "Packages",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "Packages",
+					"Member": "IsDehydrated",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Packages",
+					"Member": "ShellPackagesCount",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Packages",
+					"Member": "SkippedInstancesCount",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				}
 			]
@@ -155727,6 +155923,84 @@
 				{
 					"Class": "RecommendationService",
 					"Member": "LogImpressionEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RecommendationPreferenceType"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RecommendationPreferenceTargetType"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -184249,32 +184523,6 @@
 				},
 				{
 					"Class": "StudioService",
-					"Member": "ShowPlaceVersionHistoryDialog",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "StudioService",
-					"Member": "ShowPlaceVersionHistoryDialog",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "StudioService",
 					"Member": "ShowPublishToRoblox",
 					"MemberType": "Function",
 					"Removed": false,
@@ -185155,6 +185403,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "void"
+					}
+				},
+				{
+					"Class": "StudioService",
+					"Member": "ShowPlaceVersionHistoryDialog",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "StudioService",
+					"Member": "ShowPlaceVersionHistoryDialog",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				},
 				{
@@ -198701,6 +198975,45 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "SendEnableChatButtonClicked",
 					"MemberType": "Function",
 					"Removed": false,
@@ -199494,45 +199807,6 @@
 				},
 				{
 					"Class": "TextChatService",
-					"Member": "UpdateChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "TextChatService",
-					"Member": "UpdateChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "TextChatService",
-					"Member": "UpdateChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "TextChatService",
 					"Member": "UserMessageIntentSent",
 					"MemberType": "Event",
 					"Removed": false,
@@ -199854,6 +200128,45 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "TextChatMessageStatus"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UpdateChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UpdateChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UpdateChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				}
 			]
@@ -235863,6 +236176,12 @@
 				"Name": "TriggerOnLuaAppInteractive",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"TriggerOnLuaAppReadyToRender": {
+				"Class": "AppLifecycleObserverService",
+				"Name": "TriggerOnLuaAppReadyToRender",
+				"MemberType": "Function",
+				"Removed": false
 			}
 		},
 		"AppRatingPromptService": {
@@ -246202,7 +246521,7 @@
 				"Class": "BasePart",
 				"Name": "LocalSimulationValidation",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"LocalTransparencyModifier": {
 				"Class": "BasePart",
@@ -254834,6 +255153,12 @@
 			"ScreenshotSavedToAlbum": {
 				"Class": "DataModel",
 				"Name": "ScreenshotSavedToAlbum",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"ServerLifecycleChanged": {
+				"Class": "DataModel",
+				"Name": "ServerLifecycleChanged",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -278412,6 +278737,12 @@
 				"Name": "ReportMultipleLogs",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"SubmitStratusBugReport": {
+				"Class": "LogReporterService",
+				"Name": "SubmitStratusBugReport",
+				"MemberType": "Function",
+				"Removed": false
 			}
 		},
 		"LogService": {
@@ -278925,6 +279256,24 @@
 						}
 					}
 				]
+			},
+			"IsPostProcessReady": {
+				"Class": "MLService",
+				"Name": "IsPostProcessReady",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"LoadPostProcessModelAsync": {
+				"Class": "MLService",
+				"Name": "LoadPostProcessModelAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SetPostProcessEnabled": {
+				"Class": "MLService",
+				"Name": "SetPostProcessEnabled",
+				"MemberType": "Function",
+				"Removed": false
 			}
 		},
 		"MLSession": {
@@ -279387,6 +279736,12 @@
 						}
 					}
 				]
+			},
+			"IsPurchaseSimulated": {
+				"Class": "MarketplaceService",
+				"Name": "IsPurchaseSimulated",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"LuaDialogCallbackSignal": {
 				"Class": "MarketplaceService",
@@ -286555,6 +286910,26 @@
 						}
 					}
 				]
+			}
+		},
+		"Packages": {
+			"IsDehydrated": {
+				"Class": "Packages",
+				"Name": "IsDehydrated",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ShellPackagesCount": {
+				"Class": "Packages",
+				"Name": "ShellPackagesCount",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"SkippedInstancesCount": {
+				"Class": "Packages",
+				"Name": "SkippedInstancesCount",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"Pages": {
@@ -296221,6 +296596,40 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "RecommendationImpressionType"
+						}
+					}
+				]
+			},
+			"LogPreferenceEvent": {
+				"Class": "RecommendationService",
+				"Name": "LogPreferenceEvent",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "RecommendationService",
+						"Member": "LogPreferenceEvent",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RecommendationPreferenceType"
+						}
+					},
+					{
+						"Class": "RecommendationService",
+						"Member": "LogPreferenceEvent",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RecommendationPreferenceTargetType"
 						}
 					}
 				]
@@ -309781,7 +310190,7 @@
 				"Class": "StudioService",
 				"Name": "ShowPlaceVersionHistoryDialog",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"ShowPublishToRoblox": {
 				"Class": "StudioService",
@@ -315939,6 +316348,18 @@
 					}
 				]
 			},
+			"OnUserChatSettingUpdateAsync": {
+				"Class": "TextChatService",
+				"Name": "OnUserChatSettingUpdateAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"OnUserChatSettingUpdateServer": {
+				"Class": "TextChatService",
+				"Name": "OnUserChatSettingUpdateServer",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"SendEnableChatButtonClicked": {
 				"Class": "TextChatService",
 				"Name": "SendEnableChatButtonClicked",
@@ -316155,7 +316576,7 @@
 				"Class": "TextChatService",
 				"Name": "UpdateChatTimeout",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": true
 			},
 			"UserMessageIntentSent": {
 				"Class": "TextChatService",
@@ -330802,12 +331223,12 @@
 				"RewardedAdUnloaded"
 			],
 			"ItemsByIndex": [
-				"RewardedAdLoaded",
-				"RewardedAdGrant",
-				"RewardedAdUnloaded",
 				"VideoLoaded",
 				"VideoRemoved",
-				"UserCompletedVideo"
+				"UserCompletedVideo",
+				"RewardedAdLoaded",
+				"RewardedAdGrant",
+				"RewardedAdUnloaded"
 			],
 			"Related": [
 				{
@@ -331224,12 +331645,12 @@
 				"AllAxes"
 			],
 			"ItemsByIndex": [
+				"Parallel",
+				"Perpendicular",
 				"PrimaryAxisParallel",
 				"PrimaryAxisPerpendicular",
 				"PrimaryAxisLookAt",
-				"AllAxes",
-				"Parallel",
-				"Perpendicular"
+				"AllAxes"
 			],
 			"Related": [
 				{
@@ -332672,7 +333093,8 @@
 				"DynamicHead",
 				"FaceMakeup",
 				"LipMakeup",
-				"EyeMakeup"
+				"EyeMakeup",
+				"VoxelFragment"
 			],
 			"ItemsByIndex": [
 				"Image",
@@ -332738,7 +333160,8 @@
 				"DynamicHead",
 				"FaceMakeup",
 				"LipMakeup",
-				"EyeMakeup"
+				"EyeMakeup",
+				"VoxelFragment"
 			],
 			"Related": [
 				{
@@ -336962,6 +337385,9 @@
 				"PlacelaunchPartyCannotFit",
 				"PlacelaunchHttpError",
 				"PlacelaunchUserPrivacyUnauthorized",
+				"PlacelaunchAgeVerificationRequired",
+				"PlacelaunchParentalApprovalRequired",
+				"PlacelaunchCoreGated",
 				"PlacelaunchCreatorBan",
 				"PlacelaunchDeviceBlock",
 				"PlacelaunchCustomMessage",
@@ -337062,6 +337488,9 @@
 				"PlacelaunchPartyCannotFit",
 				"PlacelaunchHttpError",
 				"PlacelaunchUserPrivacyUnauthorized",
+				"PlacelaunchAgeVerificationRequired",
+				"PlacelaunchParentalApprovalRequired",
+				"PlacelaunchCoreGated",
 				"PlacelaunchCreatorBan",
 				"PlacelaunchDeviceBlock",
 				"PlacelaunchCustomMessage",
@@ -337240,7 +337669,8 @@
 				"EmotesMenu",
 				"SelfView",
 				"Captures",
-				"AvatarSwitcher"
+				"AvatarSwitcher",
+				"ExperienceShop"
 			],
 			"ItemsByIndex": [
 				"PlayerList",
@@ -337251,7 +337681,8 @@
 				"EmotesMenu",
 				"SelfView",
 				"Captures",
-				"AvatarSwitcher"
+				"AvatarSwitcher",
+				"ExperienceShop"
 			],
 			"Related": [
 				{
@@ -343894,108 +344325,6 @@
 				"RightCurly",
 				"Tilde",
 				"Delete",
-				"KeypadZero",
-				"KeypadOne",
-				"KeypadTwo",
-				"KeypadThree",
-				"KeypadFour",
-				"KeypadFive",
-				"KeypadSix",
-				"KeypadSeven",
-				"KeypadEight",
-				"KeypadNine",
-				"KeypadPeriod",
-				"KeypadDivide",
-				"KeypadMultiply",
-				"KeypadMinus",
-				"KeypadPlus",
-				"KeypadEnter",
-				"KeypadEquals",
-				"Up",
-				"Down",
-				"Right",
-				"Left",
-				"Insert",
-				"Home",
-				"End",
-				"PageUp",
-				"PageDown",
-				"F1",
-				"F2",
-				"F3",
-				"F4",
-				"F5",
-				"F6",
-				"F7",
-				"F8",
-				"F9",
-				"F10",
-				"F11",
-				"F12",
-				"F13",
-				"F14",
-				"F15",
-				"NumLock",
-				"CapsLock",
-				"ScrollLock",
-				"RightShift",
-				"LeftShift",
-				"RightControl",
-				"LeftControl",
-				"RightAlt",
-				"LeftAlt",
-				"RightMeta",
-				"LeftMeta",
-				"LeftSuper",
-				"RightSuper",
-				"Mode",
-				"Compose",
-				"Help",
-				"Print",
-				"SysReq",
-				"Break",
-				"Menu",
-				"Power",
-				"Euro",
-				"Undo",
-				"ButtonX",
-				"ButtonY",
-				"ButtonA",
-				"ButtonB",
-				"ButtonR1",
-				"ButtonL1",
-				"ButtonR2",
-				"ButtonL2",
-				"ButtonR3",
-				"ButtonL3",
-				"ButtonStart",
-				"ButtonSelect",
-				"DPadLeft",
-				"DPadRight",
-				"DPadUp",
-				"DPadDown",
-				"Thumbstick1",
-				"Thumbstick2",
-				"Thumbstick1Up",
-				"Thumbstick1Down",
-				"Thumbstick1Left",
-				"Thumbstick1Right",
-				"Thumbstick2Up",
-				"Thumbstick2Down",
-				"Thumbstick2Left",
-				"Thumbstick2Right",
-				"MouseLeftButton",
-				"MouseRightButton",
-				"MouseMiddleButton",
-				"MousePosition",
-				"Touch",
-				"TouchPosition",
-				"MouseWheel",
-				"TrackpadPan",
-				"TrackpadPinch",
-				"MouseDelta",
-				"TouchDelta",
-				"TouchPinch",
 				"World0",
 				"World1",
 				"World2",
@@ -344090,12 +344419,114 @@
 				"World91",
 				"World92",
 				"World93",
+				"Touch",
 				"World94",
 				"World95",
+				"KeypadZero",
+				"KeypadOne",
+				"KeypadTwo",
+				"KeypadThree",
+				"KeypadFour",
+				"KeypadFive",
+				"KeypadSix",
+				"KeypadSeven",
+				"KeypadEight",
+				"KeypadNine",
+				"KeypadPeriod",
+				"KeypadDivide",
+				"KeypadMultiply",
+				"KeypadMinus",
+				"KeypadPlus",
+				"KeypadEnter",
+				"KeypadEquals",
+				"Up",
+				"Down",
+				"Right",
+				"Left",
+				"Insert",
+				"Home",
+				"End",
+				"PageUp",
+				"PageDown",
+				"F1",
+				"F2",
+				"F3",
+				"F4",
+				"F5",
+				"F6",
+				"F7",
+				"F8",
+				"F9",
+				"F10",
+				"F11",
+				"F12",
+				"F13",
+				"F14",
+				"F15",
+				"NumLock",
+				"CapsLock",
+				"ScrollLock",
+				"RightShift",
+				"LeftShift",
+				"RightControl",
+				"LeftControl",
+				"RightAlt",
+				"LeftAlt",
+				"RightMeta",
+				"LeftMeta",
+				"LeftSuper",
+				"RightSuper",
+				"Mode",
+				"Compose",
+				"Help",
+				"Print",
+				"SysReq",
+				"Break",
+				"Menu",
+				"Power",
+				"Euro",
+				"Undo",
+				"ButtonX",
+				"ButtonY",
+				"ButtonA",
+				"ButtonB",
+				"ButtonR1",
+				"ButtonL1",
+				"ButtonR2",
+				"ButtonL2",
+				"ButtonR3",
+				"ButtonL3",
+				"ButtonStart",
+				"ButtonSelect",
+				"DPadLeft",
+				"DPadRight",
+				"DPadUp",
+				"DPadDown",
+				"Thumbstick1",
+				"Thumbstick2",
+				"Thumbstick1Up",
+				"Thumbstick1Down",
+				"Thumbstick1Left",
+				"Thumbstick1Right",
+				"Thumbstick2Up",
+				"Thumbstick2Down",
+				"Thumbstick2Left",
+				"Thumbstick2Right",
+				"MouseLeftButton",
+				"MouseRightButton",
+				"MouseMiddleButton",
 				"MouseBackButton",
 				"MouseNoButton",
 				"MouseX",
-				"MouseY"
+				"MouseY",
+				"MousePosition",
+				"TouchPosition",
+				"MouseWheel",
+				"TrackpadPan",
+				"TrackpadPinch",
+				"MouseDelta",
+				"TouchDelta",
+				"TouchPinch"
 			],
 			"Related": [
 				{
@@ -348073,11 +348504,11 @@
 			],
 			"ItemsByIndex": [
 				"Success",
-				"NoPath",
 				"ClosestNoPath",
 				"ClosestOutOfRange",
 				"FailStartNotEmpty",
-				"FailFinishNotEmpty"
+				"FailFinishNotEmpty",
+				"NoPath"
 			],
 			"Related": [
 				{
@@ -350142,6 +350573,66 @@
 			"ItemsByIndex": [
 				"Private",
 				"Public"
+			]
+		},
+		"RecommendationPreferenceTargetType": {
+			"Name": "RecommendationPreferenceTargetType",
+			"Removed": false,
+			"ItemsByValue": [
+				"User",
+				"Universe",
+				"CustomTag"
+			],
+			"ItemsByIndex": [
+				"User",
+				"Universe",
+				"CustomTag"
+			],
+			"Related": [
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RecommendationPreferenceTargetType"
+					}
+				}
+			]
+		},
+		"RecommendationPreferenceType": {
+			"Name": "RecommendationPreferenceType",
+			"Removed": false,
+			"ItemsByValue": [
+				"AddFollow",
+				"RemoveFollow",
+				"AddMute",
+				"RemoveMute"
+			],
+			"ItemsByIndex": [
+				"AddFollow",
+				"RemoveFollow",
+				"AddMute",
+				"RemoveMute"
+			],
+			"Related": [
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RecommendationPreferenceType"
+					}
+				}
 			]
 		},
 		"RejectCharacterDeletions": {
@@ -352436,6 +352927,7 @@
 				"RunClientScript",
 				"RunServerScript",
 				"AccessOutsideWrite",
+				"AssetRequire",
 				"LoadString",
 				"ScriptGlobals",
 				"CreateInstances",
@@ -352448,6 +352940,7 @@
 				"CSG",
 				"Chat",
 				"Animation",
+				"Avatar",
 				"Input",
 				"Environment",
 				"RemoteEvent",
@@ -352483,9 +352976,7 @@
 				"Material",
 				"AvatarBehavior",
 				"AvatarAppearance",
-				"LoadUnownedAsset",
-				"AssetRequire",
-				"Avatar"
+				"LoadUnownedAsset"
 			]
 		},
 		"SelectionBehavior": {
@@ -352635,11 +353126,13 @@
 			"ItemsByValue": [
 				"Floor",
 				"Ladder",
+				"ClassicFloor",
 				"ClassicLadder"
 			],
 			"ItemsByIndex": [
 				"Floor",
 				"Ladder",
+				"ClassicFloor",
 				"ClassicLadder"
 			],
 			"Related": [
@@ -354899,6 +355392,12 @@
 				}
 			]
 		},
+		"TagReplicability": {
+			"Name": "TagReplicability",
+			"Removed": false,
+			"ItemsByValue": [],
+			"ItemsByIndex": []
+		},
 		"TeamCreateErrorState": {
 			"Name": "TeamCreateErrorState",
 			"Removed": false,
@@ -354942,11 +355441,11 @@
 				"Unified"
 			],
 			"ItemsByIndex": [
+				"Legacy",
 				"Voxel",
 				"Compatibility",
 				"ShadowMap",
 				"Future",
-				"Legacy",
 				"Unified"
 			],
 			"Related": [
@@ -359027,7 +359526,8 @@
 				"HSRInnerReverse",
 				"LayerCageFittedToBase",
 				"LayerCageFittedToPrev",
-				"PreWrapDeformerOuterCage"
+				"PreWrapDeformerOuterCage",
+				"SkinningTransfer"
 			],
 			"ItemsByIndex": [
 				"None",
@@ -359046,7 +359546,8 @@
 				"HSRInnerReverse",
 				"LayerCageFittedToBase",
 				"LayerCageFittedToPrev",
-				"PreWrapDeformerOuterCage"
+				"PreWrapDeformerOuterCage",
+				"SkinningTransfer"
 			],
 			"Related": [
 				{
@@ -360945,6 +361446,11 @@
 			"Video": {
 				"Enum": "AssetType",
 				"Name": "Video",
+				"Removed": false
+			},
+			"VoxelFragment": {
+				"Enum": "AssetType",
+				"Name": "VoxelFragment",
 				"Removed": false
 			},
 			"WaistAccessory": {
@@ -363720,6 +364226,16 @@
 				"Name": "PlacelauchError",
 				"Removed": true
 			},
+			"PlacelaunchAgeVerificationRequired": {
+				"Enum": "ConnectionError",
+				"Name": "PlacelaunchAgeVerificationRequired",
+				"Removed": false
+			},
+			"PlacelaunchCoreGated": {
+				"Enum": "ConnectionError",
+				"Name": "PlacelaunchCoreGated",
+				"Removed": false
+			},
 			"PlacelaunchCreatorBan": {
 				"Enum": "ConnectionError",
 				"Name": "PlacelaunchCreatorBan",
@@ -363783,6 +364299,11 @@
 			"PlacelaunchOtherError": {
 				"Enum": "ConnectionError",
 				"Name": "PlacelaunchOtherError",
+				"Removed": false
+			},
+			"PlacelaunchParentalApprovalRequired": {
+				"Enum": "ConnectionError",
+				"Name": "PlacelaunchParentalApprovalRequired",
 				"Removed": false
 			},
 			"PlacelaunchPartyCannotFit": {
@@ -364000,6 +364521,11 @@
 			"EmotesMenu": {
 				"Enum": "CoreGuiType",
 				"Name": "EmotesMenu",
+				"Removed": false
+			},
+			"ExperienceShop": {
+				"Enum": "CoreGuiType",
+				"Name": "ExperienceShop",
 				"Removed": false
 			},
 			"Health": {
@@ -373276,6 +373802,45 @@
 				"Removed": false
 			}
 		},
+		"RecommendationPreferenceTargetType": {
+			"CustomTag": {
+				"Enum": "RecommendationPreferenceTargetType",
+				"Name": "CustomTag",
+				"Removed": false
+			},
+			"Universe": {
+				"Enum": "RecommendationPreferenceTargetType",
+				"Name": "Universe",
+				"Removed": false
+			},
+			"User": {
+				"Enum": "RecommendationPreferenceTargetType",
+				"Name": "User",
+				"Removed": false
+			}
+		},
+		"RecommendationPreferenceType": {
+			"AddFollow": {
+				"Enum": "RecommendationPreferenceType",
+				"Name": "AddFollow",
+				"Removed": false
+			},
+			"AddMute": {
+				"Enum": "RecommendationPreferenceType",
+				"Name": "AddMute",
+				"Removed": false
+			},
+			"RemoveFollow": {
+				"Enum": "RecommendationPreferenceType",
+				"Name": "RemoveFollow",
+				"Removed": false
+			},
+			"RemoveMute": {
+				"Enum": "RecommendationPreferenceType",
+				"Name": "RemoveMute",
+				"Removed": false
+			}
+		},
 		"RejectCharacterDeletions": {
 			"Default": {
 				"Enum": "RejectCharacterDeletions",
@@ -374882,6 +375447,11 @@
 			}
 		},
 		"SensorMode": {
+			"ClassicFloor": {
+				"Enum": "SensorMode",
+				"Name": "ClassicFloor",
+				"Removed": false
+			},
 			"ClassicLadder": {
 				"Enum": "SensorMode",
 				"Name": "ClassicLadder",
@@ -379524,6 +380094,11 @@
 			"ReferenceMeshAfterMorph": {
 				"Enum": "WrapLayerDebugMode",
 				"Name": "ReferenceMeshAfterMorph",
+				"Removed": false
+			},
+			"SkinningTransfer": {
+				"Enum": "WrapLayerDebugMode",
+				"Name": "SkinningTransfer",
 				"Removed": false
 			}
 		},
@@ -396786,6 +397361,19 @@
 					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "DataModel",
+					"Member": "ServerLifecycleChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
 						"Category": "Group",
@@ -432068,6 +432656,19 @@
 					}
 				},
 				{
+					"Class": "LogReporterService",
+					"Member": "SubmitStratusBugReport",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "LogService",
 					"Member": "OnHttpResultApproved",
 					"MemberType": "Event",
@@ -432127,6 +432728,45 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "IsPostProcessReady",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "SetPostProcessEnabled",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "IsPurchaseSimulated",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -433466,6 +434106,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Packages",
+					"Member": "IsDehydrated",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -440455,6 +441108,19 @@
 				{
 					"Class": "TextChatService",
 					"Member": "HasAllocatedUniverseChatContext",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -467067,19 +467733,6 @@
 				},
 				{
 					"Class": "BasePart",
-					"Member": "LocalSimulationValidation",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "BasePart",
 					"Member": "ResizeIncrement",
 					"MemberType": "Property",
 					"Removed": false,
@@ -470346,6 +470999,32 @@
 				{
 					"Class": "PackageLink",
 					"Member": "ModifiedState",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Packages",
+					"Member": "ShellPackagesCount",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Packages",
+					"Member": "SkippedInstancesCount",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -475473,6 +476152,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "BasePart",
+					"Member": "LocalSimulationValidation",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -483540,6 +484232,19 @@
 					}
 				},
 				{
+					"Class": "MLService",
+					"Member": "LoadPostProcessModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "MakeupDescription",
 					"Member": "AssetId",
 					"MemberType": "Property",
@@ -485923,19 +486628,6 @@
 				},
 				{
 					"Class": "StudioService",
-					"Member": "ShowPlaceVersionHistoryDialog",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "StudioService",
 					"Member": "TryInstallPlugin",
 					"MemberType": "Function",
 					"Removed": false,
@@ -486358,45 +487050,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 6,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "TextChatService",
-					"Member": "UpdateChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "TextChatService",
-					"Member": "UpdateChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "TextChatService",
-					"Member": "UpdateChatTimeout",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -487862,6 +488515,19 @@
 				},
 				{
 					"Class": "StudioService",
+					"Member": "ShowPlaceVersionHistoryDialog",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "StudioService",
 					"Member": "DEPRECATED_GamePublishFinished",
 					"MemberType": "Event",
 					"Removed": true,
@@ -487933,6 +488599,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UpdateChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UpdateChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "UpdateChatTimeout",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -488884,6 +489589,19 @@
 				{
 					"Class": "AppLifecycleObserverService",
 					"Member": "TriggerOnLuaAppInteractive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AppLifecycleObserverService",
+					"Member": "TriggerOnLuaAppReadyToRender",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -495551,6 +496269,32 @@
 					}
 				},
 				{
+					"Class": "MLService",
+					"Member": "LoadPostProcessModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MLService",
+					"Member": "SetPostProcessEnabled",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "MarketplaceService",
 					"Member": "ClearProductInfoCaches",
 					"MemberType": "Function",
@@ -498867,6 +499611,19 @@
 				},
 				{
 					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "RecommendationService",
 					"Member": "RemoveItemAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -500935,19 +501692,6 @@
 				{
 					"Class": "StudioService",
 					"Member": "SetPluginEnabled",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "StudioService",
-					"Member": "ShowPlaceVersionHistoryDialog",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -505901,6 +506645,19 @@
 				{
 					"Class": "StudioService",
 					"Member": "RequestClose",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioService",
+					"Member": "ShowPlaceVersionHistoryDialog",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -516539,6 +517296,32 @@
 					}
 				},
 				{
+					"Class": "LogReporterService",
+					"Member": "SubmitStratusBugReport",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LogReporterService",
+					"Member": "SubmitStratusBugReport",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "LogService",
 					"Member": "Error",
 					"MemberType": "Function",
@@ -522886,6 +523669,45 @@
 				},
 				{
 					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RecommendationService",
+					"Member": "LogPreferenceEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RecommendationService",
 					"Member": "RemoveItemAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -527304,6 +528126,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
