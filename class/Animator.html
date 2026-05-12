@@ -1105,8 +1105,8 @@ track. Calling <code>LoadAnimation()</code> always creates a <strong>new</strong
 overused. Instead, use
 <a href=/ref/class/Animator.html#member-GetTrackByAnimationId>GetTrackByAnimationId()</a> when you
 need to look up a track that was already loaded.</p><h4>Loading an Animation on Client or Server</h4><p>In order for <a href=/ref/class/AnimationTrack.html>AnimationTracks</a> to replicate
-correctly, it's important to know when they should be loaded on the client or on
-the server:</p><ul><li><p>If an <code>Animator</code> is a descendant of a <a href=/ref/class/Humanoid.html>Humanoid</a> or
+correctly, it's important to know when they should be loaded on the client
+or on the server:</p><ul><li><p>If an <code>Animator</code> is a descendant of a <a href=/ref/class/Humanoid.html>Humanoid</a> or
 <a href=/ref/class/AnimationController.html>AnimationController</a> in a player's <a href=/ref/class/Player.html#member-Character>Player.Character</a>,
 animations started on that player's client will be replicated to the
 server and other clients.</p></li><li><p>If the <code>Animator</code> is <strong>not</strong> a descendant of a player character, its
