@@ -14454,6 +14454,45 @@
 				},
 				{
 					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromJobIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromJobIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromJobIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
 					"Member": "FetchAssetQualityVisualizationDataFromUrlAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -20505,6 +20544,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "AudioPlayer",
+					"Member": "AssetRepresentation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetRepresentation"
 					}
 				},
 				{
@@ -27005,32 +27057,6 @@
 				},
 				{
 					"Class": "AvatarCreationService",
-					"Member": "ReplicateAvatarGenerationImageId",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "ReplicateAvatarGenerationImageId",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
 					"Member": "ReplicateAvatarGenerationImageIdWithErrorType",
 					"MemberType": "Event",
 					"Removed": false,
@@ -27639,6 +27665,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "ReplicateAvatarGenerationImageId",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "ReplicateAvatarGenerationImageId",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -76900,6 +76952,97 @@
 			"Related": [
 				{
 					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "DisconnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "DisconnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "GenerateMeshAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -77019,6 +77162,58 @@
 				},
 				{
 					"Class": "GenerationService",
+					"Member": "GetVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GetVideoGenTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GetVideoGenTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GetVideoGenTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "InternalGenerateMeshAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -77133,6 +77328,201 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Model"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -99025,6 +99415,7 @@
 				"ScriptCommitService",
 				"ScriptContext",
 				"ScriptDebugger",
+				"ScriptDebuggerService",
 				"ScriptDocument",
 				"ScriptEditorService",
 				"ScriptInformationProvider",
@@ -115920,6 +116311,32 @@
 					}
 				},
 				{
+					"Class": "ScriptDebuggerService",
+					"Member": "AddBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "LuaSourceContainer"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "RemoveBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "LuaSourceContainer"
+					}
+				},
+				{
 					"Class": "ScriptDocument",
 					"Member": "GetScript",
 					"MemberType": "Function",
@@ -117330,6 +117747,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PerformPurchase",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 10,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -140995,6 +141425,19 @@
 				},
 				{
 					"Class": "Player",
+					"Member": "ClearCachedAvatarAppearance",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Player",
 					"Member": "ClearCharacterAppearance",
 					"MemberType": "Function",
 					"Removed": false,
@@ -149047,6 +149490,19 @@
 				{
 					"Class": "Plugin",
 					"Member": "Deactivate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Plugin",
+					"Member": "FinishFullLoading",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -164284,6 +164740,333 @@
 				}
 			]
 		},
+		"ScriptDebuggerService": {
+			"Name": "ScriptDebuggerService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "AddBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "LuaSourceContainer"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "AddBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "AddBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "ClearBreakpoints",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Evaluate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Evaluate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Evaluate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetRootVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetRootVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetStackTrace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetStackTrace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetStackTrace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetThreads",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Pause",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "RemoveBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "LuaSourceContainer"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "RemoveBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "RemoveBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "SetExceptionBreakMode",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "DebugBreakModeType"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "SetExceptionBreakMode",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Resumed",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "OnStopped",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "OnStopped",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				}
+			]
+		},
 		"ScriptDocument": {
 			"Name": "ScriptDocument",
 			"Removed": false,
@@ -171663,6 +172446,19 @@
 				},
 				{
 					"Class": "Sound",
+					"Member": "AssetRepresentation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetRepresentation"
+					}
+				},
+				{
+					"Class": "Sound",
 					"Member": "AudioContent",
 					"MemberType": "Property",
 					"Removed": false,
@@ -178119,6 +178915,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "CameraMouseMultiplier",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "CameraNavigationModel",
 					"MemberType": "Property",
 					"Removed": false,
@@ -179428,6 +180237,19 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "QDir"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "PreferredTextSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PreferredTextSize"
 					}
 				},
 				{
@@ -191258,6 +192080,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "ValidationAssetContentMap",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "AssetContentMap"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "VoxelGridAssetContentMap",
 					"MemberType": "Property",
 					"Removed": false,
@@ -195385,6 +196220,45 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "CaptureScreenshotAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "CaptureScreenshotAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "CaptureScreenshotAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
 					}
 				},
 				{
@@ -199595,6 +200469,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateServer",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -213512,6 +214399,19 @@
 				},
 				{
 					"Class": "UserGameSettings",
+					"Member": "StudioPreferredTextSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PreferredTextSize"
+					}
+				},
+				{
+					"Class": "UserGameSettings",
 					"Member": "TouchCameraMovementChanged",
 					"MemberType": "Property",
 					"Removed": false,
@@ -218487,6 +219387,19 @@
 				},
 				{
 					"Class": "VideoFrame",
+					"Member": "MaximumResolution",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "VideoSampleSize"
+					}
+				},
+				{
+					"Class": "VideoFrame",
 					"Member": "Playing",
 					"MemberType": "Property",
 					"Removed": false,
@@ -218873,6 +219786,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "VideoPlayer",
+					"Member": "MaximumResolution",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "VideoSampleSize"
 					}
 				},
 				{
@@ -227635,6 +228561,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "Workspace",
+					"Member": "WatermarkHash",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -237278,6 +238217,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"FetchAssetQualitySummaryFromJobIdAsync": {
+				"Class": "AssetQualityService",
+				"Name": "FetchAssetQualitySummaryFromJobIdAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"FetchAssetQualityVisualizationDataFromUrlAsync": {
 				"Class": "AssetQualityService",
 				"Name": "FetchAssetQualityVisualizationDataFromUrlAsync",
@@ -240181,6 +241126,27 @@
 				"Name": "AssetId",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"AssetRepresentation": {
+				"Class": "AudioPlayer",
+				"Name": "AssetRepresentation",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AudioPlayer",
+						"Member": "AssetRepresentation",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AssetRepresentation"
+						}
+					}
+				]
 			},
 			"AudioContent": {
 				"Class": "AudioPlayer",
@@ -243652,7 +244618,7 @@
 				"Class": "AvatarCreationService",
 				"Name": "ReplicateAvatarGenerationImageId",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": true
 			},
 			"ReplicateAvatarGenerationImageIdWithErrorType": {
 				"Class": "AvatarCreationService",
@@ -264438,6 +265404,18 @@
 			}
 		},
 		"GenerationService": {
+			"ConnectAsync": {
+				"Class": "GenerationService",
+				"Name": "ConnectAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"DisconnectAsync": {
+				"Class": "GenerationService",
+				"Name": "DisconnectAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GenerateMeshAsync": {
 				"Class": "GenerationService",
 				"Name": "GenerateMeshAsync",
@@ -264462,6 +265440,18 @@
 			"GenerateModelAsync": {
 				"Class": "GenerationService",
 				"Name": "GenerateModelAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetVideoGenSessionAsync": {
+				"Class": "GenerationService",
+				"Name": "GetVideoGenSessionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetVideoGenTriggersAsync": {
+				"Class": "GenerationService",
+				"Name": "GetVideoGenTriggersAsync",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -264523,6 +265513,24 @@
 				"Class": "GenerationService",
 				"Name": "RequestGenerationReplication",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"StartVideoGenSessionAsync": {
+				"Class": "GenerationService",
+				"Name": "StartVideoGenSessionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"UpdateVideoGenSessionPromptAsync": {
+				"Class": "GenerationService",
+				"Name": "UpdateVideoGenSessionPromptAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"UpdateVideoGenSessionTriggersAsync": {
+				"Class": "GenerationService",
+				"Name": "UpdateVideoGenSessionTriggersAsync",
+				"MemberType": "Function",
 				"Removed": false
 			}
 		},
@@ -289528,6 +290536,12 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"ClearCachedAvatarAppearance": {
+				"Class": "Player",
+				"Name": "ClearCachedAvatarAppearance",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"ClearCharacterAppearance": {
 				"Class": "Player",
 				"Name": "ClearCharacterAppearance",
@@ -293505,6 +294519,12 @@
 				"Class": "Plugin",
 				"Name": "DisableUIDragDetectorDrags",
 				"MemberType": "Property",
+				"Removed": false
+			},
+			"FinishFullLoading": {
+				"Class": "Plugin",
+				"Name": "FinishFullLoading",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"Fire": {
@@ -300356,6 +301376,125 @@
 				]
 			}
 		},
+		"ScriptDebuggerService": {
+			"AddBreakpoint": {
+				"Class": "ScriptDebuggerService",
+				"Name": "AddBreakpoint",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ScriptDebuggerService",
+						"Member": "AddBreakpoint",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "LuaSourceContainer"
+						}
+					}
+				]
+			},
+			"ClearBreakpoints": {
+				"Class": "ScriptDebuggerService",
+				"Name": "ClearBreakpoints",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"Evaluate": {
+				"Class": "ScriptDebuggerService",
+				"Name": "Evaluate",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetRootVariables": {
+				"Class": "ScriptDebuggerService",
+				"Name": "GetRootVariables",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetStackTrace": {
+				"Class": "ScriptDebuggerService",
+				"Name": "GetStackTrace",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetThreads": {
+				"Class": "ScriptDebuggerService",
+				"Name": "GetThreads",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetVariables": {
+				"Class": "ScriptDebuggerService",
+				"Name": "GetVariables",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"OnStopped": {
+				"Class": "ScriptDebuggerService",
+				"Name": "OnStopped",
+				"MemberType": "Callback",
+				"Removed": false
+			},
+			"Pause": {
+				"Class": "ScriptDebuggerService",
+				"Name": "Pause",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"RemoveBreakpoint": {
+				"Class": "ScriptDebuggerService",
+				"Name": "RemoveBreakpoint",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ScriptDebuggerService",
+						"Member": "RemoveBreakpoint",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "LuaSourceContainer"
+						}
+					}
+				]
+			},
+			"Resumed": {
+				"Class": "ScriptDebuggerService",
+				"Name": "Resumed",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"SetExceptionBreakMode": {
+				"Class": "ScriptDebuggerService",
+				"Name": "SetExceptionBreakMode",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ScriptDebuggerService",
+						"Member": "SetExceptionBreakMode",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "DebugBreakModeType"
+						}
+					}
+				]
+			}
+		},
 		"ScriptDocument": {
 			"CloseAsync": {
 				"Class": "ScriptDocument",
@@ -303802,6 +304941,27 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"AssetRepresentation": {
+				"Class": "Sound",
+				"Name": "AssetRepresentation",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Sound",
+						"Member": "AssetRepresentation",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AssetRepresentation"
+						}
+					}
+				]
+			},
 			"AudioContent": {
 				"Class": "Sound",
 				"Name": "AudioContent",
@@ -307009,6 +308169,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"CameraMouseMultiplier": {
+				"Class": "Studio",
+				"Name": "CameraMouseMultiplier",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"CameraNavigationModel": {
 				"Class": "Studio",
 				"Name": "CameraNavigationModel",
@@ -307848,6 +309014,27 @@
 				"Name": "PluginsDir",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"PreferredTextSize": {
+				"Class": "Studio",
+				"Name": "PreferredTextSize",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Studio",
+						"Member": "PreferredTextSize",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PreferredTextSize"
+						}
+					}
+				]
 			},
 			"Preprocessor Color": {
 				"Class": "Studio",
@@ -313793,6 +314980,12 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"ValidationAssetContentMap": {
+				"Class": "Terrain",
+				"Name": "ValidationAssetContentMap",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"Velocity": {
 				"Class": "Terrain",
 				"Name": "Velocity",
@@ -314287,6 +315480,12 @@
 				"Class": "TestService",
 				"Name": "AutoRuns",
 				"MemberType": "Property",
+				"Removed": false
+			},
+			"CaptureScreenshotAsync": {
+				"Class": "TestService",
+				"Name": "CaptureScreenshotAsync",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"Check": {
@@ -322929,6 +324128,27 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"StudioPreferredTextSize": {
+				"Class": "UserGameSettings",
+				"Name": "StudioPreferredTextSize",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "UserGameSettings",
+						"Member": "StudioPreferredTextSize",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PreferredTextSize"
+						}
+					}
+				]
+			},
 			"TouchCameraMovementChanged": {
 				"Class": "UserGameSettings",
 				"Name": "TouchCameraMovementChanged",
@@ -325761,6 +326981,27 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"MaximumResolution": {
+				"Class": "VideoFrame",
+				"Name": "MaximumResolution",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "VideoFrame",
+						"Member": "MaximumResolution",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "VideoSampleSize"
+						}
+					}
+				]
+			},
 			"Pause": {
 				"Class": "VideoFrame",
 				"Name": "Pause",
@@ -326002,6 +327243,27 @@
 				"Name": "Looping",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"MaximumResolution": {
+				"Class": "VideoPlayer",
+				"Name": "MaximumResolution",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "VideoPlayer",
+						"Member": "MaximumResolution",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "VideoSampleSize"
+						}
+					}
+				]
 			},
 			"Pause": {
 				"Class": "VideoPlayer",
@@ -329981,6 +331243,12 @@
 					}
 				]
 			},
+			"WatermarkHash": {
+				"Class": "Workspace",
+				"Name": "WatermarkHash",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ZoomToExtents": {
 				"Class": "Workspace",
 				"Name": "ZoomToExtents",
@@ -333022,6 +334290,46 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "AssetFetchStatus"
+					}
+				}
+			]
+		},
+		"AssetRepresentation": {
+			"Name": "AssetRepresentation",
+			"Removed": false,
+			"ItemsByValue": [
+				"FullLength",
+				"ShortPreview"
+			],
+			"ItemsByIndex": [
+				"FullLength",
+				"ShortPreview"
+			],
+			"Related": [
+				{
+					"Class": "AudioPlayer",
+					"Member": "AssetRepresentation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetRepresentation"
+					}
+				},
+				{
+					"Class": "Sound",
+					"Member": "AssetRepresentation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetRepresentation"
 					}
 				}
 			]
@@ -336654,14 +337962,16 @@
 				"Hull",
 				"Box",
 				"PreciseConvexDecomposition",
-				"DynamicPreciseConvexDecomposition"
+				"DynamicPreciseConvexDecomposition",
+				"Scalable"
 			],
 			"ItemsByIndex": [
 				"Default",
 				"Hull",
 				"Box",
 				"PreciseConvexDecomposition",
-				"DynamicPreciseConvexDecomposition"
+				"DynamicPreciseConvexDecomposition",
+				"Scalable"
 			],
 			"Related": [
 				{
@@ -337385,6 +338695,7 @@
 				"PlacelaunchPartyCannotFit",
 				"PlacelaunchHttpError",
 				"PlacelaunchUserPrivacyUnauthorized",
+				"PlacelaunchVipOwnerNotPresent",
 				"PlacelaunchAgeVerificationRequired",
 				"PlacelaunchParentalApprovalRequired",
 				"PlacelaunchCoreGated",
@@ -337488,6 +338799,7 @@
 				"PlacelaunchPartyCannotFit",
 				"PlacelaunchHttpError",
 				"PlacelaunchUserPrivacyUnauthorized",
+				"PlacelaunchVipOwnerNotPresent",
 				"PlacelaunchAgeVerificationRequired",
 				"PlacelaunchParentalApprovalRequired",
 				"PlacelaunchCoreGated",
@@ -338231,6 +339543,35 @@
 				}
 			]
 		},
+		"DebugBreakModeType": {
+			"Name": "DebugBreakModeType",
+			"Removed": false,
+			"ItemsByValue": [
+				"Never",
+				"Always",
+				"Unhandled"
+			],
+			"ItemsByIndex": [
+				"Never",
+				"Always",
+				"Unhandled"
+			],
+			"Related": [
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "SetExceptionBreakMode",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "DebugBreakModeType"
+					}
+				}
+			]
+		},
 		"DebuggerEndReason": {
 			"Name": "DebuggerEndReason",
 			"Removed": false,
@@ -338372,6 +339713,22 @@
 						"Name": "DebuggerPauseReason"
 					}
 				}
+			]
+		},
+		"DebuggerResumeType": {
+			"Name": "DebuggerResumeType",
+			"Removed": false,
+			"ItemsByValue": [
+				"StepInto",
+				"StepOut",
+				"StepOver",
+				"Resume"
+			],
+			"ItemsByIndex": [
+				"StepInto",
+				"StepOut",
+				"StepOver",
+				"Resume"
 			]
 		},
 		"DebuggerStatus": {
@@ -343285,14 +344642,16 @@
 				"Overwrite",
 				"Add",
 				"Multiply",
-				"AlphaBlend"
+				"AlphaBlend",
+				"NormalMapBlend"
 			],
 			"ItemsByIndex": [
 				"BlendSourceOver",
 				"Overwrite",
 				"Add",
 				"Multiply",
-				"AlphaBlend"
+				"AlphaBlend",
+				"NormalMapBlend"
 			],
 			"Related": [
 				{
@@ -349630,6 +350989,19 @@
 					}
 				},
 				{
+					"Class": "Studio",
+					"Member": "PreferredTextSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PreferredTextSize"
+					}
+				},
+				{
 					"Class": "StyleQuery",
 					"Member": "PreferredTextSize",
 					"MemberType": "Property",
@@ -349645,6 +351017,19 @@
 				{
 					"Class": "UserGameSettings",
 					"Member": "PreferredTextSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PreferredTextSize"
+					}
+				},
+				{
+					"Class": "UserGameSettings",
+					"Member": "StudioPreferredTextSize",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -352792,6 +354177,38 @@
 				"OtherError",
 				"NoDeviceSupport",
 				"NoSpaceOnDevice"
+			]
+		},
+		"ScriptStoppedReason": {
+			"Name": "ScriptStoppedReason",
+			"Removed": false,
+			"ItemsByValue": [
+				"Breakpoint",
+				"Exception",
+				"Pause",
+				"Step",
+				"Entry"
+			],
+			"ItemsByIndex": [
+				"Breakpoint",
+				"Exception",
+				"Pause",
+				"Step",
+				"Entry"
+			]
+		},
+		"ScriptVariableScope": {
+			"Name": "ScriptVariableScope",
+			"Removed": false,
+			"ItemsByValue": [
+				"Local",
+				"Upvalue",
+				"Global"
+			],
+			"ItemsByIndex": [
+				"Local",
+				"Upvalue",
+				"Global"
 			]
 		},
 		"ScrollBarInset": {
@@ -358896,6 +360313,34 @@
 				"Medium",
 				"Large",
 				"Full"
+			],
+			"Related": [
+				{
+					"Class": "VideoFrame",
+					"Member": "MaximumResolution",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "VideoSampleSize"
+					}
+				},
+				{
+					"Class": "VideoPlayer",
+					"Member": "MaximumResolution",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "VideoSampleSize"
+					}
+				}
 			]
 		},
 		"ViewMode": {
@@ -361134,6 +362579,18 @@
 			"TimedOut": {
 				"Enum": "AssetFetchStatus",
 				"Name": "TimedOut",
+				"Removed": false
+			}
+		},
+		"AssetRepresentation": {
+			"FullLength": {
+				"Enum": "AssetRepresentation",
+				"Name": "FullLength",
+				"Removed": false
+			},
+			"ShortPreview": {
+				"Enum": "AssetRepresentation",
+				"Name": "ShortPreview",
 				"Removed": false
 			}
 		},
@@ -363492,6 +364949,11 @@
 				"Enum": "CollisionFidelity",
 				"Name": "PreciseConvexDecomposition",
 				"Removed": false
+			},
+			"Scalable": {
+				"Enum": "CollisionFidelity",
+				"Name": "Scalable",
+				"Removed": false
 			}
 		},
 		"CollisionsMode": {
@@ -364331,6 +365793,11 @@
 				"Name": "PlacelaunchUserPrivacyUnauthorized",
 				"Removed": false
 			},
+			"PlacelaunchVipOwnerNotPresent": {
+				"Enum": "ConnectionError",
+				"Name": "PlacelaunchVipOwnerNotPresent",
+				"Removed": false
+			},
 			"PlayerRemoved": {
 				"Enum": "ConnectionError",
 				"Name": "PlayerRemoved",
@@ -365102,6 +366569,23 @@
 				"Removed": true
 			}
 		},
+		"DebugBreakModeType": {
+			"Always": {
+				"Enum": "DebugBreakModeType",
+				"Name": "Always",
+				"Removed": false
+			},
+			"Never": {
+				"Enum": "DebugBreakModeType",
+				"Name": "Never",
+				"Removed": false
+			},
+			"Unhandled": {
+				"Enum": "DebugBreakModeType",
+				"Name": "Unhandled",
+				"Removed": false
+			}
+		},
 		"DebuggerEndReason": {
 			"ClientRequest": {
 				"Enum": "DebuggerEndReason",
@@ -365202,6 +366686,28 @@
 			"Unknown": {
 				"Enum": "DebuggerPauseReason",
 				"Name": "Unknown",
+				"Removed": false
+			}
+		},
+		"DebuggerResumeType": {
+			"Resume": {
+				"Enum": "DebuggerResumeType",
+				"Name": "Resume",
+				"Removed": false
+			},
+			"StepInto": {
+				"Enum": "DebuggerResumeType",
+				"Name": "StepInto",
+				"Removed": false
+			},
+			"StepOut": {
+				"Enum": "DebuggerResumeType",
+				"Name": "StepOut",
+				"Removed": false
+			},
+			"StepOver": {
+				"Enum": "DebuggerResumeType",
+				"Name": "StepOver",
 				"Removed": false
 			}
 		},
@@ -368441,6 +369947,11 @@
 			"Multiply": {
 				"Enum": "ImageCombineType",
 				"Name": "Multiply",
+				"Removed": false
+			},
+			"NormalMapBlend": {
+				"Enum": "ImageCombineType",
+				"Name": "NormalMapBlend",
 				"Removed": false
 			},
 			"Overwrite": {
@@ -375089,6 +376600,50 @@
 				"Removed": false
 			}
 		},
+		"ScriptStoppedReason": {
+			"Breakpoint": {
+				"Enum": "ScriptStoppedReason",
+				"Name": "Breakpoint",
+				"Removed": false
+			},
+			"Entry": {
+				"Enum": "ScriptStoppedReason",
+				"Name": "Entry",
+				"Removed": false
+			},
+			"Exception": {
+				"Enum": "ScriptStoppedReason",
+				"Name": "Exception",
+				"Removed": false
+			},
+			"Pause": {
+				"Enum": "ScriptStoppedReason",
+				"Name": "Pause",
+				"Removed": false
+			},
+			"Step": {
+				"Enum": "ScriptStoppedReason",
+				"Name": "Step",
+				"Removed": false
+			}
+		},
+		"ScriptVariableScope": {
+			"Global": {
+				"Enum": "ScriptVariableScope",
+				"Name": "Global",
+				"Removed": false
+			},
+			"Local": {
+				"Enum": "ScriptVariableScope",
+				"Name": "Local",
+				"Removed": false
+			},
+			"Upvalue": {
+				"Enum": "ScriptVariableScope",
+				"Name": "Upvalue",
+				"Removed": false
+			}
+		},
 		"ScrollBarInset": {
 			"Always": {
 				"Enum": "ScrollBarInset",
@@ -380472,6 +382027,19 @@
 					}
 				},
 				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromJobIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "AssetService",
 					"Member": "CachePartOperationsAsync",
 					"MemberType": "Function",
@@ -384061,6 +385629,58 @@
 					}
 				},
 				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetRootVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetThreads",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Resumed",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "ScriptDocument",
 					"Member": "MultiEditTextAsync",
 					"MemberType": "Function",
@@ -386160,6 +387780,19 @@
 			"Name": "AssetContentMap",
 			"Removed": false,
 			"Related": [
+				{
+					"Class": "Terrain",
+					"Member": "ValidationAssetContentMap",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "AssetContentMap"
+					}
+				},
 				{
 					"Class": "Terrain",
 					"Member": "VoxelGridAssetContentMap",
@@ -396463,6 +398096,19 @@
 				},
 				{
 					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromJobIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
 					"Member": "FetchAssetQualityVisualizationDataFromUrlAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -397839,6 +399485,19 @@
 				},
 				{
 					"Class": "GenerationService",
+					"Member": "GetVideoGenTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "InternalGenerateMeshAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -397858,6 +399517,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -399855,6 +401540,84 @@
 					}
 				},
 				{
+					"Class": "ScriptDebuggerService",
+					"Member": "AddBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "AddBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Evaluate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetStackTrace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "OnStopped",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "OnStopped",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "ScriptEditorService",
 					"Member": "OpenScriptDocumentAsync",
 					"MemberType": "Function",
@@ -400530,6 +402293,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "CaptureScreenshotAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -410908,6 +412684,19 @@
 				},
 				{
 					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "GenerateMeshAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -410922,6 +412711,19 @@
 				{
 					"Class": "GenerationService",
 					"Member": "GenerateModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GetVideoGenSessionAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -412027,6 +413829,19 @@
 				{
 					"Class": "Terrain",
 					"Member": "SmoothRegion",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "CaptureScreenshotAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -430187,6 +432002,58 @@
 				},
 				{
 					"Class": "GenerationService",
+					"Member": "DisconnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "ReplicateGeneration",
 					"MemberType": "Event",
 					"Removed": false,
@@ -437330,6 +439197,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "RemoveBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -462329,6 +464209,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "CameraMouseMultiplier",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "CameraOrbitSensitivity",
 					"MemberType": "Property",
 					"Removed": false,
@@ -469255,6 +471148,19 @@
 					}
 				},
 				{
+					"Class": "GenerationService",
+					"Member": "GetVideoGenTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "GlobalDataStore",
 					"Member": "IncrementAsync",
 					"MemberType": "Function",
@@ -472551,6 +474457,86 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Evaluate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetRootVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetStackTrace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetStackTrace",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "GetVariables",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "RemoveBreakpoint",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -497973,6 +499959,19 @@
 				},
 				{
 					"Class": "Player",
+					"Member": "ClearCachedAvatarAppearance",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Player",
 					"Member": "ClearCharacterAppearance",
 					"MemberType": "Function",
 					"Removed": false,
@@ -498897,6 +500896,19 @@
 				{
 					"Class": "Plugin",
 					"Member": "Deactivate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Plugin",
+					"Member": "FinishFullLoading",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -500158,6 +502170,45 @@
 				{
 					"Class": "ScriptDebugger",
 					"Member": "SetUpvalue",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "ClearBreakpoints",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Pause",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ScriptDebuggerService",
+					"Member": "SetExceptionBreakMode",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -508640,6 +510691,19 @@
 				},
 				{
 					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromJobIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
 					"Member": "FetchAssetQualityVisualizationDataFromUrlAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -509759,32 +511823,6 @@
 				{
 					"Class": "AvatarCreationService",
 					"Member": "OpenSelfieQRCode",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "ReplicateAvatarGenerationImageId",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "ReplicateAvatarGenerationImageId",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -513925,6 +515963,84 @@
 				},
 				{
 					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "DisconnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GetVideoGenTriggersAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "LoadGeneratedMeshAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -513939,6 +516055,136 @@
 				{
 					"Class": "GenerationService",
 					"Member": "LoadModelFromGlbAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "StartVideoGenSessionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionPromptAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "UpdateVideoGenSessionTriggersAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -517667,6 +519913,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 8,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "PerformPurchase",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 10,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -524682,6 +526941,19 @@
 					}
 				},
 				{
+					"Class": "ScriptDebuggerService",
+					"Member": "Evaluate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "ScriptDocument",
 					"Member": "EditTextAsync",
 					"MemberType": "Function",
@@ -527314,6 +529586,19 @@
 				},
 				{
 					"Class": "TestService",
+					"Member": "CaptureScreenshotAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
 					"Member": "Check",
 					"MemberType": "Function",
 					"Removed": false,
@@ -528334,6 +530619,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "OnUserChatSettingUpdateServer",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -531271,6 +533569,19 @@
 					}
 				},
 				{
+					"Class": "Workspace",
+					"Member": "WatermarkHash",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "WorldRoot",
 					"Member": "CacheCurrentTerrain",
 					"MemberType": "Function",
@@ -532357,6 +534668,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "ReplicateAvatarGenerationImageId",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "ReplicateAvatarGenerationImageId",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"

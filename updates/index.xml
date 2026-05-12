@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.720.0.7201169</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-0a4ff20d164041aa</link><description>22 revisions to the API.</description><guid>version-0a4ff20d164041aa</guid><pubDate>Wed, 06 May 2026 10:13:16 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.721.0.7211107</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-792bc2069be7464a</link><description>104 revisions to the API.</description><guid>version-792bc2069be7464a</guid><pubDate>Tue, 12 May 2026 15:35:23 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-0">Add Function AssetQualityService.FetchAssetQualitySummaryFromJobIdAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-1">Add Property AudioPlayer.AssetRepresentation</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-2">Remove Event AvatarCreationService.ReplicateAvatarGenerationImageId</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-3">Add Function GenerationService.ConnectAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-4">Add Function GenerationService.DisconnectAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-5">Add Function GenerationService.GetVideoGenSessionAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-6">Add Function GenerationService.GetVideoGenTriggersAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-7">Add Function GenerationService.StartVideoGenSessionAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-8">Add Function GenerationService.UpdateVideoGenSessionPromptAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-9">Add Function GenerationService.UpdateVideoGenSessionTriggersAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-10">Change Function MarketplaceService.PerformPurchase</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-11">Add Function Player.ClearCachedAvatarAppearance</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-12">Add Function Plugin.FinishFullLoading</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-13">Add Class ScriptDebuggerService</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-26">Add Property Sound.AssetRepresentation</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-27">Change Function SoundService.SetInputDevice</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-28">Change Property Studio.Camera Speed Adjust Binding</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-30">Add Property Studio.CameraMouseMultiplier</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-31">Add Property Studio.PreferredTextSize</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-32">Change Property StudioCameraService.FocusDistance</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-33">Change Property StudioCameraService.LockCameraSpeed</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-34">Change Property StudioCameraService.LoggingEnabled</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-35">Add Property Terrain.ValidationAssetContentMap</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-36">Add Function TestService.CaptureScreenshotAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-37">Change Event TextChatService.OnUserChatSettingUpdateServer</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-38">Change Property UICorner.BottomLeftRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-43">Change Property UICorner.BottomRightRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-48">Change Property UICorner.CornerRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-50">Change Property UICorner.TopLeftRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-55">Change Property UICorner.TopRightRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-60">Add Property UserGameSettings.StudioPreferredTextSize</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-61">Add Property VideoFrame.MaximumResolution</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-62">Add Property VideoPlayer.MaximumResolution</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-63">Add Property Workspace.WatermarkHash</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-64">Add Enum AssetRepresentation</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-67">Add EnumItem CollisionFidelity.Scalable</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-68">Change EnumItem ConnectionError.PlacelaunchAgeVerificationRequired</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-69">Change EnumItem ConnectionError.PlacelaunchCoreGated</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-70">Change EnumItem ConnectionError.PlacelaunchCreatorBan</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-71">Change EnumItem ConnectionError.PlacelaunchCustomMessage</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-72">Change EnumItem ConnectionError.PlacelaunchDeviceBlock</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-73">Change EnumItem ConnectionError.PlacelaunchOtherError</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-74">Change EnumItem ConnectionError.PlacelaunchParentalApprovalRequired</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-75">Add EnumItem ConnectionError.PlacelaunchVipOwnerNotPresent</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-76">Change EnumItem ConnectionError.TeleportErrors</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-77">Change EnumItem ConnectionError.TeleportFailure</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-78">Change EnumItem ConnectionError.TeleportFlooded</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-79">Change EnumItem ConnectionError.TeleportGameEnded</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-80">Change EnumItem ConnectionError.TeleportGameFull</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-81">Change EnumItem ConnectionError.TeleportGameNotFound</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-82">Change EnumItem ConnectionError.TeleportIsTeleporting</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-83">Change EnumItem ConnectionError.TeleportUnauthorized</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-84">Add Enum DebugBreakModeType</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-88">Add Enum DebuggerResumeType</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-93">Add EnumItem ImageCombineType.NormalMapBlend</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-94">Add Enum ScriptStoppedReason</a></li>
+					<li><a href="/ref/updates/2026.html#version-792bc2069be7464a-100">Add Enum ScriptVariableScope</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-792bc2069be7464a">All changes</a>
+			]]></content:encoded></item><item><title>v0.720.0.7201169</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-0a4ff20d164041aa</link><description>22 revisions to the API.</description><guid>version-0a4ff20d164041aa</guid><pubDate>Wed, 06 May 2026 10:13:16 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-0a4ff20d164041aa-0">Change Property UICorner.BottomLeftRadius</a></li>
 					<li><a href="/ref/updates/2026.html#version-0a4ff20d164041aa-5">Change Property UICorner.BottomRightRadius</a></li>
