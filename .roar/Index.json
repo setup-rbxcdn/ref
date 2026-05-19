@@ -7908,110 +7908,6 @@
 				},
 				{
 					"Class": "Animator",
-					"Member": "PlayStartStepId0",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId1",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId2",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId3",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId4",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId5",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId6",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId7",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
 					"Member": "PlaybackSpeed0",
 					"MemberType": "Property",
 					"Removed": false,
@@ -8455,110 +8351,6 @@
 				{
 					"Class": "Animator",
 					"Member": "RootMotionWeight",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent0",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent1",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent2",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent3",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent4",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent5",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent6",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent7",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -9299,6 +9091,110 @@
 				},
 				{
 					"Class": "Animator",
+					"Member": "PlayStartStepId0",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId1",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId2",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId3",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId4",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId5",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId6",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId7",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
 					"Member": "TimePosition0",
 					"MemberType": "Property",
 					"Removed": true,
@@ -9391,6 +9287,110 @@
 				{
 					"Class": "Animator",
 					"Member": "TimePosition7",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent0",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent1",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent2",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent3",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent4",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent5",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent6",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent7",
 					"MemberType": "Property",
 					"Removed": true,
 					"Field": "ValueType",
@@ -12244,6 +12244,58 @@
 				},
 				{
 					"Class": "AssetImportService",
+					"Member": "StartSingleFileWatch",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "StartSingleFileWatch",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "StopSingleFileWatch",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "StopSingleFileWatch",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AssetImportService",
 					"Member": "UploadAssetFromContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -12318,6 +12370,19 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "SingleFileChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -17661,6 +17726,32 @@
 				},
 				{
 					"Class": "AudioDeviceInput",
+					"Member": "EchoCancellation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
+					"Member": "GainControl",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
 					"Member": "IsReady",
 					"MemberType": "Property",
 					"Removed": false,
@@ -17688,6 +17779,19 @@
 				{
 					"Class": "AudioDeviceInput",
 					"Member": "MutedByLocalUser",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
+					"Member": "NoiseSuppression",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -21659,6 +21763,19 @@
 				{
 					"Class": "AudioSpeechToText",
 					"Member": "Enabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioSpeechToText",
+					"Member": "IsDictationEnabled",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -26368,6 +26485,86 @@
 				},
 				{
 					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
 					"Member": "CreateCageMeshPartsWithScaleForExportAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -27990,6 +28187,45 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AvatarEditorService",
+					"Member": "GetBundlesByAssetIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarEditorService",
+					"Member": "GetBundlesByAssetIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarEditorService",
+					"Member": "GetBundlesByAssetIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "CatalogPages"
 					}
 				},
 				{
@@ -41518,6 +41754,19 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "AvatarEditorService",
+					"Member": "GetBundlesByAssetIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "CatalogPages"
+					}
+				},
 				{
 					"Class": "AvatarEditorService",
 					"Member": "SearchCatalog",
@@ -71476,6 +71725,19 @@
 			"Related": [
 				{
 					"Class": "ExperienceStateRecordingService",
+					"Member": "IsServerDataModelRecorderActive",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ExperienceStateRecordingService",
 					"Member": "ExitPlayback",
 					"MemberType": "Function",
 					"Removed": false,
@@ -74727,6 +74989,58 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
+					}
+				}
+			]
+		},
+		"FileSyncReplicationService": {
+			"Name": "FileSyncReplicationService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "FileSyncReplicationService",
+					"Member": "BroadcastPlayerSyncState",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "FileSyncReplicationService",
+					"Member": "BroadcastPlayerSyncState",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "FileSyncReplicationService",
+					"Member": "UpdateSyncInstances",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
 					}
 				}
 			]
@@ -80781,6 +81095,19 @@
 					}
 				},
 				{
+					"Class": "InputBinding",
+					"Member": "UIModifier",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "GuiButton"
+					}
+				},
+				{
 					"Class": "GuiButton",
 					"Member": "SetVerb",
 					"MemberType": "Function",
@@ -86628,6 +86955,17 @@
 						"Name": "int"
 					}
 				}
+			]
+		},
+		"HeatmapQueryService": {
+			"Name": "HeatmapQueryService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
 			]
 		},
 		"HeatmapService": {
@@ -97459,6 +97797,19 @@
 				},
 				{
 					"Class": "InputBinding",
+					"Member": "UIModifier",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "GuiButton"
+					}
+				},
+				{
+					"Class": "InputBinding",
 					"Member": "Up",
 					"MemberType": "Property",
 					"Removed": false,
@@ -99157,6 +99508,7 @@
 				"File",
 				"FileManagerService",
 				"FileSyncItem",
+				"FileSyncReplicationService",
 				"FileSyncService",
 				"Fire",
 				"FlagStandService",
@@ -99188,6 +99540,7 @@
 				"HapticService",
 				"HarmonyService",
 				"HeapProfilerService",
+				"HeatmapQueryService",
 				"HeatmapService",
 				"HeightmapImporterService",
 				"HiddenSurfaceRemovalAsset",
@@ -104278,6 +104631,19 @@
 				},
 				{
 					"Class": "InstanceFileSyncService",
+					"Member": "GetSyncingCollaborators",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "InstanceFileSyncService",
 					"Member": "GetTooltip",
 					"MemberType": "Function",
 					"Removed": false,
@@ -104292,6 +104658,19 @@
 				{
 					"Class": "InstanceFileSyncService",
 					"Member": "StatusChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "InstanceFileSyncService",
+					"Member": "SyncingCollaboratorsChanged",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -105492,6 +105871,32 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "PackageService",
+					"Member": "UpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "PackageService",
+					"Member": "UpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Class",
@@ -110236,6 +110641,32 @@
 				},
 				{
 					"Class": "InstanceFileSyncService",
+					"Member": "GetSyncingCollaborators",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "InstanceFileSyncService",
+					"Member": "GetSyncingCollaborators",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "InstanceFileSyncService",
 					"Member": "GetTooltip",
 					"MemberType": "Function",
 					"Removed": false,
@@ -110285,6 +110716,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "InstanceFileSyncStatus"
+					}
+				},
+				{
+					"Class": "InstanceFileSyncService",
+					"Member": "SyncingCollaboratorsChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
 					}
 				}
 			]
@@ -115875,6 +116319,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "ServerContextOut",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -134057,6 +134514,47 @@
 				"Instance",
 				"Object",
 				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "PackageService",
+					"Member": "UpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "PackageService",
+					"Member": "UpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "PackageService",
+					"Member": "UpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				}
 			]
 		},
 		"PackageUIService": {
@@ -175413,6 +175911,19 @@
 			"Related": [
 				{
 					"Class": "StarterGui",
+					"Member": "ClipsDescendantsSupportsRotation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "StarterGui",
 					"Member": "ProcessUserInput",
 					"MemberType": "Property",
 					"Removed": false,
@@ -198660,6 +199171,32 @@
 				},
 				{
 					"Class": "TextChannel",
+					"Member": "SendPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChannel",
+					"Member": "SendPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChannel",
 					"Member": "SetDirectChatRequester",
 					"MemberType": "Function",
 					"Removed": false,
@@ -198791,6 +199328,19 @@
 				{
 					"Class": "TextChatService",
 					"Member": "ClientToServerMessageReplicateSignalV3",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChannel"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -198988,6 +199538,19 @@
 				},
 				{
 					"Class": "TextChannel",
+					"Member": "SendPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChannel",
 					"Member": "MessageReceived",
 					"MemberType": "Event",
 					"Removed": false,
@@ -199132,6 +199695,32 @@
 				{
 					"Class": "TextChatMessage",
 					"Member": "PrefixText",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
+					"Member": "PresetChatVersion",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
+					"Member": "PresetId",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -199823,6 +200412,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "GetPresetsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "HasAllocatedUniverseChatContext",
 					"MemberType": "Function",
 					"Removed": false,
@@ -200343,6 +200945,123 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextSource"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChannel"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 7,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 8,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ClientToServerUniverseChatMessageSignalV1",
 					"MemberType": "Event",
 					"Removed": false,
@@ -200638,6 +201357,45 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientPresetChatConfigChangedSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientPresetChatConfigChangedSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientPresetChatUserAccessChangedSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -202194,6 +202952,19 @@
 				{
 					"Class": "TextChatService",
 					"Member": "ClientToServerMessageReplicateSignalV3",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextSource"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -235643,49 +236414,49 @@
 				"Class": "Animator",
 				"Name": "PlayStartStepId0",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlayStartStepId1": {
 				"Class": "Animator",
 				"Name": "PlayStartStepId1",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlayStartStepId2": {
 				"Class": "Animator",
 				"Name": "PlayStartStepId2",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlayStartStepId3": {
 				"Class": "Animator",
 				"Name": "PlayStartStepId3",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlayStartStepId4": {
 				"Class": "Animator",
 				"Name": "PlayStartStepId4",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlayStartStepId5": {
 				"Class": "Animator",
 				"Name": "PlayStartStepId5",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlayStartStepId6": {
 				"Class": "Animator",
 				"Name": "PlayStartStepId6",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlayStartStepId7": {
 				"Class": "Animator",
 				"Name": "PlayStartStepId7",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"PlaybackSpeed0": {
 				"Class": "Animator",
@@ -236129,49 +236900,49 @@
 				"Class": "Animator",
 				"Name": "WeightCurrent0",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent1": {
 				"Class": "Animator",
 				"Name": "WeightCurrent1",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent2": {
 				"Class": "Animator",
 				"Name": "WeightCurrent2",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent3": {
 				"Class": "Animator",
 				"Name": "WeightCurrent3",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent4": {
 				"Class": "Animator",
 				"Name": "WeightCurrent4",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent5": {
 				"Class": "Animator",
 				"Name": "WeightCurrent5",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent6": {
 				"Class": "Animator",
 				"Name": "WeightCurrent6",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightCurrent7": {
 				"Class": "Animator",
 				"Name": "WeightCurrent7",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"WeightTarget0": {
 				"Class": "Animator",
@@ -237479,6 +238250,12 @@
 				"MemberType": "Event",
 				"Removed": true
 			},
+			"SingleFileChanged": {
+				"Class": "AssetImportService",
+				"Name": "SingleFileChanged",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"StartSessionWithPath": {
 				"Class": "AssetImportService",
 				"Name": "StartSessionWithPath",
@@ -237542,10 +238319,22 @@
 					}
 				]
 			},
+			"StartSingleFileWatch": {
+				"Class": "AssetImportService",
+				"Name": "StartSingleFileWatch",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"StartSingleMeshImport": {
 				"Class": "AssetImportService",
 				"Name": "StartSingleMeshImport",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"StopSingleFileWatch": {
+				"Class": "AssetImportService",
+				"Name": "StopSingleFileWatch",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"UpdateSettings": {
@@ -239748,6 +240537,18 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"EchoCancellation": {
+				"Class": "AudioDeviceInput",
+				"Name": "EchoCancellation",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"GainControl": {
+				"Class": "AudioDeviceInput",
+				"Name": "GainControl",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"GetConnectedWires": {
 				"Class": "AudioDeviceInput",
 				"Name": "GetConnectedWires",
@@ -239787,6 +240588,12 @@
 			"MutedByLocalUser": {
 				"Class": "AudioDeviceInput",
 				"Name": "MutedByLocalUser",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"NoiseSuppression": {
+				"Class": "AudioDeviceInput",
+				"Name": "NoiseSuppression",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -241652,6 +242459,12 @@
 				"Class": "AudioSpeechToText",
 				"Name": "GetConnectedWires",
 				"MemberType": "Function",
+				"Removed": false
+			},
+			"IsDictationEnabled": {
+				"Class": "AudioSpeechToText",
+				"Name": "IsDictationEnabled",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"Text": {
@@ -244210,6 +245023,12 @@
 					}
 				]
 			},
+			"CreateAvatar2DPreviewAsync": {
+				"Class": "AvatarCreationService",
+				"Name": "CreateAvatar2DPreviewAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"CreateAvatarGenerationSessionAsync": {
 				"Class": "AvatarCreationService",
 				"Name": "CreateAvatarGenerationSessionAsync",
@@ -244243,6 +245062,12 @@
 						}
 					}
 				]
+			},
+			"CreateAvatarModelAsync": {
+				"Class": "AvatarCreationService",
+				"Name": "CreateAvatarModelAsync",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"CreateCageMeshPartsWithScaleForExportAsync": {
 				"Class": "AvatarCreationService",
@@ -245057,6 +245882,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "AvatarItemType"
+						}
+					}
+				]
+			},
+			"GetBundlesByAssetIdAsync": {
+				"Class": "AvatarEditorService",
+				"Name": "GetBundlesByAssetIdAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AvatarEditorService",
+						"Member": "GetBundlesByAssetIdAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "CatalogPages"
 						}
 					}
 				]
@@ -263020,6 +263866,12 @@
 					}
 				]
 			},
+			"IsServerDataModelRecorderActive": {
+				"Class": "ExperienceStateRecordingService",
+				"Name": "IsServerDataModelRecorderActive",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"LoadPlaybackAsync": {
 				"Class": "ExperienceStateRecordingService",
 				"Name": "LoadPlaybackAsync",
@@ -264554,6 +265406,20 @@
 						}
 					}
 				]
+			}
+		},
+		"FileSyncReplicationService": {
+			"BroadcastPlayerSyncState": {
+				"Class": "FileSyncReplicationService",
+				"Name": "BroadcastPlayerSyncState",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"UpdateSyncInstances": {
+				"Class": "FileSyncReplicationService",
+				"Name": "UpdateSyncInstances",
+				"MemberType": "Event",
+				"Removed": false
 			}
 		},
 		"Fire": {
@@ -275981,6 +276847,27 @@
 					}
 				]
 			},
+			"UIModifier": {
+				"Class": "InputBinding",
+				"Name": "UIModifier",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "InputBinding",
+						"Member": "UIModifier",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Class",
+							"Name": "GuiButton"
+						}
+					}
+				]
+			},
 			"Up": {
 				"Class": "InputBinding",
 				"Name": "Up",
@@ -277463,6 +278350,27 @@
 					}
 				]
 			},
+			"GetSyncingCollaborators": {
+				"Class": "InstanceFileSyncService",
+				"Name": "GetSyncingCollaborators",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "InstanceFileSyncService",
+						"Member": "GetSyncingCollaborators",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"GetTooltip": {
 				"Class": "InstanceFileSyncService",
 				"Name": "GetTooltip",
@@ -277514,6 +278422,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "InstanceFileSyncStatus"
+						}
+					}
+				]
+			},
+			"SyncingCollaboratorsChanged": {
+				"Class": "InstanceFileSyncService",
+				"Name": "SyncingCollaboratorsChanged",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "InstanceFileSyncService",
+						"Member": "SyncingCollaboratorsChanged",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
 						}
 					}
 				]
@@ -279972,6 +280901,12 @@
 						}
 					}
 				]
+			},
+			"ServerContextOut": {
+				"Class": "LogService",
+				"Name": "ServerContextOut",
+				"MemberType": "Event",
+				"Removed": false
 			},
 			"ServerHttpResultOut": {
 				"Class": "LogService",
@@ -287748,6 +288683,42 @@
 				"Name": "VersionNumber",
 				"MemberType": "Property",
 				"Removed": false
+			}
+		},
+		"PackageService": {
+			"UpdateAsync": {
+				"Class": "PackageService",
+				"Name": "UpdateAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "PackageService",
+						"Member": "UpdateAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					},
+					{
+						"Class": "PackageService",
+						"Member": "UpdateAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
 			}
 		},
 		"PackageUIService": {
@@ -306356,6 +307327,27 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"ClipsDescendantsSupportsRotation": {
+				"Class": "StarterGui",
+				"Name": "ClipsDescendantsSupportsRotation",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StarterGui",
+						"Member": "ClipsDescendantsSupportsRotation",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RolloutState"
+						}
+					}
+				]
+			},
 			"CoreGuiChangedSignal": {
 				"Class": "StarterGui",
 				"Name": "CoreGuiChangedSignal",
@@ -316806,6 +317798,27 @@
 					}
 				]
 			},
+			"SendPresetAsync": {
+				"Class": "TextChannel",
+				"Name": "SendPresetAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "TextChannel",
+						"Member": "SendPresetAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "TextChatMessage"
+						}
+					}
+				]
+			},
 			"SetDirectChatRequester": {
 				"Class": "TextChannel",
 				"Name": "SetDirectChatRequester",
@@ -316991,6 +318004,18 @@
 			"PrefixText": {
 				"Class": "TextChatMessage",
 				"Name": "PrefixText",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"PresetChatVersion": {
+				"Class": "TextChatMessage",
+				"Name": "PresetChatVersion",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"PresetId": {
+				"Class": "TextChatMessage",
+				"Name": "PresetId",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -317360,6 +318385,40 @@
 					}
 				]
 			},
+			"ClientToServerMessageReplicateSignalV4": {
+				"Class": "TextChatService",
+				"Name": "ClientToServerMessageReplicateSignalV4",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "TextChatService",
+						"Member": "ClientToServerMessageReplicateSignalV4",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 3,
+						"Type": {
+							"Category": "Class",
+							"Name": "TextSource"
+						}
+					},
+					{
+						"Class": "TextChatService",
+						"Member": "ClientToServerMessageReplicateSignalV4",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 4,
+						"Type": {
+							"Category": "Class",
+							"Name": "TextChannel"
+						}
+					}
+				]
+			},
 			"ClientToServerUniverseChatMessageSignalV1": {
 				"Class": "TextChatService",
 				"Name": "ClientToServerUniverseChatMessageSignalV1",
@@ -317408,6 +318467,12 @@
 			"GetChatGroupsAsync": {
 				"Class": "TextChatService",
 				"Name": "GetChatGroupsAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetPresetsAsync": {
+				"Class": "TextChatService",
+				"Name": "GetPresetsAsync",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -317729,6 +318794,18 @@
 			"ServerToClientMessageReplicateSignalV2": {
 				"Class": "TextChatService",
 				"Name": "ServerToClientMessageReplicateSignalV2",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"ServerToClientPresetChatConfigChangedSignal": {
+				"Class": "TextChatService",
+				"Name": "ServerToClientPresetChatConfigChangedSignal",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"ServerToClientPresetChatUserAccessChangedSignal": {
+				"Class": "TextChatService",
+				"Name": "ServerToClientPresetChatUserAccessChangedSignal",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -327441,6 +328518,12 @@
 					}
 				]
 			},
+			"GameStreamingResolutionReady": {
+				"Class": "VideoService",
+				"Name": "GameStreamingResolutionReady",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"PlaybackReport": {
 				"Class": "VideoService",
 				"Name": "PlaybackReport",
@@ -334402,7 +335485,8 @@
 				"FaceMakeup",
 				"LipMakeup",
 				"EyeMakeup",
-				"VoxelFragment"
+				"VoxelFragment",
+				"AvatarBackground"
 			],
 			"ItemsByIndex": [
 				"Image",
@@ -334469,7 +335553,8 @@
 				"FaceMakeup",
 				"LipMakeup",
 				"EyeMakeup",
-				"VoxelFragment"
+				"VoxelFragment",
+				"AvatarBackground"
 			],
 			"Related": [
 				{
@@ -335141,7 +336226,8 @@
 				"DynamicHead",
 				"FaceMakeup",
 				"LipMakeup",
-				"EyeMakeup"
+				"EyeMakeup",
+				"AvatarBackground"
 			],
 			"ItemsByIndex": [
 				"TShirt",
@@ -335187,7 +336273,8 @@
 				"DynamicHead",
 				"FaceMakeup",
 				"LipMakeup",
-				"EyeMakeup"
+				"EyeMakeup",
+				"AvatarBackground"
 			],
 			"Related": [
 				{
@@ -338680,6 +339767,8 @@
 				"DisconnectCollaboratorOwnerActionRequired",
 				"DisconnectCollaboratorTooManyCollaborators",
 				"DisconnectCollaboratorUnknownError",
+				"DisconnectCollaboratorRequestedEviction",
+				"DisconnectCollaboratorTrustedConnectionsRequiredPC",
 				"PlacelaunchErrors",
 				"PlacelaunchDisabled",
 				"PlacelauchError",
@@ -338785,6 +339874,8 @@
 				"DisconnectCollaboratorOwnerActionRequired",
 				"DisconnectCollaboratorTooManyCollaborators",
 				"DisconnectCollaboratorUnknownError",
+				"DisconnectCollaboratorRequestedEviction",
+				"DisconnectCollaboratorTrustedConnectionsRequiredPC",
 				"PlacelaunchErrors",
 				"PlacelaunchDisabled",
 				"PlacelaunchError",
@@ -341096,6 +342187,24 @@
 				}
 			]
 		},
+		"EngagementLevel": {
+			"Name": "EngagementLevel",
+			"Removed": false,
+			"ItemsByValue": [
+				"Unknown",
+				"Inactive",
+				"Low",
+				"Medium",
+				"High"
+			],
+			"ItemsByIndex": [
+				"Unknown",
+				"Inactive",
+				"Low",
+				"Medium",
+				"High"
+			]
+		},
 		"EngineFolder": {
 			"Name": "EngineFolder",
 			"Removed": false,
@@ -341228,6 +342337,24 @@
 						"Name": "ErrorReporting"
 					}
 				}
+			]
+		},
+		"ExperienceActivationStatus": {
+			"Name": "ExperienceActivationStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"Unknown",
+				"New",
+				"Active",
+				"Lapsed",
+				"Reactivated"
+			],
+			"ItemsByIndex": [
+				"Unknown",
+				"New",
+				"Active",
+				"Lapsed",
+				"Reactivated"
 			]
 		},
 		"ExperienceAuthScope": {
@@ -350574,6 +351701,24 @@
 				}
 			]
 		},
+		"PlayerPlatformActivationStatus": {
+			"Name": "PlayerPlatformActivationStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"Unknown",
+				"New",
+				"Active",
+				"Lapsed",
+				"Reactivated"
+			],
+			"ItemsByIndex": [
+				"Unknown",
+				"New",
+				"Active",
+				"Lapsed",
+				"Reactivated"
+			]
+		},
 		"PlayerPlatformSpenderStatus": {
 			"Name": "PlayerPlatformSpenderStatus",
 			"Removed": false,
@@ -353173,6 +354318,19 @@
 				{
 					"Class": "SoundService",
 					"Member": "CharacterSoundsUseNewApi",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "StarterGui",
+					"Member": "ClipsDescendantsSupportsRotation",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -362605,6 +363763,11 @@
 				"Name": "Audio",
 				"Removed": false
 			},
+			"AvatarBackground": {
+				"Enum": "AssetType",
+				"Name": "AvatarBackground",
+				"Removed": false
+			},
 			"BackAccessory": {
 				"Enum": "AssetType",
 				"Name": "BackAccessory",
@@ -363164,6 +364327,11 @@
 			}
 		},
 		"AvatarAssetType": {
+			"AvatarBackground": {
+				"Enum": "AvatarAssetType",
+				"Name": "AvatarBackground",
+				"Removed": false
+			},
 			"BackAccessory": {
 				"Enum": "AvatarAssetType",
 				"Name": "BackAccessory",
@@ -365443,6 +366611,11 @@
 				"Name": "DisconnectCollaboratorPermissionRevoked",
 				"Removed": false
 			},
+			"DisconnectCollaboratorRequestedEviction": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectCollaboratorRequestedEviction",
+				"Removed": false
+			},
 			"DisconnectCollaboratorTooManyCollaborators": {
 				"Enum": "ConnectionError",
 				"Name": "DisconnectCollaboratorTooManyCollaborators",
@@ -365451,6 +366624,11 @@
 			"DisconnectCollaboratorTrustedConnectionsRequired": {
 				"Enum": "ConnectionError",
 				"Name": "DisconnectCollaboratorTrustedConnectionsRequired",
+				"Removed": false
+			},
+			"DisconnectCollaboratorTrustedConnectionsRequiredPC": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectCollaboratorTrustedConnectionsRequiredPC",
 				"Removed": false
 			},
 			"DisconnectCollaboratorUnderage": {
@@ -367546,6 +368724,33 @@
 				"Removed": false
 			}
 		},
+		"EngagementLevel": {
+			"High": {
+				"Enum": "EngagementLevel",
+				"Name": "High",
+				"Removed": false
+			},
+			"Inactive": {
+				"Enum": "EngagementLevel",
+				"Name": "Inactive",
+				"Removed": false
+			},
+			"Low": {
+				"Enum": "EngagementLevel",
+				"Name": "Low",
+				"Removed": false
+			},
+			"Medium": {
+				"Enum": "EngagementLevel",
+				"Name": "Medium",
+				"Removed": false
+			},
+			"Unknown": {
+				"Enum": "EngagementLevel",
+				"Name": "Unknown",
+				"Removed": false
+			}
+		},
 		"EngineFolder": {
 			"Logs": {
 				"Enum": "EngineFolder",
@@ -367615,6 +368820,33 @@
 				"Enum": "ErrorReporting",
 				"Name": "Report",
 				"Removed": true
+			}
+		},
+		"ExperienceActivationStatus": {
+			"Active": {
+				"Enum": "ExperienceActivationStatus",
+				"Name": "Active",
+				"Removed": false
+			},
+			"Lapsed": {
+				"Enum": "ExperienceActivationStatus",
+				"Name": "Lapsed",
+				"Removed": false
+			},
+			"New": {
+				"Enum": "ExperienceActivationStatus",
+				"Name": "New",
+				"Removed": false
+			},
+			"Reactivated": {
+				"Enum": "ExperienceActivationStatus",
+				"Name": "Reactivated",
+				"Removed": false
+			},
+			"Unknown": {
+				"Enum": "ExperienceActivationStatus",
+				"Name": "Unknown",
+				"Removed": false
 			}
 		},
 		"ExperienceAuthScope": {
@@ -374318,6 +375550,33 @@
 			},
 			"Unknown": {
 				"Enum": "PlayerExitReason",
+				"Name": "Unknown",
+				"Removed": false
+			}
+		},
+		"PlayerPlatformActivationStatus": {
+			"Active": {
+				"Enum": "PlayerPlatformActivationStatus",
+				"Name": "Active",
+				"Removed": false
+			},
+			"Lapsed": {
+				"Enum": "PlayerPlatformActivationStatus",
+				"Name": "Lapsed",
+				"Removed": false
+			},
+			"New": {
+				"Enum": "PlayerPlatformActivationStatus",
+				"Name": "New",
+				"Removed": false
+			},
+			"Reactivated": {
+				"Enum": "PlayerPlatformActivationStatus",
+				"Name": "Reactivated",
+				"Removed": false
+			},
+			"Unknown": {
+				"Enum": "PlayerPlatformActivationStatus",
 				"Name": "Unknown",
 				"Removed": false
 			}
@@ -384133,6 +385392,32 @@
 					}
 				},
 				{
+					"Class": "FileSyncReplicationService",
+					"Member": "BroadcastPlayerSyncState",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "FileSyncReplicationService",
+					"Member": "UpdateSyncInstances",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "FloatCurve",
 					"Member": "GetKeyIndicesAtTime",
 					"MemberType": "Function",
@@ -384811,6 +386096,19 @@
 				{
 					"Class": "Instance",
 					"Member": "GetTags",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "InstanceFileSyncService",
+					"Member": "GetSyncingCollaborators",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -398467,6 +399765,58 @@
 				},
 				{
 					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
 					"Member": "GenerateAvatar2DPreviewAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -400142,6 +401492,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LogService",
+					"Member": "ServerContextOut",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -402352,6 +403715,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "GetPresetsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ServerToClientChatActionReplicateSignal",
 					"MemberType": "Event",
 					"Removed": false,
@@ -404143,6 +405519,34 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Function",
@@ -427244,6 +428648,32 @@
 				},
 				{
 					"Class": "AudioDeviceInput",
+					"Member": "EchoCancellation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
+					"Member": "GainControl",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
 					"Member": "IsReady",
 					"MemberType": "Property",
 					"Removed": false,
@@ -427271,6 +428701,19 @@
 				{
 					"Class": "AudioDeviceInput",
 					"Member": "MutedByLocalUser",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
+					"Member": "NoiseSuppression",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -427817,6 +429260,19 @@
 				{
 					"Class": "AudioSpeechToText",
 					"Member": "Enabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioSpeechToText",
+					"Member": "IsDictationEnabled",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -431553,6 +433009,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ExperienceStateRecordingService",
+					"Member": "IsServerDataModelRecorderActive",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -443065,12 +444534,51 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ClientToServerUniverseChatMessageSignalV1",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientPresetChatConfigChangedSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -455030,110 +456538,6 @@
 				{
 					"Class": "Animator",
 					"Member": "RootMotionWeight",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent0",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent1",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent2",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent3",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent4",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent5",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent6",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "WeightCurrent7",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -467253,6 +468657,110 @@
 				},
 				{
 					"Class": "Animator",
+					"Member": "WeightCurrent0",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent1",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent2",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent3",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent4",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent5",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent6",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "WeightCurrent7",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Animator",
 					"Member": "OnCombinedUpdate2",
 					"MemberType": "Event",
 					"Removed": true,
@@ -468826,110 +470334,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId0",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId1",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId2",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId3",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId4",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId5",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId6",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "Animator",
-					"Member": "PlayStartStepId7",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -477703,6 +479107,110 @@
 				},
 				{
 					"Class": "Animator",
+					"Member": "PlayStartStepId0",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId1",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId2",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId3",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId4",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId5",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId6",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
+					"Member": "PlayStartStepId7",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Animator",
 					"Member": "OnCombinedUpdate2",
 					"MemberType": "Event",
 					"Removed": true,
@@ -482800,6 +484308,32 @@
 				},
 				{
 					"Class": "AvatarEditorService",
+					"Member": "GetBundlesByAssetIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarEditorService",
+					"Member": "GetBundlesByAssetIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarEditorService",
 					"Member": "GetFavorite",
 					"MemberType": "Function",
 					"Removed": false,
@@ -485321,6 +486855,19 @@
 					}
 				},
 				{
+					"Class": "FileSyncReplicationService",
+					"Member": "BroadcastPlayerSyncState",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "FriendService",
 					"Member": "RemoteFriendEventSignal",
 					"MemberType": "Event",
@@ -487109,6 +488656,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "PackageService",
+					"Member": "UpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -491627,6 +493187,32 @@
 				{
 					"Class": "AssetImportService",
 					"Member": "RemovePreset",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "StartSingleFileWatch",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "StopSingleFileWatch",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -510444,6 +512030,32 @@
 				},
 				{
 					"Class": "AssetImportService",
+					"Member": "StartSingleFileWatch",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "StopSingleFileWatch",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetImportService",
 					"Member": "UploadAssetFromContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -510459,6 +512071,19 @@
 					"Class": "AssetImportService",
 					"Member": "UploadAssetFromPathAsync",
 					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "SingleFileChanged",
+					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
@@ -530196,6 +531821,19 @@
 					}
 				},
 				{
+					"Class": "TextChannel",
+					"Member": "SendPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "TextChatCommand",
 					"Member": "PrimaryAlias",
 					"MemberType": "Property",
@@ -530289,6 +531927,32 @@
 				{
 					"Class": "TextChatMessage",
 					"Member": "PrefixText",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
+					"Member": "PresetChatVersion",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatMessage",
+					"Member": "PresetId",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -530561,6 +532225,71 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 7,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerMessageReplicateSignalV4",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 8,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ClientToServerUniverseChatMessageSignalV1",
 					"MemberType": "Event",
 					"Removed": false,
@@ -530684,6 +532413,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientPresetChatConfigChangedSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ServerToClientPresetChatUserAccessChangedSignal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
