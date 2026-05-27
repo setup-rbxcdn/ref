@@ -5445,6 +5445,32 @@
 			"Related": [
 				{
 					"Class": "AnimationConstraint",
+					"Member": "AngularDamping",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
+					"Member": "AngularStrength",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
 					"Member": "C0",
 					"MemberType": "Property",
 					"Removed": false,
@@ -5480,6 +5506,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
+					"Member": "LinearDamping",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
+					"Member": "LinearStrength",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
 					}
 				},
 				{
@@ -11638,6 +11690,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "AppUpdateService",
+					"Member": "GetProtocolLaunchUpdateName",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AppUpdateService",
+					"Member": "GetProtocolLaunchUpdateType",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -24521,6 +24599,19 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
+					"Member": "EnableCrouching",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
 					"Member": "EnableFallingDown",
 					"MemberType": "Property",
 					"Removed": false,
@@ -24547,7 +24638,33 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
+					"Member": "EnableHolding",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
 					"Member": "EnableJumping",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableReaching",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -24586,7 +24703,7 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
-					"Member": "EnableSwimming",
+					"Member": "EnableSprinting",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -24599,35 +24716,22 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
-					"Member": "EnableCrouching",
-					"MemberType": "Property",
-					"Removed": true,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableSprinting",
-					"MemberType": "Property",
-					"Removed": true,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
 					"Member": "EnableStrafing",
 					"MemberType": "Property",
-					"Removed": true,
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableSwimming",
+					"MemberType": "Property",
+					"Removed": false,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -26485,86 +26589,6 @@
 				},
 				{
 					"Class": "AvatarCreationService",
-					"Member": "CreateAvatar2DPreviewAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatar2DPreviewAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Function",
-						"Optional": true
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatar2DPreviewAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatarModelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatarModelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Function",
-						"Optional": true
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatarModelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
 					"Member": "CreateCageMeshPartsWithScaleForExportAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -27515,6 +27539,46 @@
 				},
 				{
 					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
 					"Member": "CreateAvatarGenerationSessionAsync",
 					"MemberType": "Function",
 					"Removed": true,
@@ -27537,6 +27601,46 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "AvatarGenerationSession"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -80242,6 +80346,45 @@
 				},
 				{
 					"Class": "GroupService",
+					"Member": "GetRolesInGroupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "GroupService",
+					"Member": "GetRolesInGroupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "GroupService",
+					"Member": "GetRolesInGroupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "GroupService",
 					"Member": "PromptJoinAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -103144,6 +103287,19 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "UniqueId"
+					}
+				},
+				{
+					"Class": "Instance",
+					"Member": "IsInSandbox",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -128575,6 +128731,227 @@
 						"Category": "Primitive",
 						"Name": "string"
 					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "DataChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "DataChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
 				}
 			]
 		},
@@ -135445,19 +135822,6 @@
 				},
 				{
 					"Class": "PartOperation",
-					"Member": "SerializedOperationGraph",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "SharedString"
-					}
-				},
-				{
-					"Class": "PartOperation",
 					"Member": "SmoothingAngle",
 					"MemberType": "Property",
 					"Removed": false,
@@ -135589,6 +135953,19 @@
 				{
 					"Class": "PartOperation",
 					"Member": "SerializedCSGTree",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "SharedString"
+					}
+				},
+				{
+					"Class": "PartOperation",
+					"Member": "SerializedOperationGraph",
 					"MemberType": "Property",
 					"Removed": true,
 					"Field": "ValueType",
@@ -172010,6 +172387,20 @@
 					"Member": "PromptFeedbackSubmissionAsync",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "SocialService",
+					"Member": "PromptFeedbackSubmissionAsync",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -172309,6 +172700,20 @@
 					"Member": "SignalFeedbackSubmissionCompleted",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "SocialService",
+					"Member": "SignalFeedbackSubmissionCompleted",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -172540,6 +172945,19 @@
 				},
 				{
 					"Class": "SocialService",
+					"Member": "ShowPromptFeedbackSubmission",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "FeedbackType"
+					}
+				},
+				{
+					"Class": "SocialService",
 					"Member": "ShowPromptFeedbackUnavailable",
 					"MemberType": "Event",
 					"Removed": false,
@@ -172549,6 +172967,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "SocialService",
+					"Member": "ShowPromptFeedbackUnavailable",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "FeedbackType"
 					}
 				},
 				{
@@ -199889,6 +200320,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "SendUniverseChatPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "BubbleDisplayed",
 					"MemberType": "Event",
 					"Removed": false,
@@ -200711,6 +201155,32 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "SendUniverseChatPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendUniverseChatPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "TextChatMessage"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "setModerationModeEnabled",
 					"MemberType": "Function",
 					"Removed": false,
@@ -201123,6 +201593,97 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -217939,6 +218500,32 @@
 			"Related": [
 				{
 					"Class": "UserService",
+					"Member": "GetUserFromGlobalUserIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "UserService",
+					"Member": "GetUserFromGlobalUserIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "User"
+					}
+				},
+				{
+					"Class": "UserService",
 					"Member": "GetUserInfosByUserIdsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -223454,19 +224041,6 @@
 				},
 				{
 					"Class": "VoiceChatInternal",
-					"Member": "GetSpeakerDevices",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Tuple"
-					}
-				},
-				{
-					"Class": "VoiceChatInternal",
 					"Member": "GetVoiceChatApiVersion",
 					"MemberType": "Function",
 					"Removed": false,
@@ -223779,45 +224353,6 @@
 				},
 				{
 					"Class": "VoiceChatInternal",
-					"Member": "SetSpeakerDevice",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "VoiceChatInternal",
-					"Member": "SetSpeakerDevice",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "VoiceChatInternal",
-					"Member": "SetSpeakerDevice",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "VoiceChatInternal",
 					"Member": "SubscribeBlock",
 					"MemberType": "Function",
 					"Removed": false,
@@ -224035,6 +224570,58 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "VoiceChatState"
+					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "GetSpeakerDevices",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "SetSpeakerDevice",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "SetSpeakerDevice",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "SetSpeakerDevice",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				}
 			]
@@ -225059,6 +225646,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "VoiceChatService",
+					"Member": "SubscriberAudioQualitySample",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -228816,6 +229416,19 @@
 				},
 				{
 					"Class": "Workspace",
+					"Member": "ImprovedAnimationConstraint",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "Workspace",
 					"Member": "InsertPoint",
 					"MemberType": "Property",
 					"Removed": false,
@@ -229345,6 +229958,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "Workspace",
+					"Member": "ApplyRecommendedStreamingSettings",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -235021,6 +235647,18 @@
 			}
 		},
 		"AnimationConstraint": {
+			"AngularDamping": {
+				"Class": "AnimationConstraint",
+				"Name": "AngularDamping",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"AngularStrength": {
+				"Class": "AnimationConstraint",
+				"Name": "AngularStrength",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"C0": {
 				"Class": "AnimationConstraint",
 				"Name": "C0",
@@ -235036,6 +235674,18 @@
 			"IsKinematic": {
 				"Class": "AnimationConstraint",
 				"Name": "IsKinematic",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LinearDamping": {
+				"Class": "AnimationConstraint",
+				"Name": "LinearDamping",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LinearStrength": {
+				"Class": "AnimationConstraint",
+				"Name": "LinearStrength",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -237938,6 +238588,18 @@
 				"Name": "DisableDUARAndOpenSurvey",
 				"MemberType": "Function",
 				"Removed": true
+			},
+			"GetProtocolLaunchUpdateName": {
+				"Class": "AppUpdateService",
+				"Name": "GetProtocolLaunchUpdateName",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetProtocolLaunchUpdateType": {
+				"Class": "AppUpdateService",
+				"Name": "GetProtocolLaunchUpdateType",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"PerformManagedUpdate": {
 				"Class": "AppUpdateService",
@@ -243842,7 +244504,7 @@
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableCrouching",
 				"MemberType": "Property",
-				"Removed": true
+				"Removed": false
 			},
 			"EnableFallingDown": {
 				"Class": "AvatarAbilityRules",
@@ -243856,9 +244518,21 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"EnableHolding": {
+				"Class": "AvatarAbilityRules",
+				"Name": "EnableHolding",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"EnableJumping": {
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableJumping",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EnableReaching": {
+				"Class": "AvatarAbilityRules",
+				"Name": "EnableReaching",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -243878,13 +244552,13 @@
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableSprinting",
 				"MemberType": "Property",
-				"Removed": true
+				"Removed": false
 			},
 			"EnableStrafing": {
 				"Class": "AvatarAbilityRules",
 				"Name": "EnableStrafing",
 				"MemberType": "Property",
-				"Removed": true
+				"Removed": false
 			},
 			"EnableStumbling": {
 				"Class": "AvatarAbilityRules",
@@ -245027,7 +245701,7 @@
 				"Class": "AvatarCreationService",
 				"Name": "CreateAvatar2DPreviewAsync",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"CreateAvatarGenerationSessionAsync": {
 				"Class": "AvatarCreationService",
@@ -245067,7 +245741,7 @@
 				"Class": "AvatarCreationService",
 				"Name": "CreateAvatarModelAsync",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"CreateCageMeshPartsWithScaleForExportAsync": {
 				"Class": "AvatarCreationService",
@@ -267252,6 +267926,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetRolesInGroupAsync": {
+				"Class": "GroupService",
+				"Name": "GetRolesInGroupAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"PromptJoinAsync": {
 				"Class": "GroupService",
 				"Name": "PromptJoinAsync",
@@ -277920,6 +278600,12 @@
 					}
 				]
 			},
+			"IsInSandbox": {
+				"Class": "Instance",
+				"Name": "IsInSandbox",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"IsPredicted": {
 				"Class": "Instance",
 				"Name": "IsPredicted",
@@ -286133,9 +286819,33 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"DataChanged": {
+				"Class": "MicroProfilerService",
+				"Name": "DataChanged",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"DumpToFileAsync": {
 				"Class": "MicroProfilerService",
 				"Name": "DumpToFileAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetDataInRange": {
+				"Class": "MicroProfilerService",
+				"Name": "GetDataInRange",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetDataSize": {
+				"Class": "MicroProfilerService",
+				"Name": "GetDataSize",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ProcessCommand": {
+				"Class": "MicroProfilerService",
+				"Name": "ProcessCommand",
 				"MemberType": "Function",
 				"Removed": false
 			}
@@ -289241,7 +289951,7 @@
 				"Class": "PartOperation",
 				"Name": "SerializedOperationGraph",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"SmoothingAngle": {
 				"Class": "PartOperation",
@@ -305851,13 +306561,43 @@
 				"Class": "SocialService",
 				"Name": "ShowPromptFeedbackSubmission",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "SocialService",
+						"Member": "ShowPromptFeedbackSubmission",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "FeedbackType"
+						}
+					}
+				]
 			},
 			"ShowPromptFeedbackUnavailable": {
 				"Class": "SocialService",
 				"Name": "ShowPromptFeedbackUnavailable",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "SocialService",
+						"Member": "ShowPromptFeedbackUnavailable",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "FeedbackType"
+						}
+					}
+				]
 			},
 			"ShowPromptRsvpToEvent": {
 				"Class": "SocialService",
@@ -318425,6 +319165,12 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"ClientToServerUniverseChatMessageSignalV2": {
+				"Class": "TextChatService",
+				"Name": "ClientToServerUniverseChatMessageSignalV2",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"CreateDefaultCommands": {
 				"Class": "TextChatService",
 				"Name": "CreateDefaultCommands",
@@ -318684,6 +319430,27 @@
 					{
 						"Class": "TextChatService",
 						"Member": "SendUniverseChatMessageAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "TextChatMessage"
+						}
+					}
+				]
+			},
+			"SendUniverseChatPresetAsync": {
+				"Class": "TextChatService",
+				"Name": "SendUniverseChatPresetAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "TextChatService",
+						"Member": "SendUniverseChatPresetAsync",
 						"MemberType": "Function",
 						"Removed": false,
 						"Field": "ReturnType",
@@ -326844,6 +327611,12 @@
 			}
 		},
 		"UserService": {
+			"GetUserFromGlobalUserIdAsync": {
+				"Class": "UserService",
+				"Name": "GetUserFromGlobalUserIdAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetUserInfosByUserIdsAsync": {
 				"Class": "UserService",
 				"Name": "GetUserInfosByUserIdsAsync",
@@ -329210,7 +329983,7 @@
 				"Class": "VoiceChatInternal",
 				"Name": "GetSpeakerDevices",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetVoiceChatApiVersion": {
 				"Class": "VoiceChatInternal",
@@ -329318,7 +330091,7 @@
 				"Class": "VoiceChatInternal",
 				"Name": "SetSpeakerDevice",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"StateChanged": {
 				"Class": "VoiceChatInternal",
@@ -329833,6 +330606,12 @@
 						}
 					}
 				]
+			},
+			"SubscriberAudioQualitySample": {
+				"Class": "VoiceChatService",
+				"Name": "SubscriberAudioQualitySample",
+				"MemberType": "Event",
+				"Removed": false
 			},
 			"SubscriptionDropped": {
 				"Class": "VoiceChatService",
@@ -330760,6 +331539,12 @@
 					}
 				]
 			},
+			"ApplyRecommendedStreamingSettings": {
+				"Class": "Workspace",
+				"Name": "ApplyRecommendedStreamingSettings",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"AuthorityMode": {
 				"Class": "Workspace",
 				"Name": "AuthorityMode",
@@ -331212,6 +331997,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "IKControlConstraintSupport"
+						}
+					}
+				]
+			},
+			"ImprovedAnimationConstraint": {
+				"Class": "Workspace",
+				"Name": "ImprovedAnimationConstraint",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Workspace",
+						"Member": "ImprovedAnimationConstraint",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RolloutState"
 						}
 					}
 				]
@@ -342938,6 +343744,46 @@
 				"Sharing"
 			]
 		},
+		"FeedbackType": {
+			"Name": "FeedbackType",
+			"Removed": false,
+			"ItemsByValue": [
+				"Feedback",
+				"PlayerSupport"
+			],
+			"ItemsByIndex": [
+				"Feedback",
+				"PlayerSupport"
+			],
+			"Related": [
+				{
+					"Class": "SocialService",
+					"Member": "ShowPromptFeedbackSubmission",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "FeedbackType"
+					}
+				},
+				{
+					"Class": "SocialService",
+					"Member": "ShowPromptFeedbackUnavailable",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "FeedbackType"
+					}
+				}
+			]
+		},
 		"FieldOfViewMode": {
 			"Name": "FieldOfViewMode",
 			"Removed": false,
@@ -350511,13 +351357,15 @@
 				"All",
 				"Avatar",
 				"DynamicHead",
-				"Shoes"
+				"Shoes",
+				"Makeup"
 			],
 			"ItemsByIndex": [
 				"All",
 				"Avatar",
 				"DynamicHead",
-				"Shoes"
+				"Shoes",
+				"Makeup"
 			],
 			"Related": [
 				{
@@ -354370,6 +355218,19 @@
 				{
 					"Class": "Workspace",
 					"Member": "EnableSLIMAvatars",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "Workspace",
+					"Member": "ImprovedAnimationConstraint",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -368430,7 +369291,7 @@
 			"GROUP": {
 				"Enum": "DomainType",
 				"Name": "GROUP",
-				"Removed": false
+				"Removed": true
 			},
 			"OAUTH": {
 				"Enum": "DomainType",
@@ -369362,6 +370223,18 @@
 				"Enum": "FeedRankingScoreType",
 				"Name": "Sharing",
 				"Removed": true
+			}
+		},
+		"FeedbackType": {
+			"Feedback": {
+				"Enum": "FeedbackType",
+				"Name": "Feedback",
+				"Removed": false
+			},
+			"PlayerSupport": {
+				"Enum": "FeedbackType",
+				"Name": "PlayerSupport",
+				"Removed": false
 			}
 		},
 		"FieldOfViewMode": {
@@ -374692,6 +375565,11 @@
 			"DynamicHead": {
 				"Enum": "OutfitType",
 				"Name": "DynamicHead",
+				"Removed": false
+			},
+			"Makeup": {
+				"Enum": "OutfitType",
+				"Name": "Makeup",
 				"Removed": false
 			},
 			"Shoes": {
@@ -399765,58 +400643,6 @@
 				},
 				{
 					"Class": "AvatarCreationService",
-					"Member": "CreateAvatar2DPreviewAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatar2DPreviewAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatarModelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatarModelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
 					"Member": "GenerateAvatar2DPreviewAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -403035,6 +403861,20 @@
 				},
 				{
 					"Class": "SocialService",
+					"Member": "PromptFeedbackSubmissionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "SocialService",
 					"Member": "PromptLinkSharing",
 					"MemberType": "Function",
 					"Removed": false,
@@ -403057,6 +403897,20 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "SocialService",
+					"Member": "SignalFeedbackSubmissionCompleted",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
 					}
 				},
 				{
@@ -404457,6 +405311,58 @@
 				},
 				{
 					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
 					"Member": "GenerateAvatarModelAsync",
 					"MemberType": "Function",
 					"Removed": true,
@@ -405519,34 +406425,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Function",
-						"Optional": true
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatar2DPreviewAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Function",
-						"Optional": true
-					}
-				},
-				{
-					"Class": "AvatarCreationService",
-					"Member": "CreateAvatarModelAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Function",
@@ -406787,6 +407665,34 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatar2DPreviewAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "CreateAvatarModelAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Function",
@@ -413111,19 +414017,6 @@
 					}
 				},
 				{
-					"Class": "PartOperation",
-					"Member": "SerializedOperationGraph",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "SharedString"
-					}
-				},
-				{
 					"Class": "RolloutValidation",
 					"Member": "FirstSharedString",
 					"MemberType": "Property",
@@ -413282,6 +414175,19 @@
 				{
 					"Class": "PartOperation",
 					"Member": "SerializedCSGTree",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "SharedString"
+					}
+				},
+				{
+					"Class": "PartOperation",
+					"Member": "SerializedOperationGraph",
 					"MemberType": "Property",
 					"Removed": true,
 					"Field": "ValueType",
@@ -415660,19 +416566,6 @@
 					}
 				},
 				{
-					"Class": "VoiceChatInternal",
-					"Member": "GetSpeakerDevices",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Tuple"
-					}
-				},
-				{
 					"Class": "WorldRoot",
 					"Member": "FindPartOnRay",
 					"MemberType": "Function",
@@ -416039,6 +416932,19 @@
 				{
 					"Class": "UGCValidationService",
 					"Member": "ValidateCageNonManifoldAndHoles",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "GetSpeakerDevices",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -416937,6 +417843,26 @@
 				}
 			]
 		},
+		"User": {
+			"Category": "DataType",
+			"Name": "User",
+			"Removed": false,
+			"Related": [
+				{
+					"Class": "UserService",
+					"Member": "GetUserFromGlobalUserIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "User"
+					}
+				}
+			]
+		},
 		"ValueCurveKey": {
 			"Category": "DataType",
 			"Name": "ValueCurveKey",
@@ -417355,6 +418281,19 @@
 				{
 					"Class": "GroupService",
 					"Member": "GetGroupInfoAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "GroupService",
+					"Member": "GetRolesInGroupAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -429493,6 +430432,19 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
+					"Member": "EnableCrouching",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
 					"Member": "EnableFallingDown",
 					"MemberType": "Property",
 					"Removed": false,
@@ -429519,7 +430471,33 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
+					"Member": "EnableHolding",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
 					"Member": "EnableJumping",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableReaching",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -429546,6 +430524,32 @@
 				{
 					"Class": "AvatarAbilityRules",
 					"Member": "EnableSitting",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableSprinting",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableStrafing",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -435383,6 +436387,19 @@
 				{
 					"Class": "Instance",
 					"Member": "DefinesCapabilities",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Instance",
+					"Member": "IsInSandbox",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -444573,6 +445590,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ServerToClientPresetChatConfigChangedSignal",
 					"MemberType": "Event",
 					"Removed": false,
@@ -447829,6 +448859,19 @@
 				},
 				{
 					"Class": "Workspace",
+					"Member": "ApplyRecommendedStreamingSettings",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Workspace",
 					"Member": "ExperimentalSolverIsEnabled",
 					"MemberType": "Function",
 					"Removed": false,
@@ -448350,45 +449393,6 @@
 				{
 					"Class": "Authoring",
 					"Member": "ShowPreliminaryObjects",
-					"MemberType": "Property",
-					"Removed": true,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableCrouching",
-					"MemberType": "Property",
-					"Removed": true,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableSprinting",
-					"MemberType": "Property",
-					"Removed": true,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "AvatarAbilityRules",
-					"Member": "EnableStrafing",
 					"MemberType": "Property",
 					"Removed": true,
 					"Field": "ValueType",
@@ -453725,6 +454729,45 @@
 					}
 				},
 				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
 					"Class": "SerializationService",
 					"Member": "DeserializeInstancesAsync",
 					"MemberType": "Function",
@@ -456044,6 +457087,58 @@
 				{
 					"Class": "AnimationClip",
 					"Member": "Length",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
+					"Member": "AngularDamping",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
+					"Member": "AngularStrength",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
+					"Member": "LinearDamping",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimationConstraint",
+					"Member": "LinearStrength",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -474125,6 +475220,188 @@
 					}
 				},
 				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataInRange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "GetDataSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "ProcessCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "DataChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "MicroProfilerService",
+					"Member": "DataChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "ModerationService",
 					"Member": "BindReviewableContentEventProcessor",
 					"MemberType": "Function",
@@ -486999,6 +488276,32 @@
 				},
 				{
 					"Class": "GroupService",
+					"Member": "GetRolesInGroupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "GroupService",
+					"Member": "GetRolesInGroupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "GroupService",
 					"Member": "PromptJoinAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -490577,6 +491880,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ExpChatFeatureValueChanged",
 					"MemberType": "Event",
 					"Removed": false,
@@ -490778,6 +492094,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "UserService",
+					"Member": "GetUserFromGlobalUserIdAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -507888,19 +509217,6 @@
 					}
 				},
 				{
-					"Class": "VoiceChatInternal",
-					"Member": "SetSpeakerDevice",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
 					"Class": "VoiceChatService",
 					"Member": "joinVoice",
 					"MemberType": "Function",
@@ -510421,6 +511737,19 @@
 						"Category": "Primitive",
 						"Name": "null"
 					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "SetSpeakerDevice",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
 				}
 			]
 		},
@@ -511892,6 +513221,32 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AppUpdateService",
+					"Member": "GetProtocolLaunchUpdateName",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AppUpdateService",
+					"Member": "GetProtocolLaunchUpdateType",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
@@ -532147,6 +533502,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "SendUniverseChatPresetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "ClientToServerMessageReplicateSignalV2",
 					"MemberType": "Event",
 					"Removed": false,
@@ -532322,6 +533690,71 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "ClientToServerUniverseChatMessageSignalV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 6,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -534174,32 +535607,6 @@
 					}
 				},
 				{
-					"Class": "VoiceChatInternal",
-					"Member": "SetSpeakerDevice",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "VoiceChatInternal",
-					"Member": "SetSpeakerDevice",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
 					"Class": "VoiceChatService",
 					"Member": "getInternalChannelId",
 					"MemberType": "Function",
@@ -534623,6 +536030,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "VoiceChatService",
+					"Member": "SubscriberAudioQualitySample",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -542716,6 +544136,32 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "SetSpeakerDevice",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "VoiceChatInternal",
+					"Member": "SetSpeakerDevice",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
