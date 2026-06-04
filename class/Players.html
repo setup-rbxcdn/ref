@@ -2063,9 +2063,10 @@ v0.47.0.380
 version-87de5333d4254860">47</a>
 Add <a class="entity-link deco" href=/ref/class/Players.html><span class=picture title=Class data-type=Class><span class=icon style="--light:url('/ref/icons/light/Players.png');--dark:url('/ref/icons/dark/Players.png')"></span></span>Players</a></li></ul></section><section id=members><header><h2>Members <span class=element-count>68</span></h2></header><div class=members-sections><section id=member-BanAsync class=set><header><h3><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>BanAsync<aside><a class="entity-link hub-link" href=https://create.roblox.com/docs/reference/engine/classes/Players#BanAsync target=_blank rel=external><span class=picture><span class=icon style="--light:url('/ref/images/hub.svg');--dark:url('/ref/images/hub.svg')"></span></span>CreatorHub</a></aside></h3></header><table class="index-card params"><thead><tr><th class=col-name colspan=2>Parameters (<span class=element-count>1</span>)</th></tr></thead><tbody><tr class=row-config><td class=col-name>config</td><td class=col-type><a class="entity-link deco" href=/ref/type/Dictionary.html>Dictionary</a></td></tr></tbody><thead><tr><th class=col-return colspan=3>Returns (<span class=element-count>1</span>)</th></tr></thead><tbody><tr><td class=col-return colspan=3><a class="entity-link deco" href=/ref/type/null.html><span class=picture title="Primitive type" data-type=Type><span class=icon style="--light:url('/ref/icons/light/Value.png');--dark:url('/ref/icons/dark/Value.png')"></span></span>null</a></td></tr></tbody></table><div class=docs><p>The <a href=/ref/class/Players.html#member-BanAsync>Players:BanAsync()</a> method allows you to easily ban users who
 violate your experience's guidelines. You can specify the ban duration,
-enable the ban to propagate to suspected alternate accounts, and provide a
-message to the banned user in accordance with the
-<a href=https://create.roblox.com/docs/players#banning-users>Usage Guidelines</a>. You should
+enable the ban to propagate to suspected alternate accounts, enable the
+ban to temporarily block the banned user's device from rejoining the
+experience, and provide a message to the banned user in accordance with
+the <a href=https://create.roblox.com/docs/players#ban-users>Usage Guidelines</a>. You should
 also post your experience rules somewhere accessible to all users and
 provide a way for them to appeal. This method is enabled and disabled by
 the <a href=/ref/class/Players.html#member-BanningEnabled>Players.BanningEnabled</a> property, which you can toggle in
@@ -2081,11 +2082,14 @@ ban to only the place from which this API is called, configure
 place of the universe, it effectively results in the user being excluded
 from the entirety of the universe, irrespective of whether a universal ban
 is in place or not.</p><h4>Alternative Accounts</h4><p>Users often play under multiple different accounts, known as alternate
-accounts or alt accounts, which are sometimes used to circumvent account
-bans. To help you keep banned users out, the default behavior of this API
-will propagate all bans from the source account you banned to any of their
-suspected alt accounts. You can turn off ban propagations to alt accounts
-by configuring <code>ExcludeAltAccounts</code> to <code>true</code>.</p><h4>Ban Duration</h4><p>Not all transgressions are the same, so not all bans should be the same
+accounts, which are sometimes used to circumvent account bans. To help you
+keep banned users out, the default behavior of this API will propagate all
+bans from the source account you banned to any of their suspected
+alternate accounts. You can turn off ban propagations to alternate
+accounts by configuring <code>ExcludeAltAccounts</code> to <code>true</code>.</p><h4>Device Blocks</h4><p>To help address disruptive users who circumvent alternate account
+detection, set <code>ApplyDeviceBlock</code> to <code>true</code>. This blocks the banned user's
+device from rejoining the experience for 24 hours after the ban is
+applied.</p><h4>Ban Duration</h4><p>Not all transgressions are the same, so not all bans should be the same
 length. This API lets you configure the duration of the ban, in seconds,
 with the <code>Duration</code> field. To specify a permanent ban, set the field to
 <code>-1</code>. You may also want to dynamically configure the ban duration based on
@@ -3654,7 +3658,9 @@ that are unbanned and the scope from which they are unbanned from.</p><p>Unbans 
 scope. For example, an unban with <code>ApplyToUniverse</code> set to <code>true</code> will not
 invalidate a previous ban with <code>ApplyToUniverse</code> set to <code>false</code>. In other
 words, a universe level unban will not invalidate a place level ban. The
-opposite also holds true.</p><p>This method invokes a HTTP call to backend services, which are throttled
+opposite also holds true.</p><p>For the case where a user's device may be blocked by a ban where
+<code>ApplyDeviceBlock</code> was set to <code>true</code>, an unban applied by this method will
+override the device block for the unbanned player.</p><p>This method invokes a HTTP call to backend services, which are throttled
 and may fail. If you are calling this API with multiple UserIds, this
 method will attempt to make this HTTP call for each UserId. It will then
 aggregate any error messages and join them as a comma separated list. For
