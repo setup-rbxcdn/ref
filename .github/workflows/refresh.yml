@@ -10,25 +10,25 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
     - name: "Checkout roar"
-      uses: "actions/checkout@v4"
+      uses: "actions/checkout@v6"
       with:
         repository: "setup-rbxcdn/roar"
         path: "roar"
 
     - name: "Checkout build-archive"
-      uses: "actions/checkout@v4"
+      uses: "actions/checkout@v6"
       with:
         repository: "setup-rbxcdn/build-archive"
         path: "build-archive"
 
     - name: "Checkout ref"
-      uses: "actions/checkout@v4"
+      uses: "actions/checkout@v6"
       with:
         ref: "gh-pages"
         path: "ref"
 
     - name: "Setup Go"
-      uses: "actions/setup-go@v4"
+      uses: "actions/setup-go@v6"
       with:
         go-version-file: "roar/go.mod"
         cache-dependency-path: |
