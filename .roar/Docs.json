@@ -794,7 +794,7 @@
 		},
 		"FaceControls": {
 			"Summary": "<p>The <a href=\"/ref/class/FaceControls.html\">FaceControls</a> object defines a set of properties for controlling\nthe facial expressions of a Dynamic Head.</p>\n",
-			"Description": "<p>The <a href=\"/ref/class/FaceControls.html\">FaceControls</a> object defines a set of properties for controlling\nthe facial expressions of a character head capable of animation.</p>\n<p>The FaceControls properties are based on the Facial Action Coding System\n(FACS), a comprehensive system for describing all visually discernible facial\nmovement based on anatomy. <a href=\"/ref/class/FaceControls.html\">FaceControls</a> properties can only be set\nbetween 0 and 1. Different combinations of the <a href=\"/ref/class/FaceControls.html\">FaceControls</a> property\nvalues create different facial expressions. Recording multiple facial\nexpressions over time creates facial animation.</p>\n<h3>What is an Animatable Head?</h3>\n<p>An animatable head is a <a href=\"/ref/class/MeshPart.html\">MeshPart</a> that implements a facial rig and is\ncapable of playing facial animations and triggering facial expressions. A\n<a href=\"/ref/class/FaceControls.html\">FaceControls</a> object that is a child of a head <a href=\"/ref/class/MeshPart.html\">MeshPart</a> can\nchange the facial expressions of the head.</p>\n<p>A head consists of the following three components:</p>\n<ul>\n<li>Skinned MeshPart instance for the head geometry with an internal rig that\ndeforms this skinned MeshPart</li>\n<li>FaceControls instance that drives the internal rig when properties such as\nFaceControls.JawDrop are changed.</li>\n<li>Cage <a href=\"/ref/class/WrapTarget.html\">WrapTarget</a> instance for tight fitting facial accessories</li>\n</ul>\n<p>In a third-party modeling tool, such as Blender or Maya, an artist can create\na joint-driven facial rig, pose the joints to match each of the individual\nFACS controls, and save as an FBX. When a head <code>.FBX</code> is imported in Studio, a\nfacs-to-joint mapping is created. This mapping deforms the mesh geometry when\nFaceControls properties are changed. The mapping and the facial rig (including\n<a href=\"/ref/class/Bone.html\">Bone</a> instances) are not exposed to developers and can only be accessed\nthrough the FaceControls instance. The <a href=\"/ref/class/MeshPart.html\">MeshPart</a> for a Dynamic Head\nlooks and behaves the same as a regular <a href=\"/ref/class/MeshPart.html\">MeshPart</a> except when a\nFaceControls instance is a child of the MeshPart. Editing the properties of\nthe FaceControls deforms the MeshPart&#39;s geometry. These properties are\navailable to animate in the Animation Editor.</p>\n<p>See <a href=\"https://create.roblox.com/docs/art/characters/facial-animation\">Facial Animation</a> for\nmore information on usage and creation of an animatable head.</p>\n<h3>Animatable Heads in the Marketplace</h3>\n<p>If you are publishing your head to the Marketplace, your head asset must\ninclude a minimum subset of face controls. Roblox&#39;s publishing validation\nrejects assets without the following required poses:</p>\n<ul>\n<li>EyesLookDown</li>\n<li>EyesLookLeft</li>\n<li>EyesLookRight</li>\n<li>EyesLookUp</li>\n<li>JawDrop</li>\n<li>LeftEyeClosed</li>\n<li>LeftLipCornerPuller</li>\n<li>LeftLipStretcher</li>\n<li>LeftLowerLipDepressor</li>\n<li>LeftUpperLipRaiser</li>\n<li>LipsTogether</li>\n<li>Pucker</li>\n<li>RightEyeClosed</li>\n<li>RightLipCornerPuller</li>\n<li>RightLipStretcher</li>\n<li>RightLowerLipDepressor</li>\n<li>RightUpperLipRaiser</li>\n</ul>\n<p>See\n<a href=\"https://create.roblox.com/docs/art/characters/facial-animation/facs-poses-reference\">FACS pose reference</a>\nfor more information on usage and creation of an animatable head.</p>\n"
+			"Description": "<p>The <a href=\"/ref/class/FaceControls.html\">FaceControls</a> object defines a set of properties for controlling\nthe facial expressions of a character head capable of animation.</p>\n<p>The FaceControls properties are based on the Facial Action Coding System\n(FACS), a comprehensive system for describing all visually discernible facial\nmovement based on anatomy. <a href=\"/ref/class/FaceControls.html\">FaceControls</a> properties can only be set\nbetween 0 and 1. Different combinations of the <a href=\"/ref/class/FaceControls.html\">FaceControls</a> property\nvalues create different facial expressions. Recording multiple facial\nexpressions over time creates facial animation.</p>\n<h3>What is an Animatable Head?</h3>\n<p>An animatable head is a <a href=\"/ref/class/MeshPart.html\">MeshPart</a> that implements a facial rig and is\ncapable of playing facial animations and triggering facial expressions. A\n<a href=\"/ref/class/FaceControls.html\">FaceControls</a> object that is a child of a head <a href=\"/ref/class/MeshPart.html\">MeshPart</a> can\nchange the facial expressions of the head.</p>\n<p>A head consists of the following three components:</p>\n<ul>\n<li>Skinned MeshPart instance for the head geometry with an internal rig that\ndeforms this skinned MeshPart</li>\n<li>FaceControls instance that drives the internal rig when properties such as\nFaceControls.JawDrop are changed.</li>\n<li>Cage <a href=\"/ref/class/WrapTarget.html\">WrapTarget</a> instance for tight fitting facial accessories</li>\n</ul>\n<p>In a third-party modeling tool, such as Blender or Maya, an artist can create\na joint-driven facial rig, pose the joints to match each of the individual\nFACS controls, and save as an FBX. When a head <code>.FBX</code> is imported in Studio, a\nfacs-to-joint mapping is created. This mapping deforms the mesh geometry when\nFaceControls properties are changed. The mapping and the facial rig (including\n<a href=\"/ref/class/Bone.html\">Bone</a> instances) are not exposed to developers and can only be accessed\nthrough the FaceControls instance. The <a href=\"/ref/class/MeshPart.html\">MeshPart</a> for a Dynamic Head\nlooks and behaves the same as a regular <a href=\"/ref/class/MeshPart.html\">MeshPart</a> except when a\nFaceControls instance is a child of the MeshPart. Editing the properties of\nthe FaceControls deforms the MeshPart&#39;s geometry. These properties are\navailable to animate in the Animation Editor.</p>\n<p>See <a href=\"https://create.roblox.com/docs/avatar/dynamic-heads\">Facial Animation</a> for\nmore information on usage and creation of an animatable head.</p>\n<h3>Animatable Heads in the Marketplace</h3>\n<p>If you are publishing your head to the Marketplace, your head asset must\ninclude a minimum subset of face controls. Roblox&#39;s publishing validation\nrejects assets without the following required poses:</p>\n<ul>\n<li>EyesLookDown</li>\n<li>EyesLookLeft</li>\n<li>EyesLookRight</li>\n<li>EyesLookUp</li>\n<li>JawDrop</li>\n<li>LeftEyeClosed</li>\n<li>LeftLipCornerPuller</li>\n<li>LeftLipStretcher</li>\n<li>LeftLowerLipDepressor</li>\n<li>LeftUpperLipRaiser</li>\n<li>LipsTogether</li>\n<li>Pucker</li>\n<li>RightEyeClosed</li>\n<li>RightLipCornerPuller</li>\n<li>RightLipStretcher</li>\n<li>RightLowerLipDepressor</li>\n<li>RightUpperLipRaiser</li>\n</ul>\n<p>See\n<a href=\"https://create.roblox.com/docs/avatar/dynamic-heads/facs-poses-reference\">FACS pose reference</a>\nfor more information on usage and creation of an animatable head.</p>\n"
 		},
 		"FaceInstance": {
 			"Summary": "<p>An abstract class from which the <a href=\"/ref/class/Decal.html\">Decal</a> and <a href=\"/ref/class/Texture.html\">Texture</a> classes\ninherit.</p>\n",
@@ -1071,7 +1071,7 @@
 			"Description": "<p><strong>HumanoidDescription</strong> is an object that stores a description of a\n<a href=\"/ref/class/Humanoid.html\">Humanoid</a> for R6 and R15 rigs. It can be\n<a href=\"/ref/class/Humanoid.html#member-ApplyDescriptionAsync\">applied</a> in order to set a rig&#39;s\nscaling, clothing (<a href=\"/ref/class/Shirt.html\">Shirt</a>, <a href=\"/ref/class/Pants.html\">Pants</a>, <a href=\"/ref/class/ShirtGraphic.html\">ShirtGraphic</a>),\n<a href=\"/ref/class/Accessory.html\">Accessories</a>, <a href=\"/ref/class/Animation.html\">Animations</a> and\n<a href=\"/ref/class/BodyColors.html\">BodyColors</a>.</p>\n<p>You can get a HumanoidDescription by using the following functions:</p>\n<ul>\n<li><a href=\"/ref/class/Players.html#member-GetHumanoidDescriptionFromUserIdAsync\">Players:GetHumanoidDescriptionFromUserIdAsync()</a>, for an outfit\ncurrently being worn by a user on Roblox.</li>\n<li><a href=\"/ref/class/Players.html#member-GetHumanoidDescriptionFromOutfitIdAsync\">Players:GetHumanoidDescriptionFromOutfitIdAsync()</a>, for an outfit\ncreated by a user on Roblox.</li>\n<li>You can create a Humanoid rig model from a HumanoidDescription through\n<a href=\"/ref/class/Players.html#member-CreateHumanoidModelFromDescriptionAsync\">Players:CreateHumanoidModelFromDescriptionAsync()</a>.</li>\n</ul>\n<p>See also:</p>\n<ul>\n<li><a href=\"https://create.roblox.com/docs/characters/appearance#humanoiddescription\">HumanoidDescription System</a>,\nfor more information on <a href=\"/ref/class/HumanoidDescription.html\">HumanoidDescription</a>.</li>\n</ul>\n"
 		},
 		"HumanoidRigDescription": {
-			"Description": "<p>Stores the joint mapping, reference T-pose and per-joint properties for a\nbipedal <code>Humanoid</code> character rig. Each of the 22 joints in the rig hierarchy\ncan reference an <code>Instance</code> (typically a <code>Motor6D</code>, <code>AnimationConstraint</code> or\n<code>Bone</code>), define a T-pose adjustment transform, rotation range limits, and\ncarry a size for volumetric visualization and retargeting. For an example\nBlender and Maya rig hierarchy with all optional joints, see\n<a href=\"https://create.roblox.com/docs/art/characters/specifications#higher-fidelity-rigs\">Character specifications - Higher-fidelity rigs</a>.</p>\n<p>Use <code>AutoRig</code> to automatically populate joint references from a character\nmodel, or assign joints individually. Supports both R6 (6-joint) and R15\n(15-joint) rig subsets in addition to the full 22-joint standard set, as well\nas rigs with more than 22 joints by mapping the key subset of joints.</p>\n"
+			"Description": "<p>Stores the joint mapping, reference T-pose and per-joint properties for a\nbipedal <code>Humanoid</code> character rig. Each of the 22 joints in the rig hierarchy\ncan reference an <code>Instance</code> (typically a <code>Motor6D</code>, <code>AnimationConstraint</code> or\n<code>Bone</code>), define a T-pose adjustment transform, rotation range limits, and\ncarry a size for volumetric visualization and retargeting. For an example\nBlender and Maya rig hierarchy with all optional joints, see\n<a href=\"https://create.roblox.com/docs/avatar/character-bodies/specifications#higher-fidelity-rigs\">Character specifications - Higher-fidelity rigs</a>.</p>\n<p>Use <code>AutoRig</code> to automatically populate joint references from a character\nmodel, or assign joints individually. Supports both R6 (6-joint) and R15\n(15-joint) rig subsets in addition to the full 22-joint standard set, as well\nas rigs with more than 22 joints by mapping the key subset of joints.</p>\n"
 		},
 		"IKControl": {
 			"Summary": "<p>Specifies a control to generate a procedural animation pose using Inverse\nKinematics.</p>\n",
@@ -11907,7 +11907,8 @@
 			},
 			"Fire": {
 				"Summary": "<p>Updates the <code>InputAction</code> to the given state and fires the appropriate\nsignals.</p>\n",
-				"Description": "<p>Updates the <code>InputAction</code> to the given state and fires the appropriate\nsignals. This method is most useful for script‑triggered &#34;input&#34; where the\npassed <code>state</code> should trigger events like\n<a href=\"/ref/class/InputAction.html#member-Pressed\">Pressed</a> or\n<a href=\"/ref/class/InputAction.html#member-StateChanged\">StateChanged</a> regardless of whether the\nplayer triggered that state through normal inputs.</p>\n<p>This method will only accept a <code>state</code> parameter that matches the\n<a href=\"/ref/class/InputAction.html#member-Type\">Type</a> and attempting to call it with a mismatched\ntype will cause an error, for example passing a state of <code>0.5</code> when the\n<a href=\"/ref/class/InputAction.html#member-Type\">Type</a> is <a href=\"/ref/enum/InputActionType.html\">Bool</a>.</p>\n<p>Note that this method follows the conditions of\n<a href=\"/ref/class/InputAction.html#member-Pressed\">Pressed</a>,\n<a href=\"/ref/class/InputAction.html#member-Released\">Released</a>, and\n<a href=\"/ref/class/InputAction.html#member-StateChanged\">StateChanged</a>. For example, if you make\nmultiple consecutive calls to <code>Fire()</code> with a state of <code>true</code>,\n<a href=\"/ref/class/InputAction.html#member-StateChanged\">StateChanged</a> will only fire on the first\nstate change and the subsequent calls to <code>Fire()</code> will do nothing.</p>\n"
+				"Description": "<p>Updates the <code>InputAction</code> to the given state and fires the appropriate\nsignals. This method is most useful for script‑triggered &#34;input&#34; where the\npassed <code>state</code> should trigger events like\n<a href=\"/ref/class/InputAction.html#member-Pressed\">Pressed</a> or\n<a href=\"/ref/class/InputAction.html#member-StateChanged\">StateChanged</a> regardless of whether the\nplayer triggered that state through normal inputs.</p>\n<p>This method will only accept a <code>state</code> parameter that matches the\n<a href=\"/ref/class/InputAction.html#member-Type\">Type</a> and attempting to call it with a mismatched\ntype will cause an error, for example passing a state of <code>0.5</code> when the\n<a href=\"/ref/class/InputAction.html#member-Type\">Type</a> is <a href=\"/ref/enum/InputActionType.html\">Bool</a>.</p>\n<p>Note that this method follows the conditions of\n<a href=\"/ref/class/InputAction.html#member-Pressed\">Pressed</a>,\n<a href=\"/ref/class/InputAction.html#member-Released\">Released</a>, and\n<a href=\"/ref/class/InputAction.html#member-StateChanged\">StateChanged</a>. For example, if you make\nmultiple consecutive calls to <code>Fire()</code> with a state of <code>true</code>,\n<a href=\"/ref/class/InputAction.html#member-StateChanged\">StateChanged</a> will only fire on the first\nstate change and the subsequent calls to <code>Fire()</code> will do nothing.</p>\n",
+				"DeprecationMessage": "<p>Use <a href=\"/ref/class/InputBinding.html#member-Fire\">InputBinding:Fire()</a> with a <a href=\"/ref/enum/InputBindingType.html\">Scriptable</a>\nbinding instead.</p>\n"
 			},
 			"GetState": {
 				"Summary": "<p>Returns the current state of the <a href=\"/ref/class/InputAction.html\">InputAction</a>.</p>\n",
@@ -15547,7 +15548,7 @@
 		"PlayerViewService": {
 			"GetDeviceCameraCFrame": {
 				"Summary": "<p>Returns a world space <a href=\"/ref/type/CFrame.html\">CFrame</a> looking at the player&#39;s character.</p>\n",
-				"Description": "<p>Returns a world space <a href=\"/ref/type/CFrame.html\">CFrame</a> looking at the player&#39;s character,\nsuch that setting the current camera&#39;s <a href=\"/ref/type/CFrame.html\">CFrame</a> will view that\ncharacter from the perspective of their device.</p>\n<p>This method leverages the device&#39;s camera and it only functions on mobile\ndevices. If no information is available, for example the user is not on a\nmobile device or they don&#39;t have their camera turned on, this method\nreturns a <a href=\"/ref/type/CFrame.html#member-identity\">CFrame.identity</a>.</p>\n<p>See <a href=\"https://create.roblox.com/docs/resources/roblox-connect\">Roblox Connect</a> for a sample\nimplementation of this method.</p>\n",
+				"Description": "<p>Returns a world space <a href=\"/ref/type/CFrame.html\">CFrame</a> looking at the player&#39;s character,\nsuch that setting the current camera&#39;s <a href=\"/ref/type/CFrame.html\">CFrame</a> will view that\ncharacter from the perspective of their device.</p>\n<p>This method leverages the device&#39;s camera and it only functions on mobile\ndevices. If no information is available, for example the user is not on a\nmobile device or they don&#39;t have their camera turned on, this method\nreturns a <a href=\"/ref/type/CFrame.html#member-identity\">CFrame.identity</a>.</p>\n",
 				"CodeSamples": [
 					"PlayerViewService-GetDeviceCameraCFrame"
 				]
@@ -17940,7 +17941,7 @@
 			},
 			"CanSendCallInviteAsync": {
 				"Summary": "<p>Indicates whether the given <a href=\"/ref/class/Player.html\">Player</a> can invite other players to a\ncall.</p>\n",
-				"Description": "<p>Returns <code>true</code> if the given <a href=\"/ref/class/Player.html\">Player</a> can send a call invite to a\nfriend. You should always use the result of this method before calling\n<a href=\"/ref/class/SocialService.html#member-PromptPhoneBook\">PromptPhoneBook()</a> since the\nability to open the phone book may vary depending on the player.</p>\n<p>See <a href=\"https://create.roblox.com/docs/resources/roblox-connect\">Roblox Connect</a> for a sample\nimplementation of this method.</p>\n",
+				"Description": "<p>Returns <code>true</code> if the given <a href=\"/ref/class/Player.html\">Player</a> can send a call invite to a\nfriend. You should always use the result of this method before calling\n<a href=\"/ref/class/SocialService.html#member-PromptPhoneBook\">PromptPhoneBook()</a> since the\nability to open the phone book may vary depending on the player.</p>\n",
 				"CodeSamples": [
 					"SocialService-PromptPhoneBook"
 				]
@@ -18027,7 +18028,7 @@
 			},
 			"PromptPhoneBook": {
 				"Summary": "<p>Prompts the given <a href=\"/ref/class/Player.html\">Player</a> with the phone book.</p>\n",
-				"Description": "<p>Prompts the given <a href=\"/ref/class/Player.html\">Player</a> with the phone book. If the player\nchooses to call someone, the\n<a href=\"/ref/class/SocialService.html#member-CallInviteStateChanged\">CallInviteStateChanged</a> event\nfires. You should use\n<a href=\"/ref/class/SocialService.html#member-CanSendCallInviteAsync\">CanSendCallInviteAsync()</a>\nprior to calling <a href=\"/ref/class/SocialService.html#member-PromptPhoneBook\">PromptPhoneBook()</a>\nsince the ability to see the phone book may vary depending on the player.</p>\n<p>If a player is not eligible to open the phone book, an error dialog is\nshown.</p>\n<p>See <a href=\"https://create.roblox.com/docs/resources/roblox-connect\">Roblox Connect</a> for a sample\nimplementation of this method.</p>\n",
+				"Description": "<p>Prompts the given <a href=\"/ref/class/Player.html\">Player</a> with the phone book. If the player\nchooses to call someone, the\n<a href=\"/ref/class/SocialService.html#member-CallInviteStateChanged\">CallInviteStateChanged</a> event\nfires. You should use\n<a href=\"/ref/class/SocialService.html#member-CanSendCallInviteAsync\">CanSendCallInviteAsync()</a>\nprior to calling <a href=\"/ref/class/SocialService.html#member-PromptPhoneBook\">PromptPhoneBook()</a>\nsince the ability to see the phone book may vary depending on the player.</p>\n<p>If a player is not eligible to open the phone book, an error dialog is\nshown.</p>\n",
 				"CodeSamples": [
 					"SocialService-PromptPhoneBook"
 				]
@@ -23926,6 +23927,10 @@
 			"Summary": "<p>This enum is used by <a href=\"/ref/class/ScrollingFrame.html#member-ElasticBehavior\">ScrollingFrame.ElasticBehavior</a> to control when\nelastic scrolling is active on touch‑enabled devices.</p>\n",
 			"Description": "<p>This enum is used by <a href=\"/ref/class/ScrollingFrame.html#member-ElasticBehavior\">ScrollingFrame.ElasticBehavior</a> to control when\nelastic scrolling is active on touch‑enabled devices.</p>\n"
 		},
+		"EmitterPositionType": {
+			"Summary": "<p>Defines where and how an <a href=\"/ref/class/AudioEmitter.html\">AudioEmitter</a> is positioned when sending out\nspatial audio.</p>\n",
+			"Description": "<p>Defines where and how an <a href=\"/ref/class/AudioEmitter.html\">AudioEmitter</a> is positioned when sending out\nspatial audio.</p>\n"
+		},
 		"EnviromentalPhysicsThrottle": {
 			"Summary": "<p>Used to control the throttle rate of Roblox&#39;s physics engine.</p>\n",
 			"Description": "<p>The <code>EnviromentalPhysicsThrottle</code> enum is used with\n<a href=\"/ref/class/PhysicsSettings.html#member-PhysicsEnvironmentalThrottle\">PhysicsSettings.PhysicsEnvironmentalThrottle</a>, controlling how\naggressively the engine skips physics simulation steps to reduce CPU load.</p>\n"
@@ -24109,6 +24114,10 @@
 			"Summary": "<p>This enum is used by <a href=\"/ref/class/InputAction.html#member-Type\">InputAction.Type</a> to determine which input data\ntype the <a href=\"/ref/class/InputAction.html\">InputAction</a> will receive.</p>\n",
 			"Description": "<p>This enum is used by <a href=\"/ref/class/InputAction.html#member-Type\">InputAction.Type</a> to determine which input data\ntype the <a href=\"/ref/class/InputAction.html\">InputAction</a> will receive.</p>\n"
 		},
+		"InputBindingType": {
+			"Summary": "<p>This enum is used by <a href=\"/ref/class/InputBinding.html#member-BindingType\">InputBinding.BindingType</a> to determine whether the\nbinding responds to hardware input or is driven programmatically.</p>\n",
+			"Description": "<p>This enum is used by <a href=\"/ref/class/InputBinding.html#member-BindingType\">InputBinding.BindingType</a> to determine whether the\n<a href=\"/ref/class/InputBinding.html\">InputBinding</a> responds to hardware input devices or is driven\nprogrammatically via <a href=\"/ref/class/InputBinding.html#member-Fire\">InputBinding:Fire()</a>.</p>\n"
+		},
 		"InputSink": {},
 		"InputType": {
 			"Summary": "<p>The InputType Enum controls the SurfaceInputs of <a href=\"/ref/class/Part.html\">Part</a>.</p>\n",
@@ -24138,6 +24147,7 @@
 			"Summary": "<p>Byte keycodes that represent the key or button involved in user input.</p>\n",
 			"Description": "<p>The <code>KeyCode</code> enum contains a list of byte keycodes that represent the key or\nbutton involved in user input. This enum also includes buttons and axes\npresent on gamepads, and 96 <code>World[]</code> values for non-standard buttons.</p>\n<p>Note that keyboard values refer to the physical position of buttons on a\nstandard QWERTY keyboard. Provided the user&#39;s system is configured correctly,\nthe location of keys (such as\n<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>) will remain the same on\nother keyboard types such as Dvorak keyboards where it would map to\n<kbd>,</kbd><kbd>A</kbd><kbd>O</kbd><kbd>E</kbd>.</p>\n<p>See also <a href=\"/ref/class/InputObject.html\">InputObject</a>, used for keyboard and gamepad input.</p>\n"
 		},
+		"KeyCodeStringFormat": {},
 		"KeyInterpolationMode": {
 			"Summary": "<p>Describes the interpolation method between two keys.</p>\n",
 			"Description": "<p>Describes the interpolation method for a <a href=\"/ref/class/FloatCurve.html\">FloatCurve</a> or\n<a href=\"/ref/class/RotationCurve.html\">RotationCurve</a> segment between the key for which this mode is set and\nthe next key in the curve.</p>\n"
@@ -24171,6 +24181,10 @@
 		"ListenerLocation": {
 			"Summary": "<p>Enum used with <a href=\"/ref/class/SoundService.html#member-DefaultListenerLocation\">SoundService.DefaultListenerLocation</a> to determine where\nan <a href=\"/ref/class/AudioListener.html\">AudioListener</a> is placed by default.</p>\n",
 			"Description": "<p>Enum used with <a href=\"/ref/class/SoundService.html#member-DefaultListenerLocation\">SoundService.DefaultListenerLocation</a> to determine where\nan <a href=\"/ref/class/AudioListener.html\">AudioListener</a> is placed by default.</p>\n"
+		},
+		"ListenerPositionType": {
+			"Summary": "<p>Defines where and how an <a href=\"/ref/class/AudioListener.html\">AudioListener</a> is positioned when receiving\nspatial audio.</p>\n",
+			"Description": "<p>Defines where and how an <a href=\"/ref/class/AudioListener.html\">AudioListener</a> is positioned when receiving\nspatial audio.</p>\n"
 		},
 		"ListenerType": {
 			"Summary": "<p>Defines where and how the listener is positioned when picking up spatial\naudio.</p>\n",
@@ -27249,6 +27263,14 @@
 				"Summary": "<p>Scrolling is elastic when there is content to be scrolled to.</p>\n"
 			}
 		},
+		"EmitterPositionType": {
+			"Instance": {
+				"Summary": "<p>Uses a specified <a href=\"/ref/class/Instance.html\">Instance</a>.</p>\n"
+			},
+			"Parent": {
+				"Summary": "<p>Uses the parent <a href=\"/ref/class/Instance.html\">Instance</a> of the <a href=\"/ref/class/AudioEmitter.html\">AudioEmitter</a>.</p>\n"
+			}
+		},
 		"EnviromentalPhysicsThrottle": {
 			"Always": {
 				"Summary": "<p>Maximum throttling; physics is effectively frozen.</p>\n"
@@ -28290,6 +28312,14 @@
 				"Summary": "<p>The <a href=\"/ref/class/InputAction.html\">InputAction</a> will receive <a href=\"/ref/type/Vector2.html\">Vector2</a> values\nrepresenting the absolute pixel (<strong>X</strong>, <strong>Y</strong>) coordinates of a pointer\ninput in the viewport.</p>\n"
 			}
 		},
+		"InputBindingType": {
+			"Automatic": {
+				"Summary": "<p>The <a href=\"/ref/class/InputBinding.html\">InputBinding</a> responds to physical input devices (keyboard,\nmouse, gamepad, touch) based on its <a href=\"/ref/class/InputBinding.html#member-KeyCode\">KeyCode</a>\nor composite direction properties. This is the default.</p>\n"
+			},
+			"Scriptable": {
+				"Summary": "<p>The <a href=\"/ref/class/InputBinding.html\">InputBinding</a> ignores hardware input and instead receives state\nupdates exclusively through the <a href=\"/ref/class/InputBinding.html#member-Fire\">InputBinding:Fire()</a> method.</p>\n"
+			}
+		},
 		"InputSink": {
 			"Activate": {},
 			"All": {},
@@ -29017,6 +29047,10 @@
 				"Summary": "<p>The <code>0</code> key.</p>\n"
 			}
 		},
+		"KeyCodeStringFormat": {
+			"Abbreviated": {},
+			"Default": {}
+		},
 		"KeyInterpolationMode": {
 			"Constant": {
 				"Summary": "<p>The segment starting at this key will constantly evaluate to the value set\nat this key.</p>\n"
@@ -29133,6 +29167,14 @@
 			},
 			"None": {
 				"Summary": "<p>No <a href=\"/ref/class/AudioListener.html\">AudioListener</a> will be created by default, but they can be\ncreated separately by scripts.</p>\n"
+			}
+		},
+		"ListenerPositionType": {
+			"Instance": {
+				"Summary": "<p>Uses a specified <a href=\"/ref/class/Instance.html\">Instance</a>.</p>\n"
+			},
+			"Parent": {
+				"Summary": "<p>Uses the parent <a href=\"/ref/class/Instance.html\">Instance</a> of the <a href=\"/ref/class/AudioEmitter.html\">AudioEmitter</a>.</p>\n"
 			}
 		},
 		"ListenerType": {
