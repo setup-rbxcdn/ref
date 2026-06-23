@@ -1848,6 +1848,10 @@
 		"ScriptContext": {
 			"Description": "<p>This service controls all <a href=\"/ref/class/BaseScript.html\">BaseScript</a> objects. Most of the properties\nand methods of this service are locked for internal use.</p>\n"
 		},
+		"ScriptDebuggerService": {
+			"Summary": "<p>Provides programmatic breakpoint management, execution control, and runtime\ninspection of Luau scripts during a playtest.</p>\n",
+			"Description": "<p><code>ScriptDebuggerService</code> exposes the Roblox Studio Luau debugger for\nprogrammatic use. It provides functionality for breakpoint management,\nexecution control, and runtime state inspection.</p>\n<p><strong>APIs in this class are currently in beta and are subject to breaking\nchanges.</strong></p>\n<h3>Breakpoint Propagation</h3>\n<p>Breakpoints set in the <strong>edit</strong> <a href=\"/ref/class/DataModel.html\">DataModel</a> are set on the specific\nscript instance and do not propagate to clones, but they propagate to\ncorresponding scripts in play data models at the start of a playtest.\nBreakpoints set in a <strong>play</strong> <a href=\"/ref/class/DataModel.html\">DataModel</a> propagate to script clones in\nthe same data model and to corresponding scripts in other data models.</p>\n<h3>Parallel Threads</h3>\n<p>The behavior of this API with parallel Luau is undefined.</p>\n"
+		},
 		"ScriptDocument": {
 			"Description": "<p>A <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a> instance is a proxy of the document of a Studio\nScript Editor. It&#39;s different from the <a href=\"/ref/class/LuaSourceContainer.html\">LuaSourceContainer</a> open in the\neditor in that it represents the ephemeral state of an open document, and its\nrepresentation is in a format that&#39;s more suited for reading and editing code\nthan executing it. In particular, <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a> reflects any changes\nthat have been made to the open script in Drafts Mode, which the source\nproperty doesn&#39;t.</p>\n<p>The Script Editor itself exists and changes on a different thread than any\n<a href=\"/ref/class/DataModel.html\">DataModel</a>, so the <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a> replicates the open Script\nEditor, but it isn&#39;t the open editor. Because of the replication, there&#39;s\nsometimes a slight delay between changing the text in the editor and updating\nthe <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a>. The delay usually occurs because the\n<a href=\"/ref/class/DataModel.html\">DataModel</a> is busy, and it&#39;s almost always extremely small, but it\nstill exists.</p>\n<p>The existence of a <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a> indicates that a document is open in\nthe Script Editor. All <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a> instances have\n<a href=\"/ref/class/ScriptEditorService.html\">ScriptEditorService</a> as its parent. Each instance adheres to the\nfollowing encoding conventions:</p>\n<ul>\n<li>All text in <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a> is UTF-8 encoded.</li>\n<li>All line indices are 1-indexed.</li>\n<li>All character indices are 1-indexed and count UTF-8 bytes, not graphemes, so\nthe same warning from <a href=\"/ref/class/TextBox.html#member-CursorPosition\">TextBox.CursorPosition</a> applies: many Unicode\ncharacters take more than one byte.</li>\n<li>All ranges are inclusive of their start position and exclusive of their end\nposition, so start == end implies an empty range.</li>\n</ul>\n<p>All APIs for <a href=\"/ref/class/ScriptDocument.html\">ScriptDocument</a> are at <strong>Plugin</strong> level security.</p>\n"
 		},
@@ -7665,7 +7669,7 @@
 			},
 			"ServerRestartScheduled": {
 				"Summary": "<p>Fires on the server when the server has been scheduled to restart.\nProvides the scheduled restart time, source, and custom attributes.</p>\n",
-				"Description": "<p>Fires when the server has been scheduled to restart, for example when you\nrestart servers from the Creator Hub or\n<a href=\"https://create.roblox.com/docs/cloud/reference/features/universes#Restarts_LaunchRestart\">Open Cloud</a>\nto\n<a href=\"https://create.roblox.com/docs/projects/update-games\">release an experience update</a>.</p>\n<p>You can use this event to inform players on the server of the impending\nrestart. You could then let them save their progress or teleport them to\nupdated servers at the most convenient time for your game.</p>\n",
+				"Description": "<p>Fires when the server has been scheduled to restart, for example when you\nrestart servers from the Creator Hub or\n<a href=\"https://create.roblox.com/docs/cloud/reference/features/universes#Restarts_LaunchRestart\">Open Cloud</a>\nto <a href=\"https://create.roblox.com/docs/projects/update-games\">release an experience update</a>.</p>\n<p>You can use this event to inform players on the server of the impending\nrestart. You could then let them save their progress or teleport them to\nupdated servers at the most convenient time for your game.</p>\n",
 				"CodeSamples": [
 					"DataModel-ServerRestartScheduled1"
 				]
@@ -7959,7 +7963,10 @@
 			"MetalnessMapContent": {},
 			"NormalMap": {},
 			"NormalMapContent": {},
-			"Rotation": {},
+			"Rotation": {
+				"Summary": "<p>Rotates the decal texture.</p>\n",
+				"Description": "<p>This property controls the rotation angle of the decal texture in degrees.\nRotation is applied to the UV coordinates in the clockwise direction.</p>\n"
+			},
 			"RoughnessMap": {},
 			"RoughnessMapContent": {},
 			"Shiny": {
@@ -17203,6 +17210,56 @@
 				"Description": "<p>Limits how long a script is allowed to run without yielding.</p>\n"
 			}
 		},
+		"ScriptDebuggerService": {
+			"AddBreakpoint": {
+				"Summary": "<p>Adds a breakpoint to a script. If a breakpoint already exists on the same\nscript and line, its data is replaced.</p>\n",
+				"Description": "<p>Adds a breakpoint to the specified script. If a breakpoint already exists\non the same script and line, its data is replaced with the new\nconfiguration.</p>\n<p>Errors if the script instance or breakpoint argument is invalid.</p>\n"
+			},
+			"ClearBreakpoints": {
+				"Summary": "<p>Removes all breakpoints across all scripts.</p>\n",
+				"Description": "<p>Removes all breakpoints across all scripts.</p>\n"
+			},
+			"Evaluate": {
+				"Summary": "<p>Evaluates a Luau expression in a stack frame&#39;s context.</p>\n",
+				"Description": "<p>Evaluates a Luau expression in the context of the specified stack frame,\nor globally if no <code>frameId</code> is provided.</p>\n<p>Errors if the expression has a syntax error or <code>frameId</code> is invalid.</p>\n"
+			},
+			"GetRootVariables": {
+				"Summary": "<p>Returns the root variables (locals, upvalues, globals) for a stack frame.</p>\n",
+				"Description": "<p>Returns the root variables (locals, upvalues, globals) for the specified\nstack frame. Each variable includes a <code>VariablesReference</code> field; if\ngreater than <code>0</code>, pass it to\n<a href=\"/ref/class/ScriptDebuggerService.html#member-GetVariables\">GetVariables()</a> to drill into\nchildren.</p>\n<p>Errors if <code>frameId</code> is invalid. Returns empty if the <a href=\"/ref/class/DataModel.html\">DataModel</a> is\nnot stopped at a breakpoint or exception, or when stopped via\n<a href=\"/ref/class/ScriptDebuggerService.html#member-Pause\">Pause()</a>.</p>\n"
+			},
+			"GetStackTrace": {
+				"Summary": "<p>Returns the call stack for a paused thread.</p>\n",
+				"Description": "<p>Returns the call stack for a paused thread, ordered innermost (current\nexecution point) to outermost. Use <code>startFrame</code> (1‑based) for paginated\nretrieval of large stacks.</p>\n<p>Errors if <code>threadId</code> or <code>startFrame</code> is invalid.</p>\n"
+			},
+			"GetThreads": {
+				"Summary": "<p>Returns all paused Luau threads.</p>\n",
+				"Description": "<p>Returns all paused Luau threads. Should be called when the\n<a href=\"/ref/class/DataModel.html\">DataModel</a> is stopped (typically inside\n<a href=\"/ref/class/ScriptDebuggerService.html#member-OnStopped\">OnStopped</a>). Returns empty results\nwhen the <a href=\"/ref/class/DataModel.html\">DataModel</a> is not stopped at a breakpoint or exception, or\nwhen stopped via <a href=\"/ref/class/ScriptDebuggerService.html#member-Pause\">Pause()</a>.</p>\n"
+			},
+			"GetVariables": {
+				"Summary": "<p>Drills into structured variables (tables, <a href=\"/ref/class/Instance.html\">Instances</a>).</p>\n",
+				"Description": "<p>Drills into structured variables such as tables and\n<a href=\"/ref/class/Instance.html\">Instances</a>. Pass a <code>VariablesReference</code> obtained from a\nscript variable returned by\n<a href=\"/ref/class/ScriptDebuggerService.html#member-GetRootVariables\">GetRootVariables()</a> or a\nprevious call to this method.</p>\n"
+			},
+			"OnStopped": {
+				"Summary": "<p>The primary callback for reacting to debugger pauses. Returns a resume\naction.</p>\n",
+				"Description": "<p>The primary mechanism for reacting to debugger pauses. Set this to a\nfunction that receives a <code>stopped</code> payload and returns a script resume\naction dictionary indicating how execution should continue.</p>\n<p>Only one <code>OnStopped</code> per <a href=\"/ref/class/DataModel.html\">DataModel</a> is allowed; it is not inherited\nfrom the edit <a href=\"/ref/class/DataModel.html\">DataModel</a>.</p>\n<p>If the callback returns nothing or throws,\n<a href=\"/ref/enum/DebuggerResumeType.html\">DebuggerResumeType.Resume</a> is assumed. Avoid modifying the\n<a href=\"/ref/class/DataModel.html\">DataModel</a>, throwing unhandled errors, or calling async yielding\nfunctions inside this callback.</p>\n<h4>Late-Set Behavior</h4>\n<p>If <code>OnStopped</code> is set while the <a href=\"/ref/class/DataModel.html\">DataModel</a> is already stopped at a\nbreakpoint and the previous value was <code>nil</code>, the callback runs\nimmediately.</p>\n"
+			},
+			"Pause": {
+				"Summary": "<p>Requests the debugger to pause at the next safe point.</p>\n",
+				"Description": "<p>Requests the debugger to pause at the next safe point. This method is\nasynchronous and returns immediately. When the thread pauses,\n<a href=\"/ref/class/ScriptDebuggerService.html#member-OnStopped\">OnStopped</a> fires with reason\n<a href=\"/ref/enum/ScriptStoppedReason.html\">ScriptStoppedReason.Pause</a>. Has no effect if already stopped.</p>\n<p>Only meaningful when the <a href=\"/ref/class/DataModel.html\">DataModel</a> is running during a playtest.\nCalling <code>Pause()</code> while already stopped at a breakpoint has no effect.</p>\n"
+			},
+			"RemoveBreakpoint": {
+				"Summary": "<p>Removes the breakpoint on the given script and line.</p>\n",
+				"Description": "<p>Removes the breakpoint at the specified line in the given script. Returns\n<code>false</code> if no breakpoint exists on the line (no-op). Errors if the script\ninstance or line number is invalid.</p>\n"
+			},
+			"Resumed": {
+				"Summary": "<p>Fires when a previously paused thread resumes execution.</p>\n",
+				"Description": "<p>Fires when a previously paused thread resumes. After this event, all\n<code>frameId</code> values, <code>VariablesReference</code> values, and script variable objects\nfrom that thread are invalidated. Re-fetch them the next time the\n<a href=\"/ref/class/DataModel.html\">DataModel</a> stops if needed.</p>\n<p>Avoid modifying the <a href=\"/ref/class/DataModel.html\">DataModel</a>, throwing unhandled errors, or\ncalling async yielding functions inside this event handler.</p>\n"
+			},
+			"SetExceptionBreakMode": {
+				"Summary": "<p>Controls when the debugger pauses on exceptions.</p>\n",
+				"Description": "<p>Sets the exception break mode on <strong>all</strong> <a href=\"/ref/class/DataModel.html\">DataModels</a>. Use\n<a href=\"/ref/enum/DebugBreakModeType.html\">DebugBreakModeType</a> to specify when the debugger should pause on\nexceptions.</p>\n"
+			}
+		},
 		"ScriptDocument": {
 			"CloseAsync": {
 				"Summary": "<p>Requests that the editor associated with this document close. Yields the\ncurrent thread until the editor responds to the request.</p>\n",
@@ -22135,8 +22192,8 @@
 				"Description": "<p>This method returns an array of gamepads that are connected and enabled\nfor <a href=\"/ref/class/GuiObject.html\">GuiObject</a> navigation, but does not influence navigation\ncontrols. This list is in descending order of priority, meaning it can be\niterated over to determine which gamepad should have navigation control.</p>\n<p>See also\n<a href=\"/ref/class/UserInputService.html#member-SetNavigationGamepad\">SetNavigationGamepad()</a>,\n<a href=\"/ref/class/UserInputService.html#member-IsNavigationGamepad\">IsNavigationGamepad()</a>, and\n<a href=\"/ref/class/UserInputService.html#member-GetConnectedGamepads\">GetConnectedGamepads()</a>.</p>\n"
 			},
 			"GetStringForKeyCode": {
-				"Summary": "<p>Returns a string representing a key the user should press in order to\ninput a given <a href=\"/ref/enum/KeyCode.html\">KeyCode</a>.</p>\n",
-				"Description": "<p>This method returns a string representing a key the user should press in\norder to input a given <a href=\"/ref/enum/KeyCode.html\">KeyCode</a>, keeping in mind their keyboard\nlayout. For key codes that require some modifier to be held, this method\nreturns the key to be pressed in addition to the modifier. See the\nexamples below for further explanation.</p>\n<p>When using Roblox with a non‑QWERTY keyboard layout, key codes are mapped\nto equivalent QWERTY positions. For example, pressing <kbd>A</kbd> on an\nAZERTY keyboard results in <a href=\"/ref/enum/KeyCode.html\">KeyCode.Q</a>, potentially leading to\nmismatched information on experience UI elements. This method solves the\nissue by providing the actual key to be pressed while using non‑QWERTY\nkeyboard layouts.</p>\n<table size=\"small\">\n  <thead>\n    <tr>\n      <th>KeyCode</th>\n      <th>QWERTY Return</th>\n      <th>AZERTY Return</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Q</a></td>\n      <td><code>Q</code></td>\n      <td><code>A</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.W</a></td>\n      <td><code>W</code></td>\n      <td><code>Z</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Equals</a></td>\n      <td><code>=</code></td>\n      <td><code>=</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.At</a></td>\n      <td><code>2</code> because <code>@</code> is typed with <kbd>Shift</kbd><kbd>2</kbd></td>\n      <td><code>É</code></td>\n    </tr>\n  </tbody>\n</table>\n<h4>Gamepad Usage</h4>\n<p><code>GetStringForKeyCode()</code> returns the string mapping for the <a href=\"/ref/enum/KeyCode.html\">KeyCode</a>\nfor the most recently connected gamepad. If the connected controller is\nnot supported, the method returns the default string conversion for the\nrequested key code.</p>\n<p>The following example shows how you can map custom assets for\n<a href=\"/ref/enum/KeyCode.html\">ButtonA</a>:</p>\n<pre><code>local UserInputService = game:GetService(&#34;UserInputService&#34;)\n\nlocal imageLabel = script.Parent\nlocal key = Enum.KeyCode.ButtonA\n\nlocal mappings = {\n\tButtonA = &#34;rbxasset://BUTTON_A_ASSET&#34;, -- Replace with the desired ButtonA asset\n\tButtonCross = &#34;rbxasset://BUTTON_CROSS_ASSET&#34;  -- Replace with the desired ButtonCross asset\n}\n\nlocal mappedKey = UserInputService:GetStringForKeyCode(key)\nlocal image = mappings[mappedKey]\n\nimageLabel.Image = image\n</code></pre>\n<h4>Gamepad Mappings</h4>\n<p>The directional pad key codes do not have any differences based on device.\n<a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonSelect</a> has slightly different behavior in some cases.\nUse both PlayStation mappings to ensure users see the correct buttons.</p>\n<table size=\"small\">\n  <thead>\n    <tr>\n      <th>KeyCode</th>\n      <th>PlayStation Return Value</th>\n      <th>Xbox Return Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonA</a></td>\n      <td><code>ButtonCross</code></td>\n      <td><code>ButtonA</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonB</a></td>\n      <td><code>ButtonCircle</code></td>\n      <td><code>ButtonB</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonX</a></td>\n      <td><code>ButtonSquare</code></td>\n      <td><code>ButtonX</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonY</a></td>\n      <td><code>ButtonTriangle</code></td>\n      <td><code>ButtonY</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL1</a></td>\n      <td><code>ButtonL1</code></td>\n      <td><code>ButtonLB</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL2</a></td>\n      <td><code>ButtonL2</code></td>\n      <td><code>ButtonLT</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL3</a></td>\n      <td><code>ButtonL3</code></td>\n      <td><code>ButtonLS</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR1</a></td>\n      <td><code>ButtonR1</code></td>\n      <td><code>ButtonRB</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR2</a></td>\n      <td><code>ButtonR2</code></td>\n      <td><code>ButtonRT</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR3</a></td>\n      <td><code>ButtonR3</code></td>\n      <td><code>ButtonRS</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonStart</a></td>\n      <td><code>ButtonOptions</code></td>\n      <td><code>ButtonStart</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonSelect</a></td>\n      <td><code>ButtonTouchpad</code> and <code>ButtonShare</code></td>\n      <td><code>ButtonSelect</code></td>\n    </tr>\n  </tbody>\n</table>\n<h4>Legacy System Images</h4>\n<p>When using a <a href=\"/ref/enum/KeyCode.html\">KeyCode</a> that may be better represented as an image,\nsuch as for an <a href=\"/ref/class/ImageLabel.html\">ImageLabel</a> in a user interface, you can use the\nfollowing legacy icons. However, it&#39;s recommended that you use\n<a href=\"/ref/class/UserInputService.html#member-GetImageForKeyCode\">GetImageForKeyCode()</a> as a\nmore modern, cross‑platform method to retrieve Xbox and PlayStation\ncontroller icons.</p>\n<table size=\"small\">\n  <thead>\n    <tr>\n      <th>KeyCode</th>\n      <th>Asset ID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonX</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxX.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonY</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxY.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonA</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxA.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonB</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxB.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadLeft</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadLeft.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadRight</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadRight.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadUp</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadUp.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadDown</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadDown.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonSelect</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxView.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonStart</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxmenu.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL1</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLB.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR1</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRB.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL2</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLT.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR2</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRT.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL3</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLS.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR3</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRS.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Thumbstick1</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLSDirectional.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Thumbstick2</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRSDirectional.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Backspace</a></td>\n      <td><code>rbxasset://textures/ui/Controls/backspace.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Return</a></td>\n      <td><code>rbxasset://textures/ui/Controls/return.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.LeftShift</a></td>\n      <td><code>rbxasset://textures/ui/Controls/shift.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.RightShift</a></td>\n      <td><code>rbxasset://textures/ui/Controls/shift.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Tab</a></td>\n      <td><code>rbxasset://textures/ui/Controls/tab.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Quote</a></td>\n      <td><code>rbxasset://textures/ui/Controls/apostrophe.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Comma</a></td>\n      <td><code>rbxasset://textures/ui/Controls/comma.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Backquote</a></td>\n      <td><code>rbxasset://textures/ui/Controls/graveaccent.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Period</a></td>\n      <td><code>rbxasset://textures/ui/Controls/period.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Space</a></td>\n      <td><code>rbxasset://textures/ui/Controls/spacebar.png</code></td>\n    </tr>\n  </tbody>\n</table>\n"
+				"Summary": "<p>Returns a string representing a key the user should press in order to\ninput a given <a href=\"/ref/enum/KeyCode.html\">KeyCode</a>, optionally in an abbreviated format.</p>\n",
+				"Description": "<p>This method returns a string representing a key the user should press in\norder to input a given <a href=\"/ref/enum/KeyCode.html\">KeyCode</a>, keeping in mind their keyboard\nlayout. For key codes that require some modifier to be held, this method\nreturns the key to be pressed in addition to the modifier. See the\nexamples below for further explanation.</p>\n<p>When using Roblox with a non‑QWERTY keyboard layout, key codes are mapped\nto equivalent QWERTY positions. For example, pressing <kbd>A</kbd> on an\nAZERTY keyboard results in <a href=\"/ref/enum/KeyCode.html\">KeyCode.Q</a>, potentially leading to\nmismatched information on experience UI elements. This method solves the\nissue by providing the actual key to be pressed while using non‑QWERTY\nkeyboard layouts.</p>\n<table size=\"small\">\n  <thead>\n    <tr>\n      <th>KeyCode</th>\n      <th>QWERTY Return</th>\n      <th>AZERTY Return</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Q</a></td>\n      <td><code>Q</code></td>\n      <td><code>A</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.W</a></td>\n      <td><code>W</code></td>\n      <td><code>Z</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Equals</a></td>\n      <td><code>=</code></td>\n      <td><code>=</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.At</a></td>\n      <td><code>2</code> because <code>@</code> is typed with <kbd>Shift</kbd><kbd>2</kbd></td>\n      <td><code>É</code></td>\n    </tr>\n  </tbody>\n</table>\n<h4>Abbreviated Format</h4>\n<p>When <code>format</code> is set to <a href=\"/ref/enum/KeyCodeStringFormat.html\">KeyCodeStringFormat.Abbreviated</a>, the method\nreturns shortened key names suitable for compact UI elements, for example\n<code>&#34;LCtrl&#34;</code> instead of <code>&#34;LeftControl&#34;</code>, <code>&#34;Bksp&#34;</code> instead of <code>&#34;Backspace&#34;</code>,\nor <code>&#34;Esc&#34;</code> instead of <code>&#34;Escape&#34;</code>. If no abbreviation exists for the given\nkey code, the default string is returned.</p>\n<h4>Gamepad Usage</h4>\n<p><code>GetStringForKeyCode()</code> returns the string mapping for the <a href=\"/ref/enum/KeyCode.html\">KeyCode</a>\nfor the most recently connected gamepad. If the connected controller is\nnot supported, the method returns the default string conversion for the\nrequested key code.</p>\n<p>The following example shows how you can map custom assets for\n<a href=\"/ref/enum/KeyCode.html\">ButtonA</a>:</p>\n<pre><code>local UserInputService = game:GetService(&#34;UserInputService&#34;)\n\nlocal imageLabel = script.Parent\nlocal key = Enum.KeyCode.ButtonA\n\nlocal mappings = {\n\tButtonA = &#34;rbxasset://BUTTON_A_ASSET&#34;, -- Replace with the desired ButtonA asset\n\tButtonCross = &#34;rbxasset://BUTTON_CROSS_ASSET&#34;  -- Replace with the desired ButtonCross asset\n}\n\nlocal mappedKey = UserInputService:GetStringForKeyCode(key)\nlocal image = mappings[mappedKey]\n\nimageLabel.Image = image\n</code></pre>\n<h4>Gamepad Mappings</h4>\n<p>The directional pad key codes do not have any differences based on device.\n<a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonSelect</a> has slightly different behavior in some cases.\nUse both PlayStation mappings to ensure users see the correct buttons.</p>\n<table size=\"small\">\n  <thead>\n    <tr>\n      <th>KeyCode</th>\n      <th>PlayStation Return Value</th>\n      <th>Xbox Return Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonA</a></td>\n      <td><code>ButtonCross</code></td>\n      <td><code>ButtonA</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonB</a></td>\n      <td><code>ButtonCircle</code></td>\n      <td><code>ButtonB</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonX</a></td>\n      <td><code>ButtonSquare</code></td>\n      <td><code>ButtonX</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonY</a></td>\n      <td><code>ButtonTriangle</code></td>\n      <td><code>ButtonY</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL1</a></td>\n      <td><code>ButtonL1</code></td>\n      <td><code>ButtonLB</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL2</a></td>\n      <td><code>ButtonL2</code></td>\n      <td><code>ButtonLT</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL3</a></td>\n      <td><code>ButtonL3</code></td>\n      <td><code>ButtonLS</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR1</a></td>\n      <td><code>ButtonR1</code></td>\n      <td><code>ButtonRB</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR2</a></td>\n      <td><code>ButtonR2</code></td>\n      <td><code>ButtonRT</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR3</a></td>\n      <td><code>ButtonR3</code></td>\n      <td><code>ButtonRS</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonStart</a></td>\n      <td><code>ButtonOptions</code></td>\n      <td><code>ButtonStart</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonSelect</a></td>\n      <td><code>ButtonTouchpad</code> and <code>ButtonShare</code></td>\n      <td><code>ButtonSelect</code></td>\n    </tr>\n  </tbody>\n</table>\n<h4>Legacy System Images</h4>\n<p>When using a <a href=\"/ref/enum/KeyCode.html\">KeyCode</a> that may be better represented as an image,\nsuch as for an <a href=\"/ref/class/ImageLabel.html\">ImageLabel</a> in a user interface, you can use the\nfollowing legacy icons. However, it&#39;s recommended that you use\n<a href=\"/ref/class/UserInputService.html#member-GetImageForKeyCode\">GetImageForKeyCode()</a> as a\nmore modern, cross‑platform method to retrieve Xbox and PlayStation\ncontroller icons.</p>\n<table size=\"small\">\n  <thead>\n    <tr>\n      <th>KeyCode</th>\n      <th>Asset ID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonX</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxX.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonY</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxY.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonA</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxA.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonB</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxB.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadLeft</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadLeft.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadRight</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadRight.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadUp</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadUp.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.DPadDown</a></td>\n      <td><code>rbxasset://textures/ui/Controls/dpadDown.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonSelect</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxView.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonStart</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxmenu.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL1</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLB.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR1</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRB.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL2</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLT.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR2</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRT.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonL3</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLS.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.ButtonR3</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRS.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Thumbstick1</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxLSDirectional.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Thumbstick2</a></td>\n      <td><code>rbxasset://textures/ui/Controls/xboxRSDirectional.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Backspace</a></td>\n      <td><code>rbxasset://textures/ui/Controls/backspace.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Return</a></td>\n      <td><code>rbxasset://textures/ui/Controls/return.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.LeftShift</a></td>\n      <td><code>rbxasset://textures/ui/Controls/shift.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.RightShift</a></td>\n      <td><code>rbxasset://textures/ui/Controls/shift.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Tab</a></td>\n      <td><code>rbxasset://textures/ui/Controls/tab.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Quote</a></td>\n      <td><code>rbxasset://textures/ui/Controls/apostrophe.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Comma</a></td>\n      <td><code>rbxasset://textures/ui/Controls/comma.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Backquote</a></td>\n      <td><code>rbxasset://textures/ui/Controls/graveaccent.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Period</a></td>\n      <td><code>rbxasset://textures/ui/Controls/period.png</code></td>\n    </tr>\n    <tr>\n      <td><a href=\"/ref/enum/KeyCode.html\">KeyCode.Space</a></td>\n      <td><code>rbxasset://textures/ui/Controls/spacebar.png</code></td>\n    </tr>\n  </tbody>\n</table>\n"
 			},
 			"GetSupportedGamepadKeyCodes": {
 				"Summary": "<p>Returns an array of <a href=\"/ref/enum/KeyCode.html\">KeyCodes</a> that the gamepad associated\nwith the given <a href=\"/ref/enum/UserInputType.html\">UserInputType</a> supports.</p>\n",
@@ -23218,10 +23275,6 @@
 				"Summary": "<p>Fires when persistent models have been sent to the specified player.</p>\n",
 				"Description": "<p>This event fires every time a player has been sent all current persistent\nmodels and part-less atomic models. The <code>player</code> parameter indicates which\nplayer has received all applicable instances.</p>\n<p>Note that experience loading happens before persistent loading, and firing\nof the <a href=\"/ref/class/DataModel.html#member-Loaded\">DataModel.Loaded</a> event does not indicate that all\npersistent models are present.</p>\n"
 			},
-			"PhysicsImprovedSleep": {
-				"Summary": "<p>Controls whether the improved partial physics sleep algorithm is enabled.</p>\n",
-				"Description": "<p>Controls whether the physics engine uses an improved algorithm for partial\nsleep, the process by which the engine stops simulating parts that are no\nlonger actively moving. Enabling this property can reduce CPU overhead in\ngames with many near-stationary parts.</p>\n"
-			},
 			"PhysicsSteppingMethod": {
 				"Summary": "<p>Sets how the solver will advance the physics simulation forward in time.</p>\n",
 				"Description": "<p>Sets how the solver will advance the physics simulation forward in time.\nThis option is not scriptable and must be set from the\n<strong>PhysicsSteppingMethod</strong> property of <strong>Workspace</strong> within Studio. See\n<a href=\"https://create.roblox.com/docs/physics/adaptive-timestepping\">Adaptive Timestepping</a> for\ndetails.</p>\n<p>Note that when assemblies of different simulation rates become connected\nvia <a href=\"/ref/class/Constraint.html\">Constraints</a> or collisions, the combined mechanism\nwill default to the highest simulation rate for stability.</p>\n"
@@ -23859,6 +23912,10 @@
 			"Summary": "<p>Indicates the type of data store request being made.</p>\n",
 			"Description": "<p>Indicates the type of data store request being made.</p>\n"
 		},
+		"DebugBreakModeType": {
+			"Summary": "<p>Controls when the debugger pauses on exceptions.</p>\n",
+			"Description": "<p>Used with <a href=\"/ref/class/ScriptDebuggerService.html#member-SetExceptionBreakMode\">ScriptDebuggerService:SetExceptionBreakMode()</a> to control\nwhen the debugger pauses on exceptions. The mode applies to all\n<a href=\"/ref/class/DataModel.html\">DataModels</a>.</p>\n"
+		},
 		"DebuggerEndReason": {
 			"Summary": "<p>Reason for the end of the debugger session.</p>\n",
 			"Description": "<p>Reason for the end of the debugger session.</p>\n"
@@ -23871,6 +23928,10 @@
 		"DebuggerPauseReason": {
 			"Summary": "<p>Reason that the DataModel was paused.</p>\n",
 			"Description": "<p>Reason that the DataModel was paused.</p>\n"
+		},
+		"DebuggerResumeType": {
+			"Summary": "<p>Specifies how the debugger should resume execution after a pause.</p>\n",
+			"Description": "<p>Returned from the <a href=\"/ref/class/ScriptDebuggerService.html#member-OnStopped\">ScriptDebuggerService.OnStopped</a> callback (via\n<a href=\"/ref/type/ScriptResumeAction.html\">ScriptResumeAction</a>) to control how execution resumes after a\ndebugger pause.</p>\n"
 		},
 		"DebuggerStatus": {
 			"Summary": "<p>Result of a debugger request.</p>\n",
@@ -24150,8 +24211,8 @@
 			"Description": "<p>This enum is used by <a href=\"/ref/class/InputAction.html#member-Type\">InputAction.Type</a> to determine which input data\ntype the <a href=\"/ref/class/InputAction.html\">InputAction</a> will receive.</p>\n"
 		},
 		"InputBindingType": {
-			"Summary": "<p>This enum is used by <a href=\"/ref/class/InputBinding.html#member-BindingType\">InputBinding.BindingType</a> to determine whether the\nbinding responds to hardware input or is driven programmatically.</p>\n",
-			"Description": "<p>This enum is used by <a href=\"/ref/class/InputBinding.html#member-BindingType\">InputBinding.BindingType</a> to determine whether the\n<a href=\"/ref/class/InputBinding.html\">InputBinding</a> responds to hardware input devices or is driven\nprogrammatically via <a href=\"/ref/class/InputBinding.html#member-Fire\">InputBinding:Fire()</a>.</p>\n"
+			"Summary": "<p>This enum is used by <a href=\"/ref/class/InputBinding.html#member-Type\">InputBinding.Type</a> to determine whether the\nbinding responds to hardware input or is driven programmatically.</p>\n",
+			"Description": "<p>This enum is used by <a href=\"/ref/class/InputBinding.html#member-Type\">InputBinding.Type</a> to determine whether the\n<a href=\"/ref/class/InputBinding.html\">InputBinding</a> responds to hardware input devices or is driven\nprogrammatically via <a href=\"/ref/class/InputBinding.html#member-Fire\">InputBinding:Fire()</a>.</p>\n"
 		},
 		"InputSink": {},
 		"InputType": {
@@ -24182,7 +24243,10 @@
 			"Summary": "<p>Byte keycodes that represent the key or button involved in user input.</p>\n",
 			"Description": "<p>The <code>KeyCode</code> enum contains a list of byte keycodes that represent the key or\nbutton involved in user input. This enum also includes buttons and axes\npresent on gamepads, and 96 <code>World[]</code> values for non-standard buttons.</p>\n<p>Note that keyboard values refer to the physical position of buttons on a\nstandard QWERTY keyboard. Provided the user&#39;s system is configured correctly,\nthe location of keys (such as\n<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>) will remain the same on\nother keyboard types such as Dvorak keyboards where it would map to\n<kbd>,</kbd><kbd>A</kbd><kbd>O</kbd><kbd>E</kbd>.</p>\n<p>See also <a href=\"/ref/class/InputObject.html\">InputObject</a>, used for keyboard and gamepad input.</p>\n"
 		},
-		"KeyCodeStringFormat": {},
+		"KeyCodeStringFormat": {
+			"Summary": "<p>Determines the string format returned by\n<a href=\"/ref/class/UserInputService.html#member-GetStringForKeyCode\">UserInputService:GetStringForKeyCode()</a>.</p>\n",
+			"Description": "<p>This enum is used with <a href=\"/ref/class/UserInputService.html#member-GetStringForKeyCode\">UserInputService:GetStringForKeyCode()</a> to\ncontrol how the returned key string is formatted. The <code>Abbreviated</code> option\nprovides shortened labels suitable for compact UI elements such as keybind\nhints, tooltips, or on-screen button prompts where space is limited.</p>\n"
+		},
 		"KeyInterpolationMode": {
 			"Summary": "<p>Describes the interpolation method between two keys.</p>\n",
 			"Description": "<p>Describes the interpolation method for a <a href=\"/ref/class/FloatCurve.html\">FloatCurve</a> or\n<a href=\"/ref/class/RotationCurve.html\">RotationCurve</a> segment between the key for which this mode is set and\nthe next key in the curve.</p>\n"
@@ -24588,6 +24652,14 @@
 		"ScreenOrientation": {
 			"Summary": "<p>The preference of in-game screen orientation on hand-held devices.</p>\n",
 			"Description": "<p>Indicates what orientation the game prefers to be played on mobile devices.</p>\n"
+		},
+		"ScriptStoppedReason": {
+			"Summary": "<p>Describes why the debugger paused execution.</p>\n",
+			"Description": "<p>Passed in the <a href=\"/ref/type/ScriptDebugStopped.html\">ScriptDebugStopped</a> payload to the\n<a href=\"/ref/class/ScriptDebuggerService.html#member-OnStopped\">ScriptDebuggerService.OnStopped</a> callback, indicating what triggered\nthe pause.</p>\n"
+		},
+		"ScriptVariableScope": {
+			"Summary": "<p>Indicates the scope category of a variable returned by the debugger.</p>\n",
+			"Description": "<p>Used in <a href=\"/ref/type/ScriptVariable.html\">ScriptVariable</a> to classify the scope of a variable returned\nby <a href=\"/ref/class/ScriptDebuggerService.html#member-GetRootVariables\">ScriptDebuggerService:GetRootVariables()</a> or\n<a href=\"/ref/class/ScriptDebuggerService.html#member-GetVariables\">ScriptDebuggerService:GetVariables()</a>. Children of a variable inherit\nthe parent&#39;s scope.</p>\n"
 		},
 		"ScrollBarInset": {
 			"Summary": "<p>This enum is used with <a href=\"/ref/class/ScrollingFrame.html#member-HorizontalScrollBarInset\">ScrollingFrame.HorizontalScrollBarInset</a> and\n<a href=\"/ref/class/ScrollingFrame.html#member-VerticalScrollBarInset\">ScrollingFrame.VerticalScrollBarInset</a> to indicate whether the canvas\nshould be inset by\n<a href=\"/ref/class/ScrollingFrame.html#member-ScrollBarThickness\">ScrollBarThickness</a> for the\nrespective scroll bar.</p>\n",
@@ -26835,6 +26907,17 @@
 				"Summary": "<p>Refers to <a href=\"/ref/class/GlobalDataStore.html#member-UpdateAsync\">UpdateAsync()</a>.</p>\n"
 			}
 		},
+		"DebugBreakModeType": {
+			"Always": {
+				"Summary": "<p>Break on all exceptions.</p>\n"
+			},
+			"Never": {
+				"Summary": "<p>Never break on exceptions.</p>\n"
+			},
+			"Unhandled": {
+				"Summary": "<p>Break only on unhandled exceptions.</p>\n"
+			}
+		},
 		"DebuggerEndReason": {
 			"ClientRequest": {
 				"Summary": "<p>Client requested connection termination.</p>\n"
@@ -26892,6 +26975,20 @@
 			},
 			"Unknown": {
 				"Summary": "<p>Pausing for a reason not covered by other values.</p>\n"
+			}
+		},
+		"DebuggerResumeType": {
+			"Resume": {
+				"Summary": "<p>Resume execution normally without stepping.</p>\n"
+			},
+			"StepInto": {
+				"Summary": "<p>Step into the next function call on the specified thread.</p>\n"
+			},
+			"StepOut": {
+				"Summary": "<p>Step out of the current function on the specified thread.</p>\n"
+			},
+			"StepOver": {
+				"Summary": "<p>Step over the current line on the specified thread.</p>\n"
 			}
 		},
 		"DebuggerStatus": {
@@ -29083,8 +29180,12 @@
 			}
 		},
 		"KeyCodeStringFormat": {
-			"Abbreviated": {},
-			"Default": {}
+			"Abbreviated": {
+				"Summary": "<p>Returns a shortened key string when available, for example <code>&#34;LCtrl&#34;</code>,\n<code>&#34;Bksp&#34;</code>, or <code>&#34;Esc&#34;</code>.</p>\n"
+			},
+			"Default": {
+				"Summary": "<p>Default behavior which returns the full key string, for example\n<code>&#34;LeftControl&#34;</code>, <code>&#34;Backspace&#34;</code>, or <code>&#34;Escape&#34;</code>.</p>\n"
+			}
 		},
 		"KeyInterpolationMode": {
 			"Constant": {
@@ -30933,6 +31034,34 @@
 			},
 			"Sensor": {
 				"Summary": "<p>A preference where the game is displayed depending on the best match to\nthe device&#39;s current orientation - either landscape (left/right) or\nportrait.</p>\n"
+			}
+		},
+		"ScriptStoppedReason": {
+			"Breakpoint": {
+				"Summary": "<p>Execution stopped because a user-defined breakpoint was hit.</p>\n"
+			},
+			"Entry": {
+				"Summary": "<p>Execution stopped at a script&#39;s entry point.</p>\n"
+			},
+			"Exception": {
+				"Summary": "<p>Execution stopped because an exception was thrown (governed by the current\n<a href=\"/ref/enum/DebugBreakModeType.html\">DebugBreakModeType</a>).</p>\n"
+			},
+			"Pause": {
+				"Summary": "<p>Execution stopped because <a href=\"/ref/class/ScriptDebuggerService.html#member-Pause\">ScriptDebuggerService:Pause()</a> was\ncalled.</p>\n"
+			},
+			"Step": {
+				"Summary": "<p>Execution stopped after completing a step operation.</p>\n"
+			}
+		},
+		"ScriptVariableScope": {
+			"Global": {
+				"Summary": "<p>A global variable.</p>\n"
+			},
+			"Local": {
+				"Summary": "<p>A local variable declared in the current function scope.</p>\n"
+			},
+			"Upvalue": {
+				"Summary": "<p>A variable captured from an enclosing function scope.</p>\n"
 			}
 		},
 		"ScrollBarInset": {
