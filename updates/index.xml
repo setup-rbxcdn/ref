@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.729.0.7290838</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-4bb3958a2cde4efb</link><description>21 revisions to the API.</description><guid>version-4bb3958a2cde4efb</guid><pubDate>Mon, 06 Jul 2026 16:03:25 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.730.0.7300790</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-ed7d8193e8564b1f</link><description>49 revisions to the API.</description><guid>version-ed7d8193e8564b1f</guid><pubDate>Mon, 13 Jul 2026 11:53:07 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-0">Add Function AnalyticsService.LogJourneyEvent</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-1">Add Function AudioSpeechToText.GetInputPins</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-2">Add Function AudioSpeechToText.GetOutputPins</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-3">Add Function AudioTextToSpeech.GetInputPins</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-4">Add Function AudioTextToSpeech.GetOutputPins</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-5">Add Function AvatarCreationService.PromptCreateMakeupAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-6">Add Class EditorSourceService</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-7">Add Function GlobalDataStore.BatchGetAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-8">Add Property ImportSession.UploadSource</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-9">Add Property InputAction.PreferredBinding</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-10">Add Function InputAction.GetPreferredBindingList</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-11">Add Property InputBinding.DisplayImage</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-12">Add Property InputBinding.DisplayName</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-13">Add Event MarketplaceService.NativePurchaseFinishedV2</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-14">Add Event MarketplaceService.NativePurchaseFinishedWithLocalPlayerV2</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-15">Add Property PartOperation.Content</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-16">Add Event RenderingTest.TestFramesCountdownAboutToStart</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-17">Add Function ScriptDocument.ReviewableTextEditsAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-18">Add Property Studio.EnableOvertypeMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-19">Add Function StudioDeviceSimulatorService.GetRegisteredSimulators</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-20">Add Function StudioDeviceSimulatorService.RegisterSimulator</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-21">Add Function StudioDeviceSimulatorService.UnregisterSimulator</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-22">Add Event StudioDeviceSimulatorService.SimulatorRegistryChanged</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-23">Add Function Terrain.FillBallSlot</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-24">Add Function Terrain.FillBlockSlot</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-25">Add Function Terrain.FillCylinderSlot</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-26">Add Function Terrain.FillRegionSlot</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-27">Add Function Terrain.FillWedgeSlot</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-28">Add Function TextChatService.IsProtectedChatEnabled</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-29">Change Function TextChatService.SendExpChatLoadSuccess</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-30">Change Function TextChatService.SendExpChatMessageClientRendered</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-31">Change Function TextChatService.SendExpChatWindowScroll</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-32">Change Function TextChatService.SendExpChatWindowStatusChange</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-33">Add Property Workspace.PredictiveStreamingMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-34">Add Enum PredictiveStreamingMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-38">Add Enum PromptCreateOutfitResult</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-46">Remove EnumItem SlimTintMode.ContentId</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-47">Remove EnumItem SlimTintMode.MeshResourcePtr</a></li>
+					<li><a href="/ref/updates/2026.html#version-ed7d8193e8564b1f-48">Change EnumItem SlimTintMode.Zone</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-ed7d8193e8564b1f">All changes</a>
+			]]></content:encoded></item><item><title>v0.729.0.7290838</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-4bb3958a2cde4efb</link><description>21 revisions to the API.</description><guid>version-4bb3958a2cde4efb</guid><pubDate>Mon, 06 Jul 2026 16:03:25 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-4bb3958a2cde4efb-0">Add Event AnimationTrack.ParameterChanged</a></li>
 					<li><a href="/ref/updates/2026.html#version-4bb3958a2cde4efb-1">Add Event Animator.OnGraphParameterUpdate</a></li>
@@ -4725,40 +4768,4 @@
 					<li><a href="/ref/updates/2025.html#version-cc8f13de4c4e43de-12">Add Enum PredictionMode</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-cc8f13de4c4e43de">All changes</a>
-			]]></content:encoded></item><item><title>v0.681.0.6810803</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-cdc4b050a70a4a70</link><description>35 revisions to the API.</description><guid>version-cdc4b050a70a4a70</guid><pubDate>Tue, 08 Jul 2025 11:22:17 -0700</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-0">Add Function AdService.RegisterAdOpportunityAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-1">Add Function AdService.UnregisterAdOpportunity</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-2">Remove Function AssetImportService.StartSessionWithPrompt</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-3">Remove Function AssetService.CheckTextureAlphaAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-4">Change Event AuroraScript.SynchronizeState</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-5">Add Property AuroraScriptObject.PriorFrameInvoked</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-6">Add Property AuroraService.BufferFullInputCount</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-7">Add Property AuroraService.OutOfOrderInputCount</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-8">Add Property AuroraService.TooOldInputCount</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-9">Add Function AuroraService.PlayInputRecording</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-10">Add Function AuroraService.StartInputRecording</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-11">Add Function AuroraService.StopInputRecording</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-12">Add Property AvatarBodyRules.CustomEyebrowEnabled</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-13">Add Property AvatarBodyRules.CustomEyebrowId</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-14">Add Property AvatarBodyRules.CustomEyelashEnabled</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-15">Add Property AvatarBodyRules.CustomEyelashId</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-16">Add Property AvatarBodyRules.CustomMoodEnabled</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-17">Add Property AvatarBodyRules.CustomMoodId</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-18">Change Property AvatarSettings.Loaded</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-20">Change Function BasePart.GetRootPart</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-22">Remove Class CommandInstance</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-23">Remove Class CommandService</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-24">Add Property Humanoid.RotationType</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-25">Add Property Lighting.ExtendLightRangeTo120</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-26">Add Event Player.NotifyStreamingUnpinned</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-27">Add Function SafetyService.DecodeAvatarMovementProto</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-28">Change Function StudioService.ShowPlaceVersionHistoryDialog</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-29">Add Property TextBox.LocalizedPlaceholderText</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-30">Add Function UGCValidationService.ValidatePartBBoxAfterFullFacs</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-31">Change Property VideoFrame.VideoContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-33">Change Property Workspace.LuauTypeCheckMode</a></li>
-					<li><a href="/ref/updates/2025.html#version-cdc4b050a70a4a70-34">Change Property Workspace.UseNewLuauTypeSolver</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-cdc4b050a70a4a70">All changes</a>
 			]]></content:encoded></item></channel></rss>

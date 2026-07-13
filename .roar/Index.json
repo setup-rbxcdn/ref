@@ -3840,6 +3840,84 @@
 				},
 				{
 					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
 					"Member": "LogOnboardingFunnelStepEvent",
 					"MemberType": "Function",
 					"Removed": false,
@@ -22685,6 +22763,32 @@
 				},
 				{
 					"Class": "AudioSpeechToText",
+					"Member": "GetInputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AudioSpeechToText",
+					"Member": "GetOutputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AudioSpeechToText",
 					"Member": "WiringChanged",
 					"MemberType": "Event",
 					"Removed": false,
@@ -22928,6 +23032,32 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "AudioTextToSpeech",
+					"Member": "GetInputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AudioTextToSpeech",
+					"Member": "GetOutputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
 					}
 				},
 				{
@@ -27801,6 +27931,59 @@
 				{
 					"Class": "AvatarCreationService",
 					"Member": "PromptCreateAvatarAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -71221,6 +71404,17 @@
 				}
 			]
 		},
+		"EditorSourceService": {
+			"Name": "EditorSourceService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			]
+		},
 		"EmotesPages": {
 			"Name": "EmotesPages",
 			"Removed": true,
@@ -80603,6 +80797,45 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "GlobalDataStore",
+					"Member": "BatchGetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "GlobalDataStore",
+					"Member": "BatchGetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GlobalDataStore",
+					"Member": "BatchGetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
 				{
 					"Class": "GlobalDataStore",
 					"Member": "GetAsync",
@@ -97906,6 +98139,19 @@
 			"Related": [
 				{
 					"Class": "ImportSession",
+					"Member": "UploadSource",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ImportSession",
 					"Member": "Cancel",
 					"MemberType": "Function",
 					"Removed": false,
@@ -99035,6 +99281,19 @@
 				},
 				{
 					"Class": "InputAction",
+					"Member": "PreferredBinding",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "InputBinding"
+					}
+				},
+				{
+					"Class": "InputAction",
 					"Member": "Type",
 					"MemberType": "Property",
 					"Removed": false,
@@ -99100,6 +99359,32 @@
 				},
 				{
 					"Class": "InputAction",
+					"Member": "GetPreferredBindingList",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "InputAction",
+					"Member": "GetPreferredBindingList",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "InputAction",
 					"Member": "GetState",
 					"MemberType": "Function",
 					"Removed": false,
@@ -99138,6 +99423,19 @@
 			],
 			"Related": [
 				{
+					"Class": "InputAction",
+					"Member": "PreferredBinding",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "InputBinding"
+					}
+				},
+				{
 					"Class": "InputBinding",
 					"Member": "Backward",
 					"MemberType": "Property",
@@ -99161,6 +99459,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "InputBinding",
+					"Member": "DisplayImage",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "InputBinding",
+					"Member": "DisplayName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -101091,6 +101415,7 @@
 				"DynamicTextureAlpha",
 				"DynamicTextureLayerAlpha",
 				"EditableService",
+				"EditorSourceService",
 				"EncodingService",
 				"EngineAPICloudProcessingService",
 				"EulerRotationCurve",
@@ -107072,6 +107397,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "NativePurchaseFinished",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -122325,6 +122663,58 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "NativePurchaseFinishedWithLocalPlayer",
 					"MemberType": "Event",
 					"Removed": false,
@@ -122347,6 +122737,45 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedWithLocalPlayerV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedWithLocalPlayerV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedWithLocalPlayerV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -137678,6 +138107,19 @@
 				},
 				{
 					"Class": "PartOperation",
+					"Member": "Content",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "PartOperation",
 					"Member": "DCDPropertyData",
 					"MemberType": "Property",
 					"Removed": false,
@@ -142518,6 +142960,19 @@
 				},
 				{
 					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
 					"Member": "LogOnboardingFunnelStepEvent",
 					"MemberType": "Function",
 					"Removed": false,
@@ -142706,6 +143161,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Class",
 						"Name": "Player"
@@ -168899,6 +169367,32 @@
 				},
 				{
 					"Class": "ScriptDocument",
+					"Member": "ReviewableTextEditsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ScriptDocument",
+					"Member": "ReviewableTextEditsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "ScriptDocument",
 					"Member": "SelectionChanged",
 					"MemberType": "Event",
 					"Removed": false,
@@ -183351,6 +183845,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "EnableOvertypeMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "EnableSelectionTooltips",
 					"MemberType": "Property",
 					"Removed": false,
@@ -187441,6 +187948,19 @@
 				},
 				{
 					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetRegisteredSimulators",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
 					"Member": "GetResolutionAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -187463,6 +187983,45 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "DeviceSimulatorScalingMode"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				},
 				{
@@ -187637,6 +188196,32 @@
 				{
 					"Class": "StudioDeviceSimulatorService",
 					"Member": "StopSimulationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -196502,6 +197087,58 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillBlock",
 					"MemberType": "Function",
 					"Removed": false,
@@ -196542,6 +197179,58 @@
 				{
 					"Class": "Terrain",
 					"Member": "FillBlock",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBlockSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBlockSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBlockSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBlockSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -196619,6 +197308,71 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillRegion",
 					"MemberType": "Function",
 					"Removed": false,
@@ -196671,6 +197425,58 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillRegionSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Region3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillRegionSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillRegionSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillRegionSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillWedge",
 					"MemberType": "Function",
 					"Removed": false,
@@ -196711,6 +197517,58 @@
 				{
 					"Class": "Terrain",
 					"Member": "FillWedge",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -204339,6 +205197,19 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "IsProtectedChatEnabled",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "OnUserChatSettingUpdateAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -204460,6 +205331,32 @@
 					"Member": "SendExpChatLoadSuccess",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatLoadSuccess",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatLoadSuccess",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -204512,12 +205409,51 @@
 					"Member": "SendExpChatMessageClientRendered",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatMessageClientRendered",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowScroll",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowScroll",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -204583,6 +205519,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowStatusChange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowStatusChange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -233513,6 +234475,19 @@
 				},
 				{
 					"Class": "Workspace",
+					"Member": "PredictiveStreamingMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PredictiveStreamingMode"
+					}
+				},
+				{
+					"Class": "Workspace",
 					"Member": "PrimalPhysicsSolver",
 					"MemberType": "Property",
 					"Removed": false,
@@ -239073,6 +240048,27 @@
 					{
 						"Class": "AnalyticsService",
 						"Member": "LogFunnelStepEvent",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
+			"LogJourneyEvent": {
+				"Class": "AnalyticsService",
+				"Name": "LogJourneyEvent",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AnalyticsService",
+						"Member": "LogJourneyEvent",
 						"MemberType": "Function",
 						"Removed": false,
 						"Field": "Parameters",
@@ -247479,6 +248475,18 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetInputPins": {
+				"Class": "AudioSpeechToText",
+				"Name": "GetInputPins",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetOutputPins": {
+				"Class": "AudioSpeechToText",
+				"Name": "GetOutputPins",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"IsDictationEnabled": {
 				"Class": "AudioSpeechToText",
 				"Name": "IsDictationEnabled",
@@ -247542,6 +248550,18 @@
 			"GetConnectedWires": {
 				"Class": "AudioTextToSpeech",
 				"Name": "GetConnectedWires",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetInputPins": {
+				"Class": "AudioTextToSpeech",
+				"Name": "GetInputPins",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetOutputPins": {
+				"Class": "AudioTextToSpeech",
+				"Name": "GetOutputPins",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -250450,6 +251470,27 @@
 						"Type": {
 							"Category": "Class",
 							"Name": "HumanoidDescription"
+						}
+					}
+				]
+			},
+			"PromptCreateMakeupAsync": {
+				"Class": "AvatarCreationService",
+				"Name": "PromptCreateMakeupAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AvatarCreationService",
+						"Member": "PromptCreateMakeupAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
 						}
 					}
 				]
@@ -272053,6 +273094,12 @@
 			}
 		},
 		"GlobalDataStore": {
+			"BatchGetAsync": {
+				"Class": "GlobalDataStore",
+				"Name": "BatchGetAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetAsync": {
 				"Class": "GlobalDataStore",
 				"Name": "GetAsync",
@@ -281258,6 +282305,12 @@
 				"Name": "UploadProgress",
 				"MemberType": "Event",
 				"Removed": false
+			},
+			"UploadSource": {
+				"Class": "ImportSession",
+				"Name": "UploadSource",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"ImporterBaseSettings": {
@@ -281776,6 +282829,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetPreferredBindingList": {
+				"Class": "InputAction",
+				"Name": "GetPreferredBindingList",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetState": {
 				"Class": "InputAction",
 				"Name": "GetState",
@@ -281787,6 +282846,27 @@
 				"Name": "InputBindingsChanged",
 				"MemberType": "Event",
 				"Removed": false
+			},
+			"PreferredBinding": {
+				"Class": "InputAction",
+				"Name": "PreferredBinding",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "InputAction",
+						"Member": "PreferredBinding",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Class",
+							"Name": "InputBinding"
+						}
+					}
+				]
 			},
 			"Pressed": {
 				"Class": "InputAction",
@@ -281859,6 +282939,18 @@
 			"ClampMagnitudeToOne": {
 				"Class": "InputBinding",
 				"Name": "ClampMagnitudeToOne",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"DisplayImage": {
+				"Class": "InputBinding",
+				"Name": "DisplayImage",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"DisplayName": {
+				"Class": "InputBinding",
+				"Name": "DisplayName",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -287052,9 +288144,36 @@
 					}
 				]
 			},
+			"NativePurchaseFinishedV2": {
+				"Class": "MarketplaceService",
+				"Name": "NativePurchaseFinishedV2",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "NativePurchaseFinishedV2",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"NativePurchaseFinishedWithLocalPlayer": {
 				"Class": "MarketplaceService",
 				"Name": "NativePurchaseFinishedWithLocalPlayer",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"NativePurchaseFinishedWithLocalPlayerV2": {
+				"Class": "MarketplaceService",
+				"Name": "NativePurchaseFinishedWithLocalPlayerV2",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -294513,6 +295632,12 @@
 			"ComponentIndex": {
 				"Class": "PartOperation",
 				"Name": "ComponentIndex",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Content": {
+				"Class": "PartOperation",
+				"Name": "Content",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -305740,6 +306865,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"TestFramesCountdownAboutToStart": {
+				"Class": "RenderingTest",
+				"Name": "TestFramesCountdownAboutToStart",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"Ticket": {
 				"Class": "RenderingTest",
 				"Name": "Ticket",
@@ -308335,6 +309466,12 @@
 			"RequestSetSelectionAsync": {
 				"Class": "ScriptDocument",
 				"Name": "RequestSetSelectionAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReviewableTextEditsAsync": {
+				"Class": "ScriptDocument",
+				"Name": "ReviewableTextEditsAsync",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -315541,6 +316678,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"EnableOvertypeMode": {
+				"Class": "Studio",
+				"Name": "EnableOvertypeMode",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"EnableSelectionTooltips": {
 				"Class": "Studio",
 				"Name": "EnableSelectionTooltips",
@@ -317299,6 +318442,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetRegisteredSimulators": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "GetRegisteredSimulators",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetResolutionAsync": {
 				"Class": "StudioDeviceSimulatorService",
 				"Name": "GetResolutionAsync",
@@ -317325,6 +318474,12 @@
 						}
 					}
 				]
+			},
+			"RegisterSimulator": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "RegisterSimulator",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"RemoveDeviceAsync": {
 				"Class": "StudioDeviceSimulatorService",
@@ -317392,9 +318547,21 @@
 					}
 				]
 			},
+			"SimulatorRegistryChanged": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "SimulatorRegistryChanged",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"StopSimulationAsync": {
 				"Class": "StudioDeviceSimulatorService",
 				"Name": "StopSimulationAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"UnregisterSimulator": {
+				"Class": "StudioDeviceSimulatorService",
+				"Name": "UnregisterSimulator",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -321188,6 +322355,12 @@
 					}
 				]
 			},
+			"FillBallSlot": {
+				"Class": "Terrain",
+				"Name": "FillBallSlot",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"FillBlock": {
 				"Class": "Terrain",
 				"Name": "FillBlock",
@@ -321208,6 +322381,12 @@
 						}
 					}
 				]
+			},
+			"FillBlockSlot": {
+				"Class": "Terrain",
+				"Name": "FillBlockSlot",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"FillCylinder": {
 				"Class": "Terrain",
@@ -321230,6 +322409,12 @@
 					}
 				]
 			},
+			"FillCylinderSlot": {
+				"Class": "Terrain",
+				"Name": "FillCylinderSlot",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"FillRegion": {
 				"Class": "Terrain",
 				"Name": "FillRegion",
@@ -321251,6 +322436,12 @@
 					}
 				]
 			},
+			"FillRegionSlot": {
+				"Class": "Terrain",
+				"Name": "FillRegionSlot",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"FillWedge": {
 				"Class": "Terrain",
 				"Name": "FillWedge",
@@ -321271,6 +322462,12 @@
 						}
 					}
 				]
+			},
+			"FillWedgeSlot": {
+				"Class": "Terrain",
+				"Name": "FillWedgeSlot",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"Friction": {
 				"Class": "Terrain",
@@ -324711,6 +325908,12 @@
 				"Class": "TextChatService",
 				"Name": "IsLegacyChatDisabled",
 				"MemberType": "Property",
+				"Removed": false
+			},
+			"IsProtectedChatEnabled": {
+				"Class": "TextChatService",
+				"Name": "IsProtectedChatEnabled",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"MessageReceived": {
@@ -338259,6 +339462,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "RolloutState"
+						}
+					}
+				]
+			},
+			"PredictiveStreamingMode": {
+				"Class": "Workspace",
+				"Name": "PredictiveStreamingMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Workspace",
+						"Member": "PredictiveStreamingMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PredictiveStreamingMode"
 						}
 					}
 				]
@@ -358960,6 +360184,35 @@
 				}
 			]
 		},
+		"PredictiveStreamingMode": {
+			"Name": "PredictiveStreamingMode",
+			"Removed": false,
+			"ItemsByValue": [
+				"Default",
+				"Enabled",
+				"Disabled"
+			],
+			"ItemsByIndex": [
+				"Default",
+				"Enabled",
+				"Disabled"
+			],
+			"Related": [
+				{
+					"Class": "Workspace",
+					"Member": "PredictiveStreamingMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PredictiveStreamingMode"
+					}
+				}
+			]
+		},
 		"PreferredInput": {
 			"Name": "PreferredInput",
 			"Removed": false,
@@ -359390,6 +360643,28 @@
 				"PurchaseFailure",
 				"UnknownFailure",
 				"TokenInvalid"
+			]
+		},
+		"PromptCreateOutfitResult": {
+			"Name": "PromptCreateOutfitResult",
+			"Removed": false,
+			"ItemsByValue": [
+				"Success",
+				"PartialSuccess",
+				"CreationFailure",
+				"PermissionDenied",
+				"Timeout",
+				"NoUserInput",
+				"UnknownFailure"
+			],
+			"ItemsByIndex": [
+				"Success",
+				"PartialSuccess",
+				"CreationFailure",
+				"PermissionDenied",
+				"Timeout",
+				"NoUserInput",
+				"UnknownFailure"
 			]
 		},
 		"PromptExperienceDetailsResult": {
@@ -363188,8 +364463,8 @@
 				"LOD",
 				"Meshes",
 				"MeshResourcePtr",
-				"ContentId",
-				"Zone"
+				"Zone",
+				"ContentId"
 			],
 			"Related": [
 				{
@@ -383124,6 +384399,23 @@
 				"Removed": false
 			}
 		},
+		"PredictiveStreamingMode": {
+			"Default": {
+				"Enum": "PredictiveStreamingMode",
+				"Name": "Default",
+				"Removed": false
+			},
+			"Disabled": {
+				"Enum": "PredictiveStreamingMode",
+				"Name": "Disabled",
+				"Removed": false
+			},
+			"Enabled": {
+				"Enum": "PredictiveStreamingMode",
+				"Name": "Enabled",
+				"Removed": false
+			}
+		},
 		"PreferredInput": {
 			"Gamepad": {
 				"Enum": "PreferredInput",
@@ -383472,6 +384764,43 @@
 			"UploadFailed": {
 				"Enum": "PromptCreateAvatarResult",
 				"Name": "UploadFailed",
+				"Removed": false
+			}
+		},
+		"PromptCreateOutfitResult": {
+			"CreationFailure": {
+				"Enum": "PromptCreateOutfitResult",
+				"Name": "CreationFailure",
+				"Removed": false
+			},
+			"NoUserInput": {
+				"Enum": "PromptCreateOutfitResult",
+				"Name": "NoUserInput",
+				"Removed": false
+			},
+			"PartialSuccess": {
+				"Enum": "PromptCreateOutfitResult",
+				"Name": "PartialSuccess",
+				"Removed": false
+			},
+			"PermissionDenied": {
+				"Enum": "PromptCreateOutfitResult",
+				"Name": "PermissionDenied",
+				"Removed": false
+			},
+			"Success": {
+				"Enum": "PromptCreateOutfitResult",
+				"Name": "Success",
+				"Removed": false
+			},
+			"Timeout": {
+				"Enum": "PromptCreateOutfitResult",
+				"Name": "Timeout",
+				"Removed": false
+			},
+			"UnknownFailure": {
+				"Enum": "PromptCreateOutfitResult",
+				"Name": "UnknownFailure",
 				"Removed": false
 			}
 		},
@@ -385910,7 +387239,7 @@
 			"ContentId": {
 				"Enum": "SlimTintMode",
 				"Name": "ContentId",
-				"Removed": false
+				"Removed": true
 			},
 			"LOD": {
 				"Enum": "SlimTintMode",
@@ -385920,7 +387249,7 @@
 			"MeshResourcePtr": {
 				"Enum": "SlimTintMode",
 				"Name": "MeshResourcePtr",
-				"Removed": false
+				"Removed": true
 			},
 			"Meshes": {
 				"Enum": "SlimTintMode",
@@ -391859,6 +393188,58 @@
 					}
 				},
 				{
+					"Class": "AudioSpeechToText",
+					"Member": "GetInputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AudioSpeechToText",
+					"Member": "GetOutputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AudioTextToSpeech",
+					"Member": "GetInputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AudioTextToSpeech",
+					"Member": "GetOutputPins",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "AudioTextToSpeech",
 					"Member": "GetWaveformAsync",
 					"MemberType": "Function",
@@ -391970,6 +393351,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
@@ -393511,6 +394905,19 @@
 				},
 				{
 					"Class": "GlobalDataStore",
+					"Member": "BatchGetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "GlobalDataStore",
 					"Member": "IncrementAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -394850,6 +396257,19 @@
 					}
 				},
 				{
+					"Class": "ScriptDocument",
+					"Member": "ReviewableTextEditsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "SessionService",
 					"Member": "GetBreadcrumbs",
 					"MemberType": "Function",
@@ -395086,6 +396506,19 @@
 				{
 					"Class": "StudioDeviceSimulatorService",
 					"Member": "GetDeviceListAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetRegisteredSimulators",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -399963,6 +401396,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillBlockSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillCylinder",
 					"MemberType": "Function",
 					"Removed": false,
@@ -399976,7 +401422,33 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillWedge",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -401671,6 +403143,20 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3",
+						"Optional": true
 					}
 				},
 				{
@@ -404387,6 +405873,19 @@
 					}
 				},
 				{
+					"Class": "InputBinding",
+					"Member": "DisplayImage",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
 					"Class": "MaterialVariant",
 					"Member": "ColorMapContent",
 					"MemberType": "Property",
@@ -404532,6 +406031,19 @@
 				{
 					"Class": "Pants",
 					"Member": "PantsTemplateContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "PartOperation",
+					"Member": "Content",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -407252,6 +408764,19 @@
 				},
 				{
 					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
 					"Member": "LogOnboardingFunnelStepEvent",
 					"MemberType": "Function",
 					"Removed": false,
@@ -409271,6 +410796,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GlobalDataStore",
+					"Member": "BatchGetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GlobalDataStore",
+					"Member": "BatchGetAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -411643,6 +413194,45 @@
 					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
 						"Category": "Group",
@@ -416640,6 +418230,19 @@
 					}
 				},
 				{
+					"Class": "InputAction",
+					"Member": "GetPreferredBindingList",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
 					"Class": "InputContext",
 					"Member": "GetInputActions",
 					"MemberType": "Function",
@@ -421011,6 +422614,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillRegionSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Region3"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "IterateVoxelsAsync_beta",
 					"MemberType": "Function",
 					"Removed": false,
@@ -422160,6 +423776,19 @@
 				{
 					"Class": "AvatarCreationService",
 					"Member": "PromptCreateAvatarAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AvatarCreationService",
+					"Member": "PromptCreateMakeupAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -423551,6 +425180,19 @@
 				{
 					"Class": "ScriptDocument",
 					"Member": "RequestSetSelectionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "ScriptDocument",
+					"Member": "ReviewableTextEditsAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -434558,6 +436200,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillBlock",
 					"MemberType": "Function",
 					"Removed": false,
@@ -434571,7 +436226,33 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillBlockSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillWedge",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -445852,7 +447533,33 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "NativePurchaseFinishedWithLocalPlayer",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedWithLocalPlayerV2",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -451936,6 +453643,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "EnableOvertypeMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "EnableSelectionTooltips",
 					"MemberType": "Property",
 					"Removed": false,
@@ -454238,6 +455958,19 @@
 				{
 					"Class": "TextChatService",
 					"Member": "HasAllocatedUniverseChatContext",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "IsProtectedChatEnabled",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -476187,6 +477920,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillCylinder",
 					"MemberType": "Function",
 					"Removed": false,
@@ -476213,7 +477959,46 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillRegion",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillRegionSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -483425,6 +485210,19 @@
 					}
 				},
 				{
+					"Class": "InputAction",
+					"Member": "GetPreferredBindingList",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "InputBinding",
 					"Member": "PointerIndex",
 					"MemberType": "Property",
@@ -487575,6 +489373,71 @@
 				{
 					"Class": "Terrain",
 					"Member": "DrawBufferAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBlockSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillRegionSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -502642,6 +504505,19 @@
 				},
 				{
 					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
 					"Member": "LogOnboardingFunnelStepEvent",
 					"MemberType": "Function",
 					"Removed": false,
@@ -515291,6 +517167,19 @@
 				},
 				{
 					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
 					"Member": "UpdateDeviceAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -516097,7 +517986,33 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillBallSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillBlock",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillBlockSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -516123,6 +518038,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillCylinderSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillRegion",
 					"MemberType": "Function",
 					"Removed": false,
@@ -516136,7 +518064,33 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "FillRegionSlot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "FillWedge",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "FillWedgeSlot",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -521388,6 +523342,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnalyticsService",
+					"Member": "LogJourneyEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -529891,12 +531884,38 @@
 				},
 				{
 					"Class": "ImportSession",
+					"Member": "UploadSource",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ImportSession",
 					"Member": "GetFilename",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "InputBinding",
+					"Member": "DisplayName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -532379,12 +534398,64 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "NativePurchaseFinishedWithLocalPlayer",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedWithLocalPlayerV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "NativePurchaseFinishedWithLocalPlayerV2",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -540847,6 +542918,19 @@
 				},
 				{
 					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
 					"Member": "RemoveDeviceAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -542773,12 +544857,103 @@
 				},
 				{
 					"Class": "TextChatService",
+					"Member": "SendExpChatLoadSuccess",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatLoadSuccess",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
 					"Member": "SendExpChatMessageClientRendered",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatMessageClientRendered",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowScroll",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowScroll",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowStatusChange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TextChatService",
+					"Member": "SendExpChatWindowStatusChange",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 5,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
