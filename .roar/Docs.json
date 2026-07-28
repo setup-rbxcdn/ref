@@ -1526,6 +1526,7 @@
 			"Description": "<p><a href=\"/ref/class/PhysicsService.html\">PhysicsService</a> primarily contains methods for working with <strong>collision\ngroups</strong> which define whether a set of parts may or may not collide with parts\nin other collision groups. You can register a collision group through\n<a href=\"/ref/class/PhysicsService.html#member-RegisterCollisionGroup\">RegisterCollisionGroup()</a> and\nassign parts to it by setting those parts&#39;\n<a href=\"/ref/class/BasePart.html#member-CollisionGroup\">CollisionGroup</a> property to the <strong>name</strong> of the\ncollision group.</p>\n<p>Creating, deleting, and modifying collision relationships between collision\ngroups is limited to server-side <a href=\"/ref/class/Script.html\">Scripts</a>.</p>\n<p>See\n<a href=\"https://create.roblox.com/docs/workspace/collisions#collision-filtering\">Collision Filtering</a>\nfor usage details in Studio and within scripts.</p>\n"
 		},
 		"PhysicsSettings": {
+			"Summary": "<p>Lets you view debugging features in Roblox&#39;s physics engine, found under the\nPhysics tab in Studio&#39;s settings menu.</p>\n",
 			"Description": "<p>The PhysicsSettings is a singleton class, which lets you view debugging\nfeatures in Roblox&#39;s physics engine. You can find it under the Physics tab in\nStudio&#39;s settings menu.</p>\n"
 		},
 		"PitchShiftSoundEffect": {
@@ -1947,7 +1948,6 @@
 			"Summary": "<p>A ServiceProvider is an abstract class, which stores, and provides certain\nsingleton classes, depending on what inherited class you are using its members\nwith.</p>\n",
 			"Description": "<p>A ServiceProvider is an abstract class, which stores, and provides certain\nsingleton classes, depending on what inherited class you are using its members\nwith.</p>\n"
 		},
-		"ServiceVisibilityService": {},
 		"SessionCheckService": {},
 		"SharedTableRegistry": {
 			"Summary": "<p>Provides a global registry of named <a href=\"/ref/type/SharedTable.html\">SharedTable</a> objects.</p>\n",
@@ -2482,8 +2482,8 @@
 			"Description": "<p>The <strong>UnreliableRemoteEvent</strong> object is a variant of the <a href=\"/ref/class/RemoteEvent.html\">RemoteEvent</a>\nobject. It facilitates asynchronous, unordered and unreliable, one-way\ncommunication across the <a href=\"https://create.roblox.com/docs/projects/client-server\">client-server</a>\nboundary without yielding for a response. This communication can be directed\nfrom one client to the server, from the server to a specific client, or from\nthe server to all clients.</p>\n<p>In order for both the server and clients to access a\n<a href=\"/ref/class/UnreliableRemoteEvent.html\">UnreliableRemoteEvent</a> instance, it must be in a place where both sides\ncan see it, such as <a href=\"/ref/class/ReplicatedStorage.html\">ReplicatedStorage</a>, although in some cases it&#39;s\nappropriate to store it in <a href=\"/ref/class/Workspace.html\">Workspace</a> or inside a <a href=\"/ref/class/Tool.html\">Tool</a>.</p>\n<p><a href=\"/ref/class/UnreliableRemoteEvent.html\">UnreliableRemoteEvent</a> is best used for ephemeral events, including\neffects that are only relevant for a short time, or for replicating\ncontinuously changing data. These events are not resent if they are lost and\nthey do not wait for previously fired events to arrive before being processed,\npotentially resulting in reduced latency and network traffic. When you need\nordering and reliability, use a <a href=\"/ref/class/RemoteEvent.html\">RemoteEvent</a> instead.</p>\n<p>If no connected listener exists to handle an event, you might see a\n<code>Remote event invocation discarded</code> error in the log to indicate that the\nevent was discarded and that you need to implement either <code>OnClientEvent</code> or\n<code>OnServerEvent</code>.</p>\n<h3>Throttling</h3>\n<p>Remote events are subject to rate limits when sent from the client to the\nserver with the <a href=\"/ref/class/RemoteEvent.html#member-FireServer\">FireServer()</a> method.\n<a href=\"/ref/class/RemoteEvent.html\">RemoteEvents</a> and\n<a href=\"/ref/class/UnreliableRemoteEvent.html\">UnreliableRemoteEvents</a> both have a limit of\napproximately 500 requests per second, per client. This limit is <strong>shared\namong all remote events of the same type</strong>. To avoid throttling and latency\nissues, limit recurring remote events whenever possible.</p>\n<h3>Parameter limitations</h3>\n<p>Any type of Roblox object (<a href=\"/ref/type/Enum.html\">Enum</a>, <a href=\"/ref/class/Instance.html\">Instance</a>, etc.) can be\npassed as a parameter when an <a href=\"/ref/class/UnreliableRemoteEvent.html\">UnreliableRemoteEvent</a> is fired, as well\nas Luau types such as numbers, strings, and booleans, although you should\ncarefully explore the\n<a href=\"https://create.roblox.com/docs/scripting/events/remote#argument-limitations\">limitations</a>.</p>\n<p>Events with payloads larger than 1000 bytes are dropped. When this happens in\nStudio, a log message in the <a href=\"https://create.roblox.com/docs/studio/output\">Output</a> window\nindicates the number of bytes the event went over.</p>\n<p>Like all events, the <a href=\"/ref/class/UnreliableRemoteEvent.html\">UnreliableRemoteEvent</a> methods encode and compress\ncertain object types, such as buffers, which shrinks the payload size and can\nmake it difficult to verify whether you are under the limit prior to firing\nthe event. If you frequently reach this limit, consider whether a standard\n<a href=\"/ref/class/RemoteEvent.html\">RemoteEvent</a> is the better fit for your use case.</p>\n"
 		},
 		"UserGameSettings": {
-			"Summary": "<p>The UserGameSettings is a singleton class found inside of the\n<a href=\"/ref/class/UserSettings.html\">UserSettings</a> singleton. It holds various persistent settings relating\nto how the user wants to control their camera, and their character.</p>\n",
-			"Description": "<p>The UserGameSettings is a singleton class found inside of the\n<a href=\"/ref/class/UserSettings.html\">UserSettings</a> singleton. It holds various persistent settings relating\nto how the user wants to control their camera, and their character.</p>\n<p>The properties on this class reflect both the user-facing options exposed in\nthe in-experience settings menu (such as graphics quality, master volume,\ncamera and control modes) as well as other contextual user-configurable state\nthat is not surfaced in the menu itself (such as internal onboarding progress,\nVR comfort options, window layout, and debug or profiling configuration). As a\nresult, some properties listed here may not correspond to anything visible in\nthe settings UI, and many are restricted to internal Roblox scripts.</p>\n<p>You can access this object from a <a href=\"/ref/class/LocalScript.html\">LocalScript</a> via:</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">UserSettings</span><span class=\"_p\">():</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;UserGameSettings&#34;</span><span class=\"_p\">)</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n<p>This object is intended to be used on the client only, as it serves no purpose\non the server. It will also reflect your own settings when testing in Roblox\nStudio.</p>\n",
+			"Summary": "<p><code>UserGameSettings</code> is a singleton class found inside of the\n<a href=\"/ref/class/UserSettings.html\">UserSettings</a> singleton. It holds various persistent settings relating\nto how the user wants to control their camera, and their character.</p>\n",
+			"Description": "<p><code>UserGameSettings</code> is a singleton class found inside of the\n<a href=\"/ref/class/UserSettings.html\">UserSettings</a> singleton. It holds various persistent settings relating\nto how the user wants to control their camera, and their character.</p>\n<p>The properties on this class reflect both the user-facing options exposed in\nthe in-game settings menu (such as graphics quality, master volume, camera and\ncontrol modes) as well as other contextual user-configurable state that is not\nsurfaced in the menu itself (such as internal onboarding progress, VR comfort\noptions, window layout, and debug or profiling configuration). As a result,\nsome properties listed here may not correspond to anything visible in the\nsettings UI, and many are restricted to internal Roblox scripts.</p>\n<p>You can access this object from a <a href=\"/ref/class/LocalScript.html\">LocalScript</a> via:</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">UserSettings</span><span class=\"_p\">():</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;UserGameSettings&#34;</span><span class=\"_p\">)</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n<p>This object is intended to be used on the client only, as it serves no purpose\non the server. It will also reflect your own settings when testing in Roblox\nStudio.</p>\n",
 			"CodeSamples": [
 				"UserGameSettings-Listener"
 			]
@@ -2606,9 +2606,6 @@
 			"Summary": "<p>The Visit service is a backend service used by Roblox. Its functions are not\naccessible to developers in any form.</p>\n",
 			"Description": "<p>The Visit service is a backend service used by Roblox. Its functions are not\naccessible to developers in any form.</p>\n"
 		},
-		"VisualizationMode": {},
-		"VisualizationModeCategory": {},
-		"VisualizationModeService": {},
 		"VoiceChatService": {
 			"Summary": "<p><strong>VoiceChatService</strong> is responsible for voice chat&#39;s high-level functionality.</p>\n",
 			"Description": "<p><strong>VoiceChatService</strong> is responsible for voice chat&#39;s high-level functionality.\nThis mostly consists of configuration options, and functions that are not\nspecifically-controlled by more-specific instances.</p>\n"
@@ -2779,7 +2776,7 @@
 			},
 			"GetAdAvailabilityNowAsync": {
 				"Summary": "<p>Checks if an ad with the specified format is available to be shown to the\n<a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a>.</p>\n",
-				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>.</p>\n"
+				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>.</p>\n<p>Note that you should call this method as close as possible to the moment\nyou plan to show the ad. For example, if you have a &#34;Watch video ad to get\na reward&#34; button in a shop menu, only call this method when the user opens\nthe shop menu. This approach improves performance by preventing ads from\nunnecessarily being held in memory, and it benefits CPM (cost-per-thousand\nimpressions) and earnings by optimizing the ad fill rate.</p>\n"
 			},
 			"GetCampaignEligibilityAsync": {
 				"Summary": "<p>Checks a <a href=\"/ref/class/Player.html\">Player</a>&#39;s eligibility to be shown an\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations\">ad integration</a>\ncampaign.</p>\n",
@@ -5676,7 +5673,10 @@
 				"Summary": "<p>Cage mesh offset in world space.</p>\n",
 				"Description": "<p>Cage mesh offset in world space.</p>\n"
 			},
-			"HSRAssetId": {},
+			"HSRAssetId": {
+				"Summary": "<p>Asset ID for the hidden surface removal (HSR) data used by layered\nclothing.</p>\n",
+				"Description": "<p>This property is not accessible through scripts but is viewable in the\nProperties window for any <a href=\"/ref/class/BaseWrap.html\">BaseWrap</a> object. It references\nprecomputed data that determines which mesh triangles are hidden when\nclothing layers overlap.</p>\n"
+			},
 			"ImportOrigin": {
 				"Summary": "<p>Describes where a global zero was while authoring the cage mesh in an\nasset creation tool.</p>\n",
 				"Description": "<p>This property is set up automatically by the 3D Importer.</p>\n<p>Describes where a global zero was while authoring the cage mesh in an\nasset creation tool such as Blender or Maya. This property is not used by\nthe deformer but it is useful for tools/aligning scripts, for example\naligning two parts by matching their pivots as follows:</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\"> 1\n</span><span class=\"_lnt\"> 2\n</span><span class=\"_lnt\"> 3\n</span><span class=\"_lnt\"> 4\n</span><span class=\"_lnt\"> 5\n</span><span class=\"_lnt\"> 6\n</span><span class=\"_lnt\"> 7\n</span><span class=\"_lnt\"> 8\n</span><span class=\"_lnt\"> 9\n</span><span class=\"_lnt\">10\n</span><span class=\"_lnt\">11\n</span><span class=\"_lnt\">12\n</span><span class=\"_lnt\">13\n</span><span class=\"_lnt\">14\n</span><span class=\"_lnt\">15\n</span><span class=\"_lnt\">16\n</span><span class=\"_lnt\">17\n</span><span class=\"_lnt\">18\n</span><span class=\"_lnt\">19\n</span><span class=\"_lnt\">20\n</span><span class=\"_lnt\">21\n</span><span class=\"_lnt\">22\n</span><span class=\"_lnt\">23\n</span><span class=\"_lnt\">24\n</span><span class=\"_lnt\">25\n</span><span class=\"_lnt\">26\n</span><span class=\"_lnt\">27\n</span><span class=\"_lnt\">28\n</span><span class=\"_lnt\">29\n</span><span class=\"_lnt\">30\n</span><span class=\"_lnt\">31\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_kr\">function</span> <span class=\"_nf\">alignWraps</span><span class=\"_p\">()</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kd\">local</span> <span class=\"_n\">selectionService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Selection&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kd\">local</span> <span class=\"_n\">selectedObjects</span> <span class=\"_o\">=</span> <span class=\"_n\">selectionService</span><span class=\"_p\">:</span><span class=\"_n\">Get</span><span class=\"_p\">()</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kd\">local</span> <span class=\"_n\">alignObjects</span> <span class=\"_o\">=</span> <span class=\"_p\">{}</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kr\">for</span> <span class=\"_n\">_</span><span class=\"_p\">,</span> <span class=\"_n\">obj</span> <span class=\"_kr\">in</span> <span class=\"_n\">selectedObjects</span> <span class=\"_kr\">do</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kr\">if</span> <span class=\"_n\">obj</span><span class=\"_p\">:</span><span class=\"_n\">IsA</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;BaseWrap&#34;</span><span class=\"_p\">)</span> <span class=\"_kr\">then</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t\t<span class=\"_c1\">--print(&#34;Wrap: &#34; .. obj.Name)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t\t<span class=\"_n\">table.insert</span><span class=\"_p\">(</span><span class=\"_n\">alignObjects</span><span class=\"_p\">,</span> <span class=\"_n\">obj</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kr\">else</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t\t<span class=\"_n\">print</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Ignore: &#34;</span> <span class=\"_o\">..</span> <span class=\"_n\">obj.Name</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kr\">end</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kr\">end</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kr\">if</span> <span class=\"_o\">#</span><span class=\"_n\">alignObjects</span> <span class=\"_o\">&lt;</span> <span class=\"_mi\">2</span> <span class=\"_kr\">then</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_n\">warn</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;You need to select at least two wraps&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kr\">return</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kr\">end</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kd\">local</span> <span class=\"_n\">anchorWrap</span> <span class=\"_o\">=</span> <span class=\"_n\">alignObjects</span><span class=\"_p\">[</span><span class=\"_mi\">1</span><span class=\"_p\">]</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kd\">local</span> <span class=\"_n\">worldA_from_Wrap</span> <span class=\"_o\">=</span> <span class=\"_n\">anchorWrap.ImportOriginWorld</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_n\">print</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Anchor: &#34;</span> <span class=\"_o\">..</span> <span class=\"_n\">anchorWrap.Name</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kr\">for</span> <span class=\"_n\">i</span> <span class=\"_o\">=</span> <span class=\"_mi\">2</span><span class=\"_p\">,</span> <span class=\"_o\">#</span><span class=\"_n\">alignObjects</span> <span class=\"_kr\">do</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kd\">local</span> <span class=\"_n\">wrapToAlign</span> <span class=\"_o\">=</span> <span class=\"_n\">alignObjects</span><span class=\"_p\">[</span><span class=\"_n\">i</span><span class=\"_p\">]</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_n\">print</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Align: &#34;</span> <span class=\"_o\">..</span> <span class=\"_n\">wrapToAlign.Name</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kd\">local</span> <span class=\"_n\">wrap_from_WorldB</span> <span class=\"_o\">=</span> <span class=\"_n\">wrapToAlign.ImportOriginWorld</span><span class=\"_p\">:</span><span class=\"_n\">Inverse</span><span class=\"_p\">()</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kd\">local</span> <span class=\"_n\">worldA_from_WorldB</span> <span class=\"_o\">=</span> <span class=\"_n\">worldA_from_Wrap</span> <span class=\"_o\">*</span> <span class=\"_n\">wrap_from_WorldB</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_kd\">local</span> <span class=\"_n\">worldB</span> <span class=\"_o\">=</span> <span class=\"_n\">wrapToAlign.Parent</span><span class=\"_p\">.</span><span class=\"_n\">CFrame</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_c1\">-- Note: adjust CFrame of the parent part</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t\t<span class=\"_n\">wrapToAlign.Parent</span><span class=\"_p\">.</span><span class=\"_n\">CFrame</span> <span class=\"_o\">=</span> <span class=\"_p\">(</span><span class=\"_n\">worldB_from_WorldB</span> <span class=\"_o\">*</span> <span class=\"_n\">worldB</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_kr\">end</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kr\">end</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
@@ -7472,7 +7472,10 @@
 		"ControllerService": {},
 		"CookiesService": {},
 		"CoreGui": {
-			"SelectionImageObject": {},
+			"SelectionImageObject": {
+				"Summary": "<p>Overrides the default selection adornment used for gamepad selection in\nthe CoreGui.</p>\n",
+				"Description": "<p>This property is not accessible through scripts but is viewable in the\nProperties window. It overrides the default selection adornment used for\ngamepad selection across all CoreGui elements.</p>\n"
+			},
 			"Version": {
 				"Summary": "<p>The current version of the CoreGui. Every time the CoreGui is majorly\nchanged, this number is increased.</p>\n",
 				"Description": "<p>The current version of the CoreGui. Every time the CoreGui is majorly\nchanged, this number is increased.</p>\n"
@@ -7780,7 +7783,7 @@
 			},
 			"ServerRestartScheduled": {
 				"Summary": "<p>Fires on the server when the server has been scheduled to restart.\nProvides the scheduled restart time, source, and custom attributes.</p>\n",
-				"Description": "<p>Fires when the server has been scheduled to restart, for example when you\nrestart servers from the Creator Hub or\n<a href=\"https://create.roblox.com/docs/cloud/reference/features/universes#Restarts_LaunchRestart\">Open Cloud</a>\nto <a href=\"https://create.roblox.com/docs/projects/update-games\">release an experience update</a>.</p>\n<p>You can use this event to inform players on the server of the impending\nrestart. You could then let them save their progress or teleport them to\nupdated servers at the most convenient time for your game.</p>\n",
+				"Description": "<p>Fires when the server has been scheduled to restart, for example when you\nrestart servers from the Creator Hub or\n<a href=\"https://create.roblox.com/docs/cloud/reference/features/universes#Restarts_LaunchRestart\">Open Cloud</a>\nto <a href=\"https://create.roblox.com/docs/projects/update-games\">release an experience update</a>, or\nwhen Roblox needs to restart servers for infrastructure maintenance.</p>\n<p>You can use this event to inform players on the server of the impending\nrestart. You could then let them save their progress or teleport them to\nupdated servers at the most convenient time for your game.</p>\n",
 				"CodeSamples": [
 					"DataModel-ServerRestartScheduled1"
 				]
@@ -8099,7 +8102,6 @@
 				"Description": "<p>The texture content displayed by the <a href=\"/ref/class/Decal.html\">Decal</a>. Supports\n<a href=\"https://create.roblox.com/docs/projects/assets#asset-uris\">asset URIs</a> and\n<a href=\"/ref/class/EditableImage.html\">EditableImage</a> objects.</p>\n",
 				"DeprecationMessage": "<p>This property has been deprecated. Use\n<a href=\"/ref/class/Decal.html#member-ColorMapContent\">ColorMapContent</a> for future work.</p>\n"
 			},
-			"TexturePack": {},
 			"Transparency": {
 				"Summary": "<p>Determines the transparency of the <a href=\"/ref/class/Decal.html\">Decal</a>.</p>\n",
 				"Description": "<p>Determines the transparency of the <a href=\"/ref/class/Decal.html\">Decal</a> with <code>0</code> being completely\nopaque and <code>1</code> completely transparent.</p>\n<p>Note that\n<a href=\"/ref/class/Decal.html#member-LocalTransparencyModifier\">LocalTransparencyModifier</a> acts as\na <strong>multiplier</strong> for this transparency level and should be used when the\ntransparency of the decal is likely to be changed by another script.</p>\n"
@@ -9760,6 +9762,13 @@
 			}
 		},
 		"GlobalDataStore": {
+			"BatchGetAsync": {
+				"Summary": "<p>Returns the values of multiple keys from the data store in a single\nrequest.</p>\n",
+				"Description": "<p>This function retrieves the values of multiple keys in a single request.</p>\n<p>This method is currently only supported on <a href=\"/ref/class/OrderedDataStore.html\">OrderedDataStore</a>.\nCalling it on a standard <a href=\"/ref/class/GlobalDataStore.html\">GlobalDataStore</a> or <a href=\"/ref/class/DataStore.html\">DataStore</a> will\nthrow an error.</p>\n<p>Unlike <a href=\"/ref/class/GlobalDataStore.html#member-GetAsync\">GlobalDataStore:GetAsync()</a>, this method does not return\n<a href=\"/ref/class/DataStoreKeyInfo.html\">DataStoreKeyInfo</a> since ordered data stores do not support\nversioning or metadata.</p>\n<p>The returned dictionary maps each key to a table with a <code>value</code> field. For\nexample, if you request keys <code>{&#34;coins&#34;, &#34;gems&#34;}</code>, the result might look\nlike:</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span><span class=\"_lnt\">4\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_p\">{</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">    <span class=\"_n\">coins</span> <span class=\"_o\">=</span> <span class=\"_p\">{</span> <span class=\"_n\">value</span> <span class=\"_o\">=</span> <span class=\"_mi\">100</span> <span class=\"_p\">},</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">    <span class=\"_n\">gems</span> <span class=\"_o\">=</span> <span class=\"_p\">{</span> <span class=\"_n\">value</span> <span class=\"_o\">=</span> <span class=\"_mi\">50</span> <span class=\"_p\">}</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_p\">}</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n<p>Keys that do not exist in the data store or have empty values are omitted\nfrom the result rather than returning nil values.</p>\n<h4>Limits</h4>\n<p>The <code>keys</code> array must contain at least one key and no more than the\nserver-configured maximum (default 100). Exceeding the limit will throw an\nerror. Each call counts against the ordered data store read budget based\non the number of keys requested.</p>\n",
+				"CodeSamples": [
+					"GlobalDataStore-BatchGetAsync1"
+				]
+			},
 			"GetAsync": {
 				"Summary": "<p>Returns the value of a key in a specified data store and a\n<a href=\"/ref/class/DataStoreKeyInfo.html\">DataStoreKeyInfo</a> instance.</p>\n",
 				"Description": "<p>This function returns the latest value of the provided key and a\n<a href=\"/ref/class/DataStoreKeyInfo.html\">DataStoreKeyInfo</a> instance. If the key does not exist or if the\nlatest version has been marked as deleted, both return values will be\n<code>nil</code>.</p>\n<p>Keys are cached locally for 4 seconds after the first read. A\n<a href=\"/ref/class/GlobalDataStore.html#member-GetAsync\">GlobalDataStore:GetAsync()</a> call within these 4 seconds returns a\nvalue from the cache. Modifications to the key by\n<a href=\"/ref/class/GlobalDataStore.html#member-SetAsync\">GlobalDataStore:SetAsync()</a> or\n<a href=\"/ref/class/GlobalDataStore.html#member-UpdateAsync\">GlobalDataStore:UpdateAsync()</a> apply to the cache immediately and\nrestart the 4 second timer.</p>\n<p>To get a specific version, such as a version before the latest, use\n<a href=\"/ref/class/DataStore.html#member-GetVersionAsync\">DataStore:GetVersionAsync()</a>.</p>\n"
@@ -12575,7 +12584,7 @@
 			},
 			"UniqueId": {
 				"Summary": "<p>A unique identifier for the instance.</p>\n",
-				"Description": "<p>A unique identifier for the instance, distinct from <a href=\"/ref/class/Instance.html#member-Name\">Instance.Name</a>\nwhich is not necessarily unique.</p>\n"
+				"Description": "<p>A unique identifier for the instance, distinct from <a href=\"/ref/class/Instance.html#member-Name\">Instance.Name</a>\nwhich is not necessarily unique. This property is visible in the\nProperties window in Studio but is not readable or writable from scripts.</p>\n"
 			},
 			"WaitForChild": {
 				"Summary": "<p>Returns the child of the <a href=\"/ref/class/Instance.html\">Instance</a> with the given name. If the\nchild does not exist, it will yield the current thread until it does.</p>\n",
@@ -13580,47 +13589,59 @@
 		"MaterialService": {
 			"AsphaltName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Asphalt.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Asphalt. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Asphalt.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Asphalt. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Asphalt. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"BasaltName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Basalt.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Basalt. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Basalt.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Basalt. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Basalt. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"BrickName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Brick.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Brick. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Brick.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Brick. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Brick. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
-			"CardboardName": {},
-			"CarpetName": {},
-			"CeramicTilesName": {},
-			"ClayRoofTilesName": {},
+			"CardboardName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Cardboard.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Cardboard. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Cardboard. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
+			"CarpetName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Carpet.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Carpet. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Carpet. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
+			"CeramicTilesName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CeramicTiles.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CeramicTiles.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to CeramicTiles. This property is\nnot scriptable; use <a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
+			"ClayRoofTilesName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in ClayRoofTiles.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in ClayRoofTiles.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to ClayRoofTiles. This property\nis not scriptable; use <a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a>\nand <a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
 			"CobblestoneName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Cobblestone.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Cobblestone. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Cobblestone.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Cobblestone. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Cobblestone. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"ConcreteName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Concrete.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Concrete. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Concrete.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Concrete. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Concrete. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"CorrodedMetalName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CorrodedMetal.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CorrodedMetal.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to CorrodedMetal.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CorrodedMetal.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to CorrodedMetal. This property\nis not scriptable; use <a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a>\nand <a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"CrackedLavaName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CrackedLava.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CrackedLava. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to CrackedLava.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in CrackedLava. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to CrackedLava. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"DiamondPlateName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in DiamondPlate.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in DiamondPlate.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to DiamondPlate.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in DiamondPlate.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to DiamondPlate. This property is\nnot scriptable; use <a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"FabricName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Fabric.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Fabric. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Fabric.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Fabric. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Fabric. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"FoilName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Foil.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Foil. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Foil.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Foil. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Foil. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"GetBaseMaterialOverride": {
 				"Summary": "<p>Get the override <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name of specified Material type.</p>\n",
@@ -13632,75 +13653,87 @@
 			},
 			"GlacierName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Glacier.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Glacier. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Glacier.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Glacier. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Glacier. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"GraniteName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Granite.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Granite. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Granite.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Granite. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Granite. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"GrassName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Grass.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Grass. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Grass.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Grass. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Grass. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"GroundName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Ground.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Ground. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Ground.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Ground. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Ground. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"IceName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Ice.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Ice. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Ice.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Ice. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Ice. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"LeafyGrassName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in LeafyGrass.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in LeafyGrass. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to LeafyGrass.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in LeafyGrass. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to LeafyGrass. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
-			"LeatherName": {},
+			"LeatherName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Leather.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Leather. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Leather. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
 			"LimestoneName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Limestone.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Limestone. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Limestone.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Limestone. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Limestone. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"MarbleName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Marble.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Marble. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Marble.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Marble. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Marble. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"MetalName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Metal.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Metal. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Metal.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Metal. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Metal. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"MudName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Mud.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Mud. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Mud.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Mud. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Mud. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"PavementName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Pavement.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Pavement. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Pavement.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Pavement. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Pavement. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"PebbleName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Pebble.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Pebble. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Pebble.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Pebble. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Pebble. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
-			"PlasterName": {},
+			"PlasterName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Plaster.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Plaster. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Plaster. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
 			"PlasticName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Plastic.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Plastic. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Plastic.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Plastic. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Plastic. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"RockName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Rock.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Rock. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Rock.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Rock. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Rock. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
-			"RoofShinglesName": {},
-			"RubberName": {},
+			"RoofShinglesName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in RoofShingles.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in RoofShingles.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to RoofShingles. This property is\nnot scriptable; use <a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
+			"RubberName": {
+				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Rubber.</p>\n",
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Rubber. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Rubber. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
+			},
 			"SaltName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Salt.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Salt. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Salt.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Salt. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Salt. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"SandName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Sand.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Sand. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Sand.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Sand. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Sand. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"SandstoneName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Sandstone.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Sandstone. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Sandstone.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Sandstone. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Sandstone. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"SetBaseMaterialOverride": {
 				"Summary": "<p>Set a <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name that overrides a built-in material.</p>\n",
@@ -13708,15 +13741,15 @@
 			},
 			"SlateName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Slate.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Slate. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Slate.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Slate. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Slate. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"SmoothPlasticName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in SmoothPlastic.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in SmoothPlastic.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to SmoothPlastic.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in SmoothPlastic.\nThe Specified MaterialVariant must have\n<a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a> set to SmoothPlastic. This property\nis not scriptable; use <a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a>\nand <a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"SnowName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Snow.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Snow. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Snow.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Snow. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Snow. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"Use2022Materials": {
 				"Summary": "<p>Switch built-in material pack.</p>\n",
@@ -13724,11 +13757,11 @@
 			},
 			"WoodName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Wood.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Wood. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Wood.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in Wood. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to Wood. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			},
 			"WoodPlanksName": {
 				"Summary": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in WoodPlanks.</p>\n",
-				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in WoodPlanks. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to WoodPlanks.</p>\n"
+				"Description": "<p>Specify <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a> name to override built-in WoodPlanks. The\nSpecified MaterialVariant must have <a href=\"/ref/class/MaterialVariant.html#member-BaseMaterial\">MaterialVariant.BaseMaterial</a>\nset to WoodPlanks. This property is not scriptable; use\n<a href=\"/ref/class/MaterialService.html#member-GetBaseMaterialOverride\">MaterialService:GetBaseMaterialOverride()</a> and\n<a href=\"/ref/class/MaterialService.html#member-SetBaseMaterialOverride\">MaterialService:SetBaseMaterialOverride()</a> to access it from\nscripts.</p>\n"
 			}
 		},
 		"MaterialVariant": {
@@ -14409,10 +14442,22 @@
 			}
 		},
 		"NotificationService": {
-			"IsLuaGameDetailsEnabled": {},
-			"Roblox17sConnectionChanged": {},
-			"Roblox17sEventReceived": {},
-			"SelectedTheme": {}
+			"IsLuaGameDetailsEnabled": {
+				"Summary": "<p>This property is not functional and cannot be used.</p>\n",
+				"Description": "<p>This property is part of an unfinished service and cannot be used.</p>\n"
+			},
+			"Roblox17sConnectionChanged": {
+				"Summary": "<p>This event is not functional and cannot be used.</p>\n",
+				"Description": "<p>This event is part of an unfinished service and cannot be used.</p>\n"
+			},
+			"Roblox17sEventReceived": {
+				"Summary": "<p>This event is not functional and cannot be used.</p>\n",
+				"Description": "<p>This event is part of an unfinished service and cannot be used.</p>\n"
+			},
+			"SelectedTheme": {
+				"Summary": "<p>This property is not functional and cannot be used.</p>\n",
+				"Description": "<p>This property is part of an unfinished service and cannot be used.</p>\n"
+			}
 		},
 		"NumberPose": {
 			"Value": {
@@ -14537,7 +14582,7 @@
 		"PackageLink": {
 			"AutoUpdate": {
 				"Summary": "<p>When this property is set to true, the package associated with the given\n<a href=\"/ref/class/PackageLink.html\">PackageLink</a> automatically updates to the latest version.</p>\n",
-				"Description": "<p>When this property is set to true, the package associated with the given\n<a href=\"/ref/class/PackageLink.html\">PackageLink</a> will be automatically updated to the latest version.\nBy default, this property is false upon creation of a package.</p>\n<p>This property lets you decide if a given package should be automatically\nupdated to the latest version when entering a given place. The game\nperiodically checks for new updates while a place is open.</p>\n"
+				"Description": "<p>When this property is set to true, the package associated with the given\n<a href=\"/ref/class/PackageLink.html\">PackageLink</a> will be automatically updated to the latest version.\nBy default, this property is false upon creation of a package.</p>\n<p>This property lets you decide if a given package should be automatically\nupdated to the latest version when entering a given place. The game\nperiodically checks for new updates while a place is open.</p>\n<p>This property is visible and configurable in the Properties window in\nStudio.</p>\n"
 			},
 			"Creator": {
 				"Summary": "<p>The creator of the package asset.</p>\n",
@@ -15070,7 +15115,10 @@
 				"Summary": "<p>When set to true, each physics assembly is assigned a unique color and the\n<a href=\"/ref/class/Part.html\">Part</a> associated with the assembly are outlined with the color.\nParts that are attached together by <a href=\"/ref/class/JointInstance.html\">JointInstance</a> will share the\nsame color.</p>\n",
 				"Description": "<p>When set to true, each physics assembly is assigned a unique color and the\n<a href=\"/ref/class/Part.html\">Part</a> associated with the assembly are outlined with the color.\nParts that are attached together by <a href=\"/ref/class/JointInstance.html\">JointInstance</a> will share the\nsame color.</p>\n"
 			},
-			"AreAssemblyCentersOfMassShown": {},
+			"AreAssemblyCentersOfMassShown": {
+				"Summary": "<p>When set to true, shows the center of mass for each physics assembly.</p>\n",
+				"Description": "<p>When set to true, shows the center of mass for each physics assembly. This\nproperty must be set in the Physics tab of Studio&#39;s settings menu.</p>\n"
+			},
 			"AreAwakePartsHighlighted": {
 				"Summary": "<p>When set to true, parts that are actively being physically simulated will\nhave a red outline.</p>\n",
 				"Description": "<p>When set to true, parts that are actively being physically simulated will\nhave a red outline.</p>\n"
@@ -15079,10 +15127,22 @@
 				"Summary": "<p>When set to true, <a href=\"/ref/class/Part.html\">Part</a> will be outlined with a specific color,\ndepending on the state of its root simulation body.</p>\n",
 				"Description": "<p>When set to true, <a href=\"/ref/class/Part.html\">Part</a> will be outlined with a specific color,\ndepending on the state of its root simulation body.</p>\n<h4>Body Types</h4>\n<table>\n\t<tbody><tr>\n\t\t<th width=\"50\">Color</th>\n\t\t<th>Body Type</th>\n\t\t<th>Description</th>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#FF0000\"></td>\n\t\t<td>Real-Time Body</td>\n\t\t<td>Physics Body that is always simulated in real time, and is never throttled. Used for Humanoids.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#00FF00\"></td>\n\t\t<td>Free-Fall Body</td>\n\t\t<td>Physics Body that is freely moving with no physical contact.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#0000FF\"></td>\n\t\t<td>Joint Body</td>\n\t\t<td>Physics Body that is being influenced by a physically simulated joint, such as a Motor or a Hinge.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#FFFF00\"></td>\n\t\t<td>Contact Body</td>\n\t\t<td>Physics Body that is in contact with another physics body.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#FF7700\"></td>\n\t\t<td>Symmetric Contact Body</td>\n\t\t<td>Physics Body that is experiencing a torquing force, while in contact with another body.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#777700\"></td>\n\t\t<td>Vertical Contact Body</td>\n\t\t<td>Physics Body that is moving very little along the Y plane, while in contact with another body.</td>\n\t</tr>\n</tbody></table>\n"
 			},
-			"AreCollisionCostsShown": {},
-			"AreConstraintForcesShownForSelectedOrHoveredInstances": {},
-			"AreConstraintTorquesShownForSelectedOrHoveredInstances": {},
-			"AreContactForcesShownForSelectedOrHoveredAssemblies": {},
+			"AreCollisionCostsShown": {
+				"Summary": "<p>When set to true, displays collision cost annotations for parts.</p>\n",
+				"Description": "<p>When set to true, displays collision cost annotations for parts. This\nproperty is not scriptable.</p>\n"
+			},
+			"AreConstraintForcesShownForSelectedOrHoveredInstances": {
+				"Summary": "<p>When set to true, draws force vectors for constraints on selected or\nhovered instances.</p>\n",
+				"Description": "<p>When set to true, draws force vectors for constraints on selected or\nhovered instances. This property must be set in the Physics tab of\nStudio&#39;s settings menu.</p>\n"
+			},
+			"AreConstraintTorquesShownForSelectedOrHoveredInstances": {
+				"Summary": "<p>When set to true, draws torque vectors for constraints on selected or\nhovered instances.</p>\n",
+				"Description": "<p>When set to true, draws torque vectors for constraints on selected or\nhovered instances. This property must be set in the Physics tab of\nStudio&#39;s settings menu.</p>\n"
+			},
+			"AreContactForcesShownForSelectedOrHoveredAssemblies": {
+				"Summary": "<p>When set to true, draws contact force vectors for selected or hovered\nassemblies.</p>\n",
+				"Description": "<p>When set to true, draws contact force vectors for selected or hovered\nassemblies. This property must be set in the Physics tab of Studio&#39;s\nsettings menu.</p>\n"
+			},
 			"AreContactIslandsShown": {
 				"Summary": "<p>When set to true, each contact island will render <a href=\"/ref/class/SelectionBox.html\">SelectionBox</a>\nadorns on the parts in contact islands, where each contact island is\nassigned a random color.</p>\n",
 				"Description": "<p>When set to true, each contact island will render <a href=\"/ref/class/SelectionBox.html\">SelectionBox</a>\nadorns on the parts in contact islands, where each contact island is\nassigned a random color.</p>\n"
@@ -15091,12 +15151,18 @@
 				"Summary": "<p>When set to true, sphere adorns will be drawn at the contact points of\neach part where physics interactions are occurring.</p>\n",
 				"Description": "<p>When set to true, sphere adorns will be drawn at the contact points of\neach part where physics interactions are occurring. Each sphere also has\nan arrow drawn in 3D, facing the surface that the contact point is\ndetecting.</p>\n<h4>Solver Variations</h4>\n<p>The behavior of this property varies depending on whether Roblox&#39;s physics\nengine is using the <code>PGS Physics Solver</code>, or the <code>Spring Physics Solver</code>.</p>\n<p>This is controlled by the <a href=\"/ref/class/Workspace.html#member-PGSPhysicsSolverEnabled\">Workspace.PGSPhysicsSolverEnabled</a>\nproperty.</p>\n<h5>Spring Physics Solver</h5>\n<p>When <a href=\"/ref/class/Workspace.html#member-PGSPhysicsSolverEnabled\">Workspace.PGSPhysicsSolverEnabled</a> is set to false, the\ncontact points are color coded as listed below. The length of the arrow\nextruding from the sphere depends on how much force the contact point is\nexerting, and what the contact type is.</p>\n<table>\n\t<tbody><tr>\n\t\t<th width=\"50\">Color</th>\n\t\t<th width=\"200\">Contact Type</th>\n\t\t<th>Description</th>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#CCCC00\"></td>\n\t\t<td>Normal Contact</td>\n\t\t<td>Contact point with no special conditions.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#656500\"></td>\n\t\t<td>Resting Contact</td>\n\t\t<td>Contact point that has been active for at least 4 frames.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#CC0000\"></td>\n\t\t<td>Second Pass Contact</td>\n\t\t<td>Contact point that was made by a kernel joint going through a second pass. Rarely seen.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#CC6500\"></td>\n\t\t<td>Real-Time Contact</td>\n\t\t<td>Contact point that was made with a real-time physics body. This applies to tripped <a href=\"/ref/class/Humanoid.html\">Humanoid</a>.</td>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#0000CC\"></td>\n\t\t<td>Joint Contact</td>\n\t\t<td>Contact point that was made under the context of a physically simulated joint. This applies to Motors and Hinges.</td>\n\t</tr>\n</tbody></table>\n<b>PGS Physics Solver</b>\n<p>When <a href=\"/ref/class/Workspace.html#member-PGSPhysicsSolverEnabled\">Workspace.PGSPhysicsSolverEnabled</a> is set to true, the contact\npoints are always colored <strong>RED</strong>, and the length of the arrow will always\nbe 1 stud. There are no special conditions tracked, because the PGS solver\ndoes not keep specific lookup tables for the states listed in the Spring\nSolver.</p>\n<table>\n\t<tbody><tr>\n\t\t<th width=\"50\">Color</th>\n\t\t<th width=\"200\">Contact Type</th>\n\t\t<th>Description</th>\n\t</tr>\n\t<tr>\n\t\t<td bgcolor=\"#CC0000\"></td>\n\t\t<td>Normal Contact</td>\n\t\t<td>Contact point with no special conditions.</td>\n\t</tr>\n</tbody></table>\n"
 			},
-			"AreGravityForcesShownForSelectedOrHoveredAssemblies": {},
+			"AreGravityForcesShownForSelectedOrHoveredAssemblies": {
+				"Summary": "<p>When set to true, draws gravity force vectors for selected or hovered\nassemblies.</p>\n",
+				"Description": "<p>When set to true, draws gravity force vectors for selected or hovered\nassemblies. This property must be set in the Physics tab of Studio&#39;s\nsettings menu.</p>\n"
+			},
 			"AreJointCoordinatesShown": {
 				"Summary": "<p>When set to true, XYZ axes are rendered at the <a href=\"/ref/class/BasePart.html#member-CFrame\">BasePart.CFrame</a> of\nevery part.</p>\n",
 				"Description": "<p>When set to true, XYZ axes are rendered at the <a href=\"/ref/class/BasePart.html#member-CFrame\">BasePart.CFrame</a> of\nevery part.</p>\n"
 			},
-			"AreMagnitudesShownForDrawnForcesAndTorques": {},
+			"AreMagnitudesShownForDrawnForcesAndTorques": {
+				"Summary": "<p>When set to true, displays magnitude labels alongside drawn force and\ntorque vectors.</p>\n",
+				"Description": "<p>When set to true, displays magnitude labels alongside drawn force and\ntorque vectors. This property must be set in the Physics tab of Studio&#39;s\nsettings menu.</p>\n"
+			},
 			"AreMechanismsShown": {
 				"Summary": "<p>When set to true, every individual mechanism of parts is given a unique\ncolor.</p>\n",
 				"Description": "<p>When set to true, every individual mechanism of parts is given a unique\ncolor.</p>\n"
@@ -15105,7 +15171,10 @@
 				"Summary": "<p>An ancient property that hasn&#39;t work correctly since late 2007. It&#39;s\nsupposed to render an XYZ axis on the root part of a <a href=\"/ref/class/Model.html\">Model</a>, but\nthe axis rendering component doesn&#39;t work correctly.</p>\n",
 				"Description": "<p>An ancient property that hasn&#39;t work correctly since late 2007. It&#39;s\nsupposed to render an XYZ axis on the root part of a <a href=\"/ref/class/Model.html\">Model</a>, but\nthe axis rendering component doesn&#39;t work correctly.</p>\n"
 			},
-			"AreNonAnchorsShown": {},
+			"AreNonAnchorsShown": {
+				"Summary": "<p>When set to true, parts that are not <a href=\"/ref/class/BasePart.html#member-Anchored\">BasePart.Anchored</a> will be\nhighlighted.</p>\n",
+				"Description": "<p>When set to true, parts that are not <a href=\"/ref/class/BasePart.html#member-Anchored\">BasePart.Anchored</a> will be\nhighlighted. This property must be set in the Physics tab of Studio&#39;s\nsettings menu.</p>\n"
+			},
 			"AreOwnersShown": {
 				"Summary": "<p>When set to true, each player&#39;s character is outlined with a unique color,\nand each part that the player has network ownership over is outlined with\nthe same color.</p>\n",
 				"Description": "<p>When set to true, each player&#39;s character is outlined with a unique color,\nand each part that the player has network ownership over is outlined with\nthe same color.</p>\n"
@@ -15118,9 +15187,18 @@
 				"Summary": "<p>When set to true, a cylinder is drawn around each player&#39;s character,\nrepresenting their <a href=\"/ref/class/Player.html#member-SimulationRadius\">Player.SimulationRadius</a>.</p>\n",
 				"Description": "<p>When set to true, a cylinder is drawn around each player&#39;s character,\nrepresenting their <a href=\"/ref/class/Player.html#member-SimulationRadius\">Player.SimulationRadius</a>. Each physically\nsimulated object will check to see which player is closest to that object,\nand if they are within the player&#39;s simulation radius. If both conditions\nare met, that player will becomes the network owner of that object.</p>\n"
 			},
-			"AreSolverIslandsShown": {},
-			"AreTerrainReplicationRegionsShown": {},
-			"AreTimestepsShown": {},
+			"AreSolverIslandsShown": {
+				"Summary": "<p>When set to true, each solver island is highlighted with a unique color.</p>\n",
+				"Description": "<p>When set to true, each solver island is highlighted with a unique color.\nThis property must be set in the Physics tab of Studio&#39;s settings menu.</p>\n"
+			},
+			"AreTerrainReplicationRegionsShown": {
+				"Summary": "<p>When set to true, shows terrain replication streaming regions.</p>\n",
+				"Description": "<p>When set to true, shows terrain replication streaming regions. This\nproperty is not scriptable.</p>\n"
+			},
+			"AreTimestepsShown": {
+				"Summary": "<p>When set to true, shows physics timestep information for assemblies.</p>\n",
+				"Description": "<p>When set to true, shows physics timestep information for assemblies. This\nproperty is not scriptable.</p>\n"
+			},
 			"AreUnalignedPartsShown": {
 				"Summary": "<p>When set to true, parts that aren&#39;t aligned on the 1x1x1 grid will be\noutlined yellow.</p>\n",
 				"Description": "<p>When set to true, parts that aren&#39;t aligned on the 1x1x1 grid will be\noutlined yellow.</p>\n"
@@ -15133,19 +15211,46 @@
 				"Summary": "<p>When set to true, Roblox will fall back to using its legacy CSG solver\nwhen performing solid model operations.</p>\n",
 				"Description": "<p>When set to true, Roblox will fall back to using its legacy CSG solver\nwhen performing solid model operations.</p>\n"
 			},
-			"DisableCSGv3ForPlugins": {},
-			"DrawConstraintsNetForce": {},
-			"DrawContactsNetForce": {},
-			"DrawTotalNetForce": {},
-			"EnableForceVisualizationSmoothing": {},
+			"DisableCSGv3ForPlugins": {
+				"Summary": "<p>When set to true, disables CSGv3 for plugin solid modeling operations.</p>\n",
+				"Description": "<p>When set to true, disables CSGv3 for plugin solid modeling operations.\nThis property must be set in the Physics tab of Studio&#39;s settings menu.</p>\n"
+			},
+			"DrawConstraintsNetForce": {
+				"Summary": "<p>When set to true, draws the net force from all constraints on selected or\nhovered assemblies.</p>\n",
+				"Description": "<p>When set to true, draws the net force from all constraints on selected or\nhovered assemblies. This property must be set in the Physics tab of\nStudio&#39;s settings menu.</p>\n"
+			},
+			"DrawContactsNetForce": {
+				"Summary": "<p>When set to true, draws the net force from all contacts on selected or\nhovered assemblies.</p>\n",
+				"Description": "<p>When set to true, draws the net force from all contacts on selected or\nhovered assemblies. This property must be set in the Physics tab of\nStudio&#39;s settings menu.</p>\n"
+			},
+			"DrawTotalNetForce": {
+				"Summary": "<p>When set to true, draws the total net force on selected or hovered\nassemblies.</p>\n",
+				"Description": "<p>When set to true, draws the total net force on selected or hovered\nassemblies. This property must be set in the Physics tab of Studio&#39;s\nsettings menu.</p>\n"
+			},
+			"EnableForceVisualizationSmoothing": {
+				"Summary": "<p>When set to true, enables temporal smoothing for force and torque\nvisualizations.</p>\n",
+				"Description": "<p>When set to true, enables temporal smoothing for force and torque\nvisualizations. This property must be set in the Physics tab of Studio&#39;s\nsettings menu.</p>\n"
+			},
 			"FluidForceDrawScale": {
 				"Summary": "<p>Sets the scale of arrows drawn for aerodynamic force visualization.</p>\n",
 				"Description": "<p>Sets the scale of arrows drawn for aerodynamic force visualization. The\ndefault value is 1.0; smaller values draw smaller arrows and vice versa.\nThe default value is a good starting point for a wide range of aerodynamic\nmechanisms.</p>\n"
 			},
-			"ForceCSGv2": {},
-			"ForceDrawScale": {},
-			"ForceVisualizationSmoothingSteps": {},
-			"IsInterpolationThrottleShown": {},
+			"ForceCSGv2": {
+				"Summary": "<p>When set to true, forces the use of CSGv2 for solid modeling operations.</p>\n",
+				"Description": "<p>When set to true, forces the use of CSGv2 for solid modeling operations.\nThis property must be set in the Physics tab of Studio&#39;s settings menu.</p>\n"
+			},
+			"ForceDrawScale": {
+				"Summary": "<p>Sets the scale of arrows drawn for force visualization.</p>\n",
+				"Description": "<p>Sets the scale of arrows drawn for force visualization. This property is\nnot scriptable.</p>\n"
+			},
+			"ForceVisualizationSmoothingSteps": {
+				"Summary": "<p>Controls the number of frames used for force visualization smoothing.</p>\n",
+				"Description": "<p>Controls the number of frames used for force visualization smoothing. This\nproperty must be set in the Physics tab of Studio&#39;s settings menu.</p>\n"
+			},
+			"IsInterpolationThrottleShown": {
+				"Summary": "<p>When set to true, shows physics interpolation throttle information.</p>\n",
+				"Description": "<p>When set to true, shows physics interpolation throttle information. This\nproperty is not scriptable.</p>\n"
+			},
 			"IsReceiveAgeShown": {
 				"Summary": "<p>This property is supposed to show the <a href=\"/ref/class/BasePart.html#member-ReceiveAge\">BasePart.ReceiveAge</a> of a\npart, but it does not work correctly.</p>\n",
 				"Description": "<p>This property is supposed to show the <a href=\"/ref/class/BasePart.html#member-ReceiveAge\">BasePart.ReceiveAge</a> of a\npart, but it does not work correctly.</p>\n"
@@ -15166,14 +15271,26 @@
 				"Summary": "<p>When set to true, enables aerodynamic visualization for selected or\nhovered mechanisms in Studio&#39;s play and run modes.</p>\n",
 				"Description": "<p>When set to true, enables aerodynamic visualization for selected or\nhovered mechanisms in Studio&#39;s play and run modes. This visualization\nshows aerodynamic force, torque, and center of pressure for the hovered or\nselected mechanisms.</p>\n"
 			},
-			"ShowInstanceNamesForDrawnForcesAndTorques": {},
-			"SolverConvergenceMetricType": {},
-			"SolverConvergenceVisualizationMode": {},
+			"ShowInstanceNamesForDrawnForcesAndTorques": {
+				"Summary": "<p>When set to true, displays instance names alongside drawn force and torque\nvectors.</p>\n",
+				"Description": "<p>When set to true, displays instance names alongside drawn force and torque\nvectors. This property must be set in the Physics tab of Studio&#39;s settings\nmenu.</p>\n"
+			},
+			"SolverConvergenceMetricType": {
+				"Summary": "<p>Controls which metric is used for solver convergence visualization.</p>\n",
+				"Description": "<p>Controls which metric is used for solver convergence visualization. This\nproperty is not scriptable.</p>\n"
+			},
+			"SolverConvergenceVisualizationMode": {
+				"Summary": "<p>Controls the visualization mode for solver convergence.</p>\n",
+				"Description": "<p>Controls the visualization mode for solver convergence. This property is\nnot scriptable.</p>\n"
+			},
 			"ThrottleAdjustTime": {
 				"Summary": "<p>If the <a href=\"/ref/class/PhysicsSettings.html#member-PhysicsEnvironmentalThrottle\">PhysicsSettings.PhysicsEnvironmentalThrottle</a> is set to\n<code>DefaultAuto</code>, this specifies the maximum time that the physics\nenvironmental throttle has to wait before it is allowed to automatically\nchange.</p>\n",
 				"Description": "<p>If the <a href=\"/ref/class/PhysicsSettings.html#member-PhysicsEnvironmentalThrottle\">PhysicsSettings.PhysicsEnvironmentalThrottle</a> is set to\n<code>DefaultAuto</code>, this specifies the maximum time that the physics\nenvironmental throttle has to wait before it is allowed to automatically\nchange.</p>\n"
 			},
-			"TorqueDrawScale": {},
+			"TorqueDrawScale": {
+				"Summary": "<p>Sets the scale of arrows drawn for torque visualization.</p>\n",
+				"Description": "<p>Sets the scale of arrows drawn for torque visualization. This property is\nnot scriptable.</p>\n"
+			},
 			"UseCSGv2": {
 				"Summary": "<p>If set to true, version 2 of Roblox&#39;s CSG solver will be used instead of\nversion 1.</p>\n",
 				"Description": "<p>If set to true, version 2 of Roblox&#39;s CSG solver will be used instead of\nversion 1.</p>\n"
@@ -15428,7 +15545,10 @@
 				"Summary": "<p>This event fires approximately two minutes after the engine classifies the\nplayer as idle. Time is the number of seconds that have elapsed since that\npoint.</p>\n",
 				"Description": "<p>This event fires approximately two minutes after the engine classifies the\nplayer as idle. Time is the number of seconds that have elapsed since that\npoint. The event continues to fire every 30 seconds for as long as the\nplayer remains idle.</p>\n<p>This event only fires in client scripts, not server scripts; use a\n<a href=\"/ref/class/RemoteEvent.html\">RemoteEvent</a> to notify the server of idle players.</p>\n<p>Roblox automatically disconnects players that have been idle for at least\n20 minutes, so this event is useful for warning players that they will be\ndisconnected soon, disconnecting players prior to those 20 minutes, or\nother away from keyboard (AFK) features.</p>\n<p>To track how often automatic disconnects occur, try correlating this event\nwith occurrences of <a href=\"/ref/class/Players.html#member-PlayerRemoving\">Players.PlayerRemoving</a>.</p>\n"
 			},
-			"InputLatency": {},
+			"InputLatency": {
+				"Summary": "<p>An internal property used by the Server Authority netcode system.</p>\n",
+				"Description": "<p>An internal property used by the Server Authority netcode system. This\nproperty is not accessible through scripts.</p>\n"
+			},
 			"IsBestFriendsWith": {
 				"Summary": "<p>Returns whether a player is friends with the specified user.</p>\n",
 				"Description": "<p>This function was once used to return whether a player is best friends\nwith the specified user, but the feature has since been removed.</p>\n",
@@ -15629,7 +15749,10 @@
 				"Summary": "<p>Sets whether or not the player sees filtered chats, rather than normal\nchats.</p>\n",
 				"Description": "<p>This method sets whether or not the player sees chat filtered by\n<a href=\"/ref/class/TextService.html#member-FilterStringAsync\">TextService:FilterStringAsync()</a> rather than normal chats.</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span><span class=\"_lnt\">4\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">Players</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Players&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">player</span> <span class=\"_o\">=</span> <span class=\"_n\">Players.LocalPlayer</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">player</span><span class=\"_p\">:</span><span class=\"_n\">SetSuperSafeChat</span><span class=\"_p\">(</span><span class=\"_kc\">true</span><span class=\"_p\">)</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n<p>Regardless of whether a player has filtered chat enabled, all chat should\nbe filtered by <a href=\"/ref/class/TextService.html\">TextService</a> when broadcast to other players or on\nthe player&#39;s own screen. <a href=\"/ref/class/TextService.html#member-FilterStringAsync\">TextService:FilterStringAsync()</a> returns a\n<a href=\"/ref/class/TextFilterResult.html\">TextFilterResult</a> object that can be filtered differently according\nto the message&#39;s intended use.</p>\n"
 			},
-			"StepIdOffset": {},
+			"StepIdOffset": {
+				"Summary": "<p>An internal offset between client and server used by the Server Authority\nsystem.</p>\n",
+				"Description": "<p>An internal offset between client and server used by the Server Authority\nsystem. This property is not accessible through scripts.</p>\n"
+			},
 			"Team": {
 				"Summary": "<p>Determines the <a href=\"/ref/class/Team.html\">Team</a> with which the player is associated.</p>\n",
 				"Description": "<p>This property is a reference to a <a href=\"/ref/class/Team.html\">Team</a> object within the\n<a href=\"/ref/class/Teams.html\">Teams</a> service. If the player isn&#39;t on a team or has an invalid\n<a href=\"/ref/class/Player.html#member-TeamColor\">TeamColor</a>, this property is <code>nil</code>. When this\nproperty is set, the player has joined the <a href=\"/ref/class/Team.html\">Team</a> and the\n<a href=\"/ref/class/Team.html#member-PlayerAdded\">Team.PlayerAdded</a> event fires on the associated team. Similarly,\n<a href=\"/ref/class/Team.html#member-PlayerRemoved\">Team.PlayerRemoved</a> fires when the property is unset from a certain\n<a href=\"/ref/class/Team.html\">Team</a>.</p>\n"
@@ -15782,8 +15905,8 @@
 				]
 			},
 			"BanningEnabled": {
-				"Summary": "<p>Enables or disables the three <a href=\"/ref/class/Players.html\">Players</a> methods\n(<a href=\"/ref/class/Players.html#member-BanAsync\">BanAsync()</a>,\n<a href=\"/ref/class/Players.html#member-UnbanAsync\">UnbanAsync()</a>, and\n<a href=\"/ref/class/Players.html#member-GetBanHistoryAsync\">GetBanHistoryAsync()</a>) that constitute\nthe ban API. This property is not scriptable and can only be modified in\nStudio.</p>\n",
-				"Description": "<p>Enables or disables the three <a href=\"/ref/class/Players.html\">Players</a> methods\n(<a href=\"/ref/class/Players.html#member-BanAsync\">BanAsync()</a>,\n<a href=\"/ref/class/Players.html#member-UnbanAsync\">UnbanAsync()</a>, and\n<a href=\"/ref/class/Players.html#member-GetBanHistoryAsync\">GetBanHistoryAsync()</a>) that constitute\nthe ban API. This property is not scriptable and can only be modified in\nStudio.</p>\n"
+				"Summary": "<p>Enables or disables the three <a href=\"/ref/class/Players.html\">Players</a> methods\n(<a href=\"/ref/class/Players.html#member-BanAsync\">BanAsync()</a>,\n<a href=\"/ref/class/Players.html#member-UnbanAsync\">UnbanAsync()</a>, and\n<a href=\"/ref/class/Players.html#member-GetBanHistoryAsync\">GetBanHistoryAsync()</a>) that constitute\nthe ban API. This property cannot be set through developer-facing Luau and\nmust be set in Studio through the Players properties window.</p>\n",
+				"Description": "<p>Enables or disables the three <a href=\"/ref/class/Players.html\">Players</a> methods\n(<a href=\"/ref/class/Players.html#member-BanAsync\">BanAsync()</a>,\n<a href=\"/ref/class/Players.html#member-UnbanAsync\">UnbanAsync()</a>, and\n<a href=\"/ref/class/Players.html#member-GetBanHistoryAsync\">GetBanHistoryAsync()</a>) that constitute\nthe ban API. This property cannot be set through developer-facing Luau and\nmust be set in Studio through the Players properties window.</p>\n"
 			},
 			"BubbleChat": {
 				"Summary": "<p>Indicates whether or not bubble chat is enabled. It is set with the\n<a href=\"/ref/class/Players.html#member-SetChatStyle\">Players:SetChatStyle()</a> method.</p>\n",
@@ -16131,7 +16254,10 @@
 				"Summary": "<p>Returns <code>true</code> if this plugin is currently active with an exclusive mouse.</p>\n",
 				"Description": "<p>This function returns <code>true</code> if this plugin is currently active with an\nexclusive mouse, after having been activated via the\n<a href=\"/ref/class/Plugin.html#member-Activate\">Activate()</a> function. If this returns <code>true</code>, a\n<a href=\"/ref/class/PluginMouse.html\">PluginMouse</a> can be retrieved via\n<a href=\"/ref/class/Plugin.html#member-GetMouse\">GetMouse()</a>.</p>\n<h4>See Also</h4>\n<ul>\n<li><a href=\"/ref/class/Plugin.html#member-Deactivation\">Deactivation</a> which fires when the plugin is\ndeactivated.</li>\n<li><a href=\"/ref/class/Plugin.html#member-Unloading\">Unloading</a> which fires immediately before the\nplugin is unloaded or reloaded via uninstallation, deactivation, or\nupdating.</li>\n</ul>\n"
 			},
-			"IsDebuggable": {},
+			"IsDebuggable": {
+				"Summary": "<p>Indicates whether the plugin&#39;s scripts can be debugged in Studio.</p>\n",
+				"Description": "<p>Indicates whether the plugin&#39;s scripts can be debugged in Studio. This\nproperty is not accessible through scripts.</p>\n"
+			},
 			"Negate": {
 				"Summary": "<p>Negates the given parts and returns the resulting\n<a href=\"/ref/class/NegateOperation.html\">NegateOperations</a>.</p>\n",
 				"Description": "<p>Negates the given parts and returns the resulting\n<a href=\"/ref/class/NegateOperation.html\">NegateOperations</a>.</p>\n"
@@ -17929,10 +18055,6 @@
 				"DeprecationMessage": "<p>This item has been superseded by <a href=\"/ref/class/ServiceProvider.html#member-GetService\">ServiceProvider:GetService()</a>\nwhich should be used in all new work.</p>\n"
 			}
 		},
-		"ServiceVisibilityService": {
-			"HiddenServices": {},
-			"VisibleServices": {}
-		},
 		"SessionCheckService": {},
 		"SharedTableRegistry": {
 			"GetSharedTable": {
@@ -18947,7 +19069,7 @@
 			},
 			"LoadCharacterLayeredClothing ": {
 				"Summary": "<p>Indicates whether characters spawning into an experience will have layered\nclothing accessories equipped on them.</p>\n",
-				"Description": "<p>Indicates whether characters spawning into an experience will have layered\nclothing accessories equipped on them (Although\n<a href=\"/ref/class/Workspace.html#member-MeshPartHeadsAndAccessories\">Workspace.MeshPartHeadsAndAccessories</a> also need to be enabled in\nthe <a href=\"/ref/class/Workspace.html\">Workspace</a>).</p>\n"
+				"Description": "<p>Indicates whether characters spawning into an experience will have layered\nclothing accessories equipped on them (Although\n<a href=\"/ref/class/Workspace.html#member-MeshPartHeadsAndAccessories\">Workspace.MeshPartHeadsAndAccessories</a> also need to be enabled in\nthe <a href=\"/ref/class/Workspace.html\">Workspace</a>).</p>\n<p>This property also gates the <a href=\"/ref/class/WrapLayer.html#member-AutoSkin\">WrapLayer.AutoSkin</a> feature. When set\nto <code>Disabled</code>, the automatic skinning transfer pipeline for WrapLayers\ndoes not run, and <a href=\"/ref/class/WrapLayer.html#member-AutoSkin\">WrapLayer.AutoSkin</a> has no effect. For more\ninformation, see\n<a href=\"https://create.roblox.com/docs/avatar/automatic-skinning-transfer\">Automatic Skinning Transfer</a>.</p>\n"
 			},
 			"LuaCharacterController": {
 				"Summary": "<p>Sets the character controller mode used by the player&#39;s character.</p>\n",
@@ -19113,15 +19235,42 @@
 			}
 		},
 		"Studio": {
-			"\"TODO\" Color": {},
-			"\"function\" Color": {},
-			"\"local\" Color": {},
-			"\"nil\" Color": {},
-			"\"self\" Color": {},
-			"ActionOnAutoResumeSync": {},
-			"ActionOnStopSync": {},
-			"Active Color": {},
-			"Active Hover Over Color": {},
+			"\"TODO\" Color": {
+				"Summary": "<p>Sets the color of TODO comments in the script editor.</p>\n",
+				"Description": "<p>Sets the color of TODO comments in the script editor. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"\"function\" Color": {
+				"Summary": "<p>Sets the color of the <code>function</code> keyword in the script editor.</p>\n",
+				"Description": "<p>Sets the color of the <code>function</code> keyword in the script editor. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"\"local\" Color": {
+				"Summary": "<p>Sets the color of the <code>local</code> keyword in the script editor.</p>\n",
+				"Description": "<p>Sets the color of the <code>local</code> keyword in the script editor. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"\"nil\" Color": {
+				"Summary": "<p>Sets the color of the <code>nil</code> keyword in the script editor.</p>\n",
+				"Description": "<p>Sets the color of the <code>nil</code> keyword in the script editor. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"\"self\" Color": {
+				"Summary": "<p>Sets the color of the <code>self</code> keyword in the script editor.</p>\n",
+				"Description": "<p>Sets the color of the <code>self</code> keyword in the script editor. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"ActionOnAutoResumeSync": {
+				"Summary": "<p>Sets the action Studio takes when auto-resuming file sync.</p>\n",
+				"Description": "<p>Sets the action Studio takes when auto-resuming file sync. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"ActionOnStopSync": {
+				"Summary": "<p>Sets the action Studio takes when stopping file sync.</p>\n",
+				"Description": "<p>Sets the action Studio takes when stopping file sync. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"Active Color": {
+				"Summary": "<p>Sets the color of active UI elements in Studio.</p>\n",
+				"Description": "<p>Sets the color of active UI elements in Studio. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
+			"Active Hover Over Color": {
+				"Summary": "<p>Sets the color of active UI elements when hovered in Studio.</p>\n",
+				"Description": "<p>Sets the color of active UI elements when hovered in Studio. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Always Save Script Changes": {
 				"Summary": "<p>If set to true, Roblox Studio will attempt to transfer script changes that\nwere made during a Play Solo session to the opened place.</p>\n",
 				"Description": "<p>If set to true, Roblox Studio will attempt to transfer script changes that\nwere made during a Play Solo session to the opened place.</p>\n"
@@ -19130,17 +19279,50 @@
 				"Summary": "<p>If set to true, the hover selection box that is shown when mousing over\nselectable objects in the <a href=\"/ref/class/Workspace.html\">Workspace</a> will flash between\n<code>Hover Over Color</code> and <code>Select Color</code> based on the <code>Hover Animate Speed</code>.</p>\n",
 				"Description": "<p>If set to true, the hover selection box that is shown when mousing over\nselectable objects in the <a href=\"/ref/class/Workspace.html\">Workspace</a> will flash between\n<code>Hover Over Color</code> and <code>Select Color</code> based on the <code>Hover Animate Speed</code>.</p>\n"
 			},
-			"Auto Clean Empty Line": {},
-			"Auto Closing Brackets": {},
-			"Auto Closing Quotes": {},
-			"Auto Delete Closing Brackets and Quotes": {},
-			"Auto Indent Rule": {},
-			"Auto-Recovery Enabled": {},
-			"Auto-Recovery Interval (Minutes)": {},
-			"AutoResumeSyncOnPlaceOpen": {},
-			"AutoUpdateEnabled": {},
-			"AutocompleteAcceptanceBehavior": {},
-			"Automatically trigger AI Code Completion": {},
+			"Auto Clean Empty Line": {
+				"Summary": "<p>Controls whether trailing whitespace is automatically removed from empty\nlines in the script editor.</p>\n",
+				"Description": "<p>Controls whether trailing whitespace is automatically removed from empty\nlines in the script editor. This must be set in Studio Settings &gt; Studio\ntab.</p>\n"
+			},
+			"Auto Closing Brackets": {
+				"Summary": "<p>Controls whether the script editor automatically inserts a matching\nclosing bracket.</p>\n",
+				"Description": "<p>Controls whether the script editor automatically inserts a matching\nclosing bracket. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Auto Closing Quotes": {
+				"Summary": "<p>Controls whether the script editor automatically inserts a matching\nclosing quote.</p>\n",
+				"Description": "<p>Controls whether the script editor automatically inserts a matching\nclosing quote. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Auto Delete Closing Brackets and Quotes": {
+				"Summary": "<p>Controls whether deleting an opening bracket or quote also removes its\nclosing counterpart.</p>\n",
+				"Description": "<p>Controls whether deleting an opening bracket or quote also removes its\nclosing counterpart. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Auto Indent Rule": {
+				"Summary": "<p>Sets the rule used to determine automatic indentation in the script\neditor.</p>\n",
+				"Description": "<p>Sets the rule used to determine automatic indentation in the script\neditor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Auto-Recovery Enabled": {
+				"Summary": "<p>Controls whether Studio automatically saves recovery files at a set\ninterval.</p>\n",
+				"Description": "<p>Controls whether Studio automatically saves recovery files at a set\ninterval. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Auto-Recovery Interval (Minutes)": {
+				"Summary": "<p>Sets the interval in minutes at which Studio saves auto-recovery files.</p>\n",
+				"Description": "<p>Sets the interval in minutes at which Studio saves auto-recovery files.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"AutoResumeSyncOnPlaceOpen": {
+				"Summary": "<p>Controls whether file sync resumes automatically when a place is opened.</p>\n",
+				"Description": "<p>Controls whether file sync resumes automatically when a place is opened.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"AutoUpdateEnabled": {
+				"Summary": "<p>Controls whether Studio updates itself automatically when a new version is\navailable.</p>\n",
+				"Description": "<p>Controls whether Studio updates itself automatically when a new version is\navailable. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"AutocompleteAcceptanceBehavior": {
+				"Summary": "<p>Sets the key used to accept autocomplete suggestions in the script editor.</p>\n",
+				"Description": "<p>Sets the key used to accept autocomplete suggestions in the script editor.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Automatically trigger AI Code Completion": {
+				"Summary": "<p>Controls whether AI code completion suggestions trigger automatically\nwhile typing.</p>\n",
+				"Description": "<p>Controls whether AI code completion suggestions trigger automatically\nwhile typing. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Background Color": {
 				"Summary": "<p>Specifies the background color of Roblox Studio&#39;s script editor.</p>\n",
 				"Description": "<p>Specifies the background color of Roblox Studio&#39;s script editor.</p>\n"
@@ -19149,8 +19331,14 @@
 				"Summary": "<p>Sets the scrolling mode of the <code>Advanced Objects</code> tab in Roblox Studio.</p>\n",
 				"Description": "<p>Sets the scrolling mode of the <code>Advanced Objects</code> tab in Roblox Studio.</p>\n"
 			},
-			"Bool Color": {},
-			"Bracket Color": {},
+			"Bool Color": {
+				"Summary": "<p>Sets the color of boolean literals in the script editor.</p>\n",
+				"Description": "<p>Sets the color of boolean literals in the script editor. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Bracket Color": {
+				"Summary": "<p>Sets the color of brackets in the script editor.</p>\n",
+				"Description": "<p>Sets the color of brackets in the script editor. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
 			"Built-in Function Color": {
 				"Summary": "<p>Sets the color of built-in functions and keywords in the script editor.</p>\n",
 				"Description": "<p>Sets the color of built-in functions and keywords in the script editor.</p>\n"
@@ -19159,7 +19347,10 @@
 				"Summary": "<p>Sets how many studs the camera will move forward or backwards when using\nthe mouse wheel.</p>\n",
 				"Description": "<p>Sets how many studs the camera will move forward or backwards when using\nthe mouse wheel.</p>\n"
 			},
-			"Camera Pan Speed": {},
+			"Camera Pan Speed": {
+				"Summary": "<p>Sets the speed of camera panning in Studio.</p>\n",
+				"Description": "<p>Sets the speed of camera panning in Studio. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
 			"Camera Shift Speed": {
 				"Summary": "<p>Sets the speed in studs/sec that the camera moves while holding down Shift\nwith the movement keys.</p>\n",
 				"Description": "<p>Sets the speed in studs/sec that the camera moves while holding down Shift\nwith the movement keys.</p>\n"
@@ -19168,80 +19359,242 @@
 				"Summary": "<p>Sets the speed in studs/sec that the camera moves when movement keys are\npressed.</p>\n",
 				"Description": "<p>Sets the speed in studs/sec that the camera moves when movement keys are\npressed.</p>\n"
 			},
-			"Camera Speed Adjust Binding": {},
-			"Camera Zoom to Mouse Position": {},
-			"CameraAdaptiveSpeed": {},
-			"CameraNavigationModel": {},
-			"CameraOrbitSensitivity": {},
-			"CameraPanSensitivity": {},
-			"CameraShiftFactor": {},
-			"CameraTweenFocus": {},
-			"CameraZoomSpeed": {},
+			"Camera Speed Adjust Binding": {
+				"Summary": "<p>Sets the mouse button used to adjust the camera speed in Studio.</p>\n",
+				"Description": "<p>Sets the mouse button used to adjust the camera speed in Studio. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Camera Zoom to Mouse Position": {
+				"Summary": "<p>Controls whether the camera zooms toward the mouse cursor position.</p>\n",
+				"Description": "<p>Controls whether the camera zooms toward the mouse cursor position. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"CameraAdaptiveSpeed": {
+				"Summary": "<p>Controls whether camera movement speed adapts based on distance to nearby\nobjects.</p>\n",
+				"Description": "<p>Controls whether camera movement speed adapts based on distance to nearby\nobjects. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"CameraNavigationModel": {
+				"Summary": "<p>Sets the navigation model used for camera movement in Studio.</p>\n",
+				"Description": "<p>Sets the navigation model used for camera movement in Studio. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"CameraOrbitSensitivity": {
+				"Summary": "<p>Sets the mouse sensitivity for camera orbit in Studio.</p>\n",
+				"Description": "<p>Sets the mouse sensitivity for camera orbit in Studio. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"CameraPanSensitivity": {
+				"Summary": "<p>Sets the mouse sensitivity for camera panning in Studio.</p>\n",
+				"Description": "<p>Sets the mouse sensitivity for camera panning in Studio. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"CameraShiftFactor": {
+				"Summary": "<p>Sets the speed multiplier applied to camera movement when Shift is held.</p>\n",
+				"Description": "<p>Sets the speed multiplier applied to camera movement when Shift is held.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"CameraTweenFocus": {
+				"Summary": "<p>Controls whether the camera smoothly tweens when refocusing on a selected\nobject.</p>\n",
+				"Description": "<p>Controls whether the camera smoothly tweens when refocusing on a selected\nobject. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"CameraZoomSpeed": {
+				"Summary": "<p>Sets the speed of camera zooming in Studio.</p>\n",
+				"Description": "<p>Sets the speed of camera zooming in Studio. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
 			"Clear Output On Start": {
 				"Summary": "<p>If set to true, the output will be automatically cleared when game\nsessions are switched.</p>\n",
 				"Description": "<p>If set to true, the output will be automatically cleared when game\nsessions are switched.</p>\n"
 			},
-			"CommandBarEnterExec": {},
-			"CommandBarFont": {},
-			"CommandBarLocalState": {},
+			"CommandBarEnterExec": {
+				"Summary": "<p>Controls whether pressing Enter immediately executes the command bar\ninput.</p>\n",
+				"Description": "<p>Controls whether pressing Enter immediately executes the command bar\ninput. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"CommandBarFont": {
+				"Summary": "<p>Sets the font used in the Studio command bar.</p>\n",
+				"Description": "<p>Sets the font used in the Studio command bar. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
+			"CommandBarLocalState": {
+				"Summary": "<p>Controls whether the command bar retains its input state between sessions.</p>\n",
+				"Description": "<p>Controls whether the command bar retains its input state between sessions.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Comment Color": {
 				"Summary": "<p>Specifies the color of comments in Roblox Studio&#39;s script editor.</p>\n",
 				"Description": "<p>Specifies the color of comments in Roblox Studio&#39;s script editor.</p>\n"
 			},
-			"Current Line Highlight Color": {},
-			"Debugger Current Line Color": {},
-			"Debugger Error Line Color": {},
-			"DefaultInstancesDir": {},
-			"DefaultScriptSyncFileType": {},
+			"Current Line Highlight Color": {
+				"Summary": "<p>Sets the color of the current line highlight in the script editor.</p>\n",
+				"Description": "<p>Sets the color of the current line highlight in the script editor. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Debugger Current Line Color": {
+				"Summary": "<p>Sets the color of the current debugger line in the script editor.</p>\n",
+				"Description": "<p>Sets the color of the current debugger line in the script editor. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Debugger Error Line Color": {
+				"Summary": "<p>Sets the color of debugger error lines in the script editor.</p>\n",
+				"Description": "<p>Sets the color of debugger error lines in the script editor. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DefaultInstancesDir": {
+				"Summary": "<p>Sets the default directory where Studio saves instance files.</p>\n",
+				"Description": "<p>Sets the default directory where Studio saves instance files. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DefaultScriptSyncFileType": {
+				"Summary": "<p>Sets the default file type used when syncing scripts to the file system.</p>\n",
+				"Description": "<p>Sets the default file type used when syncing scripts to the file system.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"DeprecatedObjectsShown": {
 				"Summary": "<p>If set to true, deprecated objects will be shown in the Advanced Objects\nwindow, as well as the Object Browser.</p>\n",
 				"Description": "<p>If set to true, deprecated objects will be shown in the Advanced Objects\nwindow, as well as the Object Browser.</p>\n"
 			},
-			"DisplayLanguage": {},
-			"DraggerActiveColor": {},
-			"DraggerLengthFactor": {},
-			"DraggerMajorGridIncrement": {},
-			"DraggerMaxSoftSnaps": {},
-			"DraggerPassiveColor": {},
-			"DraggerScaleFactor": {},
-			"DraggerShowAxisTicks": {},
-			"DraggerShowHoverRuler": {},
-			"DraggerShowMeasurement": {},
-			"DraggerShowNegativeAxes": {},
-			"DraggerShowPlanes": {},
-			"DraggerShowTargetSnap": {},
-			"DraggerShowTrackball": {},
-			"DraggerShowWhileDragging": {},
-			"DraggerSoftSnapMarginFactor": {},
-			"DraggerSummonMarginFactor": {},
-			"DraggerTiltRotateDuration": {},
+			"DisplayLanguage": {
+				"Summary": "<p>Sets the display language used by the Studio interface.</p>\n",
+				"Description": "<p>Sets the display language used by the Studio interface. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerActiveColor": {
+				"Summary": "<p>Sets the color of the active dragger handle in Studio.</p>\n",
+				"Description": "<p>Sets the color of the active dragger handle in Studio. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerLengthFactor": {
+				"Summary": "<p>Sets the length scale factor of dragger handles in Studio.</p>\n",
+				"Description": "<p>Sets the length scale factor of dragger handles in Studio. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerMajorGridIncrement": {
+				"Summary": "<p>Sets the major grid increment used when snapping with the dragger.</p>\n",
+				"Description": "<p>Sets the major grid increment used when snapping with the dragger. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerMaxSoftSnaps": {
+				"Summary": "<p>Sets the maximum number of soft snap points shown by the dragger.</p>\n",
+				"Description": "<p>Sets the maximum number of soft snap points shown by the dragger. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerPassiveColor": {
+				"Summary": "<p>Sets the color of inactive dragger handles in Studio.</p>\n",
+				"Description": "<p>Sets the color of inactive dragger handles in Studio. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerScaleFactor": {
+				"Summary": "<p>Sets the scale factor controlling the overall size of dragger handles.</p>\n",
+				"Description": "<p>Sets the scale factor controlling the overall size of dragger handles.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowAxisTicks": {
+				"Summary": "<p>Controls whether tick marks are shown on dragger axis lines.</p>\n",
+				"Description": "<p>Controls whether tick marks are shown on dragger axis lines. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowHoverRuler": {
+				"Summary": "<p>Controls whether a ruler is shown when hovering near the dragger.</p>\n",
+				"Description": "<p>Controls whether a ruler is shown when hovering near the dragger. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowMeasurement": {
+				"Summary": "<p>Controls whether distance measurements are shown while dragging.</p>\n",
+				"Description": "<p>Controls whether distance measurements are shown while dragging. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowNegativeAxes": {
+				"Summary": "<p>Controls whether negative axis handles are shown on the dragger.</p>\n",
+				"Description": "<p>Controls whether negative axis handles are shown on the dragger. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowPlanes": {
+				"Summary": "<p>Controls whether planar translation handles are shown on the dragger.</p>\n",
+				"Description": "<p>Controls whether planar translation handles are shown on the dragger. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowTargetSnap": {
+				"Summary": "<p>Controls whether the target snap indicator is shown on the dragger.</p>\n",
+				"Description": "<p>Controls whether the target snap indicator is shown on the dragger. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowTrackball": {
+				"Summary": "<p>Controls whether the trackball handle is shown on the rotation dragger.</p>\n",
+				"Description": "<p>Controls whether the trackball handle is shown on the rotation dragger.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerShowWhileDragging": {
+				"Summary": "<p>Controls whether dragger handles remain visible while actively dragging.</p>\n",
+				"Description": "<p>Controls whether dragger handles remain visible while actively dragging.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerSoftSnapMarginFactor": {
+				"Summary": "<p>Sets the margin factor used to determine proximity for soft snapping.</p>\n",
+				"Description": "<p>Sets the margin factor used to determine proximity for soft snapping. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerSummonMarginFactor": {
+				"Summary": "<p>Sets the margin factor used to summon the dragger near a surface.</p>\n",
+				"Description": "<p>Sets the margin factor used to summon the dragger near a surface. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"DraggerTiltRotateDuration": {
+				"Summary": "<p>Sets the duration in seconds of the tilt rotation animation in the\ndragger.</p>\n",
+				"Description": "<p>Sets the duration in seconds of the tilt rotation animation in the\ndragger. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Enable Autocomplete": {
 				"Summary": "<p>When set to true, the script editor and command bar will show an\nautocomplete menu while writing.</p>\n",
 				"Description": "<p>When set to true, the script editor and command bar will show an\nautocomplete menu while writing.</p>\n"
 			},
-			"Enable Autocomplete Doc View": {},
-			"Enable CoreScript Debugger": {},
-			"Enable Http Sandboxing": {},
-			"Enable Internal Beta Features": {},
-			"Enable Internal Features": {},
-			"Enable Script Analysis": {},
-			"Enable Scrollbar Markers": {},
-			"Enable Signature Help": {},
-			"Enable Signature Help Doc View": {},
-			"Enable Temporary Tabs": {},
-			"Enable Temporary Tabs In Explorer": {},
-			"Enable Type Hover": {},
-			"EnableCodeAssist": {},
-			"EnableFindOnType": {},
-			"EnableIndentationRulers": {},
-			"EnableSelectionTooltips": {},
-			"EnableStudioStreaming": {},
+			"Enable Autocomplete Doc View": {
+				"Summary": "<p>Controls whether documentation is shown alongside autocomplete\nsuggestions.</p>\n",
+				"Description": "<p>Controls whether documentation is shown alongside autocomplete\nsuggestions. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable CoreScript Debugger": {
+				"Summary": "<p>Controls whether the CoreScript debugger is available in Studio.</p>\n",
+				"Description": "<p>Controls whether the CoreScript debugger is available in Studio. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Http Sandboxing": {
+				"Summary": "<p>Controls whether HTTP requests from plugins are sandboxed.</p>\n",
+				"Description": "<p>Controls whether HTTP requests from plugins are sandboxed. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Internal Beta Features": {
+				"Summary": "<p>Controls whether internal beta features are accessible in Studio.</p>\n",
+				"Description": "<p>Controls whether internal beta features are accessible in Studio. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Internal Features": {
+				"Summary": "<p>Controls whether internal developer features are accessible in Studio.</p>\n",
+				"Description": "<p>Controls whether internal developer features are accessible in Studio.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Script Analysis": {
+				"Summary": "<p>Controls whether the script editor performs real-time Luau script\nanalysis.</p>\n",
+				"Description": "<p>Controls whether the script editor performs real-time Luau script\nanalysis. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Scrollbar Markers": {
+				"Summary": "<p>Controls whether error and warning markers are shown on the script editor\nscrollbar.</p>\n",
+				"Description": "<p>Controls whether error and warning markers are shown on the script editor\nscrollbar. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Signature Help": {
+				"Summary": "<p>Controls whether function signature help popups are shown while typing.</p>\n",
+				"Description": "<p>Controls whether function signature help popups are shown while typing.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Signature Help Doc View": {
+				"Summary": "<p>Controls whether documentation is shown alongside signature help popups.</p>\n",
+				"Description": "<p>Controls whether documentation is shown alongside signature help popups.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Temporary Tabs": {
+				"Summary": "<p>Controls whether opening a script creates a temporary tab that is replaced\non the next open.</p>\n",
+				"Description": "<p>Controls whether opening a script creates a temporary tab that is replaced\non the next open. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Temporary Tabs In Explorer": {
+				"Summary": "<p>Controls whether clicking a script in the Explorer opens it in a temporary\ntab.</p>\n",
+				"Description": "<p>Controls whether clicking a script in the Explorer opens it in a temporary\ntab. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Enable Type Hover": {
+				"Summary": "<p>Controls whether hovering over an identifier shows its inferred type.</p>\n",
+				"Description": "<p>Controls whether hovering over an identifier shows its inferred type. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"EnableCodeAssist": {
+				"Summary": "<p>Controls whether AI-powered code assist features are enabled in the script\neditor.</p>\n",
+				"Description": "<p>Controls whether AI-powered code assist features are enabled in the script\neditor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"EnableFindOnType": {
+				"Summary": "<p>Controls whether the Find bar activates when typing in the script editor.</p>\n",
+				"Description": "<p>Controls whether the Find bar activates when typing in the script editor.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"EnableIndentationRulers": {
+				"Summary": "<p>Controls whether indentation ruler lines are shown in the script editor.</p>\n",
+				"Description": "<p>Controls whether indentation ruler lines are shown in the script editor.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"EnableSelectionTooltips": {
+				"Summary": "<p>Controls whether tooltips are shown when hovering over selected objects.</p>\n",
+				"Description": "<p>Controls whether tooltips are shown when hovering over selected objects.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"EnableStudioStreaming": {
+				"Summary": "<p>Controls whether Studio streaming mode is enabled.</p>\n",
+				"Description": "<p>Controls whether Studio streaming mode is enabled. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
 			"Error Color": {
 				"Summary": "<p>Specifies the color of the wavy underline shown when malformed code is\ndetected in the script editor.</p>\n",
 				"Description": "<p>Specifies the color of the wavy underline shown when malformed code is\ndetected in the script editor.</p>\n"
 			},
-			"ExternalEditorMode": {},
-			"ExternalEditorSelection": {},
+			"ExternalEditorMode": {
+				"Summary": "<p>Sets the mode used when opening scripts in an external editor.</p>\n",
+				"Description": "<p>Sets the mode used when opening scripts in an external editor. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"ExternalEditorSelection": {
+				"Summary": "<p>Sets which external editor Studio opens scripts with.</p>\n",
+				"Description": "<p>Sets which external editor Studio opens scripts with. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
 			"Find Selection Background Color": {
 				"Summary": "<p>Sets the highlight color of matches in the script editor&#39;s Find Selection\noperation (Ctrl+F).</p>\n",
 				"Description": "<p>Sets the highlight color of matches in the script editor&#39;s Find Selection\noperation (Ctrl+F).</p>\n"
@@ -19250,9 +19603,18 @@
 				"Summary": "<p>Specifies the font used in the script editor.</p>\n",
 				"Description": "<p>Specifies the font used in the script editor.</p>\n"
 			},
-			"Format On Paste": {},
-			"Format On Type": {},
-			"Function Name Color": {},
+			"Format On Paste": {
+				"Summary": "<p>Controls whether pasted code is automatically formatted in the script\neditor.</p>\n",
+				"Description": "<p>Controls whether pasted code is automatically formatted in the script\neditor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Format On Type": {
+				"Summary": "<p>Controls whether code is automatically formatted as you type in the script\neditor.</p>\n",
+				"Description": "<p>Controls whether code is automatically formatted as you type in the script\neditor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Function Name Color": {
+				"Summary": "<p>Sets the color of function names in the script editor.</p>\n",
+				"Description": "<p>Sets the color of function names in the script editor. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
 			"GetAvailableThemes": {
 				"Summary": "<p>Returns a list of <a href=\"/ref/class/StudioTheme.html\">themes</a> available in Studio.</p>\n",
 				"Description": "<p>The <strong>GetAvailableThemes()</strong> function returns a list of\n<a href=\"/ref/class/StudioTheme.html\">StudioThemes</a> available in <a href=\"/ref/class/Studio.html\">Studio</a>. You can\naccess the function via:</p>\n<pre><code>settings().Studio:GetAvailableThemes()\n</code></pre>\n",
@@ -19260,55 +19622,118 @@
 					"getavailablethemes"
 				]
 			},
-			"Highlight Current Line": {},
-			"Highlight Occurances": {},
-			"HintColor": {},
+			"Highlight Current Line": {
+				"Summary": "<p>Controls whether the current line is highlighted in the script editor.</p>\n",
+				"Description": "<p>Controls whether the current line is highlighted in the script editor.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Highlight Occurances": {
+				"Summary": "<p>Controls whether other occurrences of the word under the cursor are\nhighlighted.</p>\n",
+				"Description": "<p>Controls whether other occurrences of the word under the cursor are\nhighlighted. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"HintColor": {
+				"Summary": "<p>Sets the color of hint diagnostics in the script editor.</p>\n",
+				"Description": "<p>Sets the color of hint diagnostics in the script editor. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Hover Animate Speed": {
 				"Summary": "<p>Specifies how frequently the hover animation flashes when the mouse is\nhovering over a selectable object in the <a href=\"/ref/class/Workspace.html\">Workspace</a>.</p>\n",
 				"Description": "<p>Specifies how frequently the hover animation flashes when the mouse is\nhovering over a selectable object in the <a href=\"/ref/class/Workspace.html\">Workspace</a>.</p>\n"
 			},
-			"Hover Box Thickness": {},
-			"Hover Line Thickness": {},
+			"Hover Box Thickness": {
+				"Summary": "<p>Sets the thickness of the selection box shown when hovering over objects.</p>\n",
+				"Description": "<p>Sets the thickness of the selection box shown when hovering over objects.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Hover Line Thickness": {
+				"Summary": "<p>Sets the line thickness of the hover selection box.</p>\n",
+				"Description": "<p>Sets the line thickness of the hover selection box. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
 			"Hover Over Color": {
 				"Summary": "<p>Specifies the color that the hover selection box uses.</p>\n",
 				"Description": "<p>Specifies the color that the hover selection box uses.</p>\n"
 			},
-			"IconOverrideDir": {},
-			"Indent Using Spaces": {},
-			"IndentationRulerColor": {},
-			"InformationColor": {},
+			"IconOverrideDir": {
+				"Summary": "<p>Sets the directory Studio uses to load icon overrides.</p>\n",
+				"Description": "<p>Sets the directory Studio uses to load icon overrides. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"Indent Using Spaces": {
+				"Summary": "<p>Controls whether the script editor uses spaces instead of tabs for\nindentation.</p>\n",
+				"Description": "<p>Controls whether the script editor uses spaces instead of tabs for\nindentation. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"IndentationRulerColor": {
+				"Summary": "<p>Sets the color of indentation rulers in the script editor.</p>\n",
+				"Description": "<p>Sets the color of indentation rulers in the script editor. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"InformationColor": {
+				"Summary": "<p>Sets the color of information diagnostics in the script editor.</p>\n",
+				"Description": "<p>Sets the color of information diagnostics in the script editor. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Keyword Color": {
 				"Summary": "<p>Sets the text color of built-in Luau keywords.</p>\n",
 				"Description": "<p>Sets the text color of built-in Luau keywords.</p>\n"
 			},
-			"LargeFileLineCountThreshold": {},
-			"LargeFileThreshold": {},
+			"LargeFileLineCountThreshold": {
+				"Summary": "<p>Sets the line count at which a script is treated as a large file by the\nscript editor.</p>\n",
+				"Description": "<p>Sets the line count at which a script is treated as a large file by the\nscript editor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"LargeFileThreshold": {
+				"Summary": "<p>Sets the byte size at which a script is treated as a large file by the\nscript editor.</p>\n",
+				"Description": "<p>Sets the byte size at which a script is treated as a large file by the\nscript editor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Line Thickness": {
 				"Summary": "<p>Sets the thickness of the <a href=\"/ref/class/Model.html#member-PrimaryPart\">Model.PrimaryPart</a> selection adornee.\nThis value is constrained between 0 and 0.05.</p>\n",
 				"Description": "<p>Sets the thickness of the <a href=\"/ref/class/Model.html#member-PrimaryPart\">Model.PrimaryPart</a> selection adornee.\nThis value is constrained between 0 and 0.05.</p>\n"
 			},
-			"LoadAllBuiltinPluginsInRunModes": {},
-			"LoadInternalPlugins": {},
-			"LoadUserPluginsInRunModes": {},
-			"LocalAssetsFolder": {},
+			"LoadAllBuiltinPluginsInRunModes": {
+				"Summary": "<p>Controls whether all built-in plugins are loaded when using run modes.</p>\n",
+				"Description": "<p>Controls whether all built-in plugins are loaded when using run modes.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"LoadInternalPlugins": {
+				"Summary": "<p>Controls whether internal Roblox plugins are loaded in Studio.</p>\n",
+				"Description": "<p>Controls whether internal Roblox plugins are loaded in Studio. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"LoadUserPluginsInRunModes": {
+				"Summary": "<p>Controls whether user-installed plugins are loaded when using run modes.</p>\n",
+				"Description": "<p>Controls whether user-installed plugins are loaded when using run modes.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"LocalAssetsFolder": {
+				"Summary": "<p>Sets the local folder Studio uses for local asset storage.</p>\n",
+				"Description": "<p>Sets the local folder Studio uses for local asset storage. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"LuaDebuggerEnabled": {
 				"Summary": "<p>Specifies whether or not the Lua Debugger feature is enabled.</p>\n",
 				"Description": "<p>Specifies whether or not the Lua Debugger feature is enabled.</p>\n"
 			},
-			"LuaDebuggerEnabledAtStartup": {},
-			"Luau Keyword Color": {},
-			"Main Volume": {},
+			"LuaDebuggerEnabledAtStartup": {
+				"Summary": "<p>Controls whether the Lua debugger is enabled when Studio starts.</p>\n",
+				"Description": "<p>Controls whether the Lua debugger is enabled when Studio starts. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Luau Keyword Color": {
+				"Summary": "<p>Sets the color of Luau-specific keywords in the script editor.</p>\n",
+				"Description": "<p>Sets the color of Luau-specific keywords in the script editor. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Main Volume": {
+				"Summary": "<p>Sets the main audio playback volume in Studio.</p>\n",
+				"Description": "<p>Sets the main audio playback volume in Studio. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
 			"Matching Word Background Color": {
 				"Summary": "<p>Sets the highlight color of double-clicked variables in the script editor.</p>\n",
 				"Description": "<p>Sets the highlight color of double-clicked variables in the script editor.</p>\n"
 			},
-			"MaxFindReplaceAllResults": {},
+			"MaxFindReplaceAllResults": {
+				"Summary": "<p>Sets the maximum number of results returned by the Find All operation.</p>\n",
+				"Description": "<p>Sets the maximum number of results returned by the Find All operation.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Maximum Output Lines": {
 				"Summary": "<p>The maximum number of lines that can be displayed in the output.</p>\n",
 				"Description": "<p>The maximum number of lines that can be displayed in the output.</p>\n"
 			},
-			"Menu Item Background Color": {},
-			"Method Color": {},
+			"Menu Item Background Color": {
+				"Summary": "<p>Sets the background color of menu items in Studio.</p>\n",
+				"Description": "<p>Sets the background color of menu items in Studio. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"Method Color": {
+				"Summary": "<p>Sets the color of method names in the script editor.</p>\n",
+				"Description": "<p>Sets the color of method names in the script editor. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
 			"Number Color": {
 				"Summary": "<p>Specifies the color of numbers in Roblox Studio&#39;s script editor.</p>\n",
 				"Description": "<p>Specifies the color of numbers in Roblox Studio&#39;s script editor.</p>\n"
@@ -19333,34 +19758,82 @@
 				"Summary": "<p>Sets the highest permission level that APIs have to have in order to be\nshown in the Object Browser. See <a href=\"/ref/enum/PermissionLevelShown.html\">PermissionLevelShown</a> for more\ninfo.</p>\n",
 				"Description": "<p>Sets the highest permission level that APIs have to have in order to be\nshown in the Object Browser. See <a href=\"/ref/enum/PermissionLevelShown.html\">PermissionLevelShown</a> for more\ninfo.</p>\n"
 			},
-			"Physical Draggers Select Scope By Default": {},
-			"Pivot Snap To Geometry Color": {},
-			"PluginDebuggingEnabled": {},
+			"Physical Draggers Select Scope By Default": {
+				"Summary": "<p>Controls whether physical draggers default to selecting within the current\nscope.</p>\n",
+				"Description": "<p>Controls whether physical draggers default to selecting within the current\nscope. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Pivot Snap To Geometry Color": {
+				"Summary": "<p>Sets the color of the pivot snap-to-geometry indicator in Studio.</p>\n",
+				"Description": "<p>Sets the color of the pivot snap-to-geometry indicator in Studio. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"PluginDebuggingEnabled": {
+				"Summary": "<p>Controls whether plugin script debugging is enabled in Studio.</p>\n",
+				"Description": "<p>Controls whether plugin script debugging is enabled in Studio. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"PluginsDir": {
 				"Summary": "<p>The directory where local plugins are stored.</p>\n",
 				"Description": "<p>The directory where local plugins are stored.</p>\n"
 			},
-			"PreferredTextSize": {},
-			"Primary Text Color": {},
-			"Property Color": {},
-			"ReloadBuiltinPluginsOnChange": {},
-			"ReloadLocalPluginsOnChange": {},
+			"PreferredTextSize": {
+				"Summary": "<p>Sets the preferred font size in the script editor.</p>\n",
+				"Description": "<p>Sets the preferred font size in the script editor. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"Primary Text Color": {
+				"Summary": "<p>Sets the primary text color in Studio.</p>\n",
+				"Description": "<p>Sets the primary text color in Studio. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
+			"Property Color": {
+				"Summary": "<p>Sets the color of property names in the script editor.</p>\n",
+				"Description": "<p>Sets the color of property names in the script editor. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"ReloadBuiltinPluginsOnChange": {
+				"Summary": "<p>Controls whether built-in plugins are automatically reloaded when their\nfiles change.</p>\n",
+				"Description": "<p>Controls whether built-in plugins are automatically reloaded when their\nfiles change. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"ReloadLocalPluginsOnChange": {
+				"Summary": "<p>Controls whether local plugins are automatically reloaded when their files\nchange.</p>\n",
+				"Description": "<p>Controls whether local plugins are automatically reloaded when their files\nchange. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Respect Studio shortcuts when game has focus": {
 				"Summary": "<p>When set to true, Roblox Studio shortcuts will take priority over inputs\nbeing captured in the game window.</p>\n",
 				"Description": "<p>When set to true, Roblox Studio shortcuts will take priority over inputs\nbeing captured in the game window.</p>\n"
 			},
-			"Ruler Color": {},
-			"Rulers": {},
-			"RuntimeUndoBehavior": {},
-			"Script Editor Color Preset": {},
-			"Script Editor Scrollbar Background Color": {},
-			"Script Editor Scrollbar Handle Color": {},
+			"Ruler Color": {
+				"Summary": "<p>Sets the color of the column ruler in the script editor.</p>\n",
+				"Description": "<p>Sets the color of the column ruler in the script editor. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Rulers": {
+				"Summary": "<p>Sets the column positions at which vertical ruler lines are drawn in the\nscript editor.</p>\n",
+				"Description": "<p>Sets the column positions at which vertical ruler lines are drawn in the\nscript editor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"RuntimeUndoBehavior": {
+				"Summary": "<p>Sets how Studio handles undo operations during runtime playback.</p>\n",
+				"Description": "<p>Sets how Studio handles undo operations during runtime playback. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Script Editor Color Preset": {
+				"Summary": "<p>Sets the color preset applied to the script editor.</p>\n",
+				"Description": "<p>Sets the color preset applied to the script editor. This must be set in\nStudio Settings &gt; Studio tab.</p>\n"
+			},
+			"Script Editor Scrollbar Background Color": {
+				"Summary": "<p>Sets the background color of the script editor scrollbar in Studio.</p>\n",
+				"Description": "<p>Sets the background color of the script editor scrollbar in Studio. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Script Editor Scrollbar Handle Color": {
+				"Summary": "<p>Sets the handle color of the script editor scrollbar in Studio.</p>\n",
+				"Description": "<p>Sets the handle color of the script editor scrollbar in Studio. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"ScriptTimeoutLength": {
 				"Summary": "<p>The time (in seconds) a script can wait to be resumed before timing out.</p>\n",
 				"Description": "<p>The time (in seconds) a script can wait to be resumed before timing out.</p>\n"
 			},
-			"Scroll Past Last Line": {},
-			"Secondary Text Color": {},
+			"Scroll Past Last Line": {
+				"Summary": "<p>Controls whether the script editor allows scrolling below the last line.</p>\n",
+				"Description": "<p>Controls whether the script editor allows scrolling below the last line.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Secondary Text Color": {
+				"Summary": "<p>Sets the secondary text color in Studio.</p>\n",
+				"Description": "<p>Sets the secondary text color in Studio. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
 			"Select Color": {
 				"Summary": "<p>The color of the selection box used with object selections in the\n<a href=\"/ref/class/Workspace.html\">Workspace</a>.</p>\n",
 				"Description": "<p>The color of the selection box used with object selections in the\n<a href=\"/ref/class/Workspace.html\">Workspace</a></p>\n"
@@ -19369,19 +19842,34 @@
 				"Summary": "<p>Sets the color of the <a href=\"/ref/class/Model.html#member-PrimaryPart\">Model.PrimaryPart</a> selection box.</p>\n",
 				"Description": "<p>Sets the color of the <a href=\"/ref/class/Model.html#member-PrimaryPart\">Model.PrimaryPart</a> selection box.</p>\n"
 			},
-			"Selected Menu Item Background Color": {},
-			"Selected Text Color": {},
+			"Selected Menu Item Background Color": {
+				"Summary": "<p>Sets the background color of selected menu items in Studio.</p>\n",
+				"Description": "<p>Sets the background color of selected menu items in Studio. This must be\nset in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Selected Text Color": {
+				"Summary": "<p>Sets the color of selected text in Studio.</p>\n",
+				"Description": "<p>Sets the color of selected text in Studio. This must be set in Studio\nSettings &gt; Studio tab.</p>\n"
+			},
 			"Selection Background Color": {
 				"Summary": "<p>Sets the background color of selected text in the script editor.</p>\n",
 				"Description": "<p>Sets the background color of selected text in the script editor.</p>\n"
 			},
-			"Selection Box Thickness": {},
+			"Selection Box Thickness": {
+				"Summary": "<p>Sets the thickness of the selection box around selected objects.</p>\n",
+				"Description": "<p>Sets the thickness of the selection box around selected objects. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Selection Color": {
 				"Summary": "<p>Sets the text color of selected text in the script editor.</p>\n",
 				"Description": "<p>Sets the text color of selected text in the script editor.</p>\n"
 			},
-			"Selection Line Thickness": {},
-			"Set Pivot of Imported Parts": {},
+			"Selection Line Thickness": {
+				"Summary": "<p>Sets the line thickness of the selection box around selected objects.</p>\n",
+				"Description": "<p>Sets the line thickness of the selection box around selected objects. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Set Pivot of Imported Parts": {
+				"Summary": "<p>Sets whether the pivot point is repositioned when parts are imported.</p>\n",
+				"Description": "<p>Sets whether the pivot point is repositioned when parts are imported. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Show Core GUI in Explorer while Playing": {
 				"Summary": "<p>If set to true, the <a href=\"/ref/class/CoreGui.html\">CoreGui</a> will be visible in the Explorer while\nthe game is running.</p>\n",
 				"Description": "<p>If set to true, the <a href=\"/ref/class/CoreGui.html\">CoreGui</a> will be visible in the Explorer while\nthe game is running.</p>\n"
@@ -19390,28 +19878,58 @@
 				"Summary": "<p>If set to true, basic diagnostic information is shown in the bottom right.</p>\n",
 				"Description": "<p>If set to true, basic diagnostic information is shown in the bottom right.</p>\n"
 			},
-			"Show FileSyncService": {},
-			"Show Hidden Objects in Explorer": {},
+			"Show FileSyncService": {
+				"Summary": "<p>Controls whether FileSyncService is shown in the Explorer panel.</p>\n",
+				"Description": "<p>Controls whether FileSyncService is shown in the Explorer panel. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Show Hidden Objects in Explorer": {
+				"Summary": "<p>Controls whether hidden objects are visible in the Explorer panel.</p>\n",
+				"Description": "<p>Controls whether hidden objects are visible in the Explorer panel. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Show Hover Over": {
 				"Summary": "<p>If set to true, hovering over an object in the <a href=\"/ref/class/Workspace.html\">Workspace</a> will show\na selection box.</p>\n",
 				"Description": "<p>If set to true, hovering over an object in the <a href=\"/ref/class/Workspace.html\">Workspace</a> will show\na selection box.</p>\n"
 			},
-			"Show Light Guides": {},
-			"Show Navigation Labels": {},
+			"Show Light Guides": {
+				"Summary": "<p>Controls whether light guide visualizations are shown in the viewport.</p>\n",
+				"Description": "<p>Controls whether light guide visualizations are shown in the viewport.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Show Navigation Labels": {
+				"Summary": "<p>Controls whether navigation mesh region labels are shown in the viewport.</p>\n",
+				"Description": "<p>Controls whether navigation mesh region labels are shown in the viewport.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Show Navigation Mesh": {
 				"Summary": "<p>When set to true, the navigation mesh used by the\n<a href=\"/ref/class/PathfindingService.html\">PathfindingService</a> will be visualized.</p>\n",
 				"Description": "<p>When set to true, the navigation mesh used by the\n<a href=\"/ref/class/PathfindingService.html\">PathfindingService</a> will be visualized.</p>\n"
 			},
-			"Show Pathfinding Links": {},
+			"Show Pathfinding Links": {
+				"Summary": "<p>Controls whether PathfindingLink visualizations are shown in the viewport.</p>\n",
+				"Description": "<p>Controls whether PathfindingLink visualizations are shown in the viewport.\nThis must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Show Plugin GUI Service in Explorer": {
 				"Summary": "<p>When set to true, the <a href=\"/ref/class/PluginGuiService.html\">PluginGuiService</a> will be shown in Roblox\nStudio&#39;s explorer.</p>\n",
 				"Description": "<p>When set to true, the <a href=\"/ref/class/PluginGuiService.html\">PluginGuiService</a> will be shown in Roblox\nStudio&#39;s explorer.</p>\n"
 			},
-			"Show Singly Selected Attachment Parent Frame": {},
-			"Show Whitespace": {},
-			"Show plus button on hover in Explorer": {},
-			"ShowCorePackagesInExplorer": {},
-			"Skip Closing Brackets and Quotes": {},
+			"Show Singly Selected Attachment Parent Frame": {
+				"Summary": "<p>Controls whether the parent part frame is shown when a single attachment\nis selected.</p>\n",
+				"Description": "<p>Controls whether the parent part frame is shown when a single attachment\nis selected. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Show Whitespace": {
+				"Summary": "<p>Controls whether whitespace characters are shown as visible glyphs in the\nscript editor.</p>\n",
+				"Description": "<p>Controls whether whitespace characters are shown as visible glyphs in the\nscript editor. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Show plus button on hover in Explorer": {
+				"Summary": "<p>Controls whether a plus button appears when hovering over items in the\nExplorer.</p>\n",
+				"Description": "<p>Controls whether a plus button appears when hovering over items in the\nExplorer. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"ShowCorePackagesInExplorer": {
+				"Summary": "<p>Controls whether core packages are shown in the Explorer panel.</p>\n",
+				"Description": "<p>Controls whether core packages are shown in the Explorer panel. This must\nbe set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"Skip Closing Brackets and Quotes": {
+				"Summary": "<p>Controls whether the cursor skips over a typed closing bracket or quote if\none already exists.</p>\n",
+				"Description": "<p>Controls whether the cursor skips over a typed closing bracket or quote if\none already exists. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"String Color": {
 				"Summary": "<p>Specifies the color of strings in the script editor.</p>\n",
 				"Description": "<p>Specifies the color of strings in the script editor.</p>\n"
@@ -19436,22 +19954,46 @@
 				"Summary": "<p>Event called when Studio&#39;s <a href=\"/ref/class/StudioTheme.html\">theme</a> changes.</p>\n",
 				"Description": "<p>The <strong>ThemeChanged</strong> event fires when Studio&#39;s <a href=\"/ref/class/Studio.html#member-Theme\">Theme</a>\nchanges. The best use of this event is to get the colors from the theme\nthat changed and update your plugin&#39;s UI accordingly.</p>\n"
 			},
-			"TypeColor": {},
+			"TypeColor": {
+				"Summary": "<p>Sets the color of type annotations in the script editor.</p>\n",
+				"Description": "<p>Sets the color of type annotations in the script editor. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"UI Theme": {
 				"Summary": "<p>Specifies the color scheme of Roblox Studio.</p>\n",
 				"Description": "<p>Specifies the color scheme of Roblox Studio.</p>\n"
 			},
-			"Use Bounding Box Move Handles": {},
-			"UseDefaultExternalEditor": {},
-			"VAxisColor": {},
+			"Use Bounding Box Move Handles": {
+				"Summary": "<p>Controls whether move handles are placed at the bounding box edges instead\nof the pivot.</p>\n",
+				"Description": "<p>Controls whether move handles are placed at the bounding box edges instead\nof the pivot. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"UseDefaultExternalEditor": {
+				"Summary": "<p>Controls whether Studio uses the system&#39;s default application to open\nscripts externally.</p>\n",
+				"Description": "<p>Controls whether Studio uses the system&#39;s default application to open\nscripts externally. This must be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"VAxisColor": {
+				"Summary": "<p>Sets the color of the V axis handle in Studio&#39;s draggers.</p>\n",
+				"Description": "<p>Sets the color of the V axis handle in Studio&#39;s draggers. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
 			"Warning Color": {
 				"Summary": "<p>Specifies the color of the wavy underline shown when the script analyzer\npicks up a problem that should be addressed in the script editor.</p>\n",
 				"Description": "<p>Specifies the color of the wavy underline shown when the script analyzer\npicks up a problem that should be addressed in the script editor.</p>\n"
 			},
-			"Whitespace Color": {},
-			"XAxisColor": {},
-			"YAxisColor": {},
-			"ZAxisColor": {}
+			"Whitespace Color": {
+				"Summary": "<p>Sets the color of visible whitespace characters in the script editor.</p>\n",
+				"Description": "<p>Sets the color of visible whitespace characters in the script editor. This\nmust be set in Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"XAxisColor": {
+				"Summary": "<p>Sets the color of the X axis handle in Studio&#39;s draggers.</p>\n",
+				"Description": "<p>Sets the color of the X axis handle in Studio&#39;s draggers. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"YAxisColor": {
+				"Summary": "<p>Sets the color of the Y axis handle in Studio&#39;s draggers.</p>\n",
+				"Description": "<p>Sets the color of the Y axis handle in Studio&#39;s draggers. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			},
+			"ZAxisColor": {
+				"Summary": "<p>Sets the color of the Z axis handle in Studio&#39;s draggers.</p>\n",
+				"Description": "<p>Sets the color of the Z axis handle in Studio&#39;s draggers. This must be set\nin Studio Settings &gt; Studio tab.</p>\n"
+			}
 		},
 		"StudioCaptureService": {
 			"CanCaptureScreenshot": {},
@@ -19576,7 +20118,10 @@
 				"Summary": "<p>Determines the degrees by which Studio&#39;s rotation tool will rotate\nselected objects each tick.</p>\n",
 				"Description": "<p><strong>RotateIncrement</strong> determines the angle in degrees by which Studio&#39;s\nrotation tool will rotate selected objects each tick. This is set in the\nuser&#39;s toolbar&#39;s <strong>Model</strong> tab.</p>\n"
 			},
-			"Secrets": {},
+			"Secrets": {
+				"Summary": "<p>A JSON string storing the local secrets for the current experience, used\ninternally by Studio to support HttpService:GetSecret().</p>\n",
+				"Description": "<p><strong>Secrets</strong> is an internal property that stores the\n<a href=\"https://create.roblox.com/docs/cloud-services/secrets\">local secrets</a> configured for the\ncurrent experience. This property is not accessible to creators; secrets\nare consumed at runtime through <code>HttpService:GetSecret()</code>.</p>\n"
+			},
 			"ShowConstraintDetails": {},
 			"ShowWeldDetails": {},
 			"StudioLocaleId": {
@@ -19818,8 +20363,7 @@
 				"Summary": "<p>Determines the apparent roughness across the surface.</p>\n",
 				"Description": "<p>This property determines the apparent roughness across the surface. The\nroughness map is a grayscale image where black pixels correspond to a\nmaximally smooth surface, and white pixels correspond to a maximally rough\nsurface.</p>\n<p>Note that surface roughness works on a very small scale. Reflections on\nsmooth surfaces are sharp and concentrated, while reflections on rough\nsurfaces are more blurry and dispersed.</p>\n<p>See <a href=\"https://create.roblox.com/docs/art/modeling/surface-appearance#roughness\">here</a> for more\ninformation.</p>\n"
 			},
-			"RoughnessMapContent": {},
-			"TexturePack": {}
+			"RoughnessMapContent": {}
 		},
 		"SurfaceGui": {
 			"AlwaysOnTop": {
@@ -22137,8 +22681,8 @@
 		},
 		"UserGameSettings": {
 			"AllTutorialsDisabled": {
-				"Summary": "<p>Indicates whether all in-experience tutorials have been disabled by the\nuser.</p>\n",
-				"Description": "<p>Indicates whether all in-experience tutorials have been disabled by the\nuser.</p>\n"
+				"Summary": "<p>Indicates whether all in-game tutorials have been disabled by the user.</p>\n",
+				"Description": "<p>Indicates whether all in-game tutorials have been disabled by the user.</p>\n"
 			},
 			"BadgeVisible": {
 				"Summary": "<p>Indicates whether badge notifications are visible to the client.</p>\n",
@@ -22149,8 +22693,8 @@
 				"Description": "<p>The custom camera mode currently in-use by the client.</p>\n"
 			},
 			"ChatVisible": {
-				"Summary": "<p>Indicates whether the in-experience chat is visible to the client.</p>\n",
-				"Description": "<p>Indicates whether the in-experience chat is visible to the client.</p>\n"
+				"Summary": "<p>Indicates whether the in-game chat is visible to the client.</p>\n",
+				"Description": "<p>Indicates whether the in-game chat is visible to the client.</p>\n"
 			},
 			"ComputerCameraMovementMode": {
 				"Summary": "<p>The camera movement mode currently in-use by the client on desktop.</p>\n",
@@ -22233,16 +22777,16 @@
 				"Description": "<p>A float between 0 and 1 representing the volume of party voice chat.</p>\n"
 			},
 			"PeoplePageLayout": {
-				"Summary": "<p>The layout style used to display the people page in the in-experience\nmenu.</p>\n",
-				"Description": "<p>The layout style used to display the people page in the in-experience\nmenu.</p>\n"
+				"Summary": "<p>The layout style used to display the people page in the in-game menu.</p>\n",
+				"Description": "<p>The layout style used to display the people page in the in-game menu.</p>\n"
 			},
 			"PlayerListVisible": {
-				"Summary": "<p>Indicates whether the in-experience player list is visible to the client.</p>\n",
-				"Description": "<p>Indicates whether the in-experience player list is visible to the client.</p>\n"
+				"Summary": "<p>Indicates whether the in-game player list is visible to the client.</p>\n",
+				"Description": "<p>Indicates whether the in-game player list is visible to the client.</p>\n"
 			},
 			"PlayerNamesEnabled": {
-				"Summary": "<p>Indicates whether player names are displayed above characters in the\nexperience.</p>\n",
-				"Description": "<p>Indicates whether player names are displayed above characters in the\nexperience.</p>\n"
+				"Summary": "<p>Indicates whether player names are displayed above characters in the game.</p>\n",
+				"Description": "<p>Indicates whether player names are displayed above characters in the game.</p>\n"
 			},
 			"RCCProfilerRecordFrameRate": {
 				"Summary": "<p>Internal MicroProfiler setting specifying the frame rate used when\ncapturing server-side RCC profiler data.</p>\n",
@@ -22323,6 +22867,10 @@
 			"VignetteEnabled": {
 				"Summary": "<p>Indicates whether the VR vignette comfort effect is enabled.</p>\n",
 				"Description": "<p>Indicates whether the VR vignette comfort effect is enabled.</p>\n"
+			},
+			"VoiceChatVolume": {
+				"Summary": "<p>A float between <code>0</code> and <code>2</code> representing the volume of in-game voice chat.</p>\n",
+				"Description": "<p>A float between <code>0</code> and <code>2</code> representing the volume of in-game voice chat.</p>\n"
 			}
 		},
 		"UserInputService": {
@@ -23246,16 +23794,6 @@
 		"VirtualUser": {},
 		"VisibilityCheckDispatcher": {},
 		"Visit": {},
-		"VisualizationMode": {
-			"Enabled": {},
-			"Title": {},
-			"ToolTip": {}
-		},
-		"VisualizationModeCategory": {
-			"Enabled": {},
-			"Title": {}
-		},
-		"VisualizationModeService": {},
 		"VoiceChatService": {
 			"DefaultDistanceAttenuation": {
 				"Summary": "<p>Determines which distance attenuation curve the default voice chat setup\nuses when <a href=\"/ref/class/AudioDeviceInput.html\">AudioDeviceInput</a> and <a href=\"/ref/class/AudioEmitter.html\">AudioEmitter</a> objects are\ngenerated.</p>\n",
@@ -23414,7 +23952,7 @@
 			},
 			"BreakJoints": {
 				"Summary": "<p>Goes through all <a href=\"/ref/class/BasePart.html\">BaseParts</a> given, breaking any joints\nconnected to these parts.</p>\n",
-				"Description": "<p>Goes through all <a href=\"/ref/class/BasePart.html\">BaseParts</a> given, breaking any joints\nconnected to these parts. This function will break any of the following\ntypes of joints:</p>\n<ul>\n<li><a href=\"/ref/class/JointInstance.html\">JointInstances</a> such as <a href=\"/ref/class/Weld.html\">Welds</a></li>\n<li><a href=\"/ref/class/WeldConstraint.html\">WeldConstraints</a></li>\n</ul>\n<p>Unlike <a href=\"/ref/class/Model.html#member-MakeJoints\">Model:MakeJoints()</a>, this function requires an array of\n<a href=\"/ref/class/BasePart.html\">BaseParts</a> as a parameter. This array is given as follows:</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">Workspace</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Workspace&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">Workspace</span><span class=\"_p\">:</span><span class=\"_n\">BreakJoints</span><span class=\"_p\">({</span><span class=\"_n\">part1</span><span class=\"_p\">,</span> <span class=\"_n\">part2</span><span class=\"_p\">,</span> <span class=\"_n\">part3</span><span class=\"_p\">})</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n<p>Note, this function cannot be used by scripts and will only function in\nplugins.</p>\n",
+				"Description": "<p>Goes through all <a href=\"/ref/class/BasePart.html\">BaseParts</a> given, breaking any joints\nconnected to these parts. This function will break any of the following\ntypes of joints:</p>\n<ul>\n<li><a href=\"/ref/class/JointInstance.html\">JointInstances</a> such as <a href=\"/ref/class/Weld.html\">Welds</a></li>\n<li><a href=\"/ref/class/WeldConstraint.html\">WeldConstraints</a></li>\n</ul>\n<p>Unlike <a href=\"/ref/class/Model.html#member-MakeJoints\">Model:MakeJoints()</a>, this function requires an array of\n<a href=\"/ref/class/BasePart.html\">BaseParts</a> as a parameter. This array is given as follows:</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">Workspace</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Workspace&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">Workspace</span><span class=\"_p\">:</span><span class=\"_n\">BreakJoints</span><span class=\"_p\">({</span><span class=\"_n\">part1</span><span class=\"_p\">,</span> <span class=\"_n\">part2</span><span class=\"_p\">,</span> <span class=\"_n\">part3</span><span class=\"_p\">})</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n<p>Note, this function cannot be used in developer-facing Luau and will only\nfunction in plugins.</p>\n",
 				"DeprecationMessage": "<p>This method is deprecated. Do not use it for new work.</p>\n"
 			},
 			"ClientAnimatorThrottling": {
@@ -23431,7 +23969,7 @@
 			},
 			"EnableSLIMAvatars": {
 				"Summary": "<p>Controls whether SLIM rendering is used for avatars in the experience.</p>\n",
-				"Description": "<p>This <a href=\"/ref/enum/RolloutState.html\">RolloutState</a> property controls whether a\n<a href=\"/ref/enum/ModelLevelOfDetail.html\">SLIM</a> model is generated for avatar characters in\nthe experience. When enabled and instance streaming is active, avatars\nrender using SLIM in the same way that setting <a href=\"/ref/class/Model.html#member-LevelOfDetail\">Model.LevelOfDetail</a>\nto <a href=\"/ref/enum/ModelLevelOfDetail.html\">SLIM</a> works for other models.</p>\n<p>When set to <a href=\"/ref/enum/RolloutState.html\">Enabled</a>, avatars use SLIM rendering. When\nset to <a href=\"/ref/enum/RolloutState.html\">Disabled</a>, avatars use the traditional rendering\napproach. <a href=\"/ref/enum/RolloutState.html\">Default</a> follows the current engine-wide\nrollout state.</p>\n<p>This property cannot be set through scripting and must be set in Studio\nthrough the properties window, command bar, or a plugin.</p>\n"
+				"Description": "<p>This <a href=\"/ref/enum/RolloutState.html\">RolloutState</a> property controls whether a\n<a href=\"/ref/enum/ModelLevelOfDetail.html\">SLIM</a> model is generated for avatar characters in\nthe experience. When enabled and instance streaming is active, avatars\nrender using SLIM in the same way that setting <a href=\"/ref/class/Model.html#member-LevelOfDetail\">Model.LevelOfDetail</a>\nto <a href=\"/ref/enum/ModelLevelOfDetail.html\">SLIM</a> works for other models.</p>\n<p>When set to <a href=\"/ref/enum/RolloutState.html\">Enabled</a>, avatars use SLIM rendering. When\nset to <a href=\"/ref/enum/RolloutState.html\">Disabled</a>, avatars use the traditional rendering\napproach. <a href=\"/ref/enum/RolloutState.html\">Default</a> follows the current engine-wide\nrollout state.</p>\n<p>This property cannot be set through developer-facing Luau and must be set\nin Studio through the Properties window, Command Bar, or a plugin.</p>\n"
 			},
 			"FallHeightEnabled": {
 				"Summary": "<p>Controls whether parts that fall below\n<a href=\"/ref/class/Workspace.html#member-FallenPartsDestroyHeight\">Workspace.FallenPartsDestroyHeight</a> are automatically destroyed.</p>\n",
@@ -23448,7 +23986,7 @@
 			},
 			"FluidForces": {
 				"Summary": "<p>Determines whether the physics engine computes aerodynamic forces on\n<a href=\"/ref/class/BasePart.html\">BaseParts</a> whose\n<a href=\"/ref/class/BasePart.html#member-EnableFluidForces\">EnableFluidForces</a> property is true.</p>\n",
-				"Description": "<p>With this property enabled, the physics engine computes aerodynamic forces\non <a href=\"/ref/class/BasePart.html\">BaseParts</a> whose\n<a href=\"/ref/class/BasePart.html#member-EnableFluidForces\">EnableFluidForces</a> property is true. The\ndefault, <a href=\"/ref/enum/FluidForces.html\">Default</a>, disables aerodynamic forces. Note\nthat this property cannot be set through scripting and instead must be\ntoggled in Studio.</p>\n"
+				"Description": "<p>With this property enabled, the physics engine computes aerodynamic forces\non <a href=\"/ref/class/BasePart.html\">BaseParts</a> whose\n<a href=\"/ref/class/BasePart.html#member-EnableFluidForces\">EnableFluidForces</a> property is true. The\ndefault, <a href=\"/ref/enum/FluidForces.html\">Default</a>, disables aerodynamic forces. Note\nthat this property cannot be set through developer-facing Luau and instead\nmust be toggled in Studio.</p>\n"
 			},
 			"GetNumAwakeParts": {
 				"Summary": "<p>Returns the number of <a href=\"/ref/class/BasePart.html\">BaseParts</a> that are deemed\nphysically active, due to being recently under the influence of physics.</p>\n",
@@ -23539,7 +24077,7 @@
 			},
 			"PhysicsSteppingMethod": {
 				"Summary": "<p>Sets how the solver will advance the physics simulation forward in time.</p>\n",
-				"Description": "<p>Sets how the solver will advance the physics simulation forward in time.\nThis option is not scriptable and must be set from the\n<strong>PhysicsSteppingMethod</strong> property of <strong>Workspace</strong> within Studio. See\n<a href=\"https://create.roblox.com/docs/physics/adaptive-timestepping\">Adaptive Timestepping</a> for\ndetails.</p>\n<p>Note that when assemblies of different simulation rates become connected\nvia <a href=\"/ref/class/Constraint.html\">Constraints</a> or collisions, the combined mechanism\nwill default to the highest simulation rate for stability.</p>\n"
+				"Description": "<p>Sets how the solver will advance the physics simulation forward in time.\nThis option cannot be set through developer-facing Luau and must be set\nfrom the <strong>PhysicsSteppingMethod</strong> property of <strong>Workspace</strong> within\nStudio. See\n<a href=\"https://create.roblox.com/docs/physics/adaptive-timestepping\">Adaptive Timestepping</a> for\ndetails.</p>\n<p>Note that when assemblies of different simulation rates become connected\nvia <a href=\"/ref/class/Constraint.html\">Constraints</a> or collisions, the combined mechanism\nwill default to the highest simulation rate for stability.</p>\n"
 			},
 			"PlayerCharacterDestroyBehavior": {
 				"Summary": "<p>Controls whether the engine automatically calls <code>Destroy()</code> on a player&#39;s\ncharacter when it is replaced and on the <code>Player</code> object when the player\nleaves.</p>\n",
@@ -23623,7 +24161,7 @@
 			},
 			"ZoomToExtents": {
 				"Summary": "<p>Positions and zooms the <a href=\"/ref/class/Workspace.html#member-CurrentCamera\">Workspace.CurrentCamera</a> to show the extent\nof <a href=\"/ref/class/BasePart.html\">BaseParts</a> currently in the <a href=\"/ref/class/Workspace.html\">Workspace</a>.</p>\n",
-				"Description": "<p>Positions and zooms the <a href=\"/ref/class/Workspace.html#member-CurrentCamera\">Workspace.CurrentCamera</a> to show the extent\nof <a href=\"/ref/class/BasePart.html\">BaseParts</a> currently in the <a href=\"/ref/class/Workspace.html\">Workspace</a>. It\nexhibits similar behavior to the &#34;focus&#34; command but it shows the extents\nof the <a href=\"/ref/class/Workspace.html\">Workspace</a> rather than the currently selected object.</p>\n<p>This function cannot be used in scripts but will function in the command\nbar or plugins.</p>\n"
+				"Description": "<p>Positions and zooms the <a href=\"/ref/class/Workspace.html#member-CurrentCamera\">Workspace.CurrentCamera</a> to show the extent\nof <a href=\"/ref/class/BasePart.html\">BaseParts</a> currently in the <a href=\"/ref/class/Workspace.html\">Workspace</a>. It\nexhibits similar behavior to the &#34;focus&#34; command but it shows the extents\nof the <a href=\"/ref/class/Workspace.html\">Workspace</a> rather than the currently selected object.</p>\n<p>This function cannot be used in developer-facing Luau but will function in\nthe Command Bar or plugins.</p>\n"
 			}
 		},
 		"WorkspaceAnnotation": {},
@@ -23747,7 +24285,10 @@
 			}
 		},
 		"WrapLayer": {
-			"AutoSkin": {},
+			"AutoSkin": {
+				"Summary": "<p>Determines whether this WrapLayer automatically transfers skinning data\nfrom the underlying body mesh to the clothing mesh.</p>\n",
+				"Description": "<p>Determines whether this WrapLayer automatically transfers skinning data\nfrom the underlying body mesh to the clothing mesh. When set to\n<a href=\"/ref/enum/WrapLayerAutoSkin.html\">EnabledOverride</a>, skinning is\napplied regardless of whether the clothing mesh already has skinning data.\nWhen set to <a href=\"/ref/enum/WrapLayerAutoSkin.html\">EnabledPreserve</a>,\nskinning is only applied if the mesh does not already have skinning data.</p>\n<p>This property requires <a href=\"/ref/class/StarterPlayer.html#member-LoadCharacterLayeredClothing\">StarterPlayer.LoadCharacterLayeredClothing</a>\nto be set to <code>Enabled</code> (or <code>Default</code>) in order to function. When layered\nclothing is disabled, the auto-skinning pipeline does not run and this\nproperty has no effect.</p>\n<p>For more information, see\n<a href=\"https://create.roblox.com/docs/avatar/automatic-skinning-transfer\">Automatic Skinning Transfer</a>.</p>\n"
+			},
 			"BindOffset": {
 				"Summary": "<p><a href=\"/ref/type/CFrame.html\">CFrame</a> is used to adjust a binding point for clothing item\nmesh. Could be used to move and rotate clothing items. This property is\nintended for fine-tuning only and it is heavily optional.</p>\n",
 				"Description": "<p>This property is intended for fine-tuning purposes and is highly optional.</p>\n<p><a href=\"/ref/type/CFrame.html\">CFrame</a> to adjust a binding point for a clothing item mesh.\nAllows for fine-tuning of clothing items (slight adjustment of\nposition/rotation to get a unique look) in contexts such as community-made\navatar editors.</p>\n"
