@@ -647,17 +647,7 @@ user's version of the script when this function was called, in which case
 the callback will be re-invoked and the attempt will be repeated.</p><p>The callback may not yield. If the callback returns <code>nil</code>, the operation
 is cancelled. This function yields until the operation is cancelled or
 succeeds.</p><p>If the script is not open in the editor, the new content updates to the
-script source, which is the text the editor would display if it is opened.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt>1
-</span><span class=_lnt>2
-</span><span class=_lnt>3
-</span><span class=_lnt>4
-</span><span class=_lnt>5
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>ScriptEditorService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;ScriptEditorService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_n>ScriptEditorService</span><span class=_p>:</span><span class=_n>UpdateSourceAsync</span><span class=_p>(</span><span class=_n>workspace.Script</span><span class=_p>,</span> <span class=_kr>function</span><span class=_p>(</span><span class=_n>oldContent</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>return</span> <span class=_n>oldContent</span> <span class=_o>..</span> <span class=_s2>&#34; World!&#34;</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span><span class=_p>)</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Security</th><td class=value>PluginSecurity</td></tr><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=ReturnType><a class="history-tag changed" href=/ref/updates/2023.html#version-20001c2f99364dfd-40 title="Changed on 2023-10-05T10:24:38-07:00
+script source, which is the text the editor would display if it is opened.</p></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Security</th><td class=value>PluginSecurity</td></tr><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=ReturnType><a class="history-tag changed" href=/ref/updates/2023.html#version-20001c2f99364dfd-40 title="Changed on 2023-10-05T10:24:38-07:00
 v0.597.1.5970668
 version-20001c2f99364dfd">597</a>
 Change ReturnType of <a class="entity-link deco sec-PluginSecurity" href=/ref/class/ScriptEditorService.html#member-UpdateSourceAsync><span class=picture title="Protected Function (PluginSecurity)" data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction_hu_d89d1a787c7a1098.png');--dark:url('/ref/icons/dark/ACFunction_hu_98ec0593e7c97d0e.png')"></span></span>UpdateSourceAsync</a>

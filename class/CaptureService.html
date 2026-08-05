@@ -844,27 +844,7 @@ Instead, a temporary <code>contentId</code> is created to identify the new captu
 <a href=/ref/class/CaptureService.html#member-ReadCapturesFromGalleryAsync>ReadCapturesFromGalleryAsync()</a>
 or be uploadable via
 <a href=/ref/class/CaptureService.html#member-UploadCaptureAsync>UploadCaptureAsync()</a>.</p><p>The <code>onCaptureReady</code> callback can be used to prompt the user to save or
-share the screenshot:</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>CaptureService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;CaptureService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_c1>-- Reference to an ImageLabel parent of the script containing this code</span>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>imageLabel</span> <span class=_o>=</span> <span class=_n>script.Parent</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_kr>function</span> <span class=_nf>onCaptureReady</span><span class=_p>(</span><span class=_n>contentId</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_n>imageLabel.Image</span> <span class=_o>=</span> <span class=_n>contentId</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_n>CaptureService</span><span class=_p>:</span><span class=_n>CaptureScreenshot</span><span class=_p>(</span><span class=_n>onCaptureReady</span><span class=_p>)</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2024.html#version-74198ad141854daf-0 title="Added on 2024-01-17T11:43:49-08:00
+share the screenshot:</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2024.html#version-74198ad141854daf-0 title="Added on 2024-01-17T11:43:49-08:00
 v0.608.0.6080483
 version-74198ad141854daf">608</a>
 Add <a class="entity-link deco" href=/ref/class/CaptureService.html#member-CaptureScreenshot><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>CaptureScreenshot</a></li></ul></details></section><section id=member-CheckMomentTextStatusAsync class="set sec-RobloxScriptSecurity"><header><h3><span class=picture title="Protected Function (RobloxScriptSecurity)" data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction_hu_d89d1a787c7a1098.png');--dark:url('/ref/icons/dark/ACFunction_hu_98ec0593e7c97d0e.png')"></span></span>CheckMomentTextStatusAsync<aside><a class="entity-link hub-link" href=https://create.roblox.com/docs/reference/engine/classes/CaptureService#CheckMomentTextStatusAsync target=_blank rel=external><span class=picture><span class=icon style="--light:url('/ref/images/hub.svg');--dark:url('/ref/images/hub.svg')"></span></span>CreatorHub</a></aside></h3></header><table class="index-card params"><thead><tr><th class=col-name colspan=2>Parameters (<span class=element-count>1</span>)</th></tr></thead><tbody><tr class=row-token><td class=col-name>token</td><td class=col-type><a class="entity-link deco" href=/ref/type/string.html>string</a></td></tr></tbody><thead><tr><th class=col-return colspan=3>Returns (<span class=element-count>1</span>)</th></tr></thead><tbody><tr><td class=col-return colspan=3><a class="entity-link deco" href=/ref/type/Tuple.html><span class=picture title="Group type" data-type=Type><span class=icon style="--light:url('/ref/icons/light/Group.png');--dark:url('/ref/icons/dark/Group.png')"></span></span>Tuple</a></td></tr></tbody></table><div class=docs><span class=no-desc></span></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Security</th><td class=value>RobloxScriptSecurity</td></tr><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2026.html#version-ff6341faef444107-4 title="Added on 2026-07-27T15:25:33-07:00
@@ -1073,43 +1053,7 @@ sheet on their device.</p><p>The capture is shared along with an invite link to 
 supported. Not all devices support including both a screenshot or video
 and an invite link.</p><p>The <code>launchData</code> will be available in the <code>launchData</code> field for users who
 join through the invite link.</p><p>For users or devices who are not eligible to use share sheets, this method
-prompts them to download the capture instead.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span><span class=_lnt>11
-</span><span class=_lnt>12
-</span><span class=_lnt>13
-</span><span class=_lnt>14
-</span><span class=_lnt>15
-</span><span class=_lnt>16
-</span><span class=_lnt>17
-</span><span class=_lnt>18
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>CaptureService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;CaptureService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_kr>function</span> <span class=_nf>onShareAccepted</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>	<span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Capture share was accepted!&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_kr>function</span> <span class=_nf>onShareDenied</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>	<span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Capture share was denied!&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>onCaptureReady</span> <span class=_o>=</span> <span class=_kr>function</span><span class=_p>(</span><span class=_n>result</span><span class=_p>,</span> <span class=_n>videoCapture</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>if</span> <span class=_n>videoCapture</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>		<span class=_kd>local</span> <span class=_n>captureContent</span> <span class=_o>=</span> <span class=_n>Content.fromObject</span><span class=_p>(</span><span class=_n>videoCapture</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>		<span class=_n>CaptureService</span><span class=_p>:</span><span class=_n>PromptShareCapture</span><span class=_p>(</span><span class=_n>captureContent</span><span class=_p>,</span> <span class=_s2>&#34;launchData&#34;</span> <span class=_p>,</span> <span class=_n>onShareAccepted</span><span class=_p>,</span> <span class=_n>onShareDenied</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_n>CaptureService</span><span class=_p>:</span><span class=_n>StartVideoCaptureAsync</span><span class=_p>(</span><span class=_n>onCaptureReady</span><span class=_p>,</span> <span class=_p>{})</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>6</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Parameters><a class="history-tag changed" href=/ref/updates/2025.html#version-788254424be94b4c-16 title="Changed on 2025-02-25T11:24:17-08:00
+prompts them to download the capture instead.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>6</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Parameters><a class="history-tag changed" href=/ref/updates/2025.html#version-788254424be94b4c-16 title="Changed on 2025-02-25T11:24:17-08:00
 v0.662.0.6620538
 version-788254424be94b4c">662</a>
 Change Parameters of <a class="entity-link deco" href=/ref/class/CaptureService.html#member-PromptShareCapture><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>PromptShareCapture</a>
@@ -1196,49 +1140,7 @@ continue until the
 <a href=/ref/class/CaptureService.html#member-StopVideoCapture>StopVideoCapture()</a> method is
 called, or when 30 seconds have passed, whichever comes first. During the
 video recording, all user voices are muted.</p><p>The <code>onCaptureReady</code> callback can be used to prompt the user to save or
-share the video capture.</p><p>The <code>captureParams</code> parameter is currently non-operational.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span><span class=_lnt>11
-</span><span class=_lnt>12
-</span><span class=_lnt>13
-</span><span class=_lnt>14
-</span><span class=_lnt>15
-</span><span class=_lnt>16
-</span><span class=_lnt>17
-</span><span class=_lnt>18
-</span><span class=_lnt>19
-</span><span class=_lnt>20
-</span><span class=_lnt>21
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>CaptureService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;CaptureService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>parent</span> <span class=_o>=</span> <span class=_n>script.Parent</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>onCaptureReady</span> <span class=_o>=</span> <span class=_kr>function</span><span class=_p>(</span><span class=_n>result</span><span class=_p>,</span> <span class=_n>videoCapture</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>if</span> <span class=_n>result</span> <span class=_o>~=</span> <span class=_n>Enum.VideoCaptureResult</span><span class=_p>.</span><span class=_n>Success</span> <span class=_ow>and</span> <span class=_n>result</span> <span class=_o>~=</span> <span class=_n>Enum.VideoCaptureResult</span><span class=_p>.</span><span class=_n>TimeLimitReached</span> <span class=_ow>or</span> <span class=_ow>not</span> <span class=_n>videoCapture</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>		<span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Video recording failed to complete for reason:&#34;</span><span class=_p>,</span> <span class=_n>result</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>else</span>
-</span></span><span class=_line><span class=_cl>		<span class=_c1>-- Prompt the user to save the video capture to their gallery</span>
-</span></span><span class=_line><span class=_cl>		<span class=_n>CaptureService</span><span class=_p>:</span><span class=_n>PromptSaveCapturesToGallery</span><span class=_p>({</span> <span class=_n>videoCapture</span> <span class=_p>},</span> <span class=_kr>function</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>			<span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Capture saved&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>		<span class=_kr>end</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_n>parent.Activated</span><span class=_p>:</span><span class=_n>Connect</span><span class=_p>(</span><span class=_kr>function</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kd>local</span> <span class=_n>videoRecordingAllowedResult</span><span class=_p>:</span> <span class=_n>Enum.VideoCaptureStartedResult</span> <span class=_o>=</span> <span class=_n>CaptureService</span><span class=_p>:</span><span class=_n>StartVideoCaptureAsync</span><span class=_p>(</span><span class=_n>onCaptureReady</span><span class=_p>,</span> <span class=_p>{})</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>if</span> <span class=_n>videoRecordingAllowedResult</span> <span class=_o>~=</span> <span class=_n>Enum.VideoCaptureStartedResult</span><span class=_p>.</span><span class=_n>Success</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>		<span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Video recording failed to start for reason:&#34;</span><span class=_p>,</span> <span class=_n>videoRecordingAllowedResult</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span><span class=_p>)</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=ReturnType><a class="history-tag changed" href=/ref/updates/2025.html#version-1fd40173390f491a-3 title="Changed on 2025-06-03T10:18:31-07:00
+share the video capture.</p><p>The <code>captureParams</code> parameter is currently non-operational.</p></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=ReturnType><a class="history-tag changed" href=/ref/updates/2025.html#version-1fd40173390f491a-3 title="Changed on 2025-06-03T10:18:31-07:00
 v0.676.0.6760531
 version-1fd40173390f491a">676</a>
 Change ReturnType of <a class="entity-link deco" href=/ref/class/CaptureService.html#member-StartVideoCaptureAsync><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>StartVideoCaptureAsync</a>
@@ -1269,51 +1171,7 @@ version-43bb2135852549ef">670</a>
 Add <a class="entity-link deco sec-RobloxScriptSecurity" href=/ref/class/CaptureService.html#member-StopVideoCaptureInternal><span class=picture title="Protected Function (RobloxScriptSecurity)" data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction_hu_d89d1a787c7a1098.png');--dark:url('/ref/icons/dark/ACFunction_hu_98ec0593e7c97d0e.png')"></span></span>StopVideoCaptureInternal</a></li></ul></details></section><section id=member-TakeScreenshotCaptureAsync class=set><header><h3><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>TakeScreenshotCaptureAsync<aside><a class="entity-link hub-link" href=https://create.roblox.com/docs/reference/engine/classes/CaptureService#TakeScreenshotCaptureAsync target=_blank rel=external><span class=picture><span class=icon style="--light:url('/ref/images/hub.svg');--dark:url('/ref/images/hub.svg')"></span></span>CreatorHub</a></aside></h3></header><table class="index-card params"><thead><tr><th class=col-name colspan=2>Parameters (<span class=element-count>2</span>)</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-onCaptureReady><td class=col-name>onCaptureReady</td><td class=col-type><a class="entity-link deco" href=/ref/type/Function.html>Function</a></td><td class=col-default><span class=api-none></span></td></tr><tr class=row-captureParams><td class=col-name>captureParams</td><td class=col-type><a class="entity-link deco" href=/ref/type/Dictionary.html>Dictionary</a></td><td class=col-default>nil</td></tr></tbody><thead><tr><th class=col-return colspan=3>Returns (<span class=element-count>1</span>)</th></tr></thead><tbody><tr><td class=col-return colspan=3><a class="entity-link deco" href=/ref/type/null.html><span class=picture title="Primitive type" data-type=Type><span class=icon style="--light:url('/ref/icons/light/Value.png');--dark:url('/ref/icons/dark/Value.png')"></span></span>null</a></td></tr></tbody></table><div class=docs><p>This method initiates a screenshot capture. The <code>onCaptureReady</code> callback
 can be used to prompt the user to save or share the screenshot capture.</p><p>Use the <a href=/ref/enum/UICaptureMode.html>UICaptureMode</a> parameter in <code>captureParams</code> to specify
 whether UI elements should be in the screenshot. By default, this is set
-to <a href=/ref/enum/UICaptureMode.html>UICaptureMode.None</a>.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span><span class=_lnt>11
-</span><span class=_lnt>12
-</span><span class=_lnt>13
-</span><span class=_lnt>14
-</span><span class=_lnt>15
-</span><span class=_lnt>16
-</span><span class=_lnt>17
-</span><span class=_lnt>18
-</span><span class=_lnt>19
-</span><span class=_lnt>20
-</span><span class=_lnt>21
-</span><span class=_lnt>22
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>CaptureService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;CaptureService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>parent</span> <span class=_o>=</span> <span class=_n>script.Parent</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>onCaptureReady</span> <span class=_o>=</span> <span class=_kr>function</span><span class=_p>(</span><span class=_n>result</span><span class=_p>,</span> <span class=_n>screenshotCapture</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>if</span> <span class=_n>result</span> <span class=_o>~=</span> <span class=_n>Enum.ScreenshotCaptureResult</span><span class=_p>.</span><span class=_n>Success</span> <span class=_ow>or</span> <span class=_ow>not</span> <span class=_n>screenshotCapture</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>		<span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Screenshot failed to complete for reason:&#34;</span><span class=_p>,</span> <span class=_n>result</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>else</span>
-</span></span><span class=_line><span class=_cl>		<span class=_c1>-- Prompt the user to save the screenshot capture to their gallery</span>
-</span></span><span class=_line><span class=_cl>		<span class=_n>CaptureService</span><span class=_p>:</span><span class=_n>PromptSaveCapturesToGallery</span><span class=_p>({</span> <span class=_n>screenshotCapture</span> <span class=_p>},</span> <span class=_kr>function</span><span class=_p>(</span><span class=_n>results</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>			<span class=_kr>for</span> <span class=_n>capture</span><span class=_p>,</span> <span class=_n>result</span> <span class=_kr>in</span> <span class=_n>pairs</span><span class=_p>(</span><span class=_n>results</span><span class=_p>)</span> <span class=_kr>do</span>
-</span></span><span class=_line><span class=_cl>				<span class=_kr>if</span> <span class=_n>result</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>					<span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Capture saved&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>				<span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>			<span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>		<span class=_kr>end</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>	<span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_n>parent.Activated</span><span class=_p>:</span><span class=_n>Connect</span><span class=_p>(</span><span class=_kr>function</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>	<span class=_n>CaptureService</span><span class=_p>:</span><span class=_n>TakeScreenshotCaptureAsync</span><span class=_p>(</span><span class=_n>onCaptureReady</span><span class=_p>,</span> <span class=_p>{</span> <span class=_n>UICaptureMode</span> <span class=_o>=</span> <span class=_n>Enum.UICaptureMode</span><span class=_p>.</span><span class=_n>All</span> <span class=_p>})</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span><span class=_p>)</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2026.html#version-2d89914793a549da-5 title="Added on 2026-01-13T10:33:06-08:00
+to <a href=/ref/enum/UICaptureMode.html>UICaptureMode.None</a>.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2026.html#version-2d89914793a549da-5 title="Added on 2026-01-13T10:33:06-08:00
 v0.704.0.7041059
 version-2d89914793a549da">704</a>
 Add <a class="entity-link deco" href=/ref/class/CaptureService.html#member-TakeScreenshotCaptureAsync><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>TakeScreenshotCaptureAsync</a></li></ul></details></section><section id=member-UploadCaptureAndPostMoment class="set sec-RobloxScriptSecurity"><header><h3><span class=picture title="Protected Function (RobloxScriptSecurity)" data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction_hu_d89d1a787c7a1098.png');--dark:url('/ref/icons/dark/ACFunction_hu_98ec0593e7c97d0e.png')"></span></span>UploadCaptureAndPostMoment<aside><a class="entity-link hub-link" href=https://create.roblox.com/docs/reference/engine/classes/CaptureService#UploadCaptureAndPostMoment target=_blank rel=external><span class=picture><span class=icon style="--light:url('/ref/images/hub.svg');--dark:url('/ref/images/hub.svg')"></span></span>CreatorHub</a></aside></h3></header><table class="index-card params"><thead><tr><th class=col-name colspan=2>Parameters (<span class=element-count>3</span>)</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-capture><td class=col-name>capture</td><td class=col-type><a class="entity-link deco" href=/ref/class/Capture.html>Capture</a></td><td class=col-default><span class=api-none></span></td></tr><tr class=row-momentMetadata><td class=col-name>momentMetadata</td><td class=col-type><a class="entity-link deco" href=/ref/type/Dictionary.html>Dictionary</a></td><td class=col-default>nil</td></tr><tr class=row-feedRegistrationInfo><td class=col-name>feedRegistrationInfo</td><td class=col-type><a class="entity-link deco" href=/ref/type/Dictionary.html>Dictionary</a></td><td class=col-default>nil</td></tr></tbody><thead><tr><th class=col-return colspan=3>Returns (<span class=element-count>1</span>)</th></tr></thead><tbody><tr><td class=col-return colspan=3><a class="entity-link deco" href=/ref/type/null.html><span class=picture title="Primitive type" data-type=Type><span class=icon style="--light:url('/ref/icons/light/Value.png');--dark:url('/ref/icons/dark/Value.png')"></span></span>null</a></td></tr></tbody></table><div class=docs><span class=no-desc></span></div><table class=metadata-pairs><tr class=pair><th class=name>Security</th><td class=value>RobloxScriptSecurity</td></tr><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2026.html#version-7091b4c2589245e0-9 title="Added on 2026-04-01T07:12:26-07:00

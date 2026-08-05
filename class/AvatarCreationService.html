@@ -614,41 +614,7 @@ and an optional text prompt. It returns a <code>previewId</code> which can be pa
 to
 <a href=/ref/class/AvatarCreationService.html#member-LoadAvatar2DPreviewAsync>LoadAvatar2DPreviewAsync()</a>
 to retrieve the preview image on the client. This API can only be used on
-the game server.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span><span class=_lnt>11
-</span><span class=_lnt>12
-</span><span class=_lnt>13
-</span><span class=_lnt>14
-</span><span class=_lnt>15
-</span><span class=_lnt>16
-</span><span class=_lnt>17
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>AvatarCreationService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;AvatarCreationService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kr>function</span> <span class=_nf>generateAvatar2DPreview</span><span class=_p>(</span><span class=_n>sessionId</span><span class=_p>,</span> <span class=_n>fileId</span><span class=_p>,</span> <span class=_n>textPrompt</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kd>local</span> <span class=_n>pcallSuccess</span><span class=_p>,</span> <span class=_n>result</span> <span class=_o>=</span> <span class=_n>pcall</span><span class=_p>(</span><span class=_kr>function</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>        <span class=_kd>local</span> <span class=_n>args</span> <span class=_o>=</span> <span class=_p>{}</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>args.SessionId</span> <span class=_o>=</span> <span class=_n>sessionId</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>args.FileId</span> <span class=_o>=</span> <span class=_n>fileId</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>args.TextPrompt</span> <span class=_o>=</span> <span class=_n>textPrompt</span>
-</span></span><span class=_line><span class=_cl>        <span class=_kr>return</span> <span class=_n>AvatarCreationService</span><span class=_p>:</span><span class=_n>GenerateAvatar2DPreviewAsync</span><span class=_p>(</span><span class=_n>args</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>if</span> <span class=_ow>not</span> <span class=_n>pcallSuccess</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>warn</span><span class=_p>(</span><span class=_s2>&#34;Generating 2D preview failed: &#34;</span><span class=_p>,</span> <span class=_n>result</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>return</span> <span class=_n>result</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Parameters><a class="history-tag changed" href=/ref/updates/2026.html#version-8b44d8f2067642d8-3 title="Changed on 2026-06-30T10:31:39-07:00
+the game server.</p></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Parameters><a class="history-tag changed" href=/ref/updates/2026.html#version-8b44d8f2067642d8-3 title="Changed on 2026-06-30T10:31:39-07:00
 v0.728.0.7280895
 version-8b44d8f2067642d8">728</a>
 Change Parameters of <a class="entity-link deco" href=/ref/class/AvatarCreationService.html#member-GenerateAvatar2DPreviewAsync><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>GenerateAvatar2DPreviewAsync</a>
@@ -662,39 +628,7 @@ Add <a class="entity-link deco" href=/ref/class/AvatarCreationService.html#membe
 <a href=/ref/class/AvatarCreationService.html#member-LoadGeneratedAvatarAsync>LoadGeneratedAvatarAsync()</a>
 method is then called to retrieve the generated
 <a href=/ref/class/HumanoidDescription.html>HumanoidDescription</a> avatar. This API can only be used on the game
-server.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span><span class=_lnt>11
-</span><span class=_lnt>12
-</span><span class=_lnt>13
-</span><span class=_lnt>14
-</span><span class=_lnt>15
-</span><span class=_lnt>16
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>AvatarCreationService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;AvatarCreationService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kr>function</span> <span class=_nf>generateAvatar</span><span class=_p>(</span><span class=_n>sessionId</span><span class=_p>,</span> <span class=_n>previewId</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kd>local</span> <span class=_n>pcallSuccess</span><span class=_p>,</span> <span class=_n>result</span> <span class=_o>=</span> <span class=_n>pcall</span><span class=_p>(</span><span class=_kr>function</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>        <span class=_kd>local</span> <span class=_n>args</span> <span class=_o>=</span> <span class=_p>{}</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>args.SessionId</span> <span class=_o>=</span> <span class=_n>sessionId</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>args.PreviewId</span> <span class=_o>=</span> <span class=_n>previewId</span>
-</span></span><span class=_line><span class=_cl>        <span class=_kr>return</span> <span class=_n>AvatarCreationService</span><span class=_p>:</span><span class=_n>GenerateAvatarAsync</span><span class=_p>(</span><span class=_n>args</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>if</span> <span class=_ow>not</span> <span class=_n>pcallSuccess</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>warn</span><span class=_p>(</span><span class=_s2>&#34;Generating avatar failed: &#34;</span><span class=_p>,</span> <span class=_n>result</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>return</span> <span class=_n>result</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>3</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Parameters><a class="history-tag changed" href=/ref/updates/2026.html#version-8b44d8f2067642d8-4 title="Changed on 2026-06-30T10:31:39-07:00
+server.</p></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>3</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Parameters><a class="history-tag changed" href=/ref/updates/2026.html#version-8b44d8f2067642d8-4 title="Changed on 2026-06-30T10:31:39-07:00
 v0.728.0.7280895
 version-8b44d8f2067642d8">728</a>
 Change Parameters of <a class="entity-link deco" href=/ref/class/AvatarCreationService.html#member-GenerateAvatarAsync><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>GenerateAvatarAsync</a>
@@ -915,33 +849,7 @@ Add <a class="entity-link deco sec-RobloxScriptSecurity" href=/ref/class/AvatarC
 v0.708.0.7080876
 version-db3d83f43d3f48c8">708</a>
 Add <a class="entity-link deco sec-RobloxScriptSecurity" href=/ref/class/AvatarCreationService.html#member-HandleSelfieQRResult><span class=picture title="Protected Function (RobloxScriptSecurity)" data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction_hu_d89d1a787c7a1098.png');--dark:url('/ref/icons/dark/ACFunction_hu_98ec0593e7c97d0e.png')"></span></span>HandleSelfieQRResult</a></li></ul></details></section><section id=member-LoadAvatar2DPreviewAsync class=set><header><h3><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>LoadAvatar2DPreviewAsync<aside><a class="entity-link hub-link" href=https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService#LoadAvatar2DPreviewAsync target=_blank rel=external><span class=picture><span class=icon style="--light:url('/ref/images/hub.svg');--dark:url('/ref/images/hub.svg')"></span></span>CreatorHub</a></aside></h3></header><table class="index-card params"><thead><tr><th class=col-name colspan=2>Parameters (<span class=element-count>1</span>)</th></tr></thead><tbody><tr class=row-previewId><td class=col-name>previewId</td><td class=col-type><a class="entity-link deco" href=/ref/type/string.html>string</a></td></tr></tbody><thead><tr><th class=col-return colspan=3>Returns (<span class=element-count>1</span>)</th></tr></thead><tbody><tr><td class=col-return colspan=3><a class="entity-link deco" href=/ref/class/EditableImage.html><span class=picture title=Class data-type=Class><span class=icon style="--light:url('/ref/icons/light/EditableImage.png');--dark:url('/ref/icons/dark/EditableImage.png')"></span></span>EditableImage</a></td></tr></tbody></table><div class=docs><p>Load an AvatarGeneration 2D preview as an <a href=/ref/class/EditableImage.html>EditableImage</a> on the
-client for the given previewId. This API can only be used on the client.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span><span class=_lnt>11
-</span><span class=_lnt>12
-</span><span class=_lnt>13
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>AvatarCreationService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;AvatarCreationService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kr>function</span> <span class=_nf>loadAvatar2DPreview</span><span class=_p>(</span><span class=_n>previewId</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kd>local</span> <span class=_n>pcallSuccess</span><span class=_p>,</span> <span class=_n>result</span> <span class=_o>=</span> <span class=_n>pcall</span><span class=_p>(</span><span class=_kr>function</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>        <span class=_kr>return</span> <span class=_n>AvatarCreationService</span><span class=_p>:</span><span class=_n>LoadAvatar2DPreviewAsync</span><span class=_p>(</span><span class=_n>previewId</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>if</span> <span class=_ow>not</span> <span class=_n>pcallSuccess</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>warn</span><span class=_p>(</span><span class=_s2>&#34;Failed to load preview: &#34;</span><span class=_p>,</span> <span class=_n>result</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>return</span> <span class=_n>result</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=ReturnType><a class="history-tag changed" href=/ref/updates/2025.html#version-163b500c1e564deb-12 title="Changed on 2025-04-01T10:21:35-07:00
+client for the given previewId. This API can only be used on the client.</p></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=ReturnType><a class="history-tag changed" href=/ref/updates/2025.html#version-163b500c1e564deb-12 title="Changed on 2025-04-01T10:21:35-07:00
 v0.667.0.6670665
 version-163b500c1e564deb">667</a>
 Change ReturnType of <a class="entity-link deco" href=/ref/class/AvatarCreationService.html#member-LoadAvatar2DPreviewAsync><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>LoadAvatar2DPreviewAsync</a>
@@ -1125,57 +1033,7 @@ method returns a <code>Tuple</code> with an <a href=/ref/type/RBXScriptConnectio
 estimated <code>waitTime</code>. The <a href=/ref/type/RBXScriptConnection.html>RBXScriptConnection</a> allows canceling
 a session request. The estimated <code>waitTime</code> is used to provide the player
 an estimated time in seconds until the session will be ready. This API can
-only be used on the game server.</p><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
-</span><span class=_lnt> 2
-</span><span class=_lnt> 3
-</span><span class=_lnt> 4
-</span><span class=_lnt> 5
-</span><span class=_lnt> 6
-</span><span class=_lnt> 7
-</span><span class=_lnt> 8
-</span><span class=_lnt> 9
-</span><span class=_lnt>10
-</span><span class=_lnt>11
-</span><span class=_lnt>12
-</span><span class=_lnt>13
-</span><span class=_lnt>14
-</span><span class=_lnt>15
-</span><span class=_lnt>16
-</span><span class=_lnt>17
-</span><span class=_lnt>18
-</span><span class=_lnt>19
-</span><span class=_lnt>20
-</span><span class=_lnt>21
-</span><span class=_lnt>22
-</span><span class=_lnt>23
-</span><span class=_lnt>24
-</span><span class=_lnt>25
-</span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>AvatarCreationService</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;AvatarCreationService&#34;</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>playerSessions</span> <span class=_o>=</span> <span class=_p>{}</span>
-</span></span><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>playerSessionRequests</span> <span class=_o>=</span> <span class=_p>{}</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kr>function</span> <span class=_nf>requestAvatarGenerationSession</span><span class=_p>(</span><span class=_n>player</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kd>local</span> <span class=_n>pcallSuccess</span><span class=_p>,</span> <span class=_n>conn</span><span class=_p>,</span> <span class=_n>waitTime</span> <span class=_o>=</span> <span class=_n>pcall</span><span class=_p>(</span><span class=_kr>function</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>        <span class=_kr>return</span> <span class=_n>AvatarCreationService</span><span class=_p>:</span><span class=_n>RequestAvatarGenerationSessionAsync</span><span class=_p>(</span><span class=_n>player</span><span class=_p>,</span> <span class=_kr>function</span><span class=_p>(</span><span class=_n>sessionInfo</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>            <span class=_n>playerSessions</span><span class=_p>[</span><span class=_n>player.UserID</span><span class=_p>]</span> <span class=_o>=</span> <span class=_n>sessionInfo</span>
-</span></span><span class=_line><span class=_cl>            <span class=_n>playerSessionRequests</span><span class=_p>[</span><span class=_n>player.UserID</span><span class=_p>]</span> <span class=_o>=</span> <span class=_kc>nil</span>
-</span></span><span class=_line><span class=_cl>        <span class=_kr>end</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>if</span> <span class=_ow>not</span> <span class=_n>pcallSuccess</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>warn</span><span class=_p>(</span><span class=_s2>&#34;Failed to request Avatar generation session: &#34;</span><span class=_p>,</span> <span class=_n>conn</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl>    <span class=_n>playerSessionRequests</span><span class=_p>[</span><span class=_n>player.UserID</span><span class=_p>]</span> <span class=_o>=</span> <span class=_n>conn</span>
-</span></span><span class=_line><span class=_cl>    <span class=_n>print</span><span class=_p>(</span><span class=_s2>&#34;Wait time for session: &#34;</span><span class=_p>,</span> <span class=_n>tostring</span><span class=_p>(</span><span class=_n>waitTime</span><span class=_p>))</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl>
-</span></span><span class=_line><span class=_cl><span class=_kr>function</span> <span class=_nf>cancelAvatarGenerationSessionRequest</span><span class=_p>(</span><span class=_n>player</span><span class=_p>)</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>if</span> <span class=_n>playerSessionRequests</span><span class=_p>[</span><span class=_n>player.UserID</span><span class=_p>]</span> <span class=_o>~=</span> <span class=_kc>nil</span> <span class=_kr>then</span>
-</span></span><span class=_line><span class=_cl>        <span class=_n>playerSessionRequests</span><span class=_p>[</span><span class=_n>player.UserID</span><span class=_p>]:</span><span class=_n>Disconnect</span><span class=_p>()</span>
-</span></span><span class=_line><span class=_cl>    <span class=_kr>end</span>
-</span></span><span class=_line><span class=_cl><span class=_kr>end</span>
-</span></span></code></pre></td></tr></tbody></table></div></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2024.html#version-7201700b36284abb-9 title="Added on 2024-09-03T11:30:21-07:00
+only be used on the game server.</p></div><div class=status-list><div class="status-box medium"><span class=header>This function yields.</span> It will block the calling thread until completion.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function><a class="history-tag added" href=/ref/updates/2024.html#version-7201700b36284abb-9 title="Added on 2024-09-03T11:30:21-07:00
 v0.641.0.6410737
 version-7201700b36284abb">641</a>
 Add <a class="entity-link deco" href=/ref/class/AvatarCreationService.html#member-RequestAvatarGenerationSessionAsync><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>RequestAvatarGenerationSessionAsync</a></li></ul></details><div class=tags>Tags: [Yields]</div></section><section id=member-RequestAvatarModel class="set hidden sec-RobloxSecurity"><header><h3><span class=picture title="Protected Event (RobloxSecurity)" data-type=Event><span class=icon style="--light:url('/ref/icons/light/ACEvent_hu_60e7513c9de49b7a.png');--dark:url('/ref/icons/dark/ACEvent_hu_d466044e2e9d9902.png')"></span></span>RequestAvatarModel<aside><a class="entity-link hub-link" href=https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService#RequestAvatarModel target=_blank rel=external><span class=picture><span class=icon style="--light:url('/ref/images/hub.svg');--dark:url('/ref/images/hub.svg')"></span></span>CreatorHub</a></aside></h3></header><table class="index-card params"><thead><tr><th class=col-name colspan=2>Parameters (<span class=element-count>1</span>)</th></tr></thead><tbody><tr class=row-id><td class=col-name>id</td><td class=col-type><a class="entity-link deco" href=/ref/type/string.html>string</a></td></tr></tbody></table><div class=docs><span class=no-desc></span></div><div class=status-list><div class="status-box low"><span class=header>This event is hidden.</span> It is not meant to be used, and may have unresolved issues.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Security</th><td class=value>RobloxSecurity</td></tr><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>1</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Event><a class="history-tag added" href=/ref/updates/2024.html#version-94667ff7b9b64821-12 title="Added on 2024-04-09T13:05:06-07:00
