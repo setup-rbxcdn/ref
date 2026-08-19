@@ -2298,7 +2298,8 @@ reason for the server shutdown.</p><p>You can bind multiple functions by calling
 <a href=/ref/class/DataModel.html#member-BindToClose>BindToClose()</a> repeatedly. Bound functions
 are called in parallel and run at the same time.</p><p>The experience server waits 30 seconds for all bound functions to stop
 running before it shuts down. After 30 seconds, the server shuts down even
-if functions are still running.</p><p>To verify that the current session is not in Roblox Studio, use
+if functions are still running. Teleports are disabled during moderation
+shutdowns.</p><p>To verify that the current session is not in Roblox Studio, use
 <a href=/ref/class/RunService.html#member-IsStudio>RunService:IsStudio()</a>. This prevents bound functions from
 completing their run in offline testing sessions.</p><p>When you use <a href=/ref/class/DataStoreService.html>DataStoreService</a>, you should also use <code>BindToClose</code>
 to bind a function saving all unsaved data to
