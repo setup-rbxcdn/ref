@@ -1784,6 +1784,45 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "RegisterImpressionSource",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "RegisterImpressionSource",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "RegisterImpressionSource",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "ReturnToPublisherExperience",
 					"MemberType": "Function",
 					"Removed": false,
@@ -16249,6 +16288,32 @@
 				},
 				{
 					"Class": "AssetService",
+					"Member": "CreateDecalAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateDecalAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Decal"
+					}
+				},
+				{
+					"Class": "AssetService",
 					"Member": "CreateEditableImage",
 					"MemberType": "Function",
 					"Removed": false,
@@ -16587,6 +16652,32 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "SurfaceAppearance"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateTextureAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateTextureAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Texture"
 					}
 				},
 				{
@@ -26497,6 +26588,19 @@
 				},
 				{
 					"Class": "AvatarAbilityRules",
+					"Member": "EnableTurning",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarAbilityRules",
 					"Member": "EnableStrafing",
 					"MemberType": "Property",
 					"Removed": true,
@@ -34726,6 +34830,19 @@
 				},
 				{
 					"Class": "BasePart",
+					"Member": "PhysicsRepRootRef",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "InstanceRef"
+					}
+				},
+				{
+					"Class": "BasePart",
 					"Member": "PivotOffset",
 					"MemberType": "Property",
 					"Removed": false,
@@ -42292,6 +42409,32 @@
 				{
 					"Class": "CaptureService",
 					"Member": "CheckUploadCaptureStatusAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "CheckUploadCaptureStatusForSupportTicketAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "CheckUploadCaptureStatusForSupportTicketAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -62515,6 +62658,19 @@
 					}
 				},
 				{
+					"Class": "AssetService",
+					"Member": "CreateDecalAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Decal"
+					}
+				},
+				{
 					"Class": "Decal",
 					"Member": "AutoLocalize",
 					"MemberType": "Property",
@@ -62564,6 +62720,45 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Content"
+					}
+				},
+				{
+					"Class": "Decal",
+					"Member": "EmissiveMaskContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "Decal",
+					"Member": "EmissiveStrength",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Decal",
+					"Member": "EmissiveTint",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
 					}
 				},
 				{
@@ -67965,6 +68160,19 @@
 				},
 				{
 					"Class": "EditableImage",
+					"Member": "ImageHolder",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NetAssetRef"
+					}
+				},
+				{
+					"Class": "EditableImage",
 					"Member": "IsReplicatedCopy",
 					"MemberType": "Property",
 					"Removed": false,
@@ -69172,6 +69380,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "EditableMesh"
+					}
+				},
+				{
+					"Class": "EditableMesh",
+					"Member": "EditableMeshDataHolder",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NetAssetRef"
 					}
 				},
 				{
@@ -104025,6 +104246,8 @@
 				"StarterPlayer",
 				"StarterPlayerScripts",
 				"StartupMessageService",
+				"StateMachineDefinition",
+				"StateMachineTransitionDefinition",
 				"Stats",
 				"StatsItem",
 				"StopWatchReporter",
@@ -104188,6 +104411,19 @@
 				{
 					"Class": "AdService",
 					"Member": "RegisterAdOpportunityAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "RegisterImpressionSource",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -111025,6 +111261,19 @@
 					}
 				},
 				{
+					"Class": "PublishService",
+					"Member": "TagEmoteAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
 					"Class": "RealtimeMedia",
 					"Member": "WiringChanged",
 					"MemberType": "Event",
@@ -112475,6 +112724,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "AreInstanceTreesEquivalent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "AreInstanceTreesEquivalent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
@@ -122038,6 +122313,32 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "LuauExpression",
+					"Member": "References",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LuauExpression",
+					"Member": "References",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				}
 			]
@@ -159856,6 +160157,19 @@
 				},
 				{
 					"Class": "PluginManagementService",
+					"Member": "ListPluginGuisAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PluginManagementService",
 					"Member": "SetAutoUpdate",
 					"MemberType": "Function",
 					"Removed": false,
@@ -162854,6 +163168,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PublishService",
+					"Member": "TagEmoteAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "PublishService",
+					"Member": "TagEmoteAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				}
 			]
@@ -170335,6 +170675,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "IsTeamTest",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "Pause",
 					"MemberType": "Function",
 					"Removed": false,
@@ -174806,6 +175159,45 @@
 				{
 					"Class": "ScriptEditorService",
 					"Member": "OpenScriptDocumentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "ScriptEditorService",
+					"Member": "OpenTemporaryDocumentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ScriptEditorService",
+					"Member": "OpenTemporaryDocumentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ScriptEditorService",
+					"Member": "OpenTemporaryDocumentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -185910,6 +186302,43 @@
 				}
 			]
 		},
+		"StateMachineDefinition": {
+			"Name": "StateMachineDefinition",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "StateMachineDefinition",
+					"Member": "NodeId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				}
+			]
+		},
+		"StateMachineTransitionDefinition": {
+			"Name": "StateMachineTransitionDefinition",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			]
+		},
 		"Stats": {
 			"Name": "Stats",
 			"Removed": false,
@@ -196674,6 +197103,45 @@
 					}
 				},
 				{
+					"Class": "StudioWidget",
+					"Member": "SetMinSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "StudioWidget",
+					"Member": "SetMinSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "StudioWidget",
+					"Member": "SetMinSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "StudioWidgetsService",
 					"Member": "ApplyFillInBox",
 					"MemberType": "Function",
@@ -201641,6 +202109,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "ExpandedTerrainResolved",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "GrassLength",
 					"MemberType": "Property",
 					"Removed": false,
@@ -201754,19 +202235,6 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
-					}
-				},
-				{
-					"Class": "Terrain",
-					"Member": "ValidationAssetContentMap",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "AssetContentMap"
 					}
 				},
 				{
@@ -204566,6 +205034,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "ValidationAssetContentMap",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "AssetContentMap"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "Velocity",
 					"MemberType": "Property",
 					"Removed": true,
@@ -206975,8 +207456,8 @@
 					"Kind": "Parameter",
 					"Index": 2,
 					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
+						"Category": "Group",
+						"Name": "Variant"
 					}
 				},
 				{
@@ -207177,6 +207658,110 @@
 				{
 					"Class": "TestService",
 					"Member": "SetTestControl",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingCapture",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingCapture",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingCapture",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStart",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStart",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStart",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStop",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -213696,6 +214281,19 @@
 			],
 			"Related": [
 				{
+					"Class": "AssetService",
+					"Member": "CreateTextureAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Texture"
+					}
+				},
+				{
 					"Class": "Texture",
 					"Member": "OffsetStudsU",
 					"MemberType": "Property",
@@ -216383,6 +216981,19 @@
 				},
 				{
 					"Class": "TriangleMeshPart",
+					"Member": "CollisionPrecision",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "TriangleMeshPart",
 					"Member": "ConvexDecompHolder",
 					"MemberType": "Property",
 					"Removed": false,
@@ -216444,6 +217055,19 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "TriangleMeshPart",
+					"Member": "PCDRequestId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -217205,6 +217829,45 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "UGCValidationService",
+					"Member": "AreInstanceTreesEquivalent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "AreInstanceTreesEquivalent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "AreInstanceTreesEquivalent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
 				{
 					"Class": "UGCValidationService",
 					"Member": "CalculateAverageEditableCageMeshDistance",
@@ -245712,6 +246375,27 @@
 					}
 				]
 			},
+			"RegisterImpressionSource": {
+				"Class": "AdService",
+				"Name": "RegisterImpressionSource",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AdService",
+						"Member": "RegisterImpressionSource",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"ReportImpressionSignal": {
 				"Class": "AdService",
 				"Name": "ReportImpressionSignal",
@@ -251731,6 +252415,27 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"CreateDecalAsync": {
+				"Class": "AssetService",
+				"Name": "CreateDecalAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AssetService",
+						"Member": "CreateDecalAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Decal"
+						}
+					}
+				]
+			},
 			"CreateDynamicImageAsync": {
 				"Class": "AssetService",
 				"Name": "CreateDynamicImageAsync",
@@ -252006,6 +252711,27 @@
 						"Type": {
 							"Category": "Class",
 							"Name": "SurfaceAppearance"
+						}
+					}
+				]
+			},
+			"CreateTextureAsync": {
+				"Class": "AssetService",
+				"Name": "CreateTextureAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AssetService",
+						"Member": "CreateTextureAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Texture"
 						}
 					}
 				]
@@ -256897,6 +257623,12 @@
 				"Name": "EnableSwimming",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"EnableTurning": {
+				"Class": "AvatarAbilityRules",
+				"Name": "EnableTurning",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"AvatarAccessoryRules": {
@@ -261609,6 +262341,12 @@
 					}
 				]
 			},
+			"PhysicsRepRootRef": {
+				"Class": "BasePart",
+				"Name": "PhysicsRepRootRef",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"PhysicsRotationalVelocity": {
 				"Class": "BasePart",
 				"Name": "PhysicsRotationalVelocity",
@@ -264472,6 +265210,12 @@
 			"CheckUploadCaptureStatusAsync": {
 				"Class": "CaptureService",
 				"Name": "CheckUploadCaptureStatusAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"CheckUploadCaptureStatusForSupportTicketAsync": {
+				"Class": "CaptureService",
+				"Name": "CheckUploadCaptureStatusForSupportTicketAsync",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -270295,6 +271039,12 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"ServerLowMemoryWarning": {
+				"Class": "DataModel",
+				"Name": "ServerLowMemoryWarning",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"ServerRestartScheduled": {
 				"Class": "DataModel",
 				"Name": "ServerRestartScheduled",
@@ -272947,6 +273697,24 @@
 			"ColorMapContent": {
 				"Class": "Decal",
 				"Name": "ColorMapContent",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EmissiveMaskContent": {
+				"Class": "Decal",
+				"Name": "EmissiveMaskContent",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EmissiveStrength": {
+				"Class": "Decal",
+				"Name": "EmissiveStrength",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EmissiveTint": {
+				"Class": "Decal",
+				"Name": "EmissiveTint",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -275861,6 +276629,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"ImageHolder": {
+				"Class": "EditableImage",
+				"Name": "ImageHolder",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"IsReplicatedCopy": {
 				"Class": "EditableImage",
 				"Name": "IsReplicatedCopy",
@@ -276132,6 +276906,12 @@
 				"Class": "EditableMesh",
 				"Name": "Destroy",
 				"MemberType": "Function",
+				"Removed": false
+			},
+			"EditableMeshDataHolder": {
+				"Class": "EditableMesh",
+				"Name": "EditableMeshDataHolder",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"FindClosestPointOnSurface": {
@@ -295276,6 +296056,12 @@
 				"Name": "Evaluate",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"References": {
+				"Class": "LuauExpression",
+				"Name": "References",
+				"MemberType": "Function",
+				"Removed": false
 			}
 		},
 		"LuauExpressionService": {
@@ -307229,6 +308015,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"PauseTeleports": {
+				"Class": "Player",
+				"Name": "PauseTeleports",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"PendingRequestedTool": {
 				"Class": "Player",
 				"Name": "PendingRequestedTool",
@@ -311710,6 +312502,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"ListPluginGuisAsync": {
+				"Class": "PluginManagementService",
+				"Name": "ListPluginGuisAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"SetAutoUpdate": {
 				"Class": "PluginManagementService",
 				"Name": "SetAutoUpdate",
@@ -313283,6 +314081,27 @@
 					{
 						"Class": "PublishService",
 						"Member": "PublishDescendantAssetsAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
+			"TagEmoteAnimation": {
+				"Class": "PublishService",
+				"Name": "TagEmoteAnimation",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "PublishService",
+						"Member": "TagEmoteAnimation",
 						"MemberType": "Function",
 						"Removed": false,
 						"Field": "Parameters",
@@ -316358,6 +317177,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"IsTeamTest": {
+				"Class": "RunService",
+				"Name": "IsTeamTest",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"Misprediction": {
 				"Class": "RunService",
 				"Name": "Misprediction",
@@ -318105,6 +318930,12 @@
 						}
 					}
 				]
+			},
+			"OpenTemporaryDocumentAsync": {
+				"Class": "ScriptEditorService",
+				"Name": "OpenTemporaryDocumentAsync",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"RegisterAutocompleteCallback": {
 				"Class": "ScriptEditorService",
@@ -323902,6 +324733,14 @@
 				"Removed": false
 			}
 		},
+		"StateMachineDefinition": {
+			"NodeId": {
+				"Class": "StateMachineDefinition",
+				"Name": "NodeId",
+				"MemberType": "Property",
+				"Removed": false
+			}
+		},
 		"Stats": {
 			"ContactsCount": {
 				"Class": "Stats",
@@ -328435,6 +329274,12 @@
 				"Name": "SetFixedSize",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"SetMinSize": {
+				"Class": "StudioWidget",
+				"Name": "SetMinSize",
+				"MemberType": "Function",
+				"Removed": false
 			}
 		},
 		"StudioWidgetsService": {
@@ -330950,6 +331795,12 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"ExpandedTerrainResolved": {
+				"Class": "Terrain",
+				"Name": "ExpandedTerrainResolved",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"FillBall": {
 				"Class": "Terrain",
 				"Name": "FillBall",
@@ -331844,7 +332695,7 @@
 				"Class": "Terrain",
 				"Name": "ValidationAssetContentMap",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"Velocity": {
 				"Class": "Terrain",
@@ -332802,6 +333653,24 @@
 			"SetTestControl": {
 				"Class": "TestService",
 				"Name": "SetTestControl",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SignalProfilingCapture": {
+				"Class": "TestService",
+				"Name": "SignalProfilingCapture",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SignalProfilingStart": {
+				"Class": "TestService",
+				"Name": "SignalProfilingStart",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SignalProfilingStop": {
+				"Class": "TestService",
+				"Name": "SignalProfilingStop",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -336920,6 +337789,12 @@
 					}
 				]
 			},
+			"CollisionPrecision": {
+				"Class": "TriangleMeshPart",
+				"Name": "CollisionPrecision",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ConvexDecompData": {
 				"Class": "TriangleMeshPart",
 				"Name": "ConvexDecompData",
@@ -336989,6 +337864,12 @@
 			"MeshSize": {
 				"Class": "TriangleMeshPart",
 				"Name": "MeshSize",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"PCDRequestId": {
+				"Class": "TriangleMeshPart",
+				"Name": "PCDRequestId",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -337324,6 +338205,40 @@
 			}
 		},
 		"UGCValidationService": {
+			"AreInstanceTreesEquivalent": {
+				"Class": "UGCValidationService",
+				"Name": "AreInstanceTreesEquivalent",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "UGCValidationService",
+						"Member": "AreInstanceTreesEquivalent",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					},
+					{
+						"Class": "UGCValidationService",
+						"Member": "AreInstanceTreesEquivalent",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"CalculateAverageCageMeshDistance": {
 				"Class": "UGCValidationService",
 				"Name": "CalculateAverageCageMeshDistance",
@@ -351250,6 +352165,18 @@
 				"DeadBlend"
 			]
 		},
+		"AnimationNodeTransitionWhen": {
+			"Name": "AnimationNodeTransitionWhen",
+			"Removed": false,
+			"ItemsByValue": [
+				"Finished",
+				"BeforeFinished"
+			],
+			"ItemsByIndex": [
+				"Finished",
+				"BeforeFinished"
+			]
+		},
 		"AnimationNodeType": {
 			"Name": "AnimationNodeType",
 			"Removed": false,
@@ -356024,7 +356951,8 @@
 				"Box",
 				"PreciseConvexDecomposition",
 				"DynamicPreciseConvexDecomposition",
-				"Scalable"
+				"Scalable",
+				"Tunable"
 			],
 			"ItemsByIndex": [
 				"Default",
@@ -356032,7 +356960,8 @@
 				"Box",
 				"PreciseConvexDecomposition",
 				"DynamicPreciseConvexDecomposition",
-				"Scalable"
+				"Scalable",
+				"Tunable"
 			],
 			"Related": [
 				{
@@ -361237,12 +362166,14 @@
 			"ItemsByValue": [
 				"Success",
 				"Pending",
-				"Failed"
+				"Failed",
+				"Filtered"
 			],
 			"ItemsByIndex": [
 				"Success",
 				"Pending",
-				"Failed"
+				"Failed",
+				"Filtered"
 			]
 		},
 		"Genre": {
@@ -381620,6 +382551,18 @@
 				"Removed": false
 			}
 		},
+		"AnimationNodeTransitionWhen": {
+			"BeforeFinished": {
+				"Enum": "AnimationNodeTransitionWhen",
+				"Name": "BeforeFinished",
+				"Removed": false
+			},
+			"Finished": {
+				"Enum": "AnimationNodeTransitionWhen",
+				"Name": "Finished",
+				"Removed": false
+			}
+		},
 		"AnimationNodeType": {
 			"AddNode": {
 				"Enum": "AnimationNodeType",
@@ -384600,6 +385543,11 @@
 			"Scalable": {
 				"Enum": "CollisionFidelity",
 				"Name": "Scalable",
+				"Removed": true
+			},
+			"Tunable": {
+				"Enum": "CollisionFidelity",
+				"Name": "Tunable",
 				"Removed": false
 			}
 		},
@@ -388828,6 +389776,11 @@
 			"Failed": {
 				"Enum": "GenerateMomentTextResult",
 				"Name": "Failed",
+				"Removed": false
+			},
+			"Filtered": {
+				"Enum": "GenerateMomentTextResult",
+				"Name": "Filtered",
 				"Removed": false
 			},
 			"Pending": {
@@ -409684,7 +410637,7 @@
 			"Related": [
 				{
 					"Class": "Terrain",
-					"Member": "ValidationAssetContentMap",
+					"Member": "VoxelGridAssetContentMap",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -409697,9 +410650,9 @@
 				},
 				{
 					"Class": "Terrain",
-					"Member": "VoxelGridAssetContentMap",
+					"Member": "ValidationAssetContentMap",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -414980,6 +415933,19 @@
 					}
 				},
 				{
+					"Class": "Decal",
+					"Member": "EmissiveTint",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
 					"Class": "DraggerService",
 					"Member": "GeometrySnapColor",
 					"MemberType": "Property",
@@ -417123,6 +418089,19 @@
 				{
 					"Class": "Decal",
 					"Member": "ColorMapContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "Decal",
+					"Member": "EmissiveMaskContent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -420741,6 +421720,19 @@
 				},
 				{
 					"Class": "AssetService",
+					"Member": "CreateDecalAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetService",
 					"Member": "CreateEditableImage",
 					"MemberType": "Function",
 					"Removed": false,
@@ -420811,6 +421803,19 @@
 				{
 					"Class": "AssetService",
 					"Member": "CreateSurfaceAppearanceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "CreateTextureAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -424093,6 +425098,19 @@
 					}
 				},
 				{
+					"Class": "PluginManagementService",
+					"Member": "ListPluginGuisAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "PluginPolicyService",
 					"Member": "GetPluginPolicy",
 					"MemberType": "Function",
@@ -425655,6 +426673,32 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingCapture",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStart",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -429278,6 +430322,26 @@
 				}
 			]
 		},
+		"InstanceRef": {
+			"Category": "DataType",
+			"Name": "InstanceRef",
+			"Removed": false,
+			"Related": [
+				{
+					"Class": "BasePart",
+					"Member": "PhysicsRepRootRef",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "InstanceRef"
+					}
+				}
+			]
+		},
 		"Instances": {
 			"Category": "DataType",
 			"Name": "Instances",
@@ -431871,6 +432935,32 @@
 			"Name": "NetAssetRef",
 			"Removed": false,
 			"Related": [
+				{
+					"Class": "EditableImage",
+					"Member": "ImageHolder",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NetAssetRef"
+					}
+				},
+				{
+					"Class": "EditableMesh",
+					"Member": "EditableMeshDataHolder",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NetAssetRef"
+					}
+				},
 				{
 					"Class": "MeshPart",
 					"Member": "SolidMeshHolder",
@@ -436136,6 +437226,19 @@
 				},
 				{
 					"Class": "CaptureService",
+					"Member": "CheckUploadCaptureStatusForSupportTicketAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "CaptureService",
 					"Member": "GenerateMomentTextAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -437437,6 +438540,19 @@
 				{
 					"Class": "ScriptEditorService",
 					"Member": "OpenScriptDocumentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "ScriptEditorService",
+					"Member": "OpenTemporaryDocumentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -441885,6 +443001,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "RequestValidationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Group",
 						"Name": "Variant"
@@ -452899,6 +454028,19 @@
 					}
 				},
 				{
+					"Class": "AvatarAbilityRules",
+					"Member": "EnableTurning",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "AvatarAccessoryRules",
 					"Member": "CustomBackAccessoryEnabled",
 					"MemberType": "Property",
@@ -459516,6 +460658,19 @@
 					}
 				},
 				{
+					"Class": "LuauExpression",
+					"Member": "References",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "MLService",
 					"Member": "IsPostProcessReady",
 					"MemberType": "Function",
@@ -464067,6 +465222,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "IsTeamTest",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "Set3dRenderingEnabled",
 					"MemberType": "Function",
 					"Removed": false,
@@ -467525,6 +468693,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "ExpandedTerrainResolved",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "IsSmooth",
 					"MemberType": "Property",
 					"Removed": false,
@@ -468878,6 +470059,19 @@
 				{
 					"Class": "TutorialService",
 					"Member": "ShowWidgets",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "AreInstanceTreesEquivalent",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -479507,19 +480701,6 @@
 					}
 				},
 				{
-					"Class": "TestService",
-					"Member": "RequestValidationAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
 					"Class": "UserInputService",
 					"Member": "OnScreenKeyboardAnimationDuration",
 					"MemberType": "Property",
@@ -483806,6 +484987,19 @@
 				{
 					"Class": "CylindricalConstraint",
 					"Member": "UpperAngle",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Decal",
+					"Member": "EmissiveStrength",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -491361,6 +492555,19 @@
 				{
 					"Class": "TremoloSoundEffect",
 					"Member": "Frequency",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "TriangleMeshPart",
+					"Member": "CollisionPrecision",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -502394,6 +503601,32 @@
 					}
 				},
 				{
+					"Class": "StudioWidget",
+					"Member": "SetMinSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "StudioWidget",
+					"Member": "SetMinSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "StyleBase",
 					"Member": "InsertStyleRule",
 					"MemberType": "Function",
@@ -503481,6 +504714,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "TriangleMeshPart",
+					"Member": "PCDRequestId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -518244,6 +519490,19 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "RegisterImpressionSource",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "ReturnToPublisherExperience",
 					"MemberType": "Function",
 					"Removed": false,
@@ -529202,6 +530461,19 @@
 					}
 				},
 				{
+					"Class": "PublishService",
+					"Member": "TagEmoteAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "RTAnimationTracker",
 					"Member": "Step",
 					"MemberType": "Function",
@@ -531880,6 +533152,19 @@
 					}
 				},
 				{
+					"Class": "StudioWidget",
+					"Member": "SetMinSize",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "StudioWidgetsService",
 					"Member": "ApplyFillInBox",
 					"MemberType": "Function",
@@ -532935,6 +534220,45 @@
 				{
 					"Class": "TestService",
 					"Member": "SetTestControl",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingCapture",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStart",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStop",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -537504,6 +538828,19 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "RegisterImpressionSource",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "SubmitAdNotification",
 					"MemberType": "Function",
 					"Removed": false,
@@ -541080,6 +542417,19 @@
 				{
 					"Class": "CaptureService",
 					"Member": "CheckUploadCaptureStatusAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "CheckUploadCaptureStatusForSupportTicketAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -548585,6 +549935,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "LuauExpression",
+					"Member": "References",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -556394,6 +557757,32 @@
 				},
 				{
 					"Class": "ScriptEditorService",
+					"Member": "OpenTemporaryDocumentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ScriptEditorService",
+					"Member": "OpenTemporaryDocumentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ScriptEditorService",
 					"Member": "RegisterAutocompleteCallback",
 					"MemberType": "Function",
 					"Removed": false,
@@ -557649,6 +559038,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StateMachineDefinition",
+					"Member": "NodeId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -559252,6 +560654,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingCapture",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStart",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestService",
+					"Member": "SignalProfilingStop",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"

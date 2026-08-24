@@ -16,8 +16,14 @@
 			"Summary": "<p>An <a href=\"/ref/class/Actor.html\">Actor</a> is a container for code that can be safely split into its own\nthread.</p>\n",
 			"Description": "<p>An <a href=\"/ref/class/Actor.html\">Actor</a> is a container for code that can be safely split into its own\nthread using <a href=\"https://create.roblox.com/docs/reference/engine/libraries/task#desynchronize\">task.desynchronize()</a>. It should also contain the\ninstances used by its scripts.</p>\n<p>To learn more about using multiple Actors to optimize script performance, see\n<a href=\"https://create.roblox.com/docs/scripting/multithreading\">Parallel Luau</a>.</p>\n<h3>Notes</h3>\n<ul>\n<li>Each <code>Actor</code> runs in its own Luau VM. <a href=\"/ref/class/ModuleScript.html\">ModuleScripts</a>\nrequired by an <code>Actor</code> are <strong>not</strong> shared or cached across <code>Actors</code> or with\nthe main thread. Each VM executes its own copy of the module, so\nmodule-level state is isolated per <code>Actor</code>. Design accordingly if your\nmodules hold state you intend to share.</li>\n<li><code>script:GetActor()</code> returns <code>nil</code> when called from a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a>\nunless the <code>ModuleScript</code> is a descendant of the <code>Actor</code>. <code>ModuleScripts</code>\nstored elsewhere (for example, <a href=\"/ref/class/ReplicatedStorage.html\">ReplicatedStorage</a>) and required by an\n<code>Actor</code> are not considered descendants of the <code>Actor</code>.</li>\n</ul>\n"
 		},
-		"AdGui": {},
-		"AdPortal": {},
+		"AdGui": {
+			"Summary": "<p>A surface-based GUI that displays immersive ads on a face of a <a href=\"/ref/class/Part.html\">Part</a> in\nthe 3D world.</p>\n",
+			"Description": "<p><a href=\"/ref/class/AdGui.html\">AdGui</a> is a <a href=\"/ref/class/SurfaceGuiBase.html\">SurfaceGuiBase</a> that renders immersive display ads\nonto a face of the <a href=\"/ref/class/Part.html\">Part</a> it&#39;s adorned to. When no ad is available, it\nshows the developer-supplied <a href=\"/ref/class/AdGui.html#member-FallbackImage\">AdGui.FallbackImage</a>, or a default Roblox\nfallback image when that property is empty.</p>\n<p>To render ads, the <a href=\"/ref/class/AdGui.html\">AdGui</a> must be adorned to a block <a href=\"/ref/class/Part.html\">Part</a>\nthat&#39;s a descendant of <a href=\"/ref/class/Workspace.html\">Workspace</a>, must be the only surface GUI on that\nface, and must be at least the minimum eligible size. When these conditions\naren&#39;t met, the object displays a placeholder image in Studio&#39;s edit view and\nrenders nothing in a running experience.</p>\n"
+		},
+		"AdPortal": {
+			"Summary": "<p>A portal that teleports players to a sponsored experience as part of immersive\nads.</p>\n",
+			"Description": "<p>An <code>AdPortal</code> is a developer-created instance that must be parented to a\n<a href=\"/ref/class/Part.html\">Part</a> — attempting to parent it elsewhere throws an error. When added\nto the data model, it registers itself with the ad service to be served portal\nads on rotation, and it uses a child <a href=\"/ref/class/AdGui.html\">AdGui</a> to display the current ad&#39;s\nbanner image and destination label above the portal.</p>\n<p>When the local player&#39;s character touches the parent part, the portal\nteleports that player to the sponsored experience associated with the\ncurrently served ad. The portal only teleports while it is valid and has been\nserved an ad with a destination place (see <a href=\"/ref/class/AdPortal.html#member-Status\">AdPortal.Status</a>).</p>\n"
+		},
 		"AdService": {
 			"Summary": "<p>The service responsible for in-experience advertising.</p>\n",
 			"Description": "<p><a href=\"/ref/class/AdService.html\">AdService</a> is responsible for in-experience advertising. This includes\n<a href=\"https://create.roblox.com/docs/production/promotion/rewarded-video-ads\">rewarded video</a> and\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations\">ad integrations</a>.</p>\n"
@@ -2764,7 +2770,10 @@
 			"Summary": "<p>VirtualUser is a service that allows you to record the inputs of a user, and\nthen play it back to a limited extent.</p>\n",
 			"Description": "<p>VirtualUser is a service that allows you to record the inputs of a user, and\nthen play it back to a limited extent. This service hasn&#39;t been maintained in\nseveral years, so it doesn&#39;t work very well anymore.</p>\n"
 		},
-		"VisibilityCheckDispatcher": {},
+		"VisibilityCheckDispatcher": {
+			"Summary": "<p>Service that schedules and runs viewability checks for immersive ad instances\nin a place.</p>\n",
+			"Description": "<p>Not accessible from scripts. <a href=\"/ref/class/VisibilityCheckDispatcher.html\">VisibilityCheckDispatcher</a> measures the\nviewability of on-screen ads, such as those rendered by <a href=\"/ref/class/AdGui.html\">AdGui</a>. On\nevery <a href=\"/ref/class/RunService.html\">RunService</a> heartbeat, it selects pending ad instances and runs\nthe on-screen and occlusion checks that determine whether an ad impression\nshould be counted, then reports the results through <a href=\"/ref/class/AdService.html\">AdService</a>.</p>\n<p>This service is created and managed by the engine.</p>\n"
+		},
 		"Visit": {
 			"Summary": "<p>The Visit service is a backend service used by Roblox. Its functions are not\naccessible to developers in any form.</p>\n",
 			"Description": "<p>The Visit service is a backend service used by Roblox. Its functions are not\naccessible to developers in any form.</p>\n"
@@ -2926,26 +2935,45 @@
 			}
 		},
 		"AdGui": {
-			"AdShape": {},
+			"AdShape": {
+				"Summary": "<p>Determines the shape of the ad displayed by the <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n",
+				"Description": "<p>Determines the shape of the ad rendered by the <a href=\"/ref/class/AdGui.html\">AdGui</a>, including\nthe creative&#39;s aspect ratio on the part surface. Defaults to\n<a href=\"/ref/enum/AdShape.html\">HorizontalRectangle</a>, which is the only served shape aside\nfrom the sentinel <a href=\"/ref/enum/AdShape.html\">Undefined</a>.</p>\n"
+			},
 			"EnableVideoAds": {
 				"Summary": "<p>Enables the AdGui to serve video ads.</p>\n",
 				"Description": "<p>The property enables the AdGui to serve video ads.</p>\n"
 			},
-			"FallbackImage": {},
+			"FallbackImage": {
+				"Summary": "<p>The image the <a href=\"/ref/class/AdGui.html\">AdGui</a> displays when no ad is available to serve.</p>\n",
+				"Description": "<p>A developer-supplied image that the <a href=\"/ref/class/AdGui.html\">AdGui</a> displays when it has no\nserved ad to render. Defaults to an empty content string; while empty, the\n<a href=\"/ref/class/AdGui.html\">AdGui</a> renders a default Roblox fallback image instead.</p>\n"
+			},
+			"FallbackImageContent": {
+				"Summary": "<p>The <a href=\"/ref/type/Content.html\">Content</a> equivalent of <a href=\"/ref/class/AdGui.html#member-FallbackImage\">AdGui.FallbackImage</a> that\nsupports asset URIs and <a href=\"/ref/class/EditableImage.html\">EditableImage</a> objects.</p>\n",
+				"Description": "<p>A <a href=\"/ref/type/Content.html\">Content</a>-typed property that holds the fallback image the\n<a href=\"/ref/class/AdGui.html\">AdGui</a> displays when no served ad is available. It is the\ncontent-typed backing for <a href=\"/ref/class/AdGui.html#member-FallbackImage\">AdGui.FallbackImage</a> (a legacy\n<code>TextureId</code> string); writing to either property updates the same\nunderlying storage. Unlike <code>FallbackImage</code>, this property accepts\n<a href=\"https://create.roblox.com/docs/projects/assets#asset-uris\">asset URIs</a> and references\nto <a href=\"/ref/class/EditableImage.html\">EditableImage</a> objects. When empty, the <a href=\"/ref/class/AdGui.html\">AdGui</a> renders a\ndefault Roblox fallback image instead.</p>\n"
+			},
 			"OnAdEvent": {
 				"Summary": "<p>Used to react to the AdGui events.</p>\n",
 				"DeprecationMessage": "<p>This callback has been deprecated and will never be called.</p>\n"
 			},
-			"Status": {}
+			"Status": {
+				"Summary": "<p>Indicates whether the <a href=\"/ref/class/AdGui.html\">AdGui</a> is currently displaying a served ad.</p>\n",
+				"Description": "<p>A read-only property that reports whether the <a href=\"/ref/class/AdGui.html\">AdGui</a> is actively\ndisplaying a served ad. It&#39;s <a href=\"/ref/enum/AdUnitStatus.html\">Active</a> when the\n<a href=\"/ref/class/AdGui.html\">AdGui</a> is rendering ad content, and <a href=\"/ref/enum/AdUnitStatus.html\">Inactive</a>\notherwise.</p>\n"
+			}
 		},
 		"AdPortal": {
-			"PortalInvalidReason": {},
-			"Status": {}
+			"PortalInvalidReason": {
+				"Summary": "<p>A developer-facing message explaining why the portal is currently invalid,\nif it is.</p>\n",
+				"Description": "<p>Holds a human-readable explanation of why the <a href=\"/ref/class/AdPortal.html\">AdPortal</a> is not in a\nvalid, servable state. When the portal passes validation the value is an\nempty string; when validation fails it is populated with the specific\nreason reported by the portal&#39;s validator, such as an unsuitable parent or\na misconfigured child <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n<p>This property is read-only and defaults to an empty string (<code>&#34;&#34;</code>). It is\nintended for surfacing configuration problems to developers in Studio.</p>\n"
+			},
+			"Status": {
+				"Summary": "<p>Indicates whether the portal is currently active and able to teleport\nplayers.</p>\n",
+				"Description": "<p>Reports the portal&#39;s current <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus</a>. The value is\n<a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Active</a> only when the portal has passed validation and\nhas been served an ad with a valid destination place; in every other case\nit is <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Inactive</a>.</p>\n<p>A newly created portal reports <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Inactive</a>, because its\ndestination place is unset (<code>0</code>) until the ad service fills the portal\nwith an ad — the portal cannot become <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Active</a>, and\ntherefore cannot teleport, until that happens. This property is read-only.</p>\n"
+			}
 		},
 		"AdService": {
 			"CreateAdRewardFromDevProductId": {
 				"Summary": "<p>Creates an <a href=\"/ref/type/AdReward.html\">AdReward</a> to give users who watch a video ad.</p>\n",
-				"Description": "<p>Creates a reward to give users who watch an entire video ad.</p>\n"
+				"Description": "<p>Constructs an <a href=\"/ref/type/AdReward.html\">AdReward</a> that wraps the given developer product\nso it can be passed to\n<a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">ShowRewardedVideoAdAsync</a>.\nWhen the user watches the entire rewarded video ad, the developer product\nidentified by <code>devProductId</code> is granted through the\n<a href=\"/ref/class/MarketplaceService.html#member-ProcessReceipt\">ProcessReceipt</a> callback with a\n<code>ProductPurchaseChannel</code> of <a href=\"/ref/enum/ProductPurchaseChannel.html\">ProductPurchaseChannel.AdReward</a>.</p>\n"
 			},
 			"GetAdAvailabilityNowAsync": {
 				"Summary": "<p>Checks if an ad with the specified format is available to be shown to the\n<a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a>.</p>\n",
@@ -2953,13 +2981,14 @@
 			},
 			"GetCampaignEligibilityAsync": {
 				"Summary": "<p>Checks a <a href=\"/ref/class/Player.html\">Player</a>&#39;s eligibility to be shown an\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations\">ad integration</a>\ncampaign.</p>\n",
+				"Description": "<p><a href=\"/ref/class/AdService.html#member-GetCampaignEligibilityAsync\">GetCampaignEligibilityAsync</a>\nchecks whether a <a href=\"/ref/class/Player.html\">Player</a> is eligible to be shown a specific\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations\">ad integration</a>\ncampaign, returning a dictionary that looks like\n<code>{ IsEligible: boolean }</code>.</p>\n<p>Call this method and confirm that <code>result.IsEligible</code> is <code>true</code> before you\ndisplay any of the campaign&#39;s ad integration assets or register their\ndisclosure buttons with\n<a href=\"/ref/class/AdService.html#member-RegisterDisclosureButton\">RegisterDisclosureButton</a>. All\nad integration assets should remain hidden until the <a href=\"/ref/class/Player.html\">Player</a> is\nconfirmed eligible.</p>\n<p>When called from the client, the <code>player</code> argument defaults to the\n<a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a>. When called from the server,\n<code>player</code> is required. The call raises an error if the supplied\n<code>campaignId</code> exceeds the maximum allowed length.</p>\n",
 				"CodeSamples": [
 					"AdService-AdIntegrations"
 				]
 			},
 			"RegisterAdOpportunityAsync": {
 				"Summary": "<p>Tracks how many times a user had the chance to watch a video ad and the\nrate at which they actually watched the ad.</p>\n",
-				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>.</p>\n",
+				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>.</p>\n<p>Registers a <a href=\"/ref/class/GuiButton.html\">GuiButton</a> for ad opportunity tracking. Once\nregistered, the system periodically checks whether the button is visible\nand unobstructed (the topmost input-sinking element at its center point).\nThese visibility transitions are reported as ad opportunity impressions\nand used to measure the rate at which users are presented with, and choose\nto watch, rewarded video ads.</p>\n<p>The <code>instance</code> must be a <a href=\"/ref/class/GuiButton.html\">GuiButton</a> that is a descendant of a\n<a href=\"/ref/class/ScreenGui.html\">ScreenGui</a> under <a href=\"/ref/class/PlayerGui.html\">PlayerGui</a>. If the instance is moved out of\na valid hierarchy at runtime, tracking pauses automatically and resumes\nwhen it returns to a valid ancestor. Call\n<a href=\"/ref/class/AdService.html#member-UnregisterAdOpportunity\">UnregisterAdOpportunity</a> to\nstop tracking the instance.</p>\n",
 				"CodeSamples": [
 					"AdService-RegisterAdOpportunityAsync"
 				]
@@ -2969,8 +2998,8 @@
 				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>.</p>\n<p><a href=\"/ref/class/AdService.html#member-RegisterDisclosureButton\">RegisterDisclosureButton</a>\nmarks a button in your experience as an ad disclosure for an ad\nintegration. When a user clicks it, they can see who is paying for the ad.\nSee\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations#labeling-and-disclosure\">ad integrations</a>\nfor guidance on what the disclosures should look like and when they should\nbe visible.</p>\n<p>Note: you must verify that the <a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a> is\neligible to see the associated ad integration campaign by calling\n<a href=\"/ref/class/AdService.html#member-GetCampaignEligibilityAsync\">GetCampaignEligibilityAsync</a>\nand verifying that <code>result.IsEligible</code> is <code>true</code> before attempting to\nregister a disclosure button for it. If you do not wait, or the\n<a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a> is not eligible to see the\nassociated campaign, then\n<a href=\"/ref/class/AdService.html#member-RegisterDisclosureButton\">RegisterDisclosureButton</a> will\nraise an error.</p>\n"
 			},
 			"ShowRewardedVideoAdAsync": {
-				"Summary": "<p>Plays the video ad to the current user inside the experience.</p>\n<pre><code>**Warning**: Rewarded Video ads must be user opt-in and clearly disclosed.\nFor details, review our\n[eligibility requirements](../../../production/promotion/rewarded-video-ads.md#eligibility-requirements) and\n[advertising standards](https://en.help.roblox.com/hc/en-us/articles/13722260778260-Advertising-Standards).\n</code></pre>\n",
-				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Server</a>.</p>\n<p>Note: before calling this method, you must first verify that the specified\nuser has a rewarded video ad available to show by calling\n<a href=\"/ref/class/AdService.html#member-GetAdAvailabilityNowAsync\">GetAdAvailabilityNowAsync</a>.\nIf the client does not have an available ad, then\n<a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">ShowRewardedVideoAdAsync</a> will\nreturn <a href=\"/ref/enum/ShowAdResult.html\">ShowAdResult.AdNotReady</a>.</p>\n",
+				"Summary": "<p>Plays the video ad to the current user inside the experience.</p>\n",
+				"Description": "<p><strong>Warning</strong>: Rewarded Video ads must be user opt-in and clearly disclosed.\nFor details, review our\n<a href=\"https://create.roblox.com/docs/production/promotion/rewarded-video-ads#eligibility-requirements\">eligibility requirements</a>\nand\n<a href=\"https://en.help.roblox.com/hc/en-us/articles/13722260778260-Advertising-Standards\">advertising standards</a>.</p>\n<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Server</a>.</p>\n<p>Note: before calling this method, you must first verify that the specified\nuser has a rewarded video ad available to show by calling\n<a href=\"/ref/class/AdService.html#member-GetAdAvailabilityNowAsync\">GetAdAvailabilityNowAsync</a>.\nIf the client does not have an available ad, then\n<a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">ShowRewardedVideoAdAsync</a> will\nreturn <a href=\"/ref/enum/ShowAdResult.html\">ShowAdResult.AdNotReady</a>.</p>\n",
 				"CodeSamples": [
 					"AdService-RewardedVideo"
 				]
@@ -2980,7 +3009,10 @@
 				"Description": "<p>Show mobile video advertisements.</p>\n",
 				"DeprecationMessage": "<p><a href=\"/ref/class/AdService.html#member-ShowVideoAd\">ShowVideoAd</a> has been decommissioned and is\nno longer operational.</p>\n"
 			},
-			"UnregisterAdOpportunity": {},
+			"UnregisterAdOpportunity": {
+				"Summary": "<p>Stops tracking an instance that was previously registered with\n<a href=\"/ref/class/AdService.html#member-RegisterAdOpportunityAsync\">RegisterAdOpportunityAsync</a>.</p>\n",
+				"Description": "<p>Removes <code>instance</code> from the ad opportunity tracker so that it no longer\ncounts toward the rewarded video ad opportunity reporting started by\n<a href=\"/ref/class/AdService.html#member-RegisterAdOpportunityAsync\">RegisterAdOpportunityAsync</a>.\nCall it once an instance should no longer be treated as an ad opportunity,\nsuch as when its associated UI is closed or removed.</p>\n<p>If the supplied <code>instance</code> is not currently being tracked, this method has\nno effect.</p>\n"
+			},
 			"VideoAdClosed": {
 				"Summary": "<p>Fires when an <a href=\"/ref/class/AdService.html\">AdService</a> video closes.</p>\n",
 				"Description": "<p>Fires when an <a href=\"/ref/class/AdService.html\">AdService</a> video closes.</p>\n",
@@ -3340,8 +3372,28 @@
 		},
 		"AnimationFromVideoCreatorService": {},
 		"AnimationNodeDefinition": {
+			"AddInputPin": {
+				"Summary": "<p>Appends a named input pin to the end of the ordered input pin list.</p>\n",
+				"Description": "<p>Appends a named input pin to the end of the ordered input pin list. The\norder in which pins are added is significant for nodes such as\n<a href=\"/ref/enum/AnimationNodeType.html\">AnimationNodeType.SequenceNode</a>,\n<a href=\"/ref/enum/AnimationNodeType.html\">AnimationNodeType.RandomSequenceNode</a>, and\n<a href=\"/ref/enum/AnimationNodeType.html\">AnimationNodeType.PrioritySelectNode</a>.</p>\n"
+			},
+			"GetOrderedInputPinNames": {
+				"Summary": "<p>Returns the current ordered list of input pin names.</p>\n",
+				"Description": "<p>Returns the current ordered list of input pin names.</p>\n"
+			},
+			"InputPinsChanged": {
+				"Summary": "<p>Fires whenever the ordered input pin list is modified.</p>\n",
+				"Description": "<p>Fires whenever the ordered input pin list is modified.</p>\n"
+			},
 			"NodeId": {},
-			"NodeType": {}
+			"NodeType": {},
+			"RemoveInputPin": {
+				"Summary": "<p>Removes the first input pin matching the given name from the ordered pin\nlist.</p>\n",
+				"Description": "<p>Removes the first input pin matching the given name from the ordered pin\nlist.</p>\n"
+			},
+			"SetOrderedInputPinNames": {
+				"Summary": "<p>Bulk-replaces the entire ordered input pin list.</p>\n",
+				"Description": "<p>Bulk-replaces the entire ordered input pin list. Use this to reorder pins\nor apply batch updates in a single call.</p>\n"
+			}
 		},
 		"AnimationRigData": {},
 		"AnimationTrack": {
@@ -5277,14 +5329,14 @@
 			},
 			"AwardBadgeAsync": {
 				"Summary": "<p>Award a badge to a player given the ID of each.</p>\n",
-				"Description": "<p>Grants a <a href=\"/ref/class/Player.html\">Player</a> a badge with the <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and\nthe badge ID.</p>\n<p>In order to successfully award a badge:</p>\n<ul>\n<li>The player must be presently connected to the experience.</li>\n<li>The player must not already have the badge (note that a player may\ndelete an awarded badge from their profile and be awarded the badge\nagain).</li>\n<li>The badge must be awarded from a server-side <a href=\"/ref/class/Script.html\">Script</a> or a\n<a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> eventually required by a <a href=\"/ref/class/Script.html\">Script</a>, not from a\n<a href=\"/ref/class/LocalScript.html\">LocalScript</a>.</li>\n<li>The badge must be awarded in a place that is part of the experience\nassociated with the badge.</li>\n<li>The badge must be enabled; check this using the <code>IsEnabled</code> property of\nthe badge fetched through <a href=\"/ref/class/BadgeService.html#member-GetBadgeInfoAsync\">BadgeService:GetBadgeInfoAsync()</a>.</li>\n</ul>\n<p>Rate limit is <code>50 + 35 * [number of users]</code> per minute.</p>\n",
+				"Description": "<p>Grants a <a href=\"/ref/class/Player.html\">Player</a> a badge with the <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and\nthe badge ID.</p>\n<p>In order to successfully award a badge:</p>\n<ul>\n<li>The player must be presently connected to the experience.</li>\n<li>The player must not already have the badge (note that a player may\ndelete an awarded badge from their profile and be awarded the badge\nagain).</li>\n<li>The badge must be awarded from a server script (a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/class/BaseScript.html#member-RunContext\">RunContext</a> of <a href=\"/ref/enum/RunContext.html\">RunContext.Server</a> or\n<a href=\"/ref/enum/RunContext.html\">RunContext.Legacy</a>) or a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> eventually required\nby one, not from a client script.</li>\n<li>The badge must be awarded in a place that is part of the experience\nassociated with the badge.</li>\n<li>The badge must be enabled; check this using the <code>IsEnabled</code> property of\nthe badge fetched through <a href=\"/ref/class/BadgeService.html#member-GetBadgeInfoAsync\">BadgeService:GetBadgeInfoAsync()</a>.</li>\n</ul>\n<p>Rate limit is <code>50 + 35 * [number of users]</code> per minute.</p>\n",
 				"CodeSamples": [
 					"badges---awarding-a-badge"
 				]
 			},
 			"CheckUserBadgesAsync": {
 				"Summary": "<p>Checks a list of badge IDs against a <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and\nreturns a list of badge IDs that the player owns.</p>\n",
-				"Description": "<p>Checks a list of badge IDs against a <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and\nreturns a list of badge IDs that the player owns. This method supports\nbatches of up to 10 badges; use <a href=\"/ref/class/BadgeService.html#member-UserHasBadgeAsync\">BadgeService:UserHasBadgeAsync()</a>\nfor single badge lookups.</p>\n<p>When called from a <a href=\"/ref/class/Script.html\">Script</a>, any <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> can be\nused. If the user with the target user ID has not recently been in the\nserver, only badge IDs that are associated with the requesting experience\nwill be checked, and any badge IDs that are not associated with the\nrequesting experience will not be included in the response (as if they\nwere not owned).</p>\n<p>For users that have recently been in the server, any badges for any\nexperiences can be queried, no matter who created the badge or which\nexperience it is used for.</p>\n<p>In a <a href=\"/ref/class/LocalScript.html\">LocalScript</a>, only the <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> of the\nlocal user whose client is running the script can be used.</p>\n<p>Rate limit is <code>10 + 5 * [number of players]</code> per minute in each server.</p>\n",
+				"Description": "<p>Checks a list of badge IDs against a <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and\nreturns a list of badge IDs that the player owns. This method supports\nbatches of up to 10 badges; use <a href=\"/ref/class/BadgeService.html#member-UserHasBadgeAsync\">BadgeService:UserHasBadgeAsync()</a>\nfor single badge lookups.</p>\n<p>When called from a server script, any <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> can be\nused. If the user with the target user ID has not recently been in the\nserver, only badge IDs that are associated with the requesting experience\nwill be checked, and any badge IDs that are not associated with the\nrequesting experience will not be included in the response (as if they\nwere not owned).</p>\n<p>For users that have recently been in the server, any badges for any\nexperiences can be queried, no matter who created the badge or which\nexperience it is used for.</p>\n<p>In a client script (a <a href=\"/ref/class/LocalScript.html\">LocalScript</a> or a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/class/BaseScript.html#member-RunContext\">RunContext</a> of <a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>),\nonly the <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> of the local user whose client is\nrunning the script can be used.</p>\n<p>Rate limit is <code>10 + 5 * [number of players]</code> per minute in each server.</p>\n",
 				"CodeSamples": [
 					"badges---checking-earned-badges-batch"
 				]
@@ -5294,6 +5346,13 @@
 				"Description": "<p>This method fetches information about a badge given its ID and returns a\ndictionary with the following fields:</p>\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Key</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Description</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><code>Name</code></td>\n\t\t\t<td>string</td>\n\t\t\t<td>The name of the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>Description</code></td>\n\t\t\t<td>string</td>\n\t\t\t<td>The description of the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>IconImageId</code></td>\n\t\t\t<td>int64</td>\n\t\t\t<td>The asset ID of the image for the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>IsEnabled</code></td>\n\t\t\t<td>boolean</td>\n\t\t\t<td>Indicates whether the badge is available to be awarded.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<p>This method takes a brief moment to load the information from Roblox;\nrepeated calls will cache for a short duration.</p>\n",
 				"CodeSamples": [
 					"getbadgeinfoasync"
+				]
+			},
+			"GetUserBadgesAsync": {
+				"Summary": "<p>Checks a list of badge IDs against a <a href=\"/ref/type/User.html\">User</a> and returns, for each\nbadge the player owns, its ID and the date it was awarded.</p>\n",
+				"Description": "<p>Checks a list of badge IDs against a <a href=\"/ref/type/User.html\">User</a> and returns, for each\nbadge the player owns, a dictionary containing the badge&#39;s ID and the date\nit was awarded. This method supports batches of up to 100 badges; use\n<a href=\"/ref/class/BadgeService.html#member-UserHasBadgeAsync\">BadgeService:UserHasBadgeAsync()</a> for single badge lookups.</p>\n<p>Each entry in the returned list is a dictionary with the following fields:</p>\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Key</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Description</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><code>BadgeId</code></td>\n\t\t\t<td>int64</td>\n\t\t\t<td>The ID of the owned badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>AwardedDate</code></td>\n\t\t\t<td>DateTime</td>\n\t\t\t<td>The date and time the badge was awarded to the user.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<p>When called from a server script, any <a href=\"/ref/type/User.html\">User</a> can be used. If the\nuser with the target <a href=\"/ref/type/User.html\">User</a> has not recently been in the server,\nonly badge IDs that are associated with the requesting experience will be\nchecked, and any badge IDs that are not associated with the requesting\nexperience will not be included in the response (as if they were not\nowned).</p>\n<p>For users that have recently been in the server, any badges for any\nexperiences can be queried, no matter who created the badge or which\nexperience it is used for.</p>\n<p>In a client script (a <a href=\"/ref/class/LocalScript.html\">LocalScript</a> or a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/class/BaseScript.html#member-RunContext\">RunContext</a> of <a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>),\nonly the <a href=\"/ref/type/User.html\">User</a> of the local user whose client is running the\nscript can be used.</p>\n<p>Rate limit is <code>10 + 5 * [number of players]</code> per minute in each server.</p>\n",
+				"CodeSamples": [
+					"badges---getting-earned-badges"
 				]
 			},
 			"IsDisabled": {
@@ -5308,12 +5367,12 @@
 			},
 			"UserHasBadge": {
 				"Summary": "<p>Checks whether a user has the badge given the <a href=\"/ref/class/Player.html#member-UserId\">Player.UserId</a> and\nthe badge ID.</p>\n",
-				"Description": "<p>Checks and returns whether a <a href=\"/ref/class/Player.html\">Player</a> owns a badge given their\n<a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and the badge ID. You can call the function\nfrom the server in a <a href=\"/ref/class/Script.html\">Script</a> or <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> eventually\nrequired by a <a href=\"/ref/class/Script.html\">Script</a>. When calling the method from the client in a\n<a href=\"/ref/class/LocalScript.html\">LocalScript</a>, it only works for the local user whose client is\nrunning the script.</p>\n<p>When called from a <a href=\"/ref/class/Script.html\">Script</a>, any <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> can be\nused. If the user with the target user ID has not recently been in the\nserver, only badge IDs that are associated with the requesting experience\nwill be checked. If the requested badge ID is not associated with the\nrequesting experience and the target user has not recently been in the\nserver, the method behaves as if the badge is not owned.</p>\n<p>For users that have recently been in the server, any badge for any\nexperience can be queried, no matter who created the badge or which\nexperience it is used for.</p>\n",
+				"Description": "<p>Checks and returns whether a <a href=\"/ref/class/Player.html\">Player</a> owns a badge given their\n<a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and the badge ID. You can call the function\nfrom a server script or a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> eventually required by one.\nWhen calling the method from a client script (a <a href=\"/ref/class/LocalScript.html\">LocalScript</a> or a\n<a href=\"/ref/class/Script.html\">Script</a> with <a href=\"/ref/class/BaseScript.html#member-RunContext\">RunContext</a> of\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>), it only works for the local user whose client\nis running the script.</p>\n<p>When called from a server script, any <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> can be\nused. If the user with the target user ID has not recently been in the\nserver, only badge IDs that are associated with the requesting experience\nwill be checked. If the requested badge ID is not associated with the\nrequesting experience and the target user has not recently been in the\nserver, the method behaves as if the badge is not owned.</p>\n<p>For users that have recently been in the server, any badge for any\nexperience can be queried, no matter who created the badge or which\nexperience it is used for.</p>\n",
 				"DeprecationMessage": "<p>This method has been superseded by\n<a href=\"/ref/class/BadgeService.html#member-UserHasBadgeAsync\">BadgeService:UserHasBadgeAsync()</a> which should be used for new work\ninstead.</p>\n"
 			},
 			"UserHasBadgeAsync": {
 				"Summary": "<p>Checks whether a player has the badge given the <a href=\"/ref/class/Player.html#member-UserId\">Player.UserId</a> and\nthe badge ID.</p>\n",
-				"Description": "<p>Checks and returns whether a <a href=\"/ref/class/Player.html\">Player</a> owns a badge given their\n<a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and the badge ID. You can call this method\nfrom the server in a <a href=\"/ref/class/Script.html\">Script</a> or <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> eventually\nrequired by a <a href=\"/ref/class/Script.html\">Script</a>. When calling this method from the client in\na <a href=\"/ref/class/LocalScript.html\">LocalScript</a>, it only works for the local user whose client is\nrunning the script.</p>\n<p>When called from a <a href=\"/ref/class/Script.html\">Script</a>, any <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> can be\nused. If the user with the target user ID has not recently been in the\nserver, only badge IDs that are associated with the requesting experience\nwill be checked. If the requested badge ID is not associated with the\nrequesting experience and the target user has not recently been in the\nserver, the method behaves as if the badge is not owned.</p>\n<p>For users that have recently been in the server, any badge for any\nexperience can be queried, no matter who created the badge or which\nexperience it is used for.</p>\n<p>Rate limit is <code>50 + 35 * [number of players]</code> per minute.</p>\n",
+				"Description": "<p>Checks and returns whether a <a href=\"/ref/class/Player.html\">Player</a> owns a badge given their\n<a href=\"/ref/class/Player.html#member-UserId\">UserId</a> and the badge ID. You can call this method\nfrom a server script or a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> eventually required by one.\nWhen calling this method from a client script (a <a href=\"/ref/class/LocalScript.html\">LocalScript</a> or a\n<a href=\"/ref/class/Script.html\">Script</a> with <a href=\"/ref/class/BaseScript.html#member-RunContext\">RunContext</a> of\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>), it only works for the local user whose client\nis running the script.</p>\n<p>When called from a server script, any <a href=\"/ref/class/Player.html#member-UserId\">UserId</a> can be\nused. If the user with the target user ID has not recently been in the\nserver, only badge IDs that are associated with the requesting experience\nwill be checked. If the requested badge ID is not associated with the\nrequesting experience and the target user has not recently been in the\nserver, the method behaves as if the badge is not owned.</p>\n<p>For users that have recently been in the server, any badge for any\nexperience can be queried, no matter who created the badge or which\nexperience it is used for.</p>\n<p>Rate limit is <code>50 + 35 * [number of players]</code> per minute.</p>\n",
 				"CodeSamples": [
 					"badges---checking-earned-badges"
 				]
@@ -7423,9 +7482,11 @@
 				"Description": "<p>Use this signal to detect when a user has completed the purchasing flow\nand the webview has closed to resume gameplay within the experience.\n<strong>This signal does not indicate a successful purchase</strong>, so do not grant\nvirtual items solely from this signal.</p>\n<p>While optional, it is recommended to use this signal to reorient your\nusers on Android, as the commerce purchasing flow will have forced them\ninto portrait mode.</p>\n"
 			},
 			"PromptRealWorldCommerceBrowser": {
+				"Summary": "<p>Legacy endpoint that opens an in-experience browser to a real-world\ncommerce URL for the specified player; superseded by\n<a href=\"/ref/class/CommerceService.html#member-PromptCommerceProductPurchase\">CommerceService:PromptCommerceProductPurchase()</a>.</p>\n",
 				"Description": "<p>This is a legacy endpoint that is not meant for use. To open the webview\nto the purchasing flow for real world commerce, see\n<a href=\"/ref/class/CommerceService.html#member-PromptCommerceProductPurchase\">CommerceService:PromptCommerceProductPurchase</a>. For more\ninformation, see\n<a href=\"https://create.roblox.com/docs/production/monetization/commerce-products\">Commerce products</a></p>\n"
 			},
 			"UserEligibleForRealWorldCommerceAsync": {
+				"Summary": "<p>Legacy endpoint that returns whether the current user is eligible for\nreal-world commerce; superseded by <a href=\"/ref/class/PolicyService.html\">PolicyService</a>.</p>\n",
 				"Description": "<p>This is a legacy endpoint that is not meant for use. To check if a user is\neligible for real world commerce, see\n<a href=\"/ref/class/PolicyService.html#member-IsEligibleToPurchaseCommerceProduct\">PolicyService.IsEligibleToPurchaseCommerceProduct</a>. For more\ninformation, see\n<a href=\"https://create.roblox.com/docs/production/monetization/commerce-products\">Commerce products</a></p>\n"
 			}
 		},
@@ -9133,6 +9194,10 @@
 			"BatchSetVertexFaceAttributes": {
 				"Summary": "<p>Sets the attribute at a specific corner for each vertex–face pair in a\nbatch.</p>\n",
 				"Description": "<p>Sets the attribute at a specific corner — identified by a vertex–face pair\n— for each element in the batch. For each index <code>i</code>, the attribute at\ncorner <code>(vertexIds[i], faceIds[i])</code> is set to <code>attrIds[i]</code>.</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">mesh</span><span class=\"_p\">:</span><span class=\"_n\">BatchSetVertexFaceAttributes</span><span class=\"_p\">(</span><span class=\"_n\">vertexIds</span><span class=\"_p\">,</span> <span class=\"_n\">faceIds</span><span class=\"_p\">,</span> <span class=\"_n\">colorIds</span><span class=\"_p\">)</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
+			},
+			"Clear": {
+				"Summary": "<p>Clears all of an EditableMesh&#39;s geometry.</p>\n",
+				"Description": "<p>Removes all vertex data (including positions, normals, UV coordinates, and\ncolors), faces, bones, and FACS data without destroying the\n<a href=\"/ref/class/EditableMesh.html\">EditableMesh</a> or its allocated space.</p>\n<p>This method cannot be called on a fixed-size mesh (where\n<a href=\"/ref/class/EditableMesh.html#member-FixedSize\">FixedSize</a> is <code>true</code>). Attempting to do so\nthrows an error because fixed-size meshes do not allow adding or removing\nelements.</p>\n"
 			},
 			"Destroy": {
 				"Summary": "<p>Destroys the mesh.</p>\n",
@@ -21540,7 +21605,7 @@
 			},
 			"ReservedServerAccessCode": {
 				"Summary": "<p>The reserved server access code that indicates the reserved server that\nthe teleport should be to.</p>\n",
-				"Description": "<p>This property indicates the reserved server access code for the reserved\nserver that the user(s) should be teleported to.</p>\n<p>For more information on how to teleport players between servers, see\n<a href=\"https://create.roblox.com/docs/projects/teleport\">Teleporting Between Places</a>.</p>\n"
+				"Description": "<p>This property indicates the reserved server access code for the reserved\nserver that the user(s) should be teleported to.</p>\n<p>The access code is obtained either from\n<a href=\"/ref/class/TeleportService.html#member-ReserveServerAsync\">TeleportService:ReserveServerAsync()</a> or from\n<a href=\"/ref/class/TeleportAsyncResult.html#member-ReservedServerAccessCode\">TeleportAsyncResult.ReservedServerAccessCode</a>.</p>\n<p>For more information on how to teleport players between servers, see\n<a href=\"https://create.roblox.com/docs/projects/teleport\">Teleporting Between Places</a>.</p>\n"
 			},
 			"ServerInstanceId": {
 				"Summary": "<p>The <a href=\"/ref/class/DataModel.html#member-JobId\">DataModel.JobId</a> of the server instance to teleport to.</p>\n",
@@ -25511,16 +25576,31 @@
 			"Summary": "<p>The active physics component of the constraint.</p>\n",
 			"Description": "<p>The active physics component of the constraint.</p>\n"
 		},
-		"AdAvailabilityResult": {},
+		"AdAvailabilityResult": {
+			"Summary": "<p>Indicates whether an ad is available or the reason it cannot be shown.</p>\n",
+			"Description": "<p>Returned as the <code>AdAvailabilityResult</code> field in the dictionary from\n<a href=\"/ref/class/AdService.html#member-GetAdAvailabilityNowAsync\">AdService:GetAdAvailabilityNowAsync()</a>.\n<a href=\"/ref/enum/AdAvailabilityResult.html\">AdAvailabilityResult.IsAvailable</a> means an ad is ready to display; any\nother <a href=\"/ref/enum/AdAvailabilityResult.html\">AdAvailabilityResult</a> value explains why the ad request could not\nbe fulfilled.</p>\n"
+		},
 		"AdEventType": {},
-		"AdFormat": {},
+		"AdFormat": {
+			"Summary": "<p>Specifies the format of an ad used with <a href=\"/ref/class/AdService.html\">AdService</a> methods.</p>\n",
+			"Description": "<p>Specifies the format of an ad passed to <a href=\"/ref/class/AdService.html\">AdService</a> methods such as\n<a href=\"/ref/class/AdService.html#member-GetAdAvailabilityNowAsync\">AdService:GetAdAvailabilityNowAsync()</a> and <code>IsAdLoaded()</code>. The only\nsupported value is <a href=\"/ref/enum/AdFormat.html\">AdFormat.RewardedVideo</a> — a full-screen video ad that\nrewards the viewer upon completion.</p>\n"
+		},
 		"AdShape": {
 			"Summary": "<p>Describes the form factor of an ad in an <a href=\"/ref/class/AdGui.html\">AdGui</a>. There is currently\nonly one available size.</p>\n",
 			"Description": "<p>Describes the form factor of an ad in an <a href=\"/ref/class/AdGui.html\">AdGui</a>. There is currently\nonly one available size.</p>\n"
 		},
-		"AdTeleportMethod": {},
-		"AdUIEventType": {},
-		"AdUIType": {},
+		"AdTeleportMethod": {
+			"Summary": "<p>Describes the method by which a player teleports during an immersive ad portal\nflow.</p>\n",
+			"Description": "<p>Describes the user-initiated method by which a player teleports during an\nimmersive ad portal flow, distinguishing forward travel to the advertiser&#39;s\nexperience from a return to the publisher&#39;s experience.</p>\n"
+		},
+		"AdUIEventType": {
+			"Summary": "<p>Describes the type of user-interaction or system event that occurred on the\nimmersive ad UI overlay of an <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n",
+			"Description": "<p>Describes the type of user-interaction or system event that occurred on the\nimmersive ad UI overlay of an <a href=\"/ref/class/AdGui.html\">AdGui</a>. These values are passed to\n<code>HandleLuaUIEvent()</code> to notify the engine of player actions on ad playback\ncontrols (play, pause, volume, fullscreen, close) or programmatic state\nchanges (play/pause triggered by the system).</p>\n"
+		},
+		"AdUIType": {
+			"Summary": "<p>Describes the type of ad creative currently rendered by an <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n",
+			"Description": "<p>Describes the type of ad creative that an <a href=\"/ref/class/AdGui.html\">AdGui</a> is currently rendering\non its surface. Managed by the engine based on the creative asset served to\nthe ad slot; see <a href=\"/ref/enum/AdUIType.html\">AdUIType</a> items for the possible values.</p>\n"
+		},
 		"AdUnitStatus": {
 			"Summary": "<p>Exposes the status of an immersive ad.</p>\n",
 			"Description": "<p>Exposes the status of an immersive ad.</p>\n"
@@ -26842,7 +26922,10 @@
 			"Summary": "<p>This enum is used by <a href=\"/ref/class/ScrollingFrame.html#member-ScrollingDirection\">ScrollingFrame.ScrollingDirection</a> to specify the\ndirection(s) in which scrolling is allowed.</p>\n",
 			"Description": "<p>This enum is used by <a href=\"/ref/class/ScrollingFrame.html#member-ScrollingDirection\">ScrollingFrame.ScrollingDirection</a> to specify the\ndirection(s) in which scrolling is allowed.</p>\n"
 		},
-		"SecurityCapability": {},
+		"SecurityCapability": {
+			"Summary": "<p>Identifies a specific permission capability that a sandboxed script container\nmay grant or restrict.</p>\n",
+			"Description": "<p><code>SecurityCapability</code> is a bitmask-based permission system that controls which\nengine APIs and Luau language features are accessible to scripts running\ninside sandboxed containers. Each value represents one capability bit that can\nbe granted or restricted.</p>\n<p>When an <a href=\"/ref/class/Instance.html\">Instance</a> has its <a href=\"/ref/class/Instance.html#member-Sandboxed\">Sandboxed</a> property\nenabled, the engine intersects the capabilities of all ancestor containers to\ndetermine the effective permission set of any script that executes within that\ncontainer. API members, classes, and Luau built-ins are each annotated with\none or more <code>SecurityCapability</code> values; a script&#39;s thread must hold every\nrequired capability to call them.</p>\n"
+		},
 		"SelectionBehavior": {
 			"Summary": "<p>Customization options for gamepad selection when\n<a href=\"/ref/class/GuiBase2d.html#member-SelectionGroup\">GuiBase2d.SelectionGroup</a> is true.</p>\n",
 			"Description": "<p>Customization options for gamepad selection when\n<a href=\"/ref/class/GuiBase2d.html#member-SelectionGroup\">GuiBase2d.SelectionGroup</a> is true.</p>\n"
@@ -26871,7 +26954,10 @@
 			"Summary": "<p>Classifies the severity level of a Luau LSP diagnostic reported by a Script\nAnalysis callback.</p>\n",
 			"Description": "<p><code>Severity</code> is used in the diagnostics table returned by Script Analysis\ncallbacks registered with\n<a href=\"/ref/class/ScriptEditorService.html#member-RegisterScriptAnalysisCallback\">ScriptEditorService:RegisterScriptAnalysisCallback()</a>. Each diagnostic\nentry can include a <code>severity</code> field set to one of these values to control how\nthe diagnostic is categorized in the <strong>Script Analysis</strong> tool and how the\ncorresponding source range is highlighted in the Script Editor.</p>\n<p>The enum maps directly to the\n<a href=\"https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#diagnosticSeverity\">Language Server Protocol <code>DiagnosticSeverity</code> specification</a>.</p>\n"
 		},
-		"ShowAdResult": {},
+		"ShowAdResult": {
+			"Summary": "<p>Result codes returned by <a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">AdService:ShowRewardedVideoAdAsync()</a>\nindicating whether a rewarded video ad completed successfully or why it did\nnot.</p>\n",
+			"Description": "<p><code>ShowAdResult</code> enumerates the possible outcomes of a call to\n<a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">AdService:ShowRewardedVideoAdAsync()</a>. Check the returned value to\ndetermine whether to grant a reward to the player and how to handle each\nfailure case.</p>\n"
+		},
 		"SignalBehavior": {
 			"Summary": "<p>Determines when the engine resumes event handlers.</p>\n",
 			"Description": "<p>Determines when the engine resumes event handlers. At some future point, the\ndefault mode will be <code>Deferred</code> but opt-out will still be possible through use\nof <code>Immediate</code>.</p>\n<p>For more information, see\n<a href=\"https://create.roblox.com/docs/scripting/events/deferred\">Deferred Events</a>.</p>\n"
@@ -26890,7 +26976,7 @@
 		},
 		"SlimTranscoderStatus": {
 			"Summary": "<p>Describes the backend transcoding state of a SLIM model, from upload through\ntranscoding to success or failure.</p>\n",
-			"Description": "<p>Describes the backend transcoding state of a SLIM model. The status progresses\nas the model&#39;s property set is uploaded to the content-delivery network and\ntranscoded into SLIM assets. The <strong>DebugVisualizations</strong> panel in the\nDeveloper Console can color-code models by this status to surface which models\nhave successfully transcoded and which have failed.</p>\n"
+			"Description": "<p>Describes the backend transcoding state of a SLIM model. The status progresses\nas the model is uploaded to the content-delivery network and transcoded into\nSLIM assets. The <strong>DebugVisualizations</strong> panel in the Developer Console can\ncolor-code models by this status to surface which models have successfully\ntranscoded and which have failed.</p>\n"
 		},
 		"SolverConvergenceMetricType": {
 			"Summary": "<p>Specifies the metric used to identify the least-converged constraint when\nvisualizing physics solver convergence.</p>\n",
@@ -27479,7 +27565,7 @@
 		},
 		"AdFormat": {
 			"RewardedVideo": {
-				"Summary": "<p>The format of the rewarded video ad.</p>\n"
+				"Summary": "<p>A full-screen video ad that plays to completion and rewards the viewer,\nused as the <code>adFormat</code> argument for <a href=\"/ref/class/AdService.html\">AdService</a> methods.</p>\n"
 			}
 		},
 		"AdShape": {
@@ -27488,26 +27574,58 @@
 			}
 		},
 		"AdTeleportMethod": {
-			"InGameMenuBackButton": {},
-			"PortalForward": {},
-			"UIBackButton": {},
-			"Undefined": {}
+			"InGameMenuBackButton": {
+				"Summary": "<p>The player initiated a return teleport to the publisher&#39;s experience by\npressing the back button in the in-game menu.</p>\n"
+			},
+			"PortalForward": {
+				"Summary": "<p>The player teleported forward to the advertiser&#39;s destination experience\nby walking into an <a href=\"/ref/class/AdPortal.html\">AdPortal</a>.</p>\n"
+			},
+			"UIBackButton": {
+				"Summary": "<p>The player initiated a return teleport to the publisher&#39;s experience by\npressing a back button rendered in the ad destination&#39;s UI overlay.</p>\n"
+			},
+			"Undefined": {
+				"Summary": "<p>Default uninitialized sentinel value indicating that no teleport method\nhas been determined yet.</p>\n"
+			}
 		},
 		"AdUIEventType": {
-			"AdLabelClicked": {},
-			"CloseButtonClicked": {},
-			"FullscreenButtonClicked": {},
-			"PauseButtonClicked": {},
-			"PauseEventTriggered": {},
-			"PlayButtonClicked": {},
-			"PlayEventTriggered": {},
-			"VolumeButtonClicked": {},
-			"WhyThisAdClicked": {}
+			"AdLabelClicked": {
+				"Summary": "<p>The player clicked the &#34;Sponsored&#34; label on the ad overlay, which opens\nthe ad disclosure prompt showing advertiser and payer information.</p>\n"
+			},
+			"CloseButtonClicked": {
+				"Summary": "<p>The player clicked the close button on the fullscreen video ad view, which\nexits fullscreen mode and returns to the normal camera position.</p>\n"
+			},
+			"FullscreenButtonClicked": {
+				"Summary": "<p>The player clicked the fullscreen toggle button, which smoothly zooms the\ncamera to a centered view of the ad surface and enables audio.</p>\n"
+			},
+			"PauseButtonClicked": {
+				"Summary": "<p>The player clicked the pause button while a video ad is playing in\nfullscreen mode, which pauses video playback.</p>\n"
+			},
+			"PauseEventTriggered": {
+				"Summary": "<p>A system-initiated pause event, used when the engine needs to force-pause\nthe video (for example, when a dropdown menu opens over the ad). Prevents\nviewability-based auto-play from resuming playback until a corresponding\n<code>PlayEventTriggered</code> clears that pause.</p>\n"
+			},
+			"PlayButtonClicked": {
+				"Summary": "<p>The player clicked the play button on the ad overlay. If the ad is already\nin fullscreen, playback resumes; otherwise it enters fullscreen mode which\nalso starts (or resumes) the video.</p>\n"
+			},
+			"PlayEventTriggered": {
+				"Summary": "<p>A system-initiated play/resume event that clears the force-pause state set\nby <code>PauseEventTriggered</code> and resumes video playback if the stream is open.</p>\n"
+			},
+			"VolumeButtonClicked": {
+				"Summary": "<p>The player clicked the volume toggle button on the ad overlay, which mutes\nor unmutes the video ad audio.</p>\n"
+			},
+			"WhyThisAdClicked": {
+				"Summary": "<p>The player clicked the &#34;Why this ad?&#34; link, which displays the EUDSA\n(European Digital Services Act) disclosure prompt showing the advertiser\nand payer names for the current ad creative.</p>\n"
+			}
 		},
 		"AdUIType": {
-			"Image": {},
-			"None": {},
-			"Video": {}
+			"Image": {
+				"Summary": "<p>The <a href=\"/ref/class/AdGui.html\">AdGui</a> is rendering a static image ad creative.</p>\n"
+			},
+			"None": {
+				"Summary": "<p>The <a href=\"/ref/class/AdGui.html\">AdGui</a> has no ad creative loaded and is not rendering ad\ncontent.</p>\n"
+			},
+			"Video": {
+				"Summary": "<p>The <a href=\"/ref/class/AdGui.html\">AdGui</a> is rendering a video ad creative.</p>\n"
+			}
 		},
 		"AdUnitStatus": {
 			"Active": {
@@ -34191,59 +34309,167 @@
 			}
 		},
 		"SecurityCapability": {
-			"AccessOutsideWrite": {},
-			"Animation": {},
-			"AssetCreateUpdate": {},
-			"AssetManagement": {},
-			"AssetRead": {},
-			"AssetRequire": {},
-			"Assistant": {},
-			"Audio": {},
-			"Avatar": {},
-			"AvatarAppearance": {},
-			"AvatarBehavior": {},
-			"Basic": {},
-			"CSG": {},
-			"CapabilityControl": {},
-			"Capture": {},
-			"Chat": {},
-			"Consequences": {},
-			"CreateInstances": {},
-			"DataStore": {},
-			"DynamicGeneration": {},
-			"Environment": {},
-			"Groups": {},
-			"Input": {},
-			"InternalTest": {},
-			"LegacySound": {},
-			"LoadOwnedAsset": {},
-			"LoadString": {},
-			"LoadUnownedAsset": {},
-			"LocalUser": {},
-			"Logging": {},
-			"Material": {},
-			"Monetization": {},
-			"Network": {},
-			"Physics": {},
-			"PlatformAvatarEditing": {},
-			"Players": {},
-			"Plugin": {},
-			"PluginOrOpenCloud": {},
-			"PromptExternalPurchase": {},
-			"RemoteCommand": {},
-			"RemoteEvent": {},
-			"RobloxEngine": {},
-			"RobloxScript": {},
-			"RunClientScript": {},
-			"RunServerScript": {},
-			"ScriptGlobals": {},
-			"SensitiveInput": {},
-			"ServerCommunication": {},
-			"Social": {},
-			"Teleport": {},
-			"UI": {},
-			"Unassigned": {},
-			"WritePlayer": {}
+			"AccessOutsideWrite": {
+				"Summary": "<p>Grants a script read-write access to instances that live outside its\nsandboxed container.</p>\n"
+			},
+			"Animation": {
+				"Summary": "<p>Guards access to animation engine APIs such as <a href=\"/ref/class/AnimationController.html\">AnimationController</a>\nand related classes.</p>\n"
+			},
+			"AssetCreateUpdate": {
+				"Summary": "<p>Guards access to APIs that create or update published Roblox assets.</p>\n"
+			},
+			"AssetManagement": {
+				"Summary": "<p>Guards access to asset management APIs such as\n<a href=\"/ref/class/ContentProvider.html#member-PreloadAsync\">ContentProvider:PreloadAsync()</a> and encryption-key registration.</p>\n"
+			},
+			"AssetRead": {
+				"Summary": "<p>Guards access to APIs that read or query asset metadata from the Roblox\ncatalog.</p>\n"
+			},
+			"AssetRequire": {
+				"Summary": "<p>Deprecated. Use <a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability.LoadUnownedAsset</a> instead.</p>\n",
+				"DeprecationMessage": "<p>Use <a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability.LoadUnownedAsset</a> instead.</p>\n"
+			},
+			"Assistant": {
+				"Summary": "<p>Restricts access to APIs that may only be called from Studio Assistant\nexecution contexts.</p>\n"
+			},
+			"Audio": {
+				"Summary": "<p>Guards access to audio engine APIs such as <a href=\"/ref/class/Sound.html\">Sound</a>,\n<a href=\"/ref/class/AudioPlayer.html\">AudioPlayer</a>, and related classes.</p>\n"
+			},
+			"Avatar": {
+				"Summary": "<p>Deprecated. Use <a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability.AvatarAppearance</a> instead.</p>\n",
+				"DeprecationMessage": "<p>Use <a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability.AvatarAppearance</a> instead.</p>\n"
+			},
+			"AvatarAppearance": {
+				"Summary": "<p>Guards access to APIs that read or modify avatar appearance, such as\n<a href=\"/ref/class/HumanoidDescription.html\">HumanoidDescription</a>.</p>\n"
+			},
+			"AvatarBehavior": {
+				"Summary": "<p>Guards access to APIs that control avatar locomotion and behavior at\nruntime.</p>\n"
+			},
+			"Basic": {
+				"Summary": "<p>Guards access to a broad set of general-purpose engine APIs that do not\nbelong to a more specific capability category.</p>\n"
+			},
+			"CSG": {
+				"Summary": "<p>Guards access to Constructive Solid Geometry (CSG) APIs such as\n<a href=\"/ref/class/UnionOperation.html\">UnionOperation</a> and <a href=\"/ref/class/NegateOperation.html\">NegateOperation</a>.</p>\n"
+			},
+			"CapabilityControl": {
+				"Summary": "<p>Guards access to the <code>Instance.Capabilities</code> and <code>Instance.Sandboxed</code>\nproperties that configure script sandboxing.</p>\n"
+			},
+			"Capture": {
+				"Summary": "<p>Guards access to <a href=\"/ref/class/CaptureService.html\">CaptureService</a> APIs that take screenshots and\nrecord video.</p>\n"
+			},
+			"Chat": {
+				"Summary": "<p>Guards access to chat engine APIs such as <a href=\"/ref/class/TextChatService.html\">TextChatService</a> and\nrelated chat classes.</p>\n"
+			},
+			"Consequences": {
+				"Summary": "<p>Guards access to moderation and player-consequence APIs such as\n<a href=\"/ref/class/Players.html#member-BanAsync\">Players:BanAsync()</a> and <a href=\"/ref/class/ModerationService.html\">ModerationService</a>.</p>\n"
+			},
+			"CreateInstances": {
+				"Summary": "<p>Allows a script to create new <code>Instance</code> objects using <code>Instance.new()</code>.</p>\n"
+			},
+			"DataStore": {
+				"Summary": "<p>Guards access to data store APIs such as <a href=\"/ref/class/DataStoreService.html\">DataStoreService</a> and its\nassociated objects.</p>\n"
+			},
+			"DynamicGeneration": {
+				"Summary": "<p>Guards access to procedural and AI-driven content generation APIs such as\n<a href=\"/ref/class/EditableMesh.html\">EditableMesh</a> and <a href=\"/ref/class/AvatarCreationService.html\">AvatarCreationService</a>.</p>\n"
+			},
+			"Environment": {
+				"Summary": "<p>Guards access to environment and world-setting APIs such as\n<a href=\"/ref/class/Lighting.html\">Lighting</a> and <a href=\"/ref/class/Atmosphere.html\">Atmosphere</a>.</p>\n"
+			},
+			"Groups": {
+				"Summary": "<p>Guards access to group-related APIs such as <a href=\"/ref/class/GroupService.html\">GroupService</a>.</p>\n"
+			},
+			"Input": {
+				"Summary": "<p>Guards access to user input APIs such as <a href=\"/ref/class/UserInputService.html\">UserInputService</a> and\n<a href=\"/ref/class/ContextActionService.html\">ContextActionService</a>.</p>\n"
+			},
+			"InternalTest": {
+				"Summary": "<p>Restricts access to non-sensitive APIs that are intentionally kept\ninternal.</p>\n"
+			},
+			"LegacySound": {
+				"Summary": "<p>Guards access to the legacy <a href=\"/ref/class/Sound.html\">Sound</a> and\npre-<a href=\"/ref/class/VoiceChatService.html#member-UseAudioApi\">VoiceChatService.UseAudioApi</a> sound stack APIs.</p>\n"
+			},
+			"LoadOwnedAsset": {
+				"Summary": "<p>Allows a script to load assets that are owned by the experience&#39;s creator\nusing <a href=\"/ref/class/InsertService.html\">InsertService</a> or <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a>.</p>\n"
+			},
+			"LoadString": {
+				"Summary": "<p>Allows a script to use the <code>loadstring()</code> Luau built-in to compile and\nexecute a string as code.</p>\n"
+			},
+			"LoadUnownedAsset": {
+				"Summary": "<p>Allows a script to <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> asset IDs or call\n<a href=\"/ref/class/InsertService.html#member-LoadAsset\">InsertService:LoadAsset()</a> for assets not owned by the creator.</p>\n"
+			},
+			"LocalUser": {
+				"Summary": "<p>Mirrors the legacy <code>LocalUser</code> permission level, granting access to\nIDE-only and Studio-level APIs.</p>\n"
+			},
+			"Logging": {
+				"Summary": "<p>Guards access to <a href=\"/ref/class/LogService.html\">LogService</a> and logging-related APIs.</p>\n"
+			},
+			"Material": {
+				"Summary": "<p>Guards access to <a href=\"/ref/class/MaterialService.html\">MaterialService</a>, <a href=\"/ref/class/MaterialVariant.html\">MaterialVariant</a>, and\ncustom material APIs.</p>\n"
+			},
+			"Monetization": {
+				"Summary": "<p>Guards access to in-experience purchase and monetization APIs such as\n<a href=\"/ref/class/MarketplaceService.html\">MarketplaceService</a>.</p>\n"
+			},
+			"Network": {
+				"Summary": "<p>Guards access to low-level networking APIs such as <a href=\"/ref/class/HttpService.html\">HttpService</a>.</p>\n"
+			},
+			"Physics": {
+				"Summary": "<p>Guards access to physics engine APIs such as <a href=\"/ref/class/Constraint.html\">Constraint</a> classes\nand <a href=\"/ref/class/BasePart.html\">BasePart</a> physics properties.</p>\n"
+			},
+			"PlatformAvatarEditing": {
+				"Summary": "<p>Guards access to platform-level avatar editing APIs provided by\n<a href=\"/ref/class/AvatarEditorService.html\">AvatarEditorService</a>.</p>\n"
+			},
+			"Players": {
+				"Summary": "<p>Guards access to <a href=\"/ref/class/Players.html\">Players</a> service APIs that query or manage\nconnected players.</p>\n"
+			},
+			"Plugin": {
+				"Summary": "<p>Mirrors the legacy <code>Plugin</code> permission level, granting access to Studio\nplugin APIs.</p>\n"
+			},
+			"PluginOrOpenCloud": {
+				"Summary": "<p>Restricts access to APIs callable only from Studio plugin or Open Cloud\nLuau execution sessions.</p>\n"
+			},
+			"PromptExternalPurchase": {
+				"Summary": "<p>Guards access to APIs that initiate external (non-Roblox) purchase\nprompts.</p>\n"
+			},
+			"RemoteCommand": {
+				"Summary": "<p>Restricts access to APIs that are executable only from Studio&#39;s\n<code>RemoteCommandService</code> in Team Create sessions.</p>\n"
+			},
+			"RemoteEvent": {
+				"Summary": "<p>Guards access to remote event and function APIs such as\n<a href=\"/ref/class/RemoteEvent.html\">RemoteEvent</a> and <a href=\"/ref/class/RemoteFunction.html\">RemoteFunction</a>.</p>\n"
+			},
+			"RobloxEngine": {
+				"Summary": "<p>Mirrors the legacy <code>RobloxEngine</code> permission level, granting access to\ninternal engine-level APIs.</p>\n"
+			},
+			"RobloxScript": {
+				"Summary": "<p>Mirrors the legacy <code>RobloxScript</code> permission level, granting access to\n<code>CoreScript</code> APIs.</p>\n"
+			},
+			"RunClientScript": {
+				"Summary": "<p>Indicates that a script container is permitted to execute scripts on the\nclient (<a href=\"/ref/class/LocalScript.html\">LocalScript</a>).</p>\n"
+			},
+			"RunServerScript": {
+				"Summary": "<p>Indicates that a script container is permitted to execute scripts on the\nserver (<a href=\"/ref/class/Script.html\">Script</a>).</p>\n"
+			},
+			"ScriptGlobals": {
+				"Summary": "<p>Allows a script to access the <code>shared</code> and <code>_G</code> shared global variable\ntables.</p>\n"
+			},
+			"SensitiveInput": {
+				"Summary": "<p>Guards access to sensitive user input APIs such as those that can read raw\nkeyboard or mouse data beyond normal game input.</p>\n"
+			},
+			"ServerCommunication": {
+				"Summary": "<p>Guards access to server-to-server messaging APIs such as\n<a href=\"/ref/class/MessagingService.html\">MessagingService</a>.</p>\n"
+			},
+			"Social": {
+				"Summary": "<p>Guards access to social APIs such as <a href=\"/ref/class/SocialService.html\">SocialService</a>,\n<a href=\"/ref/class/FriendPages.html\">FriendPages</a>, and <a href=\"/ref/class/ExperienceInviteOptions.html\">ExperienceInviteOptions</a>.</p>\n"
+			},
+			"Teleport": {
+				"Summary": "<p>Guards access to teleportation APIs such as <a href=\"/ref/class/TeleportService.html\">TeleportService</a>,\n<a href=\"/ref/class/TeleportOptions.html\">TeleportOptions</a>, and <a href=\"/ref/class/TeleportAsyncResult.html\">TeleportAsyncResult</a>.</p>\n"
+			},
+			"UI": {
+				"Summary": "<p>Guards access to UI engine APIs such as <a href=\"/ref/class/ScreenGui.html\">ScreenGui</a>, <a href=\"/ref/class/Frame.html\">Frame</a>,\nand other <a href=\"/ref/class/GuiObject.html\">GuiObject</a> classes.</p>\n"
+			},
+			"Unassigned": {
+				"Summary": "<p>The default capability assigned to API members that have not been\nexplicitly assigned to any other capability category.</p>\n"
+			},
+			"WritePlayer": {
+				"Summary": "<p>Mirrors the legacy <code>WritePlayer</code> permission level, granting the ability to\nmodify player identity properties such as name and <code>UserId</code>.</p>\n"
+			}
 		},
 		"SelectionBehavior": {
 			"Escape": {
@@ -34335,7 +34561,9 @@
 			"AdNotReady": {
 				"Summary": "<p>You are trying to show a full-screen ad before the ad has fully loaded.\nYou might have failed to properly fetch the ad, or the ad might have\nexpired.</p>\n"
 			},
-			"InsufficientMemory": {},
+			"InsufficientMemory": {
+				"Summary": "<p>The device does not have sufficient video memory available to display the\nad.</p>\n"
+			},
 			"InternalError": {
 				"Summary": "<p>An unspecified internal error occurred. Try showing the ad again.</p>\n"
 			},
@@ -34410,7 +34638,7 @@
 				"Summary": "<p>The model is SLIM-enabled but does not yet have a generated hash, so\ntranscoding has not been requested. Shown as cyan in the debug tint\noverlay.</p>\n"
 			},
 			"NotUploaded": {
-				"Summary": "<p>The model&#39;s property set has not been uploaded to the content-delivery\nnetwork. Shown as orange in the debug tint overlay.</p>\n"
+				"Summary": "<p>The model has not been uploaded to the content-delivery network. Shown as\norange in the debug tint overlay.</p>\n"
 			},
 			"Succeeded": {
 				"Summary": "<p>Transcoding completed successfully and the SLIM assets are available for\nstreaming. Shown as green in the debug tint overlay.</p>\n"
@@ -34419,7 +34647,7 @@
 				"Summary": "<p>The transcoding status has not yet been determined. This is the initial\nstate before the model has been queried. Shown as magenta in the debug\ntint overlay.</p>\n"
 			},
 			"Uploaded": {
-				"Summary": "<p>The property set has been uploaded to the content-delivery network but has\nnot yet been transcoded into SLIM assets. Shown as yellow in the debug\ntint overlay.</p>\n"
+				"Summary": "<p>The model has been uploaded to the content-delivery network but has not\nyet been transcoded into SLIM assets. Shown as yellow in the debug tint\noverlay.</p>\n"
 			}
 		},
 		"SolverConvergenceMetricType": {
@@ -39916,7 +40144,8 @@
 						{
 							"Name": "...",
 							"Type": "SecurityCapability",
-							"Default": null
+							"Default": null,
+							"Summary": "Zero or more `Enum.SecurityCapability` values to include in the new\nset.\n"
 						}
 					],
 					"Summary": "<p>Returns a new set of capabilities from zero or more\n<a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability</a> items.</p>\n",
@@ -39936,12 +40165,14 @@
 						{
 							"Name": "...",
 							"Type": "SecurityCapability",
-							"Default": null
+							"Default": null,
+							"Summary": "Zero or more `Enum.SecurityCapability` values to add to the set.\n"
 						}
 					],
 					"Returns": [
 						{
-							"Type": "SecurityCapabilities"
+							"Type": "SecurityCapabilities",
+							"Summary": "A new set containing the union of the original capabilities and the\nspecified additions.\n"
 						}
 					],
 					"Summary": "<p>Returns a new set of capabilities with zero or more additions.</p>\n",
@@ -39953,12 +40184,14 @@
 						{
 							"Name": "capabilities",
 							"Type": "SecurityCapabilities",
-							"Default": null
+							"Default": null,
+							"Summary": "A `SecurityCapabilities` set whose items are added to the original.\n"
 						}
 					],
 					"Returns": [
 						{
-							"Type": "SecurityCapabilities"
+							"Type": "SecurityCapabilities",
+							"Summary": "A new set containing the union of both sets.\n"
 						}
 					],
 					"Summary": "<p>Returns a new set of capabilities with the provided set added.</p>\n",
@@ -39970,12 +40203,14 @@
 						{
 							"Name": "...",
 							"Type": "SecurityCapability",
-							"Default": null
+							"Default": null,
+							"Summary": "Zero or more `Enum.SecurityCapability` values to remove from the set.\n"
 						}
 					],
 					"Returns": [
 						{
-							"Type": "SecurityCapabilities"
+							"Type": "SecurityCapabilities",
+							"Summary": "A new set with the specified capabilities removed.\n"
 						}
 					],
 					"Summary": "<p>Returns a new set of capabilities with zero or more deletions.</p>\n",
@@ -39987,7 +40222,8 @@
 						{
 							"Name": "capabilities",
 							"Type": "SecurityCapabilities",
-							"Default": null
+							"Default": null,
+							"Summary": "A `SecurityCapabilities` set whose items are removed from the\noriginal.\n"
 						}
 					],
 					"Returns": [
@@ -40004,7 +40240,8 @@
 						{
 							"Name": "...",
 							"Type": "SecurityCapability",
-							"Default": null
+							"Default": null,
+							"Summary": "Zero or more `Enum.SecurityCapability` values to check for membership\nin the set.\n"
 						}
 					],
 					"Returns": [
@@ -40021,7 +40258,8 @@
 						{
 							"Name": "capabilities",
 							"Type": "SecurityCapabilities",
-							"Default": null
+							"Default": null,
+							"Summary": "A `SecurityCapabilities` set to check for membership in the original\nset.\n"
 						}
 					],
 					"Returns": [
@@ -40033,7 +40271,8 @@
 					"Description": "<p>Returns whether a set of capabilities contains another set of\ncapabilities. The set must contain <strong>all</strong> items in the provided set to\nreturn true.</p>\n"
 				}
 			],
-			"Summary": "<p>A set of <a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability</a> items. See\n<a href=\"https://create.roblox.com/docs/scripting/capabilities\">script capabilities</a>.</p>\n"
+			"Summary": "<p>A set of <a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability</a> items. See\n<a href=\"https://create.roblox.com/docs/scripting/capabilities\">script capabilities</a>.</p>\n",
+			"Description": "<p>An immutable set of <a href=\"/ref/enum/SecurityCapability.html\">SecurityCapability</a> values that controls which\nengine APIs and actions a script inside a sandboxed container can access.\nAssign a <code>SecurityCapabilities</code> value to an instance&#39;s\n<a href=\"/ref/class/Instance.html#member-Capabilities\">Capabilities</a> property to restrict the scripts\nbeneath it.</p>\n<p>Capability enforcement takes effect when\n<a href=\"/ref/class/Workspace.html#member-SandboxedInstanceMode\">Workspace.SandboxedInstanceMode</a> is set to\n<a href=\"/ref/enum/SandboxedInstanceMode.html\">SandboxedInstanceMode.Experimental</a>.</p>\n"
 		},
 		"SharedTable": {
 			"Constructors": [
