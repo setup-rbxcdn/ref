@@ -16,8 +16,14 @@
 			"Summary": "<p>An <a href=\"/ref/class/Actor.html\">Actor</a> is a container for code that can be safely split into its own\nthread.</p>\n",
 			"Description": "<p>An <a href=\"/ref/class/Actor.html\">Actor</a> is a container for code that can be safely split into its own\nthread using <a href=\"https://create.roblox.com/docs/reference/engine/libraries/task#desynchronize\">task.desynchronize()</a>. It should also contain the\ninstances used by its scripts.</p>\n<p>To learn more about using multiple Actors to optimize script performance, see\n<a href=\"https://create.roblox.com/docs/scripting/multithreading\">Parallel Luau</a>.</p>\n<h3>Notes</h3>\n<ul>\n<li>Each <code>Actor</code> runs in its own Luau VM. <a href=\"/ref/class/ModuleScript.html\">ModuleScripts</a>\nrequired by an <code>Actor</code> are <strong>not</strong> shared or cached across <code>Actors</code> or with\nthe main thread. Each VM executes its own copy of the module, so\nmodule-level state is isolated per <code>Actor</code>. Design accordingly if your\nmodules hold state you intend to share.</li>\n<li><code>script:GetActor()</code> returns <code>nil</code> when called from a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a>\nunless the <code>ModuleScript</code> is a descendant of the <code>Actor</code>. <code>ModuleScripts</code>\nstored elsewhere (for example, <a href=\"/ref/class/ReplicatedStorage.html\">ReplicatedStorage</a>) and required by an\n<code>Actor</code> are not considered descendants of the <code>Actor</code>.</li>\n</ul>\n"
 		},
-		"AdGui": {},
-		"AdPortal": {},
+		"AdGui": {
+			"Summary": "<p>A surface-based GUI that displays immersive ads on a face of a <a href=\"/ref/class/Part.html\">Part</a> in\nthe 3D world.</p>\n",
+			"Description": "<p><a href=\"/ref/class/AdGui.html\">AdGui</a> is a <a href=\"/ref/class/SurfaceGuiBase.html\">SurfaceGuiBase</a> that renders immersive display ads\nonto a face of the <a href=\"/ref/class/Part.html\">Part</a> it&#39;s adorned to. When no ad is available, it\nshows the creator-supplied <a href=\"/ref/class/AdGui.html#member-FallbackImage\">AdGui.FallbackImage</a>, or a default Roblox\nfallback image when that property is empty.</p>\n<p>To render ads, the <a href=\"/ref/class/AdGui.html\">AdGui</a> must be adorned to a block <a href=\"/ref/class/Part.html\">Part</a>\nthat&#39;s a descendant of <a href=\"/ref/class/Workspace.html\">Workspace</a>, must be the only surface GUI on that\nface, and must be at least the minimum eligible size. When these conditions\naren&#39;t met, the object displays a placeholder image in Studio&#39;s edit view and\nrenders nothing in a running experience.</p>\n"
+		},
+		"AdPortal": {
+			"Summary": "<p>A portal that teleports players to a sponsored experience as part of immersive\nads.</p>\n",
+			"Description": "<p>An <code>AdPortal</code> is an instance that must be parented to a <a href=\"/ref/class/Part.html\">Part</a> —\nattempting to parent it elsewhere throws an error. When added to the data\nmodel, it registers itself with <a href=\"/ref/class/AdService.html\">AdService</a> to be served portal ads on\nrotation, and it uses a child <a href=\"/ref/class/AdGui.html\">AdGui</a> to display the current ad&#39;s banner\nimage and destination label above the portal.</p>\n<p>When the local player&#39;s character touches the parent part, the portal\nteleports that player to the sponsored experience associated with the\ncurrently served ad. The portal only teleports while it is valid and has been\nserved an ad with a destination place (see <a href=\"/ref/class/AdPortal.html#member-Status\">AdPortal.Status</a>).</p>\n"
+		},
 		"AdService": {
 			"Summary": "<p>The service responsible for in-experience advertising.</p>\n",
 			"Description": "<p><a href=\"/ref/class/AdService.html\">AdService</a> is responsible for in-experience advertising. This includes\n<a href=\"https://create.roblox.com/docs/production/promotion/rewarded-video-ads\">rewarded video</a> and\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations\">ad integrations</a>.</p>\n"
@@ -420,7 +426,10 @@
 			"Summary": "<p>Allows for customization of text chat bubbles through <a href=\"/ref/class/TextChatService.html\">TextChatService</a>.</p>\n",
 			"Description": "<p>Allows for customization of text chat bubbles through <a href=\"/ref/class/TextChatService.html\">TextChatService</a>.\nSee <a href=\"https://create.roblox.com/docs/chat/bubble-chat\">Bubble Chat</a> for implementation details.</p>\n"
 		},
-		"BubbleChatMessageProperties": {},
+		"BubbleChatMessageProperties": {
+			"Summary": "<p>Overrides <a href=\"/ref/class/BubbleChatConfiguration.html\">BubbleChatConfiguration</a> properties for an individual bubble\nchat message.</p>\n",
+			"Description": "<p>Overrides <a href=\"/ref/class/BubbleChatConfiguration.html\">BubbleChatConfiguration</a> properties for an individual bubble\nchat message. Return an instance of this class from the\n<a href=\"/ref/class/TextChatService.html#member-OnBubbleAdded\">TextChatService.OnBubbleAdded</a> callback to customize the appearance of\na single message&#39;s bubble; any property set here takes precedence over the\ngame-wide <a href=\"/ref/class/BubbleChatConfiguration.html\">BubbleChatConfiguration</a>.</p>\n"
+		},
 		"BuoyancySensor": {
 			"Summary": "<p>A <a href=\"/ref/class/SensorBase.html\">SensorBase</a> that outputs data about how its <a href=\"/ref/class/BasePart.html\">BasePart</a> is\ninteracting with <a href=\"/ref/class/Terrain.html\">Terrain</a> water.</p>\n",
 			"Description": "<p>A <a href=\"/ref/class/SensorBase.html\">SensorBase</a> that outputs data about how its <a href=\"/ref/class/BasePart.html\">BasePart</a> is\ninteracting with <a href=\"/ref/class/Terrain.html\">Terrain</a> water, allowing you to determine if the part\nis or is not in water.</p>\n"
@@ -500,6 +509,7 @@
 			]
 		},
 		"ChatWindowMessageProperties": {
+			"Summary": "<p>Customizes the appearance of an individual text chat message displayed in the\nchat window.</p>\n",
 			"Description": "<p>Can be used to customize the appearance of text chat messages sent to the\nChatWindow. Inherits from <a href=\"/ref/class/TextChatMessageProperies.html\">TextChatMessageProperies</a>. To create a new\n<code>ChatWindowMessageProperties</code> instance, use\n<a href=\"/ref/class/ChatWindowConfiguration.html#member-DeriveNewMessageProperties\">ChatWindowConfiguration:DeriveNewMessageProperties()</a> which will have\nthe current properties from <a href=\"/ref/class/ChatWindowConfiguration.html\">ChatWindowConfiguration</a>.</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\"> 1\n</span><span class=\"_lnt\"> 2\n</span><span class=\"_lnt\"> 3\n</span><span class=\"_lnt\"> 4\n</span><span class=\"_lnt\"> 5\n</span><span class=\"_lnt\"> 6\n</span><span class=\"_lnt\"> 7\n</span><span class=\"_lnt\"> 8\n</span><span class=\"_lnt\"> 9\n</span><span class=\"_lnt\">10\n</span><span class=\"_lnt\">11\n</span><span class=\"_lnt\">12\n</span><span class=\"_lnt\">13\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">TextChatService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;TextChatService&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">ChatWindowConfiguration</span> <span class=\"_o\">=</span> <span class=\"_n\">TextChatService</span><span class=\"_p\">:</span><span class=\"_n\">FindFirstChildOfClass</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;ChatWindowConfiguration&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_n\">TextChatService.OnChatWindowAdded</span> <span class=\"_o\">=</span> <span class=\"_kr\">function</span><span class=\"_p\">(</span><span class=\"_n\">message</span><span class=\"_p\">:</span> <span class=\"_n\">TextChatMessage</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">  <span class=\"_c1\">-- Derive chat message properties</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">  <span class=\"_kd\">local</span> <span class=\"_n\">properties</span> <span class=\"_o\">=</span> <span class=\"_n\">ChatWindowConfiguration</span><span class=\"_p\">:</span><span class=\"_n\">DeriveNewMessageProperties</span><span class=\"_p\">()</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\">  <span class=\"_c1\">-- Change color of message within the chat window</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">  <span class=\"_n\">properties.TextColor3</span> <span class=\"_o\">=</span> <span class=\"_n\">Color3.fromRGB</span><span class=\"_p\">(</span><span class=\"_mi\">255</span><span class=\"_p\">,</span> <span class=\"_mi\">121</span><span class=\"_p\">,</span> <span class=\"_mi\">121</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\">  <span class=\"_kr\">return</span> <span class=\"_n\">properties</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kr\">end</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
 		},
 		"ChorusSoundEffect": {
@@ -824,7 +834,7 @@
 		},
 		"EditableImage": {
 			"Summary": "<p>Object which allows for the runtime creation and manipulation of images.</p>\n",
-			"Description": "<p><code>EditableImage</code> allows for the runtime creation and manipulation of images.</p>\n<p>To create a blank <code>EditableImage</code>, use\n<a href=\"/ref/class/AssetService.html#member-CreateEditableImage\">AssetService:CreateEditableImage()</a>. To create an <code>EditableImage</code> from\nan existing image, use <a href=\"/ref/class/AssetService.html#member-CreateEditableImageAsync\">AssetService:CreateEditableImageAsync()</a>.</p>\n<p><code>EditableImage</code> can be used in any <a href=\"/ref/type/Content.html\">Content</a> property which takes an\nimage, such as <a href=\"/ref/class/ImageLabel.html#member-ImageContent\">ImageLabel.ImageContent</a> or\n<a href=\"/ref/class/MeshPart.html#member-TextureContent\">MeshPart.TextureContent</a>. This is done by setting the content property\nto <a href=\"/ref/type/Content.html#member-fromObject\">Content.fromObject(editableImage)</a>.</p>\n<p>The <code>EditableImage</code> coordinate system is relative to the top left of the\nimage:</p>\n<ul>\n<li>Top-left: <code>(0, 0)</code></li>\n<li>Bottom-right: <code>(Size.X - 1, Size.Y - 1)</code></li>\n</ul>\n<p>When you use <a href=\"/ref/class/AssetService.html#member-PromptCreateAssetAsync\">AssetService:PromptCreateAssetAsync()</a> to publish an\nobject that has a <a href=\"/ref/type/Content.html\">Content</a> property which references an\n<code>EditableImage</code>, the editable image is published as an image and the property\nis set to a new asset ID.</p>\n<h3>Update Limitations</h3>\n<p>Only a single <code>EditableImage</code> can be updated per frame on the display side.\nFor example, if you update three <code>EditableImage</code> objects which are currently\nbeing displayed, it will take three frames for all of them to be updated.</p>\n<h3>Enabling for Published Experiences</h3>\n<p>For security purposes, using <code>EditableImage</code> fails by default for published\nexperiences. To enable usage, you must be 13+ age verified and ID verified.\nAfter you are verified, open the\n<a href=\"https://create.roblox.com/dashboard/creations\">Creator Dashboard</a> and toggle\non <strong>Enable Mesh / Image APIs</strong>.</p>\n<h3>Permissions</h3>\n<p>To prevent misuse, <a href=\"/ref/class/AssetService.html#member-CreateEditableImageAsync\">AssetService:CreateEditableImageAsync()</a> only allows\nyou to load and edit image assets if any of the following is true:</p>\n<ul>\n<li>Owned by or explicitly shared with the experience owner.</li>\n<li>Owned by or explicitly shared with the logged in Studio user.</li>\n<li>Owned by or explicitly shared with the logged in player if the\n<code>EditableImage</code> is on the client side.</li>\n<li>Owned by a group where the experience owner, Studio user, or player has a\nrole with permission to edit the group&#39;s assets. See\n<a href=\"https://create.roblox.com/docs/projects/groups#roles-and-permissions\">Roles and permissions</a>\nfor more information.</li>\n</ul>\n<p>See <a href=\"https://create.roblox.com/docs/projects/assets/privacy#grant-permissions\">Grant permissions</a>\nto learn how to share assets with users or groups.</p>\n<p>The APIs throw an error if they are used to load an asset that does not meet\nthe criteria above.</p>\n<h3>Memory Limits</h3>\n<p>Editable assets are currently expensive for memory usage. To minimize its\nimpact on client performance, <code>EditableImage</code> has strict client-side memory\nbudgets, although the server, Studio, and plugins operate with unlimited\nmemory. Linking one <a href=\"/ref/class/EditableImage.html\">EditableImage</a> to multiple image-related\n<a href=\"/ref/type/Content.html\">Content</a> data types (multi-referencing) can help with memory\noptimization.</p>\n"
+			"Description": "<p><code>EditableImage</code> allows for the runtime creation and manipulation of images.</p>\n<p>To create a blank <code>EditableImage</code>, use\n<a href=\"/ref/class/AssetService.html#member-CreateEditableImage\">AssetService:CreateEditableImage()</a>. To create an <code>EditableImage</code> from\nan existing image, use <a href=\"/ref/class/AssetService.html#member-CreateEditableImageAsync\">AssetService:CreateEditableImageAsync()</a>.</p>\n<p><code>EditableImage</code> can be used in any <a href=\"/ref/type/Content.html\">Content</a> property which takes an\nimage, such as <a href=\"/ref/class/ImageLabel.html#member-ImageContent\">ImageLabel.ImageContent</a> or\n<a href=\"/ref/class/MeshPart.html#member-TextureContent\">MeshPart.TextureContent</a>. This is done by setting the content property\nto <a href=\"/ref/type/Content.html#member-fromObject\">Content.fromObject(editableImage)</a>.</p>\n<p>The <code>EditableImage</code> coordinate system is relative to the top left of the\nimage:</p>\n<ul>\n<li>Top-left: <code>(0, 0)</code></li>\n<li>Bottom-right: <code>(Size.X - 1, Size.Y - 1)</code></li>\n</ul>\n<p>When you use <a href=\"/ref/class/AssetService.html#member-PromptCreatePlatformContentAsync\">AssetService:PromptCreatePlatformContentAsync()</a> to\npublish an object that has a <a href=\"/ref/type/Content.html\">Content</a> property which references an\n<code>EditableImage</code>, the editable image is published as an image and the property\nis set to a new asset ID.</p>\n<h3>Update Limitations</h3>\n<p>Only a single <code>EditableImage</code> can be updated per frame on the display side.\nFor example, if you update three <code>EditableImage</code> objects which are currently\nbeing displayed, it will take three frames for all of them to be updated.</p>\n<h3>Enabling for Published Experiences</h3>\n<p>For security purposes, using <code>EditableImage</code> fails by default for published\nexperiences. To enable usage, you must be 13+ age verified and ID verified.\nAfter you are verified, open the\n<a href=\"https://create.roblox.com/dashboard/creations\">Creator Dashboard</a> and toggle\non <strong>Enable Mesh / Image APIs</strong>.</p>\n<h3>Permissions</h3>\n<p>To prevent misuse, <a href=\"/ref/class/AssetService.html#member-CreateEditableImageAsync\">AssetService:CreateEditableImageAsync()</a> only allows\nyou to load and edit image assets if any of the following is true:</p>\n<ul>\n<li>Owned by or explicitly shared with the experience owner.</li>\n<li>Owned by or explicitly shared with the logged in Studio user.</li>\n<li>Owned by or explicitly shared with the logged in player if the\n<code>EditableImage</code> is on the client side.</li>\n<li>Owned by a group where the experience owner, Studio user, or player has a\nrole with permission to edit the group&#39;s assets. See\n<a href=\"https://create.roblox.com/docs/projects/groups#roles-and-permissions\">Roles and permissions</a>\nfor more information.</li>\n</ul>\n<p>See <a href=\"https://create.roblox.com/docs/projects/assets/privacy#grant-permissions\">Grant permissions</a>\nto learn how to share assets with users or groups.</p>\n<p>The APIs throw an error if they are used to load an asset that does not meet\nthe criteria above.</p>\n<h3>Memory Limits</h3>\n<p>Editable assets are currently expensive for memory usage. To minimize its\nimpact on client performance, <code>EditableImage</code> has strict client-side memory\nbudgets, although the server, Studio, and plugins operate with unlimited\nmemory. Linking one <a href=\"/ref/class/EditableImage.html\">EditableImage</a> to multiple image-related\n<a href=\"/ref/type/Content.html\">Content</a> data types (multi-referencing) can help with memory\noptimization.</p>\n"
 		},
 		"EditableMesh": {
 			"Summary": "<p>Object which allows for the runtime creation and manipulation of meshes.</p>\n",
@@ -1436,7 +1446,10 @@
 				"Model-Instantiation"
 			]
 		},
-		"ModerationService": {},
+		"ModerationService": {
+			"Summary": "<p>Server-side service for submitting player captures to content moderation\nreview and receiving the results asynchronously.</p>\n",
+			"Description": "<p><code>ModerationService</code> lets server-side experience code submit user-generated\ncaptures (screenshots taken with <a href=\"/ref/class/CaptureService.html#member-CaptureScreenshot\">CaptureService:CaptureScreenshot()</a>\nand videos recorded with <a href=\"/ref/class/CaptureService.html#member-StartVideoCaptureAsync\">CaptureService:StartVideoCaptureAsync()</a>) to\nRoblox&#39;s content moderation pipeline and receive the review results\nasynchronously.</p>\n"
+		},
 		"ModuleScript": {
 			"Summary": "<p>A script type that runs once when <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> is called with\nit. Returns exactly one value, usually a table of functions, to used by other\nscripts. Useful for compartmentalizing code.</p>\n",
 			"Description": "<p>A <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> is a script type that returns exactly one value by a\ncall to <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a>. <a href=\"/ref/class/ModuleScript.html\">ModuleScripts</a> run\nonce and only once per Luau environment and return the exact same value for\nsubsequent calls to <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a>.</p>\n<p><a href=\"/ref/class/ModuleScript.html\">ModuleScripts</a> are essential objects for adhering to the\n&#34;Don&#39;t Repeat Yourself&#34; (DRY) principle, allowing you to write a function only\nonce and use it everywhere. Having multiple copies of a function is\nproblematic when you need to change their behavior, so you should define\nfunctions or groups of functions in <a href=\"/ref/class/ModuleScript.html\">ModuleScripts</a> and\nhave your <a href=\"/ref/class/Script.html\">Scripts</a> and <a href=\"/ref/class/LocalScript.html\">LocalScripts</a> call\n<a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> on those modules.</p>\n<p>It&#39;s important to know that return values from\n<a href=\"/ref/class/ModuleScript.html\">ModuleScripts</a> are independent with regards to\n<a href=\"/ref/class/Script.html\">Scripts</a> and <a href=\"/ref/class/LocalScript.html\">LocalScripts</a>, and other\nenvironments like the\n<a href=\"https://create.roblox.com/docs/studio/ui-overview#command-bar\">Command Bar</a>. Using\n<a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> on a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> in a\n<a href=\"/ref/class/LocalScript.html\">LocalScript</a> will run the code on the client, even if a <a href=\"/ref/class/Script.html\">Script</a>\ndid so already on the server. Therefore, be careful if you&#39;re using a\n<a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> on the client and server at the same time, or debugging\nit within Studio.</p>\n<p>Note that the first call to <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> will not yield\n(halt) unless the <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> yields (calls <a href=\"https://create.roblox.com/docs/reference/engine/libraries/task#wait\">task.wait()</a> for\nexample), in which case the current thread that called\n<a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> will yield until the <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a>\nreturns a value. If a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> is attempting to\n<a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> another <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> that in turn tries\nto <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> it, the thread will <strong>hang and never halt</strong>\n(cyclic <a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> calls do not generate errors). Be\nmindful of your module dependencies in large projects!</p>\n<p>If a <a href=\"/ref/class/ModuleScript.html\">ModuleScript</a> is uploaded to Roblox and the root module has the\nname set to <code>MainModule</code>, it can be uploaded as a model and required using\n<a href=\"https://create.roblox.com/docs/reference/engine/globals/LuaGlobals#require\">require()</a> with the model&#39;s asset ID. Then it can be loaded\ninto your experience, although this logic only works on the server and will\nerror on the client. If other users want to use the module, it must be public.</p>\n",
@@ -1597,7 +1610,6 @@
 			]
 		},
 		"PatchBundlerFileWatch": {},
-		"PatchMapping": {},
 		"Path": {
 			"Summary": "<p>Stores the result of paths created by <a href=\"/ref/class/PathfindingService.html#member-CreatePath\">PathfindingService:CreatePath()</a>.</p>\n",
 			"Description": "<p><code>Path</code> objects store the result of paths created by\n<a href=\"/ref/class/PathfindingService.html#member-CreatePath\">PathfindingService:CreatePath()</a>.</p>\n<p>Once a <code>Path</code> object is created, you can call\n<a href=\"/ref/class/Path.html#member-ComputeAsync\">ComputeAsync()</a> with a starting point and ending\npoint. This will attempt to compute a valid path for a character to move\nalong, based on default or custom parameters passed to\n<a href=\"/ref/class/PathfindingService.html#member-CreatePath\">CreatePath()</a>. If\n<a href=\"/ref/class/Path.html#member-ComputeAsync\">ComputeAsync()</a> successfully finds a path, the\n<code>Path</code> object will have a <a href=\"/ref/class/Path.html#member-Status\">Status</a> value of\n<a href=\"/ref/enum/PathStatus.html\">PathStatus.Success</a>. Otherwise the status will be\n<a href=\"/ref/enum/PathStatus.html\">PathStatus.NoPath</a> which can occur if there are obstacles between the\ntwo points (and no way around) or if the points are inside of solid objects.</p>\n<p>In addition to <a href=\"/ref/class/Path.html#member-ComputeAsync\">ComputeAsync()</a>, <code>Path</code> objects have\nthe <a href=\"/ref/class/Path.html#member-GetWaypoints\">GetWaypoints()</a> method which returns a list of\nwaypoints representing the points a character should follow in sequence to get\nfrom the beginning to the end of the path.</p>\n<p>Finally, <code>Path</code> objects can be <strong>connected</strong> to the\n<a href=\"/ref/class/Path.html#member-Blocked\">Blocked</a> event which will fire if, at any time during the\npath&#39;s existence, the path is blocked. Note that this can occur <strong>behind</strong> a\ncharacter moving along the path, not just in front of it.</p>\n<p>See <a href=\"https://create.roblox.com/docs/characters/pathfinding\">Pathfinding</a> for details on\nimplementing character pathfinding.</p>\n"
@@ -2417,14 +2429,17 @@
 				"TextBox-Secret-Word"
 			]
 		},
-		"TextBoxService": {},
+		"TextBoxService": {
+			"Summary": "<p>A service that manages a user&#39;s <a href=\"/ref/class/TextBox.html\">TextBox</a> state during gameplay.</p>\n",
+			"Description": "<p>Engine-managed service with no scriptable members.</p>\n"
+		},
 		"TextButton": {
 			"Summary": "<p>A 2D user interface element that displays interactive text.</p>\n",
 			"Description": "<p>A <a href=\"/ref/class/TextButton.html\">TextButton</a> behaves similarly to <a href=\"/ref/class/TextLabel.html\">TextLabel</a> in regards to\nrendering, with the additional behaviors of a <a href=\"/ref/class/GuiButton.html\">GuiButton</a>.</p>\n<p>You can disable text rendering by setting\n<a href=\"/ref/class/TextButton.html#member-TextTransparency\">TextTransparency</a> to <code>1</code>. This will result\nin a plain rectangle that can be used as a button.</p>\n"
 		},
 		"TextChannel": {
 			"Summary": "<p>Represents a text chat channel.</p>\n",
-			"Description": "<p>Represents a text chat channel. Contains <a href=\"/ref/class/TextSource.html\">TextSources</a> as\ndescendants.</p>\n<p>To send a chat message to the <a href=\"/ref/class/TextChannel.html\">TextChannel</a>, call\n<a href=\"/ref/class/TextChannel.html#member-SendAsync\">TextChannel:SendAsync()</a> from a <a href=\"/ref/class/LocalScript.html\">LocalScript</a>. The corresponding\n<a href=\"/ref/class/TextSource.html\">TextSource</a> of the user with <code>TextSource.CanSend = true</code> must be in\nthat channel.</p>\n<p>Messages from different TextChannels can be separated into different tabs in\nthe chat window using <a href=\"/ref/class/ChannelTabsConfiguration.html\">ChannelTabsConfiguration</a>.</p>\n<p>To learn more, see\n<a href=\"https://create.roblox.com/docs/chat/in-experience-text-chat\">In-Experience Text Chat</a>.</p>\n"
+			"Description": "<p>Represents a text chat channel. Contains <a href=\"/ref/class/TextSource.html\">TextSources</a> as\ndescendants.</p>\n<p>To send a chat message to the <a href=\"/ref/class/TextChannel.html\">TextChannel</a>, call\n<a href=\"/ref/class/TextChannel.html#member-SendAsync\">TextChannel:SendAsync()</a> from a <a href=\"/ref/class/LocalScript.html\">LocalScript</a>. The corresponding\n<a href=\"/ref/class/TextSource.html\">TextSource</a> of the user with <code>TextSource.CanSend = true</code> must be in\nthat channel.</p>\n<p>Messages from different TextChannels can be separated into different tabs in\nthe chat window using <a href=\"/ref/class/ChannelTabsConfiguration.html\">ChannelTabsConfiguration</a>. Multiple channels with\nthe same name might cause unexpected behavior with the chat window, even if\nthe player isn&#39;t a member of the other channels.</p>\n<p>To learn more, see\n<a href=\"https://create.roblox.com/docs/chat/in-experience-text-chat\">In-Experience Text Chat</a>.</p>\n"
 		},
 		"TextChannelWindow": {
 			"Description": "<p><a href=\"/ref/class/TextChannelWindow.html\">TextChannelWindow</a> is a <a href=\"/ref/class/GuiObject.html\">GuiObject</a> that renders in-experience\ntext chat messages from a linked <a href=\"/ref/class/TextChannel.html\">TextChannel</a>. Place it under a\n<a href=\"/ref/class/ScreenGui.html\">ScreenGui</a> or other <a href=\"/ref/class/LayerCollector.html\">LayerCollector</a> descendant to display chat\nin a custom location and layout.</p>\n<p>Set <a href=\"/ref/class/TextChannelWindow.html#member-Target\">Target</a> to a <a href=\"/ref/class/TextChannel.html\">TextChannel</a> to choose\nwhich channel&#39;s messages the window shows. The window registers itself with\n<a href=\"/ref/class/TextChatService.html\">TextChatService</a> when added to the data model.</p>\n<p>Accepted children: <a href=\"/ref/class/UICorner.html\">UICorner</a>, <a href=\"/ref/class/UIAspectRatioConstraint.html\">UIAspectRatioConstraint</a>,\n<a href=\"/ref/class/UISizeConstraint.html\">UISizeConstraint</a>, and scripts (<a href=\"/ref/class/LocalScript.html\">LocalScript</a>, <a href=\"/ref/class/Script.html\">Script</a>,\n<a href=\"/ref/class/ModuleScript.html\">ModuleScript</a>); other child types are rejected.</p>\n"
@@ -2784,7 +2799,10 @@
 			"Summary": "<p>VirtualUser is a service that allows you to record the inputs of a user, and\nthen play it back to a limited extent.</p>\n",
 			"Description": "<p>VirtualUser is a service that allows you to record the inputs of a user, and\nthen play it back to a limited extent. This service hasn&#39;t been maintained in\nseveral years, so it doesn&#39;t work very well anymore.</p>\n"
 		},
-		"VisibilityCheckDispatcher": {},
+		"VisibilityCheckDispatcher": {
+			"Summary": "<p>Service that schedules and runs viewability checks for immersive ad instances\nin a place.</p>\n",
+			"Description": "<p>Not accessible from scripts. <a href=\"/ref/class/VisibilityCheckDispatcher.html\">VisibilityCheckDispatcher</a> measures the\nviewability of on-screen ads, such as those rendered by <a href=\"/ref/class/AdGui.html\">AdGui</a>. On\nevery <a href=\"/ref/class/RunService.html\">RunService</a> heartbeat, it selects pending ad instances and runs\nthe on-screen and occlusion checks that determine whether an ad impression\nshould be counted, then reports the results through <a href=\"/ref/class/AdService.html\">AdService</a>.</p>\n<p>This service is created and managed by the engine.</p>\n"
+		},
 		"Visit": {
 			"Summary": "<p>The Visit service is a backend service used by Roblox. Its functions are not\naccessible to developers in any form.</p>\n",
 			"Description": "<p>The Visit service is a backend service used by Roblox. Its functions are not\naccessible to developers in any form.</p>\n"
@@ -2945,26 +2963,45 @@
 			}
 		},
 		"AdGui": {
-			"AdShape": {},
+			"AdShape": {
+				"Summary": "<p>Determines the shape of the ad displayed by the <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n",
+				"Description": "<p>Determines the shape of the ad rendered by the <a href=\"/ref/class/AdGui.html\">AdGui</a>, including\nthe creative&#39;s aspect ratio on the part surface. Defaults to\n<a href=\"/ref/enum/AdShape.html\">HorizontalRectangle</a>, which is the only served shape aside\nfrom the sentinel <a href=\"/ref/enum/AdShape.html\">Undefined</a>.</p>\n"
+			},
 			"EnableVideoAds": {
 				"Summary": "<p>Enables the AdGui to serve video ads.</p>\n",
 				"Description": "<p>The property enables the AdGui to serve video ads.</p>\n"
 			},
-			"FallbackImage": {},
+			"FallbackImage": {
+				"Summary": "<p>The image the <a href=\"/ref/class/AdGui.html\">AdGui</a> displays when no ad is available to serve.</p>\n",
+				"Description": "<p>A creator-supplied image that the <a href=\"/ref/class/AdGui.html\">AdGui</a> displays when it has no\nserved ad to render. Defaults to an empty content string; while empty, the\n<a href=\"/ref/class/AdGui.html\">AdGui</a> renders a default Roblox fallback image instead.</p>\n"
+			},
+			"FallbackImageContent": {
+				"Summary": "<p>The <a href=\"/ref/type/Content.html\">Content</a> equivalent of <a href=\"/ref/class/AdGui.html#member-FallbackImage\">AdGui.FallbackImage</a> that\nsupports asset URIs and <a href=\"/ref/class/EditableImage.html\">EditableImage</a> objects.</p>\n",
+				"Description": "<p>A <a href=\"/ref/type/Content.html\">Content</a>-typed property that holds the fallback image the\n<a href=\"/ref/class/AdGui.html\">AdGui</a> displays when no served ad is available. It is the\ncontent-typed backing for <a href=\"/ref/class/AdGui.html#member-FallbackImage\">AdGui.FallbackImage</a> (a legacy\n<code>TextureId</code> string); writing to either property updates the same\nunderlying storage. Unlike <code>FallbackImage</code>, this property accepts\n<a href=\"https://create.roblox.com/docs/projects/assets#asset-uris\">asset URIs</a> and references\nto <a href=\"/ref/class/EditableImage.html\">EditableImage</a> objects. When empty, the <a href=\"/ref/class/AdGui.html\">AdGui</a> renders a\ndefault Roblox fallback image instead.</p>\n"
+			},
 			"OnAdEvent": {
 				"Summary": "<p>Used to react to the AdGui events.</p>\n",
 				"DeprecationMessage": "<p>This callback has been deprecated and will never be called.</p>\n"
 			},
-			"Status": {}
+			"Status": {
+				"Summary": "<p>Indicates whether the <a href=\"/ref/class/AdGui.html\">AdGui</a> is currently displaying a served ad.</p>\n",
+				"Description": "<p>A read-only property that reports whether the <a href=\"/ref/class/AdGui.html\">AdGui</a> is actively\ndisplaying a served ad. It&#39;s <a href=\"/ref/enum/AdUnitStatus.html\">Active</a> when the\n<a href=\"/ref/class/AdGui.html\">AdGui</a> is rendering ad content, and <a href=\"/ref/enum/AdUnitStatus.html\">Inactive</a>\notherwise.</p>\n"
+			}
 		},
 		"AdPortal": {
-			"PortalInvalidReason": {},
-			"Status": {}
+			"PortalInvalidReason": {
+				"Summary": "<p>A creator-facing message explaining why the portal is currently invalid,\nif it is.</p>\n",
+				"Description": "<p>Holds a human-readable explanation of why the <a href=\"/ref/class/AdPortal.html\">AdPortal</a> is not in a\nvalid, servable state. When the portal passes validation the value is an\nempty string; when validation fails it is populated with the specific\nreason reported by the portal&#39;s validator, such as an unsuitable parent or\na misconfigured child <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n<p>This property is read-only and defaults to an empty string (<code>&#34;&#34;</code>). It is\nintended for surfacing configuration problems to creators in Studio.</p>\n"
+			},
+			"Status": {
+				"Summary": "<p>Indicates whether the portal is currently active and able to teleport\nplayers.</p>\n",
+				"Description": "<p>Reports the portal&#39;s current <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus</a>. The value is\n<a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Active</a> only when the portal has passed validation and\nhas been served an ad with a valid destination place; in every other case\nit is <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Inactive</a>.</p>\n<p>A newly created portal reports <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Inactive</a>, because its\ndestination place is unset (<code>0</code>) until the ad service fills the portal\nwith an ad — the portal cannot become <a href=\"/ref/enum/AdUnitStatus.html\">AdUnitStatus.Active</a>, and\ntherefore cannot teleport, until that happens. This property is read-only.</p>\n"
+			}
 		},
 		"AdService": {
 			"CreateAdRewardFromDevProductId": {
 				"Summary": "<p>Creates an <a href=\"/ref/type/AdReward.html\">AdReward</a> to give users who watch a video ad.</p>\n",
-				"Description": "<p>Creates a reward to give users who watch an entire video ad.</p>\n"
+				"Description": "<p>Constructs an <a href=\"/ref/type/AdReward.html\">AdReward</a> that wraps the given developer product\nso it can be passed to\n<a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">ShowRewardedVideoAdAsync</a>.\nWhen the user watches the entire rewarded video ad, the developer product\nidentified by <code>devProductId</code> is granted through the\n<a href=\"/ref/class/MarketplaceService.html#member-ProcessReceipt\">ProcessReceipt</a> callback with a\n<code>ProductPurchaseChannel</code> of <a href=\"/ref/enum/ProductPurchaseChannel.html\">ProductPurchaseChannel.AdReward</a>.</p>\n"
 			},
 			"GetAdAvailabilityNowAsync": {
 				"Summary": "<p>Checks if an ad with the specified format is available to be shown to the\n<a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a>.</p>\n",
@@ -2972,13 +3009,14 @@
 			},
 			"GetCampaignEligibilityAsync": {
 				"Summary": "<p>Checks a <a href=\"/ref/class/Player.html\">Player</a>&#39;s eligibility to be shown an\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations\">ad integration</a>\ncampaign.</p>\n",
+				"Description": "<p><a href=\"/ref/class/AdService.html#member-GetCampaignEligibilityAsync\">GetCampaignEligibilityAsync</a>\nchecks whether a <a href=\"/ref/class/Player.html\">Player</a> is eligible to be shown a specific\n<a href=\"https://create.roblox.com/docs/production/promotion/ad-integrations\">ad integration</a>\ncampaign, returning a dictionary that looks like\n<code>{ IsEligible: boolean }</code>.</p>\n<p>Call this method and confirm that <code>result.IsEligible</code> is <code>true</code> before you\ndisplay any of the campaign&#39;s ad integration assets or register their\ndisclosure buttons with\n<a href=\"/ref/class/AdService.html#member-RegisterDisclosureButton\">RegisterDisclosureButton</a>. All\nad integration assets should remain hidden until the <a href=\"/ref/class/Player.html\">Player</a> is\nconfirmed eligible.</p>\n<p>When called from the client, the <code>player</code> argument defaults to the\n<a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a>. When called from the server,\n<code>player</code> is required. The call raises an error if the supplied\n<code>campaignId</code> exceeds the maximum allowed length.</p>\n",
 				"CodeSamples": [
 					"AdService-AdIntegrations"
 				]
 			},
 			"RegisterAdOpportunityAsync": {
 				"Summary": "<p>Tracks how many times a user had the chance to watch a video ad and the\nrate at which they actually watched the ad.</p>\n",
-				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>.</p>\n",
+				"Description": "<p>This method may only be called from a <a href=\"/ref/class/Script.html\">Script</a> with\n<a href=\"/ref/enum/RunContext.html\">RunContext.Client</a>.</p>\n<p>Registers a <a href=\"/ref/class/GuiButton.html\">GuiButton</a> for ad opportunity tracking. Once\nregistered, the system periodically checks whether the button is visible\nand unobstructed (the topmost input-sinking element at its center point).\nThese visibility transitions are reported as ad opportunity impressions\nand used to measure the rate at which users are presented with, and choose\nto watch, rewarded video ads.</p>\n<p>The <code>instance</code> must be a <a href=\"/ref/class/GuiButton.html\">GuiButton</a> that is a descendant of a\n<a href=\"/ref/class/ScreenGui.html\">ScreenGui</a> under <a href=\"/ref/class/PlayerGui.html\">PlayerGui</a>. If the instance is moved out of\na valid hierarchy at runtime, tracking pauses automatically and resumes\nwhen it returns to a valid ancestor. Call\n<a href=\"/ref/class/AdService.html#member-UnregisterAdOpportunity\">UnregisterAdOpportunity</a> to\nstop tracking the instance.</p>\n",
 				"CodeSamples": [
 					"AdService-RegisterAdOpportunityAsync"
 				]
@@ -2999,7 +3037,10 @@
 				"Description": "<p>Show mobile video advertisements.</p>\n",
 				"DeprecationMessage": "<p><a href=\"/ref/class/AdService.html#member-ShowVideoAd\">ShowVideoAd</a> has been decommissioned and is\nno longer operational.</p>\n"
 			},
-			"UnregisterAdOpportunity": {},
+			"UnregisterAdOpportunity": {
+				"Summary": "<p>Stops tracking an instance that was previously registered with\n<a href=\"/ref/class/AdService.html#member-RegisterAdOpportunityAsync\">RegisterAdOpportunityAsync</a>.</p>\n",
+				"Description": "<p>Removes <code>instance</code> from the ad opportunity tracker so that it no longer\ncounts toward the rewarded video ad opportunity reporting started by\n<a href=\"/ref/class/AdService.html#member-RegisterAdOpportunityAsync\">RegisterAdOpportunityAsync()</a>.\nCall it once an instance should no longer be treated as an ad opportunity,\nsuch as when its associated UI is closed or removed.</p>\n<p>If the supplied <code>instance</code> is not currently being tracked, this method has\nno effect.</p>\n"
+			},
 			"VideoAdClosed": {
 				"Summary": "<p>Fires when an <a href=\"/ref/class/AdService.html\">AdService</a> video closes.</p>\n",
 				"Description": "<p>Fires when an <a href=\"/ref/class/AdService.html\">AdService</a> video closes.</p>\n",
@@ -3179,7 +3220,7 @@
 			},
 			"GetPlayerSegmentsAsync": {
 				"Summary": "<p>Returns coarse player segment buckets for the current experience.</p>\n",
-				"Description": "<p>This server-only method returns coarse segment buckets for a player in the\ncurrent experience. If a cached result is not already available, the\nmethod may yield while the engine fetches the segment data. Successfully\nfetched results are cached per player for the lifetime of the server\nsession.</p>\n<p>If segment data is unavailable, this method does not throw. Instead, it\nreturns <code>HasData = false</code> and all enum fields are set to <code>Unknown</code>.</p>\n<p>This method throws only when called from the client or when the <code>player</code>\nargument is invalid.</p>\n<p>The returned dictionary has the following structure:</p>\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Name</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Description</th>\n\t\t</tr>\n\t</thead>\n\t<tbody><tr>\n\t\t<td><code>HasData</code></td>\n\t\t<td>bool</td>\n\t\t<td>Whether segment data was successfully retrieved for the player.</td>\n\t</tr>\n\t<tr>\n\t\t<td><code>ActivePayerStatus</code></td>\n\t\t<td><a href=\"/ref/enum/ActivePayerStatus.html\">ActivePayerStatus</a></td>\n\t\t<td>The player&#39;s current payer status bucket for this experience.</td>\n\t</tr>\n\t<tr>\n\t\t<td><code>WhenUserFirstPlayed</code></td>\n\t\t<td><a href=\"/ref/enum/WhenUserFirstPlayed.html\">WhenUserFirstPlayed</a></td>\n\t\t<td>When the player first played this experience, represented as a bucket.</td>\n\t</tr>\n\t<tr>\n\t\t<td><code>PlatformSpenderStatus</code></td>\n\t\t<td><a href=\"/ref/enum/PlayerPlatformSpenderStatus.html\">PlayerPlatformSpenderStatus</a></td>\n\t\t<td>The player&#39;s platform-wide spender status bucket, including whether the player falls outside the active spender bucket.</td>\n\t</tr>\n</tbody></table>\n",
+				"Description": "<p>This server-only method returns coarse segment buckets for a player in the\ncurrent experience. Use these buckets at runtime to personalize content or\ngate features for specific player groups. If a cached result is not\nalready available, the method may yield while the engine fetches the\nsegment data. Successfully fetched results are cached per player for the\nlifetime of the server session.</p>\n<p>If segment data is unavailable, this method does not throw. Instead, it\nreturns <code>HasData = false</code> and all enum fields are set to <code>Unknown</code>.</p>\n<p>This method throws only when called from the client or when the <code>player</code>\nargument is invalid.</p>\n<p>The returned dictionary has the following structure:</p>\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Name</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Description</th>\n\t\t</tr>\n\t</thead>\n\t<tbody><tr>\n\t\t<td><code>HasData</code></td>\n\t\t<td>bool</td>\n\t\t<td>Whether segment data was successfully retrieved for the player.</td>\n\t</tr>\n\t<tr>\n\t\t<td><code>ActivePayerStatus</code></td>\n\t\t<td><a href=\"/ref/enum/ActivePayerStatus.html\">ActivePayerStatus</a></td>\n\t\t<td>The player&#39;s current payer status bucket for this experience.</td>\n\t</tr>\n\t<tr>\n\t\t<td><code>WhenUserFirstPlayed</code></td>\n\t\t<td><a href=\"/ref/enum/WhenUserFirstPlayed.html\">WhenUserFirstPlayed</a></td>\n\t\t<td>When the player first played this experience, represented as a bucket.</td>\n\t</tr>\n\t<tr>\n\t\t<td><code>PlatformSpenderStatus</code></td>\n\t\t<td><a href=\"/ref/enum/PlayerPlatformSpenderStatus.html\">PlayerPlatformSpenderStatus</a></td>\n\t\t<td>The player&#39;s platform-wide spender status bucket, including whether the player falls outside the active spender bucket.</td>\n\t</tr>\n</tbody></table>\n",
 				"CodeSamples": [
 					"AnalyticsService-GetPlayerSegmentsAsync"
 				]
@@ -3204,6 +3245,10 @@
 				"CodeSamples": [
 					"AnalyticsService-LogFunnelStepEvent-Shop"
 				]
+			},
+			"LogJourneyEvent": {
+				"Summary": "<p>Logs a journey event used to track non-linear player paths through an\nexperience.</p>\n",
+				"Description": "<p>Logs a journey event used to track non-linear player paths through an\nexperience. Unlike funnels, which track ordered sequential steps, journeys\ntrack graph-like player paths where players can move between named nodes\nin any order. Each call records that a player reached a specific node\nwithin a named journey. The resulting data is visualized as a Sankey\ndiagram in Creator Hub, showing how players distribute across paths in the\nexperience.</p>\n"
 			},
 			"LogOnboardingFunnelStepEvent": {
 				"Summary": "<p>Logs an event used to track user actions stepping through an onboarding\nfunnel.</p>\n",
@@ -6591,7 +6636,10 @@
 				"Summary": "<p>Font of the bubble text.</p>\n",
 				"Description": "<p>Font of the bubble text in <a href=\"/ref/type/Font.html\">Font</a>.</p>\n"
 			},
-			"TailVisible": {},
+			"TailVisible": {
+				"Summary": "<p>Determines whether the tail at the bottom of the chat bubble is visible.</p>\n",
+				"Description": "<p>Determines whether the tail at the bottom of the chat bubble is visible.\nDefaults to <code>true</code>.</p>\n"
+			},
 			"TextColor3": {
 				"Summary": "<p>Color of bubble text.</p>\n",
 				"Description": "<p>Color of bubble text in <a href=\"/ref/type/Color3.html\">Color3</a>.</p>\n"
@@ -7057,11 +7105,11 @@
 			},
 			"CanUserChatAsync": {
 				"Summary": "<p>Will return false if the player with the specified <a href=\"/ref/class/Player.html#member-UserId\">Player.UserId</a>\nis not allowed to chat because of their account settings.</p>\n",
-				"Description": "<p>Will return false if the player with the specified <a href=\"/ref/class/Player.html#member-UserId\">Player.UserId</a>\nis not allowed to chat because of their account settings.</p>\n"
+				"Description": "<p>Returns whether the player identified by <code>userId</code> is permitted to use\nin-game text chat. The check evaluates the player&#39;s chat privacy mode,\nthird-party platform restrictions, and any active moderation timeouts.</p>\n<p>On the server, the specified player must be connected to the current\nserver; otherwise the call errors. On the client, the method must be\ncalled only for the local player&#39;s <a href=\"/ref/class/Player.html#member-UserId\">Player.UserId</a>.</p>\n"
 			},
 			"CanUsersChatAsync": {
 				"Summary": "<p>Will return false if the two users cannot communicate because their\naccount settings do not allow it.</p>\n",
-				"Description": "<p>Will return false if the two users cannot communicate because their\naccount settings do not allow it.</p>\n"
+				"Description": "<p>Returns whether two players are permitted to exchange chat messages with\neach other. The method evaluates user blocking, age-based communication\nconstraints, and chat privacy mode compatibility between the two accounts.</p>\n<p>This method can only be called from server-side <a href=\"/ref/class/Script.html\">Scripts</a>.\nBoth players must be connected to the current server; otherwise the call\nerrors.</p>\n"
 			},
 			"Chat": {
 				"Summary": "<p>Fires the <a href=\"/ref/class/Chat.html#member-Chatted\">Chat.Chatted</a> event with the parameters specified in this\nmethod.</p>\n",
@@ -7072,7 +7120,7 @@
 			},
 			"Chatted": {
 				"Summary": "<p>Fires when <a href=\"/ref/class/Chat.html#member-Chat\">Chat:Chat()</a> is called.</p>\n",
-				"Description": "<p>Fires when <a href=\"/ref/class/Chat.html#member-Chat\">Chat:Chat()</a> is called.</p>\n"
+				"Description": "<p>Fires when <a href=\"/ref/class/Chat.html#member-Chat\">Chat:Chat()</a> is called. The event passes the part or\ncharacter the message is associated with, the message string, and the\n<a href=\"/ref/enum/ChatColor.html\">ChatColor</a>. When fired on the server, the event replicates to all\nconnected clients. The default <code>BubbleChat</code> <a href=\"/ref/class/LocalScript.html\">LocalScript</a> listens\nfor this event and displays a chat bubble above the specified part or\ncharacter.</p>\n"
 			},
 			"FilterStringAsync": {
 				"Summary": "<p>Filters a string sent from a player to another player using filtering that\nis appropriate to the players&#39; account settings.</p>\n",
@@ -7096,7 +7144,7 @@
 			},
 			"LoadDefaultChat": {
 				"Summary": "<p>Toggles whether the default chat framework should be automatically loaded\nwhen the game runs.</p>\n",
-				"Description": "<p>Toggles whether the default chat framework should be automatically loaded\nwhen the game runs.</p>\n"
+				"Description": "<p>When set to <code>true</code> (the default), the engine inserts the default Luau chat\nsystem scripts (such as <code>ChatScript</code> and <code>BubbleChat</code>) into the <code>Chat</code>\nservice at runtime. Setting this to <code>false</code> prevents the legacy chat\nframework from loading, which is useful if you are replacing it with a\ncustom chat implementation or migrating to <a href=\"/ref/class/TextChatService.html\">TextChatService</a>.</p>\n<p>This property defaults to <code>true</code>. It is not writable by scripts at\nruntime.</p>\n"
 			},
 			"RegisterChatCallback": {
 				"Summary": "<p>Register a function to be called upon the invocation of some chat system\nevent (<a href=\"/ref/class/Chat.html#member-InvokeChatCallback\">InvokeChatCallback</a>).</p>\n",
@@ -7511,9 +7559,11 @@
 				"Description": "<p>Use this signal to detect when a user has completed the purchasing flow\nand the webview has closed to resume gameplay within the experience.\n<strong>This signal does not indicate a successful purchase</strong>, so do not grant\nvirtual items solely from this signal.</p>\n<p>While optional, it is recommended to use this signal to reorient your\nusers on Android, as the commerce purchasing flow will have forced them\ninto portrait mode.</p>\n"
 			},
 			"PromptRealWorldCommerceBrowser": {
+				"Summary": "<p>Legacy endpoint that opens an in-experience browser to a real-world\ncommerce URL for the specified player; superseded by\n<a href=\"/ref/class/CommerceService.html#member-PromptCommerceProductPurchase\">CommerceService:PromptCommerceProductPurchase()</a>.</p>\n",
 				"Description": "<p>This is a legacy endpoint that is not meant for use. To open the webview\nto the purchasing flow for real world commerce, see\n<a href=\"/ref/class/CommerceService.html#member-PromptCommerceProductPurchase\">CommerceService:PromptCommerceProductPurchase</a>. For more\ninformation, see\n<a href=\"https://create.roblox.com/docs/production/monetization/commerce-products\">Commerce products</a></p>\n"
 			},
 			"UserEligibleForRealWorldCommerceAsync": {
+				"Summary": "<p>Legacy endpoint that returns whether the current user is eligible for\nreal-world commerce; superseded by <a href=\"/ref/class/PolicyService.html\">PolicyService</a>.</p>\n",
 				"Description": "<p>This is a legacy endpoint that is not meant for use. To check if a user is\neligible for real world commerce, see\n<a href=\"/ref/class/PolicyService.html#member-IsEligibleToPurchaseCommerceProduct\">PolicyService.IsEligibleToPurchaseCommerceProduct</a>. For more\ninformation, see\n<a href=\"https://create.roblox.com/docs/production/monetization/commerce-products\">Commerce products</a></p>\n"
 			}
 		},
@@ -8555,6 +8605,10 @@
 			}
 		},
 		"Decal": {
+			"AutoLocalize": {
+				"Summary": "<p>When set to <code>true</code>, the decal&#39;s image asset is eligible for automatic\nlocalization capture.</p>\n",
+				"Description": "<p>When set to <code>true</code>, the decal&#39;s image asset is eligible for automatic\nlocalization through the Automatic Asset Capture system. The\n<a href=\"/ref/class/LocalizationService.html\">LocalizationService</a> uses this property to determine whether the\ndecal&#39;s <a href=\"/ref/class/Decal.html#member-ColorMapContent\">ColorMapContent</a> should be captured\nand potentially replaced with a localized version.</p>\n<p>This property only applies to non-PBR decals. If any PBR maps\n(<a href=\"/ref/class/Decal.html#member-NormalMapContent\">NormalMapContent</a>,\n<a href=\"/ref/class/Decal.html#member-RoughnessMapContent\">RoughnessMapContent</a>, or\n<a href=\"/ref/class/Decal.html#member-MetalnessMapContent\">MetalnessMapContent</a>) are set, automatic\nlocalization capture is suppressed to avoid inconsistent rendering.</p>\n"
+			},
 			"Color3": {
 				"Summary": "<p>The <a href=\"/ref/type/Color3.html\">Color3</a> tint of the <a href=\"/ref/class/Decal.html\">Decal</a>.</p>\n",
 				"Description": "<p>The <a href=\"/ref/type/Color3.html\">Color3</a> tint of the <a href=\"/ref/class/Decal.html\">Decal</a>. Note that this property\nonly sets the <strong>tint</strong> of the decal rather than the color; unless the\nimage associated with the <a href=\"/ref/class/Decal.html\">Decal</a> was originally pure white, then\nthe color cannot be freely changed using this property.</p>\n",
@@ -8574,21 +8628,41 @@
 				"Summary": "<p>Acts as a multiplier for the decal&#39;s\n<a href=\"/ref/class/Decal.html#member-Transparency\">Transparency</a> property. The effects are only\nvisible to the local player.</p>\n",
 				"Description": "<p>Acts as a multiplier for the decal&#39;s\n<a href=\"/ref/class/Decal.html#member-Transparency\">Transparency</a> property. The effect is only\nvisible to the <a href=\"/ref/class/Players.html#member-LocalPlayer\">LocalPlayer</a> and will not\nreplicate to the server.</p>\n<p>When this property is set to <code>1</code>, the <a href=\"/ref/class/Decal.html\">Decal</a> will be completely\ninvisible regardless of its original transparency. When it is set to <code>0</code>,\nthe decal&#39;s rendered transparency will match the\n<a href=\"/ref/class/Decal.html#member-Transparency\">Transparency</a> value.</p>\n"
 			},
-			"MetalnessMap": {},
-			"MetalnessMapContent": {},
-			"NormalMap": {},
-			"NormalMapContent": {},
+			"MetalnessMap": {
+				"Summary": "<p>Content ID that determines the metalness map of the surface.</p>\n",
+				"Description": "<p>This property takes a content ID that determines the metalness map applied\nto the surface. A metalness map controls how metallic the surface appears\nat each point, blending between a dielectric (non-metal) and a metallic\nresponse to light. It defaults to an empty content, in which case no\nmetalness map is applied.</p>\n<p>Assigning a normal, roughness, or metalness map makes the <a href=\"/ref/class/Decal.html\">Decal</a> a\nphysically based rendering (PBR) surface. To assign this map from a\n<a href=\"/ref/type/Content.html\">Content</a> object, use\n<a href=\"/ref/class/Decal.html#member-MetalnessMapContent\">MetalnessMapContent</a>.</p>\n"
+			},
+			"MetalnessMapContent": {
+				"Summary": "<p><a href=\"/ref/type/Content.html\">Content</a> object that determines the metalness map of the\nsurface.</p>\n",
+				"Description": "<p>This property takes a <a href=\"/ref/type/Content.html\">Content</a> object that determines the\nmetalness map applied to the surface. A metalness map controls how\nmetallic the surface appears at each point, blending between a dielectric\n(non-metal) and a metallic response to light. It defaults to an empty\ncontent, in which case no metalness map is applied.</p>\n<p>Assigning a normal, roughness, or metalness map makes the <a href=\"/ref/class/Decal.html\">Decal</a> a\nphysically based rendering (PBR) surface.</p>\n"
+			},
+			"NormalMap": {
+				"Summary": "<p>Content ID that determines the normal map of the surface.</p>\n",
+				"Description": "<p>This property takes a content ID that determines the normal map applied to\nthe surface. A normal map perturbs the surface normals used in lighting\ncalculations, adding the appearance of fine detail such as bumps and\ngrooves without changing the underlying geometry. It defaults to an empty\ncontent, in which case no normal map is applied.</p>\n<p>Assigning a normal, roughness, or metalness map makes the <a href=\"/ref/class/Decal.html\">Decal</a> a\nphysically based rendering (PBR) surface. To assign this map from a\n<a href=\"/ref/type/Content.html\">Content</a> object, use\n<a href=\"/ref/class/Decal.html#member-NormalMapContent\">NormalMapContent</a>.</p>\n"
+			},
+			"NormalMapContent": {
+				"Summary": "<p><a href=\"/ref/type/Content.html\">Content</a> object that determines the normal map of the surface.</p>\n",
+				"Description": "<p>This property takes a <a href=\"/ref/type/Content.html\">Content</a> object that determines the normal\nmap applied to the surface. A normal map perturbs the surface normals used\nin lighting calculations, adding the appearance of fine detail such as\nbumps and grooves without changing the underlying geometry. It defaults to\nan empty content, in which case no normal map is applied.</p>\n<p>Assigning a normal, roughness, or metalness map makes the <a href=\"/ref/class/Decal.html\">Decal</a> a\nphysically based rendering (PBR) surface.</p>\n"
+			},
 			"Rotation": {
 				"Summary": "<p>Rotates the decal texture.</p>\n",
 				"Description": "<p>This property controls the rotation angle of the decal texture in degrees.\nRotation is applied to the UV coordinates in the clockwise direction.</p>\n"
 			},
-			"RoughnessMap": {},
-			"RoughnessMapContent": {},
+			"RoughnessMap": {
+				"Summary": "<p>Content ID that determines the roughness map of the surface.</p>\n",
+				"Description": "<p>This property takes a content ID that determines the roughness map applied\nto the surface. A roughness map controls how rough or smooth the surface\nappears at each point, which in turn determines how sharp or blurry its\nreflections are. It defaults to an empty content, in which case no\nroughness map is applied.</p>\n<p>Assigning a normal, roughness, or metalness map makes the <a href=\"/ref/class/Decal.html\">Decal</a> a\nphysically based rendering (PBR) surface. To assign this map from a\n<a href=\"/ref/type/Content.html\">Content</a> object, use\n<a href=\"/ref/class/Decal.html#member-RoughnessMapContent\">RoughnessMapContent</a>.</p>\n"
+			},
+			"RoughnessMapContent": {
+				"Summary": "<p><a href=\"/ref/type/Content.html\">Content</a> object that determines the roughness map of the\nsurface.</p>\n",
+				"Description": "<p>This property takes a <a href=\"/ref/type/Content.html\">Content</a> object that determines the\nroughness map applied to the surface. A roughness map controls how rough\nor smooth the surface appears at each point, which in turn determines how\nsharp or blurry its reflections are. It defaults to an empty content, in\nwhich case no roughness map is applied.</p>\n<p>Assigning a normal, roughness, or metalness map makes the <a href=\"/ref/class/Decal.html\">Decal</a> a\nphysically based rendering (PBR) surface.</p>\n"
+			},
 			"Shiny": {
+				"Summary": "<p>Deprecated property that previously set the shininess of the decal.</p>\n",
 				"Description": "<p>This property dictates how shiny the decal is. It takes a value between\n<code>0</code> and <code>1</code>, where <code>1</code> is &#34;fully shiny.&#34;</p>\n",
 				"DeprecationMessage": "<p>This non-functional property is deprecated and should not be used in new\nwork.</p>\n"
 			},
 			"Specular": {
+				"Summary": "<p>Deprecated property that previously set the specularity of the decal.</p>\n",
 				"Description": "<p>Sets the specularity, which is how the surface responds to light being\nshined on it.</p>\n",
 				"DeprecationMessage": "<p>This property no longer functions correctly and is deprecated. It should\nnot be used in new work.</p>\n"
 			},
@@ -8601,6 +8675,10 @@
 				"Summary": "<p>The texture content displayed by the <a href=\"/ref/class/Decal.html\">Decal</a>.</p>\n",
 				"Description": "<p>The texture content displayed by the <a href=\"/ref/class/Decal.html\">Decal</a>. Supports\n<a href=\"https://create.roblox.com/docs/projects/assets#asset-uris\">asset URIs</a> and\n<a href=\"/ref/class/EditableImage.html\">EditableImage</a> objects.</p>\n",
 				"DeprecationMessage": "<p>This property has been deprecated. Use\n<a href=\"/ref/class/Decal.html#member-ColorMapContent\">ColorMapContent</a> for future work.</p>\n"
+			},
+			"TexturePackContent": {
+				"Summary": "<p>Engine-managed <a href=\"/ref/type/Content.html\">Content</a> that stores the compressed runtime\ntexture-pack data for PBR decals.</p>\n",
+				"Description": "<p>Managed by the engine and not accessible from scripts. A\n<a href=\"/ref/type/Content.html\">Content</a> that holds the decal&#39;s compressed runtime texture data.\nWhen the <a href=\"/ref/class/Decal.html\">Decal</a> is a physically based rendering (PBR) surface, the\nengine packs its color, normal, roughness, and metalness maps into a\nsingle texture-pack asset and references it here. Defaults to an empty\ncontent.</p>\n"
 			},
 			"Transparency": {
 				"Summary": "<p>Determines the transparency of the <a href=\"/ref/class/Decal.html\">Decal</a>.</p>\n",
@@ -15161,10 +15239,18 @@
 			}
 		},
 		"ModerationService": {
-			"BindReviewableContentEventProcessor": {},
-			"CreateReviewableContentAsync": {},
-			"CreateReviewableContentKey": {},
-			"InternalRequestReviewableContentReviewAsync": {}
+			"BindReviewableContentEventProcessor": {
+				"Summary": "<p>Registers a server-side processor, ordered by <code>priority</code>, that is invoked\nfor each moderation review event on reviewable content.</p>\n",
+				"Description": "<p>Binds a callback that the server invokes for each moderation review event\nproduced for content registered through\n<a href=\"/ref/class/ModerationService.html#member-CreateReviewableContentAsync\">CreateReviewableContentAsync()</a>.</p>\n<p>Once at least one processor is bound, review events are delivered to the\nbound processors in <code>priority</code> order. The <code>callback</code> function receives a\nsingle table with the following fields:</p>\n<ul>\n<li><code>Id</code> — The reviewable-content ID the event refers to.</li>\n<li><code>State</code> — The review state (<code>ReviewableContentState</code>).</li>\n<li><code>Ref</code> — The optional caller-supplied reference string passed to\n<a href=\"/ref/class/ModerationService.html#member-CreateReviewableContentAsync\">CreateReviewableContentAsync()</a>,\npresent only when one was supplied.</li>\n<li><code>ModerationResult</code> — Present when a moderation result is available, a\ntable with a <code>Category</code> (<code>ModerationResultCategory</code>) and, when a\nviolation is detected, a <code>Labels</code> array of <code>ModerationResultLabel</code>\nvalues.</li>\n</ul>\n<p>Processors run as a chain: if a processor returns <code>true</code>, the event is\nacknowledged, deleted from the backend, and removed from the pending set,\nand no further processors run for that event. If it returns <code>false</code> (or\ndoes not return a boolean), the next processor runs; if no processor\nreturns <code>true</code>, the event is left unacknowledged and redelivered on a\nlater poll.</p>\n"
+			},
+			"CreateReviewableContentAsync": {
+				"Summary": "<p>Registers user-generated captures for moderation review and triggers the\nowning clients to upload them, returning the reviewable-content ID.</p>\n",
+				"Description": "<p>Registers one or more captures as a single unit of reviewable content and\nstarts its moderation review. This is a yielding function that must be\ncalled on the server and is restricted to allow-listed universes; calling\nit from a universe that is not permitted to use this API raises an error.</p>\n<p>The <code>config</code> table accepts:</p>\n<ul>\n<li><code>Id</code> — An optional caller-chosen ID for the reviewable content.\nSupplying an ID that already exists raises an error.</li>\n<li><code>Ref</code> — An optional reference string echoed back on the events delivered\nto processors bound with\n<a href=\"/ref/class/ModerationService.html#member-BindReviewableContentEventProcessor\">BindReviewableContentEventProcessor()</a>.</li>\n<li><code>Content</code> — A list of items (currently limited to one), each containing\neither an <code>Image</code> or a <code>Video</code> table with a <code>UserId</code> (the owning player)\nand a <code>ContentKey</code> obtained from\n<a href=\"/ref/class/ModerationService.html#member-CreateReviewableContentKey\">CreateReviewableContentKey()</a>.</li>\n</ul>\n<p>The method registers the content with the backend and returns the\nreviewable content ID. Review results are later delivered to bound\nprocessors as the moderation review completes.</p>\n"
+			},
+			"CreateReviewableContentKey": {
+				"Summary": "<p>Returns an opaque key that identifies a screenshot or video capture for\nuse with\n<a href=\"/ref/class/ModerationService.html#member-CreateReviewableContentAsync\">CreateReviewableContentAsync()</a>.</p>\n",
+				"Description": "<p>Produces an opaque key that describes a single capture so it can be\nsubmitted to\n<a href=\"/ref/class/ModerationService.html#member-CreateReviewableContentAsync\">CreateReviewableContentAsync()</a>.</p>\n<p>The <code>content</code> must reference a supported capture (a temporary content URI\nproduced by <a href=\"/ref/class/CaptureService.html#member-CaptureScreenshot\">CaptureService:CaptureScreenshot()</a>, a\n<a href=\"/ref/class/ScreenshotCapture.html\">ScreenshotCapture</a> object, or a <a href=\"/ref/class/VideoCapture.html\">VideoCapture</a> object). Any\nother content raises an error.</p>\n"
+			}
 		},
 		"ModuleScript": {
 			"LinkedSource": {
@@ -15906,11 +15992,6 @@
 			}
 		},
 		"PatchBundlerFileWatch": {},
-		"PatchMapping": {
-			"FlattenTree": {},
-			"PatchId": {},
-			"TargetPath": {}
-		},
 		"Path": {
 			"Blocked": {
 				"Summary": "<p>Fires when the computed path becomes blocked.</p>\n",
@@ -18534,6 +18615,10 @@
 				"Summary": "<p>Returns whether the current environment is in <code>Edit</code> mode.</p>\n",
 				"Description": "<p>This method returns whether the current environment is in &#34;edit&#34; mode, for\nexample in Studio when the experience is not running.</p>\n<p><code>IsEdit()</code> will return the inverse of\n<a href=\"/ref/class/RunService.html#member-IsRunning\">IsRunning()</a>, except when the simulation has\nbeen paused, in which case both methods will return <code>false</code>.</p>\n"
 			},
+			"IsResimulating": {
+				"Summary": "<p>Returns whether the client is currently in a resimulation step after a\nmisprediction in the server authority model.</p>\n",
+				"Description": "<p>Returns <code>true</code> if the engine is currently replaying simulation steps after\ndetecting a misprediction in the server authority model; returns <code>false</code>\notherwise. When the server&#39;s authoritative state diverges from the\nclient&#39;s predicted state, the client rolls back and rapidly resimulates\nall affected steps within a single frame. During that resimulation pass,\n<a href=\"/ref/class/RunService.html#member-BindToSimulation\">BindToSimulation()</a> callbacks and\nproperty-changed signals fire again for each replayed step, which can\ncause unwanted side effects such as duplicate sound playback or redundant\nnetwork requests.</p>\n"
+			},
 			"IsRunMode": {
 				"Summary": "<p>Returns whether a <strong>Run</strong> playtest has been initiated in Studio.</p>\n",
 				"Description": "<p>This method returns whether a <strong>Run</strong> playtest has been initiated in\nStudio. It will continue to return <code>true</code> if the simulation has been\npaused using the <strong>Pause</strong> button; however, once it has been stopped using\nthe <strong>Stop</strong> button, it will revert to returning <code>false</code>. Note that Studio\nonly enters &#34;run&#34; mode when a <strong>Run</strong> playtest (without the user&#39;s player\ncharacter) is initiated. Also note that this method will return <code>false</code> if\nthe simulation was started using <a href=\"/ref/class/RunService.html#member-Run\">RunService:Run()</a>.</p>\n"
@@ -18597,7 +18682,10 @@
 				"Summary": "<p>Runs the game&#39;s simulation, running physics and scripts.</p>\n",
 				"Description": "<p>This method runs the experience&#39;s simulation (physics and scripts). When\nthe simulation is running, <a href=\"/ref/class/RunService.html#member-IsRunning\">IsRunning()</a> will\nreturn <code>true</code>. However, <a href=\"/ref/class/RunService.html#member-IsRunMode\">IsRunMode()</a> will\nonly return <code>true</code> if the simulation was started using the <strong>Run</strong> button\nin Studio.</p>\n"
 			},
-			"RunState": {},
+			"RunState": {
+				"Summary": "<p>The current run state of the game&#39;s simulation.</p>\n",
+				"Description": "<p>An <a href=\"/ref/enum/RunState.html\">RunState</a> value that reflects whether the game&#39;s simulation is\nstopped, running, or paused. Reading reports the current state; setting it\ntransitions the simulation, equivalent to <a href=\"/ref/class/RunService.html#member-Run\">RunService:Run()</a>,\n<a href=\"/ref/class/RunService.html#member-Pause\">RunService:Pause()</a>, and <a href=\"/ref/class/RunService.html#member-Stop\">RunService:Stop()</a> for the\ncorresponding states. Defaults to <a href=\"/ref/enum/RunState.html\">RunState.Stopped</a>. Setting this\nproperty requires <code>Plugin</code> security.</p>\n<p>The state reported here backs the context methods on <a href=\"/ref/class/RunService.html\">RunService</a>:\nit is <code>Running</code> when <a href=\"/ref/class/RunService.html#member-IsRunning\">IsRunning()</a> returns\n<code>true</code>, and <code>Stopped</code> when <a href=\"/ref/class/RunService.html#member-IsEdit\">IsEdit()</a> returns\n<code>true</code>.</p>\n"
+			},
 			"SetPredictionMode": {
 				"Summary": "<p>Sets the prediction mode for an <a href=\"/ref/class/Instance.html\">Instance</a> to an\n<a href=\"/ref/enum/PredictionMode.html\">PredictionMode</a> value.</p>\n",
 				"Description": "<p>Sets the prediction mode for an <a href=\"/ref/class/Instance.html\">Instance</a> (<code>context</code>) to an\n<a href=\"/ref/enum/PredictionMode.html\">PredictionMode</a> value. Mismatches between the physics properties or\nattributes for predicted instances will cause a rollback and resimulation\non the client. Can only be called on the client.</p>\n"
@@ -22854,7 +22942,10 @@
 			}
 		},
 		"TextChatCommand": {
-			"AutocompleteVisible": {},
+			"AutocompleteVisible": {
+				"Summary": "<p>Determines whether the <a href=\"/ref/class/TextChatCommand.html\">TextChatCommand</a> is shown as a suggestion in\nthe chat autocomplete menu.</p>\n",
+				"Description": "<p>Whether this <a href=\"/ref/class/TextChatCommand.html\">TextChatCommand</a> appears as a suggestion in the chat\nautocomplete menu. Defaults to <code>true</code>.</p>\n<p>When <code>true</code>, <a href=\"/ref/class/TextChatCommand.html#member-PrimaryAlias\">PrimaryAlias</a> is offered\nin the autocomplete list. Set to <code>false</code> to hide it from suggestions; the\ncommand still works when typed in full via\n<a href=\"/ref/class/TextChatCommand.html#member-PrimaryAlias\">PrimaryAlias</a> or\n<a href=\"/ref/class/TextChatCommand.html#member-SecondaryAlias\">SecondaryAlias</a>.</p>\n<p>Autocomplete itself is controlled by\n<a href=\"/ref/class/ChatInputBarConfiguration.html#member-AutocompleteEnabled\">ChatInputBarConfiguration.AutocompleteEnabled</a>.</p>\n"
+			},
 			"Enabled": {
 				"Summary": "<p>Determines whether the <a href=\"/ref/class/TextChatCommand.html\">TextChatCommand</a> is enabled.</p>\n",
 				"Description": "<p>Determines whether the <a href=\"/ref/class/TextChatCommand.html\">TextChatCommand</a> is enabled.</p>\n<p>When disabled, messages that match the value of\n<a href=\"/ref/class/TextChatCommand.html#member-PrimaryAlias\">PrimaryAlias</a> or\n<a href=\"/ref/class/TextChatCommand.html#member-SecondaryAlias\">SecondaryAlias</a> are not sunk and is\nsent to other users.</p>\n<p>Use this to disable default commands on a case-by-case basis.</p>\n"
@@ -22865,7 +22956,7 @@
 			},
 			"SecondaryAlias": {
 				"Summary": "<p>A secondary alias used to trigger the <a href=\"/ref/class/TextChatCommand.html\">TextChatCommand</a>.</p>\n",
-				"Description": "<p>A secondary alias used to trigger the <a href=\"/ref/class/TextChatCommand.html\">TextChatCommand</a>.</p>\n"
+				"Description": "<p>A secondary alias used to trigger the <a href=\"/ref/class/TextChatCommand.html\">TextChatCommand</a>, in addition\nto its <a href=\"/ref/class/TextChatCommand.html#member-PrimaryAlias\">PrimaryAlias</a>.</p>\n<p>If a user sends a message with <a href=\"/ref/class/TextChannel.html#member-SendAsync\">TextChannel:SendAsync()</a> that\nmatches the <a href=\"/ref/class/TextChatCommand.html#member-SecondaryAlias\">SecondaryAlias</a>, the\nmessage is not sent and instead <a href=\"/ref/class/TextChatCommand.html#member-Triggered\">TextChatCommand.Triggered</a> is\nfired, exactly as it is for the\n<a href=\"/ref/class/TextChatCommand.html#member-PrimaryAlias\">PrimaryAlias</a>. Matching is\ncase-insensitive, and the alias must be followed by the end of the message\nor a space, so a <a href=\"/ref/class/TextChatCommand.html#member-SecondaryAlias\">SecondaryAlias</a> of\n<code>&#34;/e&#34;</code> matches <code>&#34;/e&#34;</code> and <code>&#34;/e dance&#34;</code> but not <code>&#34;/emote&#34;</code>.</p>\n<p>Defaults to an empty string, in which case only the\n<a href=\"/ref/class/TextChatCommand.html#member-PrimaryAlias\">PrimaryAlias</a> triggers the command.</p>\n"
 			},
 			"Triggered": {
 				"Summary": "<p>An event that developers can bind to execute commands.</p>\n",
@@ -22874,8 +22965,14 @@
 		},
 		"TextChatConfigurations": {},
 		"TextChatMessage": {
-			"BubbleChatMessageProperties": {},
-			"ChatWindowMessageProperties": {},
+			"BubbleChatMessageProperties": {
+				"Summary": "<p>A reference to the <a href=\"/ref/class/BubbleChatMessageProperties.html\">BubbleChatMessageProperties</a> that overrides the\nappearance of this message&#39;s chat bubble.</p>\n",
+				"Description": "<p>A reference to the <a href=\"/ref/class/BubbleChatMessageProperties.html\">BubbleChatMessageProperties</a> instance that\noverrides <a href=\"/ref/class/BubbleChatConfiguration.html\">BubbleChatConfiguration</a> properties for this individual\nmessage&#39;s chat bubble.</p>\n<p>This property is <code>nil</code> by default. It is populated when your\n<a href=\"/ref/class/TextChatService.html#member-OnBubbleAdded\">TextChatService.OnBubbleAdded</a> callback returns a\n<a href=\"/ref/class/BubbleChatMessageProperties.html\">BubbleChatMessageProperties</a> instance: the returned instance is\nstored here on the resulting <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>. Any properties set\non it take precedence over the shared <a href=\"/ref/class/BubbleChatConfiguration.html\">BubbleChatConfiguration</a> when\nthe message&#39;s bubble is rendered.</p>\n"
+			},
+			"ChatWindowMessageProperties": {
+				"Summary": "<p>A reference to the <a href=\"/ref/class/ChatWindowMessageProperties.html\">ChatWindowMessageProperties</a> that overrides the\nappearance of this message in the chat window.</p>\n",
+				"Description": "<p>A reference to the <a href=\"/ref/class/ChatWindowMessageProperties.html\">ChatWindowMessageProperties</a> instance that\noverrides <a href=\"/ref/class/ChatWindowConfiguration.html\">ChatWindowConfiguration</a> properties for this individual\nmessage as displayed in the chat window.</p>\n<p>This property is <code>nil</code> by default. It is populated when your\n<a href=\"/ref/class/TextChatService.html#member-OnChatWindowAdded\">TextChatService.OnChatWindowAdded</a> callback returns a\n<a href=\"/ref/class/ChatWindowMessageProperties.html\">ChatWindowMessageProperties</a> instance, typically created with\n<a href=\"/ref/class/ChatWindowConfiguration.html#member-DeriveNewMessageProperties\">ChatWindowConfiguration:DeriveNewMessageProperties()</a>: the returned\ninstance is stored here on the resulting <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>. Any\nproperties set on it take precedence over the shared\n<a href=\"/ref/class/ChatWindowConfiguration.html\">ChatWindowConfiguration</a> when the message is rendered.</p>\n"
+			},
 			"MessageId": {
 				"Summary": "<p>A unique identifier for the <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>.</p>\n",
 				"Description": "<p>A unique identifier for the <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>.</p>\n"
@@ -22949,7 +23046,7 @@
 			},
 			"ChatTranslationEnabled": {
 				"Summary": "<p>Determines whether a user has chat translation enabled.</p>\n",
-				"Description": "<p>Determines whether a user has chat translation enabled. If <code>true</code>,\nmessages the user receives will be translated into their preferred\nlanguage. Use <a href=\"/ref/class/TextChatMessage.html#member-Translation\">TextChatMessage.Translation</a> to get the message\ntranslation.</p>\n"
+				"Description": "<p>Determines whether a user has chat translation enabled. If <code>true</code>,\nmessages the user receives will be translated into their preferred\nlanguage. Use <a href=\"/ref/class/TextChatMessage.html#member-Translation\">TextChatMessage.Translation</a> to get the message\ntranslation. This property is client-side only and reflects the user&#39;s own\npreference; read it from a <a href=\"/ref/class/LocalScript.html\">LocalScript</a> to adapt custom chat UIs\nwhen the user toggles translation.</p>\n"
 			},
 			"ChatVersion": {
 				"Summary": "<p>Determines whether to fully enable <a href=\"/ref/class/TextChatService.html\">TextChatService</a> or revert to\nthe legacy chat system.</p>\n",
@@ -22970,7 +23067,7 @@
 			},
 			"GetChatGroupsAsync": {
 				"Summary": "<p>Returns chat group IDs that indicate which players can synchronously text\nchat together.</p>\n",
-				"Description": "<p>Returns a sorted array of arrays of chat group IDs for the given players.\nEach chat group ID is a string that represents a communication-compatible\ngroup within the current universe.</p>\n<p>If two or more players share the same chat group ID, those players are\nable to synchronously text chat with each other based on their age-check\nstatus and chat settings.</p>\n<p>This method is server-side only and intended for real-time use cases such\nas matchmaking and teleporting. Chat group IDs are unique to the current\nuniverse, may change over time, and should not be stored once the user has\nleft the experience. While you can hold onto the data returned for the\npurposes of gameplay while the user is in the experience, this data should\nnot be stored after they&#39;ve left.</p>\n<p>To use this method, you must enable <strong>Chat &amp; Voice Groups APIs</strong> in\n<strong>Experience Settings</strong> ⟩ <strong>Communication</strong> in Roblox Studio and agree to\nthe Roblox Terms of Use.</p>\n<p>In Roblox Studio this API is only available when the experience is running\nin <strong>Team Test</strong>.</p>\n",
+				"Description": "<p>Returns a sorted array of arrays of chat group IDs for the given players.\nEach chat group ID is a string that represents a communication-compatible\ngroup within the current universe.</p>\n<p>If two or more players share the same chat group ID, those players are\nable to synchronously text chat with each other based on their age-check\nstatus and chat settings.</p>\n<p>This method is server-side only and intended for real-time use cases such\nas matchmaking and teleporting. It is more efficient than calling\n<a href=\"/ref/class/TextChatService.html#member-CanUsersChatAsync\">TextChatService:CanUsersChatAsync()</a> pairwise when evaluating many\nplayers at once, since pairwise checks scale as N^2 and cannot be merged\nacross player lists. Chat group IDs are unique to the current universe,\nmay change over time, and should not be stored once the user has left the\nexperience. While you can hold onto the data returned for the purposes of\ngameplay while the user is in the experience, this data should not be\nstored after they&#39;ve left.</p>\n<p>To use this method, you must enable <strong>Chat &amp; Voice Groups APIs</strong> in\n<strong>Experience Settings</strong> ⟩ <strong>Communication</strong> in Roblox Studio and agree to\nthe Roblox Terms of Use.</p>\n<p>In Roblox Studio this API is only available when the experience is running\nin <strong>Team Test</strong>.</p>\n",
 				"CodeSamples": [
 					"TextChatService-Chat-Groups-Teleport",
 					"TextChatService-GetChatGroupsAsync"
@@ -22990,7 +23087,11 @@
 			},
 			"OnIncomingMessage": {
 				"Summary": "<p>Called when <a href=\"/ref/class/TextChatService.html\">TextChatService</a> is receiving an incoming message.</p>\n",
-				"Description": "<p>Called when <a href=\"/ref/class/TextChatService.html\">TextChatService</a> is receiving an incoming message. Can\nonly be implemented on the client.</p>\n<p>Use this to decorate <a href=\"/ref/class/TextChatMessage.html\">TextChatMessages</a>. If this\ncallback returns a <a href=\"/ref/class/TextChatMessageProperties.html\">TextChatMessageProperties</a>, those properties are\nmerged with the <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a> parameter to create a new\n<a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>.</p>\n<p>When bound to the client sending a message, this callback is run twice;\nfirst when the message is initially sent and received locally, and again\nwhen the client receives the result of the filtered message from the\nserver.</p>\n<p>Note that this <a href=\"/ref/class/TextChatService.html#member-OnIncomingMessage\">TextChatService.OnIncomingMessage</a> callback runs\n<strong>before</strong> any <a href=\"/ref/class/TextChannel.html#member-OnIncomingMessage\">TextChannel.OnIncomingMessage</a> callbacks.</p>\n<p>This should be defined only once in the source code. Multiple bindings\nwill override one another in a non‑deterministic manner.</p>\n"
+				"Description": "<p>Called when <a href=\"/ref/class/TextChatService.html\">TextChatService</a> is receiving an incoming message. Can\nonly be implemented on the client.</p>\n<p>Use this to decorate <a href=\"/ref/class/TextChatMessage.html\">TextChatMessages</a>. If this\ncallback returns a <a href=\"/ref/class/TextChatMessageProperties.html\">TextChatMessageProperties</a>, those properties are\nmerged with the <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a> parameter to create a new\n<a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>.</p>\n<p>When bound to the client sending a message, this callback is run twice;\nfirst when the message is initially sent and received locally, and again\nwhen the client receives the result of the filtered message from the\nserver.</p>\n<p>Note that this <a href=\"/ref/class/TextChatService.html#member-OnIncomingMessage\">TextChatService.OnIncomingMessage</a> callback runs\n<strong>before</strong> any <a href=\"/ref/class/TextChannel.html#member-OnIncomingMessage\">TextChannel.OnIncomingMessage</a> callbacks.</p>\n<p>This should be defined only once in the source code. Multiple bindings\nwill override one another in a non‑deterministic manner. This callback is\nnot invoked when <a href=\"/ref/class/TextChatService.html#member-PlatformIntegratedChat\">TextChatService.PlatformIntegratedChat</a> is set to\n<a href=\"/ref/enum/RolloutState.html\">RolloutState.Enabled</a>.</p>\n"
+			},
+			"PlatformIntegratedChat": {
+				"Summary": "<p>Determines whether platform-integrated chat is enabled for the experience.\nRequires <code>RobloxScript</code> security.</p>\n",
+				"Description": "<p>Requires <code>RobloxScript</code> security; not accessible from experience scripts.\nControls whether platform-integrated chat is enabled for the experience.\nWhen set to <a href=\"/ref/enum/RolloutState.html\">RolloutState.Enabled</a>,\n<a href=\"/ref/class/TextChatService.html#member-OnIncomingMessage\">TextChatService.OnIncomingMessage</a> and\n<a href=\"/ref/class/TextChannel.html#member-OnIncomingMessage\">TextChannel.OnIncomingMessage</a> callbacks from developer scripts are\nnot invoked, and only CoreScripts can set those callbacks. When set to\n<a href=\"/ref/enum/RolloutState.html\">RolloutState.Disabled</a>, behavior is explicitly disabled. Defaults to\n<a href=\"/ref/enum/RolloutState.html\">RolloutState.Default</a>.</p>\n"
 			},
 			"SendingMessage": {
 				"Summary": "<p>Fires when <a href=\"/ref/class/TextChannel.html#member-SendAsync\">TextChannel:SendAsync()</a> is called by the sending\nclient.</p>\n",
@@ -25956,16 +26057,31 @@
 			"Summary": "<p>The active physics component of the constraint.</p>\n",
 			"Description": "<p>The active physics component of the constraint.</p>\n"
 		},
-		"AdAvailabilityResult": {},
+		"AdAvailabilityResult": {
+			"Summary": "<p>Indicates whether an ad is available or the reason it cannot be shown.</p>\n",
+			"Description": "<p>Indicates whether an ad is available or the reason it cannot be shown.</p>\n"
+		},
 		"AdEventType": {},
-		"AdFormat": {},
+		"AdFormat": {
+			"Summary": "<p>Specifies the format of an ad used with <a href=\"/ref/class/AdService.html\">AdService</a> methods.</p>\n",
+			"Description": "<p>Specifies the format of an ad passed to <a href=\"/ref/class/AdService.html\">AdService</a> methods such as\n<a href=\"/ref/class/AdService.html#member-GetAdAvailabilityNowAsync\">AdService:GetAdAvailabilityNowAsync()</a>.</p>\n"
+		},
 		"AdShape": {
 			"Summary": "<p>Describes the form factor of an ad in an <a href=\"/ref/class/AdGui.html\">AdGui</a>. There is currently\nonly one available size.</p>\n",
 			"Description": "<p>Describes the form factor of an ad in an <a href=\"/ref/class/AdGui.html\">AdGui</a>. There is currently\nonly one available size.</p>\n"
 		},
-		"AdTeleportMethod": {},
-		"AdUIEventType": {},
-		"AdUIType": {},
+		"AdTeleportMethod": {
+			"Summary": "<p>Describes the method by which a player teleports during an immersive ad portal\nflow.</p>\n",
+			"Description": "<p>Describes the user-initiated method by which a player teleports during an\nimmersive ad portal flow, distinguishing forward travel to the advertiser&#39;s\nexperience from a return to the publisher&#39;s experience.</p>\n"
+		},
+		"AdUIEventType": {
+			"Summary": "<p>Describes the type of user-interaction or system event that occurred on the\nimmersive ad UI overlay of an <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n",
+			"Description": "<p>Describes the type of user-interaction or system event that occurred on the\nimmersive ad UI overlay of an <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n"
+		},
+		"AdUIType": {
+			"Summary": "<p>Describes the type of ad creative currently rendered by an <a href=\"/ref/class/AdGui.html\">AdGui</a>.</p>\n",
+			"Description": "<p>Describes the type of ad creative that an <a href=\"/ref/class/AdGui.html\">AdGui</a> is currently rendering\non its surface. Managed by the engine based on the creative asset served to\nthe ad slot.</p>\n"
+		},
 		"AdUnitStatus": {
 			"Summary": "<p>Exposes the status of an immersive ad.</p>\n",
 			"Description": "<p>Exposes the status of an immersive ad.</p>\n"
@@ -25995,18 +26111,29 @@
 			"Description": "<p>Used to form a dictionary of custom fields to provide breakdowns in\nRoblox-provided charts. For example:</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\">1\n</span><span class=\"_lnt\">2\n</span><span class=\"_lnt\">3\n</span><span class=\"_lnt\">4\n</span><span class=\"_lnt\">5\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">customFields</span> <span class=\"_o\">=</span> <span class=\"_p\">{</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_p\">[</span><span class=\"_n\">Enum.AnalyticsCustomFieldKeys</span><span class=\"_p\">.</span><span class=\"_n\">CustomField01.Name</span><span class=\"_p\">]</span> <span class=\"_o\">=</span> <span class=\"_s2\">&#34;value1&#34;</span><span class=\"_p\">,</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_p\">[</span><span class=\"_n\">Enum.AnalyticsCustomFieldKeys</span><span class=\"_p\">.</span><span class=\"_n\">CustomField02.Name</span><span class=\"_p\">]</span> <span class=\"_o\">=</span> <span class=\"_s2\">&#34;value2&#34;</span><span class=\"_p\">,</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\t<span class=\"_p\">[</span><span class=\"_n\">Enum.AnalyticsCustomFieldKeys</span><span class=\"_p\">.</span><span class=\"_n\">CustomField03.Name</span><span class=\"_p\">]</span> <span class=\"_o\">=</span> <span class=\"_s2\">&#34;value3&#34;</span><span class=\"_p\">,</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_p\">}</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n"
 		},
 		"AnalyticsEconomyAction": {
+			"Summary": "<p>Describes the type of economic transaction in\n<a href=\"/ref/class/AnalyticsService.html#member-FireInGameEconomyEvent\">AnalyticsService:FireInGameEconomyEvent()</a>.</p>\n",
 			"Description": "<p>This enum is used as an argument in\n<a href=\"/ref/class/AnalyticsService.html#member-FireInGameEconomyEvent\">AnalyticsService:FireInGameEconomyEvent()</a>.</p>\n"
 		},
-		"AnalyticsEconomyFlowType": {},
-		"AnalyticsEconomyTransactionType": {},
+		"AnalyticsEconomyFlowType": {
+			"Summary": "<p>Specifies the direction of currency flow in an economy event logged by\n<a href=\"/ref/class/AnalyticsService.html#member-LogEconomyEvent\">AnalyticsService:LogEconomyEvent()</a>.</p>\n",
+			"Description": "<p>Passed as the <code>flowType</code> argument to\n<a href=\"/ref/class/AnalyticsService.html#member-LogEconomyEvent\">AnalyticsService:LogEconomyEvent()</a> to indicate whether an\nin-experience currency transaction is adding currency to or removing currency\nfrom a player&#39;s balance. Use <a href=\"/ref/enum/AnalyticsEconomyFlowType.html\">Source</a>\nwhen the player gains currency (for example, purchasing coins with Robux or\nearning gold from gameplay) and <a href=\"/ref/enum/AnalyticsEconomyFlowType.html\">Sink</a> when\nthe player spends currency (for example, buying an item from a shop).</p>\n"
+		},
+		"AnalyticsEconomyTransactionType": {
+			"Summary": "<p>Categorizes the context of an in-experience economic transaction for use with\n<a href=\"/ref/class/AnalyticsService.html#member-LogEconomyEvent\">AnalyticsService:LogEconomyEvent()</a>.</p>\n",
+			"Description": "<p>This enum provides recommended values for the <code>transactionType</code> parameter of\n<a href=\"/ref/class/AnalyticsService.html#member-LogEconomyEvent\">AnalyticsService:LogEconomyEvent()</a>. Because <code>transactionType</code> is typed\nas a string, pass the <code>Name</code> property of the enum item (for example,\n<a href=\"/ref/enum/AnalyticsEconomyTransactionType.html\">AnalyticsEconomyTransactionType.IAP.Name</a>). Using these standard values\nenables Roblox-provided analytics charts to break down economy data by\ntransaction context. Custom strings are also accepted; the experience is\nlimited to 20 unique transaction types total.</p>\n"
+		},
 		"AnalyticsLogLevel": {
-			"Description": "<p>This enum is used as an argument in <a href=\"/ref/class/AnalyticsService.html#member-LogEvent\">AnalyticsService.LogEvent</a> to\ndescribe the error severity level.</p>\n"
+			"Summary": "<p>Specifies the severity level of an analytics log event passed to\n<a href=\"/ref/class/AnalyticsService.html#member-FireLogEvent\">AnalyticsService:FireLogEvent()</a>.</p>\n",
+			"Description": "<p>This enum is used as an argument in <a href=\"/ref/class/AnalyticsService.html#member-FireLogEvent\">AnalyticsService:FireLogEvent()</a> to\ndescribe the error severity level.</p>\n"
 		},
 		"AnalyticsProgressionStatus": {
 			"Summary": "<p>This enum is used as an argument in\n<a href=\"/ref/class/AnalyticsService.html#member-FirePlayerProgressionEvent\">AnalyticsService:FirePlayerProgressionEvent()</a> to describe the status\nof progression.</p>\n",
 			"Description": "<p>This enum is used as an argument in\n<a href=\"/ref/class/AnalyticsService.html#member-FirePlayerProgressionEvent\">AnalyticsService:FirePlayerProgressionEvent()</a> to describe the status\nof progression.</p>\n"
 		},
-		"AnalyticsProgressionType": {},
+		"AnalyticsProgressionType": {
+			"Summary": "<p>Specifies the player&#39;s progression status in a level-progression event logged\nby <a href=\"/ref/class/AnalyticsService.html#member-LogProgressionEvent\">AnalyticsService:LogProgressionEvent()</a>.</p>\n",
+			"Description": "<p>Passed as the <code>status</code> argument to\n<a href=\"/ref/class/AnalyticsService.html#member-LogProgressionEvent\">AnalyticsService:LogProgressionEvent()</a> to indicate whether a player is\nstarting, completing, or failing a level attempt. The convenience methods\n<a href=\"/ref/class/AnalyticsService.html#member-LogProgressionStartEvent\">AnalyticsService:LogProgressionStartEvent()</a>,\n<a href=\"/ref/class/AnalyticsService.html#member-LogProgressionCompleteEvent\">AnalyticsService:LogProgressionCompleteEvent()</a>, and\n<a href=\"/ref/class/AnalyticsService.html#member-LogProgressionFailEvent\">AnalyticsService:LogProgressionFailEvent()</a> set this value\nautomatically; use <a href=\"/ref/enum/AnalyticsProgressionType.html\">Custom</a> for\nprogression events that fall outside the standard lifecycle.</p>\n"
+		},
 		"AnimationClipFromVideoStatus": {
 			"Summary": "<p>Indicates the current status or final outcome of a video-to-animation\nconversion started by\n<a href=\"/ref/class/AssetService.html#member-PromptImportAnimationClipFromVideoAsync\">AssetService:PromptImportAnimationClipFromVideoAsync()</a>.</p>\n",
 			"Description": "<p>Describes the status of a video-to-animation conversion initiated by\n<a href=\"/ref/class/AssetService.html#member-PromptImportAnimationClipFromVideoAsync\">AssetService:PromptImportAnimationClipFromVideoAsync()</a>. Values in this\nenum are reported both as progress updates through the method&#39;s\n<code>progressCallback</code> and as the final outcome in the returned tuple.</p>\n"
@@ -26299,7 +26426,10 @@
 			"DeprecationMessage": "<p>This enum is deprecated. It used to work with the legacy <a href=\"/ref/class/Terrain.html\">Terrain</a>\nengine to set the orientation of terrain cells.</p>\n"
 		},
 		"CharacterControlMode": {},
-		"ChatCallbackType": {},
+		"ChatCallbackType": {
+			"Summary": "<p>Identifies a hook point in the legacy Luau chat pipeline for use with\n<a href=\"/ref/class/Chat.html#member-RegisterChatCallback\">Chat:RegisterChatCallback()</a> and <a href=\"/ref/class/Chat.html#member-InvokeChatCallback\">Chat:InvokeChatCallback()</a>.</p>\n",
+			"Description": "<p>Enumerates the callback hook points available in the legacy Luau chat system.\nPass a value to <a href=\"/ref/class/Chat.html#member-RegisterChatCallback\">Chat:RegisterChatCallback()</a> to bind a function to the\ncorresponding event, and to <a href=\"/ref/class/Chat.html#member-InvokeChatCallback\">Chat:InvokeChatCallback()</a> to invoke the\nregistered function for that event. Each value targets either the client or\nthe server; attempting to register a server-only callback on the client (or\nvice versa) raises an error.</p>\n"
+		},
 		"ChatColor": {
 			"Summary": "<p>Describes the chat color.</p>\n",
 			"Description": "<p>The <strong>ChatColor</strong> enum is used to change the color of a chat using\n<a href=\"/ref/class/Chat.html\">Chat</a>.</p>\n"
@@ -26312,7 +26442,10 @@
 			"Summary": "<p>Describes which other users a player is permitted to exchange in-game chat\nmessages with.</p>\n",
 			"Description": "<p>Internally controls the user&#39;s chat privacy settings.</p>\n"
 		},
-		"ChatRestrictionStatus": {},
+		"ChatRestrictionStatus": {
+			"Summary": "<p>Describes the chat restriction status that a third-party platform reports for\na user.</p>\n",
+			"Description": "<p>The <code>ChatRestrictionStatus</code> enum represents whether a user is permitted to\nparticipate in text or voice chat as determined by a third-party platform such\nas Xbox or PlayStation. Platform-level restrictions reflect parental controls,\nage restrictions, or account-level communication settings that the platform\nenforces independently of Roblox. This status is surfaced through properties\nsuch as <a href=\"/ref/class/Player.html#member-ThirdPartyTextChatRestrictionStatus\">Player.ThirdPartyTextChatRestrictionStatus</a>,\n<code>FriendCommunicationRestrictionStatus</code>, and <code>VoiceChatRestrictionStatus</code>, all\nof which default to <a href=\"/ref/enum/ChatRestrictionStatus.html\">ChatRestrictionStatus.Unknown</a> until the platform\nreports a definitive value.</p>\n"
+		},
 		"ChatStyle": {
 			"Summary": "<p>The ChatStyle Enum is used to set the style of <a href=\"/ref/class/Chat.html\">Chat</a> used in a game via\nthe <a href=\"/ref/class/Players.html#member-SetChatStyle\">Players:SetChatStyle()</a> method.</p>\n",
 			"Description": "<p>The ChatStyle Enum is used to set the style of <a href=\"/ref/class/Chat.html\">Chat</a> used in a game via\nthe <a href=\"/ref/class/Players.html#member-SetChatStyle\">Players:SetChatStyle()</a> method.</p>\n"
@@ -26730,7 +26863,6 @@
 		"HoverAnimateSpeed": {
 			"Description": "<p>Specifies how frequently the hover animation flashes.</p>\n"
 		},
-		"HttpCachePolicy": {},
 		"HttpCompression": {
 			"Summary": "<p>Specifies the compression algorithm applied to HTTP request body sent via\n<a href=\"/ref/class/HttpService.html\">HttpService</a>.</p>\n",
 			"Description": "<p>Specifies the compression algorithm applied to the body of an HTTP request\nwhen calling <a href=\"/ref/class/HttpService.html#member-RequestAsync\">HttpService:RequestAsync()</a> or\n<a href=\"/ref/class/HttpService.html#member-PostAsync\">HttpService:PostAsync()</a>. Pass this enum value in the <code>Compress</code> field\nof the request options table to reduce bandwidth when sending large payloads.</p>\n"
@@ -27168,8 +27300,8 @@
 			"Description": "<p>The <code>ProductPurchaseDecisionEnum</code> is used to work with\n<a href=\"/ref/class/MarketplaceService.html\">MarketplaceService</a>, and the sale of developer products.</p>\n"
 		},
 		"PromptCreateAssetResult": {
-			"Summary": "<p>Describes the result of an <a href=\"/ref/class/AssetService.html#member-PromptCreateAssetAsync\">AssetService:PromptCreateAssetAsync()</a> call.</p>\n",
-			"Description": "<p>Outcome of <a href=\"/ref/class/AssetService.html#member-PromptCreateAssetAsync\">AssetService:PromptCreateAssetAsync()</a> after a player\nresponds to the in-experience asset-creation prompt. Distinguishes a\nsuccessful publish from failure modes such as moderation rejection, declined\nconsent, insufficient Robux, validation failure, or upload errors.</p>\n"
+			"Summary": "<p>Describes the result of a\n<a href=\"/ref/class/AvatarCreationService.html#member-PromptCreateAvatarAssetAsync\">AvatarCreationService:PromptCreateAvatarAssetAsync()</a> call.</p>\n",
+			"Description": "<p>Outcome of <a href=\"/ref/class/AvatarCreationService.html#member-PromptCreateAvatarAssetAsync\">AvatarCreationService:PromptCreateAvatarAssetAsync()</a> after\na player responds to the in-game asset creation prompt. Distinguishes a\nsuccessful publish from failure modes such as moderation rejection, declined\nconsent, insufficient Robux, validation failure, or upload errors.</p>\n"
 		},
 		"PromptCreateAvatarResult": {
 			"Summary": "<p>Result codes returned by\n<a href=\"/ref/class/AvatarCreationService.html#member-PromptCreateAvatarAsync\">AvatarCreationService:PromptCreateAvatarAsync()</a> indicating whether\navatar creation succeeded or why it failed.</p>\n",
@@ -27180,8 +27312,8 @@
 			"Description": "<p>Indicates how the player dismissed the experience details prompt displayed by\n<a href=\"/ref/class/TeleportService.html#member-PromptExperienceDetailsAsync\">TeleportService:PromptExperienceDetailsAsync()</a>. The returned value\nlets scripts distinguish between a player who closed the prompt without acting\nand a player who initiated a teleport to the advertised experience.</p>\n"
 		},
 		"PromptPublishAssetResult": {
-			"Summary": "<p>Describes the result of an <a href=\"/ref/class/AssetService.html#member-PromptCreateAssetAsync\">AssetService:PromptCreateAssetAsync()</a> call.</p>\n",
-			"Description": "<p>Describes the result of an <a href=\"/ref/class/AssetService.html#member-PromptCreateAssetAsync\">AssetService:PromptCreateAssetAsync()</a> call.\nThe result is returned to the experience server after the publish flow\ncompletes, regardless of whether the publish succeeded or failed.</p>\n<p>This enum was also used with the now-deprecated <code>OpenPublishResultModal</code>\nevent. The current equivalent is <a href=\"/ref/enum/PromptCreateAssetResult.html\">PromptCreateAssetResult</a>, which is\nreturned by the <code>OpenCreateResultModal</code> event and is the result type for\n<a href=\"/ref/class/AssetService.html#member-PromptCreateAssetAsync\">AssetService:PromptCreateAssetAsync()</a>.</p>\n"
+			"Summary": "<p>Deprecated result enum for the <code>OpenPublishResultModal</code> event.</p>\n",
+			"Description": "<p>Deprecated result enum for the <code>OpenPublishResultModal</code> event. Use\n<a href=\"/ref/enum/PromptCreatePlatformContentResult.html\">PromptCreatePlatformContentResult</a> instead.</p>\n<p><a href=\"/ref/enum/PromptCreateAssetResult.html\">PromptCreateAssetResult</a> is a separate result enum returned by the\n<code>OpenCreateResultModal</code> event.</p>\n"
 		},
 		"PropertyStatus": {},
 		"ProximityPromptExclusivity": {
@@ -27394,7 +27526,10 @@
 			"Summary": "<p>Classifies the severity level of a Luau LSP diagnostic reported by a Script\nAnalysis callback.</p>\n",
 			"Description": "<p><code>Severity</code> is used in the diagnostics table returned by Script Analysis\ncallbacks registered with\n<a href=\"/ref/class/ScriptEditorService.html#member-RegisterScriptAnalysisCallback\">ScriptEditorService:RegisterScriptAnalysisCallback()</a>. Each diagnostic\nentry can include a <code>severity</code> field set to one of these values to control how\nthe diagnostic is categorized in the <strong>Script Analysis</strong> tool and how the\ncorresponding source range is highlighted in the Script Editor.</p>\n<p>The enum maps directly to the\n<a href=\"https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#diagnosticSeverity\">Language Server Protocol <code>DiagnosticSeverity</code> specification</a>.</p>\n"
 		},
-		"ShowAdResult": {},
+		"ShowAdResult": {
+			"Summary": "<p>Result codes returned by <a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">AdService:ShowRewardedVideoAdAsync()</a>\nindicating whether a rewarded video ad completed successfully or why it did\nnot.</p>\n",
+			"Description": "<p>Result codes returned by <a href=\"/ref/class/AdService.html#member-ShowRewardedVideoAdAsync\">AdService:ShowRewardedVideoAdAsync()</a>\nindicating whether a rewarded video ad completed successfully or why it did\nnot.</p>\n"
+		},
 		"SignalBehavior": {
 			"Summary": "<p>Determines when the engine resumes event handlers.</p>\n",
 			"Description": "<p>Determines when the engine resumes event handlers. At some future point, the\ndefault mode will be <code>Deferred</code> but opt-out will still be possible through use\nof <code>Immediate</code>.</p>\n<p>For more information, see\n<a href=\"https://create.roblox.com/docs/scripting/events/deferred\">Deferred Events</a>.</p>\n"
@@ -27469,7 +27604,10 @@
 		"StudioCaptureScreenshotFormat": {},
 		"StudioCloseMode": {},
 		"StudioPlaceUpdateFailureReason": {},
-		"StudioScriptEditorColorCategories": {},
+		"StudioScriptEditorColorCategories": {
+			"Summary": "<p>Color categories used to theme the Script Editor in Roblox Studio.</p>\n",
+			"Description": "<p>Identifies visual element categories whose colors can be customized in the\nRoblox Studio Script Editor theme system. Each value is a distinct syntactic\nor UI region in the editor.</p>\n"
+		},
 		"StudioScriptEditorColorPresets": {},
 		"StudioStyleGuideColor": {},
 		"StudioStyleGuideModifier": {},
@@ -27550,13 +27688,16 @@
 		},
 		"TextChatMessageStatus": {
 			"Summary": "<p>Indicates the status of a <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>.</p>\n",
-			"Description": "<p>Indicates the status of a <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>.</p>\n"
+			"Description": "<p>Indicates the status of a <a href=\"/ref/class/TextChatMessage.html\">TextChatMessage</a>. The\n<a href=\"/ref/class/TextChatMessage.html#member-Status\">TextChatMessage.Status</a> property is set by\n<a href=\"/ref/class/TextChannel.html#member-SendAsync\">TextChannel:SendAsync()</a> to report the outcome of an attempted send. A\nstatus of <a href=\"/ref/enum/TextChatMessageStatus.html\">TextChatMessageStatus.Success</a> means the message passed all\nserver-side checks; any other value identifies the reason the message was\nblocked or has not yet completed delivery.</p>\n"
 		},
 		"TextDirection": {
 			"Summary": "<p>Controls the base text rendering direction for <a href=\"/ref/class/TextLabel.html\">TextLabel</a>,\n<a href=\"/ref/class/TextButton.html\">TextButton</a>, and <a href=\"/ref/class/TextBox.html\">TextBox</a> instances.</p>\n",
 			"Description": "<p>Controls the base paragraph direction used when laying out text. Used by\n<a href=\"/ref/class/TextLabel.html#member-TextDirection\">TextLabel.TextDirection</a>, <a href=\"/ref/class/TextButton.html#member-TextDirection\">TextButton.TextDirection</a>, and\n<a href=\"/ref/class/TextBox.html#member-TextDirection\">TextBox.TextDirection</a>, which default to <a href=\"/ref/enum/TextDirection.html\">TextDirection.Auto</a>.</p>\n<p><a href=\"/ref/enum/TextDirection.html\">TextDirection.Auto</a> lets the Unicode Bidirectional Algorithm determine\nthe paragraph&#39;s base direction from the first strong directional character.\n<a href=\"/ref/enum/TextDirection.html\">TextDirection.LeftToRight</a> or <a href=\"/ref/enum/TextDirection.html\">TextDirection.RightToLeft</a> pins the\nbase direction regardless of content, which is useful for mixed-script strings\nwhere automatic detection would choose the wrong base.</p>\n"
 		},
-		"TextFilterContext": {},
+		"TextFilterContext": {
+			"Summary": "<p>Indicates whether text submitted to <a href=\"/ref/class/TextService.html#member-FilterStringAsync\">TextService:FilterStringAsync()</a> or\n<a href=\"/ref/class/TextService.html#member-FilterAndTranslateStringAsync\">TextService:FilterAndTranslateStringAsync()</a> is intended for a public\nor private audience, controlling the strictness of the text filtering backend.</p>\n",
+			"Description": "<p>Indicates whether text submitted to <a href=\"/ref/class/TextService.html#member-FilterStringAsync\">TextService:FilterStringAsync()</a> or\n<a href=\"/ref/class/TextService.html#member-FilterAndTranslateStringAsync\">TextService:FilterAndTranslateStringAsync()</a> is intended for a public\nor private audience, controlling the strictness of the text filtering backend.</p>\n"
+		},
 		"TextTruncate": {
 			"Summary": "<p>Controls the truncation of text when using the <code>TextTruncate</code> property.</p>\n",
 			"Description": "<p>Controls the truncation of text when using the <code>TextTruncate</code> property.</p>\n"
@@ -27809,7 +27950,6 @@
 			"Description": "<p>The WaterForce Enum is used to work with <a href=\"/ref/class/Terrain.html\">Terrain</a> water cells.</p>\n",
 			"DeprecationMessage": "<p>This item is deprecated. Do not use it for new work. Please see\n<a href=\"/ref/class/Terrain.html\">Terrain</a> for a list of current function, events, and properties.</p>\n"
 		},
-		"WebSocketState": {},
 		"WebStreamClientState": {
 			"Summary": "<p>WebStreamClientState indicates the current state of a WebStreamClient object.</p>\n",
 			"Description": "<p><code>WebStreamClientState</code> describes the lifecycle state of a\n<a href=\"/ref/class/WebStreamClient.html\">WebStreamClient</a> connection, readable through the\n<a href=\"/ref/class/WebStreamClient.html#member-ConnectionState\">WebStreamClient.ConnectionState</a> property.</p>\n<p>A newly created <a href=\"/ref/class/WebStreamClient.html\">WebStreamClient</a> begins in the <code>Connecting</code> state. On a\nsuccessful handshake the state advances to <code>Open</code>, after which messages can be\nreceived (and sent, for WebSocket connections). The connection terminates in\neither <code>Closed</code> (clean shutdown) or <code>Error</code> (unrecoverable failure). Listening\nto the <a href=\"/ref/class/WebStreamClient.html#member-Opened\">WebStreamClient.Opened</a>, <a href=\"/ref/class/WebStreamClient.html#member-Closed\">WebStreamClient.Closed</a>, and\n<a href=\"/ref/class/WebStreamClient.html#member-Error\">WebStreamClient.Error</a> events is the recommended way to react to these\ntransitions.</p>\n"
@@ -28020,7 +28160,7 @@
 		},
 		"AdFormat": {
 			"RewardedVideo": {
-				"Summary": "<p>The format of the rewarded video ad.</p>\n"
+				"Summary": "<p>A full-screen video ad that plays to completion and rewards the viewer,\nused as the <code>adFormat</code> argument for <a href=\"/ref/class/AdService.html\">AdService</a> methods.</p>\n"
 			}
 		},
 		"AdShape": {
@@ -28029,26 +28169,58 @@
 			}
 		},
 		"AdTeleportMethod": {
-			"InGameMenuBackButton": {},
-			"PortalForward": {},
-			"UIBackButton": {},
-			"Undefined": {}
+			"InGameMenuBackButton": {
+				"Summary": "<p>The player initiated a return teleport to the publisher&#39;s experience by\npressing the back button in the in-game menu.</p>\n"
+			},
+			"PortalForward": {
+				"Summary": "<p>The player teleported forward to the advertiser&#39;s destination experience\nby walking into an <a href=\"/ref/class/AdPortal.html\">AdPortal</a>.</p>\n"
+			},
+			"UIBackButton": {
+				"Summary": "<p>The player initiated a return teleport to the publisher&#39;s experience by\npressing a back button rendered in the ad destination&#39;s UI overlay.</p>\n"
+			},
+			"Undefined": {
+				"Summary": "<p>Default uninitialized sentinel value indicating that no teleport method\nhas been determined yet.</p>\n"
+			}
 		},
 		"AdUIEventType": {
-			"AdLabelClicked": {},
-			"CloseButtonClicked": {},
-			"FullscreenButtonClicked": {},
-			"PauseButtonClicked": {},
-			"PauseEventTriggered": {},
-			"PlayButtonClicked": {},
-			"PlayEventTriggered": {},
-			"VolumeButtonClicked": {},
-			"WhyThisAdClicked": {}
+			"AdLabelClicked": {
+				"Summary": "<p>The player clicked the &#34;Sponsored&#34; label on the ad overlay, which opens\nthe ad disclosure prompt showing advertiser and payer information.</p>\n"
+			},
+			"CloseButtonClicked": {
+				"Summary": "<p>The player clicked the close button on the fullscreen video ad view, which\nexits fullscreen mode and returns to the normal camera position.</p>\n"
+			},
+			"FullscreenButtonClicked": {
+				"Summary": "<p>The player clicked the fullscreen toggle button, which smoothly zooms the\ncamera to a centered view of the ad surface and enables audio.</p>\n"
+			},
+			"PauseButtonClicked": {
+				"Summary": "<p>The player clicked the pause button while a video ad is playing in\nfullscreen mode, which pauses video playback.</p>\n"
+			},
+			"PauseEventTriggered": {
+				"Summary": "<p>A system-initiated pause event, used when the engine needs to force-pause\nthe video (for example, when a dropdown menu opens over the ad). Prevents\nviewability-based auto-play from resuming playback until a corresponding\nsystem event clears that pause.</p>\n"
+			},
+			"PlayButtonClicked": {
+				"Summary": "<p>The player clicked the play button on the ad overlay. If the ad is already\nin fullscreen, playback resumes; otherwise it enters fullscreen mode which\nalso starts (or resumes) the video.</p>\n"
+			},
+			"PlayEventTriggered": {
+				"Summary": "<p>A system-initiated play/resume event that clears the force-pause state and\nresumes video playback if the stream is open.</p>\n"
+			},
+			"VolumeButtonClicked": {
+				"Summary": "<p>The player clicked the volume toggle button on the ad overlay, which mutes\nor unmutes the video ad audio.</p>\n"
+			},
+			"WhyThisAdClicked": {
+				"Summary": "<p>The player clicked the &#34;Why this ad?&#34; link, which displays the EUDSA\n(European Digital Services Act) disclosure prompt showing the advertiser\nand payer names for the current ad creative.</p>\n"
+			}
 		},
 		"AdUIType": {
-			"Image": {},
-			"None": {},
-			"Video": {}
+			"Image": {
+				"Summary": "<p>The <a href=\"/ref/class/AdGui.html\">AdGui</a> is rendering a static image ad creative.</p>\n"
+			},
+			"None": {
+				"Summary": "<p>The <a href=\"/ref/class/AdGui.html\">AdGui</a> has no ad creative loaded and is not rendering ad\ncontent.</p>\n"
+			},
+			"Video": {
+				"Summary": "<p>The <a href=\"/ref/class/AdGui.html\">AdGui</a> is rendering a video ad creative.</p>\n"
+			}
 		},
 		"AdUnitStatus": {
 			"Active": {
@@ -28126,9 +28298,15 @@
 			}
 		},
 		"AnalyticsCustomFieldKeys": {
-			"CustomField01": {},
-			"CustomField02": {},
-			"CustomField03": {}
+			"CustomField01": {
+				"Summary": "<p>The first custom field key, used to provide a breakdown dimension in\nRoblox-provided analytics charts.</p>\n"
+			},
+			"CustomField02": {
+				"Summary": "<p>The second custom field key, used to provide a breakdown dimension in\nRoblox-provided analytics charts.</p>\n"
+			},
+			"CustomField03": {
+				"Summary": "<p>The third custom field key, used to provide a breakdown dimension in\nRoblox-provided analytics charts.</p>\n"
+			}
 		},
 		"AnalyticsEconomyAction": {
 			"Acquire": {
@@ -28179,7 +28357,9 @@
 			"Fatal": {
 				"Summary": "<p>The most critical level, Fatal events demand immediate attention.</p>\n"
 			},
-			"Information": {},
+			"Information": {
+				"Summary": "<p>Used for general informational messages that highlight progress or state\nchanges during normal operation.</p>\n"
+			},
 			"Trace": {
 				"Summary": "<p>Trace is the noisiest level, rarely (if ever) enabled for a production\napp.</p>\n"
 			},
@@ -28205,10 +28385,18 @@
 			}
 		},
 		"AnalyticsProgressionType": {
-			"Complete": {},
-			"Custom": {},
-			"Fail": {},
-			"Start": {}
+			"Complete": {
+				"Summary": "<p>The player completed the level successfully.</p>\n"
+			},
+			"Custom": {
+				"Summary": "<p>A custom progression status for events outside the standard\nstart/fail/complete lifecycle.</p>\n"
+			},
+			"Fail": {
+				"Summary": "<p>The player failed the level attempt.</p>\n"
+			},
+			"Start": {
+				"Summary": "<p>The player started the level attempt.</p>\n"
+			}
 		},
 		"AnimationClipFromVideoStatus": {
 			"Cancelled": {
@@ -29565,23 +29753,31 @@
 			"NoCharacterController": {}
 		},
 		"ChatCallbackType": {
-			"OnClientFormattingMessage": {},
-			"OnClientSendingMessage": {},
-			"OnCreatingChatWindow": {},
-			"OnServerReceivingMessage": {}
+			"OnClientFormattingMessage": {
+				"Summary": "<p>Client-only callback invoked before a message is displayed, allowing its\ndisplay data to be modified.</p>\n"
+			},
+			"OnClientSendingMessage": {
+				"Summary": "<p>Client-only callback reserved for when the client sends a message; not\ncurrently invoked.</p>\n"
+			},
+			"OnCreatingChatWindow": {
+				"Summary": "<p>Client-only callback invoked before the chat window is constructed,\nallowing custom settings to be supplied.</p>\n"
+			},
+			"OnServerReceivingMessage": {
+				"Summary": "<p>Server-only callback invoked when the server receives a message from a\nspeaker, allowing the message to be modified or suppressed.</p>\n"
+			}
 		},
 		"ChatColor": {
 			"Blue": {
-				"Summary": "<p>Blue chat color.</p>\n"
+				"Summary": "<p>The blue chat color; the default value passed to\n<a href=\"/ref/class/Chat.html#member-Chat\">Chat()</a> and <code>ChatLocal()</code>.</p>\n"
 			},
 			"Green": {
-				"Summary": "<p>Green chat color.</p>\n"
+				"Summary": "<p>The green chat color, passed as the <code>color</code> argument to\n<a href=\"/ref/class/Chat.html#member-Chat\">Chat()</a> or <code>ChatLocal()</code>.</p>\n"
 			},
 			"Red": {
-				"Summary": "<p>Red chat color.</p>\n"
+				"Summary": "<p>The red chat color, passed as the <code>color</code> argument to\n<a href=\"/ref/class/Chat.html#member-Chat\">Chat()</a> or <code>ChatLocal()</code>.</p>\n"
 			},
 			"White": {
-				"Summary": "<p>White chat color.</p>\n"
+				"Summary": "<p>The white chat color, passed as the <code>color</code> argument to\n<a href=\"/ref/class/Chat.html#member-Chat\">Chat()</a> or <code>ChatLocal()</code>.</p>\n"
 			}
 		},
 		"ChatMode": {
@@ -29604,9 +29800,15 @@
 			}
 		},
 		"ChatRestrictionStatus": {
-			"NotRestricted": {},
-			"Restricted": {},
-			"Unknown": {}
+			"NotRestricted": {
+				"Summary": "<p>The third-party platform has confirmed the user has no chat restrictions\nin effect.</p>\n"
+			},
+			"Restricted": {
+				"Summary": "<p>The third-party platform has reported the user is restricted from chat,\ntypically due to parental controls or platform communication settings.</p>\n"
+			},
+			"Unknown": {
+				"Summary": "<p>The platform&#39;s chat restriction status for the user has not yet been\ndetermined; this is the default value for all ChatRestrictionStatus\nproperties.</p>\n"
+			}
 		},
 		"ChatStyle": {
 			"Bubble": {
@@ -31476,13 +31678,6 @@
 			"VerySlow": {
 				"Summary": "<p>2 seconds per cycle.</p>\n"
 			}
-		},
-		"HttpCachePolicy": {
-			"DataOnly": {},
-			"Default": {},
-			"Full": {},
-			"InternalRedirectRefresh": {},
-			"None": {}
 		},
 		"HttpCompression": {
 			"Gzip": {
@@ -35196,7 +35391,9 @@
 			"AdNotReady": {
 				"Summary": "<p>You are trying to show a full-screen ad before the ad has fully loaded.\nYou might have failed to properly fetch the ad, or the ad might have\nexpired.</p>\n"
 			},
-			"InsufficientMemory": {},
+			"InsufficientMemory": {
+				"Summary": "<p>The device does not have sufficient video memory available to display the\nad.</p>\n"
+			},
 			"InternalError": {
 				"Summary": "<p>An unspecified internal error occurred. Try showing the ad again.</p>\n"
 			},
@@ -35244,43 +35441,31 @@
 			}
 		},
 		"SlimTintMode": {
-			"LOD": {
-				"Summary": "<p>Colors each mesh by its current level of detail using a blue-to-red\nheatmap. Blue indicates the lowest detail and warmer colors indicate\nhigher detail. Useful for verifying that distant meshes are streaming at\nreduced fidelity.</p>\n"
+			"DataModelState": {
+				"Summary": "<p>Colors SLIM models by whether their DataModel instances are streamed in or\nout. Green indicates streamed in (full DataModel present); yellow\nindicates streamed out (a placeholder). Both are still rendered via SLIM.</p>\n"
 			},
-			"Meshes": {
-				"Summary": "<p>Assigns a distinct color to each individual mesh within a model. Useful\nfor identifying mesh boundaries and verifying how a model is split into\nseparate mesh parts.</p>\n"
+			"LevelOfDetail": {
+				"Summary": "<p>Colors each mesh by its current level of detail. Blue is the coarsest, red\nthe finest, and every rank in between maps to a fixed color. A given color\nalways means the same LOD rank across every mesh, with the exception that\neach mesh&#39;s own highest available LOD is always shown red.</p>\n"
 			},
 			"None": {
 				"Summary": "<p>No tint is applied. Meshes render with their normal appearance.</p>\n"
 			},
 			"TranscoderStatus": {
 				"Summary": "<p>Colors each SLIM model by its <a href=\"/ref/enum/SlimTranscoderStatus.html\">SlimTranscoderStatus</a>. Follow the link\nto see which color maps to each status.</p>\n"
-			},
-			"Zone": {
-				"Summary": "<p>Colors meshes by streaming zone. Green indicates the high-fidelity zone\nwhere the DataModel is present.; yellow indicates the low-fidelity zone\nwhere the DataModel is absent).</p>\n"
 			}
 		},
 		"SlimTranscoderStatus": {
 			"Failed": {
 				"Summary": "<p>Transcoding did not complete successfully. Shown as red in the debug tint\noverlay.</p>\n"
 			},
-			"InProgress": {
-				"Summary": "<p>SLIM transcoding is currently in progress on the backend. The model is\nexpected to transition to Succeeded or Failed once transcoding completes.\nShown as blue in the debug tint overlay.</p>\n"
-			},
-			"NoHash": {
-				"Summary": "<p>The model is SLIM-enabled but does not yet have a generated hash, so\ntranscoding has not been requested. Shown as cyan in the debug tint\noverlay.</p>\n"
-			},
-			"NotUploaded": {
-				"Summary": "<p>The model has not been uploaded to the content-delivery network. Shown as\norange in the debug tint overlay.</p>\n"
-			},
 			"Succeeded": {
 				"Summary": "<p>Transcoding completed successfully and the SLIM assets are available for\nstreaming. Shown as green in the debug tint overlay.</p>\n"
 			},
-			"Unknown": {
-				"Summary": "<p>The transcoding status has not yet been determined. This is the initial\nstate before the model has been queried. Shown as magenta in the debug\ntint overlay.</p>\n"
+			"Transcoding": {
+				"Summary": "<p>SLIM transcoding is currently in progress on the backend. The model is\nexpected to transition to Succeeded or Failed once transcoding completes.\nShown as blue in the debug tint overlay.</p>\n"
 			},
-			"Uploaded": {
-				"Summary": "<p>The model has been uploaded to the content-delivery network but has not\nyet been transcoded into SLIM assets. Shown as yellow in the debug tint\noverlay.</p>\n"
+			"Unknown": {
+				"Summary": "<p>The transcoding status has not yet been determined. This is the initial\nstate before the model has been queried. Shown as yellow in the debug tint\noverlay.</p>\n"
 			}
 		},
 		"SolverConvergenceMetricType": {
@@ -35457,53 +35642,147 @@
 			"TeamCreateConflict": {}
 		},
 		"StudioScriptEditorColorCategories": {
-			"AICOOverlayButtonBackground": {},
-			"AICOOverlayButtonBackgroundHover": {},
-			"AICOOverlayButtonBackgroundPressed": {},
-			"AICOOverlayText": {},
-			"ActiveLine": {},
-			"Background": {},
-			"Bool": {},
-			"Bracket": {},
-			"Builtin": {},
-			"Comment": {},
-			"DebuggerCurrentLine": {},
-			"DebuggerErrorLine": {},
-			"Default": {},
-			"DocViewCodeBackground": {},
-			"Error": {},
-			"FindSelectionBackground": {},
-			"Function": {},
-			"FunctionName": {},
-			"Hint": {},
-			"IndentationRuler": {},
-			"Info": {},
-			"Keyword": {},
-			"Local": {},
-			"LuauKeyword": {},
-			"MatchingWordBackground": {},
-			"MenuBackground": {},
-			"MenuBorder": {},
-			"MenuPrimaryText": {},
-			"MenuScrollbarBackground": {},
-			"MenuScrollbarHandle": {},
-			"MenuSecondaryText": {},
-			"MenuSelectedBackground": {},
-			"MenuSelectedText": {},
-			"Method": {},
-			"Nil": {},
-			"Number": {},
-			"Operator": {},
-			"Property": {},
-			"Ruler": {},
-			"SelectionBackground": {},
-			"SelectionText": {},
-			"Self": {},
-			"String": {},
-			"TODO": {},
-			"Type": {},
-			"Warning": {},
-			"Whitespace": {}
+			"AICOOverlayButtonBackground": {
+				"Summary": "<p>Background color for AI Code Overlay action buttons in their default\n(idle) state.</p>\n"
+			},
+			"AICOOverlayButtonBackgroundHover": {
+				"Summary": "<p>Background color for AI Code Overlay action buttons when the pointer\nhovers over them.</p>\n"
+			},
+			"AICOOverlayButtonBackgroundPressed": {
+				"Summary": "<p>Background color for AI Code Overlay action buttons while they are being\npressed.</p>\n"
+			},
+			"AICOOverlayText": {
+				"Summary": "<p>Text color for labels displayed in the AI Code Overlay panel.</p>\n"
+			},
+			"ActiveLine": {
+				"Summary": "<p>Background highlight color applied to the line that currently contains the\ntext cursor.</p>\n"
+			},
+			"Background": {
+				"Summary": "<p>Main background color of the Script Editor canvas.</p>\n"
+			},
+			"Bool": {
+				"Summary": "<p>Foreground color used to highlight boolean literals (<code>true</code> and <code>false</code>)\nin scripts.</p>\n"
+			},
+			"Bracket": {
+				"Summary": "<p>Color applied to bracket characters such as <code>(</code>, <code>)</code>, <code>[</code>, <code>]</code>, <code>{</code>, and\n<code>}</code> in scripts.</p>\n"
+			},
+			"Builtin": {
+				"Summary": "<p>Color applied to Luau built-in functions and standard library identifiers\nin scripts.</p>\n"
+			},
+			"Comment": {
+				"Summary": "<p>Color applied to comment tokens (single-line <code>--</code> and block <code>--[[ ]]</code>\ncomments) in scripts.</p>\n"
+			},
+			"DebuggerCurrentLine": {
+				"Summary": "<p>Background highlight color for the line the debugger is currently paused\non.</p>\n"
+			},
+			"DebuggerErrorLine": {
+				"Summary": "<p>Background highlight color for a line that caused a runtime error during a\ndebugging session.</p>\n"
+			},
+			"Default": {
+				"Summary": "<p>Fallback foreground color used for script text that does not match any\nmore specific syntax category.</p>\n"
+			},
+			"DocViewCodeBackground": {
+				"Summary": "<p>Background color for inline code blocks rendered in the documentation\nviewer panel within Studio.</p>\n"
+			},
+			"Error": {
+				"Summary": "<p>Color used for error-severity diagnostic markers and underlines in\nscripts.</p>\n"
+			},
+			"FindSelectionBackground": {
+				"Summary": "<p>Background highlight color applied to text ranges matched by a Find or\nReplace operation.</p>\n"
+			},
+			"Function": {
+				"Summary": "<p>Color applied to the <code>function</code> keyword token in function declarations.</p>\n"
+			},
+			"FunctionName": {
+				"Summary": "<p>Color applied to the identifier that names a function in its declaration.</p>\n"
+			},
+			"Hint": {
+				"Summary": "<p>Color used for hint-severity diagnostic markers in scripts.</p>\n"
+			},
+			"IndentationRuler": {
+				"Summary": "<p>Color of the vertical guide lines drawn at each indentation level in the\nscript editor gutter.</p>\n"
+			},
+			"Info": {
+				"Summary": "<p>Color used for information-severity diagnostic markers in scripts.</p>\n"
+			},
+			"Keyword": {
+				"Summary": "<p>Color applied to Luau reserved keywords such as <code>if</code>, <code>then</code>, <code>else</code>,\n<code>do</code>, <code>end</code>, <code>return</code>, and <code>while</code>.</p>\n"
+			},
+			"Local": {
+				"Summary": "<p>Color applied to the <code>local</code> keyword token in local variable and function\ndeclarations.</p>\n"
+			},
+			"LuauKeyword": {
+				"Summary": "<p>Color applied to Luau-specific type annotation keywords such as <code>type</code> and\n<code>typeof</code>.</p>\n"
+			},
+			"MatchingWordBackground": {
+				"Summary": "<p>Background highlight color applied to all occurrences of the word under\nthe cursor when word-highlight is active.</p>\n"
+			},
+			"MenuBackground": {
+				"Summary": "<p>Background color for autocomplete and context-menu popups in the Script\nEditor.</p>\n"
+			},
+			"MenuBorder": {
+				"Summary": "<p>Border color for autocomplete and context-menu popups in the Script\nEditor.</p>\n"
+			},
+			"MenuPrimaryText": {
+				"Summary": "<p>Primary text color for items listed in autocomplete and context-menu\npopups.</p>\n"
+			},
+			"MenuScrollbarBackground": {
+				"Summary": "<p>Background color of the scrollbar track inside autocomplete and\ncontext-menu popups.</p>\n"
+			},
+			"MenuScrollbarHandle": {
+				"Summary": "<p>Color of the scrollbar thumb (handle) inside autocomplete and context-menu\npopups.</p>\n"
+			},
+			"MenuSecondaryText": {
+				"Summary": "<p>Secondary text color (for example, type annotations or documentation\nhints) in autocomplete popups.</p>\n"
+			},
+			"MenuSelectedBackground": {
+				"Summary": "<p>Background color of the currently highlighted item in autocomplete and\ncontext-menu popups.</p>\n"
+			},
+			"MenuSelectedText": {
+				"Summary": "<p>Text color of the currently highlighted item in autocomplete and\ncontext-menu popups.</p>\n"
+			},
+			"Method": {
+				"Summary": "<p>Color applied to method call identifiers in scripts.</p>\n"
+			},
+			"Nil": {
+				"Summary": "<p>Color applied to the <code>nil</code> literal token in scripts.</p>\n"
+			},
+			"Number": {
+				"Summary": "<p>Color applied to numeric literal tokens in scripts.</p>\n"
+			},
+			"Operator": {
+				"Summary": "<p>Color applied to operator tokens such as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>==</code>, and\n<code>..</code> in scripts.</p>\n"
+			},
+			"Property": {
+				"Summary": "<p>Color applied to property access identifiers (tokens following a <code>.</code>\noperator) in scripts.</p>\n"
+			},
+			"Ruler": {
+				"Summary": "<p>Color of the vertical column ruler line drawn at the configured\ncharacter-width limit in the Script Editor.</p>\n"
+			},
+			"SelectionBackground": {
+				"Summary": "<p>Background highlight color for the currently selected text range in the\nScript Editor.</p>\n"
+			},
+			"SelectionText": {
+				"Summary": "<p>Foreground color for text within the currently selected range in the\nScript Editor.</p>\n"
+			},
+			"Self": {
+				"Summary": "<p>Color applied to the <code>self</code> identifier token in method bodies.</p>\n"
+			},
+			"String": {
+				"Summary": "<p>Color applied to string literal tokens, including quoted strings and\nlong-string literals.</p>\n"
+			},
+			"TODO": {
+				"Summary": "<p>Color applied to <code>TODO</code> markers found inside comments in scripts.</p>\n"
+			},
+			"Type": {
+				"Summary": "<p>Color applied to Luau type name tokens in type annotations and\ndeclarations.</p>\n"
+			},
+			"Warning": {
+				"Summary": "<p>Color used for warning-severity diagnostic markers and underlines in\nscripts.</p>\n"
+			},
+			"Whitespace": {
+				"Summary": "<p>Color used to render visible whitespace characters (spaces and tabs) when\nthat display option is enabled.</p>\n"
+			}
 		},
 		"StudioScriptEditorColorPresets": {
 			"Custom": {},
@@ -36020,7 +36299,9 @@
 			"MessageTooLong": {
 				"Summary": "<p>Message is too long.</p>\n"
 			},
-			"ModerationTimeout": {},
+			"ModerationTimeout": {
+				"Summary": "<p>Message can&#39;t be sent because the user has an active moderation timeout on\nchat.</p>\n"
+			},
 			"Sending": {
 				"Summary": "<p>Message is sending.</p>\n"
 			},
@@ -36046,8 +36327,12 @@
 			}
 		},
 		"TextFilterContext": {
-			"PrivateChat": {},
-			"PublicChat": {}
+			"PrivateChat": {
+				"Summary": "<p>Indicates the string is part of a private conversation between specific\nusers, applying filtering appropriate for one-to-one or small-group\nexchanges.</p>\n"
+			},
+			"PublicChat": {
+				"Summary": "<p>Indicates the string will be visible to all players or a broad public\naudience, applying the strictest level of text filtering.</p>\n"
+			}
 		},
 		"TextTruncate": {
 			"AtEnd": {
@@ -37010,12 +37295,6 @@
 			"Strong": {
 				"Summary": "<p>A high flow force level of a legacy voxel terrain water cell, one step\nbelow <a href=\"/ref/enum/WaterForce.html\">WaterForce.Max</a>.</p>\n"
 			}
-		},
-		"WebSocketState": {
-			"Closed": {},
-			"Closing": {},
-			"Connecting": {},
-			"Open": {}
 		},
 		"WebStreamClientState": {
 			"Closed": {

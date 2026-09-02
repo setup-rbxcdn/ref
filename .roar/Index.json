@@ -16903,7 +16903,7 @@
 				},
 				{
 					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
+					"Member": "PromptCreatePlatformContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -16916,7 +16916,7 @@
 				},
 				{
 					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
+					"Member": "PromptCreatePlatformContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -16924,12 +16924,12 @@
 					"Index": 1,
 					"Type": {
 						"Category": "Class",
-						"Name": "Instance"
+						"Name": "Object"
 					}
 				},
 				{
 					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
+					"Member": "PromptCreatePlatformContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -16942,7 +16942,7 @@
 				},
 				{
 					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
+					"Member": "PromptCreatePlatformContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -17138,19 +17138,6 @@
 				},
 				{
 					"Class": "AssetService",
-					"Member": "OpenCreateResultModal",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Enum",
-						"Name": "PromptCreateAssetResult"
-					}
-				},
-				{
-					"Class": "AssetService",
 					"Member": "OpenPublishResultModal",
 					"MemberType": "Event",
 					"Removed": false,
@@ -17159,7 +17146,7 @@
 					"Index": 0,
 					"Type": {
 						"Category": "Enum",
-						"Name": "PromptPublishAssetResult"
+						"Name": "PromptCreatePlatformContentResult"
 					}
 				},
 				{
@@ -17541,6 +17528,58 @@
 				},
 				{
 					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetType"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AssetService",
 					"Member": "PromptPublishAssetAsync",
 					"MemberType": "Function",
 					"Removed": true,
@@ -17810,6 +17849,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "DynamicMesh"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "OpenCreateResultModal",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PromptCreateAssetResult"
 					}
 				}
 			]
@@ -39431,6 +39483,478 @@
 				"Instance",
 				"Object",
 				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "BranchService",
+					"Member": "ArchiveBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "ArchiveBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CompleteMerge",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetBranchesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetBranchesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetBranchesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "DataModelDiff"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetInstanceConflicts",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeChanges",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "DataModelDiff"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeResolution"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeStatus",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeStatus"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "RestoreBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "RestoreBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeResolution"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "StartMergeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "StartMergeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "StartMergeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "BranchStatus"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "MergeStateChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "MergeStateCleared",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "MergeStatusChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeStatus"
+					}
+				}
 			]
 		},
 		"Breakpoint": {
@@ -41040,12 +41564,182 @@
 				"MeshContentProvider",
 				"SlimContentProvider",
 				"SolidModelContentProvider",
-				"TextureContentProvider"
+				"TextureContentProvider",
+				"WrapContentProvider"
 			],
 			"Superclasses": [
 				"Instance",
 				"Object",
 				"<<<ROOT>>>"
+			]
+		},
+		"CallingService": {
+			"Name": "CallingService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "CallingService",
+					"Member": "AnswerIncomingCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "AnswerIncomingCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "CreateCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "CreateCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "CreateCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "EndCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "EndCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "EndCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "GetCallingState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "GetCallingState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "OnCallingRemoved",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "OnCallingStateChange",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				}
 			]
 		},
 		"CalloutService": {
@@ -42599,6 +43293,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Capture"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "GenerateMomentTextAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				},
 				{
@@ -52073,6 +52780,565 @@
 				}
 			]
 		},
+		"ControlState": {
+			"Name": "ControlState",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "ControlState",
+					"Member": "Owner",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "StateSchema",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddInstanceField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddInstanceField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StateReferenceFrame"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StateReferenceFrame"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetReplicationWeight",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StateReferenceFrame"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "UpdateFields",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "UpdateFields",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				}
+			]
+		},
 		"Controller": {
 			"Name": "Controller",
 			"Removed": false,
@@ -55602,6 +56868,32 @@
 				},
 				{
 					"Class": "DataModel",
+					"Member": "GetPioneerRootPlaceId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "DataModel",
+					"Member": "GetPioneerSource",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PioneerSource"
+					}
+				},
+				{
+					"Class": "DataModel",
 					"Member": "GetPlaySessionId",
 					"MemberType": "Function",
 					"Removed": false,
@@ -55798,6 +57090,19 @@
 				{
 					"Class": "DataModel",
 					"Member": "IsLoaded",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "DataModel",
+					"Member": "IsPioneerApp",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -57654,6 +58959,32 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "DataModelDiff"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeChanges",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "DataModelDiff"
+					}
+				},
 				{
 					"Class": "DataModelDiff",
 					"Member": "GetChangeType",
@@ -68959,6 +70290,58 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInCageSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInCageSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInTargetSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInTargetSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Class",
@@ -81141,6 +82524,45 @@
 				},
 				{
 					"Class": "GenerationService",
+					"Member": "ExportInstanceToGlbAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ExportInstanceToGlbAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ExportInstanceToGlbAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "ExportMeshToGlbAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -82435,7 +83857,7 @@
 				},
 				{
 					"Class": "GeometryService",
-					"Member": "CreateSolidPrimitive",
+					"Member": "CreateBasicMeshPart",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -82443,12 +83865,12 @@
 					"Index": 0,
 					"Type": {
 						"Category": "Enum",
-						"Name": "SolidPrimitiveType"
+						"Name": "BasicMeshPartShape"
 					}
 				},
 				{
 					"Class": "GeometryService",
-					"Member": "CreateSolidPrimitive",
+					"Member": "CreateBasicMeshPart",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -82461,7 +83883,7 @@
 				},
 				{
 					"Class": "GeometryService",
-					"Member": "CreateSolidPrimitive",
+					"Member": "CreateBasicMeshPart",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -82847,6 +84269,45 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
+					}
+				},
+				{
+					"Class": "GeometryService",
+					"Member": "CreateSolidPrimitive",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "SolidPrimitiveType"
+					}
+				},
+				{
+					"Class": "GeometryService",
+					"Member": "CreateSolidPrimitive",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GeometryService",
+					"Member": "CreateSolidPrimitive",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "MeshPart"
 					}
 				},
 				{
@@ -85713,6 +87174,19 @@
 				},
 				{
 					"Class": "GuiObject",
+					"Member": "Sink",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "InputSink"
+					}
+				},
+				{
+					"Class": "GuiObject",
 					"Member": "Size",
 					"MemberType": "Property",
 					"Removed": false,
@@ -87467,6 +88941,19 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "GetAutoUIScaleHundredths",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "GetBrickCount",
 					"MemberType": "Function",
 					"Removed": false,
@@ -87528,6 +89015,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Dialog"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "GetEffectiveUIScaleHundredths",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -87762,19 +89262,6 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector2"
-					}
-				},
-				{
-					"Class": "GuiService",
-					"Member": "GetUIScaleMultiplier",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
 					}
 				},
 				{
@@ -88962,6 +90449,32 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "ScrollStateChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "ScrollStateChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ScrollState"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "SpecialKeyPressed",
 					"MemberType": "Event",
 					"Removed": false,
@@ -89166,6 +90679,19 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "GetUIScaleMultiplier",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -103807,6 +105333,7 @@
 				"CSGCacheService",
 				"CSGOptions",
 				"CacheableContentProvider",
+				"CallingService",
 				"CalloutService",
 				"CaptureService",
 				"ChangeHistoryService",
@@ -103836,6 +105363,7 @@
 				"ContentFilter",
 				"ContentProvider",
 				"ContextActionService",
+				"ControlState",
 				"Controller",
 				"ControllerBase",
 				"ControllerManager",
@@ -104728,19 +106256,6 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
-					"Type": {
-						"Category": "Class",
-						"Name": "Instance"
-					}
-				},
-				{
-					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
@@ -106736,6 +108251,19 @@
 					}
 				},
 				{
+					"Class": "GenerationService",
+					"Member": "ExportInstanceToGlbAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
 					"Class": "GeometryService",
 					"Member": "CalculateConstraintsToPreserve",
 					"MemberType": "Function",
@@ -106920,6 +108448,19 @@
 				{
 					"Class": "GuiService",
 					"Member": "OpenStyleEditor",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "ScrollStateChanged",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -113309,6 +114850,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
@@ -132436,7 +133990,7 @@
 				},
 				{
 					"Class": "GeometryService",
-					"Member": "CreateSolidPrimitive",
+					"Member": "CreateBasicMeshPart",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -132736,6 +134290,19 @@
 				{
 					"Class": "EditableMesh",
 					"Member": "CreateMeshPartAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "MeshPart"
+					}
+				},
+				{
+					"Class": "GeometryService",
+					"Member": "CreateSolidPrimitive",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -139448,6 +141015,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Object"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "PromptCreatePlatformContentAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Class",
 						"Name": "Object"
@@ -147178,7 +148758,7 @@
 				},
 				{
 					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
+					"Member": "PromptCreatePlatformContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -147548,6 +149128,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "Owner",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Class",
 						"Name": "Player"
@@ -151883,19 +153476,6 @@
 					}
 				},
 				{
-					"Class": "PlayerControlState",
-					"Member": "Owner",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Class",
-						"Name": "Player"
-					}
-				},
-				{
 					"Class": "PlayerData",
 					"Member": "GetPlayer",
 					"MemberType": "Function",
@@ -152690,6 +154270,19 @@
 				},
 				{
 					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AssetService",
 					"Member": "PromptPublishAssetAsync",
 					"MemberType": "Function",
 					"Removed": true,
@@ -153116,12 +154709,25 @@
 						"Category": "Group",
 						"Name": "Dictionary"
 					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "Owner",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
 				}
 			]
 		},
 		"PlayerControlState": {
 			"Name": "PlayerControlState",
-			"Removed": false,
+			"Removed": true,
 			"HasRemoved": false,
 			"Subclasses": [],
 			"Superclasses": [
@@ -153134,7 +154740,7 @@
 					"Class": "PlayerControlState",
 					"Member": "Owner",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -153147,7 +154753,7 @@
 					"Class": "PlayerControlState",
 					"Member": "StateSchema",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -153160,7 +154766,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddBoolField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153173,7 +154779,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddBoolField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153186,7 +154792,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddBoolField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153199,7 +154805,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddCFrameField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153212,7 +154818,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddCFrameField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153225,7 +154831,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddCFrameField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153238,7 +154844,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddInstanceField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153251,7 +154857,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddInstanceField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153264,7 +154870,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddIntField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153277,7 +154883,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddIntField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153290,7 +154896,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddIntField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
@@ -153303,7 +154909,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddIntField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
@@ -153316,7 +154922,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddIntField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153329,7 +154935,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddNumberField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153342,7 +154948,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddNumberField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153355,7 +154961,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddNumberField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
@@ -153368,7 +154974,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddNumberField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
@@ -153381,7 +154987,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddNumberField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153394,7 +155000,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddUnitVector3Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153407,7 +155013,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddUnitVector3Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153420,7 +155026,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddUnitVector3Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153433,7 +155039,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector2Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153446,7 +155052,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector2Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153459,7 +155065,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector2Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
@@ -153472,7 +155078,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector2Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153485,7 +155091,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector3Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153498,7 +155104,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector3Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153511,7 +155117,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector3Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
@@ -153524,7 +155130,7 @@
 					"Class": "PlayerControlState",
 					"Member": "AddVector3Field",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153537,7 +155143,7 @@
 					"Class": "PlayerControlState",
 					"Member": "GetChangedState",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153550,7 +155156,7 @@
 					"Class": "PlayerControlState",
 					"Member": "GetChangedState",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153563,7 +155169,7 @@
 					"Class": "PlayerControlState",
 					"Member": "GetChangedState",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153576,7 +155182,7 @@
 					"Class": "PlayerControlState",
 					"Member": "GetReplicationWeight",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153589,7 +155195,7 @@
 					"Class": "PlayerControlState",
 					"Member": "GetState",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153602,7 +155208,7 @@
 					"Class": "PlayerControlState",
 					"Member": "GetState",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153615,7 +155221,7 @@
 					"Class": "PlayerControlState",
 					"Member": "SetField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153628,7 +155234,7 @@
 					"Class": "PlayerControlState",
 					"Member": "SetField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -153641,7 +155247,7 @@
 					"Class": "PlayerControlState",
 					"Member": "SetField",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -153654,7 +155260,7 @@
 					"Class": "PlayerControlState",
 					"Member": "UpdateFields",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -153667,7 +155273,7 @@
 					"Class": "PlayerControlState",
 					"Member": "UpdateFields",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -162850,6 +164456,19 @@
 					"Member": "CreateAssetAndWaitForAssetId",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 8,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PublishService",
+					"Member": "CreateAssetAndWaitForAssetId",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -166281,6 +167900,32 @@
 				{
 					"Class": "RemoteCursorService",
 					"Member": "BroadcastRemoteCursorPositions",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "BroadcastRemoteCursorPositionsWithConnectionId",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "BroadcastRemoteCursorPositionsWithConnectionId",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -193516,19 +195161,6 @@
 				},
 				{
 					"Class": "StudioDeviceSimulatorService",
-					"Member": "GetRegisteredSimulators",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Array"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
 					"Member": "GetResolutionAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -193551,45 +195183,6 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "DeviceSimulatorScalingMode"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "RegisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "RegisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "RegisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
 					}
 				},
 				{
@@ -193776,32 +195369,6 @@
 				},
 				{
 					"Class": "StudioDeviceSimulatorService",
-					"Member": "UnregisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "UnregisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
 					"Member": "UpdateDeviceAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -193831,6 +195398,84 @@
 					"Member": "UpdateDeviceAsync",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetRegisteredSimulators",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -199496,6 +201141,32 @@
 				},
 				{
 					"Class": "SystemThemeService",
+					"Member": "setClassicThemeActive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "SystemThemeService",
+					"Member": "setClassicThemeActive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SystemThemeService",
 					"Member": "setTheme",
 					"MemberType": "Function",
 					"Removed": false,
@@ -204566,6 +206237,58 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Region3"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "WorldToCell",
 					"MemberType": "Function",
 					"Removed": false,
@@ -204809,6 +206532,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "TerrainWriteOperation"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GridBackendReloadRequired",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -209979,6 +211715,19 @@
 			"Related": [
 				{
 					"Class": "TextChannelWindow",
+					"Member": "FontFace",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Font"
+					}
+				},
+				{
+					"Class": "TextChannelWindow",
 					"Member": "IsRendering",
 					"MemberType": "Property",
 					"Removed": false,
@@ -210001,6 +211750,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "TextChannel"
+					}
+				},
+				{
+					"Class": "TextChannelWindow",
+					"Member": "UseDefaultFont",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -219153,6 +220915,32 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetSerializedSizeExcludingCollisionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetSerializedSizeExcludingCollisionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
 					}
 				},
 				{
@@ -241577,6 +243365,19 @@
 				},
 				{
 					"Class": "Workspace",
+					"Member": "UseInputSink",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "Workspace",
 					"Member": "UseNewLuauTypeSolver",
 					"MemberType": "Property",
 					"Removed": false,
@@ -243198,6 +244999,19 @@
 			"Related": [
 				{
 					"Class": "WorldRoot",
+					"Member": "AutoSimulate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "WorldRoot",
 					"Member": "CollisionGroupData",
 					"MemberType": "Property",
 					"Removed": false,
@@ -243211,6 +245025,19 @@
 				},
 				{
 					"Class": "WorldRoot",
+					"Member": "GravityDirection",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "WorldRoot",
 					"Member": "PhysicsStepTime",
 					"MemberType": "Property",
 					"Removed": false,
@@ -243220,6 +245047,45 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "SimulationRate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "Wind",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "WindDirection",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
 					}
 				},
 				{
@@ -244554,6 +246420,32 @@
 				},
 				{
 					"Class": "WorldRoot",
+					"Member": "Simulate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "Simulate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "WorldRoot",
 					"Member": "Spherecast",
 					"MemberType": "Function",
 					"Removed": false,
@@ -244904,6 +246796,18 @@
 						"Name": "void"
 					}
 				}
+			]
+		},
+		"WrapContentProvider": {
+			"Name": "WrapContentProvider",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"CacheableContentProvider",
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
 			]
 		},
 		"WrapDeformMeshProvider": {
@@ -245347,6 +247251,85 @@
 						"Category": "Primitive",
 						"Name": "float"
 					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInCageSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInCageSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInCageSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInTargetSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInTargetSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "WrapTextureTransfer"
+					}
+				},
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInTargetSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "EditableImage"
+					}
 				}
 			]
 		},
@@ -245361,6 +247344,19 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInTargetSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "WrapTextureTransfer"
+					}
+				},
 				{
 					"Class": "WrapTextureTransfer",
 					"Member": "ReferenceCageMeshContent",
@@ -252884,13 +254880,13 @@
 				"Class": "AssetService",
 				"Name": "OpenCreateResultModal",
 				"MemberType": "Event",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "AssetService",
 						"Member": "OpenCreateResultModal",
 						"MemberType": "Event",
-						"Removed": false,
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 0,
@@ -252917,7 +254913,7 @@
 						"Index": 0,
 						"Type": {
 							"Category": "Enum",
-							"Name": "PromptPublishAssetResult"
+							"Name": "PromptCreatePlatformContentResult"
 						}
 					}
 				]
@@ -252926,13 +254922,13 @@
 				"Class": "AssetService",
 				"Name": "PromptCreateAssetAsync",
 				"MemberType": "Function",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "AssetService",
 						"Member": "PromptCreateAssetAsync",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 0,
@@ -252945,7 +254941,7 @@
 						"Class": "AssetService",
 						"Member": "PromptCreateAssetAsync",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 1,
@@ -252957,6 +254953,53 @@
 					{
 						"Class": "AssetService",
 						"Member": "PromptCreateAssetAsync",
+						"MemberType": "Function",
+						"Removed": true,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 2,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AssetType"
+						}
+					}
+				]
+			},
+			"PromptCreatePlatformContentAsync": {
+				"Class": "AssetService",
+				"Name": "PromptCreatePlatformContentAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AssetService",
+						"Member": "PromptCreatePlatformContentAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					},
+					{
+						"Class": "AssetService",
+						"Member": "PromptCreatePlatformContentAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Class",
+							"Name": "Object"
+						}
+					},
+					{
+						"Class": "AssetService",
+						"Member": "PromptCreatePlatformContentAsync",
 						"MemberType": "Function",
 						"Removed": false,
 						"Field": "Parameters",
@@ -264055,6 +266098,209 @@
 				"Removed": false
 			}
 		},
+		"BranchService": {
+			"ArchiveBranchAsync": {
+				"Class": "BranchService",
+				"Name": "ArchiveBranchAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"CompleteMerge": {
+				"Class": "BranchService",
+				"Name": "CompleteMerge",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"CreateBranchAsync": {
+				"Class": "BranchService",
+				"Name": "CreateBranchAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetBranchesAsync": {
+				"Class": "BranchService",
+				"Name": "GetBranchesAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetDiffAsync": {
+				"Class": "BranchService",
+				"Name": "GetDiffAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "BranchService",
+						"Member": "GetDiffAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "DataModelDiff"
+						}
+					}
+				]
+			},
+			"GetInstanceConflicts": {
+				"Class": "BranchService",
+				"Name": "GetInstanceConflicts",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetMergeChanges": {
+				"Class": "BranchService",
+				"Name": "GetMergeChanges",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "BranchService",
+						"Member": "GetMergeChanges",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "DataModelDiff"
+						}
+					}
+				]
+			},
+			"GetMergeResolution": {
+				"Class": "BranchService",
+				"Name": "GetMergeResolution",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "BranchService",
+						"Member": "GetMergeResolution",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "MergeResolution"
+						}
+					}
+				]
+			},
+			"GetMergeStatus": {
+				"Class": "BranchService",
+				"Name": "GetMergeStatus",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "BranchService",
+						"Member": "GetMergeStatus",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "MergeStatus"
+						}
+					}
+				]
+			},
+			"MergeStateChanged": {
+				"Class": "BranchService",
+				"Name": "MergeStateChanged",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"MergeStateCleared": {
+				"Class": "BranchService",
+				"Name": "MergeStateCleared",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"MergeStatusChanged": {
+				"Class": "BranchService",
+				"Name": "MergeStatusChanged",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "BranchService",
+						"Member": "MergeStatusChanged",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "MergeStatus"
+						}
+					}
+				]
+			},
+			"RestoreBranchAsync": {
+				"Class": "BranchService",
+				"Name": "RestoreBranchAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SetMergeResolution": {
+				"Class": "BranchService",
+				"Name": "SetMergeResolution",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "BranchService",
+						"Member": "SetMergeResolution",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 2,
+						"Type": {
+							"Category": "Enum",
+							"Name": "MergeResolution"
+						}
+					}
+				]
+			},
+			"StartMergeAsync": {
+				"Class": "BranchService",
+				"Name": "StartMergeAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"UpdateBranchAsync": {
+				"Class": "BranchService",
+				"Name": "UpdateBranchAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "BranchService",
+						"Member": "UpdateBranchAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "BranchStatus"
+						}
+					}
+				]
+			}
+		},
 		"Breakpoint": {
 			"Condition": {
 				"Class": "Breakpoint",
@@ -264696,6 +266942,44 @@
 			"changed": {
 				"Class": "CFrameValue",
 				"Name": "changed",
+				"MemberType": "Event",
+				"Removed": false
+			}
+		},
+		"CallingService": {
+			"AnswerIncomingCall": {
+				"Class": "CallingService",
+				"Name": "AnswerIncomingCall",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"CreateCall": {
+				"Class": "CallingService",
+				"Name": "CreateCall",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"EndCall": {
+				"Class": "CallingService",
+				"Name": "EndCall",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetCallingState": {
+				"Class": "CallingService",
+				"Name": "GetCallingState",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"OnCallingRemoved": {
+				"Class": "CallingService",
+				"Name": "OnCallingRemoved",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"OnCallingStateChange": {
+				"Class": "CallingService",
+				"Name": "OnCallingStateChange",
 				"MemberType": "Event",
 				"Removed": false
 			}
@@ -269246,6 +271530,162 @@
 				]
 			}
 		},
+		"ControlState": {
+			"AddBoolField": {
+				"Class": "ControlState",
+				"Name": "AddBoolField",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"AddCFrameField": {
+				"Class": "ControlState",
+				"Name": "AddCFrameField",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"AddInstanceField": {
+				"Class": "ControlState",
+				"Name": "AddInstanceField",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"AddIntField": {
+				"Class": "ControlState",
+				"Name": "AddIntField",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"AddNumberField": {
+				"Class": "ControlState",
+				"Name": "AddNumberField",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"AddUnitVector3Field": {
+				"Class": "ControlState",
+				"Name": "AddUnitVector3Field",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"AddVector2Field": {
+				"Class": "ControlState",
+				"Name": "AddVector2Field",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"AddVector3Field": {
+				"Class": "ControlState",
+				"Name": "AddVector3Field",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetChangedState": {
+				"Class": "ControlState",
+				"Name": "GetChangedState",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ControlState",
+						"Member": "GetChangedState",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "StateReferenceFrame"
+						}
+					},
+					{
+						"Class": "ControlState",
+						"Member": "GetChangedState",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "StateReferenceFrame"
+						}
+					}
+				]
+			},
+			"GetReplicationWeight": {
+				"Class": "ControlState",
+				"Name": "GetReplicationWeight",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetState": {
+				"Class": "ControlState",
+				"Name": "GetState",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ControlState",
+						"Member": "GetState",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "StateReferenceFrame"
+						}
+					}
+				]
+			},
+			"OnStateChanged": {
+				"Class": "ControlState",
+				"Name": "OnStateChanged",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"Owner": {
+				"Class": "ControlState",
+				"Name": "Owner",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ControlState",
+						"Member": "Owner",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
+			"SetField": {
+				"Class": "ControlState",
+				"Name": "SetField",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"StateSchema": {
+				"Class": "ControlState",
+				"Name": "StateSchema",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"UpdateFields": {
+				"Class": "ControlState",
+				"Name": "UpdateFields",
+				"MemberType": "Function",
+				"Removed": false
+			}
+		},
 		"Controller": {
 			"BindButton": {
 				"Class": "Controller",
@@ -270592,6 +273032,33 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetPioneerRootPlaceId": {
+				"Class": "DataModel",
+				"Name": "GetPioneerRootPlaceId",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetPioneerSource": {
+				"Class": "DataModel",
+				"Name": "GetPioneerSource",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "DataModel",
+						"Member": "GetPioneerSource",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PioneerSource"
+						}
+					}
+				]
+			},
 			"GetPlaySessionId": {
 				"Class": "DataModel",
 				"Name": "GetPlaySessionId",
@@ -270738,6 +273205,12 @@
 				"Name": "IsPersonalServer",
 				"MemberType": "Property",
 				"Removed": true
+			},
+			"IsPioneerApp": {
+				"Class": "DataModel",
+				"Name": "IsPioneerApp",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"IsPioneerBuild": {
 				"Class": "DataModel",
@@ -280685,6 +283158,27 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"ExportInstanceToGlbAsync": {
+				"Class": "GenerationService",
+				"Name": "ExportInstanceToGlbAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "GenerationService",
+						"Member": "ExportInstanceToGlbAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"ExportMeshToGlbAsync": {
 				"Class": "GenerationService",
 				"Name": "ExportMeshToGlbAsync",
@@ -281049,17 +283543,51 @@
 					}
 				]
 			},
-			"CreateSolidPrimitive": {
+			"CreateBasicMeshPart": {
 				"Class": "GeometryService",
-				"Name": "CreateSolidPrimitive",
+				"Name": "CreateBasicMeshPart",
 				"MemberType": "Function",
 				"Removed": false,
 				"Related": [
 					{
 						"Class": "GeometryService",
-						"Member": "CreateSolidPrimitive",
+						"Member": "CreateBasicMeshPart",
 						"MemberType": "Function",
 						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "BasicMeshPartShape"
+						}
+					},
+					{
+						"Class": "GeometryService",
+						"Member": "CreateBasicMeshPart",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "MeshPart"
+						}
+					}
+				]
+			},
+			"CreateSolidPrimitive": {
+				"Class": "GeometryService",
+				"Name": "CreateSolidPrimitive",
+				"MemberType": "Function",
+				"Removed": true,
+				"Related": [
+					{
+						"Class": "GeometryService",
+						"Member": "CreateSolidPrimitive",
+						"MemberType": "Function",
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 0,
@@ -281072,7 +283600,7 @@
 						"Class": "GeometryService",
 						"Member": "CreateSolidPrimitive",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "ReturnType",
 						"Kind": "Type",
 						"Index": 0,
@@ -282692,6 +285220,27 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"Sink": {
+				"Class": "GuiObject",
+				"Name": "Sink",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "GuiObject",
+						"Member": "Sink",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "InputSink"
+						}
+					}
+				]
+			},
 			"Size": {
 				"Class": "GuiObject",
 				"Name": "Size",
@@ -283301,6 +285850,12 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"GetAutoUIScaleHundredths": {
+				"Class": "GuiService",
+				"Name": "GetAutoUIScaleHundredths",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetBrickCount": {
 				"Class": "GuiService",
 				"Name": "GetBrickCount",
@@ -283354,6 +285909,12 @@
 				"Name": "GetConnectorCount",
 				"MemberType": "Function",
 				"Removed": true
+			},
+			"GetEffectiveUIScaleHundredths": {
+				"Class": "GuiService",
+				"Name": "GetEffectiveUIScaleHundredths",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"GetEmotesMenuOpen": {
 				"Class": "GuiService",
@@ -283527,7 +286088,7 @@
 				"Class": "GuiService",
 				"Name": "GetUIScaleMultiplier",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetUiMessage": {
 				"Class": "GuiService",
@@ -283900,6 +286461,40 @@
 				"Name": "ScreenGuiEnabled",
 				"MemberType": "Property",
 				"Removed": true
+			},
+			"ScrollStateChanged": {
+				"Class": "GuiService",
+				"Name": "ScrollStateChanged",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "GuiService",
+						"Member": "ScrollStateChanged",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					},
+					{
+						"Class": "GuiService",
+						"Member": "ScrollStateChanged",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ScrollState"
+						}
+					}
+				]
 			},
 			"Select": {
 				"Class": "GuiService",
@@ -308942,61 +311537,61 @@
 				"Class": "PlayerControlState",
 				"Name": "AddBoolField",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"AddCFrameField": {
 				"Class": "PlayerControlState",
 				"Name": "AddCFrameField",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"AddInstanceField": {
 				"Class": "PlayerControlState",
 				"Name": "AddInstanceField",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"AddIntField": {
 				"Class": "PlayerControlState",
 				"Name": "AddIntField",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"AddNumberField": {
 				"Class": "PlayerControlState",
 				"Name": "AddNumberField",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"AddUnitVector3Field": {
 				"Class": "PlayerControlState",
 				"Name": "AddUnitVector3Field",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"AddVector2Field": {
 				"Class": "PlayerControlState",
 				"Name": "AddVector2Field",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"AddVector3Field": {
 				"Class": "PlayerControlState",
 				"Name": "AddVector3Field",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetChangedState": {
 				"Class": "PlayerControlState",
 				"Name": "GetChangedState",
 				"MemberType": "Function",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "PlayerControlState",
 						"Member": "GetChangedState",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 0,
@@ -309009,7 +311604,7 @@
 						"Class": "PlayerControlState",
 						"Member": "GetChangedState",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 1,
@@ -309024,19 +311619,19 @@
 				"Class": "PlayerControlState",
 				"Name": "GetReplicationWeight",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetState": {
 				"Class": "PlayerControlState",
 				"Name": "GetState",
 				"MemberType": "Function",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "PlayerControlState",
 						"Member": "GetState",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "Parameters",
 						"Kind": "Parameter",
 						"Index": 0,
@@ -309051,19 +311646,19 @@
 				"Class": "PlayerControlState",
 				"Name": "OnStateChanged",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": true
 			},
 			"Owner": {
 				"Class": "PlayerControlState",
 				"Name": "Owner",
 				"MemberType": "Property",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "PlayerControlState",
 						"Member": "Owner",
 						"MemberType": "Property",
-						"Removed": false,
+						"Removed": true,
 						"Field": "ValueType",
 						"Kind": "Type",
 						"Index": -1,
@@ -309078,19 +311673,19 @@
 				"Class": "PlayerControlState",
 				"Name": "SetField",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"StateSchema": {
 				"Class": "PlayerControlState",
 				"Name": "StateSchema",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"UpdateFields": {
 				"Class": "PlayerControlState",
 				"Name": "UpdateFields",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"PlayerData": {
@@ -315025,6 +317620,12 @@
 			"BroadcastRemoteCursorPositions": {
 				"Class": "RemoteCursorService",
 				"Name": "BroadcastRemoteCursorPositions",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"BroadcastRemoteCursorPositionsWithConnectionId": {
+				"Class": "RemoteCursorService",
+				"Name": "BroadcastRemoteCursorPositionsWithConnectionId",
 				"MemberType": "Event",
 				"Removed": false
 			},
@@ -327889,7 +330490,7 @@
 				"Class": "StudioDeviceSimulatorService",
 				"Name": "GetRegisteredSimulators",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetResolutionAsync": {
 				"Class": "StudioDeviceSimulatorService",
@@ -327922,7 +330523,7 @@
 				"Class": "StudioDeviceSimulatorService",
 				"Name": "RegisterSimulator",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"RemoveDeviceAsync": {
 				"Class": "StudioDeviceSimulatorService",
@@ -327994,7 +330595,7 @@
 				"Class": "StudioDeviceSimulatorService",
 				"Name": "SimulatorRegistryChanged",
 				"MemberType": "Event",
-				"Removed": false
+				"Removed": true
 			},
 			"StopSimulationAsync": {
 				"Class": "StudioDeviceSimulatorService",
@@ -328006,7 +330607,7 @@
 				"Class": "StudioDeviceSimulatorService",
 				"Name": "UnregisterSimulator",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"UpdateDeviceAsync": {
 				"Class": "StudioDeviceSimulatorService",
@@ -330491,6 +333092,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"setClassicThemeActive": {
+				"Class": "SystemThemeService",
+				"Name": "setClassicThemeActive",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"setTheme": {
 				"Class": "SystemThemeService",
 				"Name": "setTheme",
@@ -332026,6 +334633,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"GridBackendReloadRequired": {
+				"Class": "Terrain",
+				"Name": "GridBackendReloadRequired",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"HideTerrainRegion": {
 				"Class": "Terrain",
 				"Name": "HideTerrainRegion",
@@ -332670,6 +335283,12 @@
 			"SmoothRegion": {
 				"Class": "Terrain",
 				"Name": "SmoothRegion",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SmoothRegionMaterialSlots": {
+				"Class": "Terrain",
+				"Name": "SmoothRegionMaterialSlots",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -334772,6 +337391,12 @@
 			}
 		},
 		"TextChannelWindow": {
+			"FontFace": {
+				"Class": "TextChannelWindow",
+				"Name": "FontFace",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"IsRendering": {
 				"Class": "TextChannelWindow",
 				"Name": "IsRendering",
@@ -334798,6 +337423,12 @@
 						}
 					}
 				]
+			},
+			"UseDefaultFont": {
+				"Class": "TextChannelWindow",
+				"Name": "UseDefaultFont",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"TextChatCommand": {
@@ -339181,6 +341812,12 @@
 						}
 					}
 				]
+			},
+			"GetSerializedSizeExcludingCollisionAsync": {
+				"Class": "UGCValidationService",
+				"Name": "GetSerializedSizeExcludingCollisionAsync",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"GetSkinnedJointNamesFromEditableMesh": {
 				"Class": "UGCValidationService",
@@ -349935,6 +352572,27 @@
 					}
 				]
 			},
+			"UseInputSink": {
+				"Class": "Workspace",
+				"Name": "UseInputSink",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Workspace",
+						"Member": "UseInputSink",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RolloutState"
+						}
+					}
+				]
+			},
 			"UseNewLuauTypeSolver": {
 				"Class": "Workspace",
 				"Name": "UseNewLuauTypeSolver",
@@ -350092,6 +352750,12 @@
 				"Class": "WorldRoot",
 				"Name": "ArePartsTouchingOthers",
 				"MemberType": "Function",
+				"Removed": false
+			},
+			"AutoSimulate": {
+				"Class": "WorldRoot",
+				"Name": "AutoSimulate",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"Blockcast": {
@@ -350292,6 +352956,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GravityDirection": {
+				"Class": "WorldRoot",
+				"Name": "GravityDirection",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"IKMoveTo": {
 				"Class": "WorldRoot",
 				"Name": "IKMoveTo",
@@ -350450,6 +353120,18 @@
 					}
 				]
 			},
+			"Simulate": {
+				"Class": "WorldRoot",
+				"Name": "Simulate",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SimulationRate": {
+				"Class": "WorldRoot",
+				"Name": "SimulationRate",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"Spherecast": {
 				"Class": "WorldRoot",
 				"Name": "Spherecast",
@@ -350466,6 +353148,18 @@
 				"Class": "WorldRoot",
 				"Name": "UnregisterCollisionGroup",
 				"MemberType": "Function",
+				"Removed": false
+			},
+			"Wind": {
+				"Class": "WorldRoot",
+				"Name": "Wind",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"WindDirection": {
+				"Class": "WorldRoot",
+				"Name": "WindDirection",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"findPartOnRay": {
@@ -350704,6 +353398,87 @@
 				"Name": "Color",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"CreateTextureInCageSpaceAsync": {
+				"Class": "WrapTarget",
+				"Name": "CreateTextureInCageSpaceAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "WrapTarget",
+						"Member": "CreateTextureInCageSpaceAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableImage"
+						}
+					},
+					{
+						"Class": "WrapTarget",
+						"Member": "CreateTextureInCageSpaceAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableImage"
+						}
+					}
+				]
+			},
+			"CreateTextureInTargetSpaceAsync": {
+				"Class": "WrapTarget",
+				"Name": "CreateTextureInTargetSpaceAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "WrapTarget",
+						"Member": "CreateTextureInTargetSpaceAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableImage"
+						}
+					},
+					{
+						"Class": "WrapTarget",
+						"Member": "CreateTextureInTargetSpaceAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Class",
+							"Name": "WrapTextureTransfer"
+						}
+					},
+					{
+						"Class": "WrapTarget",
+						"Member": "CreateTextureInTargetSpaceAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableImage"
+						}
+					}
+				]
 			},
 			"DebugMode": {
 				"Class": "WrapTarget",
@@ -353432,7 +356207,7 @@
 				},
 				{
 					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
+					"Member": "PromptCreatePlatformContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -353490,6 +356265,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AssetType"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Enum",
 						"Name": "AssetType"
@@ -353787,6 +356575,18 @@
 						"Name": "AudioPositionType"
 					}
 				}
+			]
+		},
+		"AudioSampleFormat": {
+			"Name": "AudioSampleFormat",
+			"Removed": false,
+			"ItemsByValue": [
+				"Int16",
+				"Float32"
+			],
+			"ItemsByIndex": [
+				"Int16",
+				"Float32"
 			]
 		},
 		"AudioSimulationFidelity": {
@@ -355229,6 +358029,35 @@
 				}
 			]
 		},
+		"BasicMeshPartShape": {
+			"Name": "BasicMeshPartShape",
+			"Removed": false,
+			"ItemsByValue": [
+				"Capsule",
+				"Cone",
+				"RoundedBox"
+			],
+			"ItemsByIndex": [
+				"Capsule",
+				"Cone",
+				"RoundedBox"
+			],
+			"Related": [
+				{
+					"Class": "GeometryService",
+					"Member": "CreateBasicMeshPart",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "BasicMeshPartShape"
+					}
+				}
+			]
+		},
 		"BeamTextureMode": {
 			"Name": "BeamTextureMode",
 			"Removed": true,
@@ -355515,6 +358344,37 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "BorderStrokePosition"
+					}
+				}
+			]
+		},
+		"BranchStatus": {
+			"Name": "BranchStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"Draft",
+				"ReadyToMerge",
+				"Merged",
+				"Archived"
+			],
+			"ItemsByIndex": [
+				"Draft",
+				"ReadyToMerge",
+				"Merged",
+				"Archived"
+			],
+			"Related": [
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "BranchStatus"
 					}
 				}
 			]
@@ -364253,6 +367113,19 @@
 						"Category": "Enum",
 						"Name": "InputSink"
 					}
+				},
+				{
+					"Class": "GuiObject",
+					"Member": "Sink",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "InputSink"
+					}
 				}
 			]
 		},
@@ -367415,6 +370288,92 @@
 				}
 			]
 		},
+		"MergeResolution": {
+			"Name": "MergeResolution",
+			"Removed": false,
+			"ItemsByValue": [
+				"None",
+				"UseSource",
+				"UseTarget",
+				"Manual"
+			],
+			"ItemsByIndex": [
+				"None",
+				"UseSource",
+				"UseTarget",
+				"Manual"
+			],
+			"Related": [
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeResolution"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeResolution"
+					}
+				}
+			]
+		},
+		"MergeStatus": {
+			"Name": "MergeStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"None",
+				"Loading",
+				"Merging"
+			],
+			"ItemsByIndex": [
+				"None",
+				"Loading",
+				"Merging"
+			],
+			"Related": [
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeStatus",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeStatus"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "MergeStatusChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "MergeStatus"
+					}
+				}
+			]
+		},
 		"MeshAttribute": {
 			"Name": "MeshAttribute",
 			"Removed": false,
@@ -369912,6 +372871,19 @@
 						"Category": "Enum",
 						"Name": "PioneerSource"
 					}
+				},
+				{
+					"Class": "DataModel",
+					"Member": "GetPioneerSource",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PioneerSource"
+					}
 				}
 			]
 		},
@@ -371036,7 +374008,7 @@
 					"Class": "AssetService",
 					"Member": "OpenCreateResultModal",
 					"MemberType": "Event",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -371099,6 +374071,49 @@
 				"Timeout",
 				"NoUserInput",
 				"UnknownFailure"
+			]
+		},
+		"PromptCreatePlatformContentResult": {
+			"Name": "PromptCreatePlatformContentResult",
+			"Removed": false,
+			"ItemsByValue": [
+				"Success",
+				"PermissionDenied",
+				"Timeout",
+				"UploadFailed",
+				"NoUserInput",
+				"UnknownFailure",
+				"UGCValidationFailed",
+				"ModeratedName",
+				"PurchaseFailure",
+				"TokenInvalid"
+			],
+			"ItemsByIndex": [
+				"Success",
+				"PermissionDenied",
+				"Timeout",
+				"UploadFailed",
+				"NoUserInput",
+				"UnknownFailure",
+				"UGCValidationFailed",
+				"ModeratedName",
+				"PurchaseFailure",
+				"TokenInvalid"
+			],
+			"Related": [
+				{
+					"Class": "AssetService",
+					"Member": "OpenPublishResultModal",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PromptCreatePlatformContentResult"
+					}
+				}
 			]
 		},
 		"PromptExperienceDetailsResult": {
@@ -371173,21 +374188,6 @@
 				"UploadFailed",
 				"NoUserInput",
 				"UnknownFailure"
-			],
-			"Related": [
-				{
-					"Class": "AssetService",
-					"Member": "OpenPublishResultModal",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Enum",
-						"Name": "PromptPublishAssetResult"
-					}
-				}
 			]
 		},
 		"PropertyStatus": {
@@ -373188,6 +376188,19 @@
 				},
 				{
 					"Class": "Workspace",
+					"Member": "UseInputSink",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "Workspace",
 					"Member": "UseNewLuauTypeSolver",
 					"MemberType": "Property",
 					"Removed": false,
@@ -374142,6 +377155,33 @@
 				}
 			]
 		},
+		"ScrollState": {
+			"Name": "ScrollState",
+			"Removed": false,
+			"ItemsByValue": [
+				"Idle",
+				"Scrolling"
+			],
+			"ItemsByIndex": [
+				"Idle",
+				"Scrolling"
+			],
+			"Related": [
+				{
+					"Class": "GuiService",
+					"Member": "ScrollStateChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ScrollState"
+					}
+				}
+			]
+		},
 		"ScrollingDirection": {
 			"Name": "ScrollingDirection",
 			"Removed": false,
@@ -374942,18 +377982,22 @@
 			"ItemsByValue": [
 				"None",
 				"LOD",
+				"LevelOfDetail",
 				"Meshes",
 				"MeshResourcePtr",
 				"ContentId",
+				"DataModelState",
 				"Zone",
 				"TranscoderStatus"
 			],
 			"ItemsByIndex": [
 				"None",
 				"LOD",
+				"LevelOfDetail",
 				"Meshes",
 				"MeshResourcePtr",
 				"ContentId",
+				"DataModelState",
 				"Zone",
 				"TranscoderStatus"
 			],
@@ -374992,20 +378036,22 @@
 			"ItemsByValue": [
 				"Unknown",
 				"NoHash",
+				"Transcoding",
 				"NotUploaded",
-				"Uploaded",
-				"InProgress",
 				"Succeeded",
-				"Failed"
+				"Failed",
+				"Uploaded",
+				"InProgress"
 			],
 			"ItemsByIndex": [
 				"Unknown",
 				"NoHash",
+				"Transcoding",
 				"NotUploaded",
-				"Uploaded",
-				"InProgress",
 				"Succeeded",
-				"Failed"
+				"Failed",
+				"Uploaded",
+				"InProgress"
 			],
 			"Related": [
 				{
@@ -375054,7 +378100,7 @@
 		},
 		"SolidPrimitiveType": {
 			"Name": "SolidPrimitiveType",
-			"Removed": false,
+			"Removed": true,
 			"ItemsByValue": [
 				"Capsule",
 				"Cone",
@@ -375070,7 +378116,7 @@
 					"Class": "GeometryService",
 					"Member": "CreateSolidPrimitive",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -375405,8 +378451,34 @@
 			],
 			"Related": [
 				{
-					"Class": "PlayerControlState",
+					"Class": "ControlState",
 					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StateReferenceFrame"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StateReferenceFrame"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetState",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -375421,7 +378493,20 @@
 					"Class": "PlayerControlState",
 					"Member": "GetChangedState",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StateReferenceFrame"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -375434,7 +378519,7 @@
 					"Class": "PlayerControlState",
 					"Member": "GetState",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -377156,7 +380241,8 @@
 				"TeleportToPartyAsync",
 				"TeleportToVIPServer",
 				"TeleportToInstanceBack",
-				"TeleportUnknown"
+				"TeleportUnknown",
+				"Teleport"
 			],
 			"ItemsByIndex": [
 				"TeleportToSpawnByName",
@@ -377166,7 +380252,8 @@
 				"TeleportToPartyAsync",
 				"TeleportToVIPServer",
 				"TeleportToInstanceBack",
-				"TeleportUnknown"
+				"TeleportUnknown",
+				"Teleport"
 			]
 		},
 		"TeleportResult": {
@@ -383609,6 +386696,18 @@
 				"Removed": false
 			}
 		},
+		"AudioSampleFormat": {
+			"Float32": {
+				"Enum": "AudioSampleFormat",
+				"Name": "Float32",
+				"Removed": false
+			},
+			"Int16": {
+				"Enum": "AudioSampleFormat",
+				"Name": "Int16",
+				"Removed": false
+			}
+		},
 		"AudioSimulationFidelity": {
 			"Automatic": {
 				"Enum": "AudioSimulationFidelity",
@@ -384404,6 +387503,23 @@
 				"Removed": false
 			}
 		},
+		"BasicMeshPartShape": {
+			"Capsule": {
+				"Enum": "BasicMeshPartShape",
+				"Name": "Capsule",
+				"Removed": false
+			},
+			"Cone": {
+				"Enum": "BasicMeshPartShape",
+				"Name": "Cone",
+				"Removed": false
+			},
+			"RoundedBox": {
+				"Enum": "BasicMeshPartShape",
+				"Name": "RoundedBox",
+				"Removed": false
+			}
+		},
 		"BeamTextureMode": {
 			"Stretch": {
 				"Enum": "BeamTextureMode",
@@ -384627,6 +387743,28 @@
 			"Outer": {
 				"Enum": "BorderStrokePosition",
 				"Name": "Outer",
+				"Removed": false
+			}
+		},
+		"BranchStatus": {
+			"Archived": {
+				"Enum": "BranchStatus",
+				"Name": "Archived",
+				"Removed": false
+			},
+			"Draft": {
+				"Enum": "BranchStatus",
+				"Name": "Draft",
+				"Removed": false
+			},
+			"Merged": {
+				"Enum": "BranchStatus",
+				"Name": "Merged",
+				"Removed": false
+			},
+			"ReadyToMerge": {
+				"Enum": "BranchStatus",
+				"Name": "ReadyToMerge",
 				"Removed": false
 			}
 		},
@@ -393711,6 +396849,45 @@
 				"Removed": false
 			}
 		},
+		"MergeResolution": {
+			"Manual": {
+				"Enum": "MergeResolution",
+				"Name": "Manual",
+				"Removed": false
+			},
+			"None": {
+				"Enum": "MergeResolution",
+				"Name": "None",
+				"Removed": false
+			},
+			"UseSource": {
+				"Enum": "MergeResolution",
+				"Name": "UseSource",
+				"Removed": false
+			},
+			"UseTarget": {
+				"Enum": "MergeResolution",
+				"Name": "UseTarget",
+				"Removed": false
+			}
+		},
+		"MergeStatus": {
+			"Loading": {
+				"Enum": "MergeStatus",
+				"Name": "Loading",
+				"Removed": false
+			},
+			"Merging": {
+				"Enum": "MergeStatus",
+				"Name": "Merging",
+				"Removed": false
+			},
+			"None": {
+				"Enum": "MergeStatus",
+				"Name": "None",
+				"Removed": false
+			}
+		},
 		"MeshAttribute": {
 			"Color": {
 				"Enum": "MeshAttribute",
@@ -395975,6 +399152,58 @@
 				"Removed": false
 			}
 		},
+		"PromptCreatePlatformContentResult": {
+			"ModeratedName": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "ModeratedName",
+				"Removed": false
+			},
+			"NoUserInput": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "NoUserInput",
+				"Removed": false
+			},
+			"PermissionDenied": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "PermissionDenied",
+				"Removed": false
+			},
+			"PurchaseFailure": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "PurchaseFailure",
+				"Removed": false
+			},
+			"Success": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "Success",
+				"Removed": false
+			},
+			"Timeout": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "Timeout",
+				"Removed": false
+			},
+			"TokenInvalid": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "TokenInvalid",
+				"Removed": false
+			},
+			"UGCValidationFailed": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "UGCValidationFailed",
+				"Removed": false
+			},
+			"UnknownFailure": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "UnknownFailure",
+				"Removed": false
+			},
+			"UploadFailed": {
+				"Enum": "PromptCreatePlatformContentResult",
+				"Name": "UploadFailed",
+				"Removed": false
+			}
+		},
 		"PromptExperienceDetailsResult": {
 			"PromptClosed": {
 				"Enum": "PromptExperienceDetailsResult",
@@ -397817,6 +401046,18 @@
 				"Removed": false
 			}
 		},
+		"ScrollState": {
+			"Idle": {
+				"Enum": "ScrollState",
+				"Name": "Idle",
+				"Removed": false
+			},
+			"Scrolling": {
+				"Enum": "ScrollState",
+				"Name": "Scrolling",
+				"Removed": false
+			}
+		},
 		"ScrollingDirection": {
 			"X": {
 				"Enum": "ScrollingDirection",
@@ -398429,9 +401670,19 @@
 				"Name": "ContentId",
 				"Removed": false
 			},
+			"DataModelState": {
+				"Enum": "SlimTintMode",
+				"Name": "DataModelState",
+				"Removed": false
+			},
 			"LOD": {
 				"Enum": "SlimTintMode",
 				"Name": "LOD",
+				"Removed": true
+			},
+			"LevelOfDetail": {
+				"Enum": "SlimTintMode",
+				"Name": "LevelOfDetail",
 				"Removed": false
 			},
 			"MeshResourcePtr": {
@@ -398457,7 +401708,7 @@
 			"Zone": {
 				"Enum": "SlimTintMode",
 				"Name": "Zone",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"SlimTranscoderStatus": {
@@ -398469,21 +401720,26 @@
 			"InProgress": {
 				"Enum": "SlimTranscoderStatus",
 				"Name": "InProgress",
-				"Removed": false
+				"Removed": true
 			},
 			"NoHash": {
 				"Enum": "SlimTranscoderStatus",
 				"Name": "NoHash",
-				"Removed": false
+				"Removed": true
 			},
 			"NotUploaded": {
 				"Enum": "SlimTranscoderStatus",
 				"Name": "NotUploaded",
-				"Removed": false
+				"Removed": true
 			},
 			"Succeeded": {
 				"Enum": "SlimTranscoderStatus",
 				"Name": "Succeeded",
+				"Removed": false
+			},
+			"Transcoding": {
+				"Enum": "SlimTranscoderStatus",
+				"Name": "Transcoding",
 				"Removed": false
 			},
 			"Unknown": {
@@ -398494,7 +401750,7 @@
 			"Uploaded": {
 				"Enum": "SlimTranscoderStatus",
 				"Name": "Uploaded",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"SlimViewContext": {
@@ -398518,17 +401774,17 @@
 			"Capsule": {
 				"Enum": "SolidPrimitiveType",
 				"Name": "Capsule",
-				"Removed": false
+				"Removed": true
 			},
 			"Cone": {
 				"Enum": "SolidPrimitiveType",
 				"Name": "Cone",
-				"Removed": false
+				"Removed": true
 			},
 			"RoundedBox": {
 				"Enum": "SolidPrimitiveType",
 				"Name": "RoundedBox",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"SolverConvergenceMetricType": {
@@ -400551,6 +403807,11 @@
 			}
 		},
 		"TeleportMethod": {
+			"Teleport": {
+				"Enum": "TeleportMethod",
+				"Name": "Teleport",
+				"Removed": false
+			},
 			"TeleportPartyAsync": {
 				"Enum": "TeleportMethod",
 				"Name": "TeleportPartyAsync",
@@ -405480,6 +408741,32 @@
 					}
 				},
 				{
+					"Class": "BranchService",
+					"Member": "GetInstanceConflicts",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "CreateCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "Camera",
 					"Member": "GetPartsObscuringTarget",
 					"MemberType": "Function",
@@ -408744,19 +412031,6 @@
 					}
 				},
 				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "GetRegisteredSimulators",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Array"
-					}
-				},
-				{
 					"Class": "StudioScreenshotCapture",
 					"Member": "GetErrors",
 					"MemberType": "Function",
@@ -410382,6 +413656,19 @@
 					}
 				},
 				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "GetRegisteredSimulators",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
 					"Class": "StudioService",
 					"Member": "PromptImportLocalAsset",
 					"MemberType": "Function",
@@ -410910,6 +414197,19 @@
 					}
 				},
 				{
+					"Class": "ControlState",
+					"Member": "StateSchema",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
 					"Class": "EditableImage",
 					"Member": "ImageData",
 					"MemberType": "Property",
@@ -411133,19 +414433,6 @@
 				{
 					"Class": "Player",
 					"Member": "RawJoinData",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "BinaryString"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "StateSchema",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -411536,6 +414823,19 @@
 				{
 					"Class": "DynamicImage",
 					"Member": "ImageData",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "StateSchema",
 					"MemberType": "Property",
 					"Removed": true,
 					"Field": "ValueType",
@@ -412446,6 +415746,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "CFrame"
@@ -413557,19 +416870,6 @@
 					}
 				},
 				{
-					"Class": "PlayerControlState",
-					"Member": "AddCFrameField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "CFrame"
-					}
-				},
-				{
 					"Class": "PlayerViewService",
 					"Member": "GetDeviceCameraCFrame",
 					"MemberType": "Function",
@@ -414669,6 +417969,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "CFrame"
@@ -422349,6 +425662,71 @@
 					}
 				},
 				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetBranchesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "GetCallingState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "OnCallingStateChange",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "CaptureService",
 					"Member": "CreatePostAsync",
 					"MemberType": "Function",
@@ -422683,6 +426061,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "UpdateFields",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -423356,7 +426773,7 @@
 				},
 				{
 					"Class": "GeometryService",
-					"Member": "CreateSolidPrimitive",
+					"Member": "CreateBasicMeshPart",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -424838,45 +428255,6 @@
 					}
 				},
 				{
-					"Class": "PlayerControlState",
-					"Member": "GetChangedState",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "GetState",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "UpdateFields",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
 					"Class": "PlayerEmulatorService",
 					"Member": "GetEmulatedPolicyInfo",
 					"MemberType": "Function",
@@ -425144,6 +428522,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PublishService",
+					"Member": "CreateAssetAndWaitForAssetId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 8,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -426145,45 +429536,6 @@
 				},
 				{
 					"Class": "StudioDeviceSimulatorService",
-					"Member": "RegisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "RegisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "UnregisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Dictionary"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
 					"Member": "UpdateDeviceAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -427136,6 +430488,20 @@
 					}
 				},
 				{
+					"Class": "WrapTarget",
+					"Member": "CreateTextureInCageSpaceAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
 					"Class": "AnalyticsService",
 					"Member": "ReportInfluxSeries",
 					"MemberType": "Function",
@@ -427877,6 +431243,19 @@
 					}
 				},
 				{
+					"Class": "GeometryService",
+					"Member": "CreateSolidPrimitive",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "GetDataStoreOptions",
 					"Member": "SetExperimentalFeatures",
 					"MemberType": "Function",
@@ -428150,6 +431529,45 @@
 					}
 				},
 				{
+					"Class": "PlayerControlState",
+					"Member": "GetChangedState",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "GetState",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "UpdateFields",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "ScriptContext",
 					"Member": "DeserializeScriptProfilerString",
 					"MemberType": "Function",
@@ -428170,6 +431588,45 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -428511,6 +431968,19 @@
 				},
 				{
 					"Class": "TextButton",
+					"Member": "FontFace",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Font"
+					}
+				},
+				{
+					"Class": "TextChannelWindow",
 					"Member": "FontFace",
 					"MemberType": "Property",
 					"Removed": false,
@@ -432324,6 +435794,19 @@
 					}
 				},
 				{
+					"Class": "UGCValidationService",
+					"Member": "GetSerializedSizeExcludingCollisionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
 					"Class": "UserInputService",
 					"Member": "GetGamepadState",
 					"MemberType": "Function",
@@ -435902,6 +439385,19 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Region3"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "WriteVoxelChannels",
 					"MemberType": "Function",
 					"Removed": false,
@@ -436292,6 +439788,58 @@
 			"Name": "ScopedInstanceIdentity",
 			"Removed": false,
 			"Related": [
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "MergeStateChanged",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "MergeStateCleared",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ScopedInstanceIdentity"
+					}
+				},
 				{
 					"Class": "DataModelDiff",
 					"Member": "GetChangeType",
@@ -436953,7 +440501,7 @@
 				},
 				{
 					"Class": "AssetService",
-					"Member": "PromptCreateAssetAsync",
+					"Member": "PromptCreatePlatformContentAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -438824,6 +442372,19 @@
 					}
 				},
 				{
+					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
 					"Class": "TestService",
 					"Member": "CaptureScreenshotAsync",
 					"MemberType": "Function",
@@ -439359,6 +442920,19 @@
 				{
 					"Class": "AssetService",
 					"Member": "GetAssetThumbnailAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "PromptCreateAssetAsync",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -441564,6 +445138,19 @@
 					}
 				},
 				{
+					"Class": "ControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
 					"Class": "CoreScriptSyncService",
 					"Member": "GetScriptFilePath",
 					"MemberType": "Function",
@@ -442195,19 +445782,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
-					"Type": {
-						"Category": "Group",
-						"Name": "Variant"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "SetField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
 					"Type": {
 						"Category": "Group",
 						"Name": "Variant"
@@ -443320,6 +446894,19 @@
 					}
 				},
 				{
+					"Class": "PlayerControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
 					"Class": "PresenceService",
 					"Member": "GetUsersAsync",
 					"MemberType": "Function",
@@ -443685,6 +447272,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector2"
@@ -444336,19 +447936,6 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Vector2"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector2Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector2"
@@ -445863,6 +449450,19 @@
 					}
 				},
 				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
 					"Class": "StudioDeviceEmulatorService",
 					"Member": "PivotPosition",
 					"MemberType": "Property",
@@ -447262,6 +450862,32 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
@@ -449442,32 +453068,6 @@
 					}
 				},
 				{
-					"Class": "PlayerControlState",
-					"Member": "AddUnitVector3Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Vector3"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector3Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Vector3"
-					}
-				},
-				{
 					"Class": "ProceduralModel",
 					"Member": "Size",
 					"MemberType": "Property",
@@ -450497,6 +454097,32 @@
 				},
 				{
 					"Class": "WorldRoot",
+					"Member": "GravityDirection",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "WindDirection",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "WorldRoot",
 					"Member": "Blockcast",
 					"MemberType": "Function",
 					"Removed": false,
@@ -451452,6 +455078,32 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
@@ -455484,6 +459136,19 @@
 					}
 				},
 				{
+					"Class": "BranchService",
+					"Member": "GetBranchesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "Breakpoint",
 					"Member": "ContinueExecution",
 					"MemberType": "Property",
@@ -456446,6 +460111,19 @@
 					}
 				},
 				{
+					"Class": "ControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "Controller",
 					"Member": "GetButton",
 					"MemberType": "Function",
@@ -456708,6 +460386,19 @@
 				{
 					"Class": "DataModel",
 					"Member": "IsLoaded",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "DataModel",
+					"Member": "IsPioneerApp",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -463635,19 +467326,6 @@
 					}
 				},
 				{
-					"Class": "PlayerControlState",
-					"Member": "AddBoolField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
 					"Class": "PlayerDataRecord",
 					"Member": "DefaultRecordName",
 					"MemberType": "Property",
@@ -468588,6 +472266,19 @@
 					}
 				},
 				{
+					"Class": "SystemThemeService",
+					"Member": "setClassicThemeActive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "Team",
 					"Member": "AutoAssignable",
 					"MemberType": "Property",
@@ -468777,6 +472468,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "GridBackendReloadRequired",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -469318,6 +473022,19 @@
 				{
 					"Class": "TextChannelWindow",
 					"Member": "IsRendering",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TextChannelWindow",
+					"Member": "UseDefaultFont",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -473093,6 +476810,19 @@
 				},
 				{
 					"Class": "WorldRoot",
+					"Member": "AutoSimulate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "WorldRoot",
 					"Member": "ArePartsTouchingOthers",
 					"MemberType": "Function",
 					"Removed": false,
@@ -476284,6 +480014,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -479700,6 +483443,123 @@
 					}
 				},
 				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "GetReplicationWeight",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
 					"Class": "DataModel",
 					"Member": "getGameTime",
 					"MemberType": "Function",
@@ -480135,123 +483995,6 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddIntField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddIntField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddIntField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddNumberField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddNumberField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddNumberField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector2Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector3Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "GetReplicationWeight",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
@@ -480695,6 +484438,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetSerializedSizeExcludingCollisionAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "double"
@@ -481332,6 +485088,123 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "GetReplicationWeight",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "double"
@@ -492008,6 +495881,32 @@
 				},
 				{
 					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
+					"Member": "SmoothRegionMaterialSlots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Terrain",
 					"Member": "WriteVoxelChannels",
 					"MemberType": "Function",
 					"Removed": false,
@@ -494077,6 +497976,32 @@
 				},
 				{
 					"Class": "WorldRoot",
+					"Member": "SimulationRate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "Wind",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "WorldRoot",
 					"Member": "ArePartsTouchingOthers",
 					"MemberType": "Function",
 					"Removed": false,
@@ -494135,6 +498060,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "Simulate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -499208,6 +503146,19 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "GetAutoUIScaleHundredths",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "GetBrickCount",
 					"MemberType": "Function",
 					"Removed": false,
@@ -499221,7 +503172,7 @@
 				},
 				{
 					"Class": "GuiService",
-					"Member": "GetResolutionScale",
+					"Member": "GetEffectiveUIScaleHundredths",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -499234,7 +503185,7 @@
 				},
 				{
 					"Class": "GuiService",
-					"Member": "GetUIScaleMultiplier",
+					"Member": "GetResolutionScale",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -507881,6 +511832,19 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "GetUIScaleMultiplier",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "RequestNativeView",
 					"MemberType": "Function",
 					"Removed": true,
@@ -512015,6 +515979,149 @@
 					}
 				},
 				{
+					"Class": "BranchService",
+					"Member": "ArchiveBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetBranchesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetDiffAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "RestoreBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "StartMergeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "StartMergeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "BubbleChatConfiguration",
 					"Member": "TextSize",
 					"MemberType": "Property",
@@ -512555,6 +516662,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "DataModel",
+					"Member": "GetPioneerRootPlaceId",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -514058,6 +518178,19 @@
 				{
 					"Class": "GamePassService",
 					"Member": "PlayerHasPass",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ExportInstanceToGlbAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -516645,6 +520778,19 @@
 				{
 					"Class": "RemoteCommandService",
 					"Member": "UpdateSentFromStudio",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "BroadcastRemoteCursorPositionsWithConnectionId",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -521543,6 +525689,71 @@
 					}
 				},
 				{
+					"Class": "BranchService",
+					"Member": "ArchiveBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "CompleteMerge",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "RestoreBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "StartMergeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "BrowserService",
 					"Member": "CloseBrowserWindow",
 					"MemberType": "Function",
@@ -521675,6 +525886,32 @@
 				{
 					"Class": "BulkImportService",
 					"Member": "ShowBulkImportView",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "AnswerIncomingCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "EndCall",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -522806,6 +527043,136 @@
 				{
 					"Class": "ContextActionService",
 					"Member": "UnbindCoreActivate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddInstanceField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "UpdateFields",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -529499,136 +533866,6 @@
 					}
 				},
 				{
-					"Class": "PlayerControlState",
-					"Member": "AddBoolField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddCFrameField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddInstanceField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddIntField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddNumberField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddUnitVector3Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector2Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector3Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "SetField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "UpdateFields",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
 					"Class": "PlayerDataRecord",
 					"Member": "ReleaseAsync",
 					"MemberType": "Function",
@@ -532815,19 +537052,6 @@
 				},
 				{
 					"Class": "StudioDeviceSimulatorService",
-					"Member": "UnregisterSimulator",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
 					"Member": "UpdateDeviceAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -533362,6 +537586,19 @@
 				{
 					"Class": "StylingService",
 					"Member": "UpdateUnitTestOnly",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SystemThemeService",
+					"Member": "setClassicThemeActive",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -536442,6 +540679,19 @@
 				},
 				{
 					"Class": "WorldRoot",
+					"Member": "Simulate",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "WorldRoot",
 					"Member": "StepPhysics",
 					"MemberType": "Function",
 					"Removed": false,
@@ -538014,6 +542264,136 @@
 					}
 				},
 				{
+					"Class": "PlayerControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddInstanceField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "UpdateFields",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "PlayerDataRecord",
 					"Member": "Release",
 					"MemberType": "Function",
@@ -538367,6 +542747,19 @@
 				{
 					"Class": "StudioDeviceEmulatorService",
 					"Member": "SetGamepadEmulationEnabled",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "UnregisterSimulator",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -542051,6 +546444,60 @@
 					}
 				},
 				{
+					"Class": "BranchService",
+					"Member": "CreateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "GetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "SetMergeResolution",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "BranchService",
+					"Member": "UpdateBranchAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "Breakpoint",
 					"Member": "Condition",
 					"MemberType": "Property",
@@ -542285,6 +546732,97 @@
 					}
 				},
 				{
+					"Class": "CallingService",
+					"Member": "AnswerIncomingCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "CreateCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "CreateCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "EndCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "EndCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "GetCallingState",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CallingService",
+					"Member": "OnCallingRemoved",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "CalloutService",
 					"Member": "AttachCallout",
 					"MemberType": "Function",
@@ -542461,6 +546999,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "GenerateMomentTextAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -543984,6 +548535,123 @@
 					"Class": "ContextActionService",
 					"Member": "GetActionButtonEvent",
 					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddInstanceField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
@@ -546029,6 +550697,19 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "ExportInstanceToGlbAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
@@ -554257,123 +558938,6 @@
 					}
 				},
 				{
-					"Class": "PlayerControlState",
-					"Member": "AddBoolField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddCFrameField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddInstanceField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddIntField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddNumberField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddUnitVector3Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector2Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "AddVector3Field",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "PlayerControlState",
-					"Member": "SetField",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
 					"Class": "PlayerData",
 					"Member": "GetRecordAsync",
 					"MemberType": "Function",
@@ -556796,6 +561360,19 @@
 				{
 					"Class": "RemoteCursorService",
 					"Member": "BroadcastRemoteCursorPositions",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "BroadcastRemoteCursorPositionsWithConnectionId",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -559464,19 +564041,6 @@
 				{
 					"Class": "StudioDeviceSimulatorService",
 					"Member": "GetDeviceInfoAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "StudioDeviceSimulatorService",
-					"Member": "RegisterSimulator",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -569467,6 +574031,123 @@
 					}
 				},
 				{
+					"Class": "PlayerControlState",
+					"Member": "AddBoolField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddCFrameField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddInstanceField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddIntField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddNumberField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddUnitVector3Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector2Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "AddVector3Field",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PlayerControlState",
+					"Member": "SetField",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "PlayerData",
 					"Member": "GetRecord",
 					"MemberType": "Function",
@@ -570848,6 +575529,19 @@
 				{
 					"Class": "Studio",
 					"Member": "FindTheme",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioDeviceSimulatorService",
+					"Member": "RegisterSimulator",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "Parameters",
