@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.737.0.7371584</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-9fe94fb0e9d84c25</link><description>235 revisions to the API.</description><guid>version-9fe94fb0e9d84c25</guid><pubDate>Wed, 02 Sep 2026 09:53:56 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.738.0.7381393</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-93202a13414c4131</link><description>78 revisions to the API.</description><guid>version-93202a13414c4131</guid><pubDate>Tue, 08 Sep 2026 10:35:45 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-0">Add Class AnimatedImage</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-6">Add Class AnimatedImageService</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-12">Add Class AnimatedImageTrack</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-18">Add Property AnimationImportData.ForceNewVersion</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-19">Add Property AnimationImportData.VersionedAssetId</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-20">Add Class AnimationValueNodeDefinition</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-23">Add Class AnimationValueOutputDefinition</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-24">Add Property AudioDeviceInput.DictationEnabled</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-25">Remove Class DataModelPatchService</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-26">Add Property Decal.LocalizedTextureContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-27">Add Property Folder.IconTint</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-28">Change Property GuiObject.Transparency</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-29">Change Function GuiObject.TweenPosition</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-30">Change Function GuiObject.TweenSize</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-31">Change Function GuiObject.TweenSizeAndPosition</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-32">Add Property LocalizationService.ShouldUseImageLocalizationTable</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-33">Add Class MomentsService</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-37">Add Function PinShortcutService.IsRevealPinnedExperienceAvailable</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-38">Add Function PinShortcutService.RevealPinnedExperience</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-39">Add Function PinShortcutService.ShouldShowLuaNotificationOnPinExperienceCompleted</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-40">Add Event PinShortcutService.OnPinExperienceCompleted</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-41">Add Event RemoteCursorService.RequestAllRemoteCursorPositionForScriptWithUri</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-42">Add Event RemoteCursorService.UpdateClientRemoteCursorPositionWithUri</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-43">Add Function RunService.BindToAnimation</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-44">Add Function ScriptService.ResolveModulePath</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-45">Add Property Studio.ReviewableChangeAddedTextColor</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-46">Add Property Studio.ReviewableChangeRemovedTextColor</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-47">Change Property Terrain.ExpandedTerrainResolved</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-49">Add Property TextChannel.AddPlayersOnJoin</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-50">Add Property Workspace.StreamingAdaptiveRadius</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-51">Add Enum AnimatedImagePlaybackState</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-57">Add Enum AnimatedImageScaleType</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-62">Add Enum AnimationValueNodeType</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-65">Add EnumItem ConnectionError.DisconnectTransportIoError</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-66">Add EnumItem ConnectionError.DisconnectTransportIoInternetError</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-67">Add EnumItem ConnectionError.DisconnectTransportNgtcp2Error</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-68">Add EnumItem ConnectionError.DisconnectTransportProtocolError</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-69">Add EnumItem ConnectionError.DisconnectTransportQuicError</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-70">Add EnumItem ConnectionError.DisconnectTransportRnaError</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-71">Add EnumItem ConnectionError.TransportErrors</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-72">Add Enum PinExperienceStatus</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-76">Add EnumItem StudioScriptEditorColorCategories.ReviewableChangeAddedText</a></li>
+					<li><a href="/ref/updates/2026.html#version-93202a13414c4131-77">Add EnumItem StudioScriptEditorColorCategories.ReviewableChangeRemovedText</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-93202a13414c4131">All changes</a>
+			]]></content:encoded></item><item><title>v0.737.0.7371584</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-9fe94fb0e9d84c25</link><description>235 revisions to the API.</description><guid>version-9fe94fb0e9d84c25</guid><pubDate>Wed, 02 Sep 2026 09:53:56 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-9fe94fb0e9d84c25-0">Remove Function AssetService.PromptCreateAssetAsync</a></li>
 					<li><a href="/ref/updates/2026.html#version-9fe94fb0e9d84c25-1">Add Function AssetService.PromptCreatePlatformContentAsync</a></li>
@@ -4918,29 +4965,4 @@
 					<li><a href="/ref/updates/2025.html#version-ffd2994ae3bd41ab-41">Add EnumItem PredictionMode.On</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-ffd2994ae3bd41ab">All changes</a>
-			]]></content:encoded></item><item><title>v0.689.0.6890882</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-0d6b98c40050432c</link><description>37 revisions to the API.</description><guid>version-0d6b98c40050432c</guid><pubDate>Tue, 02 Sep 2025 10:36:08 -0700</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-0">Add Class AudioTremolo</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-12">Change Function AuroraScript.AddTo</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-13">Add Function AuroraScriptService.FindBinding</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-14">Add Function AuroraScriptService.FindBindings</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-15">Change Property HapticEffect.Waveform</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-16">Add Property HapticEffect.WaveformData</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-17">Add Function Player.PinStreamingForInstanceByUniqueId</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-18">Add Event Player.RequestStreamingPinByUniqueId</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-19">Add Function RunService.GetControlAndVariantRolloutFlags</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-20">Add Property Studio.AutoUpdateEnabled</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-21">Add Function TestService.ConvertSlimAcrToObj</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-22">Add Function UGCValidationService.GetEditableMeshSkinningTransferJointsInfo</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-23">Add Function UGCValidationService.GetSkinningTransferJointsInfo</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-24">Add Function UniqueIdLookupService.GetOrCreateUniqueId</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-25">Add Function UniqueIdLookupService.GetOrCreateUniqueIdRemoteCommand</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-26">Add Property UserGameSettings.PlayerListVisible</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-27">Change Function WebViewService.MutateWindow</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-28">Change Function WebViewService.OpenWindow</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-29">Add Property Workspace.AirTurbulenceIntensity</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-30">Add EnumItem OutfitType.Shoes</a></li>
-					<li><a href="/ref/updates/2025.html#version-0d6b98c40050432c-31">Add Enum UpdateState</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-0d6b98c40050432c">All changes</a>
 			]]></content:encoded></item></channel></rss>

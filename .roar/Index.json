@@ -5050,6 +5050,331 @@
 				}
 			]
 		},
+		"AnimatedImage": {
+			"Name": "AnimatedImage",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"GuiBase",
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "AnimatedImage",
+					"Member": "Content",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "PlaybackSpeed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "GetBoundTracks",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "Pause",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "Resume",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				}
+			]
+		},
+		"AnimatedImageService": {
+			"Name": "AnimatedImageService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AnimatedImageTrack"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "Prewarm",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "Prewarm",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "UnloadTracks",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "UnloadTracks",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				}
+			]
+		},
+		"AnimatedImageTrack": {
+			"Name": "AnimatedImageTrack",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AnimatedImageTrack"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "Duration",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "FrameCount",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "TrackName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "GetContent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				}
+			]
+		},
 		"Animation": {
 			"Name": "Animation",
 			"Removed": false,
@@ -6078,6 +6403,34 @@
 				"Instance",
 				"Object",
 				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "AnimationImportData",
+					"Member": "ForceNewVersion",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AnimationImportData",
+					"Member": "VersionedAssetId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				}
 			]
 		},
 		"AnimationNode": {
@@ -7744,6 +8097,56 @@
 		"AnimationTrackState": {
 			"Name": "AnimationTrackState",
 			"Removed": true,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			]
+		},
+		"AnimationValueNodeDefinition": {
+			"Name": "AnimationValueNodeDefinition",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "AnimationValueNodeDefinition",
+					"Member": "NodeId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationValueNodeDefinition",
+					"Member": "NodeType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AnimationValueNodeType"
+					}
+				}
+			]
+		},
+		"AnimationValueOutputDefinition": {
+			"Name": "AnimationValueOutputDefinition",
+			"Removed": false,
 			"HasRemoved": false,
 			"Subclasses": [],
 			"Superclasses": [
@@ -19248,6 +19651,19 @@
 				{
 					"Class": "AudioDeviceInput",
 					"Member": "Active",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
+					"Member": "DictationEnabled",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -43008,6 +43424,19 @@
 						"Category": "Class",
 						"Name": "Capture"
 					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "GenerateMomentTextAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Capture"
+					}
 				}
 			]
 		},
@@ -59163,7 +59592,7 @@
 		},
 		"DataModelPatchService": {
 			"Name": "DataModelPatchService",
-			"Removed": false,
+			"Removed": true,
 			"HasRemoved": false,
 			"Subclasses": [],
 			"Superclasses": [
@@ -59176,7 +59605,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "GetLuaVersion",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -59189,7 +59618,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "GetLuaVersion",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -59202,7 +59631,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "GetPatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -59215,7 +59644,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "GetPatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -59228,7 +59657,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "RegisterPatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -59241,7 +59670,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "RegisterPatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -59254,7 +59683,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "RegisterPatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
@@ -59267,7 +59696,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "RegisterPatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
@@ -59280,7 +59709,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "RegisterPatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -59293,7 +59722,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "UpdatePatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -59306,7 +59735,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "UpdatePatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
@@ -59319,7 +59748,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "UpdatePatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
@@ -59332,7 +59761,7 @@
 					"Class": "DataModelPatchService",
 					"Member": "UpdatePatch",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -64103,6 +64532,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
+					}
+				},
+				{
+					"Class": "Decal",
+					"Member": "LocalizedTextureContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
 					}
 				},
 				{
@@ -81108,6 +81550,19 @@
 				},
 				{
 					"Class": "Folder",
+					"Member": "IconTint",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Folder",
 					"Member": "ReplicatedGuiInsertionOrder",
 					"MemberType": "Property",
 					"Removed": false,
@@ -85779,6 +86234,7 @@
 			"Removed": false,
 			"HasRemoved": true,
 			"Subclasses": [
+				"AnimatedImage",
 				"GuiBase2d",
 				"GuiBase3d",
 				"Path2D"
@@ -105235,6 +105691,7 @@
 				"AdService",
 				"AdvancedDragger",
 				"AnalyticsService",
+				"AnimatedImageService",
 				"Animation",
 				"AnimationClip",
 				"AnimationClipProvider",
@@ -105246,6 +105703,8 @@
 				"AnimationStreamTrack",
 				"AnimationTrack",
 				"AnimationTrackState",
+				"AnimationValueNodeDefinition",
+				"AnimationValueOutputDefinition",
 				"Animator",
 				"Annotation",
 				"AnnotationsService",
@@ -105583,6 +106042,7 @@
 				"MicroProfilerService",
 				"Moderation",
 				"ModerationService",
+				"MomentsService",
 				"Mouse",
 				"MouseService",
 				"MultipleDocumentInterfaceInstance",
@@ -107620,19 +108080,6 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Class",
-						"Name": "Instance"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "GetPatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Class",
@@ -113010,6 +113457,32 @@
 					}
 				},
 				{
+					"Class": "ScriptService",
+					"Member": "ResolveModulePath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "ScriptService",
+					"Member": "ResolveModulePath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
 					"Class": "Seat",
 					"Member": "Sit",
 					"MemberType": "Function",
@@ -115183,6 +115656,19 @@
 				{
 					"Class": "BreakpointManager",
 					"Member": "AddBreakpoint",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "GetPatch",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -120607,6 +121093,19 @@
 				{
 					"Class": "LocalizationService",
 					"Member": "ShouldUseCloudTable",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "LocalizationService",
+					"Member": "ShouldUseImageLocalizationTable",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -137576,6 +138075,110 @@
 				}
 			]
 		},
+		"MomentsService": {
+			"Name": "MomentsService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "MomentsService",
+					"Member": "CheckMomentTextStatusAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "CheckMomentTextStatusAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "CreatePostAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "CreatePostAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "GenerateMomentTextAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Capture"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "GenerateMomentTextAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "GenerateMomentTextAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				}
+			]
+		},
 		"Motor": {
 			"Name": "Motor",
 			"Removed": false,
@@ -140966,6 +141569,7 @@
 			"Removed": false,
 			"HasRemoved": true,
 			"Subclasses": [
+				"AnimatedImageTrack",
 				"AnimationNode",
 				"AuroraHandle",
 				"Capture",
@@ -148119,6 +148723,19 @@
 				},
 				{
 					"Class": "PinShortcutService",
+					"Member": "IsRevealPinnedExperienceAvailable",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
 					"Member": "PinExperience",
 					"MemberType": "Function",
 					"Removed": false,
@@ -148167,6 +148784,97 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "RevealPinnedExperience",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "RevealPinnedExperience",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "ShouldShowLuaNotificationOnPinExperienceCompleted",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PinExperienceStatus"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
 					}
 				}
 			]
@@ -167951,6 +168659,19 @@
 				},
 				{
 					"Class": "RemoteCursorService",
+					"Member": "RequestAllRemoteCursorPositionForScriptWithUri",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
 					"Member": "UpdateClientRemoteCursorPosition",
 					"MemberType": "Event",
 					"Removed": false,
@@ -167965,6 +168686,32 @@
 				{
 					"Class": "RemoteCursorService",
 					"Member": "UpdateClientRemoteCursorPosition",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "UpdateClientRemoteCursorPositionWithUri",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "UpdateClientRemoteCursorPositionWithUri",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -172004,6 +172751,58 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "RunState"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StepFrequency"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptConnection"
 					}
 				},
 				{
@@ -177711,6 +178510,47 @@
 				"Instance",
 				"Object",
 				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "ScriptService",
+					"Member": "ResolveModulePath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "ScriptService",
+					"Member": "ResolveModulePath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ScriptService",
+					"Member": "ResolveModulePath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				}
 			]
 		},
 		"ScrollingFrame": {
@@ -191691,6 +192531,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "ReviewableChangeAddedTextColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "ReviewableChangeRemovedTextColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
 					}
 				},
 				{
@@ -211279,6 +212145,19 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "TextChannel"
+					}
+				},
+				{
+					"Class": "TextChannel",
+					"Member": "AddPlayersOnJoin",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -243196,6 +244075,19 @@
 				},
 				{
 					"Class": "Workspace",
+					"Member": "StreamingAdaptiveRadius",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Workspace",
 					"Member": "StreamingEnabled",
 					"MemberType": "Property",
 					"Removed": false,
@@ -249462,6 +250354,117 @@
 				]
 			}
 		},
+		"AnimatedImage": {
+			"Content": {
+				"Class": "AnimatedImage",
+				"Name": "Content",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"GetBoundTracks": {
+				"Class": "AnimatedImage",
+				"Name": "GetBoundTracks",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"Pause": {
+				"Class": "AnimatedImage",
+				"Name": "Pause",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"PlaybackSpeed": {
+				"Class": "AnimatedImage",
+				"Name": "PlaybackSpeed",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Resume": {
+				"Class": "AnimatedImage",
+				"Name": "Resume",
+				"MemberType": "Function",
+				"Removed": false
+			}
+		},
+		"AnimatedImageService": {
+			"GetFrameNames": {
+				"Class": "AnimatedImageService",
+				"Name": "GetFrameNames",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetTrack": {
+				"Class": "AnimatedImageService",
+				"Name": "GetTrack",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AnimatedImageService",
+						"Member": "GetTrack",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "AnimatedImageTrack"
+						}
+					}
+				]
+			},
+			"GetTracksChanged": {
+				"Class": "AnimatedImageService",
+				"Name": "GetTracksChanged",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"Prewarm": {
+				"Class": "AnimatedImageService",
+				"Name": "Prewarm",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"UnloadTracks": {
+				"Class": "AnimatedImageService",
+				"Name": "UnloadTracks",
+				"MemberType": "Function",
+				"Removed": false
+			}
+		},
+		"AnimatedImageTrack": {
+			"Duration": {
+				"Class": "AnimatedImageTrack",
+				"Name": "Duration",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"FrameCount": {
+				"Class": "AnimatedImageTrack",
+				"Name": "FrameCount",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"GetContent": {
+				"Class": "AnimatedImageTrack",
+				"Name": "GetContent",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetFrameNames": {
+				"Class": "AnimatedImageTrack",
+				"Name": "GetFrameNames",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"TrackName": {
+				"Class": "AnimatedImageTrack",
+				"Name": "TrackName",
+				"MemberType": "Property",
+				"Removed": false
+			}
+		},
 		"Animation": {
 			"AnimationContent": {
 				"Class": "Animation",
@@ -249927,6 +250930,20 @@
 				"Class": "AnimationFromVideoCreatorStudioService",
 				"Name": "IsAgeRestricted",
 				"MemberType": "Function",
+				"Removed": false
+			}
+		},
+		"AnimationImportData": {
+			"ForceNewVersion": {
+				"Class": "AnimationImportData",
+				"Name": "ForceNewVersion",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"VersionedAssetId": {
+				"Class": "AnimationImportData",
+				"Name": "VersionedAssetId",
+				"MemberType": "Property",
 				"Removed": false
 			}
 		},
@@ -250566,6 +251583,35 @@
 				"Name": "WeightTarget",
 				"MemberType": "Property",
 				"Removed": false
+			}
+		},
+		"AnimationValueNodeDefinition": {
+			"NodeId": {
+				"Class": "AnimationValueNodeDefinition",
+				"Name": "NodeId",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"NodeType": {
+				"Class": "AnimationValueNodeDefinition",
+				"Name": "NodeType",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AnimationValueNodeDefinition",
+						"Member": "NodeType",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "AnimationValueNodeType"
+						}
+					}
+				]
 			}
 		},
 		"Animator": {
@@ -255856,6 +256902,12 @@
 			"Active": {
 				"Class": "AudioDeviceInput",
 				"Name": "Active",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"DictationEnabled": {
+				"Class": "AudioDeviceInput",
+				"Name": "DictationEnabled",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -273958,19 +275010,19 @@
 				"Class": "DataModelPatchService",
 				"Name": "GetLuaVersion",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetPatch": {
 				"Class": "DataModelPatchService",
 				"Name": "GetPatch",
 				"MemberType": "Function",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "DataModelPatchService",
 						"Member": "GetPatch",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "ReturnType",
 						"Kind": "Type",
 						"Index": 0,
@@ -273985,13 +275037,13 @@
 				"Class": "DataModelPatchService",
 				"Name": "RegisterPatch",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"UpdatePatch": {
 				"Class": "DataModelPatchService",
 				"Name": "UpdatePatch",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"DataModelSession": {
@@ -276194,6 +277246,12 @@
 			"LocalTransparencyModifier": {
 				"Class": "Decal",
 				"Name": "LocalTransparencyModifier",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LocalizedTextureContent": {
+				"Class": "Decal",
+				"Name": "LocalizedTextureContent",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -282586,6 +283644,12 @@
 			}
 		},
 		"Folder": {
+			"IconTint": {
+				"Class": "Folder",
+				"Name": "IconTint",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ReplicatedGuiInsertionOrder": {
 				"Class": "Folder",
 				"Name": "ReplicatedGuiInsertionOrder",
@@ -297711,6 +298775,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"ShouldUseImageLocalizationTable": {
+				"Class": "LocalizationService",
+				"Name": "ShouldUseImageLocalizationTable",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"StartTextScraper": {
 				"Class": "LocalizationService",
 				"Name": "StartTextScraper",
@@ -304295,6 +305365,41 @@
 				"Removed": false
 			}
 		},
+		"MomentsService": {
+			"CheckMomentTextStatusAsync": {
+				"Class": "MomentsService",
+				"Name": "CheckMomentTextStatusAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"CreatePostAsync": {
+				"Class": "MomentsService",
+				"Name": "CreatePostAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GenerateMomentTextAsync": {
+				"Class": "MomentsService",
+				"Name": "GenerateMomentTextAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MomentsService",
+						"Member": "GenerateMomentTextAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Capture"
+						}
+					}
+				]
+			}
+		},
 		"Motor": {
 			"CurrentAngle": {
 				"Class": "Motor",
@@ -309085,9 +310190,48 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"IsRevealPinnedExperienceAvailable": {
+				"Class": "PinShortcutService",
+				"Name": "IsRevealPinnedExperienceAvailable",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"OnPinExperienceCompleted": {
+				"Class": "PinShortcutService",
+				"Name": "OnPinExperienceCompleted",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "PinShortcutService",
+						"Member": "OnPinExperienceCompleted",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Enum",
+							"Name": "PinExperienceStatus"
+						}
+					}
+				]
+			},
 			"PinExperience": {
 				"Class": "PinShortcutService",
 				"Name": "PinExperience",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"RevealPinnedExperience": {
+				"Class": "PinShortcutService",
+				"Name": "RevealPinnedExperience",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ShouldShowLuaNotificationOnPinExperienceCompleted": {
+				"Class": "PinShortcutService",
+				"Name": "ShouldShowLuaNotificationOnPinExperienceCompleted",
 				"MemberType": "Function",
 				"Removed": false
 			}
@@ -317635,9 +318779,21 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"RequestAllRemoteCursorPositionForScriptWithUri": {
+				"Class": "RemoteCursorService",
+				"Name": "RequestAllRemoteCursorPositionForScriptWithUri",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"UpdateClientRemoteCursorPosition": {
 				"Class": "RemoteCursorService",
 				"Name": "UpdateClientRemoteCursorPosition",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"UpdateClientRemoteCursorPositionWithUri": {
+				"Class": "RemoteCursorService",
+				"Name": "UpdateClientRemoteCursorPositionWithUri",
 				"MemberType": "Event",
 				"Removed": false
 			}
@@ -319609,6 +320765,27 @@
 			}
 		},
 		"RunService": {
+			"BindToAnimation": {
+				"Class": "RunService",
+				"Name": "BindToAnimation",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "RunService",
+						"Member": "BindToAnimation",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "StepFrequency"
+						}
+					}
+				]
+			},
 			"BindToRenderStep": {
 				"Class": "RunService",
 				"Name": "BindToRenderStep",
@@ -321926,6 +323103,42 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "ScriptScannerUpdateType"
+						}
+					}
+				]
+			}
+		},
+		"ScriptService": {
+			"ResolveModulePath": {
+				"Class": "ScriptService",
+				"Name": "ResolveModulePath",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ScriptService",
+						"Member": "ResolveModulePath",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					},
+					{
+						"Class": "ScriptService",
+						"Member": "ResolveModulePath",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
 						}
 					}
 				]
@@ -329192,6 +330405,18 @@
 			"Respect Studio shortcuts when game has focus": {
 				"Class": "Studio",
 				"Name": "Respect Studio shortcuts when game has focus",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ReviewableChangeAddedTextColor": {
+				"Class": "Studio",
+				"Name": "ReviewableChangeAddedTextColor",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ReviewableChangeRemovedTextColor": {
+				"Class": "Studio",
+				"Name": "ReviewableChangeRemovedTextColor",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -337160,6 +338385,12 @@
 			}
 		},
 		"TextChannel": {
+			"AddPlayersOnJoin": {
+				"Class": "TextChannel",
+				"Name": "AddPlayersOnJoin",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"AddUserAsync": {
 				"Class": "TextChannel",
 				"Name": "AddUserAsync",
@@ -352350,6 +353581,12 @@
 					}
 				]
 			},
+			"StreamingAdaptiveRadius": {
+				"Class": "Workspace",
+				"Name": "StreamingAdaptiveRadius",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"StreamingEnabled": {
 				"Class": "Workspace",
 				"Name": "StreamingEnabled",
@@ -354807,6 +356044,40 @@
 				}
 			]
 		},
+		"AnimatedImagePlaybackState": {
+			"Name": "AnimatedImagePlaybackState",
+			"Removed": false,
+			"ItemsByValue": [
+				"Begin",
+				"Playing",
+				"Paused",
+				"Completed",
+				"Canceled"
+			],
+			"ItemsByIndex": [
+				"Begin",
+				"Playing",
+				"Paused",
+				"Completed",
+				"Canceled"
+			]
+		},
+		"AnimatedImageScaleType": {
+			"Name": "AnimatedImageScaleType",
+			"Removed": false,
+			"ItemsByValue": [
+				"Stretch",
+				"Tile",
+				"Fit",
+				"Crop"
+			],
+			"ItemsByIndex": [
+				"Stretch",
+				"Tile",
+				"Fit",
+				"Crop"
+			]
+		},
 		"AnimationClipFromVideoStatus": {
 			"Name": "AnimationClipFromVideoStatus",
 			"Removed": false,
@@ -355262,6 +356533,33 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "AnimationPriority"
+					}
+				}
+			]
+		},
+		"AnimationValueNodeType": {
+			"Name": "AnimationValueNodeType",
+			"Removed": false,
+			"ItemsByValue": [
+				"Invalid",
+				"Expression"
+			],
+			"ItemsByIndex": [
+				"Invalid",
+				"Expression"
+			],
+			"Related": [
+				{
+					"Class": "AnimationValueNodeDefinition",
+					"Member": "NodeType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "AnimationValueNodeType"
 					}
 				}
 			]
@@ -360568,7 +361866,14 @@
 				"TeleportGameFull",
 				"TeleportUnauthorized",
 				"TeleportFlooded",
-				"TeleportIsTeleporting"
+				"TeleportIsTeleporting",
+				"TransportErrors",
+				"DisconnectTransportIoError",
+				"DisconnectTransportIoInternetError",
+				"DisconnectTransportProtocolError",
+				"DisconnectTransportNgtcp2Error",
+				"DisconnectTransportQuicError",
+				"DisconnectTransportRnaError"
 			],
 			"ItemsByIndex": [
 				"OK",
@@ -360680,7 +361985,14 @@
 				"TeleportGameFull",
 				"TeleportUnauthorized",
 				"TeleportFlooded",
-				"TeleportIsTeleporting"
+				"TeleportIsTeleporting",
+				"TransportErrors",
+				"DisconnectTransportIoError",
+				"DisconnectTransportIoInternetError",
+				"DisconnectTransportProtocolError",
+				"DisconnectTransportNgtcp2Error",
+				"DisconnectTransportQuicError",
+				"DisconnectTransportRnaError"
 			],
 			"Related": [
 				{
@@ -372845,6 +374157,35 @@
 				}
 			]
 		},
+		"PinExperienceStatus": {
+			"Name": "PinExperienceStatus",
+			"Removed": false,
+			"ItemsByValue": [
+				"Success",
+				"Failure",
+				"AlreadyExists"
+			],
+			"ItemsByIndex": [
+				"Success",
+				"Failure",
+				"AlreadyExists"
+			],
+			"Related": [
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "PinExperienceStatus"
+					}
+				}
+			]
+		},
 		"PioneerSource": {
 			"Name": "PioneerSource",
 			"Removed": false,
@@ -378631,6 +379972,19 @@
 			"Related": [
 				{
 					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "StepFrequency"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "BindToSimulation",
 					"MemberType": "Function",
 					"Removed": false,
@@ -379191,7 +380545,9 @@
 				"AICOOverlayButtonBackground",
 				"AICOOverlayButtonBackgroundHover",
 				"AICOOverlayButtonBackgroundPressed",
-				"IndentationRuler"
+				"IndentationRuler",
+				"ReviewableChangeAddedText",
+				"ReviewableChangeRemovedText"
 			],
 			"ItemsByIndex": [
 				"Default",
@@ -379241,7 +380597,9 @@
 				"AICOOverlayButtonBackground",
 				"AICOOverlayButtonBackgroundHover",
 				"AICOOverlayButtonBackgroundPressed",
-				"IndentationRuler"
+				"IndentationRuler",
+				"ReviewableChangeAddedText",
+				"ReviewableChangeRemovedText"
 			]
 		},
 		"StudioScriptEditorColorPresets": {
@@ -385469,6 +386827,55 @@
 				"Removed": false
 			}
 		},
+		"AnimatedImagePlaybackState": {
+			"Begin": {
+				"Enum": "AnimatedImagePlaybackState",
+				"Name": "Begin",
+				"Removed": false
+			},
+			"Canceled": {
+				"Enum": "AnimatedImagePlaybackState",
+				"Name": "Canceled",
+				"Removed": false
+			},
+			"Completed": {
+				"Enum": "AnimatedImagePlaybackState",
+				"Name": "Completed",
+				"Removed": false
+			},
+			"Paused": {
+				"Enum": "AnimatedImagePlaybackState",
+				"Name": "Paused",
+				"Removed": false
+			},
+			"Playing": {
+				"Enum": "AnimatedImagePlaybackState",
+				"Name": "Playing",
+				"Removed": false
+			}
+		},
+		"AnimatedImageScaleType": {
+			"Crop": {
+				"Enum": "AnimatedImageScaleType",
+				"Name": "Crop",
+				"Removed": false
+			},
+			"Fit": {
+				"Enum": "AnimatedImageScaleType",
+				"Name": "Fit",
+				"Removed": false
+			},
+			"Stretch": {
+				"Enum": "AnimatedImageScaleType",
+				"Name": "Stretch",
+				"Removed": false
+			},
+			"Tile": {
+				"Enum": "AnimatedImageScaleType",
+				"Name": "Tile",
+				"Removed": false
+			}
+		},
 		"AnimationClipFromVideoStatus": {
 			"Cancelled": {
 				"Enum": "AnimationClipFromVideoStatus",
@@ -385783,6 +387190,18 @@
 			"Movement": {
 				"Enum": "AnimationPriority",
 				"Name": "Movement",
+				"Removed": false
+			}
+		},
+		"AnimationValueNodeType": {
+			"Expression": {
+				"Enum": "AnimationValueNodeType",
+				"Name": "Expression",
+				"Removed": false
+			},
+			"Invalid": {
+				"Enum": "AnimationValueNodeType",
+				"Name": "Invalid",
 				"Removed": false
 			}
 		},
@@ -389376,6 +390795,36 @@
 				"Name": "DisconnectTimeout",
 				"Removed": false
 			},
+			"DisconnectTransportIoError": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectTransportIoError",
+				"Removed": false
+			},
+			"DisconnectTransportIoInternetError": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectTransportIoInternetError",
+				"Removed": false
+			},
+			"DisconnectTransportNgtcp2Error": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectTransportNgtcp2Error",
+				"Removed": false
+			},
+			"DisconnectTransportProtocolError": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectTransportProtocolError",
+				"Removed": false
+			},
+			"DisconnectTransportQuicError": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectTransportQuicError",
+				"Removed": false
+			},
+			"DisconnectTransportRnaError": {
+				"Enum": "ConnectionError",
+				"Name": "DisconnectTransportRnaError",
+				"Removed": false
+			},
 			"DisconnectVerboselyModeratedGame": {
 				"Enum": "ConnectionError",
 				"Name": "DisconnectVerboselyModeratedGame",
@@ -389644,6 +391093,11 @@
 			"TeleportUnauthorized": {
 				"Enum": "ConnectionError",
 				"Name": "TeleportUnauthorized",
+				"Removed": false
+			},
+			"TransportErrors": {
+				"Enum": "ConnectionError",
+				"Name": "TransportErrors",
 				"Removed": false
 			},
 			"Unknown": {
@@ -398220,6 +399674,23 @@
 				"Removed": false
 			}
 		},
+		"PinExperienceStatus": {
+			"AlreadyExists": {
+				"Enum": "PinExperienceStatus",
+				"Name": "AlreadyExists",
+				"Removed": false
+			},
+			"Failure": {
+				"Enum": "PinExperienceStatus",
+				"Name": "Failure",
+				"Removed": false
+			},
+			"Success": {
+				"Enum": "PinExperienceStatus",
+				"Name": "Success",
+				"Removed": false
+			}
+		},
 		"PioneerSource": {
 			"DaveyBazooka": {
 				"Enum": "PioneerSource",
@@ -402508,6 +403979,16 @@
 			"Property": {
 				"Enum": "StudioScriptEditorColorCategories",
 				"Name": "Property",
+				"Removed": false
+			},
+			"ReviewableChangeAddedText": {
+				"Enum": "StudioScriptEditorColorCategories",
+				"Name": "ReviewableChangeAddedText",
+				"Removed": false
+			},
+			"ReviewableChangeRemovedText": {
+				"Enum": "StudioScriptEditorColorCategories",
+				"Name": "ReviewableChangeRemovedText",
 				"Removed": false
 			},
 			"Ruler": {
@@ -407196,6 +408677,45 @@
 				{
 					"Class": "AdService",
 					"Member": "GetReportAdInfo",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "GetBoundTracks",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "GetFrameNames",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -419390,6 +420910,19 @@
 					}
 				},
 				{
+					"Class": "Folder",
+					"Member": "IconTint",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
 					"Class": "GuiBase3d",
 					"Member": "Color3",
 					"MemberType": "Property",
@@ -420237,6 +421770,32 @@
 				{
 					"Class": "Studio",
 					"Member": "Property Color",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "ReviewableChangeAddedTextColor",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "ReviewableChangeRemovedTextColor",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -421101,6 +422660,97 @@
 					}
 				},
 				{
+					"Class": "AnimatedImage",
+					"Member": "Content",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "Prewarm",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "UnloadTracks",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "GetContent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
 					"Class": "Animation",
 					"Member": "AnimationContent",
 					"MemberType": "Property",
@@ -421415,6 +423065,19 @@
 				{
 					"Class": "Decal",
 					"Member": "EmissiveMaskContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "Decal",
+					"Member": "LocalizedTextureContent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -427995,6 +429658,32 @@
 					}
 				},
 				{
+					"Class": "MomentsService",
+					"Member": "CreatePostAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "CreatePostAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
 					"Class": "OpenCloudService",
 					"Member": "HttpRequestAsync",
 					"MemberType": "Function",
@@ -432406,19 +434095,6 @@
 					}
 				},
 				{
-					"Class": "DataModelPatchService",
-					"Member": "UpdatePatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Function"
-					}
-				},
-				{
 					"Class": "DebuggerConnection",
 					"Member": "EvaluateWatch",
 					"MemberType": "Function",
@@ -433111,6 +434787,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "BindToRenderStep",
 					"MemberType": "Function",
 					"Removed": false,
@@ -433564,6 +435253,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "UpdatePatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Function"
@@ -438310,6 +440012,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptConnection"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "BindToSimulation",
 					"MemberType": "Function",
 					"Removed": false,
@@ -438367,6 +440082,19 @@
 			"Name": "RBXScriptSignal",
 			"Removed": false,
 			"Related": [
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
 				{
 					"Class": "AnimationTrack",
 					"Member": "GetMarkerReachedSignal",
@@ -441516,6 +443244,32 @@
 				{
 					"Class": "MemoryStoreSortedMap",
 					"Member": "UpdateAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "CheckMomentTextStatusAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "GenerateMomentTextAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -455925,6 +457679,19 @@
 					}
 				},
 				{
+					"Class": "AnimationImportData",
+					"Member": "ForceNewVersion",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "AnimationRigData",
 					"Member": "IsValidR15",
 					"MemberType": "Function",
@@ -456629,6 +458396,19 @@
 				{
 					"Class": "AudioDeviceInput",
 					"Member": "Active",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AudioDeviceInput",
+					"Member": "DictationEnabled",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -464142,6 +465922,19 @@
 				},
 				{
 					"Class": "LocalizationService",
+					"Member": "ShouldUseImageLocalizationTable",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "LocalizationService",
 					"Member": "GetIsLoadingInternalTranslations",
 					"MemberType": "Function",
 					"Removed": false,
@@ -466691,6 +468484,32 @@
 				{
 					"Class": "PinShortcutService",
 					"Member": "IsAvailable",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "IsRevealPinnedExperienceAvailable",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "ShouldShowLuaNotificationOnPinExperienceCompleted",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -473020,6 +474839,19 @@
 					}
 				},
 				{
+					"Class": "TextChannel",
+					"Member": "AddPlayersOnJoin",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "TextChannelWindow",
 					"Member": "IsRendering",
 					"MemberType": "Property",
@@ -476681,6 +478513,19 @@
 				{
 					"Class": "Workspace",
 					"Member": "FilteringEnabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Workspace",
+					"Member": "StreamingAdaptiveRadius",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -485636,6 +487481,32 @@
 				{
 					"Class": "AngularVelocity",
 					"Member": "MaxTorque",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "PlaybackSpeed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "Duration",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -500361,6 +502232,19 @@
 					}
 				},
 				{
+					"Class": "AnimatedImageTrack",
+					"Member": "FrameCount",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "Animator",
 					"Member": "OnCombinedUpdate",
 					"MemberType": "Event",
@@ -506142,6 +508026,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "RunService",
+					"Member": "BindToAnimation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -513857,6 +515754,19 @@
 					}
 				},
 				{
+					"Class": "AnimationImportData",
+					"Member": "VersionedAssetId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "Animator",
 					"Member": "AnimationId0",
 					"MemberType": "Property",
@@ -516696,32 +518606,6 @@
 				{
 					"Class": "DataModel",
 					"Member": "SetUniverseId",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "RegisterPatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "UpdatePatch",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -520061,6 +521945,45 @@
 					}
 				},
 				{
+					"Class": "PinShortcutService",
+					"Member": "RevealPinnedExperience",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "Player",
 					"Member": "CharacterAppearanceId",
 					"MemberType": "Property",
@@ -522536,6 +524459,32 @@
 					}
 				},
 				{
+					"Class": "DataModelPatchService",
+					"Member": "RegisterPatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "UpdatePatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "DataStoreKeyVersionInfo",
 					"Member": "CreatedTime",
 					"MemberType": "Property",
@@ -523897,6 +525846,58 @@
 				{
 					"Class": "AnalyticsService",
 					"Member": "LogProgressionStartEvent",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "Pause",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImage",
+					"Member": "Resume",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "Prewarm",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "UnloadTracks",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -527446,32 +529447,6 @@
 				{
 					"Class": "DataModel",
 					"Member": "Shutdown",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "RegisterPatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "UpdatePatch",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -533153,6 +535128,19 @@
 				{
 					"Class": "PinShortcutService",
 					"Member": "PinExperience",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "RevealPinnedExperience",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -541562,6 +543550,32 @@
 					}
 				},
 				{
+					"Class": "DataModelPatchService",
+					"Member": "RegisterPatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "UpdatePatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "DragDetector",
 					"Member": "RemoveConstraintFunction",
 					"MemberType": "Function",
@@ -543870,6 +545884,32 @@
 					}
 				},
 				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "TrackName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "AnimationClip",
 					"Member": "Guid",
 					"MemberType": "Property",
@@ -544215,6 +546255,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationValueNodeDefinition",
+					"Member": "NodeId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -549228,97 +551281,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "GetLuaVersion",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "GetLuaVersion",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "GetPatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "RegisterPatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "RegisterPatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "RegisterPatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "DataModelPatchService",
-					"Member": "UpdatePatch",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -557235,6 +559197,32 @@
 					}
 				},
 				{
+					"Class": "MomentsService",
+					"Member": "CheckMomentTextStatusAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MomentsService",
+					"Member": "GenerateMomentTextAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "Motor6D",
 					"Member": "ChildName",
 					"MemberType": "Property",
@@ -558191,6 +560179,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PinShortcutService",
+					"Member": "OnPinExperienceCompleted",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -561398,6 +563399,19 @@
 				},
 				{
 					"Class": "RemoteCursorService",
+					"Member": "RequestAllRemoteCursorPositionForScriptWithUri",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
 					"Member": "UpdateClientRemoteCursorPosition",
 					"MemberType": "Event",
 					"Removed": false,
@@ -561412,6 +563426,32 @@
 				{
 					"Class": "RemoteCursorService",
 					"Member": "UpdateClientRemoteCursorPosition",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "UpdateClientRemoteCursorPositionWithUri",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "RemoteCursorService",
+					"Member": "UpdateClientRemoteCursorPositionWithUri",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
@@ -562510,6 +564550,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ScriptService",
+					"Member": "ResolveModulePath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -572292,6 +574345,97 @@
 					"Class": "DataModel",
 					"Member": "SavePlaceFinished",
 					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "GetLuaVersion",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "GetLuaVersion",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "GetPatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "RegisterPatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "RegisterPatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "RegisterPatch",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "DataModelPatchService",
+					"Member": "UpdatePatch",
+					"MemberType": "Function",
 					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
