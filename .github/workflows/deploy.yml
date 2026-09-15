@@ -217,9 +217,15 @@ jobs:
         steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true'
       run: |
+        # Pin to the commit hash resolved earlier instead of the mutable
+        # master ref. raw.githubusercontent.com serves master via a CDN, which
+        # can return content from before a fresh build-archive push. Pinning
+        # ensures the generated content always corresponds to the commit hash
+        # used as the cache key; otherwise a stale read can produce an
+        # unchanged build whose cache entry then skips all future runs.
         bin/roar generate \
         --site "roar/site" \
-        --source "https://raw.githubusercontent.com/setup-rbxcdn/build-archive/master/data/" \
+        --source "https://raw.githubusercontent.com/setup-rbxcdn/build-archive/${{ steps.check-fetch-build-archive.outputs.hash }}/data/" \
         --docs "https://github.com/Roblox/creator-docs" \
         --update
 
