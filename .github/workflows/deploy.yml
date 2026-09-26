@@ -4,11 +4,10 @@ env:
   HUGO_VERSION: "0.162.1"
 
 on:
-  schedule:
-  - cron: "19 */6 * * *"
   # push:
   #   branches:
   #   - "deploy"
+  # build-archive dispatches this after its own update runs
   workflow_dispatch: {}
 permissions:
   contents: "write"
