@@ -74,7 +74,7 @@ jobs:
       if: |
         steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true'
-      uses: "actions/checkout@v6"
+      uses: "actions/checkout@v7"
       with:
         repository: "setup-rbxcdn/roar"
         path: "roar"
@@ -83,7 +83,7 @@ jobs:
       if: |
         steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true'
-      uses: "actions/checkout@v6"
+      uses: "actions/checkout@v7"
       with:
         ref: "gh-pages"
         path: "ref"
@@ -148,7 +148,7 @@ jobs:
         (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true') &&
         steps.check-manifest.outputs.refresh == 'true'
-      uses: "actions/checkout@v6"
+      uses: "actions/checkout@v7"
       with:
         repository: "setup-rbxcdn/build-archive"
         path: "build-archive"
