@@ -86,11 +86,14 @@ publish an object that has a <a href=/ref/type/Content.html>Content</a> property
 <code>EditableImage</code>, the editable image is published as an image and the property
 is set to a new asset ID.</p><h3>Update Limitations</h3><p>Only a single <code>EditableImage</code> can be updated per frame on the display side.
 For example, if you update three <code>EditableImage</code> objects which are currently
-being displayed, it will take three frames for all of them to be updated.</p><h3>Enabling for Published Experiences</h3><p>For security purposes, using <code>EditableImage</code> fails by default for published
-experiences. To enable usage, you must be 13+ age verified and ID verified.
-After you are verified, open the
-<a href=https://create.roblox.com/dashboard/creations>Creator Dashboard</a> and toggle
-on <strong>Enable Mesh / Image APIs</strong>.</p><h3>Permissions</h3><p>To prevent misuse, <a href=/ref/class/AssetService.html#member-CreateEditableImageAsync>AssetService:CreateEditableImageAsync()</a> only allows
+being displayed, it will take three frames for all of them to be updated.</p><h3>Enabling for Published Experiences</h3><p>For security purposes, using <code>EditableImage</code> fails by default in published
+games. To enable it, open the
+<a href=https://create.roblox.com/dashboard/creations>Creator Dashboard</a>, go to the
+game's <strong>Configure</strong> ⟩ <strong>Settings</strong>, and toggle on <strong>Enable Mesh / Image
+APIs</strong>. Alternatively, in Studio, open <strong>Experience Settings</strong> and toggle on
+<strong>Allow Mesh / Image APIs</strong> under <strong>Security</strong>. Remember to review the
+<a href=https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use#creators-restrictions-on-use>Terms of Use</a>
+before enabling the toggle.</p><h3>Permissions</h3><p>To prevent misuse, <a href=/ref/class/AssetService.html#member-CreateEditableImageAsync>AssetService:CreateEditableImageAsync()</a> only allows
 you to load and edit image assets if any of the following is true:</p><ul><li>Owned by or explicitly shared with the experience owner.</li><li>Owned by or explicitly shared with the logged in Studio user.</li><li>Owned by or explicitly shared with the logged in player if the
 <code>EditableImage</code> is on the client side.</li><li>Owned by a group where the experience owner, Studio user, or player has a
 role with permission to edit the group's assets. See

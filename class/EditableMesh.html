@@ -261,11 +261,12 @@ version-9b68669a3b644e31">648</a></td><td class=col-icon><span class=picture tit
 v0.648.0.6480781
 version-9b68669a3b644e31">648</a></td><td class=col-icon><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span></td><td class=col-member><span class="member-text deco deprecated removed"><span class=name><a class=entity-link href=/ref/class/EditableMesh.html#member-SetVertexNormal>SetVertexNormal</a></span><span class="parameters open">(</span><span class="parameters parameter">vertexId: <a class="entity-link deco" href=/ref/type/int64.html>int64</a><span class="parameters sep">, </span></span><span class="parameters parameter">vnormal: <a class="entity-link deco" href=/ref/type/Vector3.html>Vector3</a></span><span class="parameters close">)</span><span class=bind>: </span><span class="returns return"><a class="entity-link deco" href=/ref/type/null.html>null</a></span></span></td></tr></tbody></table></section><section id=description><header><h2>Description</h2></header><div class=docs><p><code>EditableMesh</code> changes the applied visual mesh when linked to a
 <a href=/ref/class/MeshPart.html>MeshPart</a>, allowing for querying and modification of the mesh both in
-Studio and in-game.</p><h3>Enabling for published games</h3><p>For security purposes, using <code>EditableMesh</code> fails by default for published
-games. To enable usage of <code>EditableMesh</code>, you must be 13+ age verified and ID
-verified. After you are verified, open the
-<a href=https://create.roblox.com/dashboard/creations>Creator Dashboard</a> and toggle
-on <strong>Enable Mesh / Image APIs</strong>. Remember to review the
+Studio and in-game.</p><h3>Enabling for published games</h3><p>For security purposes, using <code>EditableMesh</code> fails by default in published
+games. To enable it, open the
+<a href=https://create.roblox.com/dashboard/creations>Creator Dashboard</a>, go to the
+game's <strong>Configure</strong> ⟩ <strong>Settings</strong>, and toggle on <strong>Enable Mesh / Image
+APIs</strong>. Alternatively, in Studio, open <strong>Experience Settings</strong> and toggle on
+<strong>Allow Mesh / Image APIs</strong> under <strong>Security</strong>. Remember to review the
 <a href=https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use#creators-restrictions-on-use>Terms of Use</a>
 before enabling the toggle.</p><h3>Permissions</h3><p>To prevent misuse, <a href=/ref/class/AssetService.html#member-CreateEditableMeshAsync>AssetService:CreateEditableMeshAsync()</a> only allows
 you to load and edit mesh assets if any of the following is true:</p><ul><li>Owned by or explicitly shared with the game owner.</li><li>Owned by or explicitly shared with the logged in Studio user.</li><li>Owned by or explicitly shared with the logged in player if the
