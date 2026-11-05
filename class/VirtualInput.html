@@ -48,7 +48,15 @@ and can only be obtained by calling
 <a href=/ref/class/UserInputService.html#member-CreateVirtualInput>UserInputService:CreateVirtualInput()</a>.</p><p>All input methods throw a runtime error if the simulated input would interact
 with Roblox's built-in UI (<a href=/ref/class/CoreGui.html>CoreGui</a>), such as the top bar, chat window,
 or escape menu. This prevents automation tests from accidentally interfering
-with system UI that players depend on.</p></div></section><section id=history class="filter-container history-member-filter"><header><h2>History <span class=element-count>13</span><aside class=filter-controls><label><input class=filter-input type=checkbox>
+with system UI that players depend on.</p><p>Targeting a specific window is in development and is not available yet. By
+default, a <a href=/ref/class/VirtualInput.html>VirtualInput</a> sends input to the main viewport. To send
+input to a specific window instead, such as a plugin's
+<a href=/ref/class/DockWidgetPluginGui.html>DockWidgetPluginGui</a>, pass that window as the <code>target</code> of
+<a href=/ref/class/UserInputService.html#member-CreateVirtualInput>UserInputService:CreateVirtualInput()</a>. Positions are then measured
+from the window's top-left corner, so a <a href=/ref/class/GuiObject.html#member-AbsolutePosition>GuiObject.AbsolutePosition</a>
+inside that window can be passed directly. Input sent to a plugin window never
+reaches <a href=/ref/class/CoreGui.html>CoreGui</a>, so the <a href=/ref/class/CoreGui.html>CoreGui</a> checks mentioned above are
+skipped for it.</p></div></section><section id=history class="filter-container history-member-filter"><header><h2>History <span class=element-count>13</span><aside class=filter-controls><label><input class=filter-input type=checkbox>
 <span>Hide member changes</span></label></aside></h2></header><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-50 title="Changed on 2026-05-05T09:56:43-07:00
 v0.720.0.7201160
 version-281216c40a28445d">720</a>
@@ -118,7 +126,8 @@ which includes a <a href=/ref/class/TextBox.html>TextBox</a> inside <a href=/ref
 <a href=/ref/class/CoreGui.html>CoreGui</a> element selected for keyboard or gamepad navigation, or
 the in-game escape menu being open. It also throws if the requested key is
 permanently bound to a Roblox core action (for example, the
-<kbd>Escape</kbd> key).</p><h4>isRepeatedKey</h4><p>Set <code>isRepeatedKey</code> to <code>true</code> only when simulating the OS auto-repeat
+<kbd>Escape</kbd> key). Neither check applies when this
+<a href=/ref/class/VirtualInput.html>VirtualInput</a> targets a plugin window.</p><h4>isRepeatedKey</h4><p>Set <code>isRepeatedKey</code> to <code>true</code> only when simulating the OS auto-repeat
 behavior that occurs while a player physically holds a key down which
 fires a stream of repeated events after the initial key press. This is
 meaningful only for text-manipulation keys: <a href=/ref/enum/KeyCode.html>KeyCode.Backspace</a>,
@@ -146,7 +155,8 @@ value throws a runtime error.</p><p>This method throws a runtime error if the sp
 interactive <a href=/ref/class/CoreGui.html>CoreGui</a> element such as a button or an active overlay
 in the top bar, chat window, or escape menu. It also throws if the
 specified button is already in the requested state, for example pressing a
-button that is already pressed.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-46 title="Changed on 2026-05-05T09:56:43-07:00
+button that is already pressed. Neither check applies when this
+<a href=/ref/class/VirtualInput.html>VirtualInput</a> targets a plugin window.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-46 title="Changed on 2026-05-05T09:56:43-07:00
 v0.720.0.7201160
 version-281216c40a28445d">720</a>
 Change Security of <a class="entity-link deco" href=/ref/class/VirtualInput.html#member-SendMouseButton><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>SendMouseButton</a>
@@ -159,8 +169,10 @@ version-7091b4c2589245e0">715</a>
 Add <a class="entity-link deco" href=/ref/class/VirtualInput.html#member-SendMouseButton><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>SendMouseButton</a></li></ul></details></section><section id=member-SendMouseDelta class=set><header><h3><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>SendMouseDelta<aside><a class="entity-link hub-link" href=https://create.roblox.com/docs/reference/engine/classes/VirtualInput#SendMouseDelta target=_blank rel=external><span class=picture><span class=icon style="--light:url('/ref/images/hub.svg');--dark:url('/ref/images/hub.svg')"></span></span>CreatorHub</a></aside></h3></header><table class="index-card params"><thead><tr><th class=col-name colspan=2>Parameters (<span class=element-count>1</span>)</th></tr></thead><tbody><tr class=row-positionDelta><td class=col-name>positionDelta</td><td class=col-type><a class="entity-link deco" href=/ref/type/Vector2.html>Vector2</a></td></tr></tbody><thead><tr><th class=col-return colspan=3>Returns (<span class=element-count>1</span>)</th></tr></thead><tbody><tr><td class=col-return colspan=3><a class="entity-link deco" href=/ref/type/null.html><span class=picture title="Primitive type" data-type=Type><span class=icon style="--light:url('/ref/icons/light/Value.png');--dark:url('/ref/icons/dark/Value.png')"></span></span>null</a></td></tr></tbody></table><div class=docs><p>This method injects a relative mouse movement event, representing how far
 the mouse moved rather than where it is on screen. This is intended for
 use while the player's cursor is locked, such as in first-person camera
-mode.</p><p>This method throws a runtime error when the cursor is not locked. To move
-the cursor to an absolute screen position instead, use
+mode.</p><p>This method throws a runtime error when the cursor is not locked. It also
+throws when this <a href=/ref/class/VirtualInput.html>VirtualInput</a> targets a plugin window, because the
+cursor can only be locked in the main viewport. To move the cursor to an
+absolute screen position instead, use
 <a href=/ref/class/VirtualInput.html#member-SendMousePosition>SendMousePosition()</a>.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-47 title="Changed on 2026-05-05T09:56:43-07:00
 v0.720.0.7201160
 version-281216c40a28445d">720</a>
@@ -175,7 +187,8 @@ Add <a class="entity-link deco" href=/ref/class/VirtualInput.html#member-SendMou
 screen-space position, processed identically to a real hardware mouse-move
 event.</p><p>This method throws a runtime error when the specified position overlaps an
 interactive Roblox UI element (such as a button or active overlay in the
-top bar, chat window, or escape menu).</p><p>To inject relative mouse movement while the cursor is locked, use
+top bar, chat window, or escape menu). This check doesn't apply when this
+<a href=/ref/class/VirtualInput.html>VirtualInput</a> targets a plugin window.</p><p>To inject relative mouse movement while the cursor is locked, use
 <a href=/ref/class/VirtualInput.html#member-SendMouseDelta>SendMouseDelta()</a> instead.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-48 title="Changed on 2026-05-05T09:56:43-07:00
 v0.720.0.7201160
 version-281216c40a28445d">720</a>
@@ -191,8 +204,9 @@ position. The <code>pointerAction</code> dictionary accepts the following keys:<
 negative values scroll backward.</li><li><code>Pan</code> (<a href=/ref/type/Vector2.html>Vector2</a>) — Trackpad pan delta in pixels.</li><li><code>Pinch</code> (number) — Pinch-to-zoom delta. Positive values zoom in,
 negative values zoom out.</li></ul><p>This method throws a runtime error if the specified position overlaps an
 interactive Roblox UI element (such as a button or active overlay in the
-top bar, chat window, or escape menu). If all values in <code>pointerAction</code>
-are zero, the call returns without injecting any event.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-49 title="Changed on 2026-05-05T09:56:43-07:00
+top bar, chat window, or escape menu). This check doesn't apply when this
+<a href=/ref/class/VirtualInput.html>VirtualInput</a> targets a plugin window. If all values in
+<code>pointerAction</code> are zero, the call returns without injecting any event.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-49 title="Changed on 2026-05-05T09:56:43-07:00
 v0.720.0.7201160
 version-281216c40a28445d">720</a>
 Change Security of <a class="entity-link deco" href=/ref/class/VirtualInput.html#member-SendPointerAction><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>SendPointerAction</a>
@@ -208,7 +222,8 @@ if the player typed it on a physical keyboard. This is useful for
 populating text fields without needing to simulate individual key presses.</p><p>This method throws a runtime error if <a href=/ref/class/CoreGui.html>CoreGui</a> has keyboard focus,
 which includes a <a href=/ref/class/TextBox.html>TextBox</a> inside <a href=/ref/class/CoreGui.html>CoreGui</a> being focused, a
 <a href=/ref/class/CoreGui.html>CoreGui</a> element selected for keyboard or gamepad navigation, or
-the in-game escape menu being open.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-50 title="Changed on 2026-05-05T09:56:43-07:00
+the in-game escape menu being open. This check doesn't apply when this
+<a href=/ref/class/VirtualInput.html>VirtualInput</a> targets a plugin window.</p></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Security><a class="history-tag changed" href=/ref/updates/2026.html#version-281216c40a28445d-50 title="Changed on 2026-05-05T09:56:43-07:00
 v0.720.0.7201160
 version-281216c40a28445d">720</a>
 Change Security of <a class="entity-link deco" href=/ref/class/VirtualInput.html#member-SendTextInput><span class=picture title=Function data-type=Function><span class=icon style="--light:url('/ref/icons/light/ACFunction.png');--dark:url('/ref/icons/dark/ACFunction.png')"></span></span>SendTextInput</a>
