@@ -108,7 +108,8 @@
 			"AnimatedImageService": [
 				39672,
 				39956,
-				40497
+				40497,
+				40979
 			],
 			"AnimatedImageTrack": [
 				39678,
@@ -391,6 +392,12 @@
 				32767,
 				34299
 			],
+			"AudioStreamReader": [
+				40981
+			],
+			"AudioStreamWriter": [
+				40992
+			],
 			"AudioTextToSpeech": [
 				31257,
 				31438,
@@ -569,6 +576,9 @@
 			"AvatarEditorService": [
 				10440,
 				36709
+			],
+			"AvatarEffectDescription": [
+				41047
 			],
 			"AvatarGenerationJob": [
 				28651,
@@ -1575,6 +1585,12 @@
 			"Folder": [
 				4493
 			],
+			"FollowRotationBoneBehavior": [
+				41070
+			],
+			"FollowTwistBoneBehavior": [
+				41074
+			],
 			"ForceField": [
 				423
 			],
@@ -1603,6 +1619,9 @@
 			"FunctionalTest": [
 				436,
 				2016
+			],
+			"GameDownloaderService": [
+				41082
 			],
 			"GamePassService": [
 				2364
@@ -2280,6 +2299,9 @@
 				717,
 				33704
 			],
+			"ModelInfoService": [
+				41094
+			],
 			"Moderation": [
 				32784,
 				32882
@@ -2644,10 +2666,12 @@
 				31185
 			],
 			"PlayerDataRecord": [
-				31188
+				31188,
+				41105
 			],
 			"PlayerDataRecordConfig": [
-				31211
+				31211,
+				41106
 			],
 			"PlayerDataService": [
 				31215
@@ -3923,7 +3947,8 @@
 				5931
 			],
 			"UIBlur": [
-				40069
+				40069,
+				41119
 			],
 			"UIComponent": [
 				5932
@@ -5223,7 +5248,8 @@
 					40129
 				],
 				"UserCreatedClips": [
-					40833
+					40833,
+					40980
 				],
 				"UserCreatedTracks": [
 					39957,
@@ -8996,6 +9022,70 @@
 					32772
 				]
 			},
+			"AudioStreamReader": {
+				"GetConnectedWires": [
+					40986
+				],
+				"GetInputPins": [
+					40987
+				],
+				"GetOutputPins": [
+					40988
+				],
+				"Layout": [
+					40982
+				],
+				"Peek": [
+					40989
+				],
+				"Read": [
+					40990
+				],
+				"SampleFormat": [
+					40983
+				],
+				"SampleRate": [
+					40984
+				],
+				"WindowSize": [
+					40985
+				],
+				"WiringChanged": [
+					40991
+				]
+			},
+			"AudioStreamWriter": {
+				"GetConnectedWires": [
+					40997
+				],
+				"GetInputPins": [
+					40998
+				],
+				"GetOutputPins": [
+					40999
+				],
+				"Layout": [
+					40993
+				],
+				"SampleFormat": [
+					40994
+				],
+				"SampleRate": [
+					40995
+				],
+				"Space": [
+					41000
+				],
+				"WindowSize": [
+					40996
+				],
+				"WiringChanged": [
+					41002
+				],
+				"Write": [
+					41001
+				]
+			},
 			"AudioTextToSpeech": {
 				"AutoLocalize": [
 					39793
@@ -10196,7 +10286,8 @@
 				"BackAccessoryOverride": [
 					40136,
 					40532,
-					40533
+					40533,
+					41003
 				],
 				"CustomAccessoryMode": [
 					32272,
@@ -10293,6 +10384,9 @@
 					40536,
 					40537
 				],
+				"EnableSpawnEffects": [
+					41004
+				],
 				"EnableVFX": [
 					32290,
 					40538,
@@ -10301,22 +10395,26 @@
 				"FaceAccessoryOverride": [
 					40171,
 					40540,
-					40541
+					40541,
+					41005
 				],
 				"FrontAccessoryOverride": [
 					40172,
 					40542,
-					40543
+					40543,
+					41006
 				],
 				"HairAccessoryOverride": [
 					40173,
 					40544,
-					40545
+					40545,
+					41007
 				],
 				"HeadAccessoryOverride": [
 					40174,
 					40546,
-					40547
+					40547,
+					41008
 				],
 				"LimitBounds": [
 					32291,
@@ -10331,17 +10429,20 @@
 				"NeckAccessoryOverride": [
 					40175,
 					40552,
-					40553
+					40553,
+					41009
 				],
 				"ShoulderAccessoryOverride": [
 					40176,
 					40554,
-					40555
+					40555,
+					41010
 				],
 				"WaistAccessoryOverride": [
 					40177,
 					40556,
-					40557
+					40557,
+					41011
 				],
 				"willRemoveAccessory": [
 					32872
@@ -10361,7 +10462,8 @@
 				"ClimbAnimationOverride": [
 					40180,
 					40560,
-					40561
+					40561,
+					41012
 				],
 				"CustomClimbAnimationEnabled": [
 					32296,
@@ -10464,47 +10566,56 @@
 				"FallAnimationOverride": [
 					40219,
 					40562,
-					40563
+					40563,
+					41013
 				],
 				"IdleAltAnimationOverride": [
 					40220,
 					40564,
-					40565
+					40565,
+					41014
 				],
 				"IdleAnimationOverride": [
 					40221,
 					40566,
-					40567
+					40567,
+					41015
 				],
 				"JumpAnimationOverride": [
 					40222,
 					40568,
-					40569
+					40569,
+					41016
 				],
 				"MoodAnimationOverride": [
 					40223,
 					40570,
-					40571
+					40571,
+					41017
 				],
 				"RunAnimationOverride": [
 					40224,
 					40572,
-					40573
+					40573,
+					41018
 				],
 				"SwimAnimationOverride": [
 					40225,
 					40574,
-					40575
+					40575,
+					41019
 				],
 				"SwimIdleAnimationOverride": [
 					40226,
 					40576,
-					40577
+					40577,
+					41020
 				],
 				"WalkAnimationOverride": [
 					40227,
 					40578,
-					40579
+					40579,
+					41021
 				]
 			},
 			"AvatarBodyRules": {
@@ -10699,7 +10810,8 @@
 				"HeadOverride": [
 					40285,
 					40596,
-					40597
+					40597,
+					41022
 				],
 				"KeepPlayerHead": [
 					32340,
@@ -10708,22 +10820,26 @@
 				"LeftArmOverride": [
 					40287,
 					40598,
-					40599
+					40599,
+					41023
 				],
 				"LeftLegOverride": [
 					40288,
 					40600,
-					40601
+					40601,
+					41024
 				],
 				"RightArmOverride": [
 					40289,
 					40602,
-					40603
+					40603,
+					41025
 				],
 				"RightLegOverride": [
 					40290,
 					40604,
-					40605
+					40605,
+					41026
 				],
 				"ScaleMode": [
 					32341,
@@ -10733,7 +10849,8 @@
 				"TorsoOverride": [
 					40291,
 					40608,
-					40609
+					40609,
+					41027
 				]
 			},
 			"AvatarChatService": {
@@ -10793,10 +10910,12 @@
 					40738
 				],
 				"ClassicPantsOverride": [
-					40739
+					40739,
+					41028
 				],
 				"ClassicShirtOverride": [
-					40740
+					40740,
+					41029
 				],
 				"ClassicShirtsAccessoryOverride": [
 					40293,
@@ -10805,7 +10924,8 @@
 					40741
 				],
 				"ClassicTShirtOverride": [
-					40742
+					40742,
+					41030
 				],
 				"ClassicTShirtsAccessoryOverride": [
 					40294,
@@ -10956,15 +11076,18 @@
 				"DressSkirtAccessoryOverride": [
 					40345,
 					40618,
-					40619
+					40619,
+					41031
 				],
 				"JacketAccessoryOverride": [
 					40346,
 					40620,
-					40621
+					40621,
+					41032
 				],
 				"LeftShoeAccessoryOverride": [
-					40754
+					40754,
+					41033
 				],
 				"LeftShoesAccessoryOverride": [
 					40347,
@@ -10980,10 +11103,12 @@
 				"PantsAccessoryOverride": [
 					40348,
 					40626,
-					40627
+					40627,
+					41034
 				],
 				"RightShoeAccessoryOverride": [
-					40756
+					40756,
+					41035
 				],
 				"RightShoesAccessoryOverride": [
 					40349,
@@ -10994,22 +11119,26 @@
 				"ShirtAccessoryOverride": [
 					40350,
 					40630,
-					40631
+					40631,
+					41036
 				],
 				"ShortsAccessoryOverride": [
 					40351,
 					40632,
-					40633
+					40633,
+					41037
 				],
 				"SweaterAccessoryOverride": [
 					40352,
 					40634,
-					40635
+					40635,
+					41038
 				],
 				"TShirtAccessoryOverride": [
 					40353,
 					40636,
-					40637
+					40637,
+					41039
 				],
 				"WillLimitLayeredAccessoryAsync": [
 					39831
@@ -11027,7 +11156,15 @@
 				"HitAndTouchDetectionMode": [
 					32372,
 					40640,
-					40641
+					40641,
+					41040,
+					41041,
+					41042,
+					41043,
+					41044
+				],
+				"HitboxSize": [
+					41045
 				],
 				"LegacyCollisionMode": [
 					32373,
@@ -11039,6 +11176,9 @@
 					33666,
 					40642,
 					40643
+				],
+				"TouchAndQueryDetectionMode": [
+					41046
 				]
 			},
 			"AvatarCreationService": {
@@ -11720,6 +11860,14 @@
 				],
 				"refreshAvatarThumbnails": [
 					29929
+				]
+			},
+			"AvatarEffectDescription": {
+				"AssetId": [
+					41048
+				],
+				"EffectType": [
+					41049
 				]
 			},
 			"AvatarGenerationJob": {
@@ -12859,20 +13007,23 @@
 					30021,
 					30245,
 					30246,
-					31484
+					31484,
+					41050
 				],
 				"CageMeshId": [
 					11360,
 					11834,
 					16006,
 					21326,
-					29754
+					29754,
+					41051
 				],
 				"CageOrigin": [
 					11361,
 					11835,
 					16007,
-					21327
+					21327,
+					41052
 				],
 				"CageOriginWorld": [
 					11362,
@@ -12915,7 +13066,8 @@
 					11363,
 					11837,
 					16009,
-					21333
+					21333,
+					41053
 				],
 				"ImportOriginWorld": [
 					11364,
@@ -14935,7 +15087,8 @@
 					6216,
 					12007,
 					16127,
-					21493
+					21493,
+					41054
 				],
 				"ModerationMode": [
 					36324
@@ -15376,6 +15529,12 @@
 				"CheckEligibilityAsync": [
 					40765
 				],
+				"CheckOfferEligibility": [
+					41055
+				],
+				"CheckOfferEligibilityAsync": [
+					41056
+				],
 				"GetSessionElapsedTime": [
 					40766
 				],
@@ -15384,6 +15543,9 @@
 				],
 				"IsRobloxRealityEnvironment": [
 					40762
+				],
+				"MakeOfferReservationAsync": [
+					41057
 				],
 				"MakeReservationAsync": [
 					40767
@@ -17314,6 +17476,9 @@
 				"ServerLowMemoryWarning": [
 					39396
 				],
+				"ServerRegion": [
+					41058
+				],
 				"ServerRestartScheduled": [
 					38554
 				],
@@ -18591,7 +18756,8 @@
 					33508
 				],
 				"EmissiveMaskContent": [
-					39397
+					39397,
+					41059
 				],
 				"EmissiveStrength": [
 					39398
@@ -18611,16 +18777,22 @@
 					39836
 				],
 				"MetalnessMap": [
-					33025
+					33025,
+					41060,
+					41061
 				],
 				"MetalnessMapContent": [
-					33026
+					33026,
+					41062
 				],
 				"NormalMap": [
-					33027
+					33027,
+					41063,
+					41064
 				],
 				"NormalMapContent": [
-					33028
+					33028,
+					41065
 				],
 				"ResampleMode": [
 					39982
@@ -18629,10 +18801,13 @@
 					36339
 				],
 				"RoughnessMap": [
-					33029
+					33029,
+					41066,
+					41067
 				],
 				"RoughnessMapContent": [
-					33030
+					33030,
+					41068
 				],
 				"Shiny": [
 					357,
@@ -21917,11 +22092,48 @@
 				]
 			},
 			"Folder": {
+				"ExplorerIconContent": [
+					41069
+				],
 				"IconTint": [
 					39693
 				],
 				"ReplicatedGuiInsertionOrder": [
 					21834
+				]
+			},
+			"FollowRotationBoneBehavior": {
+				"CounterRotate": [
+					41071
+				],
+				"Driver": [
+					41072
+				],
+				"Weight": [
+					41073
+				]
+			},
+			"FollowTwistBoneBehavior": {
+				"Axis": [
+					41075
+				],
+				"AxisMode": [
+					41076
+				],
+				"CounterRotate": [
+					41077
+				],
+				"Driver": [
+					41078
+				],
+				"EndBone": [
+					41079
+				],
+				"StartBone": [
+					41080
+				],
+				"Weight": [
+					41081
 				]
 			},
 			"ForceField": {
@@ -22187,6 +22399,23 @@
 					446,
 					12378,
 					24830
+				]
+			},
+			"GameDownloaderService": {
+				"CancelGameDownload": [
+					41083
+				],
+				"DownloadCompleted": [
+					41086
+				],
+				"DownloadGame": [
+					41084
+				],
+				"DownloadProgressChanged": [
+					41087
+				],
+				"GetGameDownloadStatus": [
+					41085
 				]
 			},
 			"GamePassService": {
@@ -22479,6 +22708,12 @@
 					26509,
 					27091,
 					27092
+				],
+				"NegateAsync": [
+					41088
+				],
+				"SeparateAsync": [
+					41089
 				],
 				"SplitApartAsync": [
 					40906
@@ -23314,7 +23549,8 @@
 				],
 				"SelectionGained": [
 					4963,
-					12470
+					12470,
+					41090
 				],
 				"SelectionImageObject": [
 					4873,
@@ -23325,7 +23561,8 @@
 				],
 				"SelectionLost": [
 					4964,
-					12471
+					12471,
+					41091
 				],
 				"SelectionOrder": [
 					19773,
@@ -25176,6 +25413,9 @@
 					12628,
 					16436,
 					22009
+				],
+				"InternalAnimationHipHeight": [
+					41092
 				],
 				"InternalAvatarRulesRootPartSize": [
 					40373
@@ -31623,6 +31863,9 @@
 					24204,
 					25045
 				],
+				"ExplorerIconContent": [
+					41093
+				],
 				"GetBoundingBox": [
 					8440,
 					13083,
@@ -31812,6 +32055,11 @@
 					13097,
 					22409,
 					25057
+				]
+			},
+			"ModelInfoService": {
+				"GetModelTriangleCount": [
+					41095
 				]
 			},
 			"Moderation": {
@@ -33825,7 +34073,11 @@
 					40407
 				],
 				"LightEmission": [
-					40408
+					40408,
+					41096
+				],
+				"LightInfluence": [
+					41097
 				],
 				"LockedToParent": [
 					40409
@@ -34356,11 +34608,15 @@
 				],
 				"Position": [
 					40428,
-					40797
+					40797,
+					41098,
+					41099
 				],
 				"Size": [
 					40429,
-					40798
+					40798,
+					41100,
+					41101
 				]
 			},
 			"PhysicsService": {
@@ -35300,7 +35556,8 @@
 					34245
 				],
 				"GetData": [
-					31503
+					31503,
+					41102
 				],
 				"GetFriendStatus": [
 					870,
@@ -36215,108 +36472,136 @@
 			},
 			"PlayerData": {
 				"GetPlayer": [
-					31186
+					31186,
+					41103
 				],
 				"GetRecord": [
 					31187,
 					31504
 				],
 				"GetRecordAsync": [
-					31505
+					31505,
+					41104
 				]
 			},
 			"PlayerDataRecord": {
 				"Changed": [
-					31208
+					31208,
+					41105
 				],
 				"CreatedTime": [
-					31189
+					31189,
+					41105
 				],
 				"DefaultRecordName": [
 					31190,
-					31456
+					31456,
+					41105
 				],
 				"Dirty": [
-					31191
+					31191,
+					41105
 				],
 				"Error": [
-					31192
+					31192,
+					41105
 				],
 				"Flushed": [
-					31209
+					31209,
+					41105
 				],
 				"FlushedTime": [
-					31193
+					31193,
+					41105
 				],
 				"GetPlayer": [
-					31200
+					31200,
+					41105
 				],
 				"GetValue": [
-					31201
+					31201,
+					41105
 				],
 				"GetValueChangedSignal": [
-					31202
+					31202,
+					41105
 				],
 				"Loaded": [
-					31210
+					31210,
+					41105
 				],
 				"LoadedTime": [
-					31194
+					31194,
+					41105
 				],
 				"ModifiedTime": [
-					31195
+					31195,
+					41105
 				],
 				"NewRecord": [
-					31196
+					31196,
+					41105
 				],
 				"Readable": [
-					31197
+					31197,
+					41105
 				],
 				"RecordName": [
 					31198,
-					31457
+					31457,
+					41105
 				],
 				"Release": [
 					31203,
 					31552
 				],
 				"ReleaseAsync": [
-					31553
+					31553,
+					41105
 				],
 				"RemoveValue": [
-					31204
+					31204,
+					41105
 				],
 				"RequestFlushAsync": [
-					31205
+					31205,
+					41105
 				],
 				"SetValue": [
-					31206
+					31206,
+					41105
 				],
 				"WaitForLoadAsync": [
 					31207,
 					31506
 				],
 				"Writable": [
-					31199
+					31199,
+					41105
 				]
 			},
 			"PlayerDataRecordConfig": {
 				"GetDefaultValue": [
-					31213
+					31213,
+					41106
 				],
 				"RecordName": [
-					31212
+					31212,
+					41106
 				],
 				"SetDefaultValue": [
-					31214
+					31214,
+					41106
 				]
 			},
 			"PlayerDataService": {
 				"GetRecordConfig": [
-					31217
+					31217,
+					41108
 				],
 				"LoadFailureBehavior": [
-					31216
+					31216,
+					41107
 				]
 			},
 			"PlayerEmulatorService": {
@@ -38495,6 +38780,11 @@
 					7369
 				]
 			},
+			"QWidgetPluginGui": {
+				"CloseButtonEnabled": [
+					41109
+				]
+			},
 			"QueueService": {
 				"GetStandardQueue": [
 					39762
@@ -38654,7 +38944,8 @@
 					36996
 				],
 				"Disconnected": [
-					40680
+					40680,
+					41110
 				],
 				"ForwardInput": [
 					36993
@@ -42614,12 +42905,18 @@
 				"PromptPhoneBook": [
 					27410
 				],
+				"PromptRateExperienceAsync": [
+					41111
+				],
 				"PromptRsvpToEventAsync": [
 					32792
 				],
 				"PromptRsvpToEventCompleted": [
 					32793,
 					33439
+				],
+				"RateExperiencePromptCompleted": [
+					41112
 				],
 				"SelfViewHidden": [
 					26143
@@ -42682,6 +42979,9 @@
 				],
 				"ShowPromptRsvpToEvent": [
 					32796
+				],
+				"ShowRateExperiencePrompt": [
+					41113
 				],
 				"ShowSelfView": [
 					26142
@@ -45132,6 +45432,9 @@
 					30605,
 					38304,
 					38305
+				],
+				"Enable Flag Editor": [
+					41114
 				],
 				"Enable Http Sandboxing": [
 					10487,
@@ -50375,6 +50678,9 @@
 				]
 			},
 			"TextDocument": {
+				"ReadAsync": [
+					41115
+				],
 				"TextContent": [
 					39914,
 					40816,
@@ -51833,7 +52139,8 @@
 				"ValidateEditableMeshCageNonManifoldAndHoles": [
 					28071,
 					30180,
-					31957
+					31957,
+					41116
 				],
 				"ValidateEditableMeshCageUVCoincident": [
 					28341,
@@ -51854,7 +52161,8 @@
 				"ValidateEditableMeshFullBodyCageDeletion": [
 					28073,
 					30183,
-					31960
+					31960,
+					41117
 				],
 				"ValidateEditableMeshMisMatchUV": [
 					28074,
@@ -51874,7 +52182,8 @@
 				"ValidateEditableMeshTriangles": [
 					28077,
 					30187,
-					31964
+					31964,
+					41118
 				],
 				"ValidateEditableMeshUVDuplicates": [
 					30441,
@@ -53401,7 +53710,11 @@
 				],
 				"CreateVirtualInput": [
 					37052,
-					37516
+					37516,
+					41120
+				],
+				"CreateVirtualInputForPluginGuiId": [
+					41121
 				],
 				"DeviceAccelerationChanged": [
 					4453,
@@ -54576,6 +54889,9 @@
 				"SetStudioPreview": [
 					28144
 				],
+				"SubtitlesChanged": [
+					41122
+				],
 				"TimeLength": [
 					9583,
 					14696,
@@ -55239,12 +55555,16 @@
 					34374
 				],
 				"DefaultDistanceAttenuation": [
-					31971
+					31971,
+					41123,
+					41124
 				],
 				"EnableDefaultVoice": [
 					19632,
 					19782,
-					23701
+					23701,
+					41125,
+					41126
 				],
 				"EnableVoiceVolumeControls": [
 					38747,
@@ -55503,7 +55823,9 @@
 					27919,
 					27962,
 					28001,
-					28342
+					28342,
+					41127,
+					41128
 				],
 				"UseNewAudioApi": [
 					26439,
@@ -56153,7 +56475,8 @@
 					26031
 				],
 				"ImprovedAnimationConstraint": [
-					38089
+					38089,
+					41129
 				],
 				"ImprovedPhysicsReplication": [
 					38113
@@ -56855,7 +57178,8 @@
 					23755,
 					35446,
 					35645,
-					35760
+					35760,
+					41130
 				],
 				"Color": [
 					11421,
@@ -56904,13 +57228,15 @@
 					30222,
 					30318,
 					30319,
-					31528
+					31528,
+					41131
 				],
 				"ReferenceMeshId": [
 					11426,
 					14803,
 					17678,
-					29875
+					29875,
+					41132
 				],
 				"ReferenceOrigin": [
 					11427,
@@ -56919,7 +57245,8 @@
 					23761,
 					35447,
 					35646,
-					35761
+					35761,
+					41133
 				],
 				"ReferenceOriginWorld": [
 					11428,
@@ -56978,7 +57305,8 @@
 					14809,
 					17684,
 					23767,
-					38665
+					38665,
+					41134
 				]
 			},
 			"WrapTextureTransfer": {
@@ -57273,6 +57601,9 @@
 			"AvatarContextMenuOption": [
 				7312
 			],
+			"AvatarEffectType": [
+				41140
+			],
 			"AvatarGenerationError": [
 				28683
 			],
@@ -57343,6 +57674,9 @@
 			],
 			"AvatarSettingsScaleMode": [
 				32439
+			],
+			"AvatarSettingsTouchAndQueryDetectionMode": [
+				41146
 			],
 			"AvatarThumbnailCustomizationType": [
 				24226
@@ -57772,6 +58106,9 @@
 			"ExperienceEventStatus": [
 				34200
 			],
+			"ExperienceRatingResult": [
+				41150
+			],
 			"ExperienceStateCaptureSelectionMode": [
 				34333
 			],
@@ -57852,6 +58189,9 @@
 			"FluidForces": [
 				26267
 			],
+			"FollowTwistBoneAxisMode": [
+				41155
+			],
 			"Font": [
 				1518
 			],
@@ -57908,6 +58248,15 @@
 			"GameAvatarType": [
 				5601
 			],
+			"GameDownloadPhase": [
+				41159
+			],
+			"GameDownloadResult": [
+				41163
+			],
+			"GameDownloadStartResult": [
+				41173
+			],
 			"GamepadType": [
 				28712
 			],
@@ -57960,6 +58309,9 @@
 			],
 			"GroupMembershipStatus": [
 				34390
+			],
+			"GuiNavigationDirection": [
+				41180
 			],
 			"GuiState": [
 				26391
@@ -58464,10 +58816,12 @@
 				1681
 			],
 			"PlayerDataErrorState": [
-				31239
+				31239,
+				41195
 			],
 			"PlayerDataLoadFailureBehavior": [
-				31243
+				31243,
+				41196
 			],
 			"PlayerDeviceTrustDecision": [
 				40823
@@ -60406,6 +60760,9 @@
 				"AvatarEditorPageLoaded": [
 					7677
 				],
+				"CampaignPageLoaded": [
+					41135
+				],
 				"GamePageLoaded": [
 					7651
 				],
@@ -60426,6 +60783,9 @@
 				],
 				"TapAvatarTab": [
 					7501
+				],
+				"TapCampaignPageTab": [
+					41136
 				],
 				"TapChatTab": [
 					7502
@@ -60568,6 +60928,9 @@
 				],
 				"ClimbAnimation": [
 					6065
+				],
+				"ComputeFunction": [
+					41137
 				],
 				"DeathAnimation": [
 					6066
@@ -60782,6 +61145,9 @@
 				],
 				"ShoulderAccessory": [
 					6076
+				],
+				"SpawnEffect": [
+					41138
 				],
 				"SweaterAccessory": [
 					15407,
@@ -61200,6 +61566,9 @@
 					10473,
 					27154
 				],
+				"SpawnEffect": [
+					41139
+				],
 				"SweaterAccessory": [
 					15416,
 					15710,
@@ -61282,6 +61651,14 @@
 				],
 				"InspectMenu": [
 					9033
+				]
+			},
+			"AvatarEffectType": {
+				"None": [
+					41141
+				],
+				"Spawn": [
+					41142
 				]
 			},
 			"AvatarGenerationError": {
@@ -61504,10 +61881,15 @@
 			},
 			"AvatarSettingsHitAndTouchDetectionMode": {
 				"UseCollider": [
-					32431
+					32431,
+					41143
+				],
+				"UseHitbox": [
+					41144
 				],
 				"UseParts": [
-					32432
+					32432,
+					41145
 				]
 			},
 			"AvatarSettingsJumpMode": {
@@ -61534,6 +61916,17 @@
 				],
 				"PlayerChoice": [
 					32441
+				]
+			},
+			"AvatarSettingsTouchAndQueryDetectionMode": {
+				"UseCollider": [
+					41147
+				],
+				"UseHitbox": [
+					41148
+				],
+				"UseParts": [
+					41149
 				]
 			},
 			"AvatarThumbnailCustomizationType": {
@@ -65359,6 +65752,20 @@
 					34205
 				]
 			},
+			"ExperienceRatingResult": {
+				"Completed": [
+					41151
+				],
+				"Dismissed": [
+					41152
+				],
+				"Failed": [
+					41153
+				],
+				"NotAllowed": [
+					41154
+				]
+			},
 			"ExperienceStateCaptureSelectionMode": {
 				"Default": [
 					34334
@@ -65841,6 +66248,17 @@
 				"Experimental": [
 					26269,
 					40973
+				]
+			},
+			"FollowTwistBoneAxisMode": {
+				"Follower": [
+					41156
+				],
+				"Local": [
+					41157
+				],
+				"StartToEndBone": [
+					41158
 				]
 			},
 			"Font": {
@@ -66399,6 +66817,66 @@
 					5604
 				]
 			},
+			"GameDownloadPhase": {
+				"CheckingGuards": [
+					41160
+				],
+				"Downloading": [
+					41161
+				],
+				"FetchingManifest": [
+					41162
+				]
+			},
+			"GameDownloadResult": {
+				"Cancelled": [
+					41164
+				],
+				"LowPowerMode": [
+					41165
+				],
+				"ManifestUnavailable": [
+					41166
+				],
+				"Moderated": [
+					41167
+				],
+				"NetworkError": [
+					41168
+				],
+				"NetworkMetered": [
+					41169
+				],
+				"NotEnoughSpace": [
+					41170
+				],
+				"NotOnWiFi": [
+					41171
+				],
+				"Success": [
+					41172
+				]
+			},
+			"GameDownloadStartResult": {
+				"AlreadyDownloading": [
+					41174
+				],
+				"GameDownloadInProgress": [
+					41175
+				],
+				"LowPowerMode": [
+					41176
+				],
+				"NetworkMetered": [
+					41177
+				],
+				"NotOnWiFi": [
+					41178
+				],
+				"Started": [
+					41179
+				]
+			},
 			"GamepadType": {
 				"PS4": [
 					28713
@@ -66689,6 +67167,29 @@
 				],
 				"None": [
 					34394
+				]
+			},
+			"GuiNavigationDirection": {
+				"Backward": [
+					41181
+				],
+				"Down": [
+					41182
+				],
+				"Forward": [
+					41183
+				],
+				"Left": [
+					41184
+				],
+				"None": [
+					41185
+				],
+				"Right": [
+					41186
+				],
+				"Up": [
+					41187
 				]
 			},
 			"GuiState": {
@@ -67206,14 +67707,35 @@
 				"BlendSourceOver": [
 					26544
 				],
+				"Darken": [
+					41188
+				],
+				"Difference": [
+					41189
+				],
+				"HardLight": [
+					41190
+				],
+				"Lighten": [
+					41191
+				],
 				"Multiply": [
 					28491
 				],
 				"NormalMapBlend": [
 					37942
 				],
+				"Overlay": [
+					41192
+				],
 				"Overwrite": [
 					26545
+				],
+				"Screen": [
+					41193
+				],
+				"SoftLight": [
+					41194
 				],
 				"Subtract": [
 					39297
@@ -72431,29 +72953,36 @@
 			},
 			"PlayerDataErrorState": {
 				"FlushFailed": [
-					31240
+					31240,
+					41195
 				],
 				"LoadFailed": [
-					31241
+					31241,
+					41195
 				],
 				"None": [
 					31242,
 					31569,
-					31570
+					31570,
+					41195
 				],
 				"ReleaseFailed": [
-					31571
+					31571,
+					41195
 				]
 			},
 			"PlayerDataLoadFailureBehavior": {
 				"Failure": [
-					31244
+					31244,
+					41196
 				],
 				"FallbackToDefault": [
-					31245
+					31245,
+					41196
 				],
 				"Kick": [
-					31246
+					31246,
+					41196
 				]
 			},
 			"PlayerDeviceTrustDecision": {
@@ -89394,6 +89923,116 @@
 						"Category": "Group",
 						"Name": "Array"
 					}
+				},
+				{
+					"Change": 40987,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40988,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40989,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40990,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40998,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40999,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41001,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41088,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41089,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41122,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
 				}
 			],
 			"AssetContentMap": [
@@ -90537,6 +91176,17 @@
 				{
 					"Change": 40838,
 					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Change": 40980,
+					"Prev": true,
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
@@ -103174,6 +103824,28 @@
 						"Category": "DataType",
 						"Name": "Content"
 					}
+				},
+				{
+					"Change": 41069,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41093,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
 				}
 			],
 			"ContentId": [
@@ -114467,6 +115139,17 @@
 						"Category": "Group",
 						"Name": "Dictionary"
 					}
+				},
+				{
+					"Change": 41085,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
 				}
 			],
 			"DockWidgetPluginGuiInfo": [
@@ -119657,6 +120340,50 @@
 				},
 				{
 					"Change": 40649,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Change": 40986,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Change": 40997,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Change": 41088,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Change": 41089,
 					"Prev": false,
 					"Field": "Parameters",
 					"Type": "Parameter",
@@ -136099,6 +136826,17 @@
 				},
 				{
 					"Change": 40917,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Change": 41116,
 					"Prev": true,
 					"Field": "ReturnType",
 					"Type": "Type",
@@ -152599,6 +153337,17 @@
 					"Field": "Parameters",
 					"Type": "Parameter",
 					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 41045,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
 					"Value": {
 						"Category": "DataType",
 						"Name": "Vector3"
@@ -187577,6 +188326,149 @@
 						"Category": "Primitive",
 						"Name": "bool"
 					}
+				},
+				{
+					"Change": 40991,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41002,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41004,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41055,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41056,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41071,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41077,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41109,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41110,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41110,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41114,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41117,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41118,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
 				}
 			],
 			"buffer": [
@@ -207088,6 +207980,61 @@
 					"Field": "Parameters",
 					"Type": "Parameter",
 					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41073,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41081,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41092,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41096,
+					"Prev": true,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41097,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
 					"Value": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -231274,6 +232221,83 @@
 						"Category": "Primitive",
 						"Name": "int"
 					}
+				},
+				{
+					"Change": 40984,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 40989,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 40990,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 40995,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41000,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41001,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41095,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
 				}
 			],
 			"int64": [
@@ -245803,6 +246827,105 @@
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41048,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41057,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41083,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41084,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41085,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41086,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41087,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41087,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41087,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
 					"Value": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -264644,6 +265767,28 @@
 				},
 				{
 					"Change": 40913,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41083,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41112,
 					"Prev": false,
 					"Field": "ReturnType",
 					"Type": "Type",
@@ -313834,6 +314979,160 @@
 				},
 				{
 					"Change": 40913,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40986,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40991,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40997,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41002,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41055,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41056,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41057,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41057,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41058,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41104,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41108,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41110,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41115,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41121,
 					"Prev": false,
 					"Field": "Parameters",
 					"Type": "Parameter",
@@ -1322449,6 +1323748,4951 @@
 					"Value": 2
 				}
 			}
+		},
+		{
+			"Update": 1605,
+			"Index": 0,
+			"Action": {
+				"Type": 0,
+				"Element": "Class",
+				"Primary": "AnimatedImageService",
+				"Fields": {
+					"Tags": [
+						"NotCreatable",
+						"Service",
+						"NotReplicated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotCreatable",
+					"Service"
+				]
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 1,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "AnimatedImageService",
+				"Secondary": "UserCreatedClips"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Data",
+				"Default": "ANIM\u0001",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "RobloxScriptSecurity",
+				"Tags": [
+					"Hidden",
+					"NotScriptable"
+				],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "DataType",
+					"Name": "BinaryString"
+				},
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 2,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "AudioStreamReader",
+				"Fields": {
+					"MemoryCategory": "Internal",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotBrowsable"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 3,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamReader",
+				"Secondary": "Layout",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "Mono",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AudioChannelLayout"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 4,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamReader",
+				"Secondary": "SampleFormat",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "Float32",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [
+						"ReadOnly",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AudioSampleFormat"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 5,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamReader",
+				"Secondary": "SampleRate",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "48000",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [
+						"ReadOnly",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "int"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 6,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamReader",
+				"Secondary": "WindowSize",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "Medium",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AudioWindowSize"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 7,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamReader",
+				"Secondary": "GetConnectedWires",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "pin",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "Instances"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 8,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamReader",
+				"Secondary": "GetInputPins",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 9,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamReader",
+				"Secondary": "GetOutputPins",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 10,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamReader",
+				"Secondary": "Peek",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "into",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
+					],
+					"ThreadSafety": "Safe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 11,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamReader",
+				"Secondary": "Read",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "into",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
+					],
+					"ThreadSafety": "Safe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 12,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "AudioStreamReader",
+				"Secondary": "WiringChanged",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "bool"
+							},
+							"Name": "connected",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "pin",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Wire"
+							},
+							"Name": "wire",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Instance"
+							},
+							"Name": "instance",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 13,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "AudioStreamWriter",
+				"Fields": {
+					"MemoryCategory": "Internal",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotBrowsable"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 14,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "Layout",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "Mono",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AudioChannelLayout"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 15,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "SampleFormat",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "Float32",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [
+						"ReadOnly",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AudioSampleFormat"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 16,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "SampleRate",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "48000",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [
+						"ReadOnly",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "int"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 17,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "WindowSize",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "Medium",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AudioWindowSize"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 18,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "GetConnectedWires",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "pin",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "Instances"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 19,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "GetInputPins",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 20,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "GetOutputPins",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 21,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "Space",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Safe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 22,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "Write",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "audioBuffer",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"CustomLuaState"
+					],
+					"ThreadSafety": "Safe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 23,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "AudioStreamWriter",
+				"Secondary": "WiringChanged",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "bool"
+							},
+							"Name": "connected",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "pin",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Wire"
+							},
+							"Name": "wire",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Instance"
+							},
+							"Name": "instance",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 24,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "BackAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 25,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "EnableSpawnEffects",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "true",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 26,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "FaceAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 27,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "FrontAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 28,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "HairAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 29,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "HeadAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 30,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "NeckAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 31,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "ShoulderAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 32,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAccessoryRules",
+				"Secondary": "WaistAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 33,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "ClimbAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 34,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "FallAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 35,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "IdleAltAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 36,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "IdleAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 37,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "JumpAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 38,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "MoodAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 39,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "RunAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 40,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "SwimAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 41,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "SwimIdleAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 42,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarAnimationRules",
+				"Secondary": "WalkAnimationOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 43,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarBodyRules",
+				"Secondary": "HeadOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 44,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarBodyRules",
+				"Secondary": "LeftArmOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 45,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarBodyRules",
+				"Secondary": "LeftLegOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 46,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarBodyRules",
+				"Secondary": "RightArmOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 47,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarBodyRules",
+				"Secondary": "RightLegOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 48,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarBodyRules",
+				"Secondary": "TorsoOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 49,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "ClassicPantsOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 50,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "ClassicShirtOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 51,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "ClassicTShirtOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 52,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "DressSkirtAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 53,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "JacketAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 54,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "LeftShoeAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 55,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "PantsAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 56,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "RightShoeAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 57,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "ShirtAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 58,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "ShortsAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 59,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "SweaterAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 60,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarClothingRules",
+				"Secondary": "TShirtAccessoryOverride",
+				"Fields": {
+					"Default": "-1"
+				}
+			},
+			"Prev": {
+				"Default": "0"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 61,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarCollisionRules",
+				"Secondary": "HitAndTouchDetectionMode",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "TouchAndQueryDetectionMode",
+						"ThreadSafety": "Unknown"
+					}
+				}
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 62,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarCollisionRules",
+				"Secondary": "HitAndTouchDetectionMode",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "None"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 63,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarCollisionRules",
+				"Secondary": "HitAndTouchDetectionMode",
+				"Fields": {
+					"Tags": [
+						"Deprecated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 64,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarCollisionRules",
+				"Secondary": "HitAndTouchDetectionMode",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "None"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 65,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AvatarCollisionRules",
+				"Secondary": "HitAndTouchDetectionMode",
+				"Fields": {
+					"CanSave": false
+				}
+			},
+			"Prev": {
+				"CanSave": true
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 66,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AvatarCollisionRules",
+				"Secondary": "HitboxSize",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "2, 5.5, 1",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 67,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AvatarCollisionRules",
+				"Secondary": "TouchAndQueryDetectionMode",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "UseParts",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AvatarSettingsTouchAndQueryDetectionMode"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 68,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "AvatarEffectDescription",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 69,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AvatarEffectDescription",
+				"Secondary": "AssetId",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "0",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "int64"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 70,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AvatarEffectDescription",
+				"Secondary": "EffectType",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "None",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "AvatarEffectType"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 71,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BaseWrap",
+				"Secondary": "CageMeshContent",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 72,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BaseWrap",
+				"Secondary": "CageMeshId",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 73,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BaseWrap",
+				"Secondary": "CageOrigin",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 74,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BaseWrap",
+				"Secondary": "ImportOrigin",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 75,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Chat",
+				"Secondary": "LoadDefaultChat",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "NotAccessibleSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 76,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "CloudClientService",
+				"Secondary": "CheckOfferEligibility",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "offerType",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 77,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "CloudClientService",
+				"Secondary": "CheckOfferEligibilityAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "offerType",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 78,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "CloudClientService",
+				"Secondary": "MakeOfferReservationAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "placeId",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "offerType",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 79,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "DataModel",
+				"Secondary": "ServerRegion",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "JobInfo",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [
+						"ReadOnly",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "string"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 80,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "EmissiveMaskContent",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 81,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "MetalnessMap",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 82,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "MetalnessMap",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 83,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "MetalnessMapContent",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 84,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "NormalMap",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 85,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "NormalMap",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 86,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "NormalMapContent",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 87,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "RoughnessMap",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 88,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "RoughnessMap",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 89,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Decal",
+				"Secondary": "RoughnessMapContent",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 90,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Folder",
+				"Secondary": "ExplorerIconContent",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Appearance",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Content"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 91,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "FollowRotationBoneBehavior",
+				"Fields": {
+					"MemoryCategory": "Animation",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotBrowsable"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 92,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowRotationBoneBehavior",
+				"Secondary": "CounterRotate",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "false",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 93,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowRotationBoneBehavior",
+				"Secondary": "Driver",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Class",
+						"Name": "Instance"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 94,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowRotationBoneBehavior",
+				"Secondary": "Weight",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "0.5",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 95,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "FollowTwistBoneBehavior",
+				"Fields": {
+					"MemoryCategory": "Animation",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotBrowsable"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 96,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowTwistBoneBehavior",
+				"Secondary": "Axis",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "X",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "Axis"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 97,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowTwistBoneBehavior",
+				"Secondary": "AxisMode",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "Local",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "FollowTwistBoneAxisMode"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 98,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowTwistBoneBehavior",
+				"Secondary": "CounterRotate",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "false",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 99,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowTwistBoneBehavior",
+				"Secondary": "Driver",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Class",
+						"Name": "Instance"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 100,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowTwistBoneBehavior",
+				"Secondary": "EndBone",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Class",
+						"Name": "Instance"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 101,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowTwistBoneBehavior",
+				"Secondary": "StartBone",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Class",
+						"Name": "Instance"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 102,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FollowTwistBoneBehavior",
+				"Secondary": "Weight",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "0.5",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 103,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "GameDownloaderService",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotCreatable",
+						"Service",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 104,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "GameDownloaderService",
+				"Secondary": "CancelGameDownload",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "universeId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 105,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "GameDownloaderService",
+				"Secondary": "DownloadGame",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "universeId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Enum",
+							"Name": "GameDownloadStartResult"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 106,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "GameDownloaderService",
+				"Secondary": "GetGameDownloadStatus",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "universeId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 107,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "GameDownloaderService",
+				"Secondary": "DownloadCompleted",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "universeId",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "GameDownloadResult"
+							},
+							"Name": "result",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 108,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "GameDownloaderService",
+				"Secondary": "DownloadProgressChanged",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "universeId",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "GameDownloadPhase"
+							},
+							"Name": "phase",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "bytesDownloaded",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "totalExpectedBytes",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 109,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "GeometryService",
+				"Secondary": "NegateAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Instances"
+							},
+							"Name": "parts",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 110,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "GeometryService",
+				"Secondary": "SeparateAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Instances"
+							},
+							"Name": "parts",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 111,
+			"Action": {
+				"Type": 0,
+				"Element": "Event",
+				"Primary": "GuiObject",
+				"Secondary": "SelectionGained",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "GuiNavigationDirection"
+							},
+							"Name": "inputDirection",
+							"Optional": false,
+							"Default": ""
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 112,
+			"Action": {
+				"Type": 0,
+				"Element": "Event",
+				"Primary": "GuiObject",
+				"Secondary": "SelectionLost",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "GuiNavigationDirection"
+							},
+							"Name": "inputDirection",
+							"Optional": false,
+							"Default": ""
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 113,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Humanoid",
+				"Secondary": "InternalAnimationHipHeight",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "0",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 114,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Model",
+				"Secondary": "ExplorerIconContent",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Appearance",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Content"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 115,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "ModelInfoService",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotCreatable",
+						"Service",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 116,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ModelInfoService",
+				"Secondary": "GetModelTriangleCount",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Model"
+							},
+							"Name": "model",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 117,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "ParticleEmitter2D",
+				"Secondary": "LightEmission"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Appearance",
+				"Default": "0",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "Primitive",
+					"Name": "float"
+				},
+				"WriteSecurity": "None"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 118,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "ParticleEmitter2D",
+				"Secondary": "LightInfluence",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Appearance",
+					"Default": "0",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 119,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PhysicsActivitySensor",
+				"Secondary": "Position",
+				"Fields": {
+					"CanSave": false
+				}
+			},
+			"Prev": {
+				"CanSave": true
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 120,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PhysicsActivitySensor",
+				"Secondary": "Position",
+				"Fields": {
+					"CanLoad": false
+				}
+			},
+			"Prev": {
+				"CanLoad": true
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 121,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PhysicsActivitySensor",
+				"Secondary": "Size",
+				"Fields": {
+					"CanLoad": false
+				}
+			},
+			"Prev": {
+				"CanLoad": true
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 122,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PhysicsActivitySensor",
+				"Secondary": "Size",
+				"Fields": {
+					"CanSave": false
+				}
+			},
+			"Prev": {
+				"CanSave": true
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 123,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "Player",
+				"Secondary": "GetData"
+			},
+			"Prev": {
+				"Parameters": [],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Class",
+						"Name": "PlayerData"
+					}
+				],
+				"Security": "None",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 124,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "PlayerData",
+				"Secondary": "GetPlayer"
+			},
+			"Prev": {
+				"Parameters": [],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Class",
+						"Name": "Player"
+					}
+				],
+				"Security": "None",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 125,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "PlayerData",
+				"Secondary": "GetRecordAsync"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "string"
+						},
+						"Name": "recordName",
+						"Optional": true,
+						"Default": "Default"
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Class",
+						"Name": "PlayerDataRecord"
+					}
+				],
+				"Security": "None",
+				"Tags": [
+					"Yields"
+				],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 126,
+			"Action": {
+				"Type": -1,
+				"Element": "Class",
+				"Primary": "PlayerDataRecord"
+			},
+			"Prev": {
+				"MemoryCategory": "Instances",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Superclass": "Instance",
+				"Tags": [
+					"NotCreatable",
+					"NotReplicated"
+				]
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 127,
+			"Action": {
+				"Type": -1,
+				"Element": "Class",
+				"Primary": "PlayerDataRecordConfig"
+			},
+			"Prev": {
+				"MemoryCategory": "Instances",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Superclass": "Instance",
+				"Tags": [
+					"NotCreatable",
+					"NotReplicated"
+				]
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 128,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "PlayerDataService",
+				"Secondary": "LoadFailureBehavior"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Data",
+				"Default": "Failure",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "Enum",
+					"Name": "PlayerDataLoadFailureBehavior"
+				},
+				"WriteSecurity": "None"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 129,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "PlayerDataService",
+				"Secondary": "GetRecordConfig"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "string"
+						},
+						"Name": "recordName",
+						"Optional": true,
+						"Default": "Default"
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Class",
+						"Name": "PlayerDataRecordConfig"
+					}
+				],
+				"Security": "None",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 130,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "QWidgetPluginGui",
+				"Secondary": "CloseButtonEnabled",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "true",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [
+						"Hidden",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 131,
+			"Action": {
+				"Type": 0,
+				"Element": "Event",
+				"Primary": "RealtimeMedia",
+				"Secondary": "Disconnected",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "bool"
+							},
+							"Name": "expected",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "reason",
+							"Optional": false,
+							"Default": ""
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "bool"
+						},
+						"Name": "expected",
+						"Optional": false,
+						"Default": ""
+					}
+				]
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 132,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "SocialService",
+				"Secondary": "PromptRateExperienceAsync",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Enum",
+							"Name": "ExperienceRatingResult"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 133,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "SocialService",
+				"Secondary": "RateExperiencePromptCompleted",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ExperienceRatingResult"
+							},
+							"Name": "result",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 134,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "SocialService",
+				"Secondary": "ShowRateExperiencePrompt",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 135,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Studio",
+				"Secondary": "Enable Flag Editor",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Advanced",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 136,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "TextDocument",
+				"Secondary": "ReadAsync",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 137,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "UGCValidationService",
+				"Secondary": "ValidateEditableMeshCageNonManifoldAndHoles"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableMesh"
+						},
+						"Name": "editableMesh",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 138,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "UGCValidationService",
+				"Secondary": "ValidateEditableMeshFullBodyCageDeletion"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableMesh"
+						},
+						"Name": "editableMesh",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 139,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "UGCValidationService",
+				"Secondary": "ValidateEditableMeshTriangles"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableMesh"
+						},
+						"Name": "editableMesh",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 140,
+			"Action": {
+				"Type": 0,
+				"Element": "Class",
+				"Primary": "UIBlur",
+				"Fields": {
+					"Tags": [
+						"NotBrowsable"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 141,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "UserInputService",
+				"Secondary": "CreateVirtualInput",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Instance"
+							},
+							"Name": "target",
+							"Optional": true,
+							"Default": "nil"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 142,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "UserInputService",
+				"Secondary": "CreateVirtualInputForPluginGuiId",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "pluginGuiId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Class",
+							"Name": "Object"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 143,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "VideoFrame",
+				"Secondary": "SubtitlesChanged",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "subtitleCues",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 144,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "VoiceChatService",
+				"Secondary": "DefaultDistanceAttenuation",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 145,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "VoiceChatService",
+				"Secondary": "DefaultDistanceAttenuation",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 146,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "VoiceChatService",
+				"Secondary": "EnableDefaultVoice",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 147,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "VoiceChatService",
+				"Secondary": "EnableDefaultVoice",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 148,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "VoiceChatService",
+				"Secondary": "UseAudioApi",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 149,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "VoiceChatService",
+				"Secondary": "UseAudioApi",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 150,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "ImprovedAnimationConstraint"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Behavior",
+				"Default": "__api_dump_class_not_creatable__",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [
+					"NotScriptable"
+				],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "Enum",
+					"Name": "RolloutState"
+				},
+				"WriteSecurity": "None"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 151,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "BindOffset",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 152,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "ReferenceMeshContent",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 153,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "ReferenceMeshId",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 154,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "ReferenceOrigin",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 155,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "WrapTarget",
+				"Secondary": "Stiffness",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 156,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AppShellActionType",
+				"Secondary": "CampaignPageLoaded",
+				"Fields": {
+					"Index": 13,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 13
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 157,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AppShellActionType",
+				"Secondary": "TapCampaignPageTab",
+				"Fields": {
+					"Index": 12,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 12
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 158,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AssetType",
+				"Secondary": "ComputeFunction",
+				"Fields": {
+					"Index": 65,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 96
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 159,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AssetType",
+				"Secondary": "SpawnEffect",
+				"Fields": {
+					"Index": 66,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 97
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 160,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AvatarAssetType",
+				"Secondary": "SpawnEffect",
+				"Fields": {
+					"Index": 44,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 97
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 161,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "AvatarEffectType",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 162,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AvatarEffectType",
+				"Secondary": "None",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 163,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AvatarEffectType",
+				"Secondary": "Spawn",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 164,
+			"Action": {
+				"Type": 0,
+				"Element": "EnumItem",
+				"Primary": "AvatarSettingsHitAndTouchDetectionMode",
+				"Secondary": "UseCollider",
+				"Fields": {
+					"Tags": [
+						"Deprecated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 165,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AvatarSettingsHitAndTouchDetectionMode",
+				"Secondary": "UseHitbox",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [
+						"Deprecated"
+					],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 166,
+			"Action": {
+				"Type": 0,
+				"Element": "EnumItem",
+				"Primary": "AvatarSettingsHitAndTouchDetectionMode",
+				"Secondary": "UseParts",
+				"Fields": {
+					"Tags": [
+						"Deprecated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 167,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "AvatarSettingsTouchAndQueryDetectionMode",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 168,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AvatarSettingsTouchAndQueryDetectionMode",
+				"Secondary": "UseCollider",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 169,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AvatarSettingsTouchAndQueryDetectionMode",
+				"Secondary": "UseHitbox",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 170,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AvatarSettingsTouchAndQueryDetectionMode",
+				"Secondary": "UseParts",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 171,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "ExperienceRatingResult",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 172,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ExperienceRatingResult",
+				"Secondary": "Completed",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 173,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ExperienceRatingResult",
+				"Secondary": "Dismissed",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 174,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ExperienceRatingResult",
+				"Secondary": "Failed",
+				"Fields": {
+					"Index": 3,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 4
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 175,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ExperienceRatingResult",
+				"Secondary": "NotAllowed",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 3
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 176,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "FollowTwistBoneAxisMode",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 177,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FollowTwistBoneAxisMode",
+				"Secondary": "Follower",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 178,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FollowTwistBoneAxisMode",
+				"Secondary": "Local",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 179,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FollowTwistBoneAxisMode",
+				"Secondary": "StartToEndBone",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 180,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "GameDownloadPhase",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 181,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadPhase",
+				"Secondary": "CheckingGuards",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 182,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadPhase",
+				"Secondary": "Downloading",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 183,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadPhase",
+				"Secondary": "FetchingManifest",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 184,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "GameDownloadResult",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 185,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "Cancelled",
+				"Fields": {
+					"Index": 8,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 8
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 186,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "LowPowerMode",
+				"Fields": {
+					"Index": 5,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 5
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 187,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "ManifestUnavailable",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 188,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "Moderated",
+				"Fields": {
+					"Index": 6,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 6
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 189,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "NetworkError",
+				"Fields": {
+					"Index": 7,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 7
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 190,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "NetworkMetered",
+				"Fields": {
+					"Index": 4,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 4
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 191,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "NotEnoughSpace",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 192,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "NotOnWiFi",
+				"Fields": {
+					"Index": 3,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 3
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 193,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadResult",
+				"Secondary": "Success",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 194,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "GameDownloadStartResult",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 195,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadStartResult",
+				"Secondary": "AlreadyDownloading",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 196,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadStartResult",
+				"Secondary": "GameDownloadInProgress",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 197,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadStartResult",
+				"Secondary": "LowPowerMode",
+				"Fields": {
+					"Index": 5,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 5
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 198,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadStartResult",
+				"Secondary": "NetworkMetered",
+				"Fields": {
+					"Index": 4,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 4
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 199,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadStartResult",
+				"Secondary": "NotOnWiFi",
+				"Fields": {
+					"Index": 3,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 3
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 200,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GameDownloadStartResult",
+				"Secondary": "Started",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 201,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "GuiNavigationDirection",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 202,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GuiNavigationDirection",
+				"Secondary": "Backward",
+				"Fields": {
+					"Index": 6,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 6
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 203,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GuiNavigationDirection",
+				"Secondary": "Down",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 204,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GuiNavigationDirection",
+				"Secondary": "Forward",
+				"Fields": {
+					"Index": 5,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 5
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 205,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GuiNavigationDirection",
+				"Secondary": "Left",
+				"Fields": {
+					"Index": 3,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 3
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 206,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GuiNavigationDirection",
+				"Secondary": "None",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 207,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GuiNavigationDirection",
+				"Secondary": "Right",
+				"Fields": {
+					"Index": 4,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 4
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 208,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "GuiNavigationDirection",
+				"Secondary": "Up",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 209,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ImageCombineType",
+				"Secondary": "Darken",
+				"Fields": {
+					"Index": 7,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 8
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 210,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ImageCombineType",
+				"Secondary": "Difference",
+				"Fields": {
+					"Index": 13,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 14
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 211,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ImageCombineType",
+				"Secondary": "HardLight",
+				"Fields": {
+					"Index": 12,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 13
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 212,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ImageCombineType",
+				"Secondary": "Lighten",
+				"Fields": {
+					"Index": 8,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 9
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 213,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ImageCombineType",
+				"Secondary": "Overlay",
+				"Fields": {
+					"Index": 10,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 11
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 214,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ImageCombineType",
+				"Secondary": "Screen",
+				"Fields": {
+					"Index": 9,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 10
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 215,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "ImageCombineType",
+				"Secondary": "SoftLight",
+				"Fields": {
+					"Index": 11,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 12
+				}
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 216,
+			"Action": {
+				"Type": -1,
+				"Element": "Enum",
+				"Primary": "PlayerDataErrorState"
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1605,
+			"Index": 217,
+			"Action": {
+				"Type": -1,
+				"Element": "Enum",
+				"Primary": "PlayerDataLoadFailureBehavior"
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Tags": []
+			}
 		}
 	],
 	"Update": [
@@ -1341711,6 +1347955,18 @@
 			},
 			"ChangesStart": 40979,
 			"ChangesCount": 0
+		},
+		{
+			"Date": "2026-11-09T15:24:11-08:00",
+			"GUID": "version-63eb6055af4e4688",
+			"Version": {
+				"Gen": 0,
+				"Version": 747,
+				"Patch": 0,
+				"Commit": 7471481
+			},
+			"ChangesStart": 40979,
+			"ChangesCount": 218
 		}
 	]
 }
