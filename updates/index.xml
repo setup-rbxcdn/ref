@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.747.0.7471481</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-63eb6055af4e4688</link><description>218 revisions to the API.</description><guid>version-63eb6055af4e4688</guid><pubDate>Mon, 09 Nov 2026 15:24:11 -0800</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.748.0.7481526</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-8d7a1009c17e4ff8</link><description>115 revisions to the API.</description><guid>version-8d7a1009c17e4ff8</guid><pubDate>Mon, 16 Nov 2026 16:14:00 -0800</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-0">Add Function AdService.CompleteRewardedVideoGrant</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-1">Add Function AdService.PlayRewardedVideoAdOnClient</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-2">Add Callback AdService.OnRewardedVideoAdResult</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-3">Add Callback AdService.OnShowRewardedVideoAd</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-4">Remove Function AnimatedImageService.AddAnimatedImageClipAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-5">Remove Function AnimatedImageService.GetAnimatedImageClipFramesAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-6">Remove Function AnimatedImageService.GetAnimatedImageClipsAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-7">Remove Function AnimatedImageService.GetAnimatedImageClipsChangedSignal</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-8">Remove Function AnimatedImageService.GetAnimatedImageFrameIndexAtTimeAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-9">Add Function AnimationClipProvider.AddAnimatedImageClipAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-10">Add Function AnimationClipProvider.GetAnimatedImageClipFramesAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-11">Add Function AnimationClipProvider.GetAnimatedImageClipsAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-12">Add Function AnimationClipProvider.GetAnimatedImageClipsChangedSignal</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-13">Add Function AnimationClipProvider.GetAnimatedImageFrameIndexAtTimeAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-14">Change Class AnimationPlayer</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-15">Change Property AnimationPlayer.AnimationContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-16">Add Function AnimationRigData.Inspect</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-17">Change Function AssetImportService.UploadVersionedAssetFromPathAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-18">Add Event AvatarChatService.PlayerClientFeaturesResolved</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-19">Add Class Blob</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-24">Change Property BoxHandleAdornment.DoubleSided</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-28">Add Function CaptureService.CloneForSnapshot</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-29">Add Function CloudClientService.ReportOfferDecision</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-30">Add Property ColorCorrectionEffect.ColorLutContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-31">Add Property ColorCorrectionEffect.ColorLutIntensity</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-32">Change Property ConeHandleAdornment.DoubleSided</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-36">Change Property ControllerPartSensor.SensedMaterial</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-37">Add Function ControllerPartSensor.GetExtents</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-38">Change Property CylinderHandleAdornment.DoubleSided</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-42">Change Function EditableImage.DrawCircle</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-43">Change Function EditableImage.DrawImage</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-44">Change Function EditableImage.DrawLine</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-45">Change Function EditableImage.DrawRectangle</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-46">Add Function ExperienceService.GetConnectedServerInfo</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-47">Add Function ExperienceService.GetConnectedServerProbeSnapshot</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-48">Add Function ExperienceService.SetConnectedServerProbingActive</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-49">Add Class FilePickerService</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-52">Change Property Humanoid.OverrideDefaultCollisions</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-54">Add Property Humanoid.UsesAvatarCollider</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-55">Add Function Humanoid.GetCanCollideOnDeath</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-56">Add Function Humanoid.PlayAvatarEffectAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-57">Change Property ImageHandleAdornment.DoubleSided</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-61">Add Property Lighting.LightAttenuationMode</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-62">Change Property Lighting.Technology</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-63">Add Function ParticipantHandle.InvokePluginCommand</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-64">Add Class PickedFile</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-70">Add Property Player.InternalSpawnEffectPlayed</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-71">Add Function Player.HasSpawnEffectPlayed</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-72">Remove Event ProjectService.ContentMapMutationResult</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-73">Add Event ProjectService.ContentMapOutcomesAcknowledged</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-74">Change Property PyramidHandleAdornment.DoubleSided</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-78">Add Class SceneSnapshot</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-81">Add Class SessionStorage</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-82">Change Property SphereHandleAdornment.DoubleSided</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-86">Add Property Studio.AutoPlayAnimatedImages</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-87">Add Property Studio.Camera Orbit Speed</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-88">Add Property Studio.CameraFocusFillPercent</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-89">Add Property Studio.CameraNavigationModelLocked</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-90">Add Property Studio.CameraRotateCursorLock</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-91">Add Property StudioCameraService.GraspDistance</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-92">Add Property TeleportOptions.ForcePublicServer</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-93">Add Function UGCValidationService.GetCurveAnimationRenderedFrames</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-94">Add Property VRService.VRSessionActive</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-95">Add Property WrapLayer.NonUniformScaleContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-96">Remove Property WrapLayer.RotateScaleDeformationMap</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-97">Add Property WrapLayer.RotateUniformScaleContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-98">Remove Property WrapLayer.ScaleOnlyDeformationMap</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-99">Change Property WrapLayer.TargetShaping</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-101">Add Property WrapLayer.UniformScaleContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-102">Add Enum CameraRotateCursorLock</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-106">Remove EnumItem DomainType.EXPERIENCE</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-107">Add EnumItem DomainType.Experience</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-108">Add EnumItem DomainType.Group</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-109">Remove EnumItem DomainType.OAUTH</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-110">Add EnumItem DomainType.OAuth</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-111">Add EnumItem EngineFolder.ClientSettings</a></li>
+					<li><a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8-112">Add Enum LightAttenuationMode</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-8d7a1009c17e4ff8">All changes</a>
+			]]></content:encoded></item><item><title>v0.747.0.7471481</title><link>https://setup-rbxcdn.github.io/ref/updates/2026.html#version-63eb6055af4e4688</link><description>218 revisions to the API.</description><guid>version-63eb6055af4e4688</guid><pubDate>Mon, 09 Nov 2026 15:24:11 -0800</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-63eb6055af4e4688-0">Change Class AnimatedImageService</a></li>
 					<li><a href="/ref/updates/2026.html#version-63eb6055af4e4688-1">Remove Property AnimatedImageService.UserCreatedClips</a></li>
@@ -5159,39 +5240,4 @@
 					<li><a href="/ref/updates/2025.html#version-d638b440a9224bb2-69">Add EnumItem SalesTypeFilter.TimedOptions</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-d638b440a9224bb2">All changes</a>
-			]]></content:encoded></item><item><title>v0.699.0.6990877</title><link>https://setup-rbxcdn.github.io/ref/updates/2025.html#version-874602c66c70451a</link><description>43 revisions to the API.</description><guid>version-874602c66c70451a</guid><pubDate>Tue, 11 Nov 2025 10:27:56 -0800</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-0">Add Property AudioPlayer.AutoPlay</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-1">Add Property ExperienceStateCaptureService.SelectionMode</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-2">Add Function GenerationService.GenerateModelAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-3">Add Function GenerationService.LoadModelFromGlbAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-4">Add Function GeometryService.SweepPartAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-5">Add Function HumanoidRigDescription.AutoRig</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-6">Remove Function HumanoidRigDescription.Automap</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-7">Add Function MarketplaceService.RecommendTopProductsAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-8">Add Function RunService.BindToSimulation</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-9">Remove Event RunService.FixedHeartbeat</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-10">Remove Property SoundService.AudioPlayerVolumeFix</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-11">Add Property StarterPlayer.CreateDefaultPlayerModule</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-12">Add Property StyleQuery.ConditionsSerialize</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-13">Add Function StyleQuery.GetCondition</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-14">Add Function StyleQuery.GetConditions</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-15">Add Function StyleQuery.SetCondition</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-16">Add Function StyleQuery.SetConditions</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-17">Add Property ThirdPartyUserService.HasActiveUser</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-18">Change Property TriangleMeshPart.ConvexDecompHolder</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-19">Add Event Workspace.SendServerTime</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-20">Add Enum AnimationNodePlayMode</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-25">Change EnumItem AssetType.EarAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-26">Change EnumItem AssetType.EyeAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-27">Add EnumItem AssetType.EyeMakeup</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-28">Add EnumItem AssetType.FaceMakeup</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-29">Add EnumItem AssetType.LipMakeup</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-30">Add EnumItem AvatarAssetType.EyeMakeup</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-31">Add EnumItem AvatarAssetType.FaceMakeup</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-32">Add EnumItem AvatarAssetType.LipMakeup</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-33">Add Enum ExperienceStateCaptureSelectionMode</a></li>
-					<li><a href="/ref/updates/2025.html#version-874602c66c70451a-36">Add Enum StepFrequency</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-874602c66c70451a">All changes</a>
 			]]></content:encoded></item></channel></rss>

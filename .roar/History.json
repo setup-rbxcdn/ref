@@ -155,7 +155,8 @@
 			],
 			"AnimationPlayer": [
 				39960,
-				40499
+				40499,
+				41211
 			],
 			"AnimationRigData": [
 				18276
@@ -685,6 +686,9 @@
 				2376,
 				2428,
 				2483
+			],
+			"Blob": [
+				41216
 			],
 			"BlockMesh": [
 				112,
@@ -1528,6 +1532,9 @@
 				2437,
 				2492,
 				33687
+			],
+			"FilePickerService": [
+				41246
 			],
 			"FileSyncItem": [
 				9537,
@@ -2607,6 +2614,9 @@
 				30485,
 				34169
 			],
+			"PickedFile": [
+				41261
+			],
 			"PinShortcutService": [
 				38938
 			],
@@ -3120,6 +3130,9 @@
 			"SceneAnalysisService": [
 				37276
 			],
+			"SceneSnapshot": [
+				41275
+			],
 			"ScreenGui": [
 				1066,
 				2118,
@@ -3274,6 +3287,9 @@
 			],
 			"SessionService": [
 				9736
+			],
+			"SessionStorage": [
+				41278
 			],
 			"SharedTableRegistry": [
 				24208
@@ -4652,6 +4668,9 @@
 				"CampaignEligibilityResponseSuccessSignalFromClient": [
 					36703
 				],
+				"CompleteRewardedVideoGrant": [
+					41197
+				],
 				"CreateAdRewardFromDevProductId": [
 					30765
 				],
@@ -4696,6 +4715,15 @@
 				],
 				"OnImmersiveBrandedAdDisclosureButtonActivated": [
 					36705
+				],
+				"OnRewardedVideoAdResult": [
+					41199
+				],
+				"OnShowRewardedVideoAd": [
+					41200
+				],
+				"PlayRewardedVideoAdOnClient": [
+					41198
 				],
 				"PortalPrompt": [
 					26098,
@@ -5205,7 +5233,8 @@
 			},
 			"AnimatedImageService": {
 				"AddAnimatedImageClipAsync": [
-					40120
+					40120,
+					41201
 				],
 				"CreateTrack": [
 					39958,
@@ -5216,16 +5245,20 @@
 					40122
 				],
 				"GetAnimatedImageClipFramesAsync": [
-					40123
+					40123,
+					41202
 				],
 				"GetAnimatedImageClipsAsync": [
-					40728
+					40728,
+					41203
 				],
 				"GetAnimatedImageClipsChangedSignal": [
-					40124
+					40124,
+					41204
 				],
 				"GetAnimatedImageFrameIndexAtTimeAsync": [
-					40729
+					40729,
+					41205
 				],
 				"GetFrameNames": [
 					39673,
@@ -5312,6 +5345,21 @@
 				]
 			},
 			"AnimationClipProvider": {
+				"AddAnimatedImageClipAsync": [
+					41206
+				],
+				"GetAnimatedImageClipFramesAsync": [
+					41207
+				],
+				"GetAnimatedImageClipsAsync": [
+					41208
+				],
+				"GetAnimatedImageClipsChangedSignal": [
+					41209
+				],
+				"GetAnimatedImageFrameIndexAtTimeAsync": [
+					41210
+				],
 				"GetAnimationClip": [
 					18753,
 					21158,
@@ -5553,7 +5601,8 @@
 					39961,
 					40500,
 					40501,
-					40502
+					40502,
+					41212
 				],
 				"AutoPlay": [
 					39962,
@@ -5655,6 +5704,9 @@
 				],
 				"GetTransforms": [
 					33499
+				],
+				"Inspect": [
+					41213
 				],
 				"IsValidR15": [
 					33500
@@ -7142,7 +7194,8 @@
 					38734
 				],
 				"UploadVersionedAssetFromPathAsync": [
-					38735
+					38735,
+					41214
 				]
 			},
 			"AssetImportSession": {
@@ -10886,6 +10939,9 @@
 				"OnClientFeatures": [
 					25854
 				],
+				"PlayerClientFeaturesResolved": [
+					41215
+				],
 				"PollClientFeatures": [
 					25852
 				],
@@ -13400,6 +13456,20 @@
 					11879
 				]
 			},
+			"Blob": {
+				"Destroy": [
+					41217
+				],
+				"GetMimeType": [
+					41218
+				],
+				"GetSizeBytes": [
+					41219
+				],
+				"ReadBytesAsync": [
+					41220
+				]
+			},
 			"BloomEffect": {
 				"Intensity": [
 					5573,
@@ -13806,7 +13876,11 @@
 			},
 			"BoxHandleAdornment": {
 				"DoubleSided": [
-					40644
+					40644,
+					41221,
+					41222,
+					41223,
+					41224
 				],
 				"Shading": [
 					33212
@@ -14591,6 +14665,9 @@
 				],
 				"CheckUploadCaptureStatusForSupportTicketAsync": [
 					39395
+				],
+				"CloneForSnapshot": [
+					41225
 				],
 				"CreatePostAsync": [
 					29037
@@ -15553,6 +15630,9 @@
 				"ReleaseReservation": [
 					40768
 				],
+				"ReportOfferDecision": [
+					41226
+				],
 				"ReservationExpired": [
 					40769
 				],
@@ -15807,6 +15887,12 @@
 					16142,
 					21542
 				],
+				"ColorLutContent": [
+					41227
+				],
+				"ColorLutIntensity": [
+					41228
+				],
 				"Contrast": [
 					5580,
 					12052,
@@ -16025,7 +16111,11 @@
 			},
 			"ConeHandleAdornment": {
 				"DoubleSided": [
-					40648
+					40648,
+					41229,
+					41230,
+					41231,
+					41232
 				],
 				"Height": [
 					4795,
@@ -16634,6 +16724,9 @@
 				]
 			},
 			"ControllerPartSensor": {
+				"GetExtents": [
+					41234
+				],
 				"HitFrame": [
 					24251,
 					35359,
@@ -16654,7 +16747,8 @@
 					24253
 				],
 				"SensedMaterial": [
-					36877
+					36877,
+					41233
 				],
 				"SensedPart": [
 					24254
@@ -16905,7 +16999,11 @@
 					21586
 				],
 				"DoubleSided": [
-					40651
+					40651,
+					41235,
+					41236,
+					41237,
+					41238
 				],
 				"Height": [
 					4798,
@@ -19885,13 +19983,15 @@
 					27649,
 					29040,
 					37267,
-					40848
+					40848,
+					41239
 				],
 				"DrawImage": [
 					27650,
 					30053,
 					31904,
-					40849
+					40849,
+					41240
 				],
 				"DrawImageProjected": [
 					30323,
@@ -19906,7 +20006,8 @@
 					27651,
 					29041,
 					37268,
-					40850
+					40850,
+					41241
 				],
 				"DrawProjectionImage": [
 					28448,
@@ -19916,7 +20017,8 @@
 				"DrawRectangle": [
 					27652,
 					29042,
-					40851
+					40851,
+					41242
 				],
 				"DrawTriangle": [
 					29660
@@ -20676,6 +20778,12 @@
 				"ExecuteCrossExperienceCall": [
 					29086
 				],
+				"GetConnectedServerInfo": [
+					41243
+				],
+				"GetConnectedServerProbeSnapshot": [
+					41244
+				],
 				"GetFollowUserId": [
 					37270
 				],
@@ -20723,6 +20831,9 @@
 				],
 				"RegisterForExperienceLeave": [
 					26726
+				],
+				"SetConnectedServerProbingActive": [
+					41245
 				],
 				"StartCrossExperience": [
 					28787
@@ -21861,6 +21972,14 @@
 					12346,
 					16314,
 					29784
+				]
+			},
+			"FilePickerService": {
+				"IsSupported": [
+					41247
+				],
+				"PickFilesAsync": [
+					41248
 				]
 			},
 			"FileSyncItem": {
@@ -25333,6 +25452,9 @@
 					7831,
 					12664
 				],
+				"GetCanCollideOnDeath": [
+					41252
+				],
 				"GetLimb": [
 					5863,
 					5890,
@@ -25541,7 +25663,9 @@
 					37327
 				],
 				"OverrideDefaultCollisions": [
-					32382
+					32382,
+					41249,
+					41250
 				],
 				"PlatformStand": [
 					556,
@@ -25552,6 +25676,9 @@
 				"PlatformStanding": [
 					584,
 					12699
+				],
+				"PlayAvatarEffectAsync": [
+					41253
 				],
 				"PlayEmote": [
 					9009,
@@ -25760,6 +25887,9 @@
 					12647,
 					16455,
 					22035
+				],
+				"UsesAvatarCollider": [
+					41251
 				],
 				"WalkAngleError": [
 					22036
@@ -27014,7 +27144,11 @@
 			},
 			"ImageHandleAdornment": {
 				"DoubleSided": [
-					40656
+					40656,
+					41254,
+					41255,
+					41256,
+					41257
 				],
 				"Image": [
 					4814,
@@ -28891,6 +29025,9 @@
 					9101,
 					10193
 				],
+				"LightAttenuationMode": [
+					41258
+				],
 				"LightingChanged": [
 					697,
 					9861,
@@ -28955,7 +29092,8 @@
 					29022,
 					29023,
 					40660,
-					40661
+					40661,
+					41259
 				],
 				"TempUseNewSkyRemovalBehaviour": [
 					15798,
@@ -33746,6 +33884,9 @@
 				"InputText": [
 					40668
 				],
+				"InvokePluginCommand": [
+					41260
+				],
 				"Launch": [
 					40669
 				],
@@ -35133,6 +35274,23 @@
 					2367
 				]
 			},
+			"PickedFile": {
+				"Destroy": [
+					41262
+				],
+				"GetExtension": [
+					41263
+				],
+				"GetMimeType": [
+					41264
+				],
+				"GetName": [
+					41265
+				],
+				"LoadAsync": [
+					41266
+				]
+			},
 			"PinShortcutService": {
 				"IsAvailable": [
 					38939
@@ -35695,6 +35853,9 @@
 				"HasRobloxSubscription": [
 					36748
 				],
+				"HasSpawnEffectPlayed": [
+					41268
+				],
 				"HasVerifiedBadge": [
 					23827
 				],
@@ -35725,6 +35886,9 @@
 				"InternalCharacterAppearanceLoaded": [
 					22611,
 					23829
+				],
+				"InternalSpawnEffectPlayed": [
+					41267
 				],
 				"IsBestFriendsWith": [
 					873,
@@ -38440,7 +38604,11 @@
 				],
 				"ContentMapMutationResult": [
 					39883,
-					40434
+					40434,
+					41269
+				],
+				"ContentMapOutcomesAcknowledged": [
+					41270
 				],
 				"ContentMapRemovePathRequested": [
 					39884,
@@ -38759,7 +38927,11 @@
 			},
 			"PyramidHandleAdornment": {
 				"DoubleSided": [
-					40678
+					40678,
+					41271,
+					41272,
+					41273,
+					41274
 				],
 				"Height": [
 					34357
@@ -40662,6 +40834,14 @@
 				],
 				"GetUnparentedInstancesAsync": [
 					37282
+				]
+			},
+			"SceneSnapshot": {
+				"GetRoots": [
+					41276
+				],
+				"GetSourceGuid": [
+					41277
 				]
 			},
 			"ScreenGui": {
@@ -43721,7 +43901,11 @@
 			},
 			"SphereHandleAdornment": {
 				"DoubleSided": [
-					40692
+					40692,
+					41279,
+					41280,
+					41281,
+					41282
 				],
 				"Radius": [
 					4827,
@@ -45038,6 +45222,9 @@
 					7901,
 					8990
 				],
+				"AutoPlayAnimatedImages": [
+					41283
+				],
 				"AutoResumeSyncOnPlaceOpen": [
 					31000
 				],
@@ -45116,6 +45303,9 @@
 					38279,
 					38280
 				],
+				"Camera Orbit Speed": [
+					41284
+				],
 				"Camera Pan Speed": [
 					20115,
 					23137,
@@ -45162,6 +45352,9 @@
 				"CameraAltLeftMouseToRotate": [
 					38111
 				],
+				"CameraFocusFillPercent": [
+					41285
+				],
 				"CameraKeyMoveSmoothing": [
 					39268
 				],
@@ -45171,6 +45364,9 @@
 				"CameraNavigationModel": [
 					36214
 				],
+				"CameraNavigationModelLocked": [
+					41286
+				],
 				"CameraOrbitSensitivity": [
 					32133,
 					39350
@@ -45178,6 +45374,9 @@
 				"CameraPanSensitivity": [
 					32134,
 					39351
+				],
+				"CameraRotateCursorLock": [
+					41287
 				],
 				"CameraRotateShiftFactor": [
 					39269
@@ -46642,6 +46841,9 @@
 				],
 				"FocusStateChanged": [
 					36226
+				],
+				"GraspDistance": [
+					41288
 				],
 				"InFocusMode": [
 					36223
@@ -48382,6 +48584,9 @@
 				]
 			},
 			"TeleportOptions": {
+				"ForcePublicServer": [
+					41289
+				],
 				"GetTeleportData": [
 					11416,
 					14218
@@ -51902,6 +52107,9 @@
 					30164,
 					37022
 				],
+				"GetCurveAnimationRenderedFrames": [
+					41290
+				],
 				"GetDynamicHeadEditableMeshInactiveControls": [
 					28062,
 					30165,
@@ -54468,6 +54676,9 @@
 					23643,
 					28218,
 					28376
+				],
+				"VRSessionActive": [
+					41291
 				],
 				"VRSessionState": [
 					21008,
@@ -57204,6 +57415,9 @@
 					33450,
 					33451
 				],
+				"NonUniformScaleContent": [
+					41292
+				],
 				"Offset": [
 					32588,
 					33452,
@@ -57258,10 +57472,15 @@
 					35762
 				],
 				"RotateScaleDeformationMap": [
-					40715
+					40715,
+					41293
+				],
+				"RotateUniformScaleContent": [
+					41294
 				],
 				"ScaleOnlyDeformationMap": [
-					40716
+					40716,
+					41295
 				],
 				"ShrinkFactor": [
 					11429,
@@ -57271,7 +57490,9 @@
 					38664
 				],
 				"TargetShaping": [
-					40717
+					40717,
+					41296,
+					41297
 				],
 				"TemporaryReferenceId": [
 					23764,
@@ -57279,6 +57500,9 @@
 				],
 				"TemporaryReferenceMeshContent": [
 					38975
+				],
+				"UniformScaleContent": [
+					41298
 				]
 			},
 			"WrapTarget": {
@@ -57756,6 +57980,9 @@
 			],
 			"CameraPanMode": [
 				3520
+			],
+			"CameraRotateCursorLock": [
+				41299
 			],
 			"CameraSpeedAdjustBinding": [
 				26964
@@ -58503,6 +58730,9 @@
 			],
 			"LexemeType": [
 				29715
+			],
+			"LightAttenuationMode": [
+				41309
 			],
 			"LightingStyle": [
 				30744
@@ -62284,6 +62514,17 @@
 					3522
 				]
 			},
+			"CameraRotateCursorLock": {
+				"BothModes": [
+					41300
+				],
+				"FpsOnly": [
+					41301
+				],
+				"Never": [
+					41302
+				]
+			},
 			"CameraSpeedAdjustBinding": {
 				"AltScroll": [
 					26965
@@ -65434,15 +65675,26 @@
 			},
 			"DomainType": {
 				"EXPERIENCE": [
-					36781
+					36781,
+					41303
+				],
+				"Experience": [
+					41304
 				],
 				"GROUP": [
 					36782,
 					38091
 				],
+				"Group": [
+					41305
+				],
 				"OAUTH": [
 					36783,
-					38092
+					38092,
+					41306
+				],
+				"OAuth": [
+					41307
 				]
 			},
 			"DominantAxis": {
@@ -65663,6 +65915,9 @@
 				]
 			},
 			"EngineFolder": {
+				"ClientSettings": [
+					41308
+				],
 				"Logs": [
 					35862
 				],
@@ -71163,6 +71418,14 @@
 				],
 				"TildeEqual": [
 					29734
+				]
+			},
+			"LightAttenuationMode": {
+				"Legacy": [
+					41310
+				],
+				"Realistic": [
+					41311
 				]
 			},
 			"LightingStyle": {
@@ -90033,6 +90296,94 @@
 						"Category": "Group",
 						"Name": "Array"
 					}
+				},
+				{
+					"Change": 41201,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41202,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41203,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41206,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41207,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41208,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41213,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 41244,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
 				}
 			],
 			"AssetContentMap": [
@@ -98648,6 +98999,72 @@
 						"Category": "DataType",
 						"Name": "Color3"
 					}
+				},
+				{
+					"Change": 41239,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 41239,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
 				}
 			],
 			"Color3uint8": [
@@ -103838,6 +104255,182 @@
 				},
 				{
 					"Change": 41093,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41201,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41202,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41203,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41204,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41205,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41206,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41207,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41208,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41209,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41210,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41227,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41292,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41293,
+					"Prev": true,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41294,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41295,
+					"Prev": true,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Change": 41298,
 					"Prev": false,
 					"Field": "ValueType",
 					"Type": "Type",
@@ -115150,6 +115743,138 @@
 						"Category": "Group",
 						"Name": "Dictionary"
 					}
+				},
+				{
+					"Change": 41198,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41200,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41214,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41214,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41243,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41247,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41248,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41248,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41260,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41266,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41266,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 41290,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
 				}
 			],
 			"DockWidgetPluginGuiInfo": [
@@ -118177,6 +118902,18 @@
 						"Category": "DataType",
 						"Name": "Function"
 					}
+				},
+				{
+					"Change": 41214,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
 				}
 			],
 			"InstanceRef": [
@@ -120387,6 +121124,39 @@
 					"Prev": false,
 					"Field": "Parameters",
 					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Change": 41225,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Change": 41253,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Change": 41276,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
 					"Index": 0,
 					"Value": {
 						"Category": "DataType",
@@ -130392,6 +131162,28 @@
 						"Category": "DataType",
 						"Name": "RBXScriptSignal"
 					}
+				},
+				{
+					"Change": 41204,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
+				{
+					"Change": 41209,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
 				}
 			],
 			"Ray": [
@@ -136838,6 +137630,17 @@
 				{
 					"Change": 41116,
 					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Change": 41200,
+					"Prev": false,
 					"Field": "ReturnType",
 					"Type": "Type",
 					"Index": 0,
@@ -145652,6 +146455,138 @@
 						"Category": "DataType",
 						"Name": "Vector2"
 					}
+				},
+				{
+					"Change": 41239,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41239,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41240,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41240,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
 				}
 			],
 			"Vector2int16": [
@@ -153348,6 +154283,28 @@
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 41234,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 41234,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 1,
 					"Value": {
 						"Category": "DataType",
 						"Name": "Vector3"
@@ -188469,6 +189426,149 @@
 						"Category": "Primitive",
 						"Name": "bool"
 					}
+				},
+				{
+					"Change": 41225,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41245,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41245,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41247,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41251,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41252,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41252,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41267,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41268,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41283,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41286,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41289,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 41291,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
 				}
 			],
 			"buffer": [
@@ -188793,6 +189893,17 @@
 				},
 				{
 					"Change": 40920,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Change": 41220,
 					"Prev": false,
 					"Field": "ReturnType",
 					"Type": "Type",
@@ -191782,6 +192893,28 @@
 					"Field": "ReturnType",
 					"Type": "Type",
 					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Change": 41205,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Change": 41210,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
 					"Value": {
 						"Category": "Primitive",
 						"Name": "double"
@@ -208035,6 +209168,127 @@
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41228,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41239,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41239,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41241,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41242,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41284,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41285,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41288,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 41290,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
 					"Value": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -232298,6 +233552,72 @@
 						"Category": "Primitive",
 						"Name": "int"
 					}
+				},
+				{
+					"Change": 41205,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41210,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41215,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41239,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41239,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 41269,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
 				}
 			],
 			"int64": [
@@ -246926,6 +248246,140 @@
 					"Field": "Parameters",
 					"Type": "Parameter",
 					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41197,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41197,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41198,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41214,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41214,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41219,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41220,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Change": 41220,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Change": 41253,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41269,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41269,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 41270,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
 					"Value": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -265789,6 +267243,94 @@
 				},
 				{
 					"Change": 41112,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41197,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41198,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41199,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41201,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41206,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41217,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41226,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 41262,
 					"Prev": false,
 					"Field": "ReturnType",
 					"Type": "Type",
@@ -315136,6 +316678,215 @@
 					"Prev": false,
 					"Field": "Parameters",
 					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41199,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41199,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41201,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41202,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41205,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41206,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41207,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41210,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41214,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41214,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41218,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41226,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41226,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41260,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41260,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41263,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41264,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41265,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 41277,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
 					"Index": 0,
 					"Value": {
 						"Category": "Primitive",
@@ -1328693,6 +1330444,3661 @@
 				},
 				"Tags": []
 			}
+		},
+		{
+			"Update": 1606,
+			"Index": 0,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AdService",
+				"Secondary": "CompleteRewardedVideoGrant",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "userId",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "productId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 1,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AdService",
+				"Secondary": "PlayRewardedVideoAdOnClient",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Player"
+							},
+							"Name": "player",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "rewardDetails",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "placementId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 2,
+			"Action": {
+				"Type": 1,
+				"Element": "Callback",
+				"Primary": "AdService",
+				"Secondary": "OnRewardedVideoAdResult",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Player"
+							},
+							"Name": "player",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ShowAdResult"
+							},
+							"Name": "result",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "encryptedAdTrackingData",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "encryptionMetadata",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"NoYield"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 3,
+			"Action": {
+				"Type": 1,
+				"Element": "Callback",
+				"Primary": "AdService",
+				"Secondary": "OnShowRewardedVideoAd",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Player"
+							},
+							"Name": "player",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "request",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Tuple"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 4,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "AnimatedImageService",
+				"Secondary": "AddAnimatedImageClipAsync"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Content"
+						},
+						"Name": "content",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "string"
+						},
+						"Name": "clipName",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Group",
+							"Name": "Array"
+						},
+						"Name": "frames",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [
+					"Yields"
+				],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 5,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "AnimatedImageService",
+				"Secondary": "GetAnimatedImageClipFramesAsync"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Content"
+						},
+						"Name": "content",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "string"
+						},
+						"Name": "clipName",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Group",
+						"Name": "Array"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [
+					"Yields"
+				],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 6,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "AnimatedImageService",
+				"Secondary": "GetAnimatedImageClipsAsync"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Content"
+						},
+						"Name": "content",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Group",
+						"Name": "Array"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [
+					"Yields"
+				],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 7,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "AnimatedImageService",
+				"Secondary": "GetAnimatedImageClipsChangedSignal"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Content"
+						},
+						"Name": "content",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 8,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "AnimatedImageService",
+				"Secondary": "GetAnimatedImageFrameIndexAtTimeAsync"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Content"
+						},
+						"Name": "content",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "string"
+						},
+						"Name": "clipName",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "double"
+						},
+						"Name": "timePosition",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [
+					"Yields"
+				],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 9,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationClipProvider",
+				"Secondary": "AddAnimatedImageClipAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Content"
+							},
+							"Name": "content",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "clipName",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "frames",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 10,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationClipProvider",
+				"Secondary": "GetAnimatedImageClipFramesAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Content"
+							},
+							"Name": "content",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "clipName",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 11,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationClipProvider",
+				"Secondary": "GetAnimatedImageClipsAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Content"
+							},
+							"Name": "content",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 12,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationClipProvider",
+				"Secondary": "GetAnimatedImageClipsChangedSignal",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Content"
+							},
+							"Name": "content",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "RBXScriptSignal"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 13,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationClipProvider",
+				"Secondary": "GetAnimatedImageFrameIndexAtTimeAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Content"
+							},
+							"Name": "content",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "clipName",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "double"
+							},
+							"Name": "timePosition",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 14,
+			"Action": {
+				"Type": 0,
+				"Element": "Class",
+				"Primary": "AnimationPlayer",
+				"Fields": {
+					"MemoryCategory": "Animation"
+				}
+			},
+			"Prev": {
+				"MemoryCategory": "Gui"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 15,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AnimationPlayer",
+				"Secondary": "AnimationContent",
+				"Fields": {
+					"Category": "Animation"
+				}
+			},
+			"Prev": {
+				"Category": "Image"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 16,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationRigData",
+				"Secondary": "Inspect",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 17,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "AssetImportService",
+				"Secondary": "UploadVersionedAssetFromPathAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "filepath",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "createAssetRequest",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "assetId",
+							"Optional": true,
+							"Default": "0"
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Function",
+								"Optional": true
+							},
+							"Name": "progressCallback",
+							"Optional": true,
+							"Default": "nil"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "string"
+						},
+						"Name": "filepath",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Group",
+							"Name": "Dictionary"
+						},
+						"Name": "createAssetRequest",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "int64"
+						},
+						"Name": "assetId",
+						"Optional": true,
+						"Default": "0"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 18,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "AvatarChatService",
+				"Secondary": "PlayerClientFeaturesResolved",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Player"
+							},
+							"Name": "player",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int"
+							},
+							"Name": "features",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 19,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "Blob",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Object",
+					"Tags": [
+						"NotCreatable",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 20,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "Blob",
+				"Secondary": "Destroy",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 21,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "Blob",
+				"Secondary": "GetMimeType",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 22,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "Blob",
+				"Secondary": "GetSizeBytes",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "int64"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 23,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "Blob",
+				"Secondary": "ReadBytesAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64",
+								"Optional": true
+							},
+							"Name": "start",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64",
+								"Optional": true
+							},
+							"Name": "length",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "buffer"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 24,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BoxHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Category": "Appearance"
+				}
+			},
+			"Prev": {
+				"Category": "Data"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 25,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BoxHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 26,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BoxHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden"
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 27,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "BoxHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 28,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "CaptureService",
+				"Secondary": "CloneForSnapshot",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Instances"
+							},
+							"Name": "instances",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "bool"
+							},
+							"Name": "includeNonArchivable",
+							"Optional": true,
+							"Default": "false"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Class",
+							"Name": "SceneSnapshot"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 29,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "CloudClientService",
+				"Secondary": "ReportOfferDecision",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "reservationToken",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "decision",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 30,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "ColorCorrectionEffect",
+				"Secondary": "ColorLutContent",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Content"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 31,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "ColorCorrectionEffect",
+				"Secondary": "ColorLutIntensity",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "State",
+					"Default": "1",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 32,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ConeHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 33,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ConeHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Category": "Appearance"
+				}
+			},
+			"Prev": {
+				"Category": "Data"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 34,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ConeHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden"
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 35,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ConeHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 36,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ControllerPartSensor",
+				"Secondary": "SensedMaterial",
+				"Fields": {
+					"Category": "Output"
+				}
+			},
+			"Prev": {
+				"Category": "Data"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 37,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ControllerPartSensor",
+				"Secondary": "GetExtents",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						{
+							"Category": "DataType",
+							"Name": "Vector3"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"NotBrowsable"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 38,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "CylinderHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 39,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "CylinderHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden"
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 40,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "CylinderHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 41,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "CylinderHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Category": "Appearance"
+				}
+			},
+			"Prev": {
+				"Category": "Data"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 42,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawCircle",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "center",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int"
+							},
+							"Name": "radius",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Color3"
+							},
+							"Name": "color",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "transparency",
+							"Optional": true,
+							"Default": "0"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": true,
+							"Default": "Overwrite"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "AntiAliasing"
+							},
+							"Name": "antiAliasing",
+							"Optional": true,
+							"Default": "Enabled"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "center",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "int"
+						},
+						"Name": "radius",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Color3"
+						},
+						"Name": "color",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "float"
+						},
+						"Name": "transparency",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "AntiAliasing"
+						},
+						"Name": "antiAliasing",
+						"Optional": true,
+						"Default": "Enabled"
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageAlphaType"
+						},
+						"Name": "alphaBlendType",
+						"Optional": true,
+						"Default": "Default"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 43,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawImage",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "position",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "EditableImage"
+							},
+							"Name": "image",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": true,
+							"Default": "AlphaBlend"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "position",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableImage"
+						},
+						"Name": "image",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageAlphaType"
+						},
+						"Name": "alphaBlendType",
+						"Optional": true,
+						"Default": "Default"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 44,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawLine",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "p1",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "p2",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Color3"
+							},
+							"Name": "color",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "transparency",
+							"Optional": true,
+							"Default": "0"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": true,
+							"Default": "Overwrite"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "AntiAliasing"
+							},
+							"Name": "antiAliasing",
+							"Optional": true,
+							"Default": "Enabled"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "p1",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "p2",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Color3"
+						},
+						"Name": "color",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "float"
+						},
+						"Name": "transparency",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "AntiAliasing"
+						},
+						"Name": "antiAliasing",
+						"Optional": true,
+						"Default": "Enabled"
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageAlphaType"
+						},
+						"Name": "alphaBlendType",
+						"Optional": true,
+						"Default": "Default"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 45,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawRectangle",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "position",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "size",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Color3"
+							},
+							"Name": "color",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "transparency",
+							"Optional": true,
+							"Default": "0"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": true,
+							"Default": "Overwrite"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "position",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "size",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Color3"
+						},
+						"Name": "color",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "float"
+						},
+						"Name": "transparency",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageAlphaType"
+						},
+						"Name": "alphaBlendType",
+						"Optional": true,
+						"Default": "Default"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 46,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ExperienceService",
+				"Secondary": "GetConnectedServerInfo",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 47,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ExperienceService",
+				"Secondary": "GetConnectedServerProbeSnapshot",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 48,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ExperienceService",
+				"Secondary": "SetConnectedServerProbingActive",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "bool"
+							},
+							"Name": "active",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 49,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "FilePickerService",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotCreatable",
+						"Service",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 50,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FilePickerService",
+				"Secondary": "IsSupported",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "options",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 51,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FilePickerService",
+				"Secondary": "PickFilesAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "options",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 52,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Humanoid",
+				"Secondary": "OverrideDefaultCollisions",
+				"Fields": {
+					"Tags": [
+						"Hidden",
+						"NotScriptable",
+						"Deprecated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden",
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 53,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Humanoid",
+				"Secondary": "OverrideDefaultCollisions",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "UsesAvatarCollider",
+						"ThreadSafety": "Unknown"
+					}
+				}
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 54,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Humanoid",
+				"Secondary": "UsesAvatarCollider",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "false",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [
+						"Hidden"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "NotAccessibleSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 55,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "Humanoid",
+				"Secondary": "GetCanCollideOnDeath",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "BasePart"
+							},
+							"Name": "part",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "bool"
+							},
+							"Name": "fallback",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Safe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 56,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "Humanoid",
+				"Secondary": "PlayAvatarEffectAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "assetId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "Instances"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 57,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ImageHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Category": "Appearance"
+				}
+			},
+			"Prev": {
+				"Category": "Data"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 58,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ImageHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 59,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ImageHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden"
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 60,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "ImageHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 61,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Lighting",
+				"Secondary": "LightAttenuationMode",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Appearance",
+					"Default": "Legacy",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "LightAttenuationMode"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 62,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Lighting",
+				"Secondary": "Technology",
+				"Fields": {
+					"Default": "Future"
+				}
+			},
+			"Prev": {
+				"Default": "Compatibility"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 63,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ParticipantHandle",
+				"Secondary": "InvokePluginCommand",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "command",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "args",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 64,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "PickedFile",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Object",
+					"Tags": [
+						"NotCreatable",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 65,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PickedFile",
+				"Secondary": "Destroy",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 66,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PickedFile",
+				"Secondary": "GetExtension",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 67,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PickedFile",
+				"Secondary": "GetMimeType",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 68,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PickedFile",
+				"Secondary": "GetName",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 69,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PickedFile",
+				"Secondary": "LoadAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "options",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 70,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Player",
+				"Secondary": "InternalSpawnEffectPlayed",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 71,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "Player",
+				"Secondary": "HasSpawnEffectPlayed",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 72,
+			"Action": {
+				"Type": -1,
+				"Element": "Event",
+				"Primary": "ProjectService",
+				"Secondary": "ContentMapMutationResult"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "int64"
+						},
+						"Name": "operationId",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "int"
+						},
+						"Name": "result",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "int64"
+						},
+						"Name": "authoritativeRevision",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Security": "RobloxSecurity",
+				"Tags": [
+					"Hidden"
+				],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 73,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "ProjectService",
+				"Secondary": "ContentMapOutcomesAcknowledged",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int64"
+							},
+							"Name": "authoritativeRevision",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxSecurity",
+					"Tags": [
+						"Hidden"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 74,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PyramidHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Category": "Appearance"
+				}
+			},
+			"Prev": {
+				"Category": "Data"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 75,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PyramidHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 76,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PyramidHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden"
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 77,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "PyramidHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 78,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "SceneSnapshot",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Object",
+					"Tags": [
+						"NotCreatable",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 79,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "SceneSnapshot",
+				"Secondary": "GetRoots",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "Instances"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 80,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "SceneSnapshot",
+				"Secondary": "GetSourceGuid",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Instance"
+							},
+							"Name": "instance",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 81,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "SessionStorage",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotCreatable",
+						"Service",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 82,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "SphereHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 83,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "SphereHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden"
+				]
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 84,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "SphereHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"Category": "Appearance"
+				}
+			},
+			"Prev": {
+				"Category": "Data"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 85,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "SphereHandleAdornment",
+				"Secondary": "DoubleSided",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 86,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Studio",
+				"Secondary": "AutoPlayAnimatedImages",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Visualization",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [
+						"Hidden",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 87,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Studio",
+				"Secondary": "Camera Orbit Speed",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Camera",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 88,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Studio",
+				"Secondary": "CameraFocusFillPercent",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Camera",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 89,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Studio",
+				"Secondary": "CameraNavigationModelLocked",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Camera",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 90,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Studio",
+				"Secondary": "CameraRotateCursorLock",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Camera",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "CameraRotateCursorLock"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 91,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "StudioCameraService",
+				"Secondary": "GraspDistance",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_skipped_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 92,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "TeleportOptions",
+				"Secondary": "ForcePublicServer",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "false",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 93,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "UGCValidationService",
+				"Secondary": "GetCurveAnimationRenderedFrames",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Instance"
+							},
+							"Name": "curveAnimation",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Model"
+							},
+							"Name": "templateRig",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "Model"
+							},
+							"Name": "classicTemplateRig",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "maxDuration",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 94,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "VRService",
+				"Secondary": "VRSessionActive",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "false",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [
+						"Hidden",
+						"ReadOnly",
+						"NotReplicated"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 95,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "NonUniformScaleContent",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "FittingMaps",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Content"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 96,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "RotateScaleDeformationMap"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Appearance",
+				"Default": "__api_dump_no_string_value__",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "DataType",
+					"Name": "Content"
+				},
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 97,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "RotateUniformScaleContent",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "FittingMaps",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Content"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 98,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "ScaleOnlyDeformationMap"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Appearance",
+				"Default": "__api_dump_no_string_value__",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "DataType",
+					"Name": "Content"
+				},
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 99,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "TargetShaping",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 100,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "TargetShaping",
+				"Fields": {
+					"Category": "FittingMaps"
+				}
+			},
+			"Prev": {
+				"Category": "Appearance"
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 101,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "WrapLayer",
+				"Secondary": "UniformScaleContent",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "FittingMaps",
+					"Default": "__api_dump_no_string_value__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "Content"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 102,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "CameraRotateCursorLock",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 103,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "CameraRotateCursorLock",
+				"Secondary": "BothModes",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 104,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "CameraRotateCursorLock",
+				"Secondary": "FpsOnly",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 105,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "CameraRotateCursorLock",
+				"Secondary": "Never",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 106,
+			"Action": {
+				"Type": -1,
+				"Element": "EnumItem",
+				"Primary": "DomainType",
+				"Secondary": "EXPERIENCE"
+			},
+			"Prev": {
+				"Index": 0,
+				"LegacyNames": null,
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Tags": [],
+				"Value": 1
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 107,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "DomainType",
+				"Secondary": "Experience",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": [
+						"EXPERIENCE"
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 108,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "DomainType",
+				"Secondary": "Group",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 109,
+			"Action": {
+				"Type": -1,
+				"Element": "EnumItem",
+				"Primary": "DomainType",
+				"Secondary": "OAUTH"
+			},
+			"Prev": {
+				"Index": 1,
+				"LegacyNames": null,
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Tags": [],
+				"Value": 3
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 110,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "DomainType",
+				"Secondary": "OAuth",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": [
+						"OAUTH"
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 3
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 111,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "EngineFolder",
+				"Secondary": "ClientSettings",
+				"Fields": {
+					"Index": 3,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 3
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 112,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "LightAttenuationMode",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 113,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "LightAttenuationMode",
+				"Secondary": "Legacy",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1606,
+			"Index": 114,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "LightAttenuationMode",
+				"Secondary": "Realistic",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
 		}
 	],
 	"Update": [
@@ -1347967,6 +1353373,18 @@
 			},
 			"ChangesStart": 40979,
 			"ChangesCount": 218
+		},
+		{
+			"Date": "2026-11-16T16:14:00-08:00",
+			"GUID": "version-8d7a1009c17e4ff8",
+			"Version": {
+				"Gen": 0,
+				"Version": 748,
+				"Patch": 0,
+				"Commit": 7481526
+			},
+			"ChangesStart": 41197,
+			"ChangesCount": 115
 		}
 	]
 }

@@ -1536,6 +1536,45 @@
 			"Related": [
 				{
 					"Class": "AdService",
+					"Member": "CompleteRewardedVideoGrant",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "CompleteRewardedVideoGrant",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "CompleteRewardedVideoGrant",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "CreateAdRewardFromDevProductId",
 					"MemberType": "Function",
 					"Removed": false,
@@ -1849,6 +1888,58 @@
 				{
 					"Class": "AdService",
 					"Member": "OnDemandVideoCompleteFromUI",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -2639,6 +2730,110 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ShowAdResult"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnShowRewardedVideoAd",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnShowRewardedVideoAd",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnShowRewardedVideoAd",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
 					}
 				},
 				{
@@ -5298,201 +5493,6 @@
 			"Related": [
 				{
 					"Class": "AnimatedImageService",
-					"Member": "AddAnimatedImageClipAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "AddAnimatedImageClipAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "AddAnimatedImageClipAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Group",
-						"Name": "Array"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "AddAnimatedImageClipAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageClipFramesAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageClipFramesAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageClipFramesAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Array"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageClipsAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageClipsAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Array"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageClipsChangedSignal",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageClipsChangedSignal",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "RBXScriptSignal"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "double"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
 					"Member": "UserCreatedClips",
 					"MemberType": "Property",
 					"Removed": true,
@@ -5515,6 +5515,58 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "BinaryString"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				},
 				{
@@ -5606,6 +5658,149 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsChangedSignal",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsChangedSignal",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -6144,6 +6339,201 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageClipsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageClipsAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageClipsChangedSignal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageClipsChangedSignal",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
 				{
 					"Class": "AnimationClipProvider",
 					"Member": "GetAnimationClip",
@@ -7692,6 +8082,19 @@
 				{
 					"Class": "AnimationRigData",
 					"Member": "GetTransforms",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimationRigData",
+					"Member": "Inspect",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -15022,6 +15425,20 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "UploadVersionedAssetFromPathAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
 					}
 				},
 				{
@@ -30696,6 +31113,32 @@
 						"Category": "Primitive",
 						"Name": "int"
 					}
+				},
+				{
+					"Class": "AvatarChatService",
+					"Member": "PlayerClientFeaturesResolved",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AvatarChatService",
+					"Member": "PlayerClientFeaturesResolved",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
 				}
 			]
 		},
@@ -39377,6 +39820,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "GetCanCollideOnDeath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "BasePart"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "ReplaceBodyPartR15",
 					"MemberType": "Function",
 					"Removed": false,
@@ -41487,6 +41943,98 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Tuple"
+					}
+				}
+			]
+		},
+		"Blob": {
+			"Name": "Blob",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "Blob",
+					"Member": "Destroy",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Blob",
+					"Member": "GetMimeType",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "Blob",
+					"Member": "GetSizeBytes",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "Blob",
+					"Member": "ReadBytesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "Blob",
+					"Member": "ReadBytesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "Blob",
+					"Member": "ReadBytesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
 					}
 				}
 			]
@@ -46319,6 +46867,45 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "CloneForSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "CloneForSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "CaptureService",
+					"Member": "CloneForSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "SceneSnapshot"
 					}
 				},
 				{
@@ -51939,6 +52526,45 @@
 				},
 				{
 					"Class": "CloudClientService",
+					"Member": "ReportOfferDecision",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CloudClientService",
+					"Member": "ReportOfferDecision",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CloudClientService",
+					"Member": "ReportOfferDecision",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "CloudClientService",
 					"Member": "ReservationExpired",
 					"MemberType": "Event",
 					"Removed": false,
@@ -53003,6 +53629,32 @@
 				{
 					"Class": "ColorCorrectionEffect",
 					"Member": "Brightness",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ColorCorrectionEffect",
+					"Member": "ColorLutContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "ColorCorrectionEffect",
+					"Member": "ColorLutIntensity",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -57477,6 +58129,32 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "SensorMode"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
+					"Member": "GetExtents",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
+					"Member": "GetExtents",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
 					}
 				}
 			]
@@ -80074,6 +80752,32 @@
 				},
 				{
 					"Class": "ExperienceService",
+					"Member": "GetConnectedServerInfo",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "GetConnectedServerProbeSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ExperienceService",
 					"Member": "GetFollowUserId",
 					"MemberType": "Function",
 					"Removed": false,
@@ -80330,6 +81034,32 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "RBXScriptConnection"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "SetConnectedServerProbingActive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "SetConnectedServerProbingActive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -84833,6 +85563,71 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "ContentId"
+					}
+				}
+			]
+		},
+		"FilePickerService": {
+			"Name": "FilePickerService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "FilePickerService",
+					"Member": "IsSupported",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "FilePickerService",
+					"Member": "IsSupported",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "FilePickerService",
+					"Member": "PickFilesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "FilePickerService",
+					"Member": "PickFilesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
 					}
 				}
 			]
@@ -101004,6 +101799,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "UsesAvatarCollider",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "WalkAngleError",
 					"MemberType": "Property",
 					"Removed": false,
@@ -101590,6 +102398,45 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "GetCanCollideOnDeath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "BasePart"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "GetCanCollideOnDeath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "GetCanCollideOnDeath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "GetLimb",
 					"MemberType": "Function",
 					"Removed": false,
@@ -101859,6 +102706,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "null"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "PlayAvatarEffectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "PlayAvatarEffectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
 					}
 				},
 				{
@@ -111579,6 +112452,7 @@
 				"FeedService",
 				"File",
 				"FileManagerService",
+				"FilePickerService",
 				"FileSyncItem",
 				"FileSyncReplicationService",
 				"FileSyncService",
@@ -111884,6 +112758,7 @@
 				"ServiceVisibilityService",
 				"SessionCheckService",
 				"SessionService",
+				"SessionStorage",
 				"SharedTableRegistry",
 				"ShorelineUpgraderService",
 				"Sky",
@@ -119190,6 +120065,19 @@
 					}
 				},
 				{
+					"Class": "SceneSnapshot",
+					"Member": "GetSourceGuid",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
 					"Class": "ScriptContext",
 					"Member": "AddCoreScriptLocal",
 					"MemberType": "Function",
@@ -120692,6 +121580,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
@@ -125275,6 +126176,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Lighting",
+					"Member": "LightAttenuationMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "LightAttenuationMode"
 					}
 				},
 				{
@@ -144394,6 +145308,32 @@
 					}
 				},
 				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Model"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Class",
+						"Name": "Model"
+					}
+				},
+				{
 					"Class": "Model",
 					"Member": "World Pivot Orientation",
 					"MemberType": "Property",
@@ -148557,6 +149497,7 @@
 				"AnimationNode",
 				"AppHandle",
 				"AuroraHandle",
+				"Blob",
 				"Capture",
 				"ConfigSnapshot",
 				"DataModelDiff",
@@ -148571,7 +149512,9 @@
 				"MLSession",
 				"OutputLink",
 				"ParticipantHandle",
+				"PickedFile",
 				"PluginConnection",
+				"SceneSnapshot",
 				"StudioActionOverride",
 				"TerrainIterateOperation",
 				"TerrainModifyOperation",
@@ -151568,6 +152511,45 @@
 				{
 					"Class": "ParticipantHandle",
 					"Member": "InputText",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ParticipantHandle",
+					"Member": "InvokePluginCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ParticipantHandle",
+					"Member": "InvokePluginCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ParticipantHandle",
+					"Member": "InvokePluginCommand",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -156692,6 +157674,96 @@
 				}
 			]
 		},
+		"PickedFile": {
+			"Name": "PickedFile",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "PickedFile",
+					"Member": "Destroy",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "GetExtension",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "GetMimeType",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "GetName",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "LoadAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "LoadAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				}
+			]
+		},
 		"PinShortcutService": {
 			"Name": "PinShortcutService",
 			"Removed": false,
@@ -157370,8 +158442,47 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "ShowRewardedVideoAdAsync",
 					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnShowRewardedVideoAd",
+					"MemberType": "Callback",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
@@ -157597,6 +158708,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "AvatarChatService",
+					"Member": "PlayerClientFeaturesResolved",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
 					"Type": {
 						"Category": "Class",
 						"Name": "Player"
@@ -158943,6 +160067,19 @@
 				},
 				{
 					"Class": "Player",
+					"Member": "InternalSpawnEffectPlayed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Player",
 					"Member": "LocaleId",
 					"MemberType": "Property",
 					"Removed": false,
@@ -159880,6 +161017,19 @@
 				{
 					"Class": "Player",
 					"Member": "HasBlockedPlayer",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "HasSpawnEffectPlayed",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -173054,38 +174204,12 @@
 				},
 				{
 					"Class": "ProjectService",
-					"Member": "ContentMapMutationResult",
+					"Member": "ContentMapOutcomesAcknowledged",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "ProjectService",
-					"Member": "ContentMapMutationResult",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "ProjectService",
-					"Member": "ContentMapMutationResult",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -173310,6 +174434,45 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "ProjectService",
+					"Member": "ContentMapMutationResult",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "ProjectService",
+					"Member": "ContentMapMutationResult",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ProjectService",
+					"Member": "ContentMapMutationResult",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				}
 			]
@@ -183519,6 +184682,70 @@
 				}
 			]
 		},
+		"SceneSnapshot": {
+			"Name": "SceneSnapshot",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "CaptureService",
+					"Member": "CloneForSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "SceneSnapshot"
+					}
+				},
+				{
+					"Class": "SceneSnapshot",
+					"Member": "GetRoots",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "SceneSnapshot",
+					"Member": "GetSourceGuid",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "SceneSnapshot",
+					"Member": "GetSourceGuid",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				}
+			]
+		},
 		"ScreenGui": {
 			"Name": "ScreenGui",
 			"Removed": false,
@@ -190594,6 +191821,17 @@
 						"Name": "string"
 					}
 				}
+			]
+		},
+		"SessionStorage": {
+			"Name": "SessionStorage",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
 			]
 		},
 		"SharedTableRegistry": {
@@ -200955,6 +202193,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "AutoPlayAnimatedImages",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "AutoResumeSyncOnPlaceOpen",
 					"MemberType": "Property",
 					"Removed": false,
@@ -201085,6 +202336,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "Camera Orbit Speed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "Camera Pan Speed",
 					"MemberType": "Property",
 					"Removed": false,
@@ -201163,6 +202427,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "CameraFocusFillPercent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "CameraKeyMoveSmoothing",
 					"MemberType": "Property",
 					"Removed": false,
@@ -201198,6 +202475,32 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "CameraNavigationModel"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "CameraNavigationModelLocked",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "CameraRotateCursorLock",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "CameraRotateCursorLock"
 					}
 				},
 				{
@@ -205163,6 +206466,19 @@
 				{
 					"Class": "StudioCameraService",
 					"Member": "FocusDistance",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "StudioCameraService",
+					"Member": "GraspDistance",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -213378,6 +214694,19 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "TeleportOptions",
+					"Member": "ForcePublicServer",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
 				{
 					"Class": "TeleportOptions",
 					"Member": "ReservedServerAccessCode",
@@ -232838,6 +234167,71 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Class",
+						"Name": "Model"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Class",
+						"Name": "Model"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "GetDynamicHeadEditableMeshInactiveControls",
 					"MemberType": "Function",
 					"Removed": false,
@@ -244150,6 +245544,19 @@
 				{
 					"Class": "VRService",
 					"Member": "VREnabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "VRService",
+					"Member": "VRSessionActive",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -260061,6 +261468,19 @@
 				},
 				{
 					"Class": "WrapLayer",
+					"Member": "NonUniformScaleContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
 					"Member": "Offset",
 					"MemberType": "Property",
 					"Removed": false,
@@ -260152,20 +261572,7 @@
 				},
 				{
 					"Class": "WrapLayer",
-					"Member": "RotateScaleDeformationMap",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "WrapLayer",
-					"Member": "ScaleOnlyDeformationMap",
+					"Member": "RotateUniformScaleContent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -260220,6 +261627,45 @@
 					"Member": "TemporaryReferenceMeshContent",
 					"MemberType": "Property",
 					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
+					"Member": "UniformScaleContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
+					"Member": "RotateScaleDeformationMap",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
+					"Member": "ScaleOnlyDeformationMap",
+					"MemberType": "Property",
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -261256,6 +262702,12 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"CompleteRewardedVideoGrant": {
+				"Class": "AdService",
+				"Name": "CompleteRewardedVideoGrant",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"CreateAdRewardFromDevProductId": {
 				"Class": "AdService",
 				"Name": "CreateAdRewardFromDevProductId",
@@ -261429,6 +262881,82 @@
 				"Name": "OnImmersiveBrandedAdDisclosureButtonActivated",
 				"MemberType": "Callback",
 				"Removed": false
+			},
+			"OnRewardedVideoAdResult": {
+				"Class": "AdService",
+				"Name": "OnRewardedVideoAdResult",
+				"MemberType": "Callback",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AdService",
+						"Member": "OnRewardedVideoAdResult",
+						"MemberType": "Callback",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					},
+					{
+						"Class": "AdService",
+						"Member": "OnRewardedVideoAdResult",
+						"MemberType": "Callback",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ShowAdResult"
+						}
+					}
+				]
+			},
+			"OnShowRewardedVideoAd": {
+				"Class": "AdService",
+				"Name": "OnShowRewardedVideoAd",
+				"MemberType": "Callback",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AdService",
+						"Member": "OnShowRewardedVideoAd",
+						"MemberType": "Callback",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
+			"PlayRewardedVideoAdOnClient": {
+				"Class": "AdService",
+				"Name": "PlayRewardedVideoAdOnClient",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AdService",
+						"Member": "PlayRewardedVideoAdOnClient",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
 			},
 			"PortalPrompt": {
 				"Class": "AdService",
@@ -262621,7 +264149,7 @@
 				"Class": "AnimatedImageService",
 				"Name": "AddAnimatedImageClipAsync",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"CreateTrack": {
 				"Class": "AnimatedImageService",
@@ -262654,25 +264182,25 @@
 				"Class": "AnimatedImageService",
 				"Name": "GetAnimatedImageClipFramesAsync",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetAnimatedImageClipsAsync": {
 				"Class": "AnimatedImageService",
 				"Name": "GetAnimatedImageClipsAsync",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetAnimatedImageClipsChangedSignal": {
 				"Class": "AnimatedImageService",
 				"Name": "GetAnimatedImageClipsChangedSignal",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetAnimatedImageFrameIndexAtTimeAsync": {
 				"Class": "AnimatedImageService",
 				"Name": "GetAnimatedImageFrameIndexAtTimeAsync",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetFrameNames": {
 				"Class": "AnimatedImageService",
@@ -262826,6 +264354,36 @@
 			}
 		},
 		"AnimationClipProvider": {
+			"AddAnimatedImageClipAsync": {
+				"Class": "AnimationClipProvider",
+				"Name": "AddAnimatedImageClipAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetAnimatedImageClipFramesAsync": {
+				"Class": "AnimationClipProvider",
+				"Name": "GetAnimatedImageClipFramesAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetAnimatedImageClipsAsync": {
+				"Class": "AnimationClipProvider",
+				"Name": "GetAnimatedImageClipsAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetAnimatedImageClipsChangedSignal": {
+				"Class": "AnimationClipProvider",
+				"Name": "GetAnimatedImageClipsChangedSignal",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetAnimatedImageFrameIndexAtTimeAsync": {
+				"Class": "AnimationClipProvider",
+				"Name": "GetAnimatedImageFrameIndexAtTimeAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetAnimationClip": {
 				"Class": "AnimationClipProvider",
 				"Name": "GetAnimationClip",
@@ -263551,6 +265109,12 @@
 			"GetTransforms": {
 				"Class": "AnimationRigData",
 				"Name": "GetTransforms",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"Inspect": {
+				"Class": "AnimationRigData",
+				"Name": "Inspect",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -274570,6 +276134,27 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"PlayerClientFeaturesResolved": {
+				"Class": "AvatarChatService",
+				"Name": "PlayerClientFeaturesResolved",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AvatarChatService",
+						"Member": "PlayerClientFeaturesResolved",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
+			},
 			"PollClientFeatures": {
 				"Class": "AvatarChatService",
 				"Name": "PollClientFeatures",
@@ -280015,6 +281600,32 @@
 				"Removed": false
 			}
 		},
+		"Blob": {
+			"Destroy": {
+				"Class": "Blob",
+				"Name": "Destroy",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetMimeType": {
+				"Class": "Blob",
+				"Name": "GetMimeType",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetSizeBytes": {
+				"Class": "Blob",
+				"Name": "GetSizeBytes",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"ReadBytesAsync": {
+				"Class": "Blob",
+				"Name": "ReadBytesAsync",
+				"MemberType": "Function",
+				"Removed": false
+			}
+		},
 		"BloomEffect": {
 			"Intensity": {
 				"Class": "BloomEffect",
@@ -281940,6 +283551,27 @@
 				"Name": "CheckUploadCaptureStatusForSupportTicketAsync",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"CloneForSnapshot": {
+				"Class": "CaptureService",
+				"Name": "CloneForSnapshot",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "CaptureService",
+						"Member": "CloneForSnapshot",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "ReturnType",
+						"Kind": "Type",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "SceneSnapshot"
+						}
+					}
+				]
 			},
 			"CreatePostAsync": {
 				"Class": "CaptureService",
@@ -284300,6 +285932,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"ReportOfferDecision": {
+				"Class": "CloudClientService",
+				"Name": "ReportOfferDecision",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"ReservationExpired": {
 				"Class": "CloudClientService",
 				"Name": "ReservationExpired",
@@ -284816,6 +286454,18 @@
 			"Brightness": {
 				"Class": "ColorCorrectionEffect",
 				"Name": "Brightness",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ColorLutContent": {
+				"Class": "ColorCorrectionEffect",
+				"Name": "ColorLutContent",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ColorLutIntensity": {
+				"Class": "ColorCorrectionEffect",
+				"Name": "ColorLutIntensity",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -286574,6 +288224,12 @@
 			}
 		},
 		"ControllerPartSensor": {
+			"GetExtents": {
+				"Class": "ControllerPartSensor",
+				"Name": "GetExtents",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"HitFrame": {
 				"Class": "ControllerPartSensor",
 				"Name": "HitFrame",
@@ -295221,6 +296877,18 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetConnectedServerInfo": {
+				"Class": "ExperienceService",
+				"Name": "GetConnectedServerInfo",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetConnectedServerProbeSnapshot": {
+				"Class": "ExperienceService",
+				"Name": "GetConnectedServerProbeSnapshot",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetFollowUserId": {
 				"Class": "ExperienceService",
 				"Name": "GetFollowUserId",
@@ -295314,6 +296982,12 @@
 			"RegisterForExperienceLeave": {
 				"Class": "ExperienceService",
 				"Name": "RegisterForExperienceLeave",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SetConnectedServerProbingActive": {
+				"Class": "ExperienceService",
+				"Name": "SetConnectedServerProbingActive",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -297328,6 +299002,20 @@
 				"Class": "FileMesh",
 				"Name": "TextureId",
 				"MemberType": "Property",
+				"Removed": false
+			}
+		},
+		"FilePickerService": {
+			"IsSupported": {
+				"Class": "FilePickerService",
+				"Name": "IsSupported",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"PickFilesAsync": {
+				"Class": "FilePickerService",
+				"Name": "PickFilesAsync",
+				"MemberType": "Function",
 				"Removed": false
 			}
 		},
@@ -305127,6 +306815,27 @@
 					}
 				]
 			},
+			"GetCanCollideOnDeath": {
+				"Class": "Humanoid",
+				"Name": "GetCanCollideOnDeath",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Humanoid",
+						"Member": "GetCanCollideOnDeath",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "BasePart"
+						}
+					}
+				]
+			},
 			"GetLimb": {
 				"Class": "Humanoid",
 				"Name": "GetLimb",
@@ -305565,6 +307274,12 @@
 				"Class": "Humanoid",
 				"Name": "PlatformStanding",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"PlayAvatarEffectAsync": {
+				"Class": "Humanoid",
+				"Name": "PlayAvatarEffectAsync",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"PlayEmote": {
@@ -306077,6 +307792,12 @@
 			"UseJumpPower": {
 				"Class": "Humanoid",
 				"Name": "UseJumpPower",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"UsesAvatarCollider": {
+				"Class": "Humanoid",
+				"Name": "UsesAvatarCollider",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -312487,6 +314208,27 @@
 				"Name": "LegacyOutlines",
 				"MemberType": "Property",
 				"Removed": true
+			},
+			"LightAttenuationMode": {
+				"Class": "Lighting",
+				"Name": "LightAttenuationMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Lighting",
+						"Member": "LightAttenuationMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "LightAttenuationMode"
+						}
+					}
+				]
 			},
 			"LightingChanged": {
 				"Class": "Lighting",
@@ -323471,6 +325213,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"InvokePluginCommand": {
+				"Class": "ParticipantHandle",
+				"Name": "InvokePluginCommand",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"Launch": {
 				"Class": "ParticipantHandle",
 				"Name": "Launch",
@@ -325711,6 +327459,38 @@
 				"Removed": true
 			}
 		},
+		"PickedFile": {
+			"Destroy": {
+				"Class": "PickedFile",
+				"Name": "Destroy",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetExtension": {
+				"Class": "PickedFile",
+				"Name": "GetExtension",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetMimeType": {
+				"Class": "PickedFile",
+				"Name": "GetMimeType",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetName": {
+				"Class": "PickedFile",
+				"Name": "GetName",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"LoadAsync": {
+				"Class": "PickedFile",
+				"Name": "LoadAsync",
+				"MemberType": "Function",
+				"Removed": false
+			}
+		},
 		"PinShortcutService": {
 			"IsAvailable": {
 				"Class": "PinShortcutService",
@@ -326822,6 +328602,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"HasSpawnEffectPlayed": {
+				"Class": "Player",
+				"Name": "HasSpawnEffectPlayed",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"HasVerifiedBadge": {
 				"Class": "Player",
 				"Name": "HasVerifiedBadge",
@@ -326882,6 +328668,12 @@
 			"InternalCharacterAppearanceLoaded": {
 				"Class": "Player",
 				"Name": "InternalCharacterAppearanceLoaded",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"InternalSpawnEffectPlayed": {
+				"Class": "Player",
+				"Name": "InternalSpawnEffectPlayed",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -332691,6 +334483,12 @@
 				"Class": "ProjectService",
 				"Name": "ContentMapMutationResult",
 				"MemberType": "Event",
+				"Removed": true
+			},
+			"ContentMapOutcomesAcknowledged": {
+				"Class": "ProjectService",
+				"Name": "ContentMapOutcomesAcknowledged",
+				"MemberType": "Event",
 				"Removed": false
 			},
 			"ContentMapRemovePathRequested": {
@@ -337231,6 +339029,35 @@
 				"Name": "GetUnparentedInstancesAsync",
 				"MemberType": "Function",
 				"Removed": false
+			}
+		},
+		"SceneSnapshot": {
+			"GetRoots": {
+				"Class": "SceneSnapshot",
+				"Name": "GetRoots",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetSourceGuid": {
+				"Class": "SceneSnapshot",
+				"Name": "GetSourceGuid",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "SceneSnapshot",
+						"Member": "GetSourceGuid",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
 			}
 		},
 		"ScreenGui": {
@@ -345605,6 +347432,12 @@
 				"MemberType": "Property",
 				"Removed": true
 			},
+			"AutoPlayAnimatedImages": {
+				"Class": "Studio",
+				"Name": "AutoPlayAnimatedImages",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"AutoResumeSyncOnPlaceOpen": {
 				"Class": "Studio",
 				"Name": "AutoResumeSyncOnPlaceOpen",
@@ -345701,6 +347534,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"Camera Orbit Speed": {
+				"Class": "Studio",
+				"Name": "Camera Orbit Speed",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"Camera Pan Speed": {
 				"Class": "Studio",
 				"Name": "Camera Pan Speed",
@@ -345758,6 +347597,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"CameraFocusFillPercent": {
+				"Class": "Studio",
+				"Name": "CameraFocusFillPercent",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"CameraKeyMoveSmoothing": {
 				"Class": "Studio",
 				"Name": "CameraKeyMoveSmoothing",
@@ -345791,6 +347636,12 @@
 					}
 				]
 			},
+			"CameraNavigationModelLocked": {
+				"Class": "Studio",
+				"Name": "CameraNavigationModelLocked",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"CameraOrbitSensitivity": {
 				"Class": "Studio",
 				"Name": "CameraOrbitSensitivity",
@@ -345802,6 +347653,27 @@
 				"Name": "CameraPanSensitivity",
 				"MemberType": "Property",
 				"Removed": true
+			},
+			"CameraRotateCursorLock": {
+				"Class": "Studio",
+				"Name": "CameraRotateCursorLock",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Studio",
+						"Member": "CameraRotateCursorLock",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "CameraRotateCursorLock"
+						}
+					}
+				]
 			},
 			"CameraRotateShiftFactor": {
 				"Class": "Studio",
@@ -347587,6 +349459,12 @@
 				"Class": "StudioCameraService",
 				"Name": "FocusStateChanged",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"GraspDistance": {
+				"Class": "StudioCameraService",
+				"Name": "GraspDistance",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"InFocusMode": {
@@ -351119,6 +352997,12 @@
 			}
 		},
 		"TeleportOptions": {
+			"ForcePublicServer": {
+				"Class": "TeleportOptions",
+				"Name": "ForcePublicServer",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"GetTeleportData": {
 				"Class": "TeleportOptions",
 				"Name": "GetTeleportData",
@@ -359432,6 +361316,53 @@
 				"MemberType": "Function",
 				"Removed": true
 			},
+			"GetCurveAnimationRenderedFrames": {
+				"Class": "UGCValidationService",
+				"Name": "GetCurveAnimationRenderedFrames",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetCurveAnimationRenderedFrames",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					},
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetCurveAnimationRenderedFrames",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 1,
+						"Type": {
+							"Category": "Class",
+							"Name": "Model"
+						}
+					},
+					{
+						"Class": "UGCValidationService",
+						"Member": "GetCurveAnimationRenderedFrames",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 2,
+						"Type": {
+							"Category": "Class",
+							"Name": "Model"
+						}
+					}
+				]
+			},
 			"GetDynamicHeadEditableMeshInactiveControls": {
 				"Class": "UGCValidationService",
 				"Name": "GetDynamicHeadEditableMeshInactiveControls",
@@ -365447,6 +367378,12 @@
 			"VREnabled": {
 				"Class": "VRService",
 				"Name": "VREnabled",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"VRSessionActive": {
+				"Class": "VRService",
+				"Name": "VRSessionActive",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -371832,6 +373769,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"NonUniformScaleContent": {
+				"Class": "WrapLayer",
+				"Name": "NonUniformScaleContent",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"Offset": {
 				"Class": "WrapLayer",
 				"Name": "Offset",
@@ -371878,13 +373821,19 @@
 				"Class": "WrapLayer",
 				"Name": "RotateScaleDeformationMap",
 				"MemberType": "Property",
+				"Removed": true
+			},
+			"RotateUniformScaleContent": {
+				"Class": "WrapLayer",
+				"Name": "RotateUniformScaleContent",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"ScaleOnlyDeformationMap": {
 				"Class": "WrapLayer",
 				"Name": "ScaleOnlyDeformationMap",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"ShrinkFactor": {
 				"Class": "WrapLayer",
@@ -371907,6 +373856,12 @@
 			"TemporaryReferenceMeshContent": {
 				"Class": "WrapLayer",
 				"Name": "TemporaryReferenceMeshContent",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"UniformScaleContent": {
+				"Class": "WrapLayer",
+				"Name": "UniformScaleContent",
 				"MemberType": "Property",
 				"Removed": false
 			}
@@ -377702,6 +379657,35 @@
 				}
 			]
 		},
+		"CameraRotateCursorLock": {
+			"Name": "CameraRotateCursorLock",
+			"Removed": false,
+			"ItemsByValue": [
+				"Never",
+				"FpsOnly",
+				"BothModes"
+			],
+			"ItemsByIndex": [
+				"Never",
+				"FpsOnly",
+				"BothModes"
+			],
+			"Related": [
+				{
+					"Class": "Studio",
+					"Member": "CameraRotateCursorLock",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "CameraRotateCursorLock"
+					}
+				}
+			]
+		},
 		"CameraSpeedAdjustBinding": {
 			"Name": "CameraSpeedAdjustBinding",
 			"Removed": false,
@@ -381264,13 +383248,19 @@
 			"Removed": false,
 			"ItemsByValue": [
 				"EXPERIENCE",
+				"Experience",
 				"GROUP",
-				"OAUTH"
+				"Group",
+				"OAUTH",
+				"OAuth"
 			],
 			"ItemsByIndex": [
 				"EXPERIENCE",
+				"Experience",
 				"GROUP",
-				"OAUTH"
+				"Group",
+				"OAUTH",
+				"OAuth"
 			]
 		},
 		"DominantAxis": {
@@ -381939,12 +383929,14 @@
 			"ItemsByValue": [
 				"Screenshots",
 				"Videos",
-				"Logs"
+				"Logs",
+				"ClientSettings"
 			],
 			"ItemsByIndex": [
 				"Screenshots",
 				"Videos",
-				"Logs"
+				"Logs",
+				"ClientSettings"
 			],
 			"Related": [
 				{
@@ -388296,6 +390288,33 @@
 				"Star",
 				"DoubleStar",
 				"ReservedSpecial"
+			]
+		},
+		"LightAttenuationMode": {
+			"Name": "LightAttenuationMode",
+			"Removed": false,
+			"ItemsByValue": [
+				"Legacy",
+				"Realistic"
+			],
+			"ItemsByIndex": [
+				"Legacy",
+				"Realistic"
+			],
+			"Related": [
+				{
+					"Class": "Lighting",
+					"Member": "LightAttenuationMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "LightAttenuationMode"
+					}
+				}
 			]
 		},
 		"LightingStyle": {
@@ -397682,6 +399701,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ShowAdResult"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Enum",
 						"Name": "ShowAdResult"
@@ -408333,6 +410365,23 @@
 				"Removed": false
 			}
 		},
+		"CameraRotateCursorLock": {
+			"BothModes": {
+				"Enum": "CameraRotateCursorLock",
+				"Name": "BothModes",
+				"Removed": false
+			},
+			"FpsOnly": {
+				"Enum": "CameraRotateCursorLock",
+				"Name": "FpsOnly",
+				"Removed": false
+			},
+			"Never": {
+				"Enum": "CameraRotateCursorLock",
+				"Name": "Never",
+				"Removed": false
+			}
+		},
 		"CameraSpeedAdjustBinding": {
 			"AltScroll": {
 				"Enum": "CameraSpeedAdjustBinding",
@@ -411460,6 +413509,11 @@
 			"EXPERIENCE": {
 				"Enum": "DomainType",
 				"Name": "EXPERIENCE",
+				"Removed": true
+			},
+			"Experience": {
+				"Enum": "DomainType",
+				"Name": "Experience",
 				"Removed": false
 			},
 			"GROUP": {
@@ -411467,9 +413521,19 @@
 				"Name": "GROUP",
 				"Removed": true
 			},
+			"Group": {
+				"Enum": "DomainType",
+				"Name": "Group",
+				"Removed": false
+			},
 			"OAUTH": {
 				"Enum": "DomainType",
 				"Name": "OAUTH",
+				"Removed": true
+			},
+			"OAuth": {
+				"Enum": "DomainType",
+				"Name": "OAuth",
 				"Removed": false
 			}
 		},
@@ -411809,6 +413873,11 @@
 			}
 		},
 		"EngineFolder": {
+			"ClientSettings": {
+				"Enum": "EngineFolder",
+				"Name": "ClientSettings",
+				"Removed": false
+			},
 			"Logs": {
 				"Enum": "EngineFolder",
 				"Name": "Logs",
@@ -417016,6 +419085,18 @@
 			"TildeEqual": {
 				"Enum": "LexemeType",
 				"Name": "TildeEqual",
+				"Removed": false
+			}
+		},
+		"LightAttenuationMode": {
+			"Legacy": {
+				"Enum": "LightAttenuationMode",
+				"Name": "Legacy",
+				"Removed": false
+			},
+			"Realistic": {
+				"Enum": "LightAttenuationMode",
+				"Name": "Realistic",
 				"Removed": false
 			}
 		},
@@ -428415,7 +430496,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -428428,7 +430509,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -428441,7 +430522,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageClipsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -428586,6 +430667,19 @@
 				{
 					"Class": "AnimationRigData",
 					"Member": "GetTransforms",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimationRigData",
+					"Member": "Inspect",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -431347,6 +433441,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "GetConnectedServerProbeSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
@@ -435112,12 +437219,51 @@
 				},
 				{
 					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
 					"Member": "CreateTrack",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
@@ -443362,7 +445508,20 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "Animation",
+					"Member": "AnimationContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
 					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -443375,7 +445534,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -443388,7 +445547,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageClipsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -443401,7 +445560,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageClipsChangedSignal",
 					"MemberType": "Function",
 					"Removed": false,
@@ -443414,26 +445573,13 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "Animation",
-					"Member": "AnimationContent",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Content"
@@ -443780,6 +445926,19 @@
 				{
 					"Class": "Clothing",
 					"Member": "Outfit2Content",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "ColorCorrectionEffect",
+					"Member": "ColorLutContent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -444858,6 +447017,19 @@
 				},
 				{
 					"Class": "WrapLayer",
+					"Member": "NonUniformScaleContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
 					"Member": "ReferenceMeshContent",
 					"MemberType": "Property",
 					"Removed": false,
@@ -444871,20 +447043,7 @@
 				},
 				{
 					"Class": "WrapLayer",
-					"Member": "RotateScaleDeformationMap",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "WrapLayer",
-					"Member": "ScaleOnlyDeformationMap",
+					"Member": "RotateUniformScaleContent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -444898,6 +447057,19 @@
 				{
 					"Class": "WrapLayer",
 					"Member": "TemporaryReferenceMeshContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
+					"Member": "UniformScaleContent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -444936,6 +447108,19 @@
 				},
 				{
 					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
 					"Member": "CreateTrack",
 					"MemberType": "Function",
 					"Removed": true,
@@ -444950,6 +447135,58 @@
 				{
 					"Class": "AnimatedImageService",
 					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsChangedSignal",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "Parameters",
@@ -445306,6 +447543,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
+					"Member": "RotateScaleDeformationMap",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "WrapLayer",
+					"Member": "ScaleOnlyDeformationMap",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Content"
@@ -447272,6 +449535,19 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "CampaignEligibilityResponseSuccessSignalFromClient",
 					"MemberType": "Event",
 					"Removed": false,
@@ -447304,6 +449580,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnShowRewardedVideoAd",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
@@ -449350,6 +451639,19 @@
 				},
 				{
 					"Class": "ExperienceService",
+					"Member": "GetConnectedServerInfo",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ExperienceService",
 					"Member": "GetPendingJoinAttempt",
 					"MemberType": "Function",
 					"Removed": false,
@@ -449628,6 +451930,45 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "FilePickerService",
+					"Member": "IsSupported",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "FilePickerService",
+					"Member": "PickFilesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "FilePickerService",
+					"Member": "PickFilesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Group",
@@ -451343,6 +453684,19 @@
 				},
 				{
 					"Class": "ParticipantHandle",
+					"Member": "InvokePluginCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "ParticipantHandle",
 					"Member": "Launch",
 					"MemberType": "Function",
 					"Removed": false,
@@ -451426,6 +453780,32 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "LoadAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "LoadAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "Group",
@@ -453744,6 +456124,19 @@
 				},
 				{
 					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
 					"Member": "GetEditableMeshSkinningTransferJointsInfo",
 					"MemberType": "Function",
 					"Removed": false,
@@ -455614,6 +458007,20 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AssetImportService",
+					"Member": "UploadVersionedAssetFromPathAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "DataType",
 						"Name": "Function",
@@ -458142,6 +460549,19 @@
 					}
 				},
 				{
+					"Class": "CaptureService",
+					"Member": "CloneForSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
 					"Class": "CollaboratorsService",
 					"Member": "GetCollaboratorsList",
 					"MemberType": "Function",
@@ -458473,6 +460893,19 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "PlayAvatarEffectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "DataType",
@@ -458963,6 +461396,19 @@
 				{
 					"Class": "RealtimeMedia",
 					"Member": "GetConnectedWires",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "SceneSnapshot",
+					"Member": "GetRoots",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -462393,7 +464839,7 @@
 			"Removed": false,
 			"Related": [
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageClipsChangedSignal",
 					"MemberType": "Function",
 					"Removed": false,
@@ -462618,6 +465064,19 @@
 					"Member": "CommitBlock",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipsChangedSignal",
+					"MemberType": "Function",
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -464542,6 +467001,19 @@
 					"Class": "AdService",
 					"Member": "GetAdTeleportInfo",
 					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnShowRewardedVideoAd",
+					"MemberType": "Callback",
 					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
@@ -475635,6 +478107,32 @@
 					}
 				},
 				{
+					"Class": "ControllerPartSensor",
+					"Member": "GetExtents",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "ControllerPartSensor",
+					"Member": "GetExtents",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
 					"Class": "CylindricalConstraint",
 					"Member": "WorldRotationAxis",
 					"MemberType": "Property",
@@ -484451,6 +486949,19 @@
 				},
 				{
 					"Class": "CaptureService",
+					"Member": "CloneForSnapshot",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "CaptureService",
 					"Member": "DeleteVideoCaptureAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -486400,6 +488911,32 @@
 					}
 				},
 				{
+					"Class": "ExperienceService",
+					"Member": "SetConnectedServerProbingActive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ExperienceService",
+					"Member": "SetConnectedServerProbingActive",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "ExperienceStateCaptureService",
 					"Member": "HiddenSelectionEnabled",
 					"MemberType": "Property",
@@ -486797,6 +489334,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "FilePickerService",
+					"Member": "IsSupported",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -488299,6 +490849,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "UsesAvatarCollider",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "AddCustomStatus",
 					"MemberType": "Function",
 					"Removed": false,
@@ -488313,6 +490876,32 @@
 				{
 					"Class": "Humanoid",
 					"Member": "AddStatus",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "GetCanCollideOnDeath",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "GetCanCollideOnDeath",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -492420,6 +495009,19 @@
 				},
 				{
 					"Class": "Player",
+					"Member": "InternalSpawnEffectPlayed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Player",
 					"Member": "NeedRegionalFallback",
 					"MemberType": "Property",
 					"Removed": false,
@@ -492564,6 +495166,19 @@
 				{
 					"Class": "Player",
 					"Member": "HasBlockedPlayer",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "HasSpawnEffectPlayed",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -495943,6 +498558,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "AutoPlayAnimatedImages",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "AutoResumeSyncOnPlaceOpen",
 					"MemberType": "Property",
 					"Removed": false,
@@ -496009,6 +498637,19 @@
 				{
 					"Class": "Studio",
 					"Member": "CameraKeyMoveSmoothing",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "CameraNavigationModelLocked",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -497860,6 +500501,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "TeleportOptions",
+					"Member": "ForcePublicServer",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -501053,6 +503707,19 @@
 				{
 					"Class": "VRService",
 					"Member": "VREnabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "VRService",
+					"Member": "VRSessionActive",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -508631,6 +511298,19 @@
 			"Removed": false,
 			"Related": [
 				{
+					"Class": "Blob",
+					"Member": "ReadBytesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
 					"Class": "EditableImage",
 					"Member": "ReadPixelsBuffer",
 					"MemberType": "Function",
@@ -509015,7 +511695,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -510610,6 +513290,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "double"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "double"
@@ -514408,6 +517101,19 @@
 				{
 					"Class": "ColorCorrectionEffect",
 					"Member": "Brightness",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ColorCorrectionEffect",
+					"Member": "ColorLutIntensity",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -521416,6 +524122,19 @@
 				},
 				{
 					"Class": "Studio",
+					"Member": "Camera Orbit Speed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Studio",
 					"Member": "Camera Pan Speed",
 					"MemberType": "Property",
 					"Removed": false,
@@ -521443,6 +524162,19 @@
 				{
 					"Class": "Studio",
 					"Member": "Camera Speed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "Studio",
+					"Member": "CameraFocusFillPercent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -521612,6 +524344,19 @@
 				{
 					"Class": "StudioCameraService",
 					"Member": "FocusDistance",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "StudioCameraService",
+					"Member": "GraspDistance",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -522893,6 +525638,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "UGCValidationService",
+					"Member": "GetCurveAnimationRenderedFrames",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -526728,7 +529486,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -527515,6 +530273,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AvatarChatService",
+					"Member": "PlayerClientFeaturesResolved",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -532334,19 +535105,6 @@
 				},
 				{
 					"Class": "ProjectService",
-					"Member": "ContentMapMutationResult",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "ProjectService",
 					"Member": "ContentMapRemovePathRequested",
 					"MemberType": "Event",
 					"Removed": false,
@@ -536962,6 +539720,19 @@
 					}
 				},
 				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "AnimatedImageTrack",
 					"Member": "FrameCount",
 					"MemberType": "Property",
@@ -539602,6 +542373,19 @@
 					}
 				},
 				{
+					"Class": "ProjectService",
+					"Member": "ContentMapMutationResult",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "PseudoPlayer",
 					"Member": "userId",
 					"MemberType": "Property",
@@ -540730,6 +543514,32 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "CompleteRewardedVideoGrant",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "CompleteRewardedVideoGrant",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "CreateAdRewardFromDevProductId",
 					"MemberType": "Function",
 					"Removed": false,
@@ -540749,6 +543559,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -543490,6 +546313,47 @@
 					}
 				},
 				{
+					"Class": "Blob",
+					"Member": "GetSizeBytes",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "Blob",
+					"Member": "ReadBytesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "Blob",
+					"Member": "ReadBytesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64",
+						"Optional": true
+					}
+				},
+				{
 					"Class": "BodyPartDescription",
 					"Member": "AssetId",
 					"MemberType": "Property",
@@ -545987,6 +548851,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "PlayAvatarEffectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "PlayEmoteAndGetAnimTrackById",
 					"MemberType": "Function",
 					"Removed": false,
@@ -548393,25 +551270,12 @@
 				},
 				{
 					"Class": "ProjectService",
-					"Member": "ContentMapMutationResult",
+					"Member": "ContentMapOutcomesAcknowledged",
 					"MemberType": "Event",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int64"
-					}
-				},
-				{
-					"Class": "ProjectService",
-					"Member": "ContentMapMutationResult",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -550919,6 +553783,32 @@
 					}
 				},
 				{
+					"Class": "ProjectService",
+					"Member": "ContentMapMutationResult",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "ProjectService",
+					"Member": "ContentMapMutationResult",
+					"MemberType": "Event",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "RunService",
 					"Member": "ServerFrame",
 					"MemberType": "Property",
@@ -551577,6 +554467,19 @@
 				},
 				{
 					"Class": "AdService",
+					"Member": "CompleteRewardedVideoGrant",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
 					"Member": "HandleWhyThisAdClicked",
 					"MemberType": "Function",
 					"Removed": false,
@@ -551604,6 +554507,19 @@
 				{
 					"Class": "AdService",
 					"Member": "OnDemandVideoCompleteFromUI",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "PlayRewardedVideoAdOnClient",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -551721,6 +554637,19 @@
 				{
 					"Class": "AdService",
 					"Member": "OnImmersiveBrandedAdDisclosureButtonActivated",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
 					"MemberType": "Callback",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -551914,7 +554843,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -553760,6 +556689,19 @@
 					}
 				},
 				{
+					"Class": "Blob",
+					"Member": "Destroy",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "BranchService",
 					"Member": "ArchiveBranchAsync",
 					"MemberType": "Function",
@@ -554633,6 +557575,19 @@
 				{
 					"Class": "CloudClientService",
 					"Member": "ReleaseReservation",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "CloudClientService",
+					"Member": "ReportOfferDecision",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -561601,6 +564556,19 @@
 				{
 					"Class": "PhysicsService",
 					"Member": "UnregisterCollisionGroup",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "Destroy",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -569530,6 +572498,19 @@
 				},
 				{
 					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
 					"Member": "DestroyTrack",
 					"MemberType": "Function",
 					"Removed": true,
@@ -572500,6 +575481,32 @@
 					}
 				},
 				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AdService",
+					"Member": "OnRewardedVideoAdResult",
+					"MemberType": "Callback",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "AnalyticsService",
 					"Member": "ApiKey",
 					"MemberType": "Property",
@@ -572851,7 +575858,20 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClip",
+					"Member": "Guid",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimationClipProvider",
 					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -572864,7 +575884,7 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -572877,26 +575897,13 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageService",
+					"Class": "AnimationClipProvider",
 					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimationClip",
-					"Member": "Guid",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -575802,6 +578809,19 @@
 					}
 				},
 				{
+					"Class": "Blob",
+					"Member": "GetMimeType",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "BodyPartDescription",
 					"Member": "HeadShape",
 					"MemberType": "Property",
@@ -577234,6 +580254,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CloudClientService",
+					"Member": "ReportOfferDecision",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "CloudClientService",
+					"Member": "ReportOfferDecision",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -587689,6 +590735,32 @@
 				},
 				{
 					"Class": "ParticipantHandle",
+					"Member": "InvokePluginCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ParticipantHandle",
+					"Member": "InvokePluginCommand",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "ParticipantHandle",
 					"Member": "Launch",
 					"MemberType": "Function",
 					"Removed": false,
@@ -588137,6 +591209,45 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "GetExtension",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "GetMimeType",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "PickedFile",
+					"Member": "GetName",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -592169,6 +595280,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SceneSnapshot",
+					"Member": "GetSourceGuid",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -600923,6 +604047,19 @@
 				},
 				{
 					"Class": "AnimatedImageService",
+					"Member": "AddAnimatedImageClipAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
 					"Member": "CreateTrack",
 					"MemberType": "Function",
 					"Removed": true,
@@ -600937,6 +604074,32 @@
 				{
 					"Class": "AnimatedImageService",
 					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageFrameIndexAtTimeAsync",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "Parameters",
